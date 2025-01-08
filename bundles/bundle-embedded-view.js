@@ -800,17 +800,26 @@ var IframeEmbed = function IframeEmbed(_ref) {
 };
 
 },{"../../lib/i18n-translate.js":3,"../ui-components/Icon.cjsx":10,"../ui-components/MediaPlayer.cjsx":11,"../ui-components/Picture.cjsx":12,"../ui-components/ResourceIcon.cjsx":13,"active-lodash":18,"babel-runtime/core-js/object/assign":25,"classnames":45,"qs":370,"react":539,"url":543}],8:[function(require,module,exports){
-var classnames, f, i18nTranslate, parseModsfromProps;
+'use strict';
 
-f = require('active-lodash');
+/*
+ * decaffeinate suggestions:
+ * DS102: Remove unnecessary code created because of implicit returns
+ * DS207: Consider shorter variations of null checks
+ * Full docs: https://github.com/decaffeinate/decaffeinate/blob/main/docs/suggestions.md
+ */
+var f = require('active-lodash');
+var classnames = require('classnames/dedupe');
+var i18nTranslate = require('../../lib/i18n-translate.js');
 
-classnames = require('classnames/dedupe');
+var parseModsfromProps = function parseModsfromProps(param) {
+  if (param == null) {
+    param = props;
+  }
+  var _param = param,
+      className = _param.className,
+      mods = _param.mods;
 
-i18nTranslate = require('../../lib/i18n-translate.js');
-
-parseModsfromProps = function(arg) {
-  var className, mods, ref;
-  ref = arg != null ? arg : props, className = ref.className, mods = ref.mods;
   return [mods, className];
 };
 
@@ -820,7 +829,6 @@ module.exports = {
   cx: classnames,
   t: i18nTranslate
 };
-
 
 },{"../../lib/i18n-translate.js":3,"active-lodash":18,"classnames/dedupe":44}],9:[function(require,module,exports){
 'use strict';
@@ -942,7 +950,7 @@ React = require('react');
 
 f = require('active-lodash');
 
-ui = require('../lib/ui.coffee');
+ui = require('../lib/ui.js');
 
 FONT_AWESOME_ICONS = ['cloud', 'clock-o', 'flask'];
 
@@ -969,7 +977,7 @@ module.exports = React.createClass({
 });
 
 
-},{"../lib/ui.coffee":8,"active-lodash":18,"react":539}],11:[function(require,module,exports){
+},{"../lib/ui.js":8,"active-lodash":18,"react":539}],11:[function(require,module,exports){
 var AudioPlayer, React, VideoPlayer, f, t;
 
 React = require('react');
@@ -1063,7 +1071,7 @@ React = require('react');
 
 f = require('active-lodash');
 
-ui = require('../lib/ui.coffee');
+ui = require('../lib/ui.js');
 
 t = require('../../lib/i18n-translate.js');
 
@@ -1090,14 +1098,14 @@ module.exports = React.createClass({
 });
 
 
-},{"../../lib/i18n-translate.js":3,"../lib/ui.coffee":8,"active-lodash":18,"react":539}],13:[function(require,module,exports){
+},{"../../lib/i18n-translate.js":3,"../lib/ui.js":8,"active-lodash":18,"react":539}],13:[function(require,module,exports){
 var Icon, Picture, React, cx, f, t, ui;
 
 React = require('react');
 
 f = require('active-lodash');
 
-ui = require('../lib/ui.coffee');
+ui = require('../lib/ui.js');
 
 t = require('../../lib/i18n-translate.js');
 
@@ -1179,7 +1187,7 @@ module.exports = React.createClass({
 });
 
 
-},{"../../lib/i18n-translate.js":3,"../lib/ui.coffee":8,"./Icon.cjsx":10,"./Picture.cjsx":12,"active-lodash":18,"classnames":45,"react":539}],14:[function(require,module,exports){
+},{"../../lib/i18n-translate.js":3,"../lib/ui.js":8,"./Icon.cjsx":10,"./Picture.cjsx":12,"active-lodash":18,"classnames":45,"react":539}],14:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
