@@ -65,7 +65,6 @@ var handleResult = function handleResult(err, res) {
 // provides string translation function.
 // usage
 // t = require('…'); t('hello') // => 'Hallo'
-/* global APP_CONFIG __dirname */ // for eslint
 
 var f = require('active-lodash');
 var parseTranslationsFromCSV = require('./parse-translations-from-csv');
@@ -143,8 +142,7 @@ module.exports = readTranslationsFromCSV;
  * DS102: Remove unnecessary code created because of implicit returns
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/main/docs/suggestions.md
  */
-var getRailsCSRFToken = void 0;
-module.exports = getRailsCSRFToken = function getRailsCSRFToken() {
+module.exports = function () {
   var metaTag = typeof document !== 'undefined' && document.querySelector('meta[name="csrf-token"]');
   return metaTag ? metaTag.getAttribute('content') : null;
 };
@@ -469,7 +467,6 @@ module.exports = AppResource.extend(ResourceWithRelations, Favoritable, Deletabl
   upload: function upload(callback) {
     var _this2 = this;
 
-    var req = void 0;
     if (!(this.uploading.file instanceof BrowserFile)) {
       throw new Error('Model: MediaEntry: #upload called but no file!');
     }
@@ -499,13 +496,15 @@ module.exports = AppResource.extend(ResourceWithRelations, Favoritable, Deletabl
       try {
         progress = loaded / total * 100;
       } catch (error) {
+        // Why the log? see https://github.com/Madek/Madek/issues/669
+        // eslint-disable-next-line no-console
         console.error('Could not calculate percentage for loaded/total:', loaded, total, error);
         progress = -1;
       }
       return _this2.merge('uploading', { progress: progress });
     };
 
-    return req = this._runRequest({
+    return this._runRequest({
       method: 'POST',
       url: app.config.relativeUrlRoot + '/entries/',
       body: formData,
@@ -519,11 +518,15 @@ module.exports = AppResource.extend(ResourceWithRelations, Favoritable, Deletabl
         if (err) {
           error = err;
         } else if (res) {
+          // Why the log? see above
+          // eslint-disable-next-line no-console
           console.error('Response status code = ' + res.statusCode);
           error = res.body;
         } else {
           error = 'Error: no response data';
         }
+        // Why the log? see above
+        // eslint-disable-next-line no-console
         console.log('Date', Date());
         _this2.set('uploading', f.merge(_this2.uploading, { error: error }));
       } else {
@@ -531,8 +534,9 @@ module.exports = AppResource.extend(ResourceWithRelations, Favoritable, Deletabl
         var attrs = function () {
           try {
             return JSON.parse(res.body);
-            // eslint-disable-next-line no-empty
-          } catch (error1) {}
+          } catch (error1) {
+            // silently ignore
+          }
         }();
         if (attrs) {
           _this2.set(attrs);
@@ -654,8 +658,6 @@ var MetaDatum = require('./meta-datum.js');
 // this (polymorph) collection to contain any of them.
 // If it has a parent resource, it can be saved back to the server.
 // Because of polymorphism, we need to override `#model` and `#isModel`
-var subtypes = f.keys(MetaDatum);
-
 module.exports = AppCollection.extend({
   type: 'MetaData',
 
@@ -878,8 +880,9 @@ module.exports = Model.extend(RailsResource, {
       var data = function () {
         try {
           return JSON.parse(body);
-          // eslint-disable-next-line no-empty
-        } catch (error) {}
+        } catch (error) {
+          // this is OK, just fallback to unparsed body
+        }
       }() || body;
       return callback(err, res, data);
     });
@@ -961,7 +964,7 @@ module.exports = AppResource.extend({
     // NOTE: these are defined in classes that inherit from us
     return [this.user_permissions, this.group_permissions, this.api_client_permissions].map(function (child) {
       if ((child != null ? child.on : undefined) != null) {
-        return _this.listenTo(child, 'change add remove reset', function (e) {
+        return _this.listenTo(child, 'change add remove reset', function () {
           return _this.trigger('change');
         });
       }
@@ -1014,7 +1017,7 @@ module.exports = function (data, callback) {
       datum.set('literal_values', data.values);
 
       return entry.meta_data.save({
-        error: function error(model, res, opts) {
+        error: function error(model, res /* , opts */) {
           return callback((0, _stringify2.default)(res, 0, 2));
         },
         success: function success(model, msg, res) {
