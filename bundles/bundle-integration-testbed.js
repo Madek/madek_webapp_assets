@@ -149,7 +149,6 @@ module.exports = readTranslationsFromCSV;
  * DS102: Remove unnecessary code created because of implicit returns
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/main/docs/suggestions.md
  */
-// eslint-disable-next-line react/display-name
 module.exports = function () {
   var metaTag = typeof document !== 'undefined' && document.querySelector('meta[name="csrf-token"]');
   return metaTag ? metaTag.getAttribute('content') : null;
@@ -548,7 +547,7 @@ module.exports = _appResource2.default.extend(_resourceWithRelations2.default, _
         progress = loaded / total * 100;
       } catch (error) {
         // Why the log? see https://github.com/Madek/Madek/issues/669
-        // eslint-disable-next-line no-console
+
         console.error('Could not calculate percentage for loaded/total:', loaded, total, error);
         progress = -1;
       }
@@ -570,14 +569,14 @@ module.exports = _appResource2.default.extend(_resourceWithRelations2.default, _
           error = err;
         } else if (res) {
           // Why the log? see above
-          // eslint-disable-next-line no-console
+
           console.error('Response status code = ' + res.statusCode);
           error = res.body;
         } else {
           error = 'Error: no response data';
         }
         // Why the log? see above
-        // eslint-disable-next-line no-console
+
         console.log('Date', Date());
         _this2.set('uploading', _activeLodash2.default.merge(_this2.uploading, { error: error }));
       } else {
