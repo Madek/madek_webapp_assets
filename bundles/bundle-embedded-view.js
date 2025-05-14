@@ -1682,6 +1682,8 @@ var VideoPlayer = function (_React$Component) {
           res: source.height,
           key: '' + source.url + source.content_type
         };
+      }).sort(function (a, b) {
+        return a.type === 'video/mp4' ? -1 : b.type === 'video/mp4' ? 1 : 0;
       });
 
       return _react2.default.createElement(_VideoJs2.default, (0, _assign2.default)({}, props, { sources: videoSources, options: (0, _assign2.default)({}, VIDEOJS_OPTIONS, options) }));
