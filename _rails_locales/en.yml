@@ -803,20 +803,26 @@ en:
   share_back_to_media_entry: Back to the media entry
   share_close: Close
   share_custom_url_hint_collection: >-
-    If you are using comprehensible addresses or if you want to share
-    alternating sets by means of one internet link (such as
-    …/newest_works_of_robert), use the following URL.
+    If a "comprehensible address" has been defined and you would like to use it
+    (e.g., …/latest-works-by-anna), use the following URL:
   share_custom_url_hint_media_entry: >-
-    If you are using comprehensible addresses or if you want to share
-    alternating media entries by means of one internet link (such as
-    …/newest_work_of_robert), use the following URL.
+    If a "comprehensible address" has been defined and you would like to use it
+    (e.g., …/latest-work-by-anna), use the following URL:
   share_custom_url_none_available: No comprehensible address has been defined.
   share_custom_url_subtitle: Share comprehensible address
+  share_embed_hint_iframe: >-
+    If your desired system does not support this, copy the following iFrame code
+    and paste it into the desired system as an HTML element.
+  share_embed_hint_iframe_code: IFrame Code
+  share_embed_hint_oembed: >-
+    Many content management systems allow easy embedding of content via oEmbed.
+    To do so, copy the URL above and paste it into a content element.
+  share_embed_hint_subtitle: Embed Media Entry
   share_title_collection: Share set
   share_title_media_entry: Share media entry
-  share_uuid_url_hint_collection: If you explicitly want to share this set use the following address.
-  share_uuid_url_hint_exporter: Copy this address for the Madek Exporter as well.
-  share_uuid_url_hint_media_entry: If you explicitly want to share this media entry, use the following address.
+  share_uuid_url_hint_collection: Would you like to share this set? Use the following URL.
+  share_uuid_url_hint_exporter: This URL is also required for exporting with the Madek exporter.
+  share_uuid_url_hint_media_entry: Would you like to share this media entry? Use the following URL.
   share_uuid_url_subtitle: Share URL
   settings_notifications_title: Notifications
   settings_notifications_info1: >-

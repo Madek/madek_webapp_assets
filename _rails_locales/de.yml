@@ -828,22 +828,28 @@ de:
   share_back_to_media_entry: Zurück zum Medieneintrag
   share_close: Schliessen
   share_custom_url_hint_collection: >-
-    Wenn Sie eine sprechende Adresse nutzen oder unter einem Link wechselnde
-    Sets teilen möchten (z.B. .../roberts_neueste_arbeiten), dann verwenden Sie
-    folgende URL.
+    Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten
+    (z.B. …/annas-neueste-arbeiten), dann verwenden Sie folgende URL:
   share_custom_url_hint_media_entry: >-
-    Wenn Sie eine sprechende Adresse nutzen oder unter einem Link wechselnde
-    Medieneinträge teilen möchten (z.B. .../roberts_neueste_arbeiten), dann
-    verwenden Sie folgende URL.
+    Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten
+    (z.B. …/annas-neueste-arbeit), dann verwenden Sie folgende URL:
   share_custom_url_none_available: Es ist keine sprechende Adresse angelegt.
   share_custom_url_subtitle: Sprechende Adresse teilen
+  share_embed_hint_iframe: >-
+    Falls dies von Ihrem gewünschen System nicht unterstützt wird, kopieren Sie
+    den nachfolgenden iFrame-Code und fügen diesen als HTML-Element in das
+    gewünschte System ein.
+  share_embed_hint_iframe_code: IFrame-Code
+  share_embed_hint_oembed: >-
+    Viele Content Management Systeme lassen einfaches Einbetten von Inhalten via
+    oEmbed zu. Dazu kopieren Sie die URL oben und fügen sie in ein
+    Inhaltselement ein.
+  share_embed_hint_subtitle: Medieneintrag einbetten
   share_title_collection: Set teilen
   share_title_media_entry: Medieneintrag teilen
-  share_uuid_url_hint_collection: Wenn Sie explizit dieses Set teilen möchten, nutzen Sie folgende URL.
-  share_uuid_url_hint_exporter: Auch für den Madek-Exporter kopieren Sie diese URL.
-  share_uuid_url_hint_media_entry: >-
-    Wenn Sie explizit diesen Medieneintrag teilen möchten, nutzen Sie folgende
-    URL.
+  share_uuid_url_hint_collection: Möchten Sie dieses Set teilen? Verwenden Sie dazu folgende URL.
+  share_uuid_url_hint_exporter: Auch für den Export mit dem Madek-Exporter wird diese URL benötigt.
+  share_uuid_url_hint_media_entry: Möchten Sie diesen Medieneintrag teilen? Verwenden Sie dazu folgende URL.
   share_uuid_url_subtitle: URL teilen
   settings_notifications_title: Notifikationen
   settings_notifications_info1: >-
