@@ -66,7 +66,7 @@ var _activeLodash = require('active-lodash');
 
 var _activeLodash2 = _interopRequireDefault(_activeLodash);
 
-var _parseTranslationsFromCsv = require('./parse-translations-from-csv');
+var _parseTranslationsFromCsv = require('./parse-translations-from-csv.js');
 
 var _parseTranslationsFromCsv2 = _interopRequireDefault(_parseTranslationsFromCsv);
 
@@ -99,7 +99,7 @@ module.exports = function I18nTranslate(marker) {
   return _activeLodash2.default.isString(s) ? s : '⟨' + marker + '⟩';
 };
 
-},{"./parse-translations-from-csv":3,"active-lodash":24,"path":450}],3:[function(require,module,exports){
+},{"./parse-translations-from-csv.js":3,"active-lodash":24,"path":450}],3:[function(require,module,exports){
 'use strict';
 
 // reads CSV and returns list like: [{lang: 'en', mapping: {key: 'value'}}, …]
@@ -390,7 +390,7 @@ var _person = require('./person.js');
 
 var _person2 = _interopRequireDefault(_person);
 
-var _i18nTranslate = require('../lib/i18n-translate');
+var _i18nTranslate = require('../lib/i18n-translate.js');
 
 var _i18nTranslate2 = _interopRequireDefault(_i18nTranslate);
 
@@ -604,7 +604,7 @@ module.exports = _appResource2.default.extend(_resourceWithRelations2.default, _
   }
 });
 
-},{"../lib/i18n-translate":2,"./concerns/resource-deletable.js":6,"./concerns/resource-favoritable.js":7,"./concerns/resource-with-relations.js":8,"./media-entry/permissions.js":11,"./meta-data.js":12,"./person.js":15,"./shared/app-resource.js":17,"./shared/get-media-type.js":18,"active-lodash":24,"ampersand-app":28,"babel-runtime/core-js/json/stringify":48,"global/window":138}],11:[function(require,module,exports){
+},{"../lib/i18n-translate.js":2,"./concerns/resource-deletable.js":6,"./concerns/resource-favoritable.js":7,"./concerns/resource-with-relations.js":8,"./media-entry/permissions.js":11,"./meta-data.js":12,"./person.js":15,"./shared/app-resource.js":17,"./shared/get-media-type.js":18,"active-lodash":24,"ampersand-app":28,"babel-runtime/core-js/json/stringify":48,"global/window":138}],11:[function(require,module,exports){
 'use strict';
 
 var _ampersandRestCollection = require('ampersand-rest-collection');
