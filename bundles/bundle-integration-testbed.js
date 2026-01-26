@@ -168,7 +168,8 @@ module.exports = _appResource2.default.extend({
   type: 'ApiClient',
   props: {
     login: ['string'],
-    description: ['string']
+    description: ['string'],
+    tooltip_text: { type: 'string', default: '', allowNull: true }
   }
 });
 
@@ -645,7 +646,8 @@ var MediaEntryPublicPermission = _appResource2.default.extend({
   type: 'MediaEntryPublicPermission',
   props: {
     get_metadata_and_previews: ['trilean'],
-    get_full_size: ['trilean']
+    get_full_size: ['trilean'],
+    tooltip_text: { type: 'string', default: '', allowNull: true }
   }
 });
 
