@@ -412,6 +412,15 @@ en:
   media_entry_export_rdf_experiment_footnote: >-
     Data structure and format is subject to change. Please send feedback if you
     are using this!
+  media_entry_export_checksum_title: Checksum
+  media_entry_export_checksum_generate: Generate
+  media_entry_export_checksum_verify: Verify
+  media_entry_export_checksum_empty: Generate checksum
+  media_entry_export_checksum_generating: Generating…
+  media_entry_export_checksum_verifying: Verifying…
+  media_entry_export_checksum_match: Checksum matches
+  media_entry_export_checksum_mismatch: Checksum does not match
+  media_entry_export_checksum_error: Error during checksum operation
   media_entry_file_format_not_supported_1: 'Your browser probably does not support the file format, but you can '
   media_entry_file_format_not_supported_2: download the file
   media_entry_file_format_not_supported_3: '0'
