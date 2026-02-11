@@ -425,6 +425,17 @@ de:
   media_entry_export_rdf_experiment_footnote: >-
     Struktur und Format der Daten können sich ändern. Bitte geben sie eine
     Rückmeldung, falls Sie diese verwenden!
+  media_entry_export_checksum_title: Prüfsumme
+  media_entry_export_checksum_generate: Erzeugen
+  media_entry_export_checksum_verify: Prüfen
+  media_entry_export_checksum_empty: Prüfsumme erzeugen
+  media_entry_export_checksum_generating: Wird erzeugt…
+  media_entry_export_checksum_verifying: Wird verifiziert…
+  media_entry_export_checksum_generated_at: Erzeugt am
+  media_entry_export_checksum_verified_at: Geprüft am
+  media_entry_export_checksum_match: Prüfsumme stimmt überein
+  media_entry_export_checksum_mismatch: Prüfsumme stimmt nicht überein
+  media_entry_export_checksum_error: Fehler bei der Prüfsummen-Operation
   media_entry_file_format_not_supported_1: >-
     Wahrscheinlich unterstützt Ihr Browser nicht die Darstellung dieses
     Dateiformats, aber Sie 
