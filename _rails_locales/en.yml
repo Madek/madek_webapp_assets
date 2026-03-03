@@ -15,8 +15,6 @@ en:
       destroy:
         success: '%{resource_name} was successfully destroyed.'
         error: '%{resource_name} could not be destroyed.'
-  error_410_title: Gone
-  error_410_message: Content has been removed and is no longer available.
   helpers:
     submit:
       group:
@@ -570,6 +568,12 @@ en:
   notifications_message_transfer_responsibility_via_delegation: >-
     The responsibility for %{resourceType} %{resource} was transferred from
     %{user} to %{viaDelegation}.
+  notifications_message_transfer_responsibility_by_user: >-
+    The responsibility for %{resourceType} %{resource} was transferred from
+    %{sourceDelegation} by %{actingUser} to you.
+  notifications_message_transfer_responsibility_via_delegation_by_user: >-
+    The responsibility for %{resourceType} %{resource} was transferred from
+    %{sourceDelegation} by %{actingUser} to %{viaDelegation}.
   notifications_media_entry: media entry
   notifications_collection: set
   notifications_acknowledge_all: Delete all notifications
@@ -610,7 +614,11 @@ en:
   permissions_batch_success: Permissions have been updated succesfully.
   permissions_batch_title_post: ' Items.'
   permissions_batch_title_pre: 'Edit permissions of '
-  permissions_overview_yours_msg_end: ", currently have the following permissions (either directly or as a member of a\r\nresponsibility group or as a member of a work group):"
+  permissions_overview_yours_msg_end: >-
+    , currently have the following permissions (either directly or as a member
+    of a
+
+    responsibility group or as a member of a work group):
   permissions_overview_yours_msg_start: 'You, '
   permissions_overview_yours_title: Your permissions
   permissions_responsibility_title: Responsibility
@@ -828,7 +836,18 @@ en:
   sitemap_vocabularies: Vocabularies
   confidential_links_help_title: Hints
   sitemap_vocabulary: Vocabulary
-  confidential_links_help_text: "Confidential Links can be used to enable access to Entries without making them publicly visible.\r\nThese Links therefore also make it possible to share Entries with Users that don't have a login. Please do not share or embed Confidential Links onto publicly accessible websites, because it would render the regular permission settings useless.\r\nConfidential Links can only be created by the responsible user of an Entry. They can be manually revoked at any time, and optionally be set to expire automatically after a set day."
+  confidential_links_help_text: >-
+    Confidential Links can be used to enable access to Entries without making
+    them publicly visible.
+
+    These Links therefore also make it possible to share Entries with Users that
+    don't have a login. Please do not share or embed Confidential Links onto
+    publicly accessible websites, because it would render the regular permission
+    settings useless.
+
+    Confidential Links can only be created by the responsible user of an Entry.
+    They can be manually revoked at any time, and optionally be set to expire
+    automatically after a set day.
   confidential_links_header: Confidential Links
   confidential_links_title_pre: 'Confidential Links for '
   confidential_links_title_post: Back to the set

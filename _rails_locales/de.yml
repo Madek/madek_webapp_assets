@@ -8,8 +8,6 @@ de:
         record_invalid: 'Überprüfung fehlgeschlagen: %{errors}'
         taken: ist bereits vergeben
         blank: ist leer
-  error_410_title: Entfernt
-  error_410_message: Inhalt wurde entfernt und ist nicht mehr verfügbar.
   flash:
     actions:
       create:
@@ -591,6 +589,12 @@ de:
   notifications_message_transfer_responsibility_via_delegation: >-
     Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an
     %{viaDelegation} übertragen.
+  notifications_message_transfer_responsibility_by_user: >-
+    Verantwortlichkeit für %{resourceType} %{resource} wurde von
+    %{sourceDelegation} durch %{actingUser} an Sie übertragen.
+  notifications_message_transfer_responsibility_via_delegation_by_user: >-
+    Verantwortlichkeit für %{resourceType} %{resource} wurde von
+    %{sourceDelegation} durch %{actingUser} an %{viaDelegation} übertragen.
   notifications_media_entry: Medieneintrag
   notifications_collection: Set
   notifications_acknowledge_all: Alle Notifikationen löschen
@@ -855,7 +859,18 @@ de:
   sitemap_vocabularies: Vokabulare
   confidential_links_help_title: Hinweise
   sitemap_vocabulary: Vokabular
-  confidential_links_help_text: "Vertrauliche Links ermöglichen den direkten Zugriff auf Medieneinträge, auch wenn sie nicht öffentlich sichtbar sind.\r\nDiese Links ermöglichen somit auch Benutzern ohne Login einen Zugang zum Medieneintrag. Binden Sie Vertrauliche Links nicht in öffentlich zugängliche Webseiten ein, sonst werden die regulären Zugriffsberechtigungen wirkungslos.\r\nVertrauliche Links können nur vom Verantwortlichen eines Medieneintrags erstellt und zurückgezogen werden. Die Links können mit einem Verfallsdatum erstellt oder zeitlich unbeschränkt erstellt werden."
+  confidential_links_help_text: >-
+    Vertrauliche Links ermöglichen den direkten Zugriff auf Medieneinträge, auch
+    wenn sie nicht öffentlich sichtbar sind.
+
+    Diese Links ermöglichen somit auch Benutzern ohne Login einen Zugang zum
+    Medieneintrag. Binden Sie Vertrauliche Links nicht in öffentlich zugängliche
+    Webseiten ein, sonst werden die regulären Zugriffsberechtigungen
+    wirkungslos.
+
+    Vertrauliche Links können nur vom Verantwortlichen eines Medieneintrags
+    erstellt und zurückgezogen werden. Die Links können mit einem Verfallsdatum
+    erstellt oder zeitlich unbeschränkt erstellt werden.
   confidential_links_header: Vertrauliche Links
   confidential_links_title_pre: 'Vertrauliche Links für '
   confidential_links_title_post: Zurück zum Set
