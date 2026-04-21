@@ -549,7 +549,6 @@ en:
   meta_data_role_remove_btn: Remove function
   meta_data_type_label: Type
   meta_data_value_label: Data
-  meta_datum_json_download_value: Link to this dataset
   meta_datum_media_entry_label_id: 'Resource ID:'
   meta_datum_media_entry_label_string: 'additional text:'
   meta_datum_media_entry_err_uuid_invalid: Invalid UUID!
