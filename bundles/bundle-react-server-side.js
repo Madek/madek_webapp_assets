@@ -13197,6 +13197,8 @@ settings_notifications_email_frequency_immediately,sofort,immediately,
 settings_notifications_email_frequency_daily,t\xE4glich (Zusammenfassung),daily (digest),
 settings_notifications_email_frequency_weekly,w\xF6chentlich (Zusammenfassung),weekly (digest),
 settings_notifications_email_frequency_never,keine,none,
+settings_advanced_functions_title,Erweiterte Funktionen,Advanced functions,
+settings_show_all_data_tab_in_edit_mode_label,Reiter \xABAlle Daten\xBB im Bearbeitungsmodus einblenden,Show the \xABAll metadata\xBB Tab in edit mode,
 settings_save_changes,Einstellungen speichern,Save settings,
 settings_saved_changes,Einstellungen wurden gespeichert,Settings have been saved,
 sitemap_activities,Aktivit\xE4ten,Activities,
@@ -75269,7 +75271,7 @@ ${e2}`);
             className: "ui-thumbnail-meta-subtitle"
           }, resource.subtitle))))));
         },
-        _renderTabs: function(meta_meta_data, batch, batch_ids, return_to, url6, onTabClick, currentTab, collection_id, resource_type, edit_by_context_urls, edit_by_context_fallback_url, batch_edit_by_context_urls, batch_edit_by_context_fallback_url, edit_by_vocabularies_url, batch_edit_by_vocabularies_url, batch_edit_all_collection_url, show_all_meta_data_tab) {
+        _renderTabs: function(meta_meta_data, batch, batch_ids, return_to, url6, onTabClick, currentTab, collection_id, resource_type, edit_by_context_urls, edit_by_context_fallback_url, batch_edit_by_context_urls, batch_edit_by_context_fallback_url, edit_by_vocabularies_url, batch_edit_by_vocabularies_url, batch_edit_all_collection_url, show_all_data_tab_in_edit_mode) {
           let tabUrl, nextCurrentTab, active;
           return /* @__PURE__ */ import_react101.default.createElement(Tabs_default, null, import_active_lodash32.default.map(meta_meta_data.meta_data_edit_context_ids, function(context_id) {
             const context = meta_meta_data.contexts_by_context_id[context_id];
@@ -75313,7 +75315,7 @@ ${e2}`);
               });
             }
           }), (() => {
-            if (show_all_meta_data_tab) {
+            if (show_all_data_tab_in_edit_mode) {
               tabUrl = batch ? collection_id ? set_params_for_url_default(batch_edit_all_collection_url, {
                 type: resource_type,
                 context_id: null,
@@ -75757,7 +75759,7 @@ ${e2}`);
             counts: this.props.get.counts,
             resources: get4.resources.resources,
             authToken
-          }) : void 0, MetadataEditRenderer_default._renderTabs(this.props.get.meta_meta_data, this.props.batch, this.props.get.batch_ids, this.props.get.return_to, this.props.get.url, this._onTabClick, currentTab, get4.collection_id, this.props.get.resource_type, get4.edit_by_context_urls, get4.edit_by_context_fallback_url, get4.batch_edit_by_context_urls, get4.batch_edit_by_context_fallback_url, get4.edit_by_vocabularies_url, get4.batch_edit_by_vocabularies_url, get4.batch_edit_all_collection_url, this.props.get.show_all_meta_data_tab), /* @__PURE__ */ import_react102.default.createElement(TabContent_default, null, /* @__PURE__ */ import_react102.default.createElement(rails_form_default, {
+          }) : void 0, MetadataEditRenderer_default._renderTabs(this.props.get.meta_meta_data, this.props.batch, this.props.get.batch_ids, this.props.get.return_to, this.props.get.url, this._onTabClick, currentTab, get4.collection_id, this.props.get.resource_type, get4.edit_by_context_urls, get4.edit_by_context_fallback_url, get4.batch_edit_by_context_urls, get4.batch_edit_by_context_fallback_url, get4.edit_by_vocabularies_url, get4.batch_edit_by_vocabularies_url, get4.batch_edit_all_collection_url, this.props.get.show_all_data_tab_in_edit_mode), /* @__PURE__ */ import_react102.default.createElement(TabContent_default, null, /* @__PURE__ */ import_react102.default.createElement(rails_form_default, {
             ref: this.formRef,
             name: "resource_meta_data",
             action: this._actionUrl(),
@@ -88092,15 +88094,18 @@ ${e2}`);
   });
   function sendUpdate(url6, settings, onSuccess) {
     const data = {
-      emails_locale: settings.emailsLocale,
-      notification_case_user_settings: settings.notificationCaseUserSettings.map(({
+      show_all_data_tab_in_edit_mode: settings.showAllDataTabInEditMode
+    };
+    if (settings.notificationsEnabled) {
+      data.emails_locale = settings.emailsLocale;
+      data.notification_case_user_settings = settings.notificationCaseUserSettings.map(({
         label,
         emailFrequency
       }) => ({
         label,
         email_frequency: emailFrequency
-      }))
-    };
+      }));
+    }
     (0, import_xhr17.default)({
       url: url6,
       method: "PATCH",
@@ -88134,6 +88139,8 @@ ${e2}`);
           super(props);
           this.state = {
             emailsLocale: props.get.emails_locale,
+            showAllDataTabInEditMode: props.get.show_all_data_tab_in_edit_mode,
+            notificationsEnabled: props.get.notifications_enabled,
             notificationCaseUserSettings: props.get.notification_case_user_settings.map(({
               label,
               email_frequency,
@@ -88153,11 +88160,12 @@ ${e2}`);
           const {
             notifications_url: notificationsUrl,
             email,
-            available_locales: availableLocales
+            available_locales: availableLocales,
+            notifications_enabled: notificationsEnabled
           } = get4;
           return /* @__PURE__ */ import_react160.default.createElement("div", {
             className: "ui-resources-holder pal"
-          }, /* @__PURE__ */ import_react160.default.createElement("h2", {
+          }, notificationsEnabled && /* @__PURE__ */ import_react160.default.createElement("div", null, /* @__PURE__ */ import_react160.default.createElement("h2", {
             className: "title-l"
           }, I18nTranslate("settings_notifications_title")), /* @__PURE__ */ import_react160.default.createElement("p", {
             className: "mbx"
@@ -88193,7 +88201,7 @@ ${e2}`);
             } = caseSettings;
             return /* @__PURE__ */ import_react160.default.createElement("div", {
               key: label,
-              className: "mvs"
+              className: "mtx"
             }, /* @__PURE__ */ import_react160.default.createElement("h3", {
               className: "title-m"
             }, I18nTranslate(`settings_notifications_title_${label}`)), /* @__PURE__ */ import_react160.default.createElement("p", {
@@ -88207,7 +88215,19 @@ ${e2}`);
               checked: freq === emailFrequency,
               onChange: (e2) => this._handleEmailFrequencyChange(label, e2.target.value)
             }), " ", I18nTranslate(`settings_notifications_email_frequency_${freq}`))))));
-          }), /* @__PURE__ */ import_react160.default.createElement("div", {
+          })), /* @__PURE__ */ import_react160.default.createElement("div", {
+            className: notificationsEnabled ? "mtl" : void 0
+          }, /* @__PURE__ */ import_react160.default.createElement("h2", {
+            className: "title-l mbs"
+          }, I18nTranslate("settings_advanced_functions_title")), /* @__PURE__ */ import_react160.default.createElement("div", {
+            className: "mbx"
+          }, /* @__PURE__ */ import_react160.default.createElement("label", null, /* @__PURE__ */ import_react160.default.createElement("input", {
+            type: "checkbox",
+            name: "showAllDataTabInEditMode",
+            checked: this.state.showAllDataTabInEditMode,
+            onChange: (e2) => this._handleShowAllDataTabInEditModeChange(e2.target.checked)
+          }), " ", I18nTranslate("settings_show_all_data_tab_in_edit_mode_label")))), /* @__PURE__ */ import_react160.default.createElement("div", {
+            className: "mtl",
             style: {
               display: "flex",
               alignItems: "center",
@@ -88234,6 +88254,15 @@ ${e2}`);
             emailsLocale,
             dirty: true
           });
+          window.addEventListener("beforeunload", handleBeforeUnload);
+        }
+        _handleShowAllDataTabInEditModeChange(showAllDataTabInEditMode) {
+          this.setState({
+            ...this.state,
+            showAllDataTabInEditMode,
+            dirty: true
+          });
+          window.addEventListener("beforeunload", handleBeforeUnload);
         }
         _handleEmailFrequencyChange(label, freq) {
           this.setState({

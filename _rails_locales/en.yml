@@ -802,6 +802,8 @@ en:
   settings_notifications_email_frequency_daily: daily (digest)
   settings_notifications_email_frequency_weekly: weekly (digest)
   settings_notifications_email_frequency_never: none
+  settings_advanced_functions_title: Advanced functions
+  settings_show_all_data_tab_in_edit_mode_label: Show the «All metadata» Tab in edit mode
   settings_save_changes: Save settings
   settings_saved_changes: Settings have been saved
   sitemap_activities: Activities
