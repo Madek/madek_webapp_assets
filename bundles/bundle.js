@@ -924,7 +924,7 @@
 	* _.times(2, _.noop);
 	* // => [undefined, undefined]
 	*/
-	function noop$2() {}
+	function noop$4() {}
 	var init_noop = __esmMin((() => {}));
 	//#endregion
 	//#region node_modules/lodash-es/_getData.js
@@ -932,7 +932,7 @@
 	var init__getData = __esmMin((() => {
 		init__metaMap();
 		init_noop();
-		getData = !metaMap ? noop$2 : function(func) {
+		getData = !metaMap ? noop$4 : function(func) {
 			return metaMap.get(func);
 		};
 	}));
@@ -3479,7 +3479,7 @@
 	* _.isPlainObject(Object.create(null));
 	* // => true
 	*/
-	function isPlainObject$1(value) {
+	function isPlainObject$2(value) {
 		if (!isObjectLike(value) || baseGetTag(value) != objectTag$3) return false;
 		var proto = getPrototype(value);
 		if (proto === null) return true;
@@ -3521,7 +3521,7 @@
 	function isError(value) {
 		if (!isObjectLike(value)) return false;
 		var tag = baseGetTag(value);
-		return tag == errorTag$2 || tag == domExcTag || typeof value.message == "string" && typeof value.name == "string" && !isPlainObject$1(value);
+		return tag == errorTag$2 || tag == domExcTag || typeof value.message == "string" && typeof value.name == "string" && !isPlainObject$2(value);
 	}
 	var domExcTag, errorTag$2;
 	var init_isError = __esmMin((() => {
@@ -7008,7 +7008,7 @@
 				isCommon = false;
 				newValue = cloneTypedArray(srcValue, true);
 			} else newValue = [];
-			else if (isPlainObject$1(srcValue) || isArguments(srcValue)) {
+			else if (isPlainObject$2(srcValue) || isArguments(srcValue)) {
 				newValue = objValue;
 				if (isArguments(objValue)) newValue = toPlainObject(objValue);
 				else if (!isObject(objValue) || isFunction(objValue)) newValue = initCloneObject(srcValue);
@@ -9726,7 +9726,7 @@
 	* // => false
 	*/
 	function isElement(value) {
-		return isObjectLike(value) && value.nodeType === 1 && !isPlainObject$1(value);
+		return isObjectLike(value) && value.nodeType === 1 && !isPlainObject$2(value);
 	}
 	var init_isElement = __esmMin((() => {
 		init_isObjectLike();
@@ -11317,7 +11317,7 @@
 	* @returns {*} Returns the uncloned value or `undefined` to defer cloning to `_.cloneDeep`.
 	*/
 	function customOmitClone(value) {
-		return isPlainObject$1(value) ? void 0 : value;
+		return isPlainObject$2(value) ? void 0 : value;
 	}
 	var init__customOmitClone = __esmMin((() => {
 		init_isPlainObject();
@@ -15214,7 +15214,7 @@
 		init__Set();
 		init_noop();
 		init__setToArray();
-		createSet = !(Set$1 && 1 / setToArray(new Set$1([, -0]))[1] == Infinity) ? noop$2 : function(values) {
+		createSet = !(Set$1 && 1 / setToArray(new Set$1([, -0]))[1] == Infinity) ? noop$4 : function(values) {
 			return new Set$1(values);
 		};
 	}));
@@ -16479,7 +16479,7 @@
 			isNumber,
 			isObject,
 			isObjectLike,
-			isPlainObject: isPlainObject$1,
+			isPlainObject: isPlainObject$2,
 			isRegExp,
 			isSafeInteger,
 			isSet,
@@ -17004,7 +17004,7 @@
 			method,
 			methodOf,
 			mixin: mixin$1,
-			noop: noop$2,
+			noop: noop$4,
 			nthArg,
 			over,
 			overEvery,
@@ -17880,7 +17880,7 @@
 		isNumber: () => isNumber,
 		isObject: () => isObject,
 		isObjectLike: () => isObjectLike,
-		isPlainObject: () => isPlainObject$1,
+		isPlainObject: () => isPlainObject$2,
 		isRegExp: () => isRegExp,
 		isSafeInteger: () => isSafeInteger,
 		isSet: () => isSet,
@@ -17923,7 +17923,7 @@
 		multiply: () => multiply,
 		negate: () => negate,
 		next: () => wrapperNext,
-		noop: () => noop$2,
+		noop: () => noop$4,
 		now: () => now,
 		nth: () => nth,
 		nthArg: () => nthArg,
@@ -19620,13 +19620,13 @@
 	}));
 	//#endregion
 	//#region node_modules/math-intrinsics/max.js
-	var require_max$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var require_max = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		/** @type {import('./max')} */
 		module.exports = Math.max;
 	}));
 	//#endregion
 	//#region node_modules/math-intrinsics/min.js
-	var require_min$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var require_min = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		/** @type {import('./min')} */
 		module.exports = Math.min;
 	}));
@@ -19845,7 +19845,7 @@
 	}));
 	//#endregion
 	//#region node_modules/dunder-proto/get.js
-	var require_get$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var require_get = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var callBind = require_call_bind_apply_helpers();
 		var gOPD = require_gopd();
 		var hasProtoAccessor;
@@ -19867,7 +19867,7 @@
 	var require_get_proto = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var reflectGetProto = require_Reflect_getPrototypeOf();
 		var originalGetProto = require_Object_getPrototypeOf();
-		var getDunderProto = require_get$1();
+		var getDunderProto = require_get();
 		/** @type {import('.')} */
 		module.exports = reflectGetProto ? function getProto(O) {
 			return reflectGetProto(O);
@@ -19900,8 +19900,8 @@
 		var $URIError = require_uri();
 		var abs = require_abs();
 		var floor = require_floor();
-		var max = require_max$1();
-		var min = require_min$1();
+		var max = require_max();
+		var min = require_min();
 		var pow = require_pow();
 		var round = require_round();
 		var sign = require_sign();
@@ -21169,7 +21169,7 @@
 	}));
 	//#endregion
 	//#region node_modules/qs/lib/utils.js
-	var require_utils$4 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var require_utils$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var formats = require_formats();
 		var getSideChannel = require_side_channel();
 		var has = Object.prototype.hasOwnProperty;
@@ -21385,7 +21385,7 @@
 	//#region node_modules/qs/lib/stringify.js
 	var require_stringify = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var getSideChannel = require_side_channel();
-		var utils = require_utils$4();
+		var utils = require_utils$1();
 		var formats = require_formats();
 		var has = Object.prototype.hasOwnProperty;
 		var arrayPrefixGenerators = {
@@ -21568,7 +21568,7 @@
 	//#endregion
 	//#region node_modules/qs/lib/parse.js
 	var require_parse = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var utils = require_utils$4();
+		var utils = require_utils$1();
 		var has = Object.prototype.hasOwnProperty;
 		var isArray = Array.isArray;
 		var defaults = {
@@ -22231,2242 +22231,6 @@
 		exports.resolveObject = urlResolveObject;
 		exports.format = urlFormat;
 		exports.Url = Url;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_trimmedEndIndex.js
-	var require__trimmedEndIndex = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to match a single whitespace character. */
-		var reWhitespace = /\s/;
-		/**
-		* Used by `_.trim` and `_.trimEnd` to get the index of the last non-whitespace
-		* character of `string`.
-		*
-		* @private
-		* @param {string} string The string to inspect.
-		* @returns {number} Returns the index of the last non-whitespace character.
-		*/
-		function trimmedEndIndex(string) {
-			var index = string.length;
-			while (index-- && reWhitespace.test(string.charAt(index)));
-			return index;
-		}
-		module.exports = trimmedEndIndex;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseTrim.js
-	var require__baseTrim = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var trimmedEndIndex = require__trimmedEndIndex();
-		/** Used to match leading whitespace. */
-		var reTrimStart = /^\s+/;
-		/**
-		* The base implementation of `_.trim`.
-		*
-		* @private
-		* @param {string} string The string to trim.
-		* @returns {string} Returns the trimmed string.
-		*/
-		function baseTrim(string) {
-			return string ? string.slice(0, trimmedEndIndex(string) + 1).replace(reTrimStart, "") : string;
-		}
-		module.exports = baseTrim;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isObject.js
-	var require_isObject = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Checks if `value` is the
-		* [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
-		* of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is an object, else `false`.
-		* @example
-		*
-		* _.isObject({});
-		* // => true
-		*
-		* _.isObject([1, 2, 3]);
-		* // => true
-		*
-		* _.isObject(_.noop);
-		* // => true
-		*
-		* _.isObject(null);
-		* // => false
-		*/
-		function isObject(value) {
-			var type = typeof value;
-			return value != null && (type == "object" || type == "function");
-		}
-		module.exports = isObject;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_freeGlobal.js
-	var require__freeGlobal = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = typeof global == "object" && global && global.Object === Object && global;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_root.js
-	var require__root = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var freeGlobal = require__freeGlobal();
-		/** Detect free variable `self`. */
-		var freeSelf = typeof self == "object" && self && self.Object === Object && self;
-		module.exports = freeGlobal || freeSelf || Function("return this")();
-	}));
-	//#endregion
-	//#region node_modules/lodash/_Symbol.js
-	var require__Symbol = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__root().Symbol;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getRawTag.js
-	var require__getRawTag = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Symbol = require__Symbol();
-		/** Used for built-in method references. */
-		var objectProto = Object.prototype;
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = objectProto.hasOwnProperty;
-		/**
-		* Used to resolve the
-		* [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
-		* of values.
-		*/
-		var nativeObjectToString = objectProto.toString;
-		/** Built-in value references. */
-		var symToStringTag = Symbol ? Symbol.toStringTag : void 0;
-		/**
-		* A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
-		*
-		* @private
-		* @param {*} value The value to query.
-		* @returns {string} Returns the raw `toStringTag`.
-		*/
-		function getRawTag(value) {
-			var isOwn = hasOwnProperty.call(value, symToStringTag), tag = value[symToStringTag];
-			try {
-				value[symToStringTag] = void 0;
-				var unmasked = true;
-			} catch (e) {}
-			var result = nativeObjectToString.call(value);
-			if (unmasked) if (isOwn) value[symToStringTag] = tag;
-			else delete value[symToStringTag];
-			return result;
-		}
-		module.exports = getRawTag;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_objectToString.js
-	var require__objectToString = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Used to resolve the
-		* [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
-		* of values.
-		*/
-		var nativeObjectToString = Object.prototype.toString;
-		/**
-		* Converts `value` to a string using `Object.prototype.toString`.
-		*
-		* @private
-		* @param {*} value The value to convert.
-		* @returns {string} Returns the converted string.
-		*/
-		function objectToString(value) {
-			return nativeObjectToString.call(value);
-		}
-		module.exports = objectToString;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseGetTag.js
-	var require__baseGetTag = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Symbol = require__Symbol();
-		var getRawTag = require__getRawTag();
-		var objectToString = require__objectToString();
-		/** `Object#toString` result references. */
-		var nullTag = "[object Null]";
-		var undefinedTag = "[object Undefined]";
-		/** Built-in value references. */
-		var symToStringTag = Symbol ? Symbol.toStringTag : void 0;
-		/**
-		* The base implementation of `getTag` without fallbacks for buggy environments.
-		*
-		* @private
-		* @param {*} value The value to query.
-		* @returns {string} Returns the `toStringTag`.
-		*/
-		function baseGetTag(value) {
-			if (value == null) return value === void 0 ? undefinedTag : nullTag;
-			return symToStringTag && symToStringTag in Object(value) ? getRawTag(value) : objectToString(value);
-		}
-		module.exports = baseGetTag;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isObjectLike.js
-	var require_isObjectLike = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Checks if `value` is object-like. A value is object-like if it's not `null`
-		* and has a `typeof` result of "object".
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is object-like, else `false`.
-		* @example
-		*
-		* _.isObjectLike({});
-		* // => true
-		*
-		* _.isObjectLike([1, 2, 3]);
-		* // => true
-		*
-		* _.isObjectLike(_.noop);
-		* // => false
-		*
-		* _.isObjectLike(null);
-		* // => false
-		*/
-		function isObjectLike(value) {
-			return value != null && typeof value == "object";
-		}
-		module.exports = isObjectLike;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isSymbol.js
-	var require_isSymbol = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGetTag = require__baseGetTag();
-		var isObjectLike = require_isObjectLike();
-		/** `Object#toString` result references. */
-		var symbolTag = "[object Symbol]";
-		/**
-		* Checks if `value` is classified as a `Symbol` primitive or object.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
-		* @example
-		*
-		* _.isSymbol(Symbol.iterator);
-		* // => true
-		*
-		* _.isSymbol('abc');
-		* // => false
-		*/
-		function isSymbol(value) {
-			return typeof value == "symbol" || isObjectLike(value) && baseGetTag(value) == symbolTag;
-		}
-		module.exports = isSymbol;
-	}));
-	//#endregion
-	//#region node_modules/lodash/toNumber.js
-	var require_toNumber = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseTrim = require__baseTrim();
-		var isObject = require_isObject();
-		var isSymbol = require_isSymbol();
-		/** Used as references for various `Number` constants. */
-		var NAN = NaN;
-		/** Used to detect bad signed hexadecimal string values. */
-		var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
-		/** Used to detect binary string values. */
-		var reIsBinary = /^0b[01]+$/i;
-		/** Used to detect octal string values. */
-		var reIsOctal = /^0o[0-7]+$/i;
-		/** Built-in method references without a dependency on `root`. */
-		var freeParseInt = parseInt;
-		/**
-		* Converts `value` to a number.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Lang
-		* @param {*} value The value to process.
-		* @returns {number} Returns the number.
-		* @example
-		*
-		* _.toNumber(3.2);
-		* // => 3.2
-		*
-		* _.toNumber(Number.MIN_VALUE);
-		* // => 5e-324
-		*
-		* _.toNumber(Infinity);
-		* // => Infinity
-		*
-		* _.toNumber('3.2');
-		* // => 3.2
-		*/
-		function toNumber(value) {
-			if (typeof value == "number") return value;
-			if (isSymbol(value)) return NAN;
-			if (isObject(value)) {
-				var other = typeof value.valueOf == "function" ? value.valueOf() : value;
-				value = isObject(other) ? other + "" : other;
-			}
-			if (typeof value != "string") return value === 0 ? value : +value;
-			value = baseTrim(value);
-			var isBinary = reIsBinary.test(value);
-			return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN : +value;
-		}
-		module.exports = toNumber;
-	}));
-	//#endregion
-	//#region node_modules/lodash/toFinite.js
-	var require_toFinite = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var toNumber = require_toNumber();
-		/** Used as references for various `Number` constants. */
-		var INFINITY = Infinity;
-		var MAX_INTEGER = 17976931348623157e292;
-		/**
-		* Converts `value` to a finite number.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.12.0
-		* @category Lang
-		* @param {*} value The value to convert.
-		* @returns {number} Returns the converted number.
-		* @example
-		*
-		* _.toFinite(3.2);
-		* // => 3.2
-		*
-		* _.toFinite(Number.MIN_VALUE);
-		* // => 5e-324
-		*
-		* _.toFinite(Infinity);
-		* // => 1.7976931348623157e+308
-		*
-		* _.toFinite('3.2');
-		* // => 3.2
-		*/
-		function toFinite(value) {
-			if (!value) return value === 0 ? value : 0;
-			value = toNumber(value);
-			if (value === INFINITY || value === -INFINITY) return (value < 0 ? -1 : 1) * MAX_INTEGER;
-			return value === value ? value : 0;
-		}
-		module.exports = toFinite;
-	}));
-	//#endregion
-	//#region node_modules/lodash/toInteger.js
-	var require_toInteger = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var toFinite = require_toFinite();
-		/**
-		* Converts `value` to an integer.
-		*
-		* **Note:** This method is loosely based on
-		* [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Lang
-		* @param {*} value The value to convert.
-		* @returns {number} Returns the converted integer.
-		* @example
-		*
-		* _.toInteger(3.2);
-		* // => 3
-		*
-		* _.toInteger(Number.MIN_VALUE);
-		* // => 0
-		*
-		* _.toInteger(Infinity);
-		* // => 1.7976931348623157e+308
-		*
-		* _.toInteger('3.2');
-		* // => 3
-		*/
-		function toInteger(value) {
-			var result = toFinite(value), remainder = result % 1;
-			return result === result ? remainder ? result - remainder : result : 0;
-		}
-		module.exports = toInteger;
-	}));
-	//#endregion
-	//#region node_modules/lodash/before.js
-	var require_before = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var toInteger = require_toInteger();
-		/** Error message constants. */
-		var FUNC_ERROR_TEXT = "Expected a function";
-		/**
-		* Creates a function that invokes `func`, with the `this` binding and arguments
-		* of the created function, while it's called less than `n` times. Subsequent
-		* calls to the created function return the result of the last `func` invocation.
-		*
-		* @static
-		* @memberOf _
-		* @since 3.0.0
-		* @category Function
-		* @param {number} n The number of calls at which `func` is no longer invoked.
-		* @param {Function} func The function to restrict.
-		* @returns {Function} Returns the new restricted function.
-		* @example
-		*
-		* jQuery(element).on('click', _.before(5, addContactToList));
-		* // => Allows adding up to 4 contacts to the list.
-		*/
-		function before(n, func) {
-			var result;
-			if (typeof func != "function") throw new TypeError(FUNC_ERROR_TEXT);
-			n = toInteger(n);
-			return function() {
-				if (--n > 0) result = func.apply(this, arguments);
-				if (n <= 1) func = void 0;
-				return result;
-			};
-		}
-		module.exports = before;
-	}));
-	//#endregion
-	//#region node_modules/lodash/once.js
-	var require_once = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var before = require_before();
-		/**
-		* Creates a function that is restricted to invoking `func` once. Repeat calls
-		* to the function return the value of the first invocation. The `func` is
-		* invoked with the `this` binding and arguments of the created function.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Function
-		* @param {Function} func The function to restrict.
-		* @returns {Function} Returns the new restricted function.
-		* @example
-		*
-		* var initialize = _.once(createApplication);
-		* initialize();
-		* initialize();
-		* // => `createApplication` is invoked once
-		*/
-		function once(func) {
-			return before(2, func);
-		}
-		module.exports = once;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseTimes.js
-	var require__baseTimes = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.times` without support for iteratee shorthands
-		* or max array length checks.
-		*
-		* @private
-		* @param {number} n The number of times to invoke `iteratee`.
-		* @param {Function} iteratee The function invoked per iteration.
-		* @returns {Array} Returns the array of results.
-		*/
-		function baseTimes(n, iteratee) {
-			var index = -1, result = Array(n);
-			while (++index < n) result[index] = iteratee(index);
-			return result;
-		}
-		module.exports = baseTimes;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsArguments.js
-	var require__baseIsArguments = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGetTag = require__baseGetTag();
-		var isObjectLike = require_isObjectLike();
-		/** `Object#toString` result references. */
-		var argsTag = "[object Arguments]";
-		/**
-		* The base implementation of `_.isArguments`.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is an `arguments` object,
-		*/
-		function baseIsArguments(value) {
-			return isObjectLike(value) && baseGetTag(value) == argsTag;
-		}
-		module.exports = baseIsArguments;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isArguments.js
-	var require_isArguments = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsArguments = require__baseIsArguments();
-		var isObjectLike = require_isObjectLike();
-		/** Used for built-in method references. */
-		var objectProto = Object.prototype;
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = objectProto.hasOwnProperty;
-		/** Built-in value references. */
-		var propertyIsEnumerable = objectProto.propertyIsEnumerable;
-		module.exports = baseIsArguments(function() {
-			return arguments;
-		}()) ? baseIsArguments : function(value) {
-			return isObjectLike(value) && hasOwnProperty.call(value, "callee") && !propertyIsEnumerable.call(value, "callee");
-		};
-	}));
-	//#endregion
-	//#region node_modules/lodash/isArray.js
-	var require_isArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = Array.isArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/stubFalse.js
-	var require_stubFalse = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* This method returns `false`.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.13.0
-		* @category Util
-		* @returns {boolean} Returns `false`.
-		* @example
-		*
-		* _.times(2, _.stubFalse);
-		* // => [false, false]
-		*/
-		function stubFalse() {
-			return false;
-		}
-		module.exports = stubFalse;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isBuffer.js
-	var require_isBuffer = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var root = require__root();
-		var stubFalse = require_stubFalse();
-		/** Detect free variable `exports`. */
-		var freeExports = typeof exports == "object" && exports && !exports.nodeType && exports;
-		/** Detect free variable `module`. */
-		var freeModule = freeExports && typeof module == "object" && module && !module.nodeType && module;
-		/** Built-in value references. */
-		var Buffer = freeModule && freeModule.exports === freeExports ? root.Buffer : void 0;
-		module.exports = (Buffer ? Buffer.isBuffer : void 0) || stubFalse;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_isIndex.js
-	var require__isIndex = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used as references for various `Number` constants. */
-		var MAX_SAFE_INTEGER = 9007199254740991;
-		/** Used to detect unsigned integer values. */
-		var reIsUint = /^(?:0|[1-9]\d*)$/;
-		/**
-		* Checks if `value` is a valid array-like index.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
-		* @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
-		*/
-		function isIndex(value, length) {
-			var type = typeof value;
-			length = length == null ? MAX_SAFE_INTEGER : length;
-			return !!length && (type == "number" || type != "symbol" && reIsUint.test(value)) && value > -1 && value % 1 == 0 && value < length;
-		}
-		module.exports = isIndex;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isLength.js
-	var require_isLength = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used as references for various `Number` constants. */
-		var MAX_SAFE_INTEGER = 9007199254740991;
-		/**
-		* Checks if `value` is a valid array-like length.
-		*
-		* **Note:** This method is loosely based on
-		* [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
-		* @example
-		*
-		* _.isLength(3);
-		* // => true
-		*
-		* _.isLength(Number.MIN_VALUE);
-		* // => false
-		*
-		* _.isLength(Infinity);
-		* // => false
-		*
-		* _.isLength('3');
-		* // => false
-		*/
-		function isLength(value) {
-			return typeof value == "number" && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
-		}
-		module.exports = isLength;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsTypedArray.js
-	var require__baseIsTypedArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGetTag = require__baseGetTag();
-		var isLength = require_isLength();
-		var isObjectLike = require_isObjectLike();
-		/** `Object#toString` result references. */
-		var argsTag = "[object Arguments]";
-		var arrayTag = "[object Array]";
-		var boolTag = "[object Boolean]";
-		var dateTag = "[object Date]";
-		var errorTag = "[object Error]";
-		var funcTag = "[object Function]";
-		var mapTag = "[object Map]";
-		var numberTag = "[object Number]";
-		var objectTag = "[object Object]";
-		var regexpTag = "[object RegExp]";
-		var setTag = "[object Set]";
-		var stringTag = "[object String]";
-		var weakMapTag = "[object WeakMap]";
-		var arrayBufferTag = "[object ArrayBuffer]";
-		var dataViewTag = "[object DataView]";
-		var float32Tag = "[object Float32Array]";
-		var float64Tag = "[object Float64Array]";
-		var int8Tag = "[object Int8Array]";
-		var int16Tag = "[object Int16Array]";
-		var int32Tag = "[object Int32Array]";
-		var uint8Tag = "[object Uint8Array]";
-		var uint8ClampedTag = "[object Uint8ClampedArray]";
-		var uint16Tag = "[object Uint16Array]";
-		var uint32Tag = "[object Uint32Array]";
-		/** Used to identify `toStringTag` values of typed arrays. */
-		var typedArrayTags = {};
-		typedArrayTags[float32Tag] = typedArrayTags[float64Tag] = typedArrayTags[int8Tag] = typedArrayTags[int16Tag] = typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] = typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] = typedArrayTags[uint32Tag] = true;
-		typedArrayTags[argsTag] = typedArrayTags[arrayTag] = typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] = typedArrayTags[dataViewTag] = typedArrayTags[dateTag] = typedArrayTags[errorTag] = typedArrayTags[funcTag] = typedArrayTags[mapTag] = typedArrayTags[numberTag] = typedArrayTags[objectTag] = typedArrayTags[regexpTag] = typedArrayTags[setTag] = typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
-		/**
-		* The base implementation of `_.isTypedArray` without Node.js optimizations.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
-		*/
-		function baseIsTypedArray(value) {
-			return isObjectLike(value) && isLength(value.length) && !!typedArrayTags[baseGetTag(value)];
-		}
-		module.exports = baseIsTypedArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseUnary.js
-	var require__baseUnary = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.unary` without support for storing metadata.
-		*
-		* @private
-		* @param {Function} func The function to cap arguments for.
-		* @returns {Function} Returns the new capped function.
-		*/
-		function baseUnary(func) {
-			return function(value) {
-				return func(value);
-			};
-		}
-		module.exports = baseUnary;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_nodeUtil.js
-	var require__nodeUtil = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var freeGlobal = require__freeGlobal();
-		/** Detect free variable `exports`. */
-		var freeExports = typeof exports == "object" && exports && !exports.nodeType && exports;
-		/** Detect free variable `module`. */
-		var freeModule = freeExports && typeof module == "object" && module && !module.nodeType && module;
-		/** Detect free variable `process` from Node.js. */
-		var freeProcess = freeModule && freeModule.exports === freeExports && freeGlobal.process;
-		module.exports = function() {
-			try {
-				var types = freeModule && freeModule.require && freeModule.require("util").types;
-				if (types) return types;
-				return freeProcess && freeProcess.binding && freeProcess.binding("util");
-			} catch (e) {}
-		}();
-	}));
-	//#endregion
-	//#region node_modules/lodash/isTypedArray.js
-	var require_isTypedArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsTypedArray = require__baseIsTypedArray();
-		var baseUnary = require__baseUnary();
-		var nodeUtil = require__nodeUtil();
-		var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
-		module.exports = nodeIsTypedArray ? baseUnary(nodeIsTypedArray) : baseIsTypedArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayLikeKeys.js
-	var require__arrayLikeKeys = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseTimes = require__baseTimes();
-		var isArguments = require_isArguments();
-		var isArray = require_isArray();
-		var isBuffer = require_isBuffer();
-		var isIndex = require__isIndex();
-		var isTypedArray = require_isTypedArray();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* Creates an array of the enumerable property names of the array-like `value`.
-		*
-		* @private
-		* @param {*} value The value to query.
-		* @param {boolean} inherited Specify returning inherited property names.
-		* @returns {Array} Returns the array of property names.
-		*/
-		function arrayLikeKeys(value, inherited) {
-			var isArr = isArray(value), isArg = !isArr && isArguments(value), isBuff = !isArr && !isArg && isBuffer(value), isType = !isArr && !isArg && !isBuff && isTypedArray(value), skipIndexes = isArr || isArg || isBuff || isType, result = skipIndexes ? baseTimes(value.length, String) : [], length = result.length;
-			for (var key in value) if ((inherited || hasOwnProperty.call(value, key)) && !(skipIndexes && (key == "length" || isBuff && (key == "offset" || key == "parent") || isType && (key == "buffer" || key == "byteLength" || key == "byteOffset") || isIndex(key, length)))) result.push(key);
-			return result;
-		}
-		module.exports = arrayLikeKeys;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_isPrototype.js
-	var require__isPrototype = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used for built-in method references. */
-		var objectProto = Object.prototype;
-		/**
-		* Checks if `value` is likely a prototype object.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
-		*/
-		function isPrototype(value) {
-			var Ctor = value && value.constructor;
-			return value === (typeof Ctor == "function" && Ctor.prototype || objectProto);
-		}
-		module.exports = isPrototype;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_overArg.js
-	var require__overArg = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Creates a unary function that invokes `func` with its argument transformed.
-		*
-		* @private
-		* @param {Function} func The function to wrap.
-		* @param {Function} transform The argument transform.
-		* @returns {Function} Returns the new function.
-		*/
-		function overArg(func, transform) {
-			return function(arg) {
-				return func(transform(arg));
-			};
-		}
-		module.exports = overArg;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_nativeKeys.js
-	var require__nativeKeys = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__overArg()(Object.keys, Object);
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseKeys.js
-	var require__baseKeys = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isPrototype = require__isPrototype();
-		var nativeKeys = require__nativeKeys();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* The base implementation of `_.keys` which doesn't treat sparse arrays as dense.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @returns {Array} Returns the array of property names.
-		*/
-		function baseKeys(object) {
-			if (!isPrototype(object)) return nativeKeys(object);
-			var result = [];
-			for (var key in Object(object)) if (hasOwnProperty.call(object, key) && key != "constructor") result.push(key);
-			return result;
-		}
-		module.exports = baseKeys;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isFunction.js
-	var require_isFunction = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGetTag = require__baseGetTag();
-		var isObject = require_isObject();
-		/** `Object#toString` result references. */
-		var asyncTag = "[object AsyncFunction]";
-		var funcTag = "[object Function]";
-		var genTag = "[object GeneratorFunction]";
-		var proxyTag = "[object Proxy]";
-		/**
-		* Checks if `value` is classified as a `Function` object.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a function, else `false`.
-		* @example
-		*
-		* _.isFunction(_);
-		* // => true
-		*
-		* _.isFunction(/abc/);
-		* // => false
-		*/
-		function isFunction(value) {
-			if (!isObject(value)) return false;
-			var tag = baseGetTag(value);
-			return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
-		}
-		module.exports = isFunction;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isArrayLike.js
-	var require_isArrayLike = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isFunction = require_isFunction();
-		var isLength = require_isLength();
-		/**
-		* Checks if `value` is array-like. A value is considered array-like if it's
-		* not a function and has a `value.length` that's an integer greater than or
-		* equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is array-like, else `false`.
-		* @example
-		*
-		* _.isArrayLike([1, 2, 3]);
-		* // => true
-		*
-		* _.isArrayLike(document.body.children);
-		* // => true
-		*
-		* _.isArrayLike('abc');
-		* // => true
-		*
-		* _.isArrayLike(_.noop);
-		* // => false
-		*/
-		function isArrayLike(value) {
-			return value != null && isLength(value.length) && !isFunction(value);
-		}
-		module.exports = isArrayLike;
-	}));
-	//#endregion
-	//#region node_modules/lodash/keys.js
-	var require_keys$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayLikeKeys = require__arrayLikeKeys();
-		var baseKeys = require__baseKeys();
-		var isArrayLike = require_isArrayLike();
-		/**
-		* Creates an array of the own enumerable property names of `object`.
-		*
-		* **Note:** Non-object values are coerced to objects. See the
-		* [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
-		* for more details.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Object
-		* @param {Object} object The object to query.
-		* @returns {Array} Returns the array of property names.
-		* @example
-		*
-		* function Foo() {
-		*   this.a = 1;
-		*   this.b = 2;
-		* }
-		*
-		* Foo.prototype.c = 3;
-		*
-		* _.keys(new Foo);
-		* // => ['a', 'b'] (iteration order is not guaranteed)
-		*
-		* _.keys('hi');
-		* // => ['0', '1']
-		*/
-		function keys(object) {
-			return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
-		}
-		module.exports = keys;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_coreJsData.js
-	var require__coreJsData = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__root()["__core-js_shared__"];
-	}));
-	//#endregion
-	//#region node_modules/lodash/_isMasked.js
-	var require__isMasked = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var coreJsData = require__coreJsData();
-		/** Used to detect methods masquerading as native. */
-		var maskSrcKey = function() {
-			var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || "");
-			return uid ? "Symbol(src)_1." + uid : "";
-		}();
-		/**
-		* Checks if `func` has its source masked.
-		*
-		* @private
-		* @param {Function} func The function to check.
-		* @returns {boolean} Returns `true` if `func` is masked, else `false`.
-		*/
-		function isMasked(func) {
-			return !!maskSrcKey && maskSrcKey in func;
-		}
-		module.exports = isMasked;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_toSource.js
-	var require__toSource = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to resolve the decompiled source of functions. */
-		var funcToString = Function.prototype.toString;
-		/**
-		* Converts `func` to its source code.
-		*
-		* @private
-		* @param {Function} func The function to convert.
-		* @returns {string} Returns the source code.
-		*/
-		function toSource(func) {
-			if (func != null) {
-				try {
-					return funcToString.call(func);
-				} catch (e) {}
-				try {
-					return func + "";
-				} catch (e) {}
-			}
-			return "";
-		}
-		module.exports = toSource;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsNative.js
-	var require__baseIsNative = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isFunction = require_isFunction();
-		var isMasked = require__isMasked();
-		var isObject = require_isObject();
-		var toSource = require__toSource();
-		/**
-		* Used to match `RegExp`
-		* [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
-		*/
-		var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
-		/** Used to detect host constructors (Safari). */
-		var reIsHostCtor = /^\[object .+?Constructor\]$/;
-		/** Used for built-in method references. */
-		var funcProto = Function.prototype;
-		var objectProto = Object.prototype;
-		/** Used to resolve the decompiled source of functions. */
-		var funcToString = funcProto.toString;
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = objectProto.hasOwnProperty;
-		/** Used to detect if a method is native. */
-		var reIsNative = RegExp("^" + funcToString.call(hasOwnProperty).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
-		/**
-		* The base implementation of `_.isNative` without bad shim checks.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a native function,
-		*  else `false`.
-		*/
-		function baseIsNative(value) {
-			if (!isObject(value) || isMasked(value)) return false;
-			return (isFunction(value) ? reIsNative : reIsHostCtor).test(toSource(value));
-		}
-		module.exports = baseIsNative;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getValue.js
-	var require__getValue = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Gets the value at `key` of `object`.
-		*
-		* @private
-		* @param {Object} [object] The object to query.
-		* @param {string} key The key of the property to get.
-		* @returns {*} Returns the property value.
-		*/
-		function getValue(object, key) {
-			return object == null ? void 0 : object[key];
-		}
-		module.exports = getValue;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getNative.js
-	var require__getNative = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsNative = require__baseIsNative();
-		var getValue = require__getValue();
-		/**
-		* Gets the native function at `key` of `object`.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @param {string} key The key of the method to get.
-		* @returns {*} Returns the function if it's native, else `undefined`.
-		*/
-		function getNative(object, key) {
-			var value = getValue(object, key);
-			return baseIsNative(value) ? value : void 0;
-		}
-		module.exports = getNative;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_DataView.js
-	var require__DataView = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__getNative()(require__root(), "DataView");
-	}));
-	//#endregion
-	//#region node_modules/lodash/_Map.js
-	var require__Map = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__getNative()(require__root(), "Map");
-	}));
-	//#endregion
-	//#region node_modules/lodash/_Promise.js
-	var require__Promise = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__getNative()(require__root(), "Promise");
-	}));
-	//#endregion
-	//#region node_modules/lodash/_Set.js
-	var require__Set = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__getNative()(require__root(), "Set");
-	}));
-	//#endregion
-	//#region node_modules/lodash/_WeakMap.js
-	var require__WeakMap = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__getNative()(require__root(), "WeakMap");
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getTag.js
-	var require__getTag = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var DataView = require__DataView();
-		var Map = require__Map();
-		var Promise = require__Promise();
-		var Set = require__Set();
-		var WeakMap = require__WeakMap();
-		var baseGetTag = require__baseGetTag();
-		var toSource = require__toSource();
-		/** `Object#toString` result references. */
-		var mapTag = "[object Map]";
-		var objectTag = "[object Object]";
-		var promiseTag = "[object Promise]";
-		var setTag = "[object Set]";
-		var weakMapTag = "[object WeakMap]";
-		var dataViewTag = "[object DataView]";
-		/** Used to detect maps, sets, and weakmaps. */
-		var dataViewCtorString = toSource(DataView);
-		var mapCtorString = toSource(Map);
-		var promiseCtorString = toSource(Promise);
-		var setCtorString = toSource(Set);
-		var weakMapCtorString = toSource(WeakMap);
-		/**
-		* Gets the `toStringTag` of `value`.
-		*
-		* @private
-		* @param {*} value The value to query.
-		* @returns {string} Returns the `toStringTag`.
-		*/
-		var getTag = baseGetTag;
-		if (DataView && getTag(new DataView(/* @__PURE__ */ new ArrayBuffer(1))) != dataViewTag || Map && getTag(new Map()) != mapTag || Promise && getTag(Promise.resolve()) != promiseTag || Set && getTag(new Set()) != setTag || WeakMap && getTag(new WeakMap()) != weakMapTag) getTag = function(value) {
-			var result = baseGetTag(value), Ctor = result == objectTag ? value.constructor : void 0, ctorString = Ctor ? toSource(Ctor) : "";
-			if (ctorString) switch (ctorString) {
-				case dataViewCtorString: return dataViewTag;
-				case mapCtorString: return mapTag;
-				case promiseCtorString: return promiseTag;
-				case setCtorString: return setTag;
-				case weakMapCtorString: return weakMapTag;
-			}
-			return result;
-		};
-		module.exports = getTag;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isEmpty.js
-	var require_isEmpty = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseKeys = require__baseKeys();
-		var getTag = require__getTag();
-		var isArguments = require_isArguments();
-		var isArray = require_isArray();
-		var isArrayLike = require_isArrayLike();
-		var isBuffer = require_isBuffer();
-		var isPrototype = require__isPrototype();
-		var isTypedArray = require_isTypedArray();
-		/** `Object#toString` result references. */
-		var mapTag = "[object Map]";
-		var setTag = "[object Set]";
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* Checks if `value` is an empty object, collection, map, or set.
-		*
-		* Objects are considered empty if they have no own enumerable string keyed
-		* properties.
-		*
-		* Array-like values such as `arguments` objects, arrays, buffers, strings, or
-		* jQuery-like collections are considered empty if they have a `length` of `0`.
-		* Similarly, maps and sets are considered empty if they have a `size` of `0`.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is empty, else `false`.
-		* @example
-		*
-		* _.isEmpty(null);
-		* // => true
-		*
-		* _.isEmpty(true);
-		* // => true
-		*
-		* _.isEmpty(1);
-		* // => true
-		*
-		* _.isEmpty([1, 2, 3]);
-		* // => false
-		*
-		* _.isEmpty({ 'a': 1 });
-		* // => false
-		*/
-		function isEmpty(value) {
-			if (value == null) return true;
-			if (isArrayLike(value) && (isArray(value) || typeof value == "string" || typeof value.splice == "function" || isBuffer(value) || isTypedArray(value) || isArguments(value))) return !value.length;
-			var tag = getTag(value);
-			if (tag == mapTag || tag == setTag) return !value.size;
-			if (isPrototype(value)) return !baseKeys(value).length;
-			for (var key in value) if (hasOwnProperty.call(value, key)) return false;
-			return true;
-		}
-		module.exports = isEmpty;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_defineProperty.js
-	var require__defineProperty = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getNative = require__getNative();
-		module.exports = function() {
-			try {
-				var func = getNative(Object, "defineProperty");
-				func({}, "", {});
-				return func;
-			} catch (e) {}
-		}();
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseAssignValue.js
-	var require__baseAssignValue = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var defineProperty = require__defineProperty();
-		/**
-		* The base implementation of `assignValue` and `assignMergeValue` without
-		* value checks.
-		*
-		* @private
-		* @param {Object} object The object to modify.
-		* @param {string} key The key of the property to assign.
-		* @param {*} value The value to assign.
-		*/
-		function baseAssignValue(object, key, value) {
-			if (key == "__proto__" && defineProperty) defineProperty(object, key, {
-				"configurable": true,
-				"enumerable": true,
-				"value": value,
-				"writable": true
-			});
-			else object[key] = value;
-		}
-		module.exports = baseAssignValue;
-	}));
-	//#endregion
-	//#region node_modules/lodash/eq.js
-	var require_eq = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Performs a
-		* [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
-		* comparison between two values to determine if they are equivalent.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Lang
-		* @param {*} value The value to compare.
-		* @param {*} other The other value to compare.
-		* @returns {boolean} Returns `true` if the values are equivalent, else `false`.
-		* @example
-		*
-		* var object = { 'a': 1 };
-		* var other = { 'a': 1 };
-		*
-		* _.eq(object, object);
-		* // => true
-		*
-		* _.eq(object, other);
-		* // => false
-		*
-		* _.eq('a', 'a');
-		* // => true
-		*
-		* _.eq('a', Object('a'));
-		* // => false
-		*
-		* _.eq(NaN, NaN);
-		* // => true
-		*/
-		function eq(value, other) {
-			return value === other || value !== value && other !== other;
-		}
-		module.exports = eq;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_assignValue.js
-	var require__assignValue = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseAssignValue = require__baseAssignValue();
-		var eq = require_eq();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* Assigns `value` to `key` of `object` if the existing value is not equivalent
-		* using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
-		* for equality comparisons.
-		*
-		* @private
-		* @param {Object} object The object to modify.
-		* @param {string} key The key of the property to assign.
-		* @param {*} value The value to assign.
-		*/
-		function assignValue(object, key, value) {
-			var objValue = object[key];
-			if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) || value === void 0 && !(key in object)) baseAssignValue(object, key, value);
-		}
-		module.exports = assignValue;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_copyObject.js
-	var require__copyObject = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var assignValue = require__assignValue();
-		var baseAssignValue = require__baseAssignValue();
-		/**
-		* Copies properties of `source` to `object`.
-		*
-		* @private
-		* @param {Object} source The object to copy properties from.
-		* @param {Array} props The property identifiers to copy.
-		* @param {Object} [object={}] The object to copy properties to.
-		* @param {Function} [customizer] The function to customize copied values.
-		* @returns {Object} Returns `object`.
-		*/
-		function copyObject(source, props, object, customizer) {
-			var isNew = !object;
-			object || (object = {});
-			var index = -1, length = props.length;
-			while (++index < length) {
-				var key = props[index];
-				var newValue = customizer ? customizer(object[key], source[key], key, object, source) : void 0;
-				if (newValue === void 0) newValue = source[key];
-				if (isNew) baseAssignValue(object, key, newValue);
-				else assignValue(object, key, newValue);
-			}
-			return object;
-		}
-		module.exports = copyObject;
-	}));
-	//#endregion
-	//#region node_modules/lodash/identity.js
-	var require_identity = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* This method returns the first argument it receives.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Util
-		* @param {*} value Any value.
-		* @returns {*} Returns `value`.
-		* @example
-		*
-		* var object = { 'a': 1 };
-		*
-		* console.log(_.identity(object) === object);
-		* // => true
-		*/
-		function identity(value) {
-			return value;
-		}
-		module.exports = identity;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_apply.js
-	var require__apply = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A faster alternative to `Function#apply`, this function invokes `func`
-		* with the `this` binding of `thisArg` and the arguments of `args`.
-		*
-		* @private
-		* @param {Function} func The function to invoke.
-		* @param {*} thisArg The `this` binding of `func`.
-		* @param {Array} args The arguments to invoke `func` with.
-		* @returns {*} Returns the result of `func`.
-		*/
-		function apply(func, thisArg, args) {
-			switch (args.length) {
-				case 0: return func.call(thisArg);
-				case 1: return func.call(thisArg, args[0]);
-				case 2: return func.call(thisArg, args[0], args[1]);
-				case 3: return func.call(thisArg, args[0], args[1], args[2]);
-			}
-			return func.apply(thisArg, args);
-		}
-		module.exports = apply;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_overRest.js
-	var require__overRest = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var apply = require__apply();
-		var nativeMax = Math.max;
-		/**
-		* A specialized version of `baseRest` which transforms the rest array.
-		*
-		* @private
-		* @param {Function} func The function to apply a rest parameter to.
-		* @param {number} [start=func.length-1] The start position of the rest parameter.
-		* @param {Function} transform The rest array transform.
-		* @returns {Function} Returns the new function.
-		*/
-		function overRest(func, start, transform) {
-			start = nativeMax(start === void 0 ? func.length - 1 : start, 0);
-			return function() {
-				var args = arguments, index = -1, length = nativeMax(args.length - start, 0), array = Array(length);
-				while (++index < length) array[index] = args[start + index];
-				index = -1;
-				var otherArgs = Array(start + 1);
-				while (++index < start) otherArgs[index] = args[index];
-				otherArgs[start] = transform(array);
-				return apply(func, this, otherArgs);
-			};
-		}
-		module.exports = overRest;
-	}));
-	//#endregion
-	//#region node_modules/lodash/constant.js
-	var require_constant = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Creates a function that returns `value`.
-		*
-		* @static
-		* @memberOf _
-		* @since 2.4.0
-		* @category Util
-		* @param {*} value The value to return from the new function.
-		* @returns {Function} Returns the new constant function.
-		* @example
-		*
-		* var objects = _.times(2, _.constant({ 'a': 1 }));
-		*
-		* console.log(objects);
-		* // => [{ 'a': 1 }, { 'a': 1 }]
-		*
-		* console.log(objects[0] === objects[1]);
-		* // => true
-		*/
-		function constant(value) {
-			return function() {
-				return value;
-			};
-		}
-		module.exports = constant;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseSetToString.js
-	var require__baseSetToString = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var constant = require_constant();
-		var defineProperty = require__defineProperty();
-		var identity = require_identity();
-		module.exports = !defineProperty ? identity : function(func, string) {
-			return defineProperty(func, "toString", {
-				"configurable": true,
-				"enumerable": false,
-				"value": constant(string),
-				"writable": true
-			});
-		};
-	}));
-	//#endregion
-	//#region node_modules/lodash/_shortOut.js
-	var require__shortOut = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to detect hot functions by number of calls within a span of milliseconds. */
-		var HOT_COUNT = 800;
-		var HOT_SPAN = 16;
-		var nativeNow = Date.now;
-		/**
-		* Creates a function that'll short out and invoke `identity` instead
-		* of `func` when it's called `HOT_COUNT` or more times in `HOT_SPAN`
-		* milliseconds.
-		*
-		* @private
-		* @param {Function} func The function to restrict.
-		* @returns {Function} Returns the new shortable function.
-		*/
-		function shortOut(func) {
-			var count = 0, lastCalled = 0;
-			return function() {
-				var stamp = nativeNow(), remaining = HOT_SPAN - (stamp - lastCalled);
-				lastCalled = stamp;
-				if (remaining > 0) {
-					if (++count >= HOT_COUNT) return arguments[0];
-				} else count = 0;
-				return func.apply(void 0, arguments);
-			};
-		}
-		module.exports = shortOut;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_setToString.js
-	var require__setToString = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseSetToString = require__baseSetToString();
-		module.exports = require__shortOut()(baseSetToString);
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseRest.js
-	var require__baseRest = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var identity = require_identity();
-		var overRest = require__overRest();
-		var setToString = require__setToString();
-		/**
-		* The base implementation of `_.rest` which doesn't validate or coerce arguments.
-		*
-		* @private
-		* @param {Function} func The function to apply a rest parameter to.
-		* @param {number} [start=func.length-1] The start position of the rest parameter.
-		* @returns {Function} Returns the new function.
-		*/
-		function baseRest(func, start) {
-			return setToString(overRest(func, start, identity), func + "");
-		}
-		module.exports = baseRest;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_isIterateeCall.js
-	var require__isIterateeCall = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var eq = require_eq();
-		var isArrayLike = require_isArrayLike();
-		var isIndex = require__isIndex();
-		var isObject = require_isObject();
-		/**
-		* Checks if the given arguments are from an iteratee call.
-		*
-		* @private
-		* @param {*} value The potential iteratee value argument.
-		* @param {*} index The potential iteratee index or key argument.
-		* @param {*} object The potential iteratee object argument.
-		* @returns {boolean} Returns `true` if the arguments are from an iteratee call,
-		*  else `false`.
-		*/
-		function isIterateeCall(value, index, object) {
-			if (!isObject(object)) return false;
-			var type = typeof index;
-			if (type == "number" ? isArrayLike(object) && isIndex(index, object.length) : type == "string" && index in object) return eq(object[index], value);
-			return false;
-		}
-		module.exports = isIterateeCall;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createAssigner.js
-	var require__createAssigner = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseRest = require__baseRest();
-		var isIterateeCall = require__isIterateeCall();
-		/**
-		* Creates a function like `_.assign`.
-		*
-		* @private
-		* @param {Function} assigner The function to assign values.
-		* @returns {Function} Returns the new assigner function.
-		*/
-		function createAssigner(assigner) {
-			return baseRest(function(object, sources) {
-				var index = -1, length = sources.length, customizer = length > 1 ? sources[length - 1] : void 0, guard = length > 2 ? sources[2] : void 0;
-				customizer = assigner.length > 3 && typeof customizer == "function" ? (length--, customizer) : void 0;
-				if (guard && isIterateeCall(sources[0], sources[1], guard)) {
-					customizer = length < 3 ? void 0 : customizer;
-					length = 1;
-				}
-				object = Object(object);
-				while (++index < length) {
-					var source = sources[index];
-					if (source) assigner(object, source, index, customizer);
-				}
-				return object;
-			});
-		}
-		module.exports = createAssigner;
-	}));
-	//#endregion
-	//#region node_modules/lodash/assign.js
-	var require_assign$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var assignValue = require__assignValue();
-		var copyObject = require__copyObject();
-		var createAssigner = require__createAssigner();
-		var isArrayLike = require_isArrayLike();
-		var isPrototype = require__isPrototype();
-		var keys = require_keys$2();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		module.exports = createAssigner(function(object, source) {
-			if (isPrototype(source) || isArrayLike(source)) {
-				copyObject(source, keys(source), object);
-				return;
-			}
-			for (var key in source) if (hasOwnProperty.call(source, key)) assignValue(object, key, source[key]);
-		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayEach.js
-	var require__arrayEach = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `_.forEach` for arrays without support for
-		* iteratee shorthands.
-		*
-		* @private
-		* @param {Array} [array] The array to iterate over.
-		* @param {Function} iteratee The function invoked per iteration.
-		* @returns {Array} Returns `array`.
-		*/
-		function arrayEach(array, iteratee) {
-			var index = -1, length = array == null ? 0 : array.length;
-			while (++index < length) if (iteratee(array[index], index, array) === false) break;
-			return array;
-		}
-		module.exports = arrayEach;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createBaseFor.js
-	var require__createBaseFor = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Creates a base function for methods like `_.forIn` and `_.forOwn`.
-		*
-		* @private
-		* @param {boolean} [fromRight] Specify iterating from right to left.
-		* @returns {Function} Returns the new base function.
-		*/
-		function createBaseFor(fromRight) {
-			return function(object, iteratee, keysFunc) {
-				var index = -1, iterable = Object(object), props = keysFunc(object), length = props.length;
-				while (length--) {
-					var key = props[fromRight ? length : ++index];
-					if (iteratee(iterable[key], key, iterable) === false) break;
-				}
-				return object;
-			};
-		}
-		module.exports = createBaseFor;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseFor.js
-	var require__baseFor = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__createBaseFor()();
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseForOwn.js
-	var require__baseForOwn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseFor = require__baseFor();
-		var keys = require_keys$2();
-		/**
-		* The base implementation of `_.forOwn` without support for iteratee shorthands.
-		*
-		* @private
-		* @param {Object} object The object to iterate over.
-		* @param {Function} iteratee The function invoked per iteration.
-		* @returns {Object} Returns `object`.
-		*/
-		function baseForOwn(object, iteratee) {
-			return object && baseFor(object, iteratee, keys);
-		}
-		module.exports = baseForOwn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createBaseEach.js
-	var require__createBaseEach = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isArrayLike = require_isArrayLike();
-		/**
-		* Creates a `baseEach` or `baseEachRight` function.
-		*
-		* @private
-		* @param {Function} eachFunc The function to iterate over a collection.
-		* @param {boolean} [fromRight] Specify iterating from right to left.
-		* @returns {Function} Returns the new base function.
-		*/
-		function createBaseEach(eachFunc, fromRight) {
-			return function(collection, iteratee) {
-				if (collection == null) return collection;
-				if (!isArrayLike(collection)) return eachFunc(collection, iteratee);
-				var length = collection.length, index = fromRight ? length : -1, iterable = Object(collection);
-				while (fromRight ? index-- : ++index < length) if (iteratee(iterable[index], index, iterable) === false) break;
-				return collection;
-			};
-		}
-		module.exports = createBaseEach;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseEach.js
-	var require__baseEach = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseForOwn = require__baseForOwn();
-		module.exports = require__createBaseEach()(baseForOwn);
-	}));
-	//#endregion
-	//#region node_modules/lodash/_castFunction.js
-	var require__castFunction = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var identity = require_identity();
-		/**
-		* Casts `value` to `identity` if it's not a function.
-		*
-		* @private
-		* @param {*} value The value to inspect.
-		* @returns {Function} Returns cast function.
-		*/
-		function castFunction(value) {
-			return typeof value == "function" ? value : identity;
-		}
-		module.exports = castFunction;
-	}));
-	//#endregion
-	//#region node_modules/lodash/forEach.js
-	var require_forEach = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayEach = require__arrayEach();
-		var baseEach = require__baseEach();
-		var castFunction = require__castFunction();
-		var isArray = require_isArray();
-		/**
-		* Iterates over elements of `collection` and invokes `iteratee` for each element.
-		* The iteratee is invoked with three arguments: (value, index|key, collection).
-		* Iteratee functions may exit iteration early by explicitly returning `false`.
-		*
-		* **Note:** As with other "Collections" methods, objects with a "length"
-		* property are iterated like arrays. To avoid this behavior use `_.forIn`
-		* or `_.forOwn` for object iteration.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @alias each
-		* @category Collection
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} [iteratee=_.identity] The function invoked per iteration.
-		* @returns {Array|Object} Returns `collection`.
-		* @see _.forEachRight
-		* @example
-		*
-		* _.forEach([1, 2], function(value) {
-		*   console.log(value);
-		* });
-		* // => Logs `1` then `2`.
-		*
-		* _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
-		*   console.log(key);
-		* });
-		* // => Logs 'a' then 'b' (iteration order is not guaranteed).
-		*/
-		function forEach(collection, iteratee) {
-			return (isArray(collection) ? arrayEach : baseEach)(collection, castFunction(iteratee));
-		}
-		module.exports = forEach;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayMap.js
-	var require__arrayMap = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `_.map` for arrays without support for iteratee
-		* shorthands.
-		*
-		* @private
-		* @param {Array} [array] The array to iterate over.
-		* @param {Function} iteratee The function invoked per iteration.
-		* @returns {Array} Returns the new mapped array.
-		*/
-		function arrayMap(array, iteratee) {
-			var index = -1, length = array == null ? 0 : array.length, result = Array(length);
-			while (++index < length) result[index] = iteratee(array[index], index, array);
-			return result;
-		}
-		module.exports = arrayMap;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseToString.js
-	var require__baseToString = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Symbol = require__Symbol();
-		var arrayMap = require__arrayMap();
-		var isArray = require_isArray();
-		var isSymbol = require_isSymbol();
-		/** Used as references for various `Number` constants. */
-		var INFINITY = Infinity;
-		/** Used to convert symbols to primitives and strings. */
-		var symbolProto = Symbol ? Symbol.prototype : void 0;
-		var symbolToString = symbolProto ? symbolProto.toString : void 0;
-		/**
-		* The base implementation of `_.toString` which doesn't convert nullish
-		* values to empty strings.
-		*
-		* @private
-		* @param {*} value The value to process.
-		* @returns {string} Returns the string.
-		*/
-		function baseToString(value) {
-			if (typeof value == "string") return value;
-			if (isArray(value)) return arrayMap(value, baseToString) + "";
-			if (isSymbol(value)) return symbolToString ? symbolToString.call(value) : "";
-			var result = value + "";
-			return result == "0" && 1 / value == -INFINITY ? "-0" : result;
-		}
-		module.exports = baseToString;
-	}));
-	//#endregion
-	//#region node_modules/lodash/toString.js
-	var require_toString = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseToString = require__baseToString();
-		/**
-		* Converts `value` to a string. An empty string is returned for `null`
-		* and `undefined` values. The sign of `-0` is preserved.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Lang
-		* @param {*} value The value to convert.
-		* @returns {string} Returns the converted string.
-		* @example
-		*
-		* _.toString(null);
-		* // => ''
-		*
-		* _.toString(-0);
-		* // => '-0'
-		*
-		* _.toString([1, 2, 3]);
-		* // => '1,2,3'
-		*/
-		function toString(value) {
-			return value == null ? "" : baseToString(value);
-		}
-		module.exports = toString;
-	}));
-	//#endregion
-	//#region node_modules/lodash/uniqueId.js
-	var require_uniqueId = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var toString = require_toString();
-		/** Used to generate unique IDs. */
-		var idCounter = 0;
-		/**
-		* Generates a unique ID. If `prefix` is given, the ID is appended to it.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Util
-		* @param {string} [prefix=''] The value to prefix the ID with.
-		* @returns {string} Returns the unique ID.
-		* @example
-		*
-		* _.uniqueId('contact_');
-		* // => 'contact_104'
-		*
-		* _.uniqueId();
-		* // => '105'
-		*/
-		function uniqueId(prefix) {
-			var id = ++idCounter;
-			return toString(prefix) + id;
-		}
-		module.exports = uniqueId;
-	}));
-	//#endregion
-	//#region node_modules/ampersand-app/node_modules/ampersand-events/libs/utils.js
-	var require_utils$3 = /* @__PURE__ */ __commonJSMin(((exports) => {
-		var uniqueId = require_uniqueId();
-		var eventSplitter = /\s+/;
-		exports.triggerEvents = function triggerEvents(events, args) {
-			var ev;
-			var i = -1;
-			var l = events.length;
-			var a1 = args[0];
-			var a2 = args[1];
-			var a3 = args[2];
-			switch (args.length) {
-				case 0:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx);
-					return;
-				case 1:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1);
-					return;
-				case 2:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1, a2);
-					return;
-				case 3:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1, a2, a3);
-					return;
-				default:
-					while (++i < l) (ev = events[i]).callback.apply(ev.ctx, args);
-					return;
-			}
-		};
-		exports.eventsApi = function eventsApi(obj, action, name, rest) {
-			if (!name) return true;
-			if (typeof name === "object") {
-				for (var key in name) obj[action].apply(obj, [key, name[key]].concat(rest));
-				return false;
-			}
-			if (eventSplitter.test(name)) {
-				var names = name.split(eventSplitter);
-				for (var i = 0, l = names.length; i < l; i++) obj[action].apply(obj, [names[i]].concat(rest));
-				return false;
-			}
-			return true;
-		};
-		exports.createListenMethod = function createListenMethod(implementation) {
-			return function listenMethod(obj, name, callback) {
-				if (!obj) throw new Error("Trying to listenTo event: '" + name + "' but the target object is undefined");
-				var listeningTo = this._listeningTo || (this._listeningTo = {});
-				var id = obj._listenId || (obj._listenId = uniqueId("l"));
-				listeningTo[id] = obj;
-				if (!callback && typeof name === "object") callback = this;
-				if (typeof obj[implementation] !== "function") throw new Error("Trying to listenTo event: '" + name + "' on object: " + obj.toString() + " but it does not have an 'on' method so is unbindable");
-				obj[implementation](name, callback, this);
-				return this;
-			};
-		};
-	}));
-	//#endregion
-	//#region node_modules/ampersand-app/node_modules/ampersand-events/ampersand-events.js
-	var require_ampersand_events$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var runOnce = require_once();
-		var keys = require_keys$2();
-		var isEmpty = require_isEmpty();
-		var assign = require_assign$2();
-		var forEach = require_forEach();
-		var slice = Array.prototype.slice;
-		var utils = require_utils$3();
-		var Events = {
-			on: function(name, callback, context) {
-				if (!utils.eventsApi(this, "on", name, [callback, context]) || !callback) return this;
-				this._events || (this._events = {});
-				(this._events[name] || (this._events[name] = [])).push({
-					callback,
-					context,
-					ctx: context || this
-				});
-				return this;
-			},
-			once: function(name, callback, context) {
-				if (!utils.eventsApi(this, "once", name, [callback, context]) || !callback) return this;
-				var self = this;
-				var once = runOnce(function() {
-					self.off(name, once);
-					callback.apply(this, arguments);
-				});
-				once._callback = callback;
-				return this.on(name, once, context);
-			},
-			off: function(name, callback, context) {
-				var retain, ev, events, names, i, l, j, k;
-				if (!this._events || !utils.eventsApi(this, "off", name, [callback, context])) return this;
-				if (!name && !callback && !context) {
-					this._events = void 0;
-					return this;
-				}
-				names = name ? [name] : keys(this._events);
-				for (i = 0, l = names.length; i < l; i++) {
-					name = names[i];
-					if (events = this._events[name]) {
-						this._events[name] = retain = [];
-						if (callback || context) for (j = 0, k = events.length; j < k; j++) {
-							ev = events[j];
-							if (callback && callback !== ev.callback && callback !== ev.callback._callback || context && context !== ev.context) retain.push(ev);
-						}
-						if (!retain.length) delete this._events[name];
-					}
-				}
-				return this;
-			},
-			trigger: function(name) {
-				if (!this._events) return this;
-				var args = slice.call(arguments, 1);
-				if (!utils.eventsApi(this, "trigger", name, args)) return this;
-				var events = this._events[name];
-				var allEvents = this._events.all;
-				if (events) utils.triggerEvents(events, args);
-				if (allEvents) utils.triggerEvents(allEvents, arguments);
-				return this;
-			},
-			stopListening: function(obj, name, callback) {
-				var listeningTo = this._listeningTo;
-				if (!listeningTo) return this;
-				var remove = !name && !callback;
-				if (!callback && typeof name === "object") callback = this;
-				if (obj) (listeningTo = {})[obj._listenId] = obj;
-				var self = this;
-				forEach(listeningTo, function(item, id) {
-					item.off(name, callback, self);
-					if (remove || isEmpty(item._events)) delete self._listeningTo[id];
-				});
-				return this;
-			},
-			createEmitter: function(obj) {
-				return assign(obj || {}, Events);
-			},
-			listenTo: utils.createListenMethod("on"),
-			listenToOnce: utils.createListenMethod("once"),
-			listenToAndRun: function(obj, name, callback) {
-				this.listenTo.apply(this, arguments);
-				if (!callback && typeof name === "object") callback = this;
-				callback.apply(this);
-				return this;
-			}
-		};
-		Events.bind = Events.on;
-		Events.unbind = Events.off;
-		Events.removeListener = Events.off;
-		Events.removeAllListeners = Events.off;
-		Events.emit = Events.trigger;
-		module.exports = Events;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_copyArray.js
-	var require__copyArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Copies the values of `source` to `array`.
-		*
-		* @private
-		* @param {Array} source The array to copy values from.
-		* @param {Array} [array=[]] The array to copy values to.
-		* @returns {Array} Returns `array`.
-		*/
-		function copyArray(source, array) {
-			var index = -1, length = source.length;
-			array || (array = Array(length));
-			while (++index < length) array[index] = source[index];
-			return array;
-		}
-		module.exports = copyArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isString.js
-	var require_isString = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGetTag = require__baseGetTag();
-		var isArray = require_isArray();
-		var isObjectLike = require_isObjectLike();
-		/** `Object#toString` result references. */
-		var stringTag = "[object String]";
-		/**
-		* Checks if `value` is classified as a `String` primitive or object.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a string, else `false`.
-		* @example
-		*
-		* _.isString('abc');
-		* // => true
-		*
-		* _.isString(1);
-		* // => false
-		*/
-		function isString(value) {
-			return typeof value == "string" || !isArray(value) && isObjectLike(value) && baseGetTag(value) == stringTag;
-		}
-		module.exports = isString;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_iteratorToArray.js
-	var require__iteratorToArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Converts `iterator` to an array.
-		*
-		* @private
-		* @param {Object} iterator The iterator to convert.
-		* @returns {Array} Returns the converted array.
-		*/
-		function iteratorToArray(iterator) {
-			var data, result = [];
-			while (!(data = iterator.next()).done) result.push(data.value);
-			return result;
-		}
-		module.exports = iteratorToArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_mapToArray.js
-	var require__mapToArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Converts `map` to its key-value pairs.
-		*
-		* @private
-		* @param {Object} map The map to convert.
-		* @returns {Array} Returns the key-value pairs.
-		*/
-		function mapToArray(map) {
-			var index = -1, result = Array(map.size);
-			map.forEach(function(value, key) {
-				result[++index] = [key, value];
-			});
-			return result;
-		}
-		module.exports = mapToArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_setToArray.js
-	var require__setToArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Converts `set` to an array of its values.
-		*
-		* @private
-		* @param {Object} set The set to convert.
-		* @returns {Array} Returns the values.
-		*/
-		function setToArray(set) {
-			var index = -1, result = Array(set.size);
-			set.forEach(function(value) {
-				result[++index] = value;
-			});
-			return result;
-		}
-		module.exports = setToArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_asciiToArray.js
-	var require__asciiToArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Converts an ASCII `string` to an array.
-		*
-		* @private
-		* @param {string} string The string to convert.
-		* @returns {Array} Returns the converted array.
-		*/
-		function asciiToArray(string) {
-			return string.split("");
-		}
-		module.exports = asciiToArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_hasUnicode.js
-	var require__hasUnicode = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to detect strings with [zero-width joiners or code points from the astral planes](http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */
-		var reHasUnicode = RegExp("[\\u200d\\ud800-\\udfff\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff\\ufe0e\\ufe0f]");
-		/**
-		* Checks if `string` contains Unicode symbols.
-		*
-		* @private
-		* @param {string} string The string to inspect.
-		* @returns {boolean} Returns `true` if a symbol is found, else `false`.
-		*/
-		function hasUnicode(string) {
-			return reHasUnicode.test(string);
-		}
-		module.exports = hasUnicode;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_unicodeToArray.js
-	var require__unicodeToArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to compose unicode character classes. */
-		var rsAstralRange = "\\ud800-\\udfff";
-		var rsComboRange = "\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff";
-		var rsVarRange = "\\ufe0e\\ufe0f";
-		/** Used to compose unicode capture groups. */
-		var rsAstral = "[" + rsAstralRange + "]";
-		var rsCombo = "[" + rsComboRange + "]";
-		var rsFitz = "\\ud83c[\\udffb-\\udfff]";
-		var rsModifier = "(?:" + rsCombo + "|" + rsFitz + ")";
-		var rsNonAstral = "[^" + rsAstralRange + "]";
-		var rsRegional = "(?:\\ud83c[\\udde6-\\uddff]){2}";
-		var rsSurrPair = "[\\ud800-\\udbff][\\udc00-\\udfff]";
-		var rsZWJ = "\\u200d";
-		/** Used to compose unicode regexes. */
-		var reOptMod = rsModifier + "?";
-		var rsOptVar = "[" + rsVarRange + "]?";
-		var rsOptJoin = "(?:" + rsZWJ + "(?:" + [
-			rsNonAstral,
-			rsRegional,
-			rsSurrPair
-		].join("|") + ")" + rsOptVar + reOptMod + ")*";
-		var rsSeq = rsOptVar + reOptMod + rsOptJoin;
-		var rsSymbol = "(?:" + [
-			rsNonAstral + rsCombo + "?",
-			rsCombo,
-			rsRegional,
-			rsSurrPair,
-			rsAstral
-		].join("|") + ")";
-		/** Used to match [string symbols](https://mathiasbynens.be/notes/javascript-unicode). */
-		var reUnicode = RegExp(rsFitz + "(?=" + rsFitz + ")|" + rsSymbol + rsSeq, "g");
-		/**
-		* Converts a Unicode `string` to an array.
-		*
-		* @private
-		* @param {string} string The string to convert.
-		* @returns {Array} Returns the converted array.
-		*/
-		function unicodeToArray(string) {
-			return string.match(reUnicode) || [];
-		}
-		module.exports = unicodeToArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_stringToArray.js
-	var require__stringToArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var asciiToArray = require__asciiToArray();
-		var hasUnicode = require__hasUnicode();
-		var unicodeToArray = require__unicodeToArray();
-		/**
-		* Converts `string` to an array.
-		*
-		* @private
-		* @param {string} string The string to convert.
-		* @returns {Array} Returns the converted array.
-		*/
-		function stringToArray(string) {
-			return hasUnicode(string) ? unicodeToArray(string) : asciiToArray(string);
-		}
-		module.exports = stringToArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseValues.js
-	var require__baseValues = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayMap = require__arrayMap();
-		/**
-		* The base implementation of `_.values` and `_.valuesIn` which creates an
-		* array of `object` property values corresponding to the property names
-		* of `props`.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @param {Array} props The property names to get values for.
-		* @returns {Object} Returns the array of property values.
-		*/
-		function baseValues(object, props) {
-			return arrayMap(props, function(key) {
-				return object[key];
-			});
-		}
-		module.exports = baseValues;
-	}));
-	//#endregion
-	//#region node_modules/lodash/values.js
-	var require_values$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseValues = require__baseValues();
-		var keys = require_keys$2();
-		/**
-		* Creates an array of the own enumerable string keyed property values of `object`.
-		*
-		* **Note:** Non-object values are coerced to objects.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Object
-		* @param {Object} object The object to query.
-		* @returns {Array} Returns the array of property values.
-		* @example
-		*
-		* function Foo() {
-		*   this.a = 1;
-		*   this.b = 2;
-		* }
-		*
-		* Foo.prototype.c = 3;
-		*
-		* _.values(new Foo);
-		* // => [1, 2] (iteration order is not guaranteed)
-		*
-		* _.values('hi');
-		* // => ['h', 'i']
-		*/
-		function values(object) {
-			return object == null ? [] : baseValues(object, keys(object));
-		}
-		module.exports = values;
-	}));
-	//#endregion
-	//#region node_modules/lodash/toArray.js
-	var require_toArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Symbol = require__Symbol();
-		var copyArray = require__copyArray();
-		var getTag = require__getTag();
-		var isArrayLike = require_isArrayLike();
-		var isString = require_isString();
-		var iteratorToArray = require__iteratorToArray();
-		var mapToArray = require__mapToArray();
-		var setToArray = require__setToArray();
-		var stringToArray = require__stringToArray();
-		var values = require_values$2();
-		/** `Object#toString` result references. */
-		var mapTag = "[object Map]";
-		var setTag = "[object Set]";
-		/** Built-in value references. */
-		var symIterator = Symbol ? Symbol.iterator : void 0;
-		/**
-		* Converts `value` to an array.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Lang
-		* @param {*} value The value to convert.
-		* @returns {Array} Returns the converted array.
-		* @example
-		*
-		* _.toArray({ 'a': 1, 'b': 2 });
-		* // => [1, 2]
-		*
-		* _.toArray('abc');
-		* // => ['a', 'b', 'c']
-		*
-		* _.toArray(1);
-		* // => []
-		*
-		* _.toArray(null);
-		* // => []
-		*/
-		function toArray(value) {
-			if (!value) return [];
-			if (isArrayLike(value)) return isString(value) ? stringToArray(value) : copyArray(value);
-			if (symIterator && value[symIterator]) return iteratorToArray(value[symIterator]());
-			var tag = getTag(value);
-			return (tag == mapTag ? mapToArray : tag == setTag ? setToArray : values)(value);
-		}
-		module.exports = toArray;
-	}));
-	//#endregion
-	//#region node_modules/ampersand-app/ampersand-app.js
-	var require_ampersand_app = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Events = require_ampersand_events$2();
-		var toArray = require_toArray();
-		var extend = require_assign$2();
-		var app = {
-			extend: function() {
-				var args = toArray(arguments);
-				args.unshift(this);
-				return extend.apply(null, args);
-			},
-			reset: function() {
-				this.off();
-				for (var item in this) if (item !== "extend" && item !== "reset") delete this[item];
-				Events.createEmitter(this);
-			}
-		};
-		Events.createEmitter(app);
-		module.exports = app;
-	}));
-	//#endregion
-	//#region node_modules/global/window.js
-	var require_window$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var win;
-		if (typeof window !== "undefined") win = window;
-		else if (typeof global !== "undefined") win = global;
-		else if (typeof self !== "undefined") win = self;
-		else win = {};
-		module.exports = win;
 	}));
 	//#endregion
 	//#region vite.shared/stubs/crypto.js
@@ -31283,6 +29047,1925 @@ viewBox='0 0 255 255'> \
 		module.exports = require_react_dom_production_min();
 	}));
 	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/subscribable.mjs
+	var Subscribable;
+	var init_subscribable = __esmMin((() => {
+		Subscribable = class {
+			constructor() {
+				this.listeners = /* @__PURE__ */ new Set();
+				this.subscribe = this.subscribe.bind(this);
+			}
+			subscribe(listener) {
+				const identity = { listener };
+				this.listeners.add(identity);
+				this.onSubscribe();
+				return () => {
+					this.listeners.delete(identity);
+					this.onUnsubscribe();
+				};
+			}
+			hasListeners() {
+				return this.listeners.size > 0;
+			}
+			onSubscribe() {}
+			onUnsubscribe() {}
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/utils.mjs
+	function noop$3() {}
+	function functionalUpdate(updater, input) {
+		return typeof updater === "function" ? updater(input) : updater;
+	}
+	function isValidTimeout(value) {
+		return typeof value === "number" && value >= 0 && value !== Infinity;
+	}
+	function timeUntilStale(updatedAt, staleTime) {
+		return Math.max(updatedAt + (staleTime || 0) - Date.now(), 0);
+	}
+	function parseQueryArgs(arg1, arg2, arg3) {
+		if (!isQueryKey(arg1)) return arg1;
+		if (typeof arg2 === "function") return {
+			...arg3,
+			queryKey: arg1,
+			queryFn: arg2
+		};
+		return {
+			...arg2,
+			queryKey: arg1
+		};
+	}
+	function parseMutationArgs(arg1, arg2, arg3) {
+		if (isQueryKey(arg1)) {
+			if (typeof arg2 === "function") return {
+				...arg3,
+				mutationKey: arg1,
+				mutationFn: arg2
+			};
+			return {
+				...arg2,
+				mutationKey: arg1
+			};
+		}
+		if (typeof arg1 === "function") return {
+			...arg2,
+			mutationFn: arg1
+		};
+		return { ...arg1 };
+	}
+	function parseFilterArgs(arg1, arg2, arg3) {
+		return isQueryKey(arg1) ? [{
+			...arg2,
+			queryKey: arg1
+		}, arg3] : [arg1 || {}, arg2];
+	}
+	function matchQuery(filters, query) {
+		const { type = "all", exact, fetchStatus, predicate, queryKey, stale } = filters;
+		if (isQueryKey(queryKey)) {
+			if (exact) {
+				if (query.queryHash !== hashQueryKeyByOptions(queryKey, query.options)) return false;
+			} else if (!partialMatchKey(query.queryKey, queryKey)) return false;
+		}
+		if (type !== "all") {
+			const isActive = query.isActive();
+			if (type === "active" && !isActive) return false;
+			if (type === "inactive" && isActive) return false;
+		}
+		if (typeof stale === "boolean" && query.isStale() !== stale) return false;
+		if (typeof fetchStatus !== "undefined" && fetchStatus !== query.state.fetchStatus) return false;
+		if (predicate && !predicate(query)) return false;
+		return true;
+	}
+	function matchMutation(filters, mutation) {
+		const { exact, fetching, predicate, mutationKey } = filters;
+		if (isQueryKey(mutationKey)) {
+			if (!mutation.options.mutationKey) return false;
+			if (exact) {
+				if (hashQueryKey(mutation.options.mutationKey) !== hashQueryKey(mutationKey)) return false;
+			} else if (!partialMatchKey(mutation.options.mutationKey, mutationKey)) return false;
+		}
+		if (typeof fetching === "boolean" && mutation.state.status === "loading" !== fetching) return false;
+		if (predicate && !predicate(mutation)) return false;
+		return true;
+	}
+	function hashQueryKeyByOptions(queryKey, options) {
+		return ((options == null ? void 0 : options.queryKeyHashFn) || hashQueryKey)(queryKey);
+	}
+	/**
+	* Default query keys hash function.
+	* Hashes the value into a stable hash.
+	*/
+	function hashQueryKey(queryKey) {
+		return JSON.stringify(queryKey, (_, val) => isPlainObject$1(val) ? Object.keys(val).sort().reduce((result, key) => {
+			result[key] = val[key];
+			return result;
+		}, {}) : val);
+	}
+	/**
+	* Checks if key `b` partially matches with key `a`.
+	*/
+	function partialMatchKey(a, b) {
+		return partialDeepEqual(a, b);
+	}
+	/**
+	* Checks if `b` partially matches with `a`.
+	*/
+	function partialDeepEqual(a, b) {
+		if (a === b) return true;
+		if (typeof a !== typeof b) return false;
+		if (a && b && typeof a === "object" && typeof b === "object") return !Object.keys(b).some((key) => !partialDeepEqual(a[key], b[key]));
+		return false;
+	}
+	/**
+	* This function returns `a` if `b` is deeply equal.
+	* If not, it will replace any deeply equal children of `b` with those of `a`.
+	* This can be used for structural sharing between JSON values for example.
+	*/
+	function replaceEqualDeep(a, b, depth = 0) {
+		if (a === b) return a;
+		if (depth > 500) return b;
+		const array = isPlainArray(a) && isPlainArray(b);
+		if (array || isPlainObject$1(a) && isPlainObject$1(b)) {
+			const aSize = array ? a.length : Object.keys(a).length;
+			const bItems = array ? b : Object.keys(b);
+			const bSize = bItems.length;
+			const copy = array ? [] : {};
+			let equalItems = 0;
+			for (let i = 0; i < bSize; i++) {
+				const key = array ? i : bItems[i];
+				copy[key] = replaceEqualDeep(a[key], b[key], depth + 1);
+				if (copy[key] === a[key]) equalItems++;
+			}
+			return aSize === bSize && equalItems === aSize ? a : copy;
+		}
+		return b;
+	}
+	/**
+	* Shallow compare objects. Only works with objects that always have the same properties.
+	*/
+	function shallowEqualObjects(a, b) {
+		if (a && !b || b && !a) return false;
+		for (const key in a) if (a[key] !== b[key]) return false;
+		return true;
+	}
+	function isPlainArray(value) {
+		return Array.isArray(value) && value.length === Object.keys(value).length;
+	}
+	function isPlainObject$1(o) {
+		if (!hasObjectPrototype(o)) return false;
+		const ctor = o.constructor;
+		if (typeof ctor === "undefined") return true;
+		const prot = ctor.prototype;
+		if (!hasObjectPrototype(prot)) return false;
+		if (!prot.hasOwnProperty("isPrototypeOf")) return false;
+		return true;
+	}
+	function hasObjectPrototype(o) {
+		return Object.prototype.toString.call(o) === "[object Object]";
+	}
+	function isQueryKey(value) {
+		return Array.isArray(value);
+	}
+	function sleep(timeout) {
+		return new Promise((resolve) => {
+			setTimeout(resolve, timeout);
+		});
+	}
+	/**
+	* Schedules a microtask.
+	* This can be useful to schedule state updates after rendering.
+	*/
+	function scheduleMicrotask(callback) {
+		sleep(0).then(callback);
+	}
+	function getAbortController() {
+		if (typeof AbortController === "function") return new AbortController();
+	}
+	function replaceData(prevData, data, options) {
+		if (options.isDataEqual != null && options.isDataEqual(prevData, data)) return prevData;
+		else if (typeof options.structuralSharing === "function") return options.structuralSharing(prevData, data);
+		else if (options.structuralSharing !== false) return replaceEqualDeep(prevData, data);
+		return data;
+	}
+	var isServer;
+	var init_utils$2 = __esmMin((() => {
+		isServer = typeof window === "undefined" || "Deno" in window;
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/focusManager.mjs
+	var FocusManager, focusManager;
+	var init_focusManager = __esmMin((() => {
+		init_subscribable();
+		init_utils$2();
+		FocusManager = class extends Subscribable {
+			constructor() {
+				super();
+				this.setup = (onFocus) => {
+					if (!isServer && window.addEventListener) {
+						const listener = () => onFocus();
+						window.addEventListener("visibilitychange", listener, false);
+						window.addEventListener("focus", listener, false);
+						return () => {
+							window.removeEventListener("visibilitychange", listener);
+							window.removeEventListener("focus", listener);
+						};
+					}
+				};
+			}
+			onSubscribe() {
+				if (!this.cleanup) this.setEventListener(this.setup);
+			}
+			onUnsubscribe() {
+				if (!this.hasListeners()) {
+					var _this$cleanup;
+					(_this$cleanup = this.cleanup) == null || _this$cleanup.call(this);
+					this.cleanup = void 0;
+				}
+			}
+			setEventListener(setup) {
+				var _this$cleanup2;
+				this.setup = setup;
+				(_this$cleanup2 = this.cleanup) == null || _this$cleanup2.call(this);
+				this.cleanup = setup((focused) => {
+					if (typeof focused === "boolean") this.setFocused(focused);
+					else this.onFocus();
+				});
+			}
+			setFocused(focused) {
+				if (this.focused !== focused) {
+					this.focused = focused;
+					this.onFocus();
+				}
+			}
+			onFocus() {
+				this.listeners.forEach(({ listener }) => {
+					listener();
+				});
+			}
+			isFocused() {
+				if (typeof this.focused === "boolean") return this.focused;
+				if (typeof document === "undefined") return true;
+				return [
+					void 0,
+					"visible",
+					"prerender"
+				].includes(document.visibilityState);
+			}
+		};
+		focusManager = new FocusManager();
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/onlineManager.mjs
+	var onlineEvents, OnlineManager, onlineManager;
+	var init_onlineManager = __esmMin((() => {
+		init_subscribable();
+		init_utils$2();
+		onlineEvents = ["online", "offline"];
+		OnlineManager = class extends Subscribable {
+			constructor() {
+				super();
+				this.setup = (onOnline) => {
+					if (!isServer && window.addEventListener) {
+						const listener = () => onOnline();
+						onlineEvents.forEach((event) => {
+							window.addEventListener(event, listener, false);
+						});
+						return () => {
+							onlineEvents.forEach((event) => {
+								window.removeEventListener(event, listener);
+							});
+						};
+					}
+				};
+			}
+			onSubscribe() {
+				if (!this.cleanup) this.setEventListener(this.setup);
+			}
+			onUnsubscribe() {
+				if (!this.hasListeners()) {
+					var _this$cleanup;
+					(_this$cleanup = this.cleanup) == null || _this$cleanup.call(this);
+					this.cleanup = void 0;
+				}
+			}
+			setEventListener(setup) {
+				var _this$cleanup2;
+				this.setup = setup;
+				(_this$cleanup2 = this.cleanup) == null || _this$cleanup2.call(this);
+				this.cleanup = setup((online) => {
+					if (typeof online === "boolean") this.setOnline(online);
+					else this.onOnline();
+				});
+			}
+			setOnline(online) {
+				if (this.online !== online) {
+					this.online = online;
+					this.onOnline();
+				}
+			}
+			onOnline() {
+				this.listeners.forEach(({ listener }) => {
+					listener();
+				});
+			}
+			isOnline() {
+				if (typeof this.online === "boolean") return this.online;
+				if (typeof navigator === "undefined" || typeof navigator.onLine === "undefined") return true;
+				return navigator.onLine;
+			}
+		};
+		onlineManager = new OnlineManager();
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/retryer.mjs
+	function defaultRetryDelay(failureCount) {
+		return Math.min(1e3 * 2 ** failureCount, 3e4);
+	}
+	function canFetch(networkMode) {
+		return (networkMode != null ? networkMode : "online") === "online" ? onlineManager.isOnline() : true;
+	}
+	function isCancelledError(value) {
+		return value instanceof CancelledError;
+	}
+	function createRetryer(config) {
+		let isRetryCancelled = false;
+		let failureCount = 0;
+		let isResolved = false;
+		let continueFn;
+		let promiseResolve;
+		let promiseReject;
+		const promise = new Promise((outerResolve, outerReject) => {
+			promiseResolve = outerResolve;
+			promiseReject = outerReject;
+		});
+		const cancel = (cancelOptions) => {
+			if (!isResolved) {
+				reject(new CancelledError(cancelOptions));
+				config.abort == null || config.abort();
+			}
+		};
+		const cancelRetry = () => {
+			isRetryCancelled = true;
+		};
+		const continueRetry = () => {
+			isRetryCancelled = false;
+		};
+		const shouldPause = () => !focusManager.isFocused() || config.networkMode !== "always" && !onlineManager.isOnline();
+		const resolve = (value) => {
+			if (!isResolved) {
+				isResolved = true;
+				config.onSuccess == null || config.onSuccess(value);
+				continueFn?.();
+				promiseResolve(value);
+			}
+		};
+		const reject = (value) => {
+			if (!isResolved) {
+				isResolved = true;
+				config.onError == null || config.onError(value);
+				continueFn?.();
+				promiseReject(value);
+			}
+		};
+		const pause = () => {
+			return new Promise((continueResolve) => {
+				continueFn = (value) => {
+					const canContinue = isResolved || !shouldPause();
+					if (canContinue) continueResolve(value);
+					return canContinue;
+				};
+				config.onPause == null || config.onPause();
+			}).then(() => {
+				continueFn = void 0;
+				if (!isResolved) config.onContinue == null || config.onContinue();
+			});
+		};
+		const run = () => {
+			if (isResolved) return;
+			let promiseOrValue;
+			try {
+				promiseOrValue = config.fn();
+			} catch (error) {
+				promiseOrValue = Promise.reject(error);
+			}
+			Promise.resolve(promiseOrValue).then(resolve).catch((error) => {
+				var _config$retry, _config$retryDelay;
+				if (isResolved) return;
+				const retry = (_config$retry = config.retry) != null ? _config$retry : 3;
+				const retryDelay = (_config$retryDelay = config.retryDelay) != null ? _config$retryDelay : defaultRetryDelay;
+				const delay = typeof retryDelay === "function" ? retryDelay(failureCount, error) : retryDelay;
+				const shouldRetry = retry === true || typeof retry === "number" && failureCount < retry || typeof retry === "function" && retry(failureCount, error);
+				if (isRetryCancelled || !shouldRetry) {
+					reject(error);
+					return;
+				}
+				failureCount++;
+				config.onFail == null || config.onFail(failureCount, error);
+				sleep(delay).then(() => {
+					if (shouldPause()) return pause();
+				}).then(() => {
+					if (isRetryCancelled) reject(error);
+					else run();
+				});
+			});
+		};
+		if (canFetch(config.networkMode)) run();
+		else pause().then(run);
+		return {
+			promise,
+			cancel,
+			continue: () => {
+				return (continueFn == null ? void 0 : continueFn()) ? promise : Promise.resolve();
+			},
+			cancelRetry,
+			continueRetry
+		};
+	}
+	var CancelledError;
+	var init_retryer = __esmMin((() => {
+		init_focusManager();
+		init_onlineManager();
+		init_utils$2();
+		CancelledError = class {
+			constructor(options) {
+				this.revert = options == null ? void 0 : options.revert;
+				this.silent = options == null ? void 0 : options.silent;
+			}
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/logger.mjs
+	var defaultLogger;
+	var init_logger = __esmMin((() => {
+		defaultLogger = console;
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/notifyManager.mjs
+	function createNotifyManager() {
+		let queue = [];
+		let transactions = 0;
+		let notifyFn = (callback) => {
+			callback();
+		};
+		let batchNotifyFn = (callback) => {
+			callback();
+		};
+		const batch = (callback) => {
+			let result;
+			transactions++;
+			try {
+				result = callback();
+			} finally {
+				transactions--;
+				if (!transactions) flush();
+			}
+			return result;
+		};
+		const schedule = (callback) => {
+			if (transactions) queue.push(callback);
+			else scheduleMicrotask(() => {
+				notifyFn(callback);
+			});
+		};
+		/**
+		* All calls to the wrapped function will be batched.
+		*/
+		const batchCalls = (callback) => {
+			return (...args) => {
+				schedule(() => {
+					callback(...args);
+				});
+			};
+		};
+		const flush = () => {
+			const originalQueue = queue;
+			queue = [];
+			if (originalQueue.length) scheduleMicrotask(() => {
+				batchNotifyFn(() => {
+					originalQueue.forEach((callback) => {
+						notifyFn(callback);
+					});
+				});
+			});
+		};
+		/**
+		* Use this method to set a custom notify function.
+		* This can be used to for example wrap notifications with `React.act` while running tests.
+		*/
+		const setNotifyFunction = (fn) => {
+			notifyFn = fn;
+		};
+		/**
+		* Use this method to set a custom function to batch notifications together into a single tick.
+		* By default React Query will use the batch function provided by ReactDOM or React Native.
+		*/
+		const setBatchNotifyFunction = (fn) => {
+			batchNotifyFn = fn;
+		};
+		return {
+			batch,
+			batchCalls,
+			schedule,
+			setNotifyFunction,
+			setBatchNotifyFunction
+		};
+	}
+	var notifyManager;
+	var init_notifyManager = __esmMin((() => {
+		init_utils$2();
+		notifyManager = createNotifyManager();
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/removable.mjs
+	var Removable;
+	var init_removable = __esmMin((() => {
+		init_utils$2();
+		Removable = class {
+			destroy() {
+				this.clearGcTimeout();
+			}
+			scheduleGc() {
+				this.clearGcTimeout();
+				if (isValidTimeout(this.cacheTime)) this.gcTimeout = setTimeout(() => {
+					this.optionalRemove();
+				}, this.cacheTime);
+			}
+			updateCacheTime(newCacheTime) {
+				this.cacheTime = Math.max(this.cacheTime || 0, newCacheTime != null ? newCacheTime : isServer ? Infinity : 300 * 1e3);
+			}
+			clearGcTimeout() {
+				if (this.gcTimeout) {
+					clearTimeout(this.gcTimeout);
+					this.gcTimeout = void 0;
+				}
+			}
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/query.mjs
+	function getDefaultState$1(options) {
+		const data = typeof options.initialData === "function" ? options.initialData() : options.initialData;
+		const hasData = typeof data !== "undefined";
+		const initialDataUpdatedAt = hasData ? typeof options.initialDataUpdatedAt === "function" ? options.initialDataUpdatedAt() : options.initialDataUpdatedAt : 0;
+		return {
+			data,
+			dataUpdateCount: 0,
+			dataUpdatedAt: hasData ? initialDataUpdatedAt != null ? initialDataUpdatedAt : Date.now() : 0,
+			error: null,
+			errorUpdateCount: 0,
+			errorUpdatedAt: 0,
+			fetchFailureCount: 0,
+			fetchFailureReason: null,
+			fetchMeta: null,
+			isInvalidated: false,
+			status: hasData ? "success" : "loading",
+			fetchStatus: "idle"
+		};
+	}
+	var Query;
+	var init_query = __esmMin((() => {
+		init_utils$2();
+		init_logger();
+		init_notifyManager();
+		init_retryer();
+		init_removable();
+		Query = class extends Removable {
+			constructor(config) {
+				super();
+				this.abortSignalConsumed = false;
+				this.defaultOptions = config.defaultOptions;
+				this.setOptions(config.options);
+				this.observers = [];
+				this.cache = config.cache;
+				this.logger = config.logger || defaultLogger;
+				this.queryKey = config.queryKey;
+				this.queryHash = config.queryHash;
+				this.initialState = config.state || getDefaultState$1(this.options);
+				this.state = this.initialState;
+				this.scheduleGc();
+			}
+			get meta() {
+				return this.options.meta;
+			}
+			setOptions(options) {
+				this.options = {
+					...this.defaultOptions,
+					...options
+				};
+				this.updateCacheTime(this.options.cacheTime);
+			}
+			optionalRemove() {
+				if (!this.observers.length && this.state.fetchStatus === "idle") this.cache.remove(this);
+			}
+			setData(newData, options) {
+				const data = replaceData(this.state.data, newData, this.options);
+				this.dispatch({
+					data,
+					type: "success",
+					dataUpdatedAt: options == null ? void 0 : options.updatedAt,
+					manual: options == null ? void 0 : options.manual
+				});
+				return data;
+			}
+			setState(state, setStateOptions) {
+				this.dispatch({
+					type: "setState",
+					state,
+					setStateOptions
+				});
+			}
+			cancel(options) {
+				var _this$retryer;
+				const promise = this.promise;
+				(_this$retryer = this.retryer) == null || _this$retryer.cancel(options);
+				return promise ? promise.then(noop$3).catch(noop$3) : Promise.resolve();
+			}
+			destroy() {
+				super.destroy();
+				this.cancel({ silent: true });
+			}
+			reset() {
+				this.destroy();
+				this.setState(this.initialState);
+			}
+			isActive() {
+				return this.observers.some((observer) => observer.options.enabled !== false);
+			}
+			isDisabled() {
+				return this.getObserversCount() > 0 && !this.isActive();
+			}
+			isStale() {
+				return this.state.isInvalidated || !this.state.dataUpdatedAt || this.observers.some((observer) => observer.getCurrentResult().isStale);
+			}
+			isStaleByTime(staleTime = 0) {
+				return this.state.isInvalidated || !this.state.dataUpdatedAt || !timeUntilStale(this.state.dataUpdatedAt, staleTime);
+			}
+			onFocus() {
+				var _this$retryer2;
+				const observer = this.observers.find((x) => x.shouldFetchOnWindowFocus());
+				if (observer) observer.refetch({ cancelRefetch: false });
+				(_this$retryer2 = this.retryer) == null || _this$retryer2.continue();
+			}
+			onOnline() {
+				var _this$retryer3;
+				const observer = this.observers.find((x) => x.shouldFetchOnReconnect());
+				if (observer) observer.refetch({ cancelRefetch: false });
+				(_this$retryer3 = this.retryer) == null || _this$retryer3.continue();
+			}
+			addObserver(observer) {
+				if (!this.observers.includes(observer)) {
+					this.observers.push(observer);
+					this.clearGcTimeout();
+					this.cache.notify({
+						type: "observerAdded",
+						query: this,
+						observer
+					});
+				}
+			}
+			removeObserver(observer) {
+				if (this.observers.includes(observer)) {
+					this.observers = this.observers.filter((x) => x !== observer);
+					if (!this.observers.length) {
+						if (this.retryer) if (this.abortSignalConsumed) this.retryer.cancel({ revert: true });
+						else this.retryer.cancelRetry();
+						this.scheduleGc();
+					}
+					this.cache.notify({
+						type: "observerRemoved",
+						query: this,
+						observer
+					});
+				}
+			}
+			getObserversCount() {
+				return this.observers.length;
+			}
+			invalidate() {
+				if (!this.state.isInvalidated) this.dispatch({ type: "invalidate" });
+			}
+			fetch(options, fetchOptions) {
+				var _this$options$behavio, _context$fetchOptions;
+				if (this.state.fetchStatus !== "idle") {
+					if (this.state.dataUpdatedAt && fetchOptions != null && fetchOptions.cancelRefetch) this.cancel({ silent: true });
+					else if (this.promise) {
+						var _this$retryer4;
+						(_this$retryer4 = this.retryer) == null || _this$retryer4.continueRetry();
+						return this.promise;
+					}
+				}
+				if (options) this.setOptions(options);
+				if (!this.options.queryFn) {
+					const observer = this.observers.find((x) => x.options.queryFn);
+					if (observer) this.setOptions(observer.options);
+				}
+				if (!Array.isArray(this.options.queryKey)) this.logger.error("As of v4, queryKey needs to be an Array. If you are using a string like 'repoData', please change it to an Array, e.g. ['repoData']");
+				const abortController = getAbortController();
+				const queryFnContext = {
+					queryKey: this.queryKey,
+					pageParam: void 0,
+					meta: this.meta
+				};
+				const addSignalProperty = (object) => {
+					Object.defineProperty(object, "signal", {
+						enumerable: true,
+						get: () => {
+							if (abortController) {
+								this.abortSignalConsumed = true;
+								return abortController.signal;
+							}
+						}
+					});
+				};
+				addSignalProperty(queryFnContext);
+				const fetchFn = () => {
+					if (!this.options.queryFn) return Promise.reject("Missing queryFn for queryKey '" + this.options.queryHash + "'");
+					this.abortSignalConsumed = false;
+					return this.options.queryFn(queryFnContext);
+				};
+				const context = {
+					fetchOptions,
+					options: this.options,
+					queryKey: this.queryKey,
+					state: this.state,
+					fetchFn
+				};
+				addSignalProperty(context);
+				(_this$options$behavio = this.options.behavior) == null || _this$options$behavio.onFetch(context);
+				this.revertState = this.state;
+				if (this.state.fetchStatus === "idle" || this.state.fetchMeta !== ((_context$fetchOptions = context.fetchOptions) == null ? void 0 : _context$fetchOptions.meta)) {
+					var _context$fetchOptions2;
+					this.dispatch({
+						type: "fetch",
+						meta: (_context$fetchOptions2 = context.fetchOptions) == null ? void 0 : _context$fetchOptions2.meta
+					});
+				}
+				const onError = (error) => {
+					if (!(isCancelledError(error) && error.silent)) this.dispatch({
+						type: "error",
+						error
+					});
+					if (!isCancelledError(error)) {
+						var _this$cache$config$on, _this$cache$config, _this$cache$config$on2, _this$cache$config2;
+						(_this$cache$config$on = (_this$cache$config = this.cache.config).onError) == null || _this$cache$config$on.call(_this$cache$config, error, this);
+						(_this$cache$config$on2 = (_this$cache$config2 = this.cache.config).onSettled) == null || _this$cache$config$on2.call(_this$cache$config2, this.state.data, error, this);
+						this.logger.error(error);
+					}
+					if (!this.isFetchingOptimistic) this.scheduleGc();
+					this.isFetchingOptimistic = false;
+				};
+				this.retryer = createRetryer({
+					fn: context.fetchFn,
+					abort: abortController == null ? void 0 : abortController.abort.bind(abortController),
+					onSuccess: (data) => {
+						var _this$cache$config$on3, _this$cache$config3, _this$cache$config$on4, _this$cache$config4;
+						if (typeof data === "undefined") {
+							this.logger.error("Query data cannot be undefined. Please make sure to return a value other than undefined from your query function. Affected query key: " + this.queryHash);
+							onError(/* @__PURE__ */ new Error(this.queryHash + " data is undefined"));
+							return;
+						}
+						this.setData(data);
+						(_this$cache$config$on3 = (_this$cache$config3 = this.cache.config).onSuccess) == null || _this$cache$config$on3.call(_this$cache$config3, data, this);
+						(_this$cache$config$on4 = (_this$cache$config4 = this.cache.config).onSettled) == null || _this$cache$config$on4.call(_this$cache$config4, data, this.state.error, this);
+						if (!this.isFetchingOptimistic) this.scheduleGc();
+						this.isFetchingOptimistic = false;
+					},
+					onError,
+					onFail: (failureCount, error) => {
+						this.dispatch({
+							type: "failed",
+							failureCount,
+							error
+						});
+					},
+					onPause: () => {
+						this.dispatch({ type: "pause" });
+					},
+					onContinue: () => {
+						this.dispatch({ type: "continue" });
+					},
+					retry: context.options.retry,
+					retryDelay: context.options.retryDelay,
+					networkMode: context.options.networkMode
+				});
+				this.promise = this.retryer.promise;
+				return this.promise;
+			}
+			dispatch(action) {
+				const reducer = (state) => {
+					var _action$meta, _action$dataUpdatedAt;
+					switch (action.type) {
+						case "failed": return {
+							...state,
+							fetchFailureCount: action.failureCount,
+							fetchFailureReason: action.error
+						};
+						case "pause": return {
+							...state,
+							fetchStatus: "paused"
+						};
+						case "continue": return {
+							...state,
+							fetchStatus: "fetching"
+						};
+						case "fetch": return {
+							...state,
+							fetchFailureCount: 0,
+							fetchFailureReason: null,
+							fetchMeta: (_action$meta = action.meta) != null ? _action$meta : null,
+							fetchStatus: canFetch(this.options.networkMode) ? "fetching" : "paused",
+							...!state.dataUpdatedAt && {
+								error: null,
+								status: "loading"
+							}
+						};
+						case "success": return {
+							...state,
+							data: action.data,
+							dataUpdateCount: state.dataUpdateCount + 1,
+							dataUpdatedAt: (_action$dataUpdatedAt = action.dataUpdatedAt) != null ? _action$dataUpdatedAt : Date.now(),
+							error: null,
+							isInvalidated: false,
+							status: "success",
+							...!action.manual && {
+								fetchStatus: "idle",
+								fetchFailureCount: 0,
+								fetchFailureReason: null
+							}
+						};
+						case "error":
+							const error = action.error;
+							if (isCancelledError(error) && error.revert && this.revertState) return {
+								...this.revertState,
+								fetchStatus: "idle"
+							};
+							return {
+								...state,
+								error,
+								errorUpdateCount: state.errorUpdateCount + 1,
+								errorUpdatedAt: Date.now(),
+								fetchFailureCount: state.fetchFailureCount + 1,
+								fetchFailureReason: error,
+								fetchStatus: "idle",
+								status: "error"
+							};
+						case "invalidate": return {
+							...state,
+							isInvalidated: true
+						};
+						case "setState": return {
+							...state,
+							...action.state
+						};
+					}
+				};
+				this.state = reducer(this.state);
+				notifyManager.batch(() => {
+					this.observers.forEach((observer) => {
+						observer.onQueryUpdate(action);
+					});
+					this.cache.notify({
+						query: this,
+						type: "updated",
+						action
+					});
+				});
+			}
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/queryCache.mjs
+	var QueryCache;
+	var init_queryCache = __esmMin((() => {
+		init_utils$2();
+		init_query();
+		init_notifyManager();
+		init_subscribable();
+		QueryCache = class extends Subscribable {
+			constructor(config) {
+				super();
+				this.config = config || {};
+				this.queries = [];
+				this.queriesMap = {};
+			}
+			build(client, options, state) {
+				var _options$queryHash;
+				const queryKey = options.queryKey;
+				const queryHash = (_options$queryHash = options.queryHash) != null ? _options$queryHash : hashQueryKeyByOptions(queryKey, options);
+				let query = this.get(queryHash);
+				if (!query) {
+					query = new Query({
+						cache: this,
+						logger: client.getLogger(),
+						queryKey,
+						queryHash,
+						options: client.defaultQueryOptions(options),
+						state,
+						defaultOptions: client.getQueryDefaults(queryKey)
+					});
+					this.add(query);
+				}
+				return query;
+			}
+			add(query) {
+				if (!this.queriesMap[query.queryHash]) {
+					this.queriesMap[query.queryHash] = query;
+					this.queries.push(query);
+					this.notify({
+						type: "added",
+						query
+					});
+				}
+			}
+			remove(query) {
+				const queryInMap = this.queriesMap[query.queryHash];
+				if (queryInMap) {
+					query.destroy();
+					this.queries = this.queries.filter((x) => x !== query);
+					if (queryInMap === query) delete this.queriesMap[query.queryHash];
+					this.notify({
+						type: "removed",
+						query
+					});
+				}
+			}
+			clear() {
+				notifyManager.batch(() => {
+					this.queries.forEach((query) => {
+						this.remove(query);
+					});
+				});
+			}
+			get(queryHash) {
+				return this.queriesMap[queryHash];
+			}
+			getAll() {
+				return this.queries;
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			find(arg1, arg2) {
+				const [filters] = parseFilterArgs(arg1, arg2);
+				if (typeof filters.exact === "undefined") filters.exact = true;
+				return this.queries.find((query) => matchQuery(filters, query));
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			findAll(arg1, arg2) {
+				const [filters] = parseFilterArgs(arg1, arg2);
+				return Object.keys(filters).length > 0 ? this.queries.filter((query) => matchQuery(filters, query)) : this.queries;
+			}
+			notify(event) {
+				notifyManager.batch(() => {
+					this.listeners.forEach(({ listener }) => {
+						listener(event);
+					});
+				});
+			}
+			onFocus() {
+				notifyManager.batch(() => {
+					this.queries.forEach((query) => {
+						query.onFocus();
+					});
+				});
+			}
+			onOnline() {
+				notifyManager.batch(() => {
+					this.queries.forEach((query) => {
+						query.onOnline();
+					});
+				});
+			}
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/mutation.mjs
+	function getDefaultState() {
+		return {
+			context: void 0,
+			data: void 0,
+			error: null,
+			failureCount: 0,
+			failureReason: null,
+			isPaused: false,
+			status: "idle",
+			variables: void 0
+		};
+	}
+	var Mutation;
+	var init_mutation = __esmMin((() => {
+		init_logger();
+		init_notifyManager();
+		init_removable();
+		init_retryer();
+		Mutation = class extends Removable {
+			constructor(config) {
+				super();
+				this.defaultOptions = config.defaultOptions;
+				this.mutationId = config.mutationId;
+				this.mutationCache = config.mutationCache;
+				this.logger = config.logger || defaultLogger;
+				this.observers = [];
+				this.state = config.state || getDefaultState();
+				this.setOptions(config.options);
+				this.scheduleGc();
+			}
+			setOptions(options) {
+				this.options = {
+					...this.defaultOptions,
+					...options
+				};
+				this.updateCacheTime(this.options.cacheTime);
+			}
+			get meta() {
+				return this.options.meta;
+			}
+			setState(state) {
+				this.dispatch({
+					type: "setState",
+					state
+				});
+			}
+			addObserver(observer) {
+				if (!this.observers.includes(observer)) {
+					this.observers.push(observer);
+					this.clearGcTimeout();
+					this.mutationCache.notify({
+						type: "observerAdded",
+						mutation: this,
+						observer
+					});
+				}
+			}
+			removeObserver(observer) {
+				this.observers = this.observers.filter((x) => x !== observer);
+				this.scheduleGc();
+				this.mutationCache.notify({
+					type: "observerRemoved",
+					mutation: this,
+					observer
+				});
+			}
+			optionalRemove() {
+				if (!this.observers.length) if (this.state.status === "loading") this.scheduleGc();
+				else this.mutationCache.remove(this);
+			}
+			continue() {
+				var _this$retryer$continu, _this$retryer;
+				return (_this$retryer$continu = (_this$retryer = this.retryer) == null ? void 0 : _this$retryer.continue()) != null ? _this$retryer$continu : this.execute();
+			}
+			async execute() {
+				const executeMutation = () => {
+					var _this$options$retry;
+					this.retryer = createRetryer({
+						fn: () => {
+							if (!this.options.mutationFn) return Promise.reject("No mutationFn found");
+							return this.options.mutationFn(this.state.variables);
+						},
+						onFail: (failureCount, error) => {
+							this.dispatch({
+								type: "failed",
+								failureCount,
+								error
+							});
+						},
+						onPause: () => {
+							this.dispatch({ type: "pause" });
+						},
+						onContinue: () => {
+							this.dispatch({ type: "continue" });
+						},
+						retry: (_this$options$retry = this.options.retry) != null ? _this$options$retry : 0,
+						retryDelay: this.options.retryDelay,
+						networkMode: this.options.networkMode
+					});
+					return this.retryer.promise;
+				};
+				const restored = this.state.status === "loading";
+				try {
+					var _this$mutationCache$c3, _this$mutationCache$c4, _this$options$onSucce, _this$options2, _this$mutationCache$c5, _this$mutationCache$c6, _this$options$onSettl, _this$options3;
+					if (!restored) {
+						var _this$mutationCache$c, _this$mutationCache$c2, _this$options$onMutat, _this$options;
+						this.dispatch({
+							type: "loading",
+							variables: this.options.variables
+						});
+						await ((_this$mutationCache$c = (_this$mutationCache$c2 = this.mutationCache.config).onMutate) == null ? void 0 : _this$mutationCache$c.call(_this$mutationCache$c2, this.state.variables, this));
+						const context = await ((_this$options$onMutat = (_this$options = this.options).onMutate) == null ? void 0 : _this$options$onMutat.call(_this$options, this.state.variables));
+						if (context !== this.state.context) this.dispatch({
+							type: "loading",
+							context,
+							variables: this.state.variables
+						});
+					}
+					const data = await executeMutation();
+					await ((_this$mutationCache$c3 = (_this$mutationCache$c4 = this.mutationCache.config).onSuccess) == null ? void 0 : _this$mutationCache$c3.call(_this$mutationCache$c4, data, this.state.variables, this.state.context, this));
+					await ((_this$options$onSucce = (_this$options2 = this.options).onSuccess) == null ? void 0 : _this$options$onSucce.call(_this$options2, data, this.state.variables, this.state.context));
+					await ((_this$mutationCache$c5 = (_this$mutationCache$c6 = this.mutationCache.config).onSettled) == null ? void 0 : _this$mutationCache$c5.call(_this$mutationCache$c6, data, null, this.state.variables, this.state.context, this));
+					await ((_this$options$onSettl = (_this$options3 = this.options).onSettled) == null ? void 0 : _this$options$onSettl.call(_this$options3, data, null, this.state.variables, this.state.context));
+					this.dispatch({
+						type: "success",
+						data
+					});
+					return data;
+				} catch (error) {
+					try {
+						var _this$mutationCache$c7, _this$mutationCache$c8, _this$options$onError, _this$options4, _this$mutationCache$c9, _this$mutationCache$c10, _this$options$onSettl2, _this$options5;
+						await ((_this$mutationCache$c7 = (_this$mutationCache$c8 = this.mutationCache.config).onError) == null ? void 0 : _this$mutationCache$c7.call(_this$mutationCache$c8, error, this.state.variables, this.state.context, this));
+						this.logger.error(error);
+						await ((_this$options$onError = (_this$options4 = this.options).onError) == null ? void 0 : _this$options$onError.call(_this$options4, error, this.state.variables, this.state.context));
+						await ((_this$mutationCache$c9 = (_this$mutationCache$c10 = this.mutationCache.config).onSettled) == null ? void 0 : _this$mutationCache$c9.call(_this$mutationCache$c10, void 0, error, this.state.variables, this.state.context, this));
+						await ((_this$options$onSettl2 = (_this$options5 = this.options).onSettled) == null ? void 0 : _this$options$onSettl2.call(_this$options5, void 0, error, this.state.variables, this.state.context));
+						throw error;
+					} finally {
+						this.dispatch({
+							type: "error",
+							error
+						});
+					}
+				}
+			}
+			dispatch(action) {
+				const reducer = (state) => {
+					switch (action.type) {
+						case "failed": return {
+							...state,
+							failureCount: action.failureCount,
+							failureReason: action.error
+						};
+						case "pause": return {
+							...state,
+							isPaused: true
+						};
+						case "continue": return {
+							...state,
+							isPaused: false
+						};
+						case "loading": return {
+							...state,
+							context: action.context,
+							data: void 0,
+							failureCount: 0,
+							failureReason: null,
+							error: null,
+							isPaused: !canFetch(this.options.networkMode),
+							status: "loading",
+							variables: action.variables
+						};
+						case "success": return {
+							...state,
+							data: action.data,
+							failureCount: 0,
+							failureReason: null,
+							error: null,
+							status: "success",
+							isPaused: false
+						};
+						case "error": return {
+							...state,
+							data: void 0,
+							error: action.error,
+							failureCount: state.failureCount + 1,
+							failureReason: action.error,
+							isPaused: false,
+							status: "error"
+						};
+						case "setState": return {
+							...state,
+							...action.state
+						};
+					}
+				};
+				this.state = reducer(this.state);
+				notifyManager.batch(() => {
+					this.observers.forEach((observer) => {
+						observer.onMutationUpdate(action);
+					});
+					this.mutationCache.notify({
+						mutation: this,
+						type: "updated",
+						action
+					});
+				});
+			}
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/mutationCache.mjs
+	var MutationCache;
+	var init_mutationCache = __esmMin((() => {
+		init_notifyManager();
+		init_mutation();
+		init_utils$2();
+		init_subscribable();
+		MutationCache = class extends Subscribable {
+			constructor(config) {
+				super();
+				this.config = config || {};
+				this.mutations = [];
+				this.mutationId = 0;
+			}
+			build(client, options, state) {
+				const mutation = new Mutation({
+					mutationCache: this,
+					logger: client.getLogger(),
+					mutationId: ++this.mutationId,
+					options: client.defaultMutationOptions(options),
+					state,
+					defaultOptions: options.mutationKey ? client.getMutationDefaults(options.mutationKey) : void 0
+				});
+				this.add(mutation);
+				return mutation;
+			}
+			add(mutation) {
+				this.mutations.push(mutation);
+				this.notify({
+					type: "added",
+					mutation
+				});
+			}
+			remove(mutation) {
+				this.mutations = this.mutations.filter((x) => x !== mutation);
+				this.notify({
+					type: "removed",
+					mutation
+				});
+			}
+			clear() {
+				notifyManager.batch(() => {
+					this.mutations.forEach((mutation) => {
+						this.remove(mutation);
+					});
+				});
+			}
+			getAll() {
+				return this.mutations;
+			}
+			find(filters) {
+				if (typeof filters.exact === "undefined") filters.exact = true;
+				return this.mutations.find((mutation) => matchMutation(filters, mutation));
+			}
+			findAll(filters) {
+				return this.mutations.filter((mutation) => matchMutation(filters, mutation));
+			}
+			notify(event) {
+				notifyManager.batch(() => {
+					this.listeners.forEach(({ listener }) => {
+						listener(event);
+					});
+				});
+			}
+			resumePausedMutations() {
+				var _this$resuming;
+				this.resuming = ((_this$resuming = this.resuming) != null ? _this$resuming : Promise.resolve()).then(() => {
+					const pausedMutations = this.mutations.filter((x) => x.state.isPaused);
+					return notifyManager.batch(() => pausedMutations.reduce((promise, mutation) => promise.then(() => mutation.continue().catch(noop$3)), Promise.resolve()));
+				}).then(() => {
+					this.resuming = void 0;
+				});
+				return this.resuming;
+			}
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/infiniteQueryBehavior.mjs
+	function infiniteQueryBehavior() {
+		return { onFetch: (context) => {
+			context.fetchFn = () => {
+				var _context$fetchOptions, _context$fetchOptions2, _context$fetchOptions3, _context$fetchOptions4, _context$state$data, _context$state$data2;
+				const refetchPage = (_context$fetchOptions = context.fetchOptions) == null ? void 0 : (_context$fetchOptions2 = _context$fetchOptions.meta) == null ? void 0 : _context$fetchOptions2.refetchPage;
+				const fetchMore = (_context$fetchOptions3 = context.fetchOptions) == null ? void 0 : (_context$fetchOptions4 = _context$fetchOptions3.meta) == null ? void 0 : _context$fetchOptions4.fetchMore;
+				const pageParam = fetchMore == null ? void 0 : fetchMore.pageParam;
+				const isFetchingNextPage = (fetchMore == null ? void 0 : fetchMore.direction) === "forward";
+				const isFetchingPreviousPage = (fetchMore == null ? void 0 : fetchMore.direction) === "backward";
+				const oldPages = ((_context$state$data = context.state.data) == null ? void 0 : _context$state$data.pages) || [];
+				const oldPageParams = ((_context$state$data2 = context.state.data) == null ? void 0 : _context$state$data2.pageParams) || [];
+				let newPageParams = oldPageParams;
+				let cancelled = false;
+				const addSignalProperty = (object) => {
+					Object.defineProperty(object, "signal", {
+						enumerable: true,
+						get: () => {
+							var _context$signal;
+							if ((_context$signal = context.signal) != null && _context$signal.aborted) cancelled = true;
+							else {
+								var _context$signal2;
+								(_context$signal2 = context.signal) == null || _context$signal2.addEventListener("abort", () => {
+									cancelled = true;
+								});
+							}
+							return context.signal;
+						}
+					});
+				};
+				const queryFn = context.options.queryFn || (() => Promise.reject("Missing queryFn for queryKey '" + context.options.queryHash + "'"));
+				const buildNewPages = (pages, param, page, previous) => {
+					newPageParams = previous ? [param, ...newPageParams] : [...newPageParams, param];
+					return previous ? [page, ...pages] : [...pages, page];
+				};
+				const fetchPage = (pages, manual, param, previous) => {
+					if (cancelled) return Promise.reject("Cancelled");
+					if (typeof param === "undefined" && !manual && pages.length) return Promise.resolve(pages);
+					const queryFnContext = {
+						queryKey: context.queryKey,
+						pageParam: param,
+						meta: context.options.meta
+					};
+					addSignalProperty(queryFnContext);
+					const queryFnResult = queryFn(queryFnContext);
+					return Promise.resolve(queryFnResult).then((page) => buildNewPages(pages, param, page, previous));
+				};
+				let promise;
+				if (!oldPages.length) promise = fetchPage([]);
+				else if (isFetchingNextPage) {
+					const manual = typeof pageParam !== "undefined";
+					promise = fetchPage(oldPages, manual, manual ? pageParam : getNextPageParam(context.options, oldPages));
+				} else if (isFetchingPreviousPage) {
+					const manual = typeof pageParam !== "undefined";
+					promise = fetchPage(oldPages, manual, manual ? pageParam : getPreviousPageParam(context.options, oldPages), true);
+				} else {
+					newPageParams = [];
+					const manual = typeof context.options.getNextPageParam === "undefined";
+					promise = (refetchPage && oldPages[0] ? refetchPage(oldPages[0], 0, oldPages) : true) ? fetchPage([], manual, oldPageParams[0]) : Promise.resolve(buildNewPages([], oldPageParams[0], oldPages[0]));
+					for (let i = 1; i < oldPages.length; i++) promise = promise.then((pages) => {
+						if (refetchPage && oldPages[i] ? refetchPage(oldPages[i], i, oldPages) : true) {
+							const param = manual ? oldPageParams[i] : getNextPageParam(context.options, pages);
+							return fetchPage(pages, manual, param);
+						}
+						return Promise.resolve(buildNewPages(pages, oldPageParams[i], oldPages[i]));
+					});
+				}
+				return promise.then((pages) => ({
+					pages,
+					pageParams: newPageParams
+				}));
+			};
+		} };
+	}
+	function getNextPageParam(options, pages) {
+		return options.getNextPageParam == null ? void 0 : options.getNextPageParam(pages[pages.length - 1], pages);
+	}
+	function getPreviousPageParam(options, pages) {
+		return options.getPreviousPageParam == null ? void 0 : options.getPreviousPageParam(pages[0], pages);
+	}
+	var init_infiniteQueryBehavior = __esmMin((() => {}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/queryClient.mjs
+	var QueryClient;
+	var init_queryClient = __esmMin((() => {
+		init_utils$2();
+		init_queryCache();
+		init_mutationCache();
+		init_focusManager();
+		init_onlineManager();
+		init_notifyManager();
+		init_infiniteQueryBehavior();
+		init_logger();
+		QueryClient = class {
+			constructor(config = {}) {
+				this.queryCache = config.queryCache || new QueryCache();
+				this.mutationCache = config.mutationCache || new MutationCache();
+				this.logger = config.logger || defaultLogger;
+				this.defaultOptions = config.defaultOptions || {};
+				this.queryDefaults = [];
+				this.mutationDefaults = [];
+				this.mountCount = 0;
+				if (config.logger) this.logger.error("Passing a custom logger has been deprecated and will be removed in the next major version.");
+			}
+			mount() {
+				this.mountCount++;
+				if (this.mountCount !== 1) return;
+				this.unsubscribeFocus = focusManager.subscribe(() => {
+					if (focusManager.isFocused()) {
+						this.resumePausedMutations();
+						this.queryCache.onFocus();
+					}
+				});
+				this.unsubscribeOnline = onlineManager.subscribe(() => {
+					if (onlineManager.isOnline()) {
+						this.resumePausedMutations();
+						this.queryCache.onOnline();
+					}
+				});
+			}
+			unmount() {
+				var _this$unsubscribeFocu, _this$unsubscribeOnli;
+				this.mountCount--;
+				if (this.mountCount !== 0) return;
+				(_this$unsubscribeFocu = this.unsubscribeFocus) == null || _this$unsubscribeFocu.call(this);
+				this.unsubscribeFocus = void 0;
+				(_this$unsubscribeOnli = this.unsubscribeOnline) == null || _this$unsubscribeOnli.call(this);
+				this.unsubscribeOnline = void 0;
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			isFetching(arg1, arg2) {
+				const [filters] = parseFilterArgs(arg1, arg2);
+				filters.fetchStatus = "fetching";
+				return this.queryCache.findAll(filters).length;
+			}
+			isMutating(filters) {
+				return this.mutationCache.findAll({
+					...filters,
+					fetching: true
+				}).length;
+			}
+			/**
+			* @deprecated This method will accept only queryKey in the next major version.
+			*/
+			getQueryData(queryKey, filters) {
+				var _this$queryCache$find;
+				return (_this$queryCache$find = this.queryCache.find(queryKey, filters)) == null ? void 0 : _this$queryCache$find.state.data;
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			ensureQueryData(arg1, arg2, arg3) {
+				const parsedOptions = parseQueryArgs(arg1, arg2, arg3);
+				const cachedData = this.getQueryData(parsedOptions.queryKey);
+				return cachedData ? Promise.resolve(cachedData) : this.fetchQuery(parsedOptions);
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			getQueriesData(queryKeyOrFilters) {
+				return this.getQueryCache().findAll(queryKeyOrFilters).map(({ queryKey, state }) => {
+					return [queryKey, state.data];
+				});
+			}
+			setQueryData(queryKey, updater, options) {
+				const query = this.queryCache.find(queryKey);
+				const data = functionalUpdate(updater, query == null ? void 0 : query.state.data);
+				if (typeof data === "undefined") return;
+				const parsedOptions = parseQueryArgs(queryKey);
+				const defaultedOptions = this.defaultQueryOptions(parsedOptions);
+				return this.queryCache.build(this, defaultedOptions).setData(data, {
+					...options,
+					manual: true
+				});
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			setQueriesData(queryKeyOrFilters, updater, options) {
+				return notifyManager.batch(() => this.getQueryCache().findAll(queryKeyOrFilters).map(({ queryKey }) => [queryKey, this.setQueryData(queryKey, updater, options)]));
+			}
+			getQueryState(queryKey, filters) {
+				var _this$queryCache$find2;
+				return (_this$queryCache$find2 = this.queryCache.find(queryKey, filters)) == null ? void 0 : _this$queryCache$find2.state;
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			removeQueries(arg1, arg2) {
+				const [filters] = parseFilterArgs(arg1, arg2);
+				const queryCache = this.queryCache;
+				notifyManager.batch(() => {
+					queryCache.findAll(filters).forEach((query) => {
+						queryCache.remove(query);
+					});
+				});
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			resetQueries(arg1, arg2, arg3) {
+				const [filters, options] = parseFilterArgs(arg1, arg2, arg3);
+				const queryCache = this.queryCache;
+				const refetchFilters = {
+					type: "active",
+					...filters
+				};
+				return notifyManager.batch(() => {
+					queryCache.findAll(filters).forEach((query) => {
+						query.reset();
+					});
+					return this.refetchQueries(refetchFilters, options);
+				});
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			cancelQueries(arg1, arg2, arg3) {
+				const [filters, cancelOptions = {}] = parseFilterArgs(arg1, arg2, arg3);
+				if (typeof cancelOptions.revert === "undefined") cancelOptions.revert = true;
+				const promises = notifyManager.batch(() => this.queryCache.findAll(filters).map((query) => query.cancel(cancelOptions)));
+				return Promise.all(promises).then(noop$3).catch(noop$3);
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			invalidateQueries(arg1, arg2, arg3) {
+				const [filters, options] = parseFilterArgs(arg1, arg2, arg3);
+				return notifyManager.batch(() => {
+					var _ref, _filters$refetchType;
+					this.queryCache.findAll(filters).forEach((query) => {
+						query.invalidate();
+					});
+					if (filters.refetchType === "none") return Promise.resolve();
+					const refetchFilters = {
+						...filters,
+						type: (_ref = (_filters$refetchType = filters.refetchType) != null ? _filters$refetchType : filters.type) != null ? _ref : "active"
+					};
+					return this.refetchQueries(refetchFilters, options);
+				});
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			refetchQueries(arg1, arg2, arg3) {
+				const [filters, options] = parseFilterArgs(arg1, arg2, arg3);
+				const promises = notifyManager.batch(() => this.queryCache.findAll(filters).filter((query) => !query.isDisabled()).map((query) => {
+					var _options$cancelRefetc;
+					return query.fetch(void 0, {
+						...options,
+						cancelRefetch: (_options$cancelRefetc = options == null ? void 0 : options.cancelRefetch) != null ? _options$cancelRefetc : true,
+						meta: { refetchPage: filters.refetchPage }
+					});
+				}));
+				let promise = Promise.all(promises).then(noop$3);
+				if (!(options != null && options.throwOnError)) promise = promise.catch(noop$3);
+				return promise;
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			fetchQuery(arg1, arg2, arg3) {
+				const parsedOptions = parseQueryArgs(arg1, arg2, arg3);
+				const defaultedOptions = this.defaultQueryOptions(parsedOptions);
+				if (typeof defaultedOptions.retry === "undefined") defaultedOptions.retry = false;
+				const query = this.queryCache.build(this, defaultedOptions);
+				return query.isStaleByTime(defaultedOptions.staleTime) ? query.fetch(defaultedOptions) : Promise.resolve(query.state.data);
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			prefetchQuery(arg1, arg2, arg3) {
+				return this.fetchQuery(arg1, arg2, arg3).then(noop$3).catch(noop$3);
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			fetchInfiniteQuery(arg1, arg2, arg3) {
+				const parsedOptions = parseQueryArgs(arg1, arg2, arg3);
+				parsedOptions.behavior = infiniteQueryBehavior();
+				return this.fetchQuery(parsedOptions);
+			}
+			/**
+			* @deprecated This method should be used with only one object argument.
+			*/
+			prefetchInfiniteQuery(arg1, arg2, arg3) {
+				return this.fetchInfiniteQuery(arg1, arg2, arg3).then(noop$3).catch(noop$3);
+			}
+			resumePausedMutations() {
+				return this.mutationCache.resumePausedMutations();
+			}
+			getQueryCache() {
+				return this.queryCache;
+			}
+			getMutationCache() {
+				return this.mutationCache;
+			}
+			getLogger() {
+				return this.logger;
+			}
+			getDefaultOptions() {
+				return this.defaultOptions;
+			}
+			setDefaultOptions(options) {
+				this.defaultOptions = options;
+			}
+			setQueryDefaults(queryKey, options) {
+				const result = this.queryDefaults.find((x) => hashQueryKey(queryKey) === hashQueryKey(x.queryKey));
+				if (result) result.defaultOptions = options;
+				else this.queryDefaults.push({
+					queryKey,
+					defaultOptions: options
+				});
+			}
+			getQueryDefaults(queryKey) {
+				if (!queryKey) return;
+				const firstMatchingDefaults = this.queryDefaults.find((x) => partialMatchKey(queryKey, x.queryKey));
+				if (this.queryDefaults.filter((x) => partialMatchKey(queryKey, x.queryKey)).length > 1) this.logger.error("[QueryClient] Several query defaults match with key '" + JSON.stringify(queryKey) + "'. The first matching query defaults are used. Please check how query defaults are registered. Order does matter here. cf. https://react-query.tanstack.com/reference/QueryClient#queryclientsetquerydefaults.");
+				return firstMatchingDefaults == null ? void 0 : firstMatchingDefaults.defaultOptions;
+			}
+			setMutationDefaults(mutationKey, options) {
+				const result = this.mutationDefaults.find((x) => hashQueryKey(mutationKey) === hashQueryKey(x.mutationKey));
+				if (result) result.defaultOptions = options;
+				else this.mutationDefaults.push({
+					mutationKey,
+					defaultOptions: options
+				});
+			}
+			getMutationDefaults(mutationKey) {
+				if (!mutationKey) return;
+				const firstMatchingDefaults = this.mutationDefaults.find((x) => partialMatchKey(mutationKey, x.mutationKey));
+				if (this.mutationDefaults.filter((x) => partialMatchKey(mutationKey, x.mutationKey)).length > 1) this.logger.error("[QueryClient] Several mutation defaults match with key '" + JSON.stringify(mutationKey) + "'. The first matching mutation defaults are used. Please check how mutation defaults are registered. Order does matter here. cf. https://react-query.tanstack.com/reference/QueryClient#queryclientsetmutationdefaults.");
+				return firstMatchingDefaults == null ? void 0 : firstMatchingDefaults.defaultOptions;
+			}
+			defaultQueryOptions(options) {
+				if (options != null && options._defaulted) return options;
+				const defaultedOptions = {
+					...this.defaultOptions.queries,
+					...this.getQueryDefaults(options == null ? void 0 : options.queryKey),
+					...options,
+					_defaulted: true
+				};
+				if (!defaultedOptions.queryHash && defaultedOptions.queryKey) defaultedOptions.queryHash = hashQueryKeyByOptions(defaultedOptions.queryKey, defaultedOptions);
+				if (typeof defaultedOptions.refetchOnReconnect === "undefined") defaultedOptions.refetchOnReconnect = defaultedOptions.networkMode !== "always";
+				if (typeof defaultedOptions.useErrorBoundary === "undefined") defaultedOptions.useErrorBoundary = !!defaultedOptions.suspense;
+				return defaultedOptions;
+			}
+			defaultMutationOptions(options) {
+				if (options != null && options._defaulted) return options;
+				return {
+					...this.defaultOptions.mutations,
+					...this.getMutationDefaults(options == null ? void 0 : options.mutationKey),
+					...options,
+					_defaulted: true
+				};
+			}
+			clear() {
+				this.queryCache.clear();
+				this.mutationCache.clear();
+			}
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/mutationObserver.mjs
+	var MutationObserver;
+	var init_mutationObserver = __esmMin((() => {
+		init_mutation();
+		init_notifyManager();
+		init_subscribable();
+		init_utils$2();
+		MutationObserver = class extends Subscribable {
+			constructor(client, options) {
+				super();
+				this.client = client;
+				this.setOptions(options);
+				this.bindMethods();
+				this.updateResult();
+			}
+			bindMethods() {
+				this.mutate = this.mutate.bind(this);
+				this.reset = this.reset.bind(this);
+			}
+			setOptions(options) {
+				var _this$currentMutation;
+				const prevOptions = this.options;
+				this.options = this.client.defaultMutationOptions(options);
+				if (!shallowEqualObjects(prevOptions, this.options)) this.client.getMutationCache().notify({
+					type: "observerOptionsUpdated",
+					mutation: this.currentMutation,
+					observer: this
+				});
+				(_this$currentMutation = this.currentMutation) == null || _this$currentMutation.setOptions(this.options);
+			}
+			onUnsubscribe() {
+				if (!this.hasListeners()) {
+					var _this$currentMutation2;
+					(_this$currentMutation2 = this.currentMutation) == null || _this$currentMutation2.removeObserver(this);
+				}
+			}
+			onMutationUpdate(action) {
+				this.updateResult();
+				const notifyOptions = { listeners: true };
+				if (action.type === "success") notifyOptions.onSuccess = true;
+				else if (action.type === "error") notifyOptions.onError = true;
+				this.notify(notifyOptions);
+			}
+			getCurrentResult() {
+				return this.currentResult;
+			}
+			reset() {
+				this.currentMutation = void 0;
+				this.updateResult();
+				this.notify({ listeners: true });
+			}
+			mutate(variables, options) {
+				this.mutateOptions = options;
+				if (this.currentMutation) this.currentMutation.removeObserver(this);
+				this.currentMutation = this.client.getMutationCache().build(this.client, {
+					...this.options,
+					variables: typeof variables !== "undefined" ? variables : this.options.variables
+				});
+				this.currentMutation.addObserver(this);
+				return this.currentMutation.execute();
+			}
+			updateResult() {
+				const state = this.currentMutation ? this.currentMutation.state : getDefaultState();
+				const isLoading = state.status === "loading";
+				const result = {
+					...state,
+					isLoading,
+					isPending: isLoading,
+					isSuccess: state.status === "success",
+					isError: state.status === "error",
+					isIdle: state.status === "idle",
+					mutate: this.mutate,
+					reset: this.reset
+				};
+				this.currentResult = result;
+			}
+			notify(options) {
+				notifyManager.batch(() => {
+					if (this.mutateOptions && this.hasListeners()) {
+						if (options.onSuccess) {
+							var _this$mutateOptions$o, _this$mutateOptions, _this$mutateOptions$o2, _this$mutateOptions2;
+							(_this$mutateOptions$o = (_this$mutateOptions = this.mutateOptions).onSuccess) == null || _this$mutateOptions$o.call(_this$mutateOptions, this.currentResult.data, this.currentResult.variables, this.currentResult.context);
+							(_this$mutateOptions$o2 = (_this$mutateOptions2 = this.mutateOptions).onSettled) == null || _this$mutateOptions$o2.call(_this$mutateOptions2, this.currentResult.data, null, this.currentResult.variables, this.currentResult.context);
+						} else if (options.onError) {
+							var _this$mutateOptions$o3, _this$mutateOptions3, _this$mutateOptions$o4, _this$mutateOptions4;
+							(_this$mutateOptions$o3 = (_this$mutateOptions3 = this.mutateOptions).onError) == null || _this$mutateOptions$o3.call(_this$mutateOptions3, this.currentResult.error, this.currentResult.variables, this.currentResult.context);
+							(_this$mutateOptions$o4 = (_this$mutateOptions4 = this.mutateOptions).onSettled) == null || _this$mutateOptions$o4.call(_this$mutateOptions4, void 0, this.currentResult.error, this.currentResult.variables, this.currentResult.context);
+						}
+					}
+					if (options.listeners) this.listeners.forEach(({ listener }) => {
+						listener(this.currentResult);
+					});
+				});
+			}
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/query-core/build/lib/index.mjs
+	var init_lib$1 = __esmMin((() => {
+		init_retryer();
+		init_queryCache();
+		init_queryClient();
+		init_utils$2();
+		init_notifyManager();
+		init_focusManager();
+		init_subscribable();
+		init_mutationCache();
+		init_mutationObserver();
+		init_onlineManager();
+		init_query();
+	}));
+	//#endregion
+	//#region node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js
+	/**
+	* @license React
+	* use-sync-external-store-shim.production.js
+	*
+	* Copyright (c) Meta Platforms, Inc. and affiliates.
+	*
+	* This source code is licensed under the MIT license found in the
+	* LICENSE file in the root directory of this source tree.
+	*/
+	var require_use_sync_external_store_shim_production = /* @__PURE__ */ __commonJSMin(((exports) => {
+		var React = require_react$1();
+		function is(x, y) {
+			return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
+		}
+		var objectIs = "function" === typeof Object.is ? Object.is : is;
+		var useState = React.useState;
+		var useEffect = React.useEffect;
+		var useLayoutEffect = React.useLayoutEffect;
+		var useDebugValue = React.useDebugValue;
+		function useSyncExternalStore$2(subscribe, getSnapshot) {
+			var value = getSnapshot(), _useState = useState({ inst: {
+				value,
+				getSnapshot
+			} }), inst = _useState[0].inst, forceUpdate = _useState[1];
+			useLayoutEffect(function() {
+				inst.value = value;
+				inst.getSnapshot = getSnapshot;
+				checkIfSnapshotChanged(inst) && forceUpdate({ inst });
+			}, [
+				subscribe,
+				value,
+				getSnapshot
+			]);
+			useEffect(function() {
+				checkIfSnapshotChanged(inst) && forceUpdate({ inst });
+				return subscribe(function() {
+					checkIfSnapshotChanged(inst) && forceUpdate({ inst });
+				});
+			}, [subscribe]);
+			useDebugValue(value);
+			return value;
+		}
+		function checkIfSnapshotChanged(inst) {
+			var latestGetSnapshot = inst.getSnapshot;
+			inst = inst.value;
+			try {
+				var nextValue = latestGetSnapshot();
+				return !objectIs(inst, nextValue);
+			} catch (error) {
+				return !0;
+			}
+		}
+		function useSyncExternalStore$1(subscribe, getSnapshot) {
+			return getSnapshot();
+		}
+		var shim = "undefined" === typeof window || "undefined" === typeof window.document || "undefined" === typeof window.document.createElement ? useSyncExternalStore$1 : useSyncExternalStore$2;
+		exports.useSyncExternalStore = void 0 !== React.useSyncExternalStore ? React.useSyncExternalStore : shim;
+	}));
+	//#endregion
+	//#region node_modules/use-sync-external-store/shim/index.js
+	var require_shim = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		module.exports = require_use_sync_external_store_shim_production();
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/react-query/build/lib/useSyncExternalStore.mjs
+	var import_shim, useSyncExternalStore;
+	var init_useSyncExternalStore = __esmMin((() => {
+		import_shim = require_shim();
+		useSyncExternalStore = import_shim.useSyncExternalStore;
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/react-query/build/lib/QueryClientProvider.mjs
+	function getQueryClientContext(context, contextSharing) {
+		if (context) return context;
+		if (contextSharing && typeof window !== "undefined") {
+			if (!window.ReactQueryClientContext) window.ReactQueryClientContext = defaultContext;
+			return window.ReactQueryClientContext;
+		}
+		return defaultContext;
+	}
+	var import_react$199, defaultContext, QueryClientSharingContext, useQueryClient, QueryClientProvider;
+	var init_QueryClientProvider = __esmMin((() => {
+		import_react$199 = /* @__PURE__ */ __toESM(require_react$1(), 1);
+		defaultContext = /*#__PURE__*/ import_react$199.createContext(void 0);
+		QueryClientSharingContext = /*#__PURE__*/ import_react$199.createContext(false);
+		useQueryClient = ({ context } = {}) => {
+			const queryClient = import_react$199.useContext(getQueryClientContext(context, import_react$199.useContext(QueryClientSharingContext)));
+			if (!queryClient) throw new Error("No QueryClient set, use QueryClientProvider to set one");
+			return queryClient;
+		};
+		QueryClientProvider = ({ client, children, context, contextSharing = false }) => {
+			import_react$199.useEffect(() => {
+				client.mount();
+				return () => {
+					client.unmount();
+				};
+			}, [client]);
+			if (contextSharing) client.getLogger().error("The contextSharing option has been deprecated and will be removed in the next major version");
+			const Context = getQueryClientContext(context, contextSharing);
+			return /*#__PURE__*/ import_react$199.createElement(QueryClientSharingContext.Provider, { value: !context && contextSharing }, /*#__PURE__*/ import_react$199.createElement(Context.Provider, { value: client }, children));
+		};
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/react-query/build/lib/utils.mjs
+	function shouldThrowError(_useErrorBoundary, params) {
+		if (typeof _useErrorBoundary === "function") return _useErrorBoundary(...params);
+		return !!_useErrorBoundary;
+	}
+	var init_utils$1 = __esmMin((() => {}));
+	//#endregion
+	//#region node_modules/@tanstack/react-query/build/lib/useMutation.mjs
+	function useMutation(arg1, arg2, arg3) {
+		const options = parseMutationArgs(arg1, arg2, arg3);
+		const queryClient = useQueryClient({ context: options.context });
+		const [observer] = import_react$198.useState(() => new MutationObserver(queryClient, options));
+		import_react$198.useEffect(() => {
+			observer.setOptions(options);
+		}, [observer, options]);
+		const result = useSyncExternalStore(import_react$198.useCallback((onStoreChange) => observer.subscribe(notifyManager.batchCalls(onStoreChange)), [observer]), () => observer.getCurrentResult(), () => observer.getCurrentResult());
+		const mutate = import_react$198.useCallback((variables, mutateOptions) => {
+			observer.mutate(variables, mutateOptions).catch(noop$2);
+		}, [observer]);
+		if (result.error && shouldThrowError(observer.options.useErrorBoundary, [result.error])) throw result.error;
+		return {
+			...result,
+			mutate,
+			mutateAsync: result.mutate
+		};
+	}
+	function noop$2() {}
+	var import_react$198;
+	var init_useMutation = __esmMin((() => {
+		import_react$198 = /* @__PURE__ */ __toESM(require_react$1(), 1);
+		init_lib$1();
+		init_useSyncExternalStore();
+		init_QueryClientProvider();
+		init_utils$1();
+	}));
+	//#endregion
+	//#region node_modules/@tanstack/react-query/build/lib/index.mjs
+	var init_lib = __esmMin((() => {
+		init_lib$1();
+		init_lib$1();
+		init_useSyncExternalStore();
+		init_QueryClientProvider();
+		init_useMutation();
+	}));
+	//#endregion
+	//#region app/javascript/lib/query-client.js
+	var queryClient;
+	var init_query_client = __esmMin((() => {
+		init_lib();
+		queryClient = new QueryClient({ defaultOptions: { queries: {
+			retry: false,
+			refetchOnWindowFocus: false
+		} } });
+	}));
+	//#endregion
 	//#region app/javascript/react/lib/decorate-resource-names.js
 	var decorate_resource_names_exports = /* @__PURE__ */ __exportAll({ default: () => decorate_resource_names_default });
 	function decorate_resource_names_default(o) {
@@ -32302,7 +31985,7 @@ viewBox='0 0 255 255'> \
 	var init_videojs_title_bar_plugin = __esmMin((() => {}));
 	//#endregion
 	//#region node_modules/video.js/node_modules/global/window.js
-	var require_window = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var require_window$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		if (typeof window !== "undefined") module.exports = window;
 		else if (typeof global !== "undefined") module.exports = global;
 		else if (typeof self !== "undefined") module.exports = self;
@@ -32353,7 +32036,7 @@ viewBox='0 0 255 255'> \
 		exports.__esModule = true;
 		exports.BACKGROUND_SIZE_SUPPORTED = exports.TOUCH_ENABLED = exports.IS_ANY_SAFARI = exports.IS_SAFARI = exports.IE_VERSION = exports.IS_IE8 = exports.IS_CHROME = exports.IS_EDGE = exports.IS_FIREFOX = exports.IS_NATIVE_ANDROID = exports.IS_OLD_ANDROID = exports.ANDROID_VERSION = exports.IS_ANDROID = exports.IOS_VERSION = exports.IS_IOS = exports.IS_IPOD = exports.IS_IPHONE = exports.IS_IPAD = void 0;
 		var Dom = _interopRequireWildcard(require_dom());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		function _interopRequireDefault(obj) {
 			return obj && obj.__esModule ? obj : { "default": obj };
 		}
@@ -32534,7 +32217,7 @@ viewBox='0 0 255 255'> \
 	var require_log = /* @__PURE__ */ __commonJSMin(((exports) => {
 		exports.__esModule = true;
 		exports.logByType = void 0;
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var _browser = require_browser$3();
 		var _obj = require_obj();
 		function _interopRequireDefault(obj) {
@@ -32668,7 +32351,7 @@ viewBox='0 0 255 255'> \
 		exports.appendContent = appendContent;
 		exports.insertContent = insertContent;
 		var _document2 = _interopRequireDefault(require_document());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var Guid = _interopRequireWildcard(require_guid());
 		var _log2 = _interopRequireDefault(require_log());
 		var _tsml2 = _interopRequireDefault(require_tsml());
@@ -33306,7 +32989,7 @@ viewBox='0 0 255 255'> \
 		var Dom = _interopRequireWildcard(require_dom());
 		var Guid = _interopRequireWildcard(require_guid());
 		var _log2 = _interopRequireDefault(require_log());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var _document2 = _interopRequireDefault(require_document());
 		function _interopRequireDefault(obj) {
 			return obj && obj.__esModule ? obj : { "default": obj };
@@ -33575,7 +33258,7 @@ viewBox='0 0 255 255'> \
 		var Dom = _interopRequireWildcard(require_dom());
 		var Events = _interopRequireWildcard(require_events());
 		var _document2 = _interopRequireDefault(require_document());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		function _interopRequireDefault(obj) {
 			return obj && obj.__esModule ? obj : { "default": obj };
 		}
@@ -33759,7 +33442,7 @@ viewBox='0 0 255 255'> \
 	//#region node_modules/video.js/es5/component.js
 	var require_component = /* @__PURE__ */ __commonJSMin(((exports) => {
 		exports.__esModule = true;
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var Dom = _interopRequireWildcard(require_dom());
 		var Fn = _interopRequireWildcard(require_fn());
 		var Guid = _interopRequireWildcard(require_guid());
@@ -36269,7 +35952,7 @@ viewBox='0 0 255 255'> \
 		exports.__esModule = true;
 		exports.isCrossOrigin = exports.getFileExtension = exports.getAbsoluteURL = exports.parseUrl = void 0;
 		var _document2 = _interopRequireDefault(require_document());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		function _interopRequireDefault(obj) {
 			return obj && obj.__esModule ? obj : { "default": obj };
 		}
@@ -36409,7 +36092,7 @@ viewBox='0 0 255 255'> \
 	//#endregion
 	//#region node_modules/video.js/node_modules/xhr/index.js
 	var require_xhr$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var window = require_window();
+		var window = require_window$1();
 		var isFunction = require_is_function();
 		var parseHeaders = require_parse_headers();
 		var xtend = require_immutable();
@@ -36564,7 +36247,7 @@ viewBox='0 0 255 255'> \
 		var Fn = _interopRequireWildcard(require_fn());
 		var _trackEnums = require_track_enums();
 		var _log2 = _interopRequireDefault(require_log());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var _track2 = _interopRequireDefault(require_track());
 		var _url = require_url();
 		var _xhr2 = _interopRequireDefault(require_xhr$1());
@@ -40740,7 +40423,7 @@ viewBox='0 0 255 255'> \
 		var _timeRanges = require_time_ranges();
 		var _buffer = require_buffer();
 		var _mediaError2 = _interopRequireDefault(require_media_error());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var _document2 = _interopRequireDefault(require_document());
 		var _obj = require_obj();
 		function _interopRequireWildcard(obj) {
@@ -41936,7 +41619,7 @@ viewBox='0 0 255 255'> \
 		var _timeRanges = require_time_ranges();
 		var _flashRtmp2 = _interopRequireDefault(require_flash_rtmp());
 		var _component2 = _interopRequireDefault(require_component());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var _obj = require_obj();
 		function _interopRequireWildcard(obj) {
 			if (obj && obj.__esModule) return obj;
@@ -43184,7 +42867,7 @@ viewBox='0 0 255 255'> \
 		exports.__esModule = true;
 		var _component2 = _interopRequireDefault(require_component());
 		var Fn = _interopRequireWildcard(require_fn());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		function _interopRequireWildcard(obj) {
 			if (obj && obj.__esModule) return obj;
 			else {
@@ -44639,7 +44322,7 @@ viewBox='0 0 255 255'> \
 	var require_computed_style = /* @__PURE__ */ __commonJSMin(((exports) => {
 		exports.__esModule = true;
 		exports["default"] = computedStyle;
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		function _interopRequireDefault(obj) {
 			return obj && obj.__esModule ? obj : { "default": obj };
 		}
@@ -46816,7 +46499,7 @@ viewBox='0 0 255 255'> \
 		var _menuItem2 = _interopRequireDefault(require_menu_item());
 		var _component2 = _interopRequireDefault(require_component());
 		var Fn = _interopRequireWildcard(require_fn());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var _document2 = _interopRequireDefault(require_document());
 		function _interopRequireWildcard(obj) {
 			if (obj && obj.__esModule) return obj;
@@ -48534,7 +48217,7 @@ viewBox='0 0 255 255'> \
 	//#region node_modules/video.js/es5/tracks/text-track-settings.js
 	var require_text_track_settings = /* @__PURE__ */ __commonJSMin(((exports) => {
 		exports.__esModule = true;
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var _component2 = _interopRequireDefault(require_component());
 		var _dom = require_dom();
 		var Fn = _interopRequireWildcard(require_fn());
@@ -49041,7 +48724,7 @@ viewBox='0 0 255 255'> \
 		var _tsml2 = _interopRequireDefault(require_tsml());
 		var browser = _interopRequireWildcard(require_browser$3());
 		var _document2 = _interopRequireDefault(require_document());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var _obj = require_obj();
 		var _mergeOptions2 = _interopRequireDefault(require_merge_options());
 		var _toTitleCase2 = _interopRequireDefault(require_to_title_case());
@@ -49979,7 +49662,7 @@ viewBox='0 0 255 255'> \
 		exports.__esModule = true;
 		var _component2 = _interopRequireDefault(require_component());
 		var _document2 = _interopRequireDefault(require_document());
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var Events = _interopRequireWildcard(require_events());
 		var Dom = _interopRequireWildcard(require_dom());
 		var Fn = _interopRequireWildcard(require_fn());
@@ -52507,7 +52190,7 @@ viewBox='0 0 255 255'> \
 		} : function(obj) {
 			return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
 		};
-		var _window2 = _interopRequireDefault(require_window());
+		var _window2 = _interopRequireDefault(require_window$1());
 		var _document2 = _interopRequireDefault(require_document());
 		var setup = _interopRequireWildcard(require_setup());
 		var stylesheet = _interopRequireWildcard(require_stylesheet());
@@ -62190,7 +61873,7 @@ viewBox='0 0 255 255'> \
 	}));
 	//#endregion
 	//#region node_modules/uncontrollable/utils.js
-	var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports) => {
+	var require_utils = /* @__PURE__ */ __commonJSMin(((exports) => {
 		exports.__esModule = true;
 		exports.version = void 0;
 		exports.uncontrolledPropTypes = uncontrolledPropTypes;
@@ -62274,7 +61957,7 @@ viewBox='0 0 255 255'> \
 		exports.default = createUncontrollable;
 		var _react2 = _interopRequireDefault(require_react$1());
 		var _invariant2 = _interopRequireDefault(require_browser$2());
-		var utils = _interopRequireWildcard(require_utils$2());
+		var utils = _interopRequireWildcard(require_utils());
 		function _interopRequireWildcard(obj) {
 			if (obj && obj.__esModule) return obj;
 			else {
@@ -64881,9 +64564,19 @@ viewBox='0 0 255 255'> \
 		};
 	}));
 	//#endregion
+	//#region node_modules/global/window.js
+	var require_window = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		var win;
+		if (typeof window !== "undefined") win = window;
+		else if (typeof global !== "undefined") win = global;
+		else if (typeof self !== "undefined") win = self;
+		else win = {};
+		module.exports = win;
+	}));
+	//#endregion
 	//#region node_modules/xhr/index.js
 	var require_xhr = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var window = require_window$1();
+		var window = require_window();
 		var isFunction = require_is_function();
 		var parseHeaders = require_parse_headers();
 		var xtend = require_immutable();
@@ -65037,7 +64730,7 @@ viewBox='0 0 255 255'> \
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSet.jsx
 	var BatchAddToSet_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSet });
-	var import_react$169, import_lib$13, import_rails_csrf_token$17, import_xhr$18, BatchAddToSet;
+	var import_react$169, import_lib$13, import_rails_csrf_token$20, import_xhr$15, BatchAddToSet;
 	var init_BatchAddToSet = __esmMin((() => {
 		init_present();
 		init_lodash();
@@ -65048,8 +64741,8 @@ viewBox='0 0 255 255'> \
 		init_rails_form();
 		init_Preloader();
 		import_lib$13 = /* @__PURE__ */ __toESM(require_lib$1());
-		import_rails_csrf_token$17 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
-		import_xhr$18 = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$20 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_xhr$15 = /* @__PURE__ */ __toESM(require_xhr());
 		BatchAddToSet = class extends import_react$169.Component {
 			constructor(props) {
 				super(props);
@@ -65082,14 +64775,14 @@ viewBox='0 0 255 255'> \
 						return_to: this.state.get.return_to
 					};
 					const body = import_lib$13.default.stringify(data, { arrayFormat: "brackets" });
-					return this.lastRequest = (0, import_xhr$18.default)({
+					return this.lastRequest = (0, import_xhr$15.default)({
 						url: this.props.get.batch_select_add_to_set_url,
 						method: "POST",
 						body,
 						headers: {
 							Accept: "application/json",
 							"Content-type": "application/x-www-form-urlencoded",
-							"X-CSRF-Token": (0, import_rails_csrf_token$17.default)()
+							"X-CSRF-Token": (0, import_rails_csrf_token$20.default)()
 						}
 					}, (err, res, json) => {
 						if (err || res.statusCode !== 200) return;
@@ -65277,14 +64970,14 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSetModal.jsx
 	var BatchAddToSetModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSetModal });
-	var import_react$168, import_lib$12, import_xhr$17, import_rails_csrf_token$16, BatchAddToSetModal;
+	var import_react$168, import_lib$12, import_xhr$14, import_rails_csrf_token$19, BatchAddToSetModal;
 	var init_BatchAddToSetModal = __esmMin((() => {
 		import_react$168 = /* @__PURE__ */ __toESM(require_react$1());
 		init_BatchAddToSet();
 		import_lib$12 = /* @__PURE__ */ __toESM(require_lib$1());
-		import_xhr$17 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$14 = /* @__PURE__ */ __toESM(require_xhr());
 		init_Modal();
-		import_rails_csrf_token$16 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$19 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BatchAddToSetModal = ({ resourceIds, returnTo, authToken, onClose }) => {
 			const [loading, setLoading] = (0, import_react$168.useState)(true);
 			const [get, setGet] = (0, import_react$168.useState)(null);
@@ -65294,14 +64987,14 @@ Zu diesem hinzufügen\
 					resource_id: resourceIds,
 					return_to: returnTo
 				};
-				(0, import_xhr$17.default)({
+				(0, import_xhr$14.default)({
 					url: "/batch_select_add_to_set",
 					method: "POST",
 					body: import_lib$12.default.stringify(data, { arrayFormat: "brackets" }),
 					headers: {
 						Accept: "application/json",
 						"Content-type": "application/x-www-form-urlencoded",
-						"X-CSRF-Token": (0, import_rails_csrf_token$16.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$19.default)()
 					}
 				}, (err, res, json) => {
 					if (err || res.statusCode !== 200) return;
@@ -65324,15 +65017,15 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchEditTitleModal.jsx
 	var BatchEditTitleModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchEditTitleModal });
-	var import_react$167, import_xhr$16, import_lib$11, import_rails_csrf_token$15, endPointUrl, BatchEditTitleModal;
+	var import_react$167, import_xhr$13, import_lib$11, import_rails_csrf_token$18, endPointUrl, BatchEditTitleModal;
 	var init_BatchEditTitleModal = __esmMin((() => {
 		import_react$167 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Modal();
 		init_rails_form();
 		init_FormButton();
-		import_xhr$16 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$13 = /* @__PURE__ */ __toESM(require_xhr());
 		import_lib$11 = /* @__PURE__ */ __toESM(require_lib$1());
-		import_rails_csrf_token$15 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$18 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_i18n_translate();
 		endPointUrl = "/batch_edit_title";
 		BatchEditTitleModal = class extends import_react$167.Component {
@@ -65353,14 +65046,14 @@ Zu diesem hinzufügen\
 					return_to: returnTo
 				};
 				const body = import_lib$11.default.stringify(requestData, { arrayFormat: "brackets" });
-				(0, import_xhr$16.default)({
+				(0, import_xhr$13.default)({
 					url: endPointUrl,
 					method: "POST",
 					body,
 					headers: {
 						Accept: "application/json",
 						"Content-type": "application/x-www-form-urlencoded",
-						"X-CSRF-Token": (0, import_rails_csrf_token$15.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$18.default)()
 					}
 				}, (err, res, json) => {
 					if (err || res.statusCode !== 200) this.setState({
@@ -65570,17 +65263,17 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/lib/load-xhr.js
-	var import_xhr$15, import_rails_csrf_token$14, load_xhr_default;
+	var import_xhr$12, import_rails_csrf_token$17, load_xhr_default;
 	var init_load_xhr = __esmMin((() => {
-		import_xhr$15 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$14 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
-		load_xhr_default = (config, callback) => (0, import_xhr$15.default)({
+		import_xhr$12 = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$17 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		load_xhr_default = (config, callback) => (0, import_xhr$12.default)({
 			method: config.method,
 			url: config.url,
 			headers: {
 				Accept: "application/json",
 				"Content-type": "application/x-www-form-urlencoded",
-				"X-CSRF-Token": (0, import_rails_csrf_token$14.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$17.default)()
 			}
 		}, function(err, res, body) {
 			let data;
@@ -65719,17 +65412,17 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxDelete.js
 	var BoxDelete_exports = /* @__PURE__ */ __exportAll({ default: () => BoxDelete_default });
-	var import_xhr$14, import_rails_csrf_token$13, BoxDelete_default;
+	var import_xhr$11, import_rails_csrf_token$16, BoxDelete_default;
 	var init_BoxDelete = __esmMin((() => {
-		import_xhr$14 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$13 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_xhr$11 = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$16 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BoxDelete_default = (resource, callback) => {
-			(0, import_xhr$14.default)({
+			(0, import_xhr$11.default)({
 				url: resource.url,
 				method: "DELETE",
 				headers: {
 					Accept: "application/json",
-					"X-CSRF-Token": (0, import_rails_csrf_token$13.default)()
+					"X-CSRF-Token": (0, import_rails_csrf_token$16.default)()
 				}
 			}, () => {
 				callback();
@@ -65793,10 +65486,10 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxFavorite.js
 	var BoxFavorite_exports = /* @__PURE__ */ __exportAll({ default: () => BoxFavorite_default });
-	var import_xhr$13, import_rails_csrf_token$12, BoxFavorite_default;
+	var import_xhr$10, import_rails_csrf_token$15, BoxFavorite_default;
 	var init_BoxFavorite = __esmMin((() => {
-		import_xhr$13 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$12 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_xhr$10 = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$15 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BoxFavorite_default = (last, props, trigger) => {
 			var nextPendingFavorite = () => {
 				if (props.event == "toggle") return true;
@@ -65810,12 +65503,12 @@ Zu diesem hinzufügen\
 			var sendToggle = () => {
 				var actionName = last.favored ? "disfavor" : "favor";
 				var url = props.resource[actionName + "_url"];
-				(0, import_xhr$13.default)({
+				(0, import_xhr$10.default)({
 					url,
 					method: "PATCH",
 					headers: {
 						Accept: "application/json",
-						"X-CSRF-Token": (0, import_rails_csrf_token$12.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$15.default)()
 					}
 				}, () => {
 					trigger({ event: "toggle-done" });
@@ -65838,12 +65531,12 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxFetchRelations.js
 	var BoxFetchRelations_exports = /* @__PURE__ */ __exportAll({ default: () => BoxFetchRelations_default });
-	var import_url$24, import_xhr$12, import_rails_csrf_token$11, BoxFetchRelations_default;
+	var import_url$24, import_xhr$9, import_rails_csrf_token$14, BoxFetchRelations_default;
 	var init_BoxFetchRelations = __esmMin((() => {
 		init_lodash();
 		import_url$24 = /* @__PURE__ */ __toESM(require_url$1());
-		import_xhr$12 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$11 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_xhr$9 = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$14 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BoxFetchRelations_default = (last, props, trigger) => {
 			var next = () => {
 				if (props.event == "try-fetch") {
@@ -65904,12 +65597,12 @@ Zu diesem hinzufügen\
 				parsedUrl.query["list[page]"] = 1;
 				parsedUrl.query["list[per_page]"] = 2;
 				parsedUrl.query["___sparse"] = sparseSpec;
-				(0, import_xhr$12.default)({
+				(0, import_xhr$9.default)({
 					url: import_url$24.format(parsedUrl),
 					json: true,
 					headers: {
 						Accept: "application/json",
-						"X-CSRF-Token": (0, import_rails_csrf_token$11.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$14.default)()
 					}
 				}, (err, res, json) => {
 					trigger({
@@ -74420,22 +74113,22 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/lib/form-put-with-errors.js
-	var import_xhr$11, import_rails_csrf_token$10, form_put_with_errors_default;
+	var import_xhr$8, import_rails_csrf_token$13, form_put_with_errors_default;
 	var init_form_put_with_errors = __esmMin((() => {
-		import_xhr$11 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$10 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_xhr$8 = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$13 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_i18n_translate();
 		init_lodash();
 		form_put_with_errors_default = {
 			shared: function(data, actionUrl, contentType, callback) {
-				return (0, import_xhr$11.default)({
+				return (0, import_xhr$8.default)({
 					method: "PUT",
 					url: actionUrl,
 					body: data,
 					headers: {
 						Accept: "application/json",
 						"Content-type": contentType,
-						"X-CSRF-Token": (0, import_rails_csrf_token$10.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$13.default)()
 					}
 				}, function(err, res, body) {
 					if (err) {
@@ -76492,7 +76185,7 @@ Group\
 							if (isArray$1(val)) val = val.map((v) => v.id).join(",");
 							if (key === "role" && !val.id && val.label) return [`${name}[${key}][term]`, val.label];
 							else {
-								if (isPlainObject$1(val) && has(val, "id")) val = val.id;
+								if (isPlainObject$2(val) && has(val, "id")) val = val.id;
 								if (present$1(val)) return [`${name}[${key}]`, val + ""];
 							}
 						}));
@@ -76630,7 +76323,7 @@ Group\
 		} catch (e) {
 			return String(e).replace("SyntaxError: JSON.parse: ", "");
 		}
-		if (!isPlainObject$1(parsed)) return I18nTranslate("meta_data_input_json_err_no_object");
+		if (!isPlainObject$2(parsed)) return I18nTranslate("meta_data_input_json_err_no_object");
 	}
 	function ensureText(value) {
 		if (!value || isString(value)) return value;
@@ -77905,6 +77598,69 @@ Group\
 		module.exports = noop;
 	}));
 	//#endregion
+	//#region node_modules/lodash/constant.js
+	var require_constant = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		/**
+		* Creates a function that returns `value`.
+		*
+		* @static
+		* @memberOf _
+		* @since 2.4.0
+		* @category Util
+		* @param {*} value The value to return from the new function.
+		* @returns {Function} Returns the new constant function.
+		* @example
+		*
+		* var objects = _.times(2, _.constant({ 'a': 1 }));
+		*
+		* console.log(objects);
+		* // => [{ 'a': 1 }, { 'a': 1 }]
+		*
+		* console.log(objects[0] === objects[1]);
+		* // => true
+		*/
+		function constant(value) {
+			return function() {
+				return value;
+			};
+		}
+		module.exports = constant;
+	}));
+	//#endregion
+	//#region node_modules/lodash/isObject.js
+	var require_isObject = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		/**
+		* Checks if `value` is the
+		* [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+		* of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+		*
+		* @static
+		* @memberOf _
+		* @since 0.1.0
+		* @category Lang
+		* @param {*} value The value to check.
+		* @returns {boolean} Returns `true` if `value` is an object, else `false`.
+		* @example
+		*
+		* _.isObject({});
+		* // => true
+		*
+		* _.isObject([1, 2, 3]);
+		* // => true
+		*
+		* _.isObject(_.noop);
+		* // => true
+		*
+		* _.isObject(null);
+		* // => false
+		*/
+		function isObject(value) {
+			var type = typeof value;
+			return value != null && (type == "object" || type == "function");
+		}
+		module.exports = isObject;
+	}));
+	//#endregion
 	//#region node_modules/async/internal/slice.js
 	var require_slice = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		Object.defineProperty(exports, "__esModule", { value: true });
@@ -78219,7 +77975,7 @@ Group\
 		if (config.retries && !isNumber(config.retries)) throw new TypeError("Not a number!");
 		if (config.delay && !isNumber(config.delay)) throw new TypeError("Not a number!");
 		const jsonDefaultHeader = { Accept: "application/json" };
-		if (config.method && !includes(["GET", "HEAD"], config.method)) csrfHeader = { "X-CSRF-Token": (0, import_rails_csrf_token$9.default)() };
+		if (config.method && !includes(["GET", "HEAD"], config.method)) csrfHeader = { "X-CSRF-Token": (0, import_rails_csrf_token$12.default)() };
 		if (!isEmpty$1(config.sparse)) sparsedUrl = {
 			url: set_params_for_url_default(config.url, { ___sparse: config.sparse }),
 			sparse: null
@@ -78233,7 +77989,7 @@ Group\
 			jsonDefaultHeader,
 			csrfHeader
 		]) }, sparsedUrl);
-		const request = (callback) => (0, import_xhr$10.default)(requestConfig, function(err, res, body) {
+		const request = (callback) => (0, import_xhr$7.default)(requestConfig, function(err, res, body) {
 			if (!err && res.statusCode >= 400) {
 				let msg = `Error ${res.statusCode}!`;
 				if (!isEmpty$1(res.body)) msg = `${err}\n\n${res.body}`;
@@ -78257,29 +78013,29 @@ Group\
 		}, (retryCallback) => request(retryCallback), finalCallback);
 		else return request(finalCallback);
 	}
-	var import_xhr$10, import_retry, import_rails_csrf_token$9, mergeHeaders;
+	var import_xhr$7, import_retry, import_rails_csrf_token$12, mergeHeaders;
 	var init_app_request = __esmMin((() => {
 		init_lodash();
-		import_xhr$10 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$7 = /* @__PURE__ */ __toESM(require_xhr());
 		import_retry = /* @__PURE__ */ __toESM(require_retry());
 		init_set_params_for_url();
-		import_rails_csrf_token$9 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$12 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		mergeHeaders = (arrayOfHeaders) => arrayOfHeaders.map((headers) => Object.fromEntries(map(headers, (v, k) => [k.toLowerCase(), v]))).reduce((headers, res) => merge(res, headers), {});
 	}));
 	//#endregion
 	//#region app/javascript/lib/simple-xhr.js
-	var import_xhr$9, import_rails_csrf_token$8, simple_xhr_default;
+	var import_xhr$6, import_rails_csrf_token$11, simple_xhr_default;
 	var init_simple_xhr = __esmMin((() => {
-		import_xhr$9 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$8 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
-		simple_xhr_default = (config, callback) => (0, import_xhr$9.default)({
+		import_xhr$6 = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$11 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		simple_xhr_default = (config, callback) => (0, import_xhr$6.default)({
 			method: config.method,
 			url: config.url,
 			body: config.body,
 			headers: {
 				Accept: "application/json",
 				"Content-type": "application/x-www-form-urlencoded",
-				"X-CSRF-Token": (0, import_rails_csrf_token$8.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$11.default)()
 			}
 		}, function(err, res) {
 			let error = null;
@@ -78495,7 +78251,7 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/resourcesbox/Clipboard.jsx
 	var Clipboard_exports = /* @__PURE__ */ __exportAll({ default: () => Clipboard });
-	var import_react$109, import_xhr$8, Clipboard;
+	var import_react$109, import_xhr$5, Clipboard;
 	var init_Clipboard = __esmMin((() => {
 		init_lodash();
 		import_react$109 = /* @__PURE__ */ __toESM(require_react$1());
@@ -78503,7 +78259,7 @@ Group\
 		init_Modal();
 		init_set_params_for_url();
 		init_form_put_with_errors();
-		import_xhr$8 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$5 = /* @__PURE__ */ __toESM(require_xhr());
 		Clipboard = class extends import_react$109.Component {
 			constructor(props) {
 				super(props);
@@ -78535,7 +78291,7 @@ Group\
 					uuid: {},
 					type: {}
 				}])) });
-				return import_xhr$8.default.get({
+				return import_xhr$5.default.get({
 					url: nextUrl,
 					json: true
 				}, (err, res, body) => {
@@ -78775,14 +78531,14 @@ Group\
 			url = url + "?" + body;
 			body = "";
 		}
-		return (0, import_xhr$7.default)({
+		return (0, import_xhr$4.default)({
 			method: config.method,
 			url,
 			body,
 			headers: {
 				Accept: "application/json",
 				"Content-type": "application/x-www-form-urlencoded",
-				"X-CSRF-Token": (0, import_rails_csrf_token$7.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$10.default)()
 			}
 		}, function(err, res, body) {
 			let data;
@@ -78813,10 +78569,10 @@ Group\
 			return callback("success", data);
 		});
 	}
-	var import_xhr$7, import_rails_csrf_token$7;
+	var import_xhr$4, import_rails_csrf_token$10;
 	var init_form_xhr = __esmMin((() => {
-		import_xhr$7 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$7 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_xhr$4 = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$10 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 	}));
 	//#endregion
 	//#region app/javascript/react/views/My/CreateCollection.jsx
@@ -78979,7 +78735,7 @@ Group\
 	});
 	function fetchPage({ currentUrl, sparsePath, page, onFetched }) {
 		const url = set_params_for_url_default(currentUrl, { list: { page } }, { ___sparse: JSON.stringify(set({}, sparsePath, {})) });
-		return import_xhr$6.default.get({
+		return import_xhr$3.default.get({
 			url,
 			json: true
 		}, (err, res, body) => {
@@ -78995,7 +78751,7 @@ Group\
 		const parsedUrl = parseUrl$13(resourceUrl, true);
 		delete parsedUrl.search;
 		const url = set_params_for_url_default(buildUrl$6(parsedUrl), currentQuery);
-		import_xhr$6.default.get({
+		import_xhr$3.default.get({
 			url,
 			json: true
 		}, (err, res, json) => {
@@ -79006,10 +78762,10 @@ Group\
 			});
 		});
 	}
-	var import_xhr$6, import_url$19, import_lib$3, parseUrl$13, buildUrl$6, parseQuery$2, dataFetchers_default;
+	var import_xhr$3, import_url$19, import_lib$3, parseUrl$13, buildUrl$6, parseQuery$2, dataFetchers_default;
 	var init_dataFetchers = __esmMin((() => {
 		init_lodash();
-		import_xhr$6 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$3 = /* @__PURE__ */ __toESM(require_xhr());
 		init_set_params_for_url();
 		import_url$19 = /* @__PURE__ */ __toESM(require_url$1());
 		import_lib$3 = /* @__PURE__ */ __toESM(require_lib$1());
@@ -79156,7 +78912,7 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/MediaResourcesBox.jsx
 	var MediaResourcesBox_exports = /* @__PURE__ */ __exportAll({ default: () => MediaResourcesBox });
-	var import_react$105, import_url$18, import_local_links, import_createBrowserHistory$1, import_useBeforeUnload$1, import_rails_csrf_token$6, import_ui_components$14, getLocalLink, routerGoto, isNewTab, MediaResourcesBox;
+	var import_react$105, import_url$18, import_local_links, import_createBrowserHistory$1, import_useBeforeUnload$1, import_rails_csrf_token$9, import_ui_components$14, getLocalLink, routerGoto, isNewTab, MediaResourcesBox;
 	var init_MediaResourcesBox = __esmMin((() => {
 		init_present();
 		init_lodash();
@@ -79168,7 +78924,7 @@ Group\
 		init_ui();
 		init_set_params_for_url();
 		init_app_request();
-		import_rails_csrf_token$6 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$9 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_simple_xhr();
 		init_form_put_with_errors();
 		init_resource_type_switcher();
@@ -79415,7 +79171,7 @@ Group\
 			_sharedOnBatch = (resources, event, path) => {
 				event.preventDefault();
 				const selected = map(resources, "uuid");
-				const html = `<form method="post" acceptCharset="UTF-8" action="${path}"><input type="hidden" name="authenticity_token" value="` + (0, import_rails_csrf_token$6.default)() + "\"></input><input type=\"hidden\" name=\"return_to\" value=\"" + this._currentUrl() + "\"></input><button type=\"button\"></button>" + join(map(selected, (s) => {
+				const html = `<form method="post" acceptCharset="UTF-8" action="${path}"><input type="hidden" name="authenticity_token" value="` + (0, import_rails_csrf_token$9.default)() + "\"></input><input type=\"hidden\" name=\"return_to\" value=\"" + this._currentUrl() + "\"></input><button type=\"button\"></button>" + join(map(selected, (s) => {
 					return `<input type="hidden" name="id[]" value="${s}"></input>`;
 				}), "") + "</form>";
 				const form = document.createElement("div");
@@ -80510,7 +80266,7 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/ResourceMetaDataPagePerContext.jsx
 	var ResourceMetaDataPagePerContext_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceMetaDataPagePerContext });
-	var import_react$95, import_url$17, import_xhr$5, import_rails_csrf_token$5, ResourceMetaDataPagePerContext;
+	var import_react$95, import_url$17, import_xhr$2, import_rails_csrf_token$8, ResourceMetaDataPagePerContext;
 	var init_ResourceMetaDataPagePerContext = __esmMin((() => {
 		init_present();
 		init_lodash();
@@ -80524,9 +80280,9 @@ Group\
 		init_PageContent();
 		init_PageContentHeader();
 		init_TabContent();
-		import_xhr$5 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$2 = /* @__PURE__ */ __toESM(require_xhr());
 		init_rails_form();
-		import_rails_csrf_token$5 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$8 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_metadata_edit_validation();
 		init_MetadataEditRenderer();
 		ResourceMetaDataPagePerContext = class extends import_react$95.Component {
@@ -80670,14 +80426,14 @@ Group\
 					systemError: false
 				});
 				const serialized = this.formRef.current.serialize();
-				return (0, import_xhr$5.default)({
+				return (0, import_xhr$2.default)({
 					method: "PUT",
 					url: this._actionUrl(),
 					body: serialized,
 					headers: {
 						Accept: "application/json",
 						"Content-type": "application/x-www-form-urlencoded",
-						"X-CSRF-Token": (0, import_rails_csrf_token$5.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$8.default)()
 					}
 				}, (err, res, body) => {
 					let data;
@@ -80920,16 +80676,22 @@ There are no contexts defined. Please configure them in the admin tool.\
 				if (param == null) param = this.props;
 				const { get, children, editing, saving, onEdit, onSubmit, onCancel, optionals, decos } = param;
 				const editable = get.can_edit;
+				const user_permissions_title = get.type === "Vocabulary" ? I18nTranslate("permission_subject_title_users") : I18nTranslate("permission_subject_title_users_or_delegations");
+				const { onPermissionChange, onPublicPermissionChange, onAddSubject, onRemoveSubject } = param;
 				let rows = [
 					{
+						collectionKey: "user_permissions",
+						isSubjectList: true,
 						type: ["Users", "Delegations"],
-						title: get.type === "Vocabulary" ? I18nTranslate("permission_subject_title_users") : I18nTranslate("permission_subject_title_users_or_delegations"),
+						title: user_permissions_title,
 						icon: "privacy-private-alt",
 						SubjectDeco: decos.Users || defaultSubjectDecos.User,
 						permissionsList: get.user_permissions,
 						overriddenBy: get.public_permission
 					},
 					{
+						collectionKey: "group_permissions",
+						isSubjectList: true,
 						type: "Groups",
 						title: I18nTranslate("permission_subject_title_groups"),
 						icon: "privacy-group-alt",
@@ -80939,6 +80701,8 @@ There are no contexts defined. Please configure them in the admin tool.\
 						searchParams: { scope: "permissions" }
 					},
 					{
+						collectionKey: "api_client_permissions",
+						isSubjectList: true,
 						type: "ApiClients",
 						title: I18nTranslate("permission_subject_title_apiapps"),
 						icon: "api",
@@ -80947,6 +80711,8 @@ There are no contexts defined. Please configure them in the admin tool.\
 						overriddenBy: get.public_permission
 					},
 					{
+						collectionKey: null,
+						isSubjectList: false,
 						title: I18nTranslate("permission_subject_title_public"),
 						subjectName: I18nTranslate("permission_subject_name_public"),
 						icon: "privacy-open",
@@ -80964,7 +80730,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 					return /*#__PURE__*/ import_react$94.createElement(PermissionsBySubjectType, _extends$12({ key: i }, Object.assign({}, row, {
 						showTitles,
 						editing,
-						permissionTypes: get.permission_types
+						permissionTypes: get.permission_types,
+						onPermissionChange: row.collectionKey ? onPermissionChange : onPublicPermissionChange,
+						onAddSubject,
+						onRemoveSubject
 					})));
 				})), /*#__PURE__*/ import_react$94.createElement("div", { className: "ptl" }, /*#__PURE__*/ import_react$94.createElement("div", { className: "form-footer" }, editable && onEdit && !editing && /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$94.createElement("a", {
 					href: this.props.editUrl,
@@ -80986,31 +80755,44 @@ There are no contexts defined. Please configure them in the admin tool.\
 				this.onAddSubject = this.onAddSubject.bind(this);
 			}
 			onAddSubject(subject) {
-				const list = this.props.permissionsList;
-				if (list.models.map((m) => m.subject.uuid).includes(subject.uuid)) return;
-				return list.add({ subject });
+				const { permissionsList, collectionKey, onAddSubject } = this.props;
+				if (onAddSubject) onAddSubject(collectionKey, subject);
+				else {
+					if ((permissionsList.models || permissionsList).map((m) => m.subject.uuid).includes(subject.uuid)) return;
+					permissionsList.add({ subject });
+				}
 			}
 			render() {
-				const { type, title, icon, permissionsList, SubjectDeco, subjectName, permissionTypes, overriddenBy, editing, showTitles, searchParams } = this.props;
+				const { type, title, icon, permissionsList, isSubjectList, collectionKey, SubjectDeco, subjectName, permissionTypes, overriddenBy, editing, showTitles, searchParams, onPermissionChange, onRemoveSubject } = this.props;
+				const items = permissionsList;
+				const existingUuids = () => (permissionsList.models || permissionsList).map((m) => m.subject && m.subject.uuid);
+				const showAddSubject = editing && (isSubjectList != null ? isSubjectList : permissionsList.isCollection);
 				return /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-rights-management-editing" }, /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-rights-body" }, /*#__PURE__*/ import_react$94.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$94.createElement(PermissionsSubjectHeader, {
 					name: title,
 					icon,
 					titles: permissionTypes,
 					showTitles: !!showTitles
-				}), /*#__PURE__*/ import_react$94.createElement("tbody", null, permissionsList.map(function(permissions) {
+				}), /*#__PURE__*/ import_react$94.createElement("tbody", null, items.map(function(permissions) {
 					const subject = permissions.subject || subjectName;
-					const tooltipText = permissions.tooltip_text || subject.tooltip_text;
+					const tooltipText = permissions.tooltip_text || subject && subject.tooltip_text;
+					const handlePermissionChange = onPermissionChange ? (name, value) => {
+						if (collectionKey) onPermissionChange(collectionKey, subject.uuid, permissionTypes, name, value);
+						else onPermissionChange(permissionTypes, name, value);
+					} : void 0;
+					const handleRemove = onRemoveSubject && permissions.subject ? () => onRemoveSubject(collectionKey, permissions.subject.uuid) : void 0;
 					return /*#__PURE__*/ import_react$94.createElement(PermissionsSubject, {
-						key: subject.uuid || "pub",
+						key: subject && subject.uuid || "pub",
 						permissions,
 						subject,
 						SubjectDeco,
 						overriddenBy,
 						permissionTypes,
 						editing,
-						tooltipText
+						tooltipText,
+						onPermissionChange: handlePermissionChange,
+						onRemoveSubject: handleRemove
 					});
-				}))), editing && permissionsList.isCollection ? /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-add-subject ptx" }, /*#__PURE__*/ import_react$94.createElement("div", {
+				}))), showAddSubject ? /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-add-subject ptx" }, /*#__PURE__*/ import_react$94.createElement("div", {
 					className: "col1of3",
 					style: {
 						position: "relative",
@@ -81021,7 +80803,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					name: `add_${type}`,
 					resourceType: type,
 					valueFilter: function({ uuid }) {
-						return permissionsList.models.map((m) => m.subject.uuid).includes(uuid);
+						return existingUuids().includes(uuid);
 					},
 					onSelect: this.onAddSubject,
 					searchParams
@@ -81069,12 +80851,16 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 			onPermissionChange(name, event) {
 				const value = event.target.checked;
-				this.props.permissions[name] = value;
-				if (value === true) return this.setWeakerUnchecked(name);
-				else return this.setStrongerChecked(name);
+				if (this.props.onPermissionChange) this.props.onPermissionChange(name, value);
+				else {
+					this.props.permissions[name] = value;
+					if (value === true) this.setWeakerUnchecked(name);
+					else this.setStrongerChecked(name);
+				}
 			}
 			onSubjectRemove() {
-				return this.props.permissions.destroy();
+				if (this.props.onRemoveSubject) this.props.onRemoveSubject();
+				else this.props.permissions.destroy();
 			}
 			render() {
 				const { permissions, overriddenBy, subject, permissionTypes, SubjectDeco, editing, tooltipText } = this.props;
@@ -81311,14 +81097,18 @@ There are no contexts defined. Please configure them in the admin tool.\
 		};
 	}));
 	//#endregion
+	//#region app/javascript/lib/app-config.js
+	var config;
+	var init_app_config = __esmMin((() => {
+		config = globalThis.APP_CONFIG;
+	}));
+	//#endregion
 	//#region app/javascript/lib/current-locale.js
 	function currentLocale() {
-		return get$1(import_ampersand_app$1.default, "config.userLanguage");
+		return config?.userLanguage;
 	}
-	var import_ampersand_app$1;
 	var init_current_locale = __esmMin((() => {
-		init_lodash();
-		import_ampersand_app$1 = /* @__PURE__ */ __toESM(require_ampersand_app());
+		init_app_config();
 	}));
 	//#endregion
 	//#region app/javascript/react/views/HeaderPrimaryButton.jsx
@@ -82095,7830 +81885,122 @@ There are no contexts defined. Please configure them in the admin tool.\
 		};
 	}));
 	//#endregion
-	//#region node_modules/ampersand-collection/node_modules/ampersand-events/libs/utils.js
-	var require_utils$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
-		var uniqueId = require_uniqueId();
-		var eventSplitter = /\s+/;
-		exports.triggerEvents = function triggerEvents(events, args) {
-			var ev;
-			var i = -1;
-			var l = events.length;
-			var a1 = args[0];
-			var a2 = args[1];
-			var a3 = args[2];
-			switch (args.length) {
-				case 0:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx);
-					return;
-				case 1:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1);
-					return;
-				case 2:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1, a2);
-					return;
-				case 3:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1, a2, a3);
-					return;
-				default:
-					while (++i < l) (ev = events[i]).callback.apply(ev.ctx, args);
-					return;
-			}
-		};
-		exports.eventsApi = function eventsApi(obj, action, name, rest) {
-			if (!name) return true;
-			if (typeof name === "object") {
-				for (var key in name) obj[action].apply(obj, [key, name[key]].concat(rest));
-				return false;
-			}
-			if (eventSplitter.test(name)) {
-				var names = name.split(eventSplitter);
-				for (var i = 0, l = names.length; i < l; i++) obj[action].apply(obj, [names[i]].concat(rest));
-				return false;
-			}
-			return true;
-		};
-		exports.createListenMethod = function createListenMethod(implementation) {
-			return function listenMethod(obj, name, callback) {
-				if (!obj) throw new Error("Trying to listenTo event: '" + name + "' but the target object is undefined");
-				var listeningTo = this._listeningTo || (this._listeningTo = {});
-				var id = obj._listenId || (obj._listenId = uniqueId("l"));
-				listeningTo[id] = obj;
-				if (!callback && typeof name === "object") callback = this;
-				if (typeof obj[implementation] !== "function") throw new Error("Trying to listenTo event: '" + name + "' on object: " + obj.toString() + " but it does not have an 'on' method so is unbindable");
-				obj[implementation](name, callback, this);
-				return this;
-			};
-		};
-	}));
-	//#endregion
-	//#region node_modules/ampersand-collection/node_modules/ampersand-events/ampersand-events.js
-	var require_ampersand_events$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var runOnce = require_once();
-		var keys = require_keys$2();
-		var isEmpty = require_isEmpty();
-		var assign = require_assign$2();
-		var forEach = require_forEach();
-		var slice = Array.prototype.slice;
-		var utils = require_utils$1();
-		var Events = {
-			on: function(name, callback, context) {
-				if (!utils.eventsApi(this, "on", name, [callback, context]) || !callback) return this;
-				this._events || (this._events = {});
-				(this._events[name] || (this._events[name] = [])).push({
-					callback,
-					context,
-					ctx: context || this
-				});
-				return this;
-			},
-			once: function(name, callback, context) {
-				if (!utils.eventsApi(this, "once", name, [callback, context]) || !callback) return this;
-				var self = this;
-				var once = runOnce(function() {
-					self.off(name, once);
-					callback.apply(this, arguments);
-				});
-				once._callback = callback;
-				return this.on(name, once, context);
-			},
-			off: function(name, callback, context) {
-				var retain, ev, events, names, i, l, j, k;
-				if (!this._events || !utils.eventsApi(this, "off", name, [callback, context])) return this;
-				if (!name && !callback && !context) {
-					this._events = void 0;
-					return this;
-				}
-				names = name ? [name] : keys(this._events);
-				for (i = 0, l = names.length; i < l; i++) {
-					name = names[i];
-					if (events = this._events[name]) {
-						this._events[name] = retain = [];
-						if (callback || context) for (j = 0, k = events.length; j < k; j++) {
-							ev = events[j];
-							if (callback && callback !== ev.callback && callback !== ev.callback._callback || context && context !== ev.context) retain.push(ev);
-						}
-						if (!retain.length) delete this._events[name];
-					}
-				}
-				return this;
-			},
-			trigger: function(name) {
-				if (!this._events) return this;
-				var args = slice.call(arguments, 1);
-				if (!utils.eventsApi(this, "trigger", name, args)) return this;
-				var events = this._events[name];
-				var allEvents = this._events.all;
-				if (events) utils.triggerEvents(events, args);
-				if (allEvents) utils.triggerEvents(allEvents, arguments);
-				return this;
-			},
-			stopListening: function(obj, name, callback) {
-				var listeningTo = this._listeningTo;
-				if (!listeningTo) return this;
-				var remove = !name && !callback;
-				if (!callback && typeof name === "object") callback = this;
-				if (obj) (listeningTo = {})[obj._listenId] = obj;
-				var self = this;
-				forEach(listeningTo, function(item, id) {
-					item.off(name, callback, self);
-					if (remove || isEmpty(item._events)) delete self._listeningTo[id];
-				});
-				return this;
-			},
-			createEmitter: function(obj) {
-				return assign(obj || {}, Events);
-			},
-			listenTo: utils.createListenMethod("on"),
-			listenToOnce: utils.createListenMethod("once"),
-			listenToAndRun: function(obj, name, callback) {
-				this.listenTo.apply(this, arguments);
-				if (!callback && typeof name === "object") callback = this;
-				callback.apply(this);
-				return this;
-			}
-		};
-		Events.bind = Events.on;
-		Events.unbind = Events.off;
-		Events.removeListener = Events.off;
-		Events.removeAllListeners = Events.off;
-		Events.emit = Events.trigger;
-		module.exports = Events;
-	}));
-	//#endregion
-	//#region node_modules/ampersand-class-extend/ampersand-class-extend.js
-	var require_ampersand_class_extend = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var assign = require_assign$2();
-		var extend = function(protoProps) {
-			var parent = this;
-			var child;
-			var args = [].slice.call(arguments);
-			if (protoProps && protoProps.hasOwnProperty("constructor")) child = protoProps.constructor;
-			else child = function() {
-				return parent.apply(this, arguments);
-			};
-			assign(child, parent);
-			var Surrogate = function() {
-				this.constructor = child;
-			};
-			Surrogate.prototype = parent.prototype;
-			child.prototype = new Surrogate();
-			if (protoProps) {
-				args.unshift(child.prototype);
-				assign.apply(null, args);
-			}
-			child.__super__ = parent.prototype;
-			return child;
-		};
-		module.exports = extend;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_metaMap.js
-	var require__metaMap = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var WeakMap = require__WeakMap();
-		module.exports = WeakMap && new WeakMap();
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseSetData.js
-	var require__baseSetData = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var identity = require_identity();
-		var metaMap = require__metaMap();
-		module.exports = !metaMap ? identity : function(func, data) {
-			metaMap.set(func, data);
-			return func;
-		};
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseCreate.js
-	var require__baseCreate = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isObject = require_isObject();
-		/** Built-in value references. */
-		var objectCreate = Object.create;
-		module.exports = function() {
-			function object() {}
-			return function(proto) {
-				if (!isObject(proto)) return {};
-				if (objectCreate) return objectCreate(proto);
-				object.prototype = proto;
-				var result = new object();
-				object.prototype = void 0;
-				return result;
-			};
-		}();
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createCtor.js
-	var require__createCtor = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseCreate = require__baseCreate();
-		var isObject = require_isObject();
-		/**
-		* Creates a function that produces an instance of `Ctor` regardless of
-		* whether it was invoked as part of a `new` expression or by `call` or `apply`.
-		*
-		* @private
-		* @param {Function} Ctor The constructor to wrap.
-		* @returns {Function} Returns the new wrapped function.
-		*/
-		function createCtor(Ctor) {
-			return function() {
-				var args = arguments;
-				switch (args.length) {
-					case 0: return new Ctor();
-					case 1: return new Ctor(args[0]);
-					case 2: return new Ctor(args[0], args[1]);
-					case 3: return new Ctor(args[0], args[1], args[2]);
-					case 4: return new Ctor(args[0], args[1], args[2], args[3]);
-					case 5: return new Ctor(args[0], args[1], args[2], args[3], args[4]);
-					case 6: return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5]);
-					case 7: return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
-				}
-				var thisBinding = baseCreate(Ctor.prototype), result = Ctor.apply(thisBinding, args);
-				return isObject(result) ? result : thisBinding;
-			};
-		}
-		module.exports = createCtor;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createBind.js
-	var require__createBind = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var createCtor = require__createCtor();
-		var root = require__root();
-		/** Used to compose bitmasks for function metadata. */
-		var WRAP_BIND_FLAG = 1;
-		/**
-		* Creates a function that wraps `func` to invoke it with the optional `this`
-		* binding of `thisArg`.
-		*
-		* @private
-		* @param {Function} func The function to wrap.
-		* @param {number} bitmask The bitmask flags. See `createWrap` for more details.
-		* @param {*} [thisArg] The `this` binding of `func`.
-		* @returns {Function} Returns the new wrapped function.
-		*/
-		function createBind(func, bitmask, thisArg) {
-			var isBind = bitmask & WRAP_BIND_FLAG, Ctor = createCtor(func);
-			function wrapper() {
-				return (this && this !== root && this instanceof wrapper ? Ctor : func).apply(isBind ? thisArg : this, arguments);
-			}
-			return wrapper;
-		}
-		module.exports = createBind;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_composeArgs.js
-	var require__composeArgs = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var nativeMax = Math.max;
-		/**
-		* Creates an array that is the composition of partially applied arguments,
-		* placeholders, and provided arguments into a single array of arguments.
-		*
-		* @private
-		* @param {Array} args The provided arguments.
-		* @param {Array} partials The arguments to prepend to those provided.
-		* @param {Array} holders The `partials` placeholder indexes.
-		* @params {boolean} [isCurried] Specify composing for a curried function.
-		* @returns {Array} Returns the new array of composed arguments.
-		*/
-		function composeArgs(args, partials, holders, isCurried) {
-			var argsIndex = -1, argsLength = args.length, holdersLength = holders.length, leftIndex = -1, leftLength = partials.length, rangeLength = nativeMax(argsLength - holdersLength, 0), result = Array(leftLength + rangeLength), isUncurried = !isCurried;
-			while (++leftIndex < leftLength) result[leftIndex] = partials[leftIndex];
-			while (++argsIndex < holdersLength) if (isUncurried || argsIndex < argsLength) result[holders[argsIndex]] = args[argsIndex];
-			while (rangeLength--) result[leftIndex++] = args[argsIndex++];
-			return result;
-		}
-		module.exports = composeArgs;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_composeArgsRight.js
-	var require__composeArgsRight = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var nativeMax = Math.max;
-		/**
-		* This function is like `composeArgs` except that the arguments composition
-		* is tailored for `_.partialRight`.
-		*
-		* @private
-		* @param {Array} args The provided arguments.
-		* @param {Array} partials The arguments to append to those provided.
-		* @param {Array} holders The `partials` placeholder indexes.
-		* @params {boolean} [isCurried] Specify composing for a curried function.
-		* @returns {Array} Returns the new array of composed arguments.
-		*/
-		function composeArgsRight(args, partials, holders, isCurried) {
-			var argsIndex = -1, argsLength = args.length, holdersIndex = -1, holdersLength = holders.length, rightIndex = -1, rightLength = partials.length, rangeLength = nativeMax(argsLength - holdersLength, 0), result = Array(rangeLength + rightLength), isUncurried = !isCurried;
-			while (++argsIndex < rangeLength) result[argsIndex] = args[argsIndex];
-			var offset = argsIndex;
-			while (++rightIndex < rightLength) result[offset + rightIndex] = partials[rightIndex];
-			while (++holdersIndex < holdersLength) if (isUncurried || argsIndex < argsLength) result[offset + holders[holdersIndex]] = args[argsIndex++];
-			return result;
-		}
-		module.exports = composeArgsRight;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_countHolders.js
-	var require__countHolders = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Gets the number of `placeholder` occurrences in `array`.
-		*
-		* @private
-		* @param {Array} array The array to inspect.
-		* @param {*} placeholder The placeholder to search for.
-		* @returns {number} Returns the placeholder count.
-		*/
-		function countHolders(array, placeholder) {
-			var length = array.length, result = 0;
-			while (length--) if (array[length] === placeholder) ++result;
-			return result;
-		}
-		module.exports = countHolders;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseLodash.js
-	var require__baseLodash = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The function whose prototype chain sequence wrappers inherit from.
-		*
-		* @private
-		*/
-		function baseLodash() {}
-		module.exports = baseLodash;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_LazyWrapper.js
-	var require__LazyWrapper = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseCreate = require__baseCreate();
-		var baseLodash = require__baseLodash();
-		/** Used as references for the maximum length and index of an array. */
-		var MAX_ARRAY_LENGTH = 4294967295;
-		/**
-		* Creates a lazy wrapper object which wraps `value` to enable lazy evaluation.
-		*
-		* @private
-		* @constructor
-		* @param {*} value The value to wrap.
-		*/
-		function LazyWrapper(value) {
-			this.__wrapped__ = value;
-			this.__actions__ = [];
-			this.__dir__ = 1;
-			this.__filtered__ = false;
-			this.__iteratees__ = [];
-			this.__takeCount__ = MAX_ARRAY_LENGTH;
-			this.__views__ = [];
-		}
-		LazyWrapper.prototype = baseCreate(baseLodash.prototype);
-		LazyWrapper.prototype.constructor = LazyWrapper;
-		module.exports = LazyWrapper;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getData.js
-	var require__getData = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var metaMap = require__metaMap();
-		var noop = require_noop();
-		module.exports = !metaMap ? noop : function(func) {
-			return metaMap.get(func);
-		};
-	}));
-	//#endregion
-	//#region node_modules/lodash/_realNames.js
-	var require__realNames = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = {};
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getFuncName.js
-	var require__getFuncName = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var realNames = require__realNames();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* Gets the name of `func`.
-		*
-		* @private
-		* @param {Function} func The function to query.
-		* @returns {string} Returns the function name.
-		*/
-		function getFuncName(func) {
-			var result = func.name + "", array = realNames[result], length = hasOwnProperty.call(realNames, result) ? array.length : 0;
-			while (length--) {
-				var data = array[length], otherFunc = data.func;
-				if (otherFunc == null || otherFunc == func) return data.name;
-			}
-			return result;
-		}
-		module.exports = getFuncName;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_LodashWrapper.js
-	var require__LodashWrapper = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseCreate = require__baseCreate();
-		var baseLodash = require__baseLodash();
-		/**
-		* The base constructor for creating `lodash` wrapper objects.
-		*
-		* @private
-		* @param {*} value The value to wrap.
-		* @param {boolean} [chainAll] Enable explicit method chain sequences.
-		*/
-		function LodashWrapper(value, chainAll) {
-			this.__wrapped__ = value;
-			this.__actions__ = [];
-			this.__chain__ = !!chainAll;
-			this.__index__ = 0;
-			this.__values__ = void 0;
-		}
-		LodashWrapper.prototype = baseCreate(baseLodash.prototype);
-		LodashWrapper.prototype.constructor = LodashWrapper;
-		module.exports = LodashWrapper;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_wrapperClone.js
-	var require__wrapperClone = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var LazyWrapper = require__LazyWrapper();
-		var LodashWrapper = require__LodashWrapper();
-		var copyArray = require__copyArray();
-		/**
-		* Creates a clone of `wrapper`.
-		*
-		* @private
-		* @param {Object} wrapper The wrapper to clone.
-		* @returns {Object} Returns the cloned wrapper.
-		*/
-		function wrapperClone(wrapper) {
-			if (wrapper instanceof LazyWrapper) return wrapper.clone();
-			var result = new LodashWrapper(wrapper.__wrapped__, wrapper.__chain__);
-			result.__actions__ = copyArray(wrapper.__actions__);
-			result.__index__ = wrapper.__index__;
-			result.__values__ = wrapper.__values__;
-			return result;
-		}
-		module.exports = wrapperClone;
-	}));
-	//#endregion
-	//#region node_modules/lodash/wrapperLodash.js
-	var require_wrapperLodash = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var LazyWrapper = require__LazyWrapper();
-		var LodashWrapper = require__LodashWrapper();
-		var baseLodash = require__baseLodash();
-		var isArray = require_isArray();
-		var isObjectLike = require_isObjectLike();
-		var wrapperClone = require__wrapperClone();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* Creates a `lodash` object which wraps `value` to enable implicit method
-		* chain sequences. Methods that operate on and return arrays, collections,
-		* and functions can be chained together. Methods that retrieve a single value
-		* or may return a primitive value will automatically end the chain sequence
-		* and return the unwrapped value. Otherwise, the value must be unwrapped
-		* with `_#value`.
-		*
-		* Explicit chain sequences, which must be unwrapped with `_#value`, may be
-		* enabled using `_.chain`.
-		*
-		* The execution of chained methods is lazy, that is, it's deferred until
-		* `_#value` is implicitly or explicitly called.
-		*
-		* Lazy evaluation allows several methods to support shortcut fusion.
-		* Shortcut fusion is an optimization to merge iteratee calls; this avoids
-		* the creation of intermediate arrays and can greatly reduce the number of
-		* iteratee executions. Sections of a chain sequence qualify for shortcut
-		* fusion if the section is applied to an array and iteratees accept only
-		* one argument. The heuristic for whether a section qualifies for shortcut
-		* fusion is subject to change.
-		*
-		* Chaining is supported in custom builds as long as the `_#value` method is
-		* directly or indirectly included in the build.
-		*
-		* In addition to lodash methods, wrappers have `Array` and `String` methods.
-		*
-		* The wrapper `Array` methods are:
-		* `concat`, `join`, `pop`, `push`, `shift`, `sort`, `splice`, and `unshift`
-		*
-		* The wrapper `String` methods are:
-		* `replace` and `split`
-		*
-		* The wrapper methods that support shortcut fusion are:
-		* `at`, `compact`, `drop`, `dropRight`, `dropWhile`, `filter`, `find`,
-		* `findLast`, `head`, `initial`, `last`, `map`, `reject`, `reverse`, `slice`,
-		* `tail`, `take`, `takeRight`, `takeRightWhile`, `takeWhile`, and `toArray`
-		*
-		* The chainable wrapper methods are:
-		* `after`, `ary`, `assign`, `assignIn`, `assignInWith`, `assignWith`, `at`,
-		* `before`, `bind`, `bindAll`, `bindKey`, `castArray`, `chain`, `chunk`,
-		* `commit`, `compact`, `concat`, `conforms`, `constant`, `countBy`, `create`,
-		* `curry`, `debounce`, `defaults`, `defaultsDeep`, `defer`, `delay`,
-		* `difference`, `differenceBy`, `differenceWith`, `drop`, `dropRight`,
-		* `dropRightWhile`, `dropWhile`, `extend`, `extendWith`, `fill`, `filter`,
-		* `flatMap`, `flatMapDeep`, `flatMapDepth`, `flatten`, `flattenDeep`,
-		* `flattenDepth`, `flip`, `flow`, `flowRight`, `fromPairs`, `functions`,
-		* `functionsIn`, `groupBy`, `initial`, `intersection`, `intersectionBy`,
-		* `intersectionWith`, `invert`, `invertBy`, `invokeMap`, `iteratee`, `keyBy`,
-		* `keys`, `keysIn`, `map`, `mapKeys`, `mapValues`, `matches`, `matchesProperty`,
-		* `memoize`, `merge`, `mergeWith`, `method`, `methodOf`, `mixin`, `negate`,
-		* `nthArg`, `omit`, `omitBy`, `once`, `orderBy`, `over`, `overArgs`,
-		* `overEvery`, `overSome`, `partial`, `partialRight`, `partition`, `pick`,
-		* `pickBy`, `plant`, `property`, `propertyOf`, `pull`, `pullAll`, `pullAllBy`,
-		* `pullAllWith`, `pullAt`, `push`, `range`, `rangeRight`, `rearg`, `reject`,
-		* `remove`, `rest`, `reverse`, `sampleSize`, `set`, `setWith`, `shuffle`,
-		* `slice`, `sort`, `sortBy`, `splice`, `spread`, `tail`, `take`, `takeRight`,
-		* `takeRightWhile`, `takeWhile`, `tap`, `throttle`, `thru`, `toArray`,
-		* `toPairs`, `toPairsIn`, `toPath`, `toPlainObject`, `transform`, `unary`,
-		* `union`, `unionBy`, `unionWith`, `uniq`, `uniqBy`, `uniqWith`, `unset`,
-		* `unshift`, `unzip`, `unzipWith`, `update`, `updateWith`, `values`,
-		* `valuesIn`, `without`, `wrap`, `xor`, `xorBy`, `xorWith`, `zip`,
-		* `zipObject`, `zipObjectDeep`, and `zipWith`
-		*
-		* The wrapper methods that are **not** chainable by default are:
-		* `add`, `attempt`, `camelCase`, `capitalize`, `ceil`, `clamp`, `clone`,
-		* `cloneDeep`, `cloneDeepWith`, `cloneWith`, `conformsTo`, `deburr`,
-		* `defaultTo`, `divide`, `each`, `eachRight`, `endsWith`, `eq`, `escape`,
-		* `escapeRegExp`, `every`, `find`, `findIndex`, `findKey`, `findLast`,
-		* `findLastIndex`, `findLastKey`, `first`, `floor`, `forEach`, `forEachRight`,
-		* `forIn`, `forInRight`, `forOwn`, `forOwnRight`, `get`, `gt`, `gte`, `has`,
-		* `hasIn`, `head`, `identity`, `includes`, `indexOf`, `inRange`, `invoke`,
-		* `isArguments`, `isArray`, `isArrayBuffer`, `isArrayLike`, `isArrayLikeObject`,
-		* `isBoolean`, `isBuffer`, `isDate`, `isElement`, `isEmpty`, `isEqual`,
-		* `isEqualWith`, `isError`, `isFinite`, `isFunction`, `isInteger`, `isLength`,
-		* `isMap`, `isMatch`, `isMatchWith`, `isNaN`, `isNative`, `isNil`, `isNull`,
-		* `isNumber`, `isObject`, `isObjectLike`, `isPlainObject`, `isRegExp`,
-		* `isSafeInteger`, `isSet`, `isString`, `isUndefined`, `isTypedArray`,
-		* `isWeakMap`, `isWeakSet`, `join`, `kebabCase`, `last`, `lastIndexOf`,
-		* `lowerCase`, `lowerFirst`, `lt`, `lte`, `max`, `maxBy`, `mean`, `meanBy`,
-		* `min`, `minBy`, `multiply`, `noConflict`, `noop`, `now`, `nth`, `pad`,
-		* `padEnd`, `padStart`, `parseInt`, `pop`, `random`, `reduce`, `reduceRight`,
-		* `repeat`, `result`, `round`, `runInContext`, `sample`, `shift`, `size`,
-		* `snakeCase`, `some`, `sortedIndex`, `sortedIndexBy`, `sortedLastIndex`,
-		* `sortedLastIndexBy`, `startCase`, `startsWith`, `stubArray`, `stubFalse`,
-		* `stubObject`, `stubString`, `stubTrue`, `subtract`, `sum`, `sumBy`,
-		* `template`, `times`, `toFinite`, `toInteger`, `toJSON`, `toLength`,
-		* `toLower`, `toNumber`, `toSafeInteger`, `toString`, `toUpper`, `trim`,
-		* `trimEnd`, `trimStart`, `truncate`, `unescape`, `uniqueId`, `upperCase`,
-		* `upperFirst`, `value`, and `words`
-		*
-		* @name _
-		* @constructor
-		* @category Seq
-		* @param {*} value The value to wrap in a `lodash` instance.
-		* @returns {Object} Returns the new `lodash` wrapper instance.
-		* @example
-		*
-		* function square(n) {
-		*   return n * n;
-		* }
-		*
-		* var wrapped = _([1, 2, 3]);
-		*
-		* // Returns an unwrapped value.
-		* wrapped.reduce(_.add);
-		* // => 6
-		*
-		* // Returns a wrapped value.
-		* var squares = wrapped.map(square);
-		*
-		* _.isArray(squares);
-		* // => false
-		*
-		* _.isArray(squares.value());
-		* // => true
-		*/
-		function lodash(value) {
-			if (isObjectLike(value) && !isArray(value) && !(value instanceof LazyWrapper)) {
-				if (value instanceof LodashWrapper) return value;
-				if (hasOwnProperty.call(value, "__wrapped__")) return wrapperClone(value);
-			}
-			return new LodashWrapper(value);
-		}
-		lodash.prototype = baseLodash.prototype;
-		lodash.prototype.constructor = lodash;
-		module.exports = lodash;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_isLaziable.js
-	var require__isLaziable = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var LazyWrapper = require__LazyWrapper();
-		var getData = require__getData();
-		var getFuncName = require__getFuncName();
-		var lodash = require_wrapperLodash();
-		/**
-		* Checks if `func` has a lazy counterpart.
-		*
-		* @private
-		* @param {Function} func The function to check.
-		* @returns {boolean} Returns `true` if `func` has a lazy counterpart,
-		*  else `false`.
-		*/
-		function isLaziable(func) {
-			var funcName = getFuncName(func), other = lodash[funcName];
-			if (typeof other != "function" || !(funcName in LazyWrapper.prototype)) return false;
-			if (func === other) return true;
-			var data = getData(other);
-			return !!data && func === data[0];
-		}
-		module.exports = isLaziable;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_setData.js
-	var require__setData = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseSetData = require__baseSetData();
-		module.exports = require__shortOut()(baseSetData);
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getWrapDetails.js
-	var require__getWrapDetails = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to match wrap detail comments. */
-		var reWrapDetails = /\{\n\/\* \[wrapped with (.+)\] \*/;
-		var reSplitDetails = /,? & /;
-		/**
-		* Extracts wrapper details from the `source` body comment.
-		*
-		* @private
-		* @param {string} source The source to inspect.
-		* @returns {Array} Returns the wrapper details.
-		*/
-		function getWrapDetails(source) {
-			var match = source.match(reWrapDetails);
-			return match ? match[1].split(reSplitDetails) : [];
-		}
-		module.exports = getWrapDetails;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_insertWrapDetails.js
-	var require__insertWrapDetails = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to match wrap detail comments. */
-		var reWrapComment = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/;
-		/**
-		* Inserts wrapper `details` in a comment at the top of the `source` body.
-		*
-		* @private
-		* @param {string} source The source to modify.
-		* @returns {Array} details The details to insert.
-		* @returns {string} Returns the modified source.
-		*/
-		function insertWrapDetails(source, details) {
-			var length = details.length;
-			if (!length) return source;
-			var lastIndex = length - 1;
-			details[lastIndex] = (length > 1 ? "& " : "") + details[lastIndex];
-			details = details.join(length > 2 ? ", " : " ");
-			return source.replace(reWrapComment, "{\n/* [wrapped with " + details + "] */\n");
-		}
-		module.exports = insertWrapDetails;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseFindIndex.js
-	var require__baseFindIndex = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.findIndex` and `_.findLastIndex` without
-		* support for iteratee shorthands.
-		*
-		* @private
-		* @param {Array} array The array to inspect.
-		* @param {Function} predicate The function invoked per iteration.
-		* @param {number} fromIndex The index to search from.
-		* @param {boolean} [fromRight] Specify iterating from right to left.
-		* @returns {number} Returns the index of the matched value, else `-1`.
-		*/
-		function baseFindIndex(array, predicate, fromIndex, fromRight) {
-			var length = array.length, index = fromIndex + (fromRight ? 1 : -1);
-			while (fromRight ? index-- : ++index < length) if (predicate(array[index], index, array)) return index;
-			return -1;
-		}
-		module.exports = baseFindIndex;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsNaN.js
-	var require__baseIsNaN = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.isNaN` without support for number objects.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is `NaN`, else `false`.
-		*/
-		function baseIsNaN(value) {
-			return value !== value;
-		}
-		module.exports = baseIsNaN;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_strictIndexOf.js
-	var require__strictIndexOf = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `_.indexOf` which performs strict equality
-		* comparisons of values, i.e. `===`.
-		*
-		* @private
-		* @param {Array} array The array to inspect.
-		* @param {*} value The value to search for.
-		* @param {number} fromIndex The index to search from.
-		* @returns {number} Returns the index of the matched value, else `-1`.
-		*/
-		function strictIndexOf(array, value, fromIndex) {
-			var index = fromIndex - 1, length = array.length;
-			while (++index < length) if (array[index] === value) return index;
-			return -1;
-		}
-		module.exports = strictIndexOf;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIndexOf.js
-	var require__baseIndexOf = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseFindIndex = require__baseFindIndex();
-		var baseIsNaN = require__baseIsNaN();
-		var strictIndexOf = require__strictIndexOf();
-		/**
-		* The base implementation of `_.indexOf` without `fromIndex` bounds checks.
-		*
-		* @private
-		* @param {Array} array The array to inspect.
-		* @param {*} value The value to search for.
-		* @param {number} fromIndex The index to search from.
-		* @returns {number} Returns the index of the matched value, else `-1`.
-		*/
-		function baseIndexOf(array, value, fromIndex) {
-			return value === value ? strictIndexOf(array, value, fromIndex) : baseFindIndex(array, baseIsNaN, fromIndex);
-		}
-		module.exports = baseIndexOf;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayIncludes.js
-	var require__arrayIncludes = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIndexOf = require__baseIndexOf();
-		/**
-		* A specialized version of `_.includes` for arrays without support for
-		* specifying an index to search from.
-		*
-		* @private
-		* @param {Array} [array] The array to inspect.
-		* @param {*} target The value to search for.
-		* @returns {boolean} Returns `true` if `target` is found, else `false`.
-		*/
-		function arrayIncludes(array, value) {
-			return !!(array == null ? 0 : array.length) && baseIndexOf(array, value, 0) > -1;
-		}
-		module.exports = arrayIncludes;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_updateWrapDetails.js
-	var require__updateWrapDetails = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayEach = require__arrayEach();
-		var arrayIncludes = require__arrayIncludes();
-		/** Used to associate wrap methods with their bit flags. */
-		var wrapFlags = [
-			["ary", 128],
-			["bind", 1],
-			["bindKey", 2],
-			["curry", 8],
-			["curryRight", 16],
-			["flip", 512],
-			["partial", 32],
-			["partialRight", 64],
-			["rearg", 256]
-		];
-		/**
-		* Updates wrapper `details` based on `bitmask` flags.
-		*
-		* @private
-		* @returns {Array} details The details to modify.
-		* @param {number} bitmask The bitmask flags. See `createWrap` for more details.
-		* @returns {Array} Returns `details`.
-		*/
-		function updateWrapDetails(details, bitmask) {
-			arrayEach(wrapFlags, function(pair) {
-				var value = "_." + pair[0];
-				if (bitmask & pair[1] && !arrayIncludes(details, value)) details.push(value);
-			});
-			return details.sort();
-		}
-		module.exports = updateWrapDetails;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_setWrapToString.js
-	var require__setWrapToString = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getWrapDetails = require__getWrapDetails();
-		var insertWrapDetails = require__insertWrapDetails();
-		var setToString = require__setToString();
-		var updateWrapDetails = require__updateWrapDetails();
-		/**
-		* Sets the `toString` method of `wrapper` to mimic the source of `reference`
-		* with wrapper details in a comment at the top of the source body.
-		*
-		* @private
-		* @param {Function} wrapper The function to modify.
-		* @param {Function} reference The reference function.
-		* @param {number} bitmask The bitmask flags. See `createWrap` for more details.
-		* @returns {Function} Returns `wrapper`.
-		*/
-		function setWrapToString(wrapper, reference, bitmask) {
-			var source = reference + "";
-			return setToString(wrapper, insertWrapDetails(source, updateWrapDetails(getWrapDetails(source), bitmask)));
-		}
-		module.exports = setWrapToString;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createRecurry.js
-	var require__createRecurry = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isLaziable = require__isLaziable();
-		var setData = require__setData();
-		var setWrapToString = require__setWrapToString();
-		/** Used to compose bitmasks for function metadata. */
-		var WRAP_BIND_FLAG = 1;
-		var WRAP_BIND_KEY_FLAG = 2;
-		var WRAP_CURRY_BOUND_FLAG = 4;
-		var WRAP_CURRY_FLAG = 8;
-		var WRAP_PARTIAL_FLAG = 32;
-		var WRAP_PARTIAL_RIGHT_FLAG = 64;
-		/**
-		* Creates a function that wraps `func` to continue currying.
-		*
-		* @private
-		* @param {Function} func The function to wrap.
-		* @param {number} bitmask The bitmask flags. See `createWrap` for more details.
-		* @param {Function} wrapFunc The function to create the `func` wrapper.
-		* @param {*} placeholder The placeholder value.
-		* @param {*} [thisArg] The `this` binding of `func`.
-		* @param {Array} [partials] The arguments to prepend to those provided to
-		*  the new function.
-		* @param {Array} [holders] The `partials` placeholder indexes.
-		* @param {Array} [argPos] The argument positions of the new function.
-		* @param {number} [ary] The arity cap of `func`.
-		* @param {number} [arity] The arity of `func`.
-		* @returns {Function} Returns the new wrapped function.
-		*/
-		function createRecurry(func, bitmask, wrapFunc, placeholder, thisArg, partials, holders, argPos, ary, arity) {
-			var isCurry = bitmask & WRAP_CURRY_FLAG, newHolders = isCurry ? holders : void 0, newHoldersRight = isCurry ? void 0 : holders, newPartials = isCurry ? partials : void 0, newPartialsRight = isCurry ? void 0 : partials;
-			bitmask |= isCurry ? WRAP_PARTIAL_FLAG : WRAP_PARTIAL_RIGHT_FLAG;
-			bitmask &= ~(isCurry ? WRAP_PARTIAL_RIGHT_FLAG : WRAP_PARTIAL_FLAG);
-			if (!(bitmask & WRAP_CURRY_BOUND_FLAG)) bitmask &= ~(WRAP_BIND_FLAG | WRAP_BIND_KEY_FLAG);
-			var newData = [
-				func,
-				bitmask,
-				thisArg,
-				newPartials,
-				newHolders,
-				newPartialsRight,
-				newHoldersRight,
-				argPos,
-				ary,
-				arity
-			];
-			var result = wrapFunc.apply(void 0, newData);
-			if (isLaziable(func)) setData(result, newData);
-			result.placeholder = placeholder;
-			return setWrapToString(result, func, bitmask);
-		}
-		module.exports = createRecurry;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getHolder.js
-	var require__getHolder = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Gets the argument placeholder value for `func`.
-		*
-		* @private
-		* @param {Function} func The function to inspect.
-		* @returns {*} Returns the placeholder value.
-		*/
-		function getHolder(func) {
-			return func.placeholder;
-		}
-		module.exports = getHolder;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_reorder.js
-	var require__reorder = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var copyArray = require__copyArray();
-		var isIndex = require__isIndex();
-		var nativeMin = Math.min;
-		/**
-		* Reorder `array` according to the specified indexes where the element at
-		* the first index is assigned as the first element, the element at
-		* the second index is assigned as the second element, and so on.
-		*
-		* @private
-		* @param {Array} array The array to reorder.
-		* @param {Array} indexes The arranged array indexes.
-		* @returns {Array} Returns `array`.
-		*/
-		function reorder(array, indexes) {
-			var arrLength = array.length, length = nativeMin(indexes.length, arrLength), oldArray = copyArray(array);
-			while (length--) {
-				var index = indexes[length];
-				array[length] = isIndex(index, arrLength) ? oldArray[index] : void 0;
-			}
-			return array;
-		}
-		module.exports = reorder;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_replaceHolders.js
-	var require__replaceHolders = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used as the internal argument placeholder. */
-		var PLACEHOLDER = "__lodash_placeholder__";
-		/**
-		* Replaces all `placeholder` elements in `array` with an internal placeholder
-		* and returns an array of their indexes.
-		*
-		* @private
-		* @param {Array} array The array to modify.
-		* @param {*} placeholder The placeholder to replace.
-		* @returns {Array} Returns the new array of placeholder indexes.
-		*/
-		function replaceHolders(array, placeholder) {
-			var index = -1, length = array.length, resIndex = 0, result = [];
-			while (++index < length) {
-				var value = array[index];
-				if (value === placeholder || value === PLACEHOLDER) {
-					array[index] = PLACEHOLDER;
-					result[resIndex++] = index;
-				}
-			}
-			return result;
-		}
-		module.exports = replaceHolders;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createHybrid.js
-	var require__createHybrid = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var composeArgs = require__composeArgs();
-		var composeArgsRight = require__composeArgsRight();
-		var countHolders = require__countHolders();
-		var createCtor = require__createCtor();
-		var createRecurry = require__createRecurry();
-		var getHolder = require__getHolder();
-		var reorder = require__reorder();
-		var replaceHolders = require__replaceHolders();
-		var root = require__root();
-		/** Used to compose bitmasks for function metadata. */
-		var WRAP_BIND_FLAG = 1;
-		var WRAP_BIND_KEY_FLAG = 2;
-		var WRAP_CURRY_FLAG = 8;
-		var WRAP_CURRY_RIGHT_FLAG = 16;
-		var WRAP_ARY_FLAG = 128;
-		var WRAP_FLIP_FLAG = 512;
-		/**
-		* Creates a function that wraps `func` to invoke it with optional `this`
-		* binding of `thisArg`, partial application, and currying.
-		*
-		* @private
-		* @param {Function|string} func The function or method name to wrap.
-		* @param {number} bitmask The bitmask flags. See `createWrap` for more details.
-		* @param {*} [thisArg] The `this` binding of `func`.
-		* @param {Array} [partials] The arguments to prepend to those provided to
-		*  the new function.
-		* @param {Array} [holders] The `partials` placeholder indexes.
-		* @param {Array} [partialsRight] The arguments to append to those provided
-		*  to the new function.
-		* @param {Array} [holdersRight] The `partialsRight` placeholder indexes.
-		* @param {Array} [argPos] The argument positions of the new function.
-		* @param {number} [ary] The arity cap of `func`.
-		* @param {number} [arity] The arity of `func`.
-		* @returns {Function} Returns the new wrapped function.
-		*/
-		function createHybrid(func, bitmask, thisArg, partials, holders, partialsRight, holdersRight, argPos, ary, arity) {
-			var isAry = bitmask & WRAP_ARY_FLAG, isBind = bitmask & WRAP_BIND_FLAG, isBindKey = bitmask & WRAP_BIND_KEY_FLAG, isCurried = bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG), isFlip = bitmask & WRAP_FLIP_FLAG, Ctor = isBindKey ? void 0 : createCtor(func);
-			function wrapper() {
-				var length = arguments.length, args = Array(length), index = length;
-				while (index--) args[index] = arguments[index];
-				if (isCurried) var placeholder = getHolder(wrapper), holdersCount = countHolders(args, placeholder);
-				if (partials) args = composeArgs(args, partials, holders, isCurried);
-				if (partialsRight) args = composeArgsRight(args, partialsRight, holdersRight, isCurried);
-				length -= holdersCount;
-				if (isCurried && length < arity) {
-					var newHolders = replaceHolders(args, placeholder);
-					return createRecurry(func, bitmask, createHybrid, wrapper.placeholder, thisArg, args, newHolders, argPos, ary, arity - length);
-				}
-				var thisBinding = isBind ? thisArg : this, fn = isBindKey ? thisBinding[func] : func;
-				length = args.length;
-				if (argPos) args = reorder(args, argPos);
-				else if (isFlip && length > 1) args.reverse();
-				if (isAry && ary < length) args.length = ary;
-				if (this && this !== root && this instanceof wrapper) fn = Ctor || createCtor(fn);
-				return fn.apply(thisBinding, args);
-			}
-			return wrapper;
-		}
-		module.exports = createHybrid;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createCurry.js
-	var require__createCurry = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var apply = require__apply();
-		var createCtor = require__createCtor();
-		var createHybrid = require__createHybrid();
-		var createRecurry = require__createRecurry();
-		var getHolder = require__getHolder();
-		var replaceHolders = require__replaceHolders();
-		var root = require__root();
-		/**
-		* Creates a function that wraps `func` to enable currying.
-		*
-		* @private
-		* @param {Function} func The function to wrap.
-		* @param {number} bitmask The bitmask flags. See `createWrap` for more details.
-		* @param {number} arity The arity of `func`.
-		* @returns {Function} Returns the new wrapped function.
-		*/
-		function createCurry(func, bitmask, arity) {
-			var Ctor = createCtor(func);
-			function wrapper() {
-				var length = arguments.length, args = Array(length), index = length, placeholder = getHolder(wrapper);
-				while (index--) args[index] = arguments[index];
-				var holders = length < 3 && args[0] !== placeholder && args[length - 1] !== placeholder ? [] : replaceHolders(args, placeholder);
-				length -= holders.length;
-				if (length < arity) return createRecurry(func, bitmask, createHybrid, wrapper.placeholder, void 0, args, holders, void 0, void 0, arity - length);
-				return apply(this && this !== root && this instanceof wrapper ? Ctor : func, this, args);
-			}
-			return wrapper;
-		}
-		module.exports = createCurry;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createPartial.js
-	var require__createPartial = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var apply = require__apply();
-		var createCtor = require__createCtor();
-		var root = require__root();
-		/** Used to compose bitmasks for function metadata. */
-		var WRAP_BIND_FLAG = 1;
-		/**
-		* Creates a function that wraps `func` to invoke it with the `this` binding
-		* of `thisArg` and `partials` prepended to the arguments it receives.
-		*
-		* @private
-		* @param {Function} func The function to wrap.
-		* @param {number} bitmask The bitmask flags. See `createWrap` for more details.
-		* @param {*} thisArg The `this` binding of `func`.
-		* @param {Array} partials The arguments to prepend to those provided to
-		*  the new function.
-		* @returns {Function} Returns the new wrapped function.
-		*/
-		function createPartial(func, bitmask, thisArg, partials) {
-			var isBind = bitmask & WRAP_BIND_FLAG, Ctor = createCtor(func);
-			function wrapper() {
-				var argsIndex = -1, argsLength = arguments.length, leftIndex = -1, leftLength = partials.length, args = Array(leftLength + argsLength), fn = this && this !== root && this instanceof wrapper ? Ctor : func;
-				while (++leftIndex < leftLength) args[leftIndex] = partials[leftIndex];
-				while (argsLength--) args[leftIndex++] = arguments[++argsIndex];
-				return apply(fn, isBind ? thisArg : this, args);
-			}
-			return wrapper;
-		}
-		module.exports = createPartial;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_mergeData.js
-	var require__mergeData = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var composeArgs = require__composeArgs();
-		var composeArgsRight = require__composeArgsRight();
-		var replaceHolders = require__replaceHolders();
-		/** Used as the internal argument placeholder. */
-		var PLACEHOLDER = "__lodash_placeholder__";
-		/** Used to compose bitmasks for function metadata. */
-		var WRAP_BIND_FLAG = 1;
-		var WRAP_BIND_KEY_FLAG = 2;
-		var WRAP_CURRY_BOUND_FLAG = 4;
-		var WRAP_CURRY_FLAG = 8;
-		var WRAP_ARY_FLAG = 128;
-		var WRAP_REARG_FLAG = 256;
-		var nativeMin = Math.min;
-		/**
-		* Merges the function metadata of `source` into `data`.
-		*
-		* Merging metadata reduces the number of wrappers used to invoke a function.
-		* This is possible because methods like `_.bind`, `_.curry`, and `_.partial`
-		* may be applied regardless of execution order. Methods like `_.ary` and
-		* `_.rearg` modify function arguments, making the order in which they are
-		* executed important, preventing the merging of metadata. However, we make
-		* an exception for a safe combined case where curried functions have `_.ary`
-		* and or `_.rearg` applied.
-		*
-		* @private
-		* @param {Array} data The destination metadata.
-		* @param {Array} source The source metadata.
-		* @returns {Array} Returns `data`.
-		*/
-		function mergeData(data, source) {
-			var bitmask = data[1], srcBitmask = source[1], newBitmask = bitmask | srcBitmask, isCommon = newBitmask < (WRAP_BIND_FLAG | WRAP_BIND_KEY_FLAG | WRAP_ARY_FLAG);
-			var isCombo = srcBitmask == WRAP_ARY_FLAG && bitmask == WRAP_CURRY_FLAG || srcBitmask == WRAP_ARY_FLAG && bitmask == WRAP_REARG_FLAG && data[7].length <= source[8] || srcBitmask == (WRAP_ARY_FLAG | WRAP_REARG_FLAG) && source[7].length <= source[8] && bitmask == WRAP_CURRY_FLAG;
-			if (!(isCommon || isCombo)) return data;
-			if (srcBitmask & WRAP_BIND_FLAG) {
-				data[2] = source[2];
-				newBitmask |= bitmask & WRAP_BIND_FLAG ? 0 : WRAP_CURRY_BOUND_FLAG;
-			}
-			var value = source[3];
-			if (value) {
-				var partials = data[3];
-				data[3] = partials ? composeArgs(partials, value, source[4]) : value;
-				data[4] = partials ? replaceHolders(data[3], PLACEHOLDER) : source[4];
-			}
-			value = source[5];
-			if (value) {
-				partials = data[5];
-				data[5] = partials ? composeArgsRight(partials, value, source[6]) : value;
-				data[6] = partials ? replaceHolders(data[5], PLACEHOLDER) : source[6];
-			}
-			value = source[7];
-			if (value) data[7] = value;
-			if (srcBitmask & WRAP_ARY_FLAG) data[8] = data[8] == null ? source[8] : nativeMin(data[8], source[8]);
-			if (data[9] == null) data[9] = source[9];
-			data[0] = source[0];
-			data[1] = newBitmask;
-			return data;
-		}
-		module.exports = mergeData;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createWrap.js
-	var require__createWrap = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseSetData = require__baseSetData();
-		var createBind = require__createBind();
-		var createCurry = require__createCurry();
-		var createHybrid = require__createHybrid();
-		var createPartial = require__createPartial();
-		var getData = require__getData();
-		var mergeData = require__mergeData();
-		var setData = require__setData();
-		var setWrapToString = require__setWrapToString();
-		var toInteger = require_toInteger();
-		/** Error message constants. */
-		var FUNC_ERROR_TEXT = "Expected a function";
-		/** Used to compose bitmasks for function metadata. */
-		var WRAP_BIND_FLAG = 1;
-		var WRAP_BIND_KEY_FLAG = 2;
-		var WRAP_CURRY_FLAG = 8;
-		var WRAP_CURRY_RIGHT_FLAG = 16;
-		var WRAP_PARTIAL_FLAG = 32;
-		var WRAP_PARTIAL_RIGHT_FLAG = 64;
-		var nativeMax = Math.max;
-		/**
-		* Creates a function that either curries or invokes `func` with optional
-		* `this` binding and partially applied arguments.
-		*
-		* @private
-		* @param {Function|string} func The function or method name to wrap.
-		* @param {number} bitmask The bitmask flags.
-		*    1 - `_.bind`
-		*    2 - `_.bindKey`
-		*    4 - `_.curry` or `_.curryRight` of a bound function
-		*    8 - `_.curry`
-		*   16 - `_.curryRight`
-		*   32 - `_.partial`
-		*   64 - `_.partialRight`
-		*  128 - `_.rearg`
-		*  256 - `_.ary`
-		*  512 - `_.flip`
-		* @param {*} [thisArg] The `this` binding of `func`.
-		* @param {Array} [partials] The arguments to be partially applied.
-		* @param {Array} [holders] The `partials` placeholder indexes.
-		* @param {Array} [argPos] The argument positions of the new function.
-		* @param {number} [ary] The arity cap of `func`.
-		* @param {number} [arity] The arity of `func`.
-		* @returns {Function} Returns the new wrapped function.
-		*/
-		function createWrap(func, bitmask, thisArg, partials, holders, argPos, ary, arity) {
-			var isBindKey = bitmask & WRAP_BIND_KEY_FLAG;
-			if (!isBindKey && typeof func != "function") throw new TypeError(FUNC_ERROR_TEXT);
-			var length = partials ? partials.length : 0;
-			if (!length) {
-				bitmask &= ~(WRAP_PARTIAL_FLAG | WRAP_PARTIAL_RIGHT_FLAG);
-				partials = holders = void 0;
-			}
-			ary = ary === void 0 ? ary : nativeMax(toInteger(ary), 0);
-			arity = arity === void 0 ? arity : toInteger(arity);
-			length -= holders ? holders.length : 0;
-			if (bitmask & WRAP_PARTIAL_RIGHT_FLAG) {
-				var partialsRight = partials, holdersRight = holders;
-				partials = holders = void 0;
-			}
-			var data = isBindKey ? void 0 : getData(func);
-			var newData = [
-				func,
-				bitmask,
-				thisArg,
-				partials,
-				holders,
-				partialsRight,
-				holdersRight,
-				argPos,
-				ary,
-				arity
-			];
-			if (data) mergeData(newData, data);
-			func = newData[0];
-			bitmask = newData[1];
-			thisArg = newData[2];
-			partials = newData[3];
-			holders = newData[4];
-			arity = newData[9] = newData[9] === void 0 ? isBindKey ? 0 : func.length : nativeMax(newData[9] - length, 0);
-			if (!arity && bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG)) bitmask &= ~(WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG);
-			if (!bitmask || bitmask == WRAP_BIND_FLAG) var result = createBind(func, bitmask, thisArg);
-			else if (bitmask == WRAP_CURRY_FLAG || bitmask == WRAP_CURRY_RIGHT_FLAG) result = createCurry(func, bitmask, arity);
-			else if ((bitmask == WRAP_PARTIAL_FLAG || bitmask == (WRAP_BIND_FLAG | WRAP_PARTIAL_FLAG)) && !holders.length) result = createPartial(func, bitmask, thisArg, partials);
-			else result = createHybrid.apply(void 0, newData);
-			return setWrapToString((data ? baseSetData : setData)(result, newData), func, bitmask);
-		}
-		module.exports = createWrap;
-	}));
-	//#endregion
-	//#region node_modules/lodash/bind.js
-	var require_bind = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseRest = require__baseRest();
-		var createWrap = require__createWrap();
-		var getHolder = require__getHolder();
-		var replaceHolders = require__replaceHolders();
-		/** Used to compose bitmasks for function metadata. */
-		var WRAP_BIND_FLAG = 1;
-		var WRAP_PARTIAL_FLAG = 32;
-		/**
-		* Creates a function that invokes `func` with the `this` binding of `thisArg`
-		* and `partials` prepended to the arguments it receives.
-		*
-		* The `_.bind.placeholder` value, which defaults to `_` in monolithic builds,
-		* may be used as a placeholder for partially applied arguments.
-		*
-		* **Note:** Unlike native `Function#bind`, this method doesn't set the "length"
-		* property of bound functions.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Function
-		* @param {Function} func The function to bind.
-		* @param {*} thisArg The `this` binding of `func`.
-		* @param {...*} [partials] The arguments to be partially applied.
-		* @returns {Function} Returns the new bound function.
-		* @example
-		*
-		* function greet(greeting, punctuation) {
-		*   return greeting + ' ' + this.user + punctuation;
-		* }
-		*
-		* var object = { 'user': 'fred' };
-		*
-		* var bound = _.bind(greet, object, 'hi');
-		* bound('!');
-		* // => 'hi fred!'
-		*
-		* // Bound with placeholders.
-		* var bound = _.bind(greet, object, _, '!');
-		* bound('hi');
-		* // => 'hi fred!'
-		*/
-		var bind = baseRest(function(func, thisArg, partials) {
-			var bitmask = WRAP_BIND_FLAG;
-			if (partials.length) {
-				var holders = replaceHolders(partials, getHolder(bind));
-				bitmask |= WRAP_PARTIAL_FLAG;
-			}
-			return createWrap(func, bitmask, thisArg, partials, holders);
-		});
-		bind.placeholder = {};
-		module.exports = bind;
-	}));
-	//#endregion
-	//#region node_modules/ampersand-collection/ampersand-collection.js
-	var require_ampersand_collection = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var AmpersandEvents = require_ampersand_events$1();
-		var classExtend = require_ampersand_class_extend();
-		var isArray = require_isArray();
-		var bind = require_bind();
-		var assign = require_assign$2();
-		var slice = [].slice;
-		function Collection(models, options) {
-			options || (options = {});
-			if (options.model) this.model = options.model;
-			if (options.comparator) this.comparator = options.comparator;
-			if (options.parent) this.parent = options.parent;
-			if (!this.mainIndex) {
-				var idAttribute = this.model && this.model.prototype && this.model.prototype.idAttribute;
-				this.mainIndex = idAttribute || "id";
-			}
-			this._reset();
-			this.initialize.apply(this, arguments);
-			if (models) this.reset(models, assign({ silent: true }, options));
-		}
-		assign(Collection.prototype, AmpersandEvents, {
-			initialize: function() {},
-			isModel: function(model) {
-				return this.model && model instanceof this.model;
-			},
-			add: function(models, options) {
-				return this.set(models, assign({
-					merge: false,
-					add: true,
-					remove: false
-				}, options));
-			},
-			parse: function(res, options) {
-				return res;
-			},
-			serialize: function() {
-				return this.map(function(model) {
-					if (model.serialize) return model.serialize();
-					else {
-						var out = {};
-						assign(out, model);
-						delete out.collection;
-						return out;
-					}
-				});
-			},
-			toJSON: function() {
-				return this.serialize();
-			},
-			set: function(models, options) {
-				options = assign({
-					add: true,
-					remove: true,
-					merge: true
-				}, options);
-				if (options.parse) models = this.parse(models, options);
-				var singular = !isArray(models);
-				models = singular ? models ? [models] : [] : models.slice();
-				var id, model, attrs, existing, sort, i, length;
-				var at = options.at;
-				var sortable = this.comparator && at == null && options.sort !== false;
-				var sortAttr = "string" === typeof this.comparator ? this.comparator : null;
-				var toAdd = [], toRemove = [], modelMap = {};
-				var add = options.add, merge = options.merge, remove = options.remove;
-				var order = !sortable && add && remove ? [] : false;
-				var targetProto = this.model && this.model.prototype || Object.prototype;
-				for (i = 0, length = models.length; i < length; i++) {
-					attrs = models[i] || {};
-					if (this.isModel(attrs)) id = model = attrs;
-					else if (targetProto.generateId) id = targetProto.generateId(attrs);
-					else {
-						id = attrs[this.mainIndex];
-						if (id === void 0 && this._isDerivedIndex(targetProto)) id = targetProto._derived[this.mainIndex].fn.call(attrs);
-					}
-					if (existing = this.get(id)) {
-						if (remove) modelMap[existing.cid || existing[this.mainIndex]] = true;
-						if (merge) {
-							attrs = attrs === model ? model.attributes : attrs;
-							if (options.parse) attrs = existing.parse(attrs, options);
-							if (existing.set) {
-								existing.set(attrs, options);
-								if (sortable && !sort && existing.hasChanged(sortAttr)) sort = true;
-							} else assign(existing, attrs);
-						}
-						models[i] = existing;
-					} else if (add) {
-						model = models[i] = this._prepareModel(attrs, options);
-						if (!model) continue;
-						toAdd.push(model);
-						this._addReference(model, options);
-					}
-					model = existing || model;
-					if (!model) continue;
-					if (order && (model.isNew && model.isNew() || !model[this.mainIndex] || !modelMap[model.cid || model[this.mainIndex]])) order.push(model);
-					modelMap[model[this.mainIndex]] = true;
-				}
-				if (remove) {
-					for (i = 0, length = this.length; i < length; i++) {
-						model = this.models[i];
-						if (!modelMap[model.cid || model[this.mainIndex]]) toRemove.push(model);
-					}
-					if (toRemove.length) this.remove(toRemove, options);
-					for (i = 0, length = toAdd.length; i < length; i++) this._index(toAdd[i]);
-				}
-				if (toAdd.length || order && order.length) {
-					if (sortable) sort = true;
-					if (at != null) for (i = 0, length = toAdd.length; i < length; i++) this.models.splice(at + i, 0, toAdd[i]);
-					else {
-						var orderedModels = order || toAdd;
-						for (i = 0, length = orderedModels.length; i < length; i++) this.models.push(orderedModels[i]);
-					}
-				}
-				if (sort) this.sort({ silent: true });
-				if (!options.silent) {
-					for (i = 0, length = toAdd.length; i < length; i++) {
-						model = toAdd[i];
-						if (model.trigger) model.trigger("add", model, this, options);
-						else this.trigger("add", model, this, options);
-					}
-					if (sort || order && order.length) this.trigger("sort", this, options);
-				}
-				return singular ? models[0] : models;
-			},
-			get: function(query, indexName) {
-				if (query == null) return;
-				var collectionMainIndex = this.mainIndex;
-				var index = this._indexes[indexName || collectionMainIndex];
-				return index && (index[query] || query[collectionMainIndex] !== void 0 && index[query[collectionMainIndex]]) || this._indexes.cid[query] || this._indexes.cid[query.cid];
-			},
-			at: function(index) {
-				return this.models[index];
-			},
-			remove: function(models, options) {
-				var singular = !isArray(models);
-				var i, length, model, index;
-				models = singular ? [models] : slice.call(models);
-				options || (options = {});
-				for (i = 0, length = models.length; i < length; i++) {
-					model = models[i] = this.get(models[i]);
-					if (!model) continue;
-					this._deIndex(model);
-					index = this.models.indexOf(model);
-					this.models.splice(index, 1);
-					if (!options.silent) {
-						options.index = index;
-						if (model.trigger) model.trigger("remove", model, this, options);
-						else this.trigger("remove", model, this, options);
-					}
-					this._removeReference(model, options);
-				}
-				return singular ? models[0] : models;
-			},
-			reset: function(models, options) {
-				options || (options = {});
-				for (var i = 0, length = this.models.length; i < length; i++) this._removeReference(this.models[i], options);
-				options.previousModels = this.models;
-				this._reset();
-				models = this.add(models, assign({ silent: true }, options));
-				if (!options.silent) this.trigger("reset", this, options);
-				return models;
-			},
-			sort: function(options) {
-				var self = this;
-				if (!this.comparator) throw new Error("Cannot sort a set without a comparator");
-				options || (options = {});
-				if (typeof this.comparator === "string") this.models.sort(function(left, right) {
-					if (left.get) {
-						left = left.get(self.comparator);
-						right = right.get(self.comparator);
-					} else {
-						left = left[self.comparator];
-						right = right[self.comparator];
-					}
-					if (left > right || left === void 0) return 1;
-					if (left < right || right === void 0) return -1;
-					return 0;
-				});
-				else if (this.comparator.length === 1) this.models.sort(function(left, right) {
-					left = self.comparator(left);
-					right = self.comparator(right);
-					if (left > right || left === void 0) return 1;
-					if (left < right || right === void 0) return -1;
-					return 0;
-				});
-				else this.models.sort(bind(this.comparator, this));
-				if (!options.silent) this.trigger("sort", this, options);
-				return this;
-			},
-			_reset: function() {
-				var list = slice.call(this.indexes || []);
-				var i = 0;
-				list.push(this.mainIndex);
-				list.push("cid");
-				var l = list.length;
-				this.models = [];
-				this._indexes = {};
-				for (; i < l; i++) this._indexes[list[i]] = {};
-			},
-			_prepareModel: function(attrs, options) {
-				if (!this.model) return attrs;
-				if (this.isModel(attrs)) {
-					if (!attrs.collection) attrs.collection = this;
-					return attrs;
-				} else {
-					options = options ? assign({}, options) : {};
-					options.collection = this;
-					var model = new this.model(attrs, options);
-					if (!model.validationError) return model;
-					this.trigger("invalid", this, model.validationError, options);
-					return false;
-				}
-			},
-			_deIndex: function(model, attribute, value) {
-				var indexVal;
-				if (attribute !== void 0) {
-					if (void 0 === this._indexes[attribute]) throw new Error("Given attribute is not an index");
-					delete this._indexes[attribute][value];
-					return;
-				}
-				for (var indexAttr in this._indexes) {
-					indexVal = model.hasOwnProperty(indexAttr) ? model[indexAttr] : model.get && model.get(indexAttr);
-					delete this._indexes[indexAttr][indexVal];
-				}
-			},
-			_index: function(model, attribute) {
-				var indexVal;
-				if (attribute !== void 0) {
-					if (void 0 === this._indexes[attribute]) throw new Error("Given attribute is not an index");
-					indexVal = model[attribute] || model.get && model.get(attribute);
-					if (indexVal) this._indexes[attribute][indexVal] = model;
-					return;
-				}
-				for (var indexAttr in this._indexes) {
-					indexVal = model.hasOwnProperty(indexAttr) ? model[indexAttr] : model.get && model.get(indexAttr);
-					if (indexVal != null) this._indexes[indexAttr][indexVal] = model;
-				}
-			},
-			_isDerivedIndex: function(proto) {
-				if (!proto || typeof proto._derived !== "object") return false;
-				return Object.keys(proto._derived).indexOf(this.mainIndex) >= 0;
-			},
-			_addReference: function(model, options) {
-				this._index(model);
-				if (!model.collection) model.collection = this;
-				if (model.on) model.on("all", this._onModelEvent, this);
-			},
-			_removeReference: function(model, options) {
-				if (this === model.collection) delete model.collection;
-				this._deIndex(model);
-				if (model.off) model.off("all", this._onModelEvent, this);
-			},
-			_onModelEvent: function(event, model, collection, options) {
-				var eventName = event.split(":")[0];
-				var attribute = event.split(":")[1];
-				if ((eventName === "add" || eventName === "remove") && collection !== this) return;
-				if (eventName === "destroy") this.remove(model, options);
-				if (model && eventName === "change" && attribute && this._indexes[attribute]) {
-					this._deIndex(model, attribute, model.previousAttributes()[attribute]);
-					this._index(model, attribute);
-				}
-				this.trigger.apply(this, arguments);
-			}
-		});
-		Object.defineProperties(Collection.prototype, {
-			length: { get: function() {
-				return this.models.length;
-			} },
-			isCollection: { get: function() {
-				return true;
-			} }
-		});
-		[
-			"indexOf",
-			"lastIndexOf",
-			"every",
-			"some",
-			"forEach",
-			"map",
-			"filter",
-			"reduce",
-			"reduceRight"
-		].forEach(function(method) {
-			Collection.prototype[method] = function() {
-				return this.models[method].apply(this.models, arguments);
-			};
-		});
-		Collection.prototype.each = Collection.prototype.forEach;
-		Collection.extend = classExtend;
-		module.exports = Collection;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayAggregator.js
-	var require__arrayAggregator = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `baseAggregator` for arrays.
-		*
-		* @private
-		* @param {Array} [array] The array to iterate over.
-		* @param {Function} setter The function to set `accumulator` values.
-		* @param {Function} iteratee The iteratee to transform keys.
-		* @param {Object} accumulator The initial aggregated object.
-		* @returns {Function} Returns `accumulator`.
-		*/
-		function arrayAggregator(array, setter, iteratee, accumulator) {
-			var index = -1, length = array == null ? 0 : array.length;
-			while (++index < length) {
-				var value = array[index];
-				setter(accumulator, value, iteratee(value), array);
-			}
-			return accumulator;
-		}
-		module.exports = arrayAggregator;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseAggregator.js
-	var require__baseAggregator = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseEach = require__baseEach();
-		/**
-		* Aggregates elements of `collection` on `accumulator` with keys transformed
-		* by `iteratee` and values set by `setter`.
-		*
-		* @private
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} setter The function to set `accumulator` values.
-		* @param {Function} iteratee The iteratee to transform keys.
-		* @param {Object} accumulator The initial aggregated object.
-		* @returns {Function} Returns `accumulator`.
-		*/
-		function baseAggregator(collection, setter, iteratee, accumulator) {
-			baseEach(collection, function(value, key, collection) {
-				setter(accumulator, value, iteratee(value), collection);
-			});
-			return accumulator;
-		}
-		module.exports = baseAggregator;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_listCacheClear.js
-	var require__listCacheClear = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Removes all key-value entries from the list cache.
-		*
-		* @private
-		* @name clear
-		* @memberOf ListCache
-		*/
-		function listCacheClear() {
-			this.__data__ = [];
-			this.size = 0;
-		}
-		module.exports = listCacheClear;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_assocIndexOf.js
-	var require__assocIndexOf = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var eq = require_eq();
-		/**
-		* Gets the index at which the `key` is found in `array` of key-value pairs.
-		*
-		* @private
-		* @param {Array} array The array to inspect.
-		* @param {*} key The key to search for.
-		* @returns {number} Returns the index of the matched value, else `-1`.
-		*/
-		function assocIndexOf(array, key) {
-			var length = array.length;
-			while (length--) if (eq(array[length][0], key)) return length;
-			return -1;
-		}
-		module.exports = assocIndexOf;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_listCacheDelete.js
-	var require__listCacheDelete = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var assocIndexOf = require__assocIndexOf();
-		/** Built-in value references. */
-		var splice = Array.prototype.splice;
-		/**
-		* Removes `key` and its value from the list cache.
-		*
-		* @private
-		* @name delete
-		* @memberOf ListCache
-		* @param {string} key The key of the value to remove.
-		* @returns {boolean} Returns `true` if the entry was removed, else `false`.
-		*/
-		function listCacheDelete(key) {
-			var data = this.__data__, index = assocIndexOf(data, key);
-			if (index < 0) return false;
-			if (index == data.length - 1) data.pop();
-			else splice.call(data, index, 1);
-			--this.size;
-			return true;
-		}
-		module.exports = listCacheDelete;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_listCacheGet.js
-	var require__listCacheGet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var assocIndexOf = require__assocIndexOf();
-		/**
-		* Gets the list cache value for `key`.
-		*
-		* @private
-		* @name get
-		* @memberOf ListCache
-		* @param {string} key The key of the value to get.
-		* @returns {*} Returns the entry value.
-		*/
-		function listCacheGet(key) {
-			var data = this.__data__, index = assocIndexOf(data, key);
-			return index < 0 ? void 0 : data[index][1];
-		}
-		module.exports = listCacheGet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_listCacheHas.js
-	var require__listCacheHas = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var assocIndexOf = require__assocIndexOf();
-		/**
-		* Checks if a list cache value for `key` exists.
-		*
-		* @private
-		* @name has
-		* @memberOf ListCache
-		* @param {string} key The key of the entry to check.
-		* @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
-		*/
-		function listCacheHas(key) {
-			return assocIndexOf(this.__data__, key) > -1;
-		}
-		module.exports = listCacheHas;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_listCacheSet.js
-	var require__listCacheSet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var assocIndexOf = require__assocIndexOf();
-		/**
-		* Sets the list cache `key` to `value`.
-		*
-		* @private
-		* @name set
-		* @memberOf ListCache
-		* @param {string} key The key of the value to set.
-		* @param {*} value The value to set.
-		* @returns {Object} Returns the list cache instance.
-		*/
-		function listCacheSet(key, value) {
-			var data = this.__data__, index = assocIndexOf(data, key);
-			if (index < 0) {
-				++this.size;
-				data.push([key, value]);
-			} else data[index][1] = value;
-			return this;
-		}
-		module.exports = listCacheSet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_ListCache.js
-	var require__ListCache = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var listCacheClear = require__listCacheClear();
-		var listCacheDelete = require__listCacheDelete();
-		var listCacheGet = require__listCacheGet();
-		var listCacheHas = require__listCacheHas();
-		var listCacheSet = require__listCacheSet();
-		/**
-		* Creates an list cache object.
-		*
-		* @private
-		* @constructor
-		* @param {Array} [entries] The key-value pairs to cache.
-		*/
-		function ListCache(entries) {
-			var index = -1, length = entries == null ? 0 : entries.length;
-			this.clear();
-			while (++index < length) {
-				var entry = entries[index];
-				this.set(entry[0], entry[1]);
-			}
-		}
-		ListCache.prototype.clear = listCacheClear;
-		ListCache.prototype["delete"] = listCacheDelete;
-		ListCache.prototype.get = listCacheGet;
-		ListCache.prototype.has = listCacheHas;
-		ListCache.prototype.set = listCacheSet;
-		module.exports = ListCache;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_stackClear.js
-	var require__stackClear = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var ListCache = require__ListCache();
-		/**
-		* Removes all key-value entries from the stack.
-		*
-		* @private
-		* @name clear
-		* @memberOf Stack
-		*/
-		function stackClear() {
-			this.__data__ = new ListCache();
-			this.size = 0;
-		}
-		module.exports = stackClear;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_stackDelete.js
-	var require__stackDelete = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Removes `key` and its value from the stack.
-		*
-		* @private
-		* @name delete
-		* @memberOf Stack
-		* @param {string} key The key of the value to remove.
-		* @returns {boolean} Returns `true` if the entry was removed, else `false`.
-		*/
-		function stackDelete(key) {
-			var data = this.__data__, result = data["delete"](key);
-			this.size = data.size;
-			return result;
-		}
-		module.exports = stackDelete;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_stackGet.js
-	var require__stackGet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Gets the stack value for `key`.
-		*
-		* @private
-		* @name get
-		* @memberOf Stack
-		* @param {string} key The key of the value to get.
-		* @returns {*} Returns the entry value.
-		*/
-		function stackGet(key) {
-			return this.__data__.get(key);
-		}
-		module.exports = stackGet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_stackHas.js
-	var require__stackHas = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Checks if a stack value for `key` exists.
-		*
-		* @private
-		* @name has
-		* @memberOf Stack
-		* @param {string} key The key of the entry to check.
-		* @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
-		*/
-		function stackHas(key) {
-			return this.__data__.has(key);
-		}
-		module.exports = stackHas;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_nativeCreate.js
-	var require__nativeCreate = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__getNative()(Object, "create");
-	}));
-	//#endregion
-	//#region node_modules/lodash/_hashClear.js
-	var require__hashClear = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var nativeCreate = require__nativeCreate();
-		/**
-		* Removes all key-value entries from the hash.
-		*
-		* @private
-		* @name clear
-		* @memberOf Hash
-		*/
-		function hashClear() {
-			this.__data__ = nativeCreate ? nativeCreate(null) : {};
-			this.size = 0;
-		}
-		module.exports = hashClear;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_hashDelete.js
-	var require__hashDelete = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Removes `key` and its value from the hash.
-		*
-		* @private
-		* @name delete
-		* @memberOf Hash
-		* @param {Object} hash The hash to modify.
-		* @param {string} key The key of the value to remove.
-		* @returns {boolean} Returns `true` if the entry was removed, else `false`.
-		*/
-		function hashDelete(key) {
-			var result = this.has(key) && delete this.__data__[key];
-			this.size -= result ? 1 : 0;
-			return result;
-		}
-		module.exports = hashDelete;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_hashGet.js
-	var require__hashGet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var nativeCreate = require__nativeCreate();
-		/** Used to stand-in for `undefined` hash values. */
-		var HASH_UNDEFINED = "__lodash_hash_undefined__";
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* Gets the hash value for `key`.
-		*
-		* @private
-		* @name get
-		* @memberOf Hash
-		* @param {string} key The key of the value to get.
-		* @returns {*} Returns the entry value.
-		*/
-		function hashGet(key) {
-			var data = this.__data__;
-			if (nativeCreate) {
-				var result = data[key];
-				return result === HASH_UNDEFINED ? void 0 : result;
-			}
-			return hasOwnProperty.call(data, key) ? data[key] : void 0;
-		}
-		module.exports = hashGet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_hashHas.js
-	var require__hashHas = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var nativeCreate = require__nativeCreate();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* Checks if a hash value for `key` exists.
-		*
-		* @private
-		* @name has
-		* @memberOf Hash
-		* @param {string} key The key of the entry to check.
-		* @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
-		*/
-		function hashHas(key) {
-			var data = this.__data__;
-			return nativeCreate ? data[key] !== void 0 : hasOwnProperty.call(data, key);
-		}
-		module.exports = hashHas;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_hashSet.js
-	var require__hashSet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var nativeCreate = require__nativeCreate();
-		/** Used to stand-in for `undefined` hash values. */
-		var HASH_UNDEFINED = "__lodash_hash_undefined__";
-		/**
-		* Sets the hash `key` to `value`.
-		*
-		* @private
-		* @name set
-		* @memberOf Hash
-		* @param {string} key The key of the value to set.
-		* @param {*} value The value to set.
-		* @returns {Object} Returns the hash instance.
-		*/
-		function hashSet(key, value) {
-			var data = this.__data__;
-			this.size += this.has(key) ? 0 : 1;
-			data[key] = nativeCreate && value === void 0 ? HASH_UNDEFINED : value;
-			return this;
-		}
-		module.exports = hashSet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_Hash.js
-	var require__Hash = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var hashClear = require__hashClear();
-		var hashDelete = require__hashDelete();
-		var hashGet = require__hashGet();
-		var hashHas = require__hashHas();
-		var hashSet = require__hashSet();
-		/**
-		* Creates a hash object.
-		*
-		* @private
-		* @constructor
-		* @param {Array} [entries] The key-value pairs to cache.
-		*/
-		function Hash(entries) {
-			var index = -1, length = entries == null ? 0 : entries.length;
-			this.clear();
-			while (++index < length) {
-				var entry = entries[index];
-				this.set(entry[0], entry[1]);
-			}
-		}
-		Hash.prototype.clear = hashClear;
-		Hash.prototype["delete"] = hashDelete;
-		Hash.prototype.get = hashGet;
-		Hash.prototype.has = hashHas;
-		Hash.prototype.set = hashSet;
-		module.exports = Hash;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_mapCacheClear.js
-	var require__mapCacheClear = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Hash = require__Hash();
-		var ListCache = require__ListCache();
-		var Map = require__Map();
-		/**
-		* Removes all key-value entries from the map.
-		*
-		* @private
-		* @name clear
-		* @memberOf MapCache
-		*/
-		function mapCacheClear() {
-			this.size = 0;
-			this.__data__ = {
-				"hash": new Hash(),
-				"map": new (Map || ListCache)(),
-				"string": new Hash()
-			};
-		}
-		module.exports = mapCacheClear;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_isKeyable.js
-	var require__isKeyable = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Checks if `value` is suitable for use as unique object key.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is suitable, else `false`.
-		*/
-		function isKeyable(value) {
-			var type = typeof value;
-			return type == "string" || type == "number" || type == "symbol" || type == "boolean" ? value !== "__proto__" : value === null;
-		}
-		module.exports = isKeyable;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getMapData.js
-	var require__getMapData = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isKeyable = require__isKeyable();
-		/**
-		* Gets the data for `map`.
-		*
-		* @private
-		* @param {Object} map The map to query.
-		* @param {string} key The reference key.
-		* @returns {*} Returns the map data.
-		*/
-		function getMapData(map, key) {
-			var data = map.__data__;
-			return isKeyable(key) ? data[typeof key == "string" ? "string" : "hash"] : data.map;
-		}
-		module.exports = getMapData;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_mapCacheDelete.js
-	var require__mapCacheDelete = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getMapData = require__getMapData();
-		/**
-		* Removes `key` and its value from the map.
-		*
-		* @private
-		* @name delete
-		* @memberOf MapCache
-		* @param {string} key The key of the value to remove.
-		* @returns {boolean} Returns `true` if the entry was removed, else `false`.
-		*/
-		function mapCacheDelete(key) {
-			var result = getMapData(this, key)["delete"](key);
-			this.size -= result ? 1 : 0;
-			return result;
-		}
-		module.exports = mapCacheDelete;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_mapCacheGet.js
-	var require__mapCacheGet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getMapData = require__getMapData();
-		/**
-		* Gets the map value for `key`.
-		*
-		* @private
-		* @name get
-		* @memberOf MapCache
-		* @param {string} key The key of the value to get.
-		* @returns {*} Returns the entry value.
-		*/
-		function mapCacheGet(key) {
-			return getMapData(this, key).get(key);
-		}
-		module.exports = mapCacheGet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_mapCacheHas.js
-	var require__mapCacheHas = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getMapData = require__getMapData();
-		/**
-		* Checks if a map value for `key` exists.
-		*
-		* @private
-		* @name has
-		* @memberOf MapCache
-		* @param {string} key The key of the entry to check.
-		* @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
-		*/
-		function mapCacheHas(key) {
-			return getMapData(this, key).has(key);
-		}
-		module.exports = mapCacheHas;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_mapCacheSet.js
-	var require__mapCacheSet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getMapData = require__getMapData();
-		/**
-		* Sets the map `key` to `value`.
-		*
-		* @private
-		* @name set
-		* @memberOf MapCache
-		* @param {string} key The key of the value to set.
-		* @param {*} value The value to set.
-		* @returns {Object} Returns the map cache instance.
-		*/
-		function mapCacheSet(key, value) {
-			var data = getMapData(this, key), size = data.size;
-			data.set(key, value);
-			this.size += data.size == size ? 0 : 1;
-			return this;
-		}
-		module.exports = mapCacheSet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_MapCache.js
-	var require__MapCache = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var mapCacheClear = require__mapCacheClear();
-		var mapCacheDelete = require__mapCacheDelete();
-		var mapCacheGet = require__mapCacheGet();
-		var mapCacheHas = require__mapCacheHas();
-		var mapCacheSet = require__mapCacheSet();
-		/**
-		* Creates a map cache object to store key-value pairs.
-		*
-		* @private
-		* @constructor
-		* @param {Array} [entries] The key-value pairs to cache.
-		*/
-		function MapCache(entries) {
-			var index = -1, length = entries == null ? 0 : entries.length;
-			this.clear();
-			while (++index < length) {
-				var entry = entries[index];
-				this.set(entry[0], entry[1]);
-			}
-		}
-		MapCache.prototype.clear = mapCacheClear;
-		MapCache.prototype["delete"] = mapCacheDelete;
-		MapCache.prototype.get = mapCacheGet;
-		MapCache.prototype.has = mapCacheHas;
-		MapCache.prototype.set = mapCacheSet;
-		module.exports = MapCache;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_stackSet.js
-	var require__stackSet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var ListCache = require__ListCache();
-		var Map = require__Map();
-		var MapCache = require__MapCache();
-		/** Used as the size to enable large array optimizations. */
-		var LARGE_ARRAY_SIZE = 200;
-		/**
-		* Sets the stack `key` to `value`.
-		*
-		* @private
-		* @name set
-		* @memberOf Stack
-		* @param {string} key The key of the value to set.
-		* @param {*} value The value to set.
-		* @returns {Object} Returns the stack cache instance.
-		*/
-		function stackSet(key, value) {
-			var data = this.__data__;
-			if (data instanceof ListCache) {
-				var pairs = data.__data__;
-				if (!Map || pairs.length < LARGE_ARRAY_SIZE - 1) {
-					pairs.push([key, value]);
-					this.size = ++data.size;
-					return this;
-				}
-				data = this.__data__ = new MapCache(pairs);
-			}
-			data.set(key, value);
-			this.size = data.size;
-			return this;
-		}
-		module.exports = stackSet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_Stack.js
-	var require__Stack = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var ListCache = require__ListCache();
-		var stackClear = require__stackClear();
-		var stackDelete = require__stackDelete();
-		var stackGet = require__stackGet();
-		var stackHas = require__stackHas();
-		var stackSet = require__stackSet();
-		/**
-		* Creates a stack cache object to store key-value pairs.
-		*
-		* @private
-		* @constructor
-		* @param {Array} [entries] The key-value pairs to cache.
-		*/
-		function Stack(entries) {
-			var data = this.__data__ = new ListCache(entries);
-			this.size = data.size;
-		}
-		Stack.prototype.clear = stackClear;
-		Stack.prototype["delete"] = stackDelete;
-		Stack.prototype.get = stackGet;
-		Stack.prototype.has = stackHas;
-		Stack.prototype.set = stackSet;
-		module.exports = Stack;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_setCacheAdd.js
-	var require__setCacheAdd = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to stand-in for `undefined` hash values. */
-		var HASH_UNDEFINED = "__lodash_hash_undefined__";
-		/**
-		* Adds `value` to the array cache.
-		*
-		* @private
-		* @name add
-		* @memberOf SetCache
-		* @alias push
-		* @param {*} value The value to cache.
-		* @returns {Object} Returns the cache instance.
-		*/
-		function setCacheAdd(value) {
-			this.__data__.set(value, HASH_UNDEFINED);
-			return this;
-		}
-		module.exports = setCacheAdd;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_setCacheHas.js
-	var require__setCacheHas = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Checks if `value` is in the array cache.
-		*
-		* @private
-		* @name has
-		* @memberOf SetCache
-		* @param {*} value The value to search for.
-		* @returns {boolean} Returns `true` if `value` is found, else `false`.
-		*/
-		function setCacheHas(value) {
-			return this.__data__.has(value);
-		}
-		module.exports = setCacheHas;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_SetCache.js
-	var require__SetCache = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var MapCache = require__MapCache();
-		var setCacheAdd = require__setCacheAdd();
-		var setCacheHas = require__setCacheHas();
-		/**
-		*
-		* Creates an array cache object to store unique values.
-		*
-		* @private
-		* @constructor
-		* @param {Array} [values] The values to cache.
-		*/
-		function SetCache(values) {
-			var index = -1, length = values == null ? 0 : values.length;
-			this.__data__ = new MapCache();
-			while (++index < length) this.add(values[index]);
-		}
-		SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
-		SetCache.prototype.has = setCacheHas;
-		module.exports = SetCache;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arraySome.js
-	var require__arraySome = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `_.some` for arrays without support for iteratee
-		* shorthands.
-		*
-		* @private
-		* @param {Array} [array] The array to iterate over.
-		* @param {Function} predicate The function invoked per iteration.
-		* @returns {boolean} Returns `true` if any element passes the predicate check,
-		*  else `false`.
-		*/
-		function arraySome(array, predicate) {
-			var index = -1, length = array == null ? 0 : array.length;
-			while (++index < length) if (predicate(array[index], index, array)) return true;
-			return false;
-		}
-		module.exports = arraySome;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_cacheHas.js
-	var require__cacheHas = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Checks if a `cache` value for `key` exists.
-		*
-		* @private
-		* @param {Object} cache The cache to query.
-		* @param {string} key The key of the entry to check.
-		* @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
-		*/
-		function cacheHas(cache, key) {
-			return cache.has(key);
-		}
-		module.exports = cacheHas;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_equalArrays.js
-	var require__equalArrays = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var SetCache = require__SetCache();
-		var arraySome = require__arraySome();
-		var cacheHas = require__cacheHas();
-		/** Used to compose bitmasks for value comparisons. */
-		var COMPARE_PARTIAL_FLAG = 1;
-		var COMPARE_UNORDERED_FLAG = 2;
-		/**
-		* A specialized version of `baseIsEqualDeep` for arrays with support for
-		* partial deep comparisons.
-		*
-		* @private
-		* @param {Array} array The array to compare.
-		* @param {Array} other The other array to compare.
-		* @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
-		* @param {Function} customizer The function to customize comparisons.
-		* @param {Function} equalFunc The function to determine equivalents of values.
-		* @param {Object} stack Tracks traversed `array` and `other` objects.
-		* @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.
-		*/
-		function equalArrays(array, other, bitmask, customizer, equalFunc, stack) {
-			var isPartial = bitmask & COMPARE_PARTIAL_FLAG, arrLength = array.length, othLength = other.length;
-			if (arrLength != othLength && !(isPartial && othLength > arrLength)) return false;
-			var arrStacked = stack.get(array);
-			var othStacked = stack.get(other);
-			if (arrStacked && othStacked) return arrStacked == other && othStacked == array;
-			var index = -1, result = true, seen = bitmask & COMPARE_UNORDERED_FLAG ? new SetCache() : void 0;
-			stack.set(array, other);
-			stack.set(other, array);
-			while (++index < arrLength) {
-				var arrValue = array[index], othValue = other[index];
-				if (customizer) var compared = isPartial ? customizer(othValue, arrValue, index, other, array, stack) : customizer(arrValue, othValue, index, array, other, stack);
-				if (compared !== void 0) {
-					if (compared) continue;
-					result = false;
-					break;
-				}
-				if (seen) {
-					if (!arraySome(other, function(othValue, othIndex) {
-						if (!cacheHas(seen, othIndex) && (arrValue === othValue || equalFunc(arrValue, othValue, bitmask, customizer, stack))) return seen.push(othIndex);
-					})) {
-						result = false;
-						break;
-					}
-				} else if (!(arrValue === othValue || equalFunc(arrValue, othValue, bitmask, customizer, stack))) {
-					result = false;
-					break;
-				}
-			}
-			stack["delete"](array);
-			stack["delete"](other);
-			return result;
-		}
-		module.exports = equalArrays;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_Uint8Array.js
-	var require__Uint8Array = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__root().Uint8Array;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_equalByTag.js
-	var require__equalByTag = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Symbol = require__Symbol();
-		var Uint8Array = require__Uint8Array();
-		var eq = require_eq();
-		var equalArrays = require__equalArrays();
-		var mapToArray = require__mapToArray();
-		var setToArray = require__setToArray();
-		/** Used to compose bitmasks for value comparisons. */
-		var COMPARE_PARTIAL_FLAG = 1;
-		var COMPARE_UNORDERED_FLAG = 2;
-		/** `Object#toString` result references. */
-		var boolTag = "[object Boolean]";
-		var dateTag = "[object Date]";
-		var errorTag = "[object Error]";
-		var mapTag = "[object Map]";
-		var numberTag = "[object Number]";
-		var regexpTag = "[object RegExp]";
-		var setTag = "[object Set]";
-		var stringTag = "[object String]";
-		var symbolTag = "[object Symbol]";
-		var arrayBufferTag = "[object ArrayBuffer]";
-		var dataViewTag = "[object DataView]";
-		/** Used to convert symbols to primitives and strings. */
-		var symbolProto = Symbol ? Symbol.prototype : void 0;
-		var symbolValueOf = symbolProto ? symbolProto.valueOf : void 0;
-		/**
-		* A specialized version of `baseIsEqualDeep` for comparing objects of
-		* the same `toStringTag`.
-		*
-		* **Note:** This function only supports comparing values with tags of
-		* `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
-		*
-		* @private
-		* @param {Object} object The object to compare.
-		* @param {Object} other The other object to compare.
-		* @param {string} tag The `toStringTag` of the objects to compare.
-		* @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
-		* @param {Function} customizer The function to customize comparisons.
-		* @param {Function} equalFunc The function to determine equivalents of values.
-		* @param {Object} stack Tracks traversed `object` and `other` objects.
-		* @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
-		*/
-		function equalByTag(object, other, tag, bitmask, customizer, equalFunc, stack) {
-			switch (tag) {
-				case dataViewTag:
-					if (object.byteLength != other.byteLength || object.byteOffset != other.byteOffset) return false;
-					object = object.buffer;
-					other = other.buffer;
-				case arrayBufferTag:
-					if (object.byteLength != other.byteLength || !equalFunc(new Uint8Array(object), new Uint8Array(other))) return false;
-					return true;
-				case boolTag:
-				case dateTag:
-				case numberTag: return eq(+object, +other);
-				case errorTag: return object.name == other.name && object.message == other.message;
-				case regexpTag:
-				case stringTag: return object == other + "";
-				case mapTag: var convert = mapToArray;
-				case setTag:
-					var isPartial = bitmask & COMPARE_PARTIAL_FLAG;
-					convert || (convert = setToArray);
-					if (object.size != other.size && !isPartial) return false;
-					var stacked = stack.get(object);
-					if (stacked) return stacked == other;
-					bitmask |= COMPARE_UNORDERED_FLAG;
-					stack.set(object, other);
-					var result = equalArrays(convert(object), convert(other), bitmask, customizer, equalFunc, stack);
-					stack["delete"](object);
-					return result;
-				case symbolTag: if (symbolValueOf) return symbolValueOf.call(object) == symbolValueOf.call(other);
-			}
-			return false;
-		}
-		module.exports = equalByTag;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayPush.js
-	var require__arrayPush = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Appends the elements of `values` to `array`.
-		*
-		* @private
-		* @param {Array} array The array to modify.
-		* @param {Array} values The values to append.
-		* @returns {Array} Returns `array`.
-		*/
-		function arrayPush(array, values) {
-			var index = -1, length = values.length, offset = array.length;
-			while (++index < length) array[offset + index] = values[index];
-			return array;
-		}
-		module.exports = arrayPush;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseGetAllKeys.js
-	var require__baseGetAllKeys = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayPush = require__arrayPush();
-		var isArray = require_isArray();
-		/**
-		* The base implementation of `getAllKeys` and `getAllKeysIn` which uses
-		* `keysFunc` and `symbolsFunc` to get the enumerable property names and
-		* symbols of `object`.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @param {Function} keysFunc The function to get the keys of `object`.
-		* @param {Function} symbolsFunc The function to get the symbols of `object`.
-		* @returns {Array} Returns the array of property names and symbols.
-		*/
-		function baseGetAllKeys(object, keysFunc, symbolsFunc) {
-			var result = keysFunc(object);
-			return isArray(object) ? result : arrayPush(result, symbolsFunc(object));
-		}
-		module.exports = baseGetAllKeys;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayFilter.js
-	var require__arrayFilter = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `_.filter` for arrays without support for
-		* iteratee shorthands.
-		*
-		* @private
-		* @param {Array} [array] The array to iterate over.
-		* @param {Function} predicate The function invoked per iteration.
-		* @returns {Array} Returns the new filtered array.
-		*/
-		function arrayFilter(array, predicate) {
-			var index = -1, length = array == null ? 0 : array.length, resIndex = 0, result = [];
-			while (++index < length) {
-				var value = array[index];
-				if (predicate(value, index, array)) result[resIndex++] = value;
-			}
-			return result;
-		}
-		module.exports = arrayFilter;
-	}));
-	//#endregion
-	//#region node_modules/lodash/stubArray.js
-	var require_stubArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* This method returns a new empty array.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.13.0
-		* @category Util
-		* @returns {Array} Returns the new empty array.
-		* @example
-		*
-		* var arrays = _.times(2, _.stubArray);
-		*
-		* console.log(arrays);
-		* // => [[], []]
-		*
-		* console.log(arrays[0] === arrays[1]);
-		* // => false
-		*/
-		function stubArray() {
-			return [];
-		}
-		module.exports = stubArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getSymbols.js
-	var require__getSymbols = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayFilter = require__arrayFilter();
-		var stubArray = require_stubArray();
-		/** Built-in value references. */
-		var propertyIsEnumerable = Object.prototype.propertyIsEnumerable;
-		var nativeGetSymbols = Object.getOwnPropertySymbols;
-		module.exports = !nativeGetSymbols ? stubArray : function(object) {
-			if (object == null) return [];
-			object = Object(object);
-			return arrayFilter(nativeGetSymbols(object), function(symbol) {
-				return propertyIsEnumerable.call(object, symbol);
-			});
-		};
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getAllKeys.js
-	var require__getAllKeys = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGetAllKeys = require__baseGetAllKeys();
-		var getSymbols = require__getSymbols();
-		var keys = require_keys$2();
-		/**
-		* Creates an array of own enumerable property names and symbols of `object`.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @returns {Array} Returns the array of property names and symbols.
-		*/
-		function getAllKeys(object) {
-			return baseGetAllKeys(object, keys, getSymbols);
-		}
-		module.exports = getAllKeys;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_equalObjects.js
-	var require__equalObjects = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getAllKeys = require__getAllKeys();
-		/** Used to compose bitmasks for value comparisons. */
-		var COMPARE_PARTIAL_FLAG = 1;
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* A specialized version of `baseIsEqualDeep` for objects with support for
-		* partial deep comparisons.
-		*
-		* @private
-		* @param {Object} object The object to compare.
-		* @param {Object} other The other object to compare.
-		* @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
-		* @param {Function} customizer The function to customize comparisons.
-		* @param {Function} equalFunc The function to determine equivalents of values.
-		* @param {Object} stack Tracks traversed `object` and `other` objects.
-		* @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
-		*/
-		function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
-			var isPartial = bitmask & COMPARE_PARTIAL_FLAG, objProps = getAllKeys(object), objLength = objProps.length;
-			if (objLength != getAllKeys(other).length && !isPartial) return false;
-			var index = objLength;
-			while (index--) {
-				var key = objProps[index];
-				if (!(isPartial ? key in other : hasOwnProperty.call(other, key))) return false;
-			}
-			var objStacked = stack.get(object);
-			var othStacked = stack.get(other);
-			if (objStacked && othStacked) return objStacked == other && othStacked == object;
-			var result = true;
-			stack.set(object, other);
-			stack.set(other, object);
-			var skipCtor = isPartial;
-			while (++index < objLength) {
-				key = objProps[index];
-				var objValue = object[key], othValue = other[key];
-				if (customizer) var compared = isPartial ? customizer(othValue, objValue, key, other, object, stack) : customizer(objValue, othValue, key, object, other, stack);
-				if (!(compared === void 0 ? objValue === othValue || equalFunc(objValue, othValue, bitmask, customizer, stack) : compared)) {
-					result = false;
-					break;
-				}
-				skipCtor || (skipCtor = key == "constructor");
-			}
-			if (result && !skipCtor) {
-				var objCtor = object.constructor, othCtor = other.constructor;
-				if (objCtor != othCtor && "constructor" in object && "constructor" in other && !(typeof objCtor == "function" && objCtor instanceof objCtor && typeof othCtor == "function" && othCtor instanceof othCtor)) result = false;
-			}
-			stack["delete"](object);
-			stack["delete"](other);
-			return result;
-		}
-		module.exports = equalObjects;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsEqualDeep.js
-	var require__baseIsEqualDeep = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Stack = require__Stack();
-		var equalArrays = require__equalArrays();
-		var equalByTag = require__equalByTag();
-		var equalObjects = require__equalObjects();
-		var getTag = require__getTag();
-		var isArray = require_isArray();
-		var isBuffer = require_isBuffer();
-		var isTypedArray = require_isTypedArray();
-		/** Used to compose bitmasks for value comparisons. */
-		var COMPARE_PARTIAL_FLAG = 1;
-		/** `Object#toString` result references. */
-		var argsTag = "[object Arguments]";
-		var arrayTag = "[object Array]";
-		var objectTag = "[object Object]";
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* A specialized version of `baseIsEqual` for arrays and objects which performs
-		* deep comparisons and tracks traversed objects enabling objects with circular
-		* references to be compared.
-		*
-		* @private
-		* @param {Object} object The object to compare.
-		* @param {Object} other The other object to compare.
-		* @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
-		* @param {Function} customizer The function to customize comparisons.
-		* @param {Function} equalFunc The function to determine equivalents of values.
-		* @param {Object} [stack] Tracks traversed `object` and `other` objects.
-		* @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
-		*/
-		function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
-			var objIsArr = isArray(object), othIsArr = isArray(other), objTag = objIsArr ? arrayTag : getTag(object), othTag = othIsArr ? arrayTag : getTag(other);
-			objTag = objTag == argsTag ? objectTag : objTag;
-			othTag = othTag == argsTag ? objectTag : othTag;
-			var objIsObj = objTag == objectTag, othIsObj = othTag == objectTag, isSameTag = objTag == othTag;
-			if (isSameTag && isBuffer(object)) {
-				if (!isBuffer(other)) return false;
-				objIsArr = true;
-				objIsObj = false;
-			}
-			if (isSameTag && !objIsObj) {
-				stack || (stack = new Stack());
-				return objIsArr || isTypedArray(object) ? equalArrays(object, other, bitmask, customizer, equalFunc, stack) : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
-			}
-			if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
-				var objIsWrapped = objIsObj && hasOwnProperty.call(object, "__wrapped__"), othIsWrapped = othIsObj && hasOwnProperty.call(other, "__wrapped__");
-				if (objIsWrapped || othIsWrapped) {
-					var objUnwrapped = objIsWrapped ? object.value() : object, othUnwrapped = othIsWrapped ? other.value() : other;
-					stack || (stack = new Stack());
-					return equalFunc(objUnwrapped, othUnwrapped, bitmask, customizer, stack);
-				}
-			}
-			if (!isSameTag) return false;
-			stack || (stack = new Stack());
-			return equalObjects(object, other, bitmask, customizer, equalFunc, stack);
-		}
-		module.exports = baseIsEqualDeep;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsEqual.js
-	var require__baseIsEqual = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsEqualDeep = require__baseIsEqualDeep();
-		var isObjectLike = require_isObjectLike();
-		/**
-		* The base implementation of `_.isEqual` which supports partial comparisons
-		* and tracks traversed objects.
-		*
-		* @private
-		* @param {*} value The value to compare.
-		* @param {*} other The other value to compare.
-		* @param {boolean} bitmask The bitmask flags.
-		*  1 - Unordered comparison
-		*  2 - Partial comparison
-		* @param {Function} [customizer] The function to customize comparisons.
-		* @param {Object} [stack] Tracks traversed `value` and `other` objects.
-		* @returns {boolean} Returns `true` if the values are equivalent, else `false`.
-		*/
-		function baseIsEqual(value, other, bitmask, customizer, stack) {
-			if (value === other) return true;
-			if (value == null || other == null || !isObjectLike(value) && !isObjectLike(other)) return value !== value && other !== other;
-			return baseIsEqualDeep(value, other, bitmask, customizer, baseIsEqual, stack);
-		}
-		module.exports = baseIsEqual;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsMatch.js
-	var require__baseIsMatch = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Stack = require__Stack();
-		var baseIsEqual = require__baseIsEqual();
-		/** Used to compose bitmasks for value comparisons. */
-		var COMPARE_PARTIAL_FLAG = 1;
-		var COMPARE_UNORDERED_FLAG = 2;
-		/**
-		* The base implementation of `_.isMatch` without support for iteratee shorthands.
-		*
-		* @private
-		* @param {Object} object The object to inspect.
-		* @param {Object} source The object of property values to match.
-		* @param {Array} matchData The property names, values, and compare flags to match.
-		* @param {Function} [customizer] The function to customize comparisons.
-		* @returns {boolean} Returns `true` if `object` is a match, else `false`.
-		*/
-		function baseIsMatch(object, source, matchData, customizer) {
-			var index = matchData.length, length = index, noCustomizer = !customizer;
-			if (object == null) return !length;
-			object = Object(object);
-			while (index--) {
-				var data = matchData[index];
-				if (noCustomizer && data[2] ? data[1] !== object[data[0]] : !(data[0] in object)) return false;
-			}
-			while (++index < length) {
-				data = matchData[index];
-				var key = data[0], objValue = object[key], srcValue = data[1];
-				if (noCustomizer && data[2]) {
-					if (objValue === void 0 && !(key in object)) return false;
-				} else {
-					var stack = new Stack();
-					if (customizer) var result = customizer(objValue, srcValue, key, object, source, stack);
-					if (!(result === void 0 ? baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG, customizer, stack) : result)) return false;
-				}
-			}
-			return true;
-		}
-		module.exports = baseIsMatch;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_isStrictComparable.js
-	var require__isStrictComparable = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isObject = require_isObject();
-		/**
-		* Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` if suitable for strict
-		*  equality comparisons, else `false`.
-		*/
-		function isStrictComparable(value) {
-			return value === value && !isObject(value);
-		}
-		module.exports = isStrictComparable;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getMatchData.js
-	var require__getMatchData = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isStrictComparable = require__isStrictComparable();
-		var keys = require_keys$2();
-		/**
-		* Gets the property names, values, and compare flags of `object`.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @returns {Array} Returns the match data of `object`.
-		*/
-		function getMatchData(object) {
-			var result = keys(object), length = result.length;
-			while (length--) {
-				var key = result[length], value = object[key];
-				result[length] = [
-					key,
-					value,
-					isStrictComparable(value)
-				];
-			}
-			return result;
-		}
-		module.exports = getMatchData;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_matchesStrictComparable.js
-	var require__matchesStrictComparable = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `matchesProperty` for source values suitable
-		* for strict equality comparisons, i.e. `===`.
-		*
-		* @private
-		* @param {string} key The key of the property to get.
-		* @param {*} srcValue The value to match.
-		* @returns {Function} Returns the new spec function.
-		*/
-		function matchesStrictComparable(key, srcValue) {
-			return function(object) {
-				if (object == null) return false;
-				return object[key] === srcValue && (srcValue !== void 0 || key in Object(object));
-			};
-		}
-		module.exports = matchesStrictComparable;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseMatches.js
-	var require__baseMatches = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsMatch = require__baseIsMatch();
-		var getMatchData = require__getMatchData();
-		var matchesStrictComparable = require__matchesStrictComparable();
-		/**
-		* The base implementation of `_.matches` which doesn't clone `source`.
-		*
-		* @private
-		* @param {Object} source The object of property values to match.
-		* @returns {Function} Returns the new spec function.
-		*/
-		function baseMatches(source) {
-			var matchData = getMatchData(source);
-			if (matchData.length == 1 && matchData[0][2]) return matchesStrictComparable(matchData[0][0], matchData[0][1]);
-			return function(object) {
-				return object === source || baseIsMatch(object, source, matchData);
-			};
-		}
-		module.exports = baseMatches;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_isKey.js
-	var require__isKey = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isArray = require_isArray();
-		var isSymbol = require_isSymbol();
-		/** Used to match property names within property paths. */
-		var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/;
-		var reIsPlainProp = /^\w*$/;
-		/**
-		* Checks if `value` is a property name and not a property path.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @param {Object} [object] The object to query keys on.
-		* @returns {boolean} Returns `true` if `value` is a property name, else `false`.
-		*/
-		function isKey(value, object) {
-			if (isArray(value)) return false;
-			var type = typeof value;
-			if (type == "number" || type == "symbol" || type == "boolean" || value == null || isSymbol(value)) return true;
-			return reIsPlainProp.test(value) || !reIsDeepProp.test(value) || object != null && value in Object(object);
-		}
-		module.exports = isKey;
-	}));
-	//#endregion
-	//#region node_modules/lodash/memoize.js
-	var require_memoize = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var MapCache = require__MapCache();
-		/** Error message constants. */
-		var FUNC_ERROR_TEXT = "Expected a function";
-		/**
-		* Creates a function that memoizes the result of `func`. If `resolver` is
-		* provided, it determines the cache key for storing the result based on the
-		* arguments provided to the memoized function. By default, the first argument
-		* provided to the memoized function is used as the map cache key. The `func`
-		* is invoked with the `this` binding of the memoized function.
-		*
-		* **Note:** The cache is exposed as the `cache` property on the memoized
-		* function. Its creation may be customized by replacing the `_.memoize.Cache`
-		* constructor with one whose instances implement the
-		* [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
-		* method interface of `clear`, `delete`, `get`, `has`, and `set`.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Function
-		* @param {Function} func The function to have its output memoized.
-		* @param {Function} [resolver] The function to resolve the cache key.
-		* @returns {Function} Returns the new memoized function.
-		* @example
-		*
-		* var object = { 'a': 1, 'b': 2 };
-		* var other = { 'c': 3, 'd': 4 };
-		*
-		* var values = _.memoize(_.values);
-		* values(object);
-		* // => [1, 2]
-		*
-		* values(other);
-		* // => [3, 4]
-		*
-		* object.a = 2;
-		* values(object);
-		* // => [1, 2]
-		*
-		* // Modify the result cache.
-		* values.cache.set(object, ['a', 'b']);
-		* values(object);
-		* // => ['a', 'b']
-		*
-		* // Replace `_.memoize.Cache`.
-		* _.memoize.Cache = WeakMap;
-		*/
-		function memoize(func, resolver) {
-			if (typeof func != "function" || resolver != null && typeof resolver != "function") throw new TypeError(FUNC_ERROR_TEXT);
-			var memoized = function() {
-				var args = arguments, key = resolver ? resolver.apply(this, args) : args[0], cache = memoized.cache;
-				if (cache.has(key)) return cache.get(key);
-				var result = func.apply(this, args);
-				memoized.cache = cache.set(key, result) || cache;
-				return result;
-			};
-			memoized.cache = new (memoize.Cache || MapCache)();
-			return memoized;
-		}
-		memoize.Cache = MapCache;
-		module.exports = memoize;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_memoizeCapped.js
-	var require__memoizeCapped = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var memoize = require_memoize();
-		/** Used as the maximum memoize cache size. */
-		var MAX_MEMOIZE_SIZE = 500;
-		/**
-		* A specialized version of `_.memoize` which clears the memoized function's
-		* cache when it exceeds `MAX_MEMOIZE_SIZE`.
-		*
-		* @private
-		* @param {Function} func The function to have its output memoized.
-		* @returns {Function} Returns the new memoized function.
-		*/
-		function memoizeCapped(func) {
-			var result = memoize(func, function(key) {
-				if (cache.size === MAX_MEMOIZE_SIZE) cache.clear();
-				return key;
-			});
-			var cache = result.cache;
-			return result;
-		}
-		module.exports = memoizeCapped;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_stringToPath.js
-	var require__stringToPath = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var memoizeCapped = require__memoizeCapped();
-		/** Used to match property names within property paths. */
-		var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
-		/** Used to match backslashes in property paths. */
-		var reEscapeChar = /\\(\\)?/g;
-		module.exports = memoizeCapped(function(string) {
-			var result = [];
-			if (string.charCodeAt(0) === 46) result.push("");
-			string.replace(rePropName, function(match, number, quote, subString) {
-				result.push(quote ? subString.replace(reEscapeChar, "$1") : number || match);
-			});
-			return result;
-		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/_castPath.js
-	var require__castPath = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isArray = require_isArray();
-		var isKey = require__isKey();
-		var stringToPath = require__stringToPath();
-		var toString = require_toString();
-		/**
-		* Casts `value` to a path array if it's not one.
-		*
-		* @private
-		* @param {*} value The value to inspect.
-		* @param {Object} [object] The object to query keys on.
-		* @returns {Array} Returns the cast property path array.
-		*/
-		function castPath(value, object) {
-			if (isArray(value)) return value;
-			return isKey(value, object) ? [value] : stringToPath(toString(value));
-		}
-		module.exports = castPath;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_toKey.js
-	var require__toKey = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isSymbol = require_isSymbol();
-		/** Used as references for various `Number` constants. */
-		var INFINITY = Infinity;
-		/**
-		* Converts `value` to a string key if it's not a string or symbol.
-		*
-		* @private
-		* @param {*} value The value to inspect.
-		* @returns {string|symbol} Returns the key.
-		*/
-		function toKey(value) {
-			if (typeof value == "string" || isSymbol(value)) return value;
-			var result = value + "";
-			return result == "0" && 1 / value == -INFINITY ? "-0" : result;
-		}
-		module.exports = toKey;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseGet.js
-	var require__baseGet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var castPath = require__castPath();
-		var toKey = require__toKey();
-		/**
-		* The base implementation of `_.get` without support for default values.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @param {Array|string} path The path of the property to get.
-		* @returns {*} Returns the resolved value.
-		*/
-		function baseGet(object, path) {
-			path = castPath(path, object);
-			var index = 0, length = path.length;
-			while (object != null && index < length) object = object[toKey(path[index++])];
-			return index && index == length ? object : void 0;
-		}
-		module.exports = baseGet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/get.js
-	var require_get = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGet = require__baseGet();
-		/**
-		* Gets the value at `path` of `object`. If the resolved value is
-		* `undefined`, the `defaultValue` is returned in its place.
-		*
-		* @static
-		* @memberOf _
-		* @since 3.7.0
-		* @category Object
-		* @param {Object} object The object to query.
-		* @param {Array|string} path The path of the property to get.
-		* @param {*} [defaultValue] The value returned for `undefined` resolved values.
-		* @returns {*} Returns the resolved value.
-		* @example
-		*
-		* var object = { 'a': [{ 'b': { 'c': 3 } }] };
-		*
-		* _.get(object, 'a[0].b.c');
-		* // => 3
-		*
-		* _.get(object, ['a', '0', 'b', 'c']);
-		* // => 3
-		*
-		* _.get(object, 'a.b.c', 'default');
-		* // => 'default'
-		*/
-		function get(object, path, defaultValue) {
-			var result = object == null ? void 0 : baseGet(object, path);
-			return result === void 0 ? defaultValue : result;
-		}
-		module.exports = get;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseHasIn.js
-	var require__baseHasIn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.hasIn` without support for deep paths.
-		*
-		* @private
-		* @param {Object} [object] The object to query.
-		* @param {Array|string} key The key to check.
-		* @returns {boolean} Returns `true` if `key` exists, else `false`.
-		*/
-		function baseHasIn(object, key) {
-			return object != null && key in Object(object);
-		}
-		module.exports = baseHasIn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_hasPath.js
-	var require__hasPath = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var castPath = require__castPath();
-		var isArguments = require_isArguments();
-		var isArray = require_isArray();
-		var isIndex = require__isIndex();
-		var isLength = require_isLength();
-		var toKey = require__toKey();
-		/**
-		* Checks if `path` exists on `object`.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @param {Array|string} path The path to check.
-		* @param {Function} hasFunc The function to check properties.
-		* @returns {boolean} Returns `true` if `path` exists, else `false`.
-		*/
-		function hasPath(object, path, hasFunc) {
-			path = castPath(path, object);
-			var index = -1, length = path.length, result = false;
-			while (++index < length) {
-				var key = toKey(path[index]);
-				if (!(result = object != null && hasFunc(object, key))) break;
-				object = object[key];
-			}
-			if (result || ++index != length) return result;
-			length = object == null ? 0 : object.length;
-			return !!length && isLength(length) && isIndex(key, length) && (isArray(object) || isArguments(object));
-		}
-		module.exports = hasPath;
-	}));
-	//#endregion
-	//#region node_modules/lodash/hasIn.js
-	var require_hasIn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseHasIn = require__baseHasIn();
-		var hasPath = require__hasPath();
-		/**
-		* Checks if `path` is a direct or inherited property of `object`.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Object
-		* @param {Object} object The object to query.
-		* @param {Array|string} path The path to check.
-		* @returns {boolean} Returns `true` if `path` exists, else `false`.
-		* @example
-		*
-		* var object = _.create({ 'a': _.create({ 'b': 2 }) });
-		*
-		* _.hasIn(object, 'a');
-		* // => true
-		*
-		* _.hasIn(object, 'a.b');
-		* // => true
-		*
-		* _.hasIn(object, ['a', 'b']);
-		* // => true
-		*
-		* _.hasIn(object, 'b');
-		* // => false
-		*/
-		function hasIn(object, path) {
-			return object != null && hasPath(object, path, baseHasIn);
-		}
-		module.exports = hasIn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseMatchesProperty.js
-	var require__baseMatchesProperty = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsEqual = require__baseIsEqual();
-		var get = require_get();
-		var hasIn = require_hasIn();
-		var isKey = require__isKey();
-		var isStrictComparable = require__isStrictComparable();
-		var matchesStrictComparable = require__matchesStrictComparable();
-		var toKey = require__toKey();
-		/** Used to compose bitmasks for value comparisons. */
-		var COMPARE_PARTIAL_FLAG = 1;
-		var COMPARE_UNORDERED_FLAG = 2;
-		/**
-		* The base implementation of `_.matchesProperty` which doesn't clone `srcValue`.
-		*
-		* @private
-		* @param {string} path The path of the property to get.
-		* @param {*} srcValue The value to match.
-		* @returns {Function} Returns the new spec function.
-		*/
-		function baseMatchesProperty(path, srcValue) {
-			if (isKey(path) && isStrictComparable(srcValue)) return matchesStrictComparable(toKey(path), srcValue);
-			return function(object) {
-				var objValue = get(object, path);
-				return objValue === void 0 && objValue === srcValue ? hasIn(object, path) : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
-			};
-		}
-		module.exports = baseMatchesProperty;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseProperty.js
-	var require__baseProperty = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.property` without support for deep paths.
-		*
-		* @private
-		* @param {string} key The key of the property to get.
-		* @returns {Function} Returns the new accessor function.
-		*/
-		function baseProperty(key) {
-			return function(object) {
-				return object == null ? void 0 : object[key];
-			};
-		}
-		module.exports = baseProperty;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_basePropertyDeep.js
-	var require__basePropertyDeep = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGet = require__baseGet();
-		/**
-		* A specialized version of `baseProperty` which supports deep paths.
-		*
-		* @private
-		* @param {Array|string} path The path of the property to get.
-		* @returns {Function} Returns the new accessor function.
-		*/
-		function basePropertyDeep(path) {
-			return function(object) {
-				return baseGet(object, path);
-			};
-		}
-		module.exports = basePropertyDeep;
-	}));
-	//#endregion
-	//#region node_modules/lodash/property.js
-	var require_property = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseProperty = require__baseProperty();
-		var basePropertyDeep = require__basePropertyDeep();
-		var isKey = require__isKey();
-		var toKey = require__toKey();
-		/**
-		* Creates a function that returns the value at `path` of a given object.
-		*
-		* @static
-		* @memberOf _
-		* @since 2.4.0
-		* @category Util
-		* @param {Array|string} path The path of the property to get.
-		* @returns {Function} Returns the new accessor function.
-		* @example
-		*
-		* var objects = [
-		*   { 'a': { 'b': 2 } },
-		*   { 'a': { 'b': 1 } }
-		* ];
-		*
-		* _.map(objects, _.property('a.b'));
-		* // => [2, 1]
-		*
-		* _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
-		* // => [1, 2]
-		*/
-		function property(path) {
-			return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
-		}
-		module.exports = property;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIteratee.js
-	var require__baseIteratee = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseMatches = require__baseMatches();
-		var baseMatchesProperty = require__baseMatchesProperty();
-		var identity = require_identity();
-		var isArray = require_isArray();
-		var property = require_property();
-		/**
-		* The base implementation of `_.iteratee`.
-		*
-		* @private
-		* @param {*} [value=_.identity] The value to convert to an iteratee.
-		* @returns {Function} Returns the iteratee.
-		*/
-		function baseIteratee(value) {
-			if (typeof value == "function") return value;
-			if (value == null) return identity;
-			if (typeof value == "object") return isArray(value) ? baseMatchesProperty(value[0], value[1]) : baseMatches(value);
-			return property(value);
-		}
-		module.exports = baseIteratee;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createAggregator.js
-	var require__createAggregator = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayAggregator = require__arrayAggregator();
-		var baseAggregator = require__baseAggregator();
-		var baseIteratee = require__baseIteratee();
-		var isArray = require_isArray();
-		/**
-		* Creates a function like `_.groupBy`.
-		*
-		* @private
-		* @param {Function} setter The function to set accumulator values.
-		* @param {Function} [initializer] The accumulator object initializer.
-		* @returns {Function} Returns the new aggregator function.
-		*/
-		function createAggregator(setter, initializer) {
-			return function(collection, iteratee) {
-				var func = isArray(collection) ? arrayAggregator : baseAggregator, accumulator = initializer ? initializer() : {};
-				return func(collection, setter, baseIteratee(iteratee, 2), accumulator);
-			};
-		}
-		module.exports = createAggregator;
-	}));
-	//#endregion
-	//#region node_modules/lodash/countBy.js
-	var require_countBy = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseAssignValue = require__baseAssignValue();
-		var createAggregator = require__createAggregator();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		module.exports = createAggregator(function(result, value, key) {
-			if (hasOwnProperty.call(result, key)) ++result[key];
-			else baseAssignValue(result, key, 1);
-		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayIncludesWith.js
-	var require__arrayIncludesWith = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* This function is like `arrayIncludes` except that it accepts a comparator.
-		*
-		* @private
-		* @param {Array} [array] The array to inspect.
-		* @param {*} target The value to search for.
-		* @param {Function} comparator The comparator invoked per element.
-		* @returns {boolean} Returns `true` if `target` is found, else `false`.
-		*/
-		function arrayIncludesWith(array, value, comparator) {
-			var index = -1, length = array == null ? 0 : array.length;
-			while (++index < length) if (comparator(value, array[index])) return true;
-			return false;
-		}
-		module.exports = arrayIncludesWith;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseDifference.js
-	var require__baseDifference = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var SetCache = require__SetCache();
-		var arrayIncludes = require__arrayIncludes();
-		var arrayIncludesWith = require__arrayIncludesWith();
-		var arrayMap = require__arrayMap();
-		var baseUnary = require__baseUnary();
-		var cacheHas = require__cacheHas();
-		/** Used as the size to enable large array optimizations. */
-		var LARGE_ARRAY_SIZE = 200;
-		/**
-		* The base implementation of methods like `_.difference` without support
-		* for excluding multiple arrays or iteratee shorthands.
-		*
-		* @private
-		* @param {Array} array The array to inspect.
-		* @param {Array} values The values to exclude.
-		* @param {Function} [iteratee] The iteratee invoked per element.
-		* @param {Function} [comparator] The comparator invoked per element.
-		* @returns {Array} Returns the new array of filtered values.
-		*/
-		function baseDifference(array, values, iteratee, comparator) {
-			var index = -1, includes = arrayIncludes, isCommon = true, length = array.length, result = [], valuesLength = values.length;
-			if (!length) return result;
-			if (iteratee) values = arrayMap(values, baseUnary(iteratee));
-			if (comparator) {
-				includes = arrayIncludesWith;
-				isCommon = false;
-			} else if (values.length >= LARGE_ARRAY_SIZE) {
-				includes = cacheHas;
-				isCommon = false;
-				values = new SetCache(values);
-			}
-			outer: while (++index < length) {
-				var value = array[index], computed = iteratee == null ? value : iteratee(value);
-				value = comparator || value !== 0 ? value : 0;
-				if (isCommon && computed === computed) {
-					var valuesIndex = valuesLength;
-					while (valuesIndex--) if (values[valuesIndex] === computed) continue outer;
-					result.push(value);
-				} else if (!includes(values, computed, comparator)) result.push(value);
-			}
-			return result;
-		}
-		module.exports = baseDifference;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_isFlattenable.js
-	var require__isFlattenable = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Symbol = require__Symbol();
-		var isArguments = require_isArguments();
-		var isArray = require_isArray();
-		/** Built-in value references. */
-		var spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : void 0;
-		/**
-		* Checks if `value` is a flattenable `arguments` object or array.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is flattenable, else `false`.
-		*/
-		function isFlattenable(value) {
-			return isArray(value) || isArguments(value) || !!(spreadableSymbol && value && value[spreadableSymbol]);
-		}
-		module.exports = isFlattenable;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseFlatten.js
-	var require__baseFlatten = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayPush = require__arrayPush();
-		var isFlattenable = require__isFlattenable();
-		/**
-		* The base implementation of `_.flatten` with support for restricting flattening.
-		*
-		* @private
-		* @param {Array} array The array to flatten.
-		* @param {number} depth The maximum recursion depth.
-		* @param {boolean} [predicate=isFlattenable] The function invoked per iteration.
-		* @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.
-		* @param {Array} [result=[]] The initial result value.
-		* @returns {Array} Returns the new flattened array.
-		*/
-		function baseFlatten(array, depth, predicate, isStrict, result) {
-			var index = -1, length = array.length;
-			predicate || (predicate = isFlattenable);
-			result || (result = []);
-			while (++index < length) {
-				var value = array[index];
-				if (depth > 0 && predicate(value)) if (depth > 1) baseFlatten(value, depth - 1, predicate, isStrict, result);
-				else arrayPush(result, value);
-				else if (!isStrict) result[result.length] = value;
-			}
-			return result;
-		}
-		module.exports = baseFlatten;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isArrayLikeObject.js
-	var require_isArrayLikeObject = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isArrayLike = require_isArrayLike();
-		var isObjectLike = require_isObjectLike();
-		/**
-		* This method is like `_.isArrayLike` except that it also checks if `value`
-		* is an object.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is an array-like object,
-		*  else `false`.
-		* @example
-		*
-		* _.isArrayLikeObject([1, 2, 3]);
-		* // => true
-		*
-		* _.isArrayLikeObject(document.body.children);
-		* // => true
-		*
-		* _.isArrayLikeObject('abc');
-		* // => false
-		*
-		* _.isArrayLikeObject(_.noop);
-		* // => false
-		*/
-		function isArrayLikeObject(value) {
-			return isObjectLike(value) && isArrayLike(value);
-		}
-		module.exports = isArrayLikeObject;
-	}));
-	//#endregion
-	//#region node_modules/lodash/difference.js
-	var require_difference = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseDifference = require__baseDifference();
-		var baseFlatten = require__baseFlatten();
-		var baseRest = require__baseRest();
-		var isArrayLikeObject = require_isArrayLikeObject();
-		module.exports = baseRest(function(array, values) {
-			return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values, 1, isArrayLikeObject, true)) : [];
-		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseSlice.js
-	var require__baseSlice = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.slice` without an iteratee call guard.
-		*
-		* @private
-		* @param {Array} array The array to slice.
-		* @param {number} [start=0] The start position.
-		* @param {number} [end=array.length] The end position.
-		* @returns {Array} Returns the slice of `array`.
-		*/
-		function baseSlice(array, start, end) {
-			var index = -1, length = array.length;
-			if (start < 0) start = -start > length ? 0 : length + start;
-			end = end > length ? length : end;
-			if (end < 0) end += length;
-			length = start > end ? 0 : end - start >>> 0;
-			start >>>= 0;
-			var result = Array(length);
-			while (++index < length) result[index] = array[index + start];
-			return result;
-		}
-		module.exports = baseSlice;
-	}));
-	//#endregion
-	//#region node_modules/lodash/drop.js
-	var require_drop = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseSlice = require__baseSlice();
-		var toInteger = require_toInteger();
-		/**
-		* Creates a slice of `array` with `n` elements dropped from the beginning.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.5.0
-		* @category Array
-		* @param {Array} array The array to query.
-		* @param {number} [n=1] The number of elements to drop.
-		* @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-		* @returns {Array} Returns the slice of `array`.
-		* @example
-		*
-		* _.drop([1, 2, 3]);
-		* // => [2, 3]
-		*
-		* _.drop([1, 2, 3], 2);
-		* // => [3]
-		*
-		* _.drop([1, 2, 3], 5);
-		* // => []
-		*
-		* _.drop([1, 2, 3], 0);
-		* // => [1, 2, 3]
-		*/
-		function drop(array, n, guard) {
-			var length = array == null ? 0 : array.length;
-			if (!length) return [];
-			n = guard || n === void 0 ? 1 : toInteger(n);
-			return baseSlice(array, n < 0 ? 0 : n, length);
-		}
-		module.exports = drop;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayEvery.js
-	var require__arrayEvery = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `_.every` for arrays without support for
-		* iteratee shorthands.
-		*
-		* @private
-		* @param {Array} [array] The array to iterate over.
-		* @param {Function} predicate The function invoked per iteration.
-		* @returns {boolean} Returns `true` if all elements pass the predicate check,
-		*  else `false`.
-		*/
-		function arrayEvery(array, predicate) {
-			var index = -1, length = array == null ? 0 : array.length;
-			while (++index < length) if (!predicate(array[index], index, array)) return false;
-			return true;
-		}
-		module.exports = arrayEvery;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseEvery.js
-	var require__baseEvery = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseEach = require__baseEach();
-		/**
-		* The base implementation of `_.every` without support for iteratee shorthands.
-		*
-		* @private
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} predicate The function invoked per iteration.
-		* @returns {boolean} Returns `true` if all elements pass the predicate check,
-		*  else `false`
-		*/
-		function baseEvery(collection, predicate) {
-			var result = true;
-			baseEach(collection, function(value, index, collection) {
-				result = !!predicate(value, index, collection);
-				return result;
-			});
-			return result;
-		}
-		module.exports = baseEvery;
-	}));
-	//#endregion
-	//#region node_modules/lodash/every.js
-	var require_every = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayEvery = require__arrayEvery();
-		var baseEvery = require__baseEvery();
-		var baseIteratee = require__baseIteratee();
-		var isArray = require_isArray();
-		var isIterateeCall = require__isIterateeCall();
-		/**
-		* Checks if `predicate` returns truthy for **all** elements of `collection`.
-		* Iteration is stopped once `predicate` returns falsey. The predicate is
-		* invoked with three arguments: (value, index|key, collection).
-		*
-		* **Note:** This method returns `true` for
-		* [empty collections](https://en.wikipedia.org/wiki/Empty_set) because
-		* [everything is true](https://en.wikipedia.org/wiki/Vacuous_truth) of
-		* elements of empty collections.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Collection
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} [predicate=_.identity] The function invoked per iteration.
-		* @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-		* @returns {boolean} Returns `true` if all elements pass the predicate check,
-		*  else `false`.
-		* @example
-		*
-		* _.every([true, 1, null, 'yes'], Boolean);
-		* // => false
-		*
-		* var users = [
-		*   { 'user': 'barney', 'age': 36, 'active': false },
-		*   { 'user': 'fred',   'age': 40, 'active': false }
-		* ];
-		*
-		* // The `_.matches` iteratee shorthand.
-		* _.every(users, { 'user': 'barney', 'active': false });
-		* // => false
-		*
-		* // The `_.matchesProperty` iteratee shorthand.
-		* _.every(users, ['active', false]);
-		* // => true
-		*
-		* // The `_.property` iteratee shorthand.
-		* _.every(users, 'active');
-		* // => false
-		*/
-		function every(collection, predicate, guard) {
-			var func = isArray(collection) ? arrayEvery : baseEvery;
-			if (guard && isIterateeCall(collection, predicate, guard)) predicate = void 0;
-			return func(collection, baseIteratee(predicate, 3));
-		}
-		module.exports = every;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseFilter.js
-	var require__baseFilter = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseEach = require__baseEach();
-		/**
-		* The base implementation of `_.filter` without support for iteratee shorthands.
-		*
-		* @private
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} predicate The function invoked per iteration.
-		* @returns {Array} Returns the new filtered array.
-		*/
-		function baseFilter(collection, predicate) {
-			var result = [];
-			baseEach(collection, function(value, index, collection) {
-				if (predicate(value, index, collection)) result.push(value);
-			});
-			return result;
-		}
-		module.exports = baseFilter;
-	}));
-	//#endregion
-	//#region node_modules/lodash/filter.js
-	var require_filter = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayFilter = require__arrayFilter();
-		var baseFilter = require__baseFilter();
-		var baseIteratee = require__baseIteratee();
-		var isArray = require_isArray();
-		/**
-		* Iterates over elements of `collection`, returning an array of all elements
-		* `predicate` returns truthy for. The predicate is invoked with three
-		* arguments: (value, index|key, collection).
-		*
-		* **Note:** Unlike `_.remove`, this method returns a new array.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Collection
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} [predicate=_.identity] The function invoked per iteration.
-		* @returns {Array} Returns the new filtered array.
-		* @see _.reject
-		* @example
-		*
-		* var users = [
-		*   { 'user': 'barney', 'age': 36, 'active': true },
-		*   { 'user': 'fred',   'age': 40, 'active': false }
-		* ];
-		*
-		* _.filter(users, function(o) { return !o.active; });
-		* // => objects for ['fred']
-		*
-		* // The `_.matches` iteratee shorthand.
-		* _.filter(users, { 'age': 36, 'active': true });
-		* // => objects for ['barney']
-		*
-		* // The `_.matchesProperty` iteratee shorthand.
-		* _.filter(users, ['active', false]);
-		* // => objects for ['fred']
-		*
-		* // The `_.property` iteratee shorthand.
-		* _.filter(users, 'active');
-		* // => objects for ['barney']
-		*
-		* // Combining several predicates using `_.overEvery` or `_.overSome`.
-		* _.filter(users, _.overSome([{ 'age': 36 }, ['age', 40]]));
-		* // => objects for ['fred', 'barney']
-		*/
-		function filter(collection, predicate) {
-			return (isArray(collection) ? arrayFilter : baseFilter)(collection, baseIteratee(predicate, 3));
-		}
-		module.exports = filter;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createFind.js
-	var require__createFind = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIteratee = require__baseIteratee();
-		var isArrayLike = require_isArrayLike();
-		var keys = require_keys$2();
-		/**
-		* Creates a `_.find` or `_.findLast` function.
-		*
-		* @private
-		* @param {Function} findIndexFunc The function to find the collection index.
-		* @returns {Function} Returns the new find function.
-		*/
-		function createFind(findIndexFunc) {
-			return function(collection, predicate, fromIndex) {
-				var iterable = Object(collection);
-				if (!isArrayLike(collection)) {
-					var iteratee = baseIteratee(predicate, 3);
-					collection = keys(collection);
-					predicate = function(key) {
-						return iteratee(iterable[key], key, iterable);
-					};
-				}
-				var index = findIndexFunc(collection, predicate, fromIndex);
-				return index > -1 ? iterable[iteratee ? collection[index] : index] : void 0;
-			};
-		}
-		module.exports = createFind;
-	}));
-	//#endregion
-	//#region node_modules/lodash/findIndex.js
-	var require_findIndex = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseFindIndex = require__baseFindIndex();
-		var baseIteratee = require__baseIteratee();
-		var toInteger = require_toInteger();
-		var nativeMax = Math.max;
-		/**
-		* This method is like `_.find` except that it returns the index of the first
-		* element `predicate` returns truthy for instead of the element itself.
-		*
-		* @static
-		* @memberOf _
-		* @since 1.1.0
-		* @category Array
-		* @param {Array} array The array to inspect.
-		* @param {Function} [predicate=_.identity] The function invoked per iteration.
-		* @param {number} [fromIndex=0] The index to search from.
-		* @returns {number} Returns the index of the found element, else `-1`.
-		* @example
-		*
-		* var users = [
-		*   { 'user': 'barney',  'active': false },
-		*   { 'user': 'fred',    'active': false },
-		*   { 'user': 'pebbles', 'active': true }
-		* ];
-		*
-		* _.findIndex(users, function(o) { return o.user == 'barney'; });
-		* // => 0
-		*
-		* // The `_.matches` iteratee shorthand.
-		* _.findIndex(users, { 'user': 'fred', 'active': false });
-		* // => 1
-		*
-		* // The `_.matchesProperty` iteratee shorthand.
-		* _.findIndex(users, ['active', false]);
-		* // => 0
-		*
-		* // The `_.property` iteratee shorthand.
-		* _.findIndex(users, 'active');
-		* // => 2
-		*/
-		function findIndex(array, predicate, fromIndex) {
-			var length = array == null ? 0 : array.length;
-			if (!length) return -1;
-			var index = fromIndex == null ? 0 : toInteger(fromIndex);
-			if (index < 0) index = nativeMax(length + index, 0);
-			return baseFindIndex(array, baseIteratee(predicate, 3), index);
-		}
-		module.exports = findIndex;
-	}));
-	//#endregion
-	//#region node_modules/lodash/find.js
-	var require_find = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__createFind()(require_findIndex());
-	}));
-	//#endregion
-	//#region node_modules/lodash/groupBy.js
-	var require_groupBy = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseAssignValue = require__baseAssignValue();
-		var createAggregator = require__createAggregator();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		module.exports = createAggregator(function(result, value, key) {
-			if (hasOwnProperty.call(result, key)) result[key].push(value);
-			else baseAssignValue(result, key, [value]);
-		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/includes.js
-	var require_includes = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIndexOf = require__baseIndexOf();
-		var isArrayLike = require_isArrayLike();
-		var isString = require_isString();
-		var toInteger = require_toInteger();
-		var values = require_values$2();
-		var nativeMax = Math.max;
-		/**
-		* Checks if `value` is in `collection`. If `collection` is a string, it's
-		* checked for a substring of `value`, otherwise
-		* [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
-		* is used for equality comparisons. If `fromIndex` is negative, it's used as
-		* the offset from the end of `collection`.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Collection
-		* @param {Array|Object|string} collection The collection to inspect.
-		* @param {*} value The value to search for.
-		* @param {number} [fromIndex=0] The index to search from.
-		* @param- {Object} [guard] Enables use as an iteratee for methods like `_.reduce`.
-		* @returns {boolean} Returns `true` if `value` is found, else `false`.
-		* @example
-		*
-		* _.includes([1, 2, 3], 1);
-		* // => true
-		*
-		* _.includes([1, 2, 3], 1, 2);
-		* // => false
-		*
-		* _.includes({ 'a': 1, 'b': 2 }, 1);
-		* // => true
-		*
-		* _.includes('abcd', 'bc');
-		* // => true
-		*/
-		function includes(collection, value, fromIndex, guard) {
-			collection = isArrayLike(collection) ? collection : values(collection);
-			fromIndex = fromIndex && !guard ? toInteger(fromIndex) : 0;
-			var length = collection.length;
-			if (fromIndex < 0) fromIndex = nativeMax(length + fromIndex, 0);
-			return isString(collection) ? fromIndex <= length && collection.indexOf(value, fromIndex) > -1 : !!length && baseIndexOf(collection, value, fromIndex) > -1;
-		}
-		module.exports = includes;
-	}));
-	//#endregion
-	//#region node_modules/lodash/keyBy.js
-	var require_keyBy = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseAssignValue = require__baseAssignValue();
-		module.exports = require__createAggregator()(function(result, value, key) {
-			baseAssignValue(result, key, value);
-		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/indexOf.js
-	var require_indexOf = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIndexOf = require__baseIndexOf();
-		var toInteger = require_toInteger();
-		var nativeMax = Math.max;
-		/**
-		* Gets the index at which the first occurrence of `value` is found in `array`
-		* using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
-		* for equality comparisons. If `fromIndex` is negative, it's used as the
-		* offset from the end of `array`.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Array
-		* @param {Array} array The array to inspect.
-		* @param {*} value The value to search for.
-		* @param {number} [fromIndex=0] The index to search from.
-		* @returns {number} Returns the index of the matched value, else `-1`.
-		* @example
-		*
-		* _.indexOf([1, 2, 1, 2], 2);
-		* // => 1
-		*
-		* // Search from the `fromIndex`.
-		* _.indexOf([1, 2, 1, 2], 2, 2);
-		* // => 3
-		*/
-		function indexOf(array, value, fromIndex) {
-			var length = array == null ? 0 : array.length;
-			if (!length) return -1;
-			var index = fromIndex == null ? 0 : toInteger(fromIndex);
-			if (index < 0) index = nativeMax(length + index, 0);
-			return baseIndexOf(array, value, index);
-		}
-		module.exports = indexOf;
-	}));
-	//#endregion
-	//#region node_modules/lodash/initial.js
-	var require_initial = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseSlice = require__baseSlice();
-		/**
-		* Gets all but the last element of `array`.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Array
-		* @param {Array} array The array to query.
-		* @returns {Array} Returns the slice of `array`.
-		* @example
-		*
-		* _.initial([1, 2, 3]);
-		* // => [1, 2]
-		*/
-		function initial(array) {
-			return (array == null ? 0 : array.length) ? baseSlice(array, 0, -1) : [];
-		}
-		module.exports = initial;
-	}));
-	//#endregion
-	//#region node_modules/lodash/last.js
-	var require_last = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* Gets the last element of `array`.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Array
-		* @param {Array} array The array to query.
-		* @returns {*} Returns the last element of `array`.
-		* @example
-		*
-		* _.last([1, 2, 3]);
-		* // => 3
-		*/
-		function last(array) {
-			var length = array == null ? 0 : array.length;
-			return length ? array[length - 1] : void 0;
-		}
-		module.exports = last;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_parent.js
-	var require__parent = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGet = require__baseGet();
-		var baseSlice = require__baseSlice();
-		/**
-		* Gets the parent value at `path` of `object`.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @param {Array} path The path to get the parent value of.
-		* @returns {*} Returns the parent value.
-		*/
-		function parent(object, path) {
-			return path.length < 2 ? object : baseGet(object, baseSlice(path, 0, -1));
-		}
-		module.exports = parent;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseInvoke.js
-	var require__baseInvoke = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var apply = require__apply();
-		var castPath = require__castPath();
-		var last = require_last();
-		var parent = require__parent();
-		var toKey = require__toKey();
-		/**
-		* The base implementation of `_.invoke` without support for individual
-		* method arguments.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @param {Array|string} path The path of the method to invoke.
-		* @param {Array} args The arguments to invoke the method with.
-		* @returns {*} Returns the result of the invoked method.
-		*/
-		function baseInvoke(object, path, args) {
-			path = castPath(path, object);
-			object = parent(object, path);
-			var func = object == null ? object : object[toKey(last(path))];
-			return func == null ? void 0 : apply(func, object, args);
-		}
-		module.exports = baseInvoke;
-	}));
-	//#endregion
-	//#region node_modules/lodash/invoke.js
-	var require_invoke = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseInvoke = require__baseInvoke();
-		module.exports = require__baseRest()(baseInvoke);
-	}));
-	//#endregion
-	//#region node_modules/lodash/invokeMap.js
-	var require_invokeMap = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var apply = require__apply();
-		var baseEach = require__baseEach();
-		var baseInvoke = require__baseInvoke();
-		var baseRest = require__baseRest();
-		var isArrayLike = require_isArrayLike();
-		module.exports = baseRest(function(collection, path, args) {
-			var index = -1, isFunc = typeof path == "function", result = isArrayLike(collection) ? Array(collection.length) : [];
-			baseEach(collection, function(value) {
-				result[++index] = isFunc ? apply(path, value, args) : baseInvoke(value, path, args);
-			});
-			return result;
-		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/_strictLastIndexOf.js
-	var require__strictLastIndexOf = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `_.lastIndexOf` which performs strict equality
-		* comparisons of values, i.e. `===`.
-		*
-		* @private
-		* @param {Array} array The array to inspect.
-		* @param {*} value The value to search for.
-		* @param {number} fromIndex The index to search from.
-		* @returns {number} Returns the index of the matched value, else `-1`.
-		*/
-		function strictLastIndexOf(array, value, fromIndex) {
-			var index = fromIndex + 1;
-			while (index--) if (array[index] === value) return index;
-			return index;
-		}
-		module.exports = strictLastIndexOf;
-	}));
-	//#endregion
-	//#region node_modules/lodash/lastIndexOf.js
-	var require_lastIndexOf = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseFindIndex = require__baseFindIndex();
-		var baseIsNaN = require__baseIsNaN();
-		var strictLastIndexOf = require__strictLastIndexOf();
-		var toInteger = require_toInteger();
-		var nativeMax = Math.max;
-		var nativeMin = Math.min;
-		/**
-		* This method is like `_.indexOf` except that it iterates over elements of
-		* `array` from right to left.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Array
-		* @param {Array} array The array to inspect.
-		* @param {*} value The value to search for.
-		* @param {number} [fromIndex=array.length-1] The index to search from.
-		* @returns {number} Returns the index of the matched value, else `-1`.
-		* @example
-		*
-		* _.lastIndexOf([1, 2, 1, 2], 2);
-		* // => 3
-		*
-		* // Search from the `fromIndex`.
-		* _.lastIndexOf([1, 2, 1, 2], 2, 2);
-		* // => 1
-		*/
-		function lastIndexOf(array, value, fromIndex) {
-			var length = array == null ? 0 : array.length;
-			if (!length) return -1;
-			var index = length;
-			if (fromIndex !== void 0) {
-				index = toInteger(fromIndex);
-				index = index < 0 ? nativeMax(length + index, 0) : nativeMin(index, length - 1);
-			}
-			return value === value ? strictLastIndexOf(array, value, index) : baseFindIndex(array, baseIsNaN, index, true);
-		}
-		module.exports = lastIndexOf;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseMap.js
-	var require__baseMap = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseEach = require__baseEach();
-		var isArrayLike = require_isArrayLike();
-		/**
-		* The base implementation of `_.map` without support for iteratee shorthands.
-		*
-		* @private
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} iteratee The function invoked per iteration.
-		* @returns {Array} Returns the new mapped array.
-		*/
-		function baseMap(collection, iteratee) {
-			var index = -1, result = isArrayLike(collection) ? Array(collection.length) : [];
-			baseEach(collection, function(value, key, collection) {
-				result[++index] = iteratee(value, key, collection);
-			});
-			return result;
-		}
-		module.exports = baseMap;
-	}));
-	//#endregion
-	//#region node_modules/lodash/map.js
-	var require_map = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayMap = require__arrayMap();
-		var baseIteratee = require__baseIteratee();
-		var baseMap = require__baseMap();
-		var isArray = require_isArray();
-		/**
-		* Creates an array of values by running each element in `collection` thru
-		* `iteratee`. The iteratee is invoked with three arguments:
-		* (value, index|key, collection).
-		*
-		* Many lodash methods are guarded to work as iteratees for methods like
-		* `_.every`, `_.filter`, `_.map`, `_.mapValues`, `_.reject`, and `_.some`.
-		*
-		* The guarded methods are:
-		* `ary`, `chunk`, `curry`, `curryRight`, `drop`, `dropRight`, `every`,
-		* `fill`, `invert`, `parseInt`, `random`, `range`, `rangeRight`, `repeat`,
-		* `sampleSize`, `slice`, `some`, `sortBy`, `split`, `take`, `takeRight`,
-		* `template`, `trim`, `trimEnd`, `trimStart`, and `words`
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Collection
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} [iteratee=_.identity] The function invoked per iteration.
-		* @returns {Array} Returns the new mapped array.
-		* @example
-		*
-		* function square(n) {
-		*   return n * n;
-		* }
-		*
-		* _.map([4, 8], square);
-		* // => [16, 64]
-		*
-		* _.map({ 'a': 4, 'b': 8 }, square);
-		* // => [16, 64] (iteration order is not guaranteed)
-		*
-		* var users = [
-		*   { 'user': 'barney' },
-		*   { 'user': 'fred' }
-		* ];
-		*
-		* // The `_.property` iteratee shorthand.
-		* _.map(users, 'user');
-		* // => ['barney', 'fred']
-		*/
-		function map(collection, iteratee) {
-			return (isArray(collection) ? arrayMap : baseMap)(collection, baseIteratee(iteratee, 3));
-		}
-		module.exports = map;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseExtremum.js
-	var require__baseExtremum = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isSymbol = require_isSymbol();
-		/**
-		* The base implementation of methods like `_.max` and `_.min` which accepts a
-		* `comparator` to determine the extremum value.
-		*
-		* @private
-		* @param {Array} array The array to iterate over.
-		* @param {Function} iteratee The iteratee invoked per iteration.
-		* @param {Function} comparator The comparator used to compare values.
-		* @returns {*} Returns the extremum value.
-		*/
-		function baseExtremum(array, iteratee, comparator) {
-			var index = -1, length = array.length;
-			while (++index < length) {
-				var value = array[index], current = iteratee(value);
-				if (current != null && (computed === void 0 ? current === current && !isSymbol(current) : comparator(current, computed))) var computed = current, result = value;
-			}
-			return result;
-		}
-		module.exports = baseExtremum;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseGt.js
-	var require__baseGt = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.gt` which doesn't coerce arguments.
-		*
-		* @private
-		* @param {*} value The value to compare.
-		* @param {*} other The other value to compare.
-		* @returns {boolean} Returns `true` if `value` is greater than `other`,
-		*  else `false`.
-		*/
-		function baseGt(value, other) {
-			return value > other;
-		}
-		module.exports = baseGt;
-	}));
-	//#endregion
-	//#region node_modules/lodash/max.js
-	var require_max = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseExtremum = require__baseExtremum();
-		var baseGt = require__baseGt();
-		var identity = require_identity();
-		/**
-		* Computes the maximum value of `array`. If `array` is empty or falsey,
-		* `undefined` is returned.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Math
-		* @param {Array} array The array to iterate over.
-		* @returns {*} Returns the maximum value.
-		* @example
-		*
-		* _.max([4, 2, 8, 6]);
-		* // => 8
-		*
-		* _.max([]);
-		* // => undefined
-		*/
-		function max(array) {
-			return array && array.length ? baseExtremum(array, identity, baseGt) : void 0;
-		}
-		module.exports = max;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseLt.js
-	var require__baseLt = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.lt` which doesn't coerce arguments.
-		*
-		* @private
-		* @param {*} value The value to compare.
-		* @param {*} other The other value to compare.
-		* @returns {boolean} Returns `true` if `value` is less than `other`,
-		*  else `false`.
-		*/
-		function baseLt(value, other) {
-			return value < other;
-		}
-		module.exports = baseLt;
-	}));
-	//#endregion
-	//#region node_modules/lodash/min.js
-	var require_min = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseExtremum = require__baseExtremum();
-		var baseLt = require__baseLt();
-		var identity = require_identity();
-		/**
-		* Computes the minimum value of `array`. If `array` is empty or falsey,
-		* `undefined` is returned.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Math
-		* @param {Array} array The array to iterate over.
-		* @returns {*} Returns the minimum value.
-		* @example
-		*
-		* _.min([4, 2, 8, 6]);
-		* // => 2
-		*
-		* _.min([]);
-		* // => undefined
-		*/
-		function min(array) {
-			return array && array.length ? baseExtremum(array, identity, baseLt) : void 0;
-		}
-		module.exports = min;
-	}));
-	//#endregion
-	//#region node_modules/lodash/partition.js
-	var require_partition = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__createAggregator()(function(result, value, key) {
-			result[key ? 0 : 1].push(value);
-		}, function() {
-			return [[], []];
-		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayReduce.js
-	var require__arrayReduce = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `_.reduce` for arrays without support for
-		* iteratee shorthands.
-		*
-		* @private
-		* @param {Array} [array] The array to iterate over.
-		* @param {Function} iteratee The function invoked per iteration.
-		* @param {*} [accumulator] The initial value.
-		* @param {boolean} [initAccum] Specify using the first element of `array` as
-		*  the initial value.
-		* @returns {*} Returns the accumulated value.
-		*/
-		function arrayReduce(array, iteratee, accumulator, initAccum) {
-			var index = -1, length = array == null ? 0 : array.length;
-			if (initAccum && length) accumulator = array[++index];
-			while (++index < length) accumulator = iteratee(accumulator, array[index], index, array);
-			return accumulator;
-		}
-		module.exports = arrayReduce;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseReduce.js
-	var require__baseReduce = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.reduce` and `_.reduceRight`, without support
-		* for iteratee shorthands, which iterates over `collection` using `eachFunc`.
-		*
-		* @private
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} iteratee The function invoked per iteration.
-		* @param {*} accumulator The initial value.
-		* @param {boolean} initAccum Specify using the first or last element of
-		*  `collection` as the initial value.
-		* @param {Function} eachFunc The function to iterate over `collection`.
-		* @returns {*} Returns the accumulated value.
-		*/
-		function baseReduce(collection, iteratee, accumulator, initAccum, eachFunc) {
-			eachFunc(collection, function(value, index, collection) {
-				accumulator = initAccum ? (initAccum = false, value) : iteratee(accumulator, value, index, collection);
-			});
-			return accumulator;
-		}
-		module.exports = baseReduce;
-	}));
-	//#endregion
-	//#region node_modules/lodash/reduce.js
-	var require_reduce = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayReduce = require__arrayReduce();
-		var baseEach = require__baseEach();
-		var baseIteratee = require__baseIteratee();
-		var baseReduce = require__baseReduce();
-		var isArray = require_isArray();
-		/**
-		* Reduces `collection` to a value which is the accumulated result of running
-		* each element in `collection` thru `iteratee`, where each successive
-		* invocation is supplied the return value of the previous. If `accumulator`
-		* is not given, the first element of `collection` is used as the initial
-		* value. The iteratee is invoked with four arguments:
-		* (accumulator, value, index|key, collection).
-		*
-		* Many lodash methods are guarded to work as iteratees for methods like
-		* `_.reduce`, `_.reduceRight`, and `_.transform`.
-		*
-		* The guarded methods are:
-		* `assign`, `defaults`, `defaultsDeep`, `includes`, `merge`, `orderBy`,
-		* and `sortBy`
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Collection
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} [iteratee=_.identity] The function invoked per iteration.
-		* @param {*} [accumulator] The initial value.
-		* @returns {*} Returns the accumulated value.
-		* @see _.reduceRight
-		* @example
-		*
-		* _.reduce([1, 2], function(sum, n) {
-		*   return sum + n;
-		* }, 0);
-		* // => 3
-		*
-		* _.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
-		*   (result[value] || (result[value] = [])).push(key);
-		*   return result;
-		* }, {});
-		* // => { '1': ['a', 'c'], '2': ['b'] } (iteration order is not guaranteed)
-		*/
-		function reduce(collection, iteratee, accumulator) {
-			var func = isArray(collection) ? arrayReduce : baseReduce, initAccum = arguments.length < 3;
-			return func(collection, baseIteratee(iteratee, 4), accumulator, initAccum, baseEach);
-		}
-		module.exports = reduce;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayReduceRight.js
-	var require__arrayReduceRight = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* A specialized version of `_.reduceRight` for arrays without support for
-		* iteratee shorthands.
-		*
-		* @private
-		* @param {Array} [array] The array to iterate over.
-		* @param {Function} iteratee The function invoked per iteration.
-		* @param {*} [accumulator] The initial value.
-		* @param {boolean} [initAccum] Specify using the last element of `array` as
-		*  the initial value.
-		* @returns {*} Returns the accumulated value.
-		*/
-		function arrayReduceRight(array, iteratee, accumulator, initAccum) {
-			var length = array == null ? 0 : array.length;
-			if (initAccum && length) accumulator = array[--length];
-			while (length--) accumulator = iteratee(accumulator, array[length], length, array);
-			return accumulator;
-		}
-		module.exports = arrayReduceRight;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseForRight.js
-	var require__baseForRight = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__createBaseFor()(true);
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseForOwnRight.js
-	var require__baseForOwnRight = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseForRight = require__baseForRight();
-		var keys = require_keys$2();
-		/**
-		* The base implementation of `_.forOwnRight` without support for iteratee shorthands.
-		*
-		* @private
-		* @param {Object} object The object to iterate over.
-		* @param {Function} iteratee The function invoked per iteration.
-		* @returns {Object} Returns `object`.
-		*/
-		function baseForOwnRight(object, iteratee) {
-			return object && baseForRight(object, iteratee, keys);
-		}
-		module.exports = baseForOwnRight;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseEachRight.js
-	var require__baseEachRight = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseForOwnRight = require__baseForOwnRight();
-		module.exports = require__createBaseEach()(baseForOwnRight, true);
-	}));
-	//#endregion
-	//#region node_modules/lodash/reduceRight.js
-	var require_reduceRight = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayReduceRight = require__arrayReduceRight();
-		var baseEachRight = require__baseEachRight();
-		var baseIteratee = require__baseIteratee();
-		var baseReduce = require__baseReduce();
-		var isArray = require_isArray();
-		/**
-		* This method is like `_.reduce` except that it iterates over elements of
-		* `collection` from right to left.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Collection
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} [iteratee=_.identity] The function invoked per iteration.
-		* @param {*} [accumulator] The initial value.
-		* @returns {*} Returns the accumulated value.
-		* @see _.reduce
-		* @example
-		*
-		* var array = [[0, 1], [2, 3], [4, 5]];
-		*
-		* _.reduceRight(array, function(flattened, other) {
-		*   return flattened.concat(other);
-		* }, []);
-		* // => [4, 5, 2, 3, 0, 1]
-		*/
-		function reduceRight(collection, iteratee, accumulator) {
-			var func = isArray(collection) ? arrayReduceRight : baseReduce, initAccum = arguments.length < 3;
-			return func(collection, baseIteratee(iteratee, 4), accumulator, initAccum, baseEachRight);
-		}
-		module.exports = reduceRight;
-	}));
-	//#endregion
-	//#region node_modules/lodash/negate.js
-	var require_negate = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Error message constants. */
-		var FUNC_ERROR_TEXT = "Expected a function";
-		/**
-		* Creates a function that negates the result of the predicate `func`. The
-		* `func` predicate is invoked with the `this` binding and arguments of the
-		* created function.
-		*
-		* @static
-		* @memberOf _
-		* @since 3.0.0
-		* @category Function
-		* @param {Function} predicate The predicate to negate.
-		* @returns {Function} Returns the new negated function.
-		* @example
-		*
-		* function isEven(n) {
-		*   return n % 2 == 0;
-		* }
-		*
-		* _.filter([1, 2, 3, 4, 5, 6], _.negate(isEven));
-		* // => [1, 3, 5]
-		*/
-		function negate(predicate) {
-			if (typeof predicate != "function") throw new TypeError(FUNC_ERROR_TEXT);
-			return function() {
-				var args = arguments;
-				switch (args.length) {
-					case 0: return !predicate.call(this);
-					case 1: return !predicate.call(this, args[0]);
-					case 2: return !predicate.call(this, args[0], args[1]);
-					case 3: return !predicate.call(this, args[0], args[1], args[2]);
-				}
-				return !predicate.apply(this, args);
-			};
-		}
-		module.exports = negate;
-	}));
-	//#endregion
-	//#region node_modules/lodash/reject.js
-	var require_reject = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayFilter = require__arrayFilter();
-		var baseFilter = require__baseFilter();
-		var baseIteratee = require__baseIteratee();
-		var isArray = require_isArray();
-		var negate = require_negate();
-		/**
-		* The opposite of `_.filter`; this method returns the elements of `collection`
-		* that `predicate` does **not** return truthy for.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Collection
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} [predicate=_.identity] The function invoked per iteration.
-		* @returns {Array} Returns the new filtered array.
-		* @see _.filter
-		* @example
-		*
-		* var users = [
-		*   { 'user': 'barney', 'age': 36, 'active': false },
-		*   { 'user': 'fred',   'age': 40, 'active': true }
-		* ];
-		*
-		* _.reject(users, function(o) { return !o.active; });
-		* // => objects for ['fred']
-		*
-		* // The `_.matches` iteratee shorthand.
-		* _.reject(users, { 'age': 40, 'active': true });
-		* // => objects for ['barney']
-		*
-		* // The `_.matchesProperty` iteratee shorthand.
-		* _.reject(users, ['active', false]);
-		* // => objects for ['fred']
-		*
-		* // The `_.property` iteratee shorthand.
-		* _.reject(users, 'active');
-		* // => objects for ['barney']
-		*/
-		function reject(collection, predicate) {
-			return (isArray(collection) ? arrayFilter : baseFilter)(collection, negate(baseIteratee(predicate, 3)));
-		}
-		module.exports = reject;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseRandom.js
-	var require__baseRandom = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var nativeFloor = Math.floor;
-		var nativeRandom = Math.random;
-		/**
-		* The base implementation of `_.random` without support for returning
-		* floating-point numbers.
-		*
-		* @private
-		* @param {number} lower The lower bound.
-		* @param {number} upper The upper bound.
-		* @returns {number} Returns the random number.
-		*/
-		function baseRandom(lower, upper) {
-			return lower + nativeFloor(nativeRandom() * (upper - lower + 1));
-		}
-		module.exports = baseRandom;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arraySample.js
-	var require__arraySample = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseRandom = require__baseRandom();
-		/**
-		* A specialized version of `_.sample` for arrays.
-		*
-		* @private
-		* @param {Array} array The array to sample.
-		* @returns {*} Returns the random element.
-		*/
-		function arraySample(array) {
-			var length = array.length;
-			return length ? array[baseRandom(0, length - 1)] : void 0;
-		}
-		module.exports = arraySample;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseSample.js
-	var require__baseSample = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arraySample = require__arraySample();
-		var values = require_values$2();
-		/**
-		* The base implementation of `_.sample`.
-		*
-		* @private
-		* @param {Array|Object} collection The collection to sample.
-		* @returns {*} Returns the random element.
-		*/
-		function baseSample(collection) {
-			return arraySample(values(collection));
-		}
-		module.exports = baseSample;
-	}));
-	//#endregion
-	//#region node_modules/lodash/sample.js
-	var require_sample = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arraySample = require__arraySample();
-		var baseSample = require__baseSample();
-		var isArray = require_isArray();
-		/**
-		* Gets a random element from `collection`.
-		*
-		* @static
-		* @memberOf _
-		* @since 2.0.0
-		* @category Collection
-		* @param {Array|Object} collection The collection to sample.
-		* @returns {*} Returns the random element.
-		* @example
-		*
-		* _.sample([1, 2, 3, 4]);
-		* // => 2
-		*/
-		function sample(collection) {
-			return (isArray(collection) ? arraySample : baseSample)(collection);
-		}
-		module.exports = sample;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_shuffleSelf.js
-	var require__shuffleSelf = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseRandom = require__baseRandom();
-		/**
-		* A specialized version of `_.shuffle` which mutates and sets the size of `array`.
-		*
-		* @private
-		* @param {Array} array The array to shuffle.
-		* @param {number} [size=array.length] The size of `array`.
-		* @returns {Array} Returns `array`.
-		*/
-		function shuffleSelf(array, size) {
-			var index = -1, length = array.length, lastIndex = length - 1;
-			size = size === void 0 ? length : size;
-			while (++index < size) {
-				var rand = baseRandom(index, lastIndex), value = array[rand];
-				array[rand] = array[index];
-				array[index] = value;
-			}
-			array.length = size;
-			return array;
-		}
-		module.exports = shuffleSelf;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_arrayShuffle.js
-	var require__arrayShuffle = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var copyArray = require__copyArray();
-		var shuffleSelf = require__shuffleSelf();
-		/**
-		* A specialized version of `_.shuffle` for arrays.
-		*
-		* @private
-		* @param {Array} array The array to shuffle.
-		* @returns {Array} Returns the new shuffled array.
-		*/
-		function arrayShuffle(array) {
-			return shuffleSelf(copyArray(array));
-		}
-		module.exports = arrayShuffle;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseShuffle.js
-	var require__baseShuffle = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var shuffleSelf = require__shuffleSelf();
-		var values = require_values$2();
-		/**
-		* The base implementation of `_.shuffle`.
-		*
-		* @private
-		* @param {Array|Object} collection The collection to shuffle.
-		* @returns {Array} Returns the new shuffled array.
-		*/
-		function baseShuffle(collection) {
-			return shuffleSelf(values(collection));
-		}
-		module.exports = baseShuffle;
-	}));
-	//#endregion
-	//#region node_modules/lodash/shuffle.js
-	var require_shuffle = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayShuffle = require__arrayShuffle();
-		var baseShuffle = require__baseShuffle();
-		var isArray = require_isArray();
-		/**
-		* Creates an array of shuffled values, using a version of the
-		* [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher-Yates_shuffle).
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Collection
-		* @param {Array|Object} collection The collection to shuffle.
-		* @returns {Array} Returns the new shuffled array.
-		* @example
-		*
-		* _.shuffle([1, 2, 3, 4]);
-		* // => [4, 1, 3, 2]
-		*/
-		function shuffle(collection) {
-			return (isArray(collection) ? arrayShuffle : baseShuffle)(collection);
-		}
-		module.exports = shuffle;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseSome.js
-	var require__baseSome = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseEach = require__baseEach();
-		/**
-		* The base implementation of `_.some` without support for iteratee shorthands.
-		*
-		* @private
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} predicate The function invoked per iteration.
-		* @returns {boolean} Returns `true` if any element passes the predicate check,
-		*  else `false`.
-		*/
-		function baseSome(collection, predicate) {
-			var result;
-			baseEach(collection, function(value, index, collection) {
-				result = predicate(value, index, collection);
-				return !result;
-			});
-			return !!result;
-		}
-		module.exports = baseSome;
-	}));
-	//#endregion
-	//#region node_modules/lodash/some.js
-	var require_some = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arraySome = require__arraySome();
-		var baseIteratee = require__baseIteratee();
-		var baseSome = require__baseSome();
-		var isArray = require_isArray();
-		var isIterateeCall = require__isIterateeCall();
-		/**
-		* Checks if `predicate` returns truthy for **any** element of `collection`.
-		* Iteration is stopped once `predicate` returns truthy. The predicate is
-		* invoked with three arguments: (value, index|key, collection).
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Collection
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function} [predicate=_.identity] The function invoked per iteration.
-		* @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-		* @returns {boolean} Returns `true` if any element passes the predicate check,
-		*  else `false`.
-		* @example
-		*
-		* _.some([null, 0, 'yes', false], Boolean);
-		* // => true
-		*
-		* var users = [
-		*   { 'user': 'barney', 'active': true },
-		*   { 'user': 'fred',   'active': false }
-		* ];
-		*
-		* // The `_.matches` iteratee shorthand.
-		* _.some(users, { 'user': 'barney', 'active': false });
-		* // => false
-		*
-		* // The `_.matchesProperty` iteratee shorthand.
-		* _.some(users, ['active', false]);
-		* // => true
-		*
-		* // The `_.property` iteratee shorthand.
-		* _.some(users, 'active');
-		* // => true
-		*/
-		function some(collection, predicate, guard) {
-			var func = isArray(collection) ? arraySome : baseSome;
-			if (guard && isIterateeCall(collection, predicate, guard)) predicate = void 0;
-			return func(collection, baseIteratee(predicate, 3));
-		}
-		module.exports = some;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseSortBy.js
-	var require__baseSortBy = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.sortBy` which uses `comparer` to define the
-		* sort order of `array` and replaces criteria objects with their corresponding
-		* values.
-		*
-		* @private
-		* @param {Array} array The array to sort.
-		* @param {Function} comparer The function to define sort order.
-		* @returns {Array} Returns `array`.
-		*/
-		function baseSortBy(array, comparer) {
-			var length = array.length;
-			array.sort(comparer);
-			while (length--) array[length] = array[length].value;
-			return array;
-		}
-		module.exports = baseSortBy;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_compareAscending.js
-	var require__compareAscending = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isSymbol = require_isSymbol();
-		/**
-		* Compares values to sort them in ascending order.
-		*
-		* @private
-		* @param {*} value The value to compare.
-		* @param {*} other The other value to compare.
-		* @returns {number} Returns the sort order indicator for `value`.
-		*/
-		function compareAscending(value, other) {
-			if (value !== other) {
-				var valIsDefined = value !== void 0, valIsNull = value === null, valIsReflexive = value === value, valIsSymbol = isSymbol(value);
-				var othIsDefined = other !== void 0, othIsNull = other === null, othIsReflexive = other === other, othIsSymbol = isSymbol(other);
-				if (!othIsNull && !othIsSymbol && !valIsSymbol && value > other || valIsSymbol && othIsDefined && othIsReflexive && !othIsNull && !othIsSymbol || valIsNull && othIsDefined && othIsReflexive || !valIsDefined && othIsReflexive || !valIsReflexive) return 1;
-				if (!valIsNull && !valIsSymbol && !othIsSymbol && value < other || othIsSymbol && valIsDefined && valIsReflexive && !valIsNull && !valIsSymbol || othIsNull && valIsDefined && valIsReflexive || !othIsDefined && valIsReflexive || !othIsReflexive) return -1;
-			}
-			return 0;
-		}
-		module.exports = compareAscending;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_compareMultiple.js
-	var require__compareMultiple = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var compareAscending = require__compareAscending();
-		/**
-		* Used by `_.orderBy` to compare multiple properties of a value to another
-		* and stable sort them.
-		*
-		* If `orders` is unspecified, all values are sorted in ascending order. Otherwise,
-		* specify an order of "desc" for descending or "asc" for ascending sort order
-		* of corresponding values.
-		*
-		* @private
-		* @param {Object} object The object to compare.
-		* @param {Object} other The other object to compare.
-		* @param {boolean[]|string[]} orders The order to sort by for each property.
-		* @returns {number} Returns the sort order indicator for `object`.
-		*/
-		function compareMultiple(object, other, orders) {
-			var index = -1, objCriteria = object.criteria, othCriteria = other.criteria, length = objCriteria.length, ordersLength = orders.length;
-			while (++index < length) {
-				var result = compareAscending(objCriteria[index], othCriteria[index]);
-				if (result) {
-					if (index >= ordersLength) return result;
-					return result * (orders[index] == "desc" ? -1 : 1);
-				}
-			}
-			return object.index - other.index;
-		}
-		module.exports = compareMultiple;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseOrderBy.js
-	var require__baseOrderBy = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayMap = require__arrayMap();
-		var baseGet = require__baseGet();
-		var baseIteratee = require__baseIteratee();
-		var baseMap = require__baseMap();
-		var baseSortBy = require__baseSortBy();
-		var baseUnary = require__baseUnary();
-		var compareMultiple = require__compareMultiple();
-		var identity = require_identity();
-		var isArray = require_isArray();
-		/**
-		* The base implementation of `_.orderBy` without param guards.
-		*
-		* @private
-		* @param {Array|Object} collection The collection to iterate over.
-		* @param {Function[]|Object[]|string[]} iteratees The iteratees to sort by.
-		* @param {string[]} orders The sort orders of `iteratees`.
-		* @returns {Array} Returns the new sorted array.
-		*/
-		function baseOrderBy(collection, iteratees, orders) {
-			if (iteratees.length) iteratees = arrayMap(iteratees, function(iteratee) {
-				if (isArray(iteratee)) return function(value) {
-					return baseGet(value, iteratee.length === 1 ? iteratee[0] : iteratee);
-				};
-				return iteratee;
-			});
-			else iteratees = [identity];
-			var index = -1;
-			iteratees = arrayMap(iteratees, baseUnary(baseIteratee));
-			return baseSortBy(baseMap(collection, function(value, key, collection) {
+	//#region app/javascript/api/permissions.js
+	function buildBatchPermissionsState(batchData) {
+		const allPerms = batchData.batch_permissions;
+		const permissionTypes = uniq(flatten(map(allPerms, "permission_types")));
+		const type = allPerms[0] && allPerms[0].type;
+		const aggregated = {};
+		PERMISSION_KEYS.forEach((key) => {
+			const isModel = key === "public_permission";
+			const batchPerms = map(groupBy(flatten(map(allPerms, key)), "subject.uuid"), (perms) => {
 				return {
-					"criteria": arrayMap(iteratees, function(iteratee) {
-						return iteratee(value);
-					}),
-					"index": ++index,
-					"value": value
+					...Object.fromEntries(map(permissionTypes, (permKey) => {
+						const hasForAll = allPerms.length === perms.length;
+						const allEqual = every(map(perms, permKey), (b) => b === head(perms)[permKey]);
+						return [permKey, !hasForAll || !allEqual ? "mixed" : head(perms)[permKey]];
+					})),
+					subject: head(perms).subject,
+					tooltip_text: isModel ? head(perms).tooltip_text : null
 				};
-			}), function(object, other) {
-				return compareMultiple(object, other, orders);
 			});
-		}
-		module.exports = baseOrderBy;
-	}));
-	//#endregion
-	//#region node_modules/lodash/sortBy.js
-	var require_sortBy = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseFlatten = require__baseFlatten();
-		var baseOrderBy = require__baseOrderBy();
-		var baseRest = require__baseRest();
-		var isIterateeCall = require__isIterateeCall();
-		module.exports = baseRest(function(collection, iteratees) {
-			if (collection == null) return [];
-			var length = iteratees.length;
-			if (length > 1 && isIterateeCall(collection, iteratees[0], iteratees[1])) iteratees = [];
-			else if (length > 2 && isIterateeCall(iteratees[0], iteratees[1], iteratees[2])) iteratees = [iteratees[0]];
-			return baseOrderBy(collection, baseFlatten(iteratees, 1), []);
+			aggregated[key] = isModel ? batchPerms[0] || {} : batchPerms;
 		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/tail.js
-	var require_tail = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseSlice = require__baseSlice();
-		/**
-		* Gets all but the first element of `array`.
-		*
-		* @static
-		* @memberOf _
-		* @since 4.0.0
-		* @category Array
-		* @param {Array} array The array to query.
-		* @returns {Array} Returns the slice of `array`.
-		* @example
-		*
-		* _.tail([1, 2, 3]);
-		* // => [2, 3]
-		*/
-		function tail(array) {
-			var length = array == null ? 0 : array.length;
-			return length ? baseSlice(array, 1, length) : [];
-		}
-		module.exports = tail;
-	}));
-	//#endregion
-	//#region node_modules/lodash/take.js
-	var require_take = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseSlice = require__baseSlice();
-		var toInteger = require_toInteger();
-		/**
-		* Creates a slice of `array` with `n` elements taken from the beginning.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Array
-		* @param {Array} array The array to query.
-		* @param {number} [n=1] The number of elements to take.
-		* @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-		* @returns {Array} Returns the slice of `array`.
-		* @example
-		*
-		* _.take([1, 2, 3]);
-		* // => [1]
-		*
-		* _.take([1, 2, 3], 2);
-		* // => [1, 2]
-		*
-		* _.take([1, 2, 3], 5);
-		* // => [1, 2, 3]
-		*
-		* _.take([1, 2, 3], 0);
-		* // => []
-		*/
-		function take(array, n, guard) {
-			if (!(array && array.length)) return [];
-			n = guard || n === void 0 ? 1 : toInteger(n);
-			return baseSlice(array, 0, n < 0 ? 0 : n);
-		}
-		module.exports = take;
-	}));
-	//#endregion
-	//#region node_modules/lodash/without.js
-	var require_without = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseDifference = require__baseDifference();
-		var baseRest = require__baseRest();
-		var isArrayLikeObject = require_isArrayLikeObject();
-		module.exports = baseRest(function(array, values) {
-			return isArrayLikeObject(array) ? baseDifference(array, values) : [];
-		});
-	}));
-	//#endregion
-	//#region node_modules/ampersand-collection-lodash-mixin/ampersand-collection-lodash-mixin.js
-	var require_ampersand_collection_lodash_mixin = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isFunction = require_isFunction();
-		var _ = {
-			countBy: require_countBy(),
-			difference: require_difference(),
-			drop: require_drop(),
-			each: require_forEach(),
-			every: require_every(),
-			filter: require_filter(),
-			find: require_find(),
-			forEach: require_forEach(),
-			groupBy: require_groupBy(),
-			includes: require_includes(),
-			keyBy: require_keyBy(),
-			indexOf: require_indexOf(),
-			initial: require_initial(),
-			invoke: require_invoke(),
-			invokeMap: require_invokeMap(),
-			isEmpty: require_isEmpty(),
-			lastIndexOf: require_lastIndexOf(),
-			map: require_map(),
-			max: require_max(),
-			min: require_min(),
-			partition: require_partition(),
-			reduce: require_reduce(),
-			reduceRight: require_reduceRight(),
-			reject: require_reject(),
-			sample: require_sample(),
-			shuffle: require_shuffle(),
-			some: require_some(),
-			sortBy: require_sortBy(),
-			tail: require_tail(),
-			take: require_take(),
-			without: require_without()
+		return {
+			type,
+			can_edit: true,
+			permission_types: permissionTypes,
+			batchResourceIds: map(allPerms, "uuid"),
+			...aggregated
 		};
-		var slice = [].slice;
-		var mixins = {};
-		_.each([
-			"forEach",
-			"each",
-			"map",
-			"reduce",
-			"reduceRight",
-			"find",
-			"filter",
-			"reject",
-			"every",
-			"some",
-			"includes",
-			"invoke",
-			"invokeMap",
-			"max",
-			"min",
-			"take",
-			"initial",
-			"tail",
-			"drop",
-			"without",
-			"difference",
-			"indexOf",
-			"shuffle",
-			"lastIndexOf",
-			"isEmpty",
-			"sample",
-			"partition"
-		], function(method) {
-			if (!_[method]) return;
-			mixins[method] = function() {
-				var args = slice.call(arguments);
-				args.unshift(this.models);
-				return _[method].apply(_, args);
-			};
-		});
-		_.each([
-			"groupBy",
-			"countBy",
-			"sortBy",
-			"keyBy"
-		], function(method) {
-			if (!_[method]) return;
-			mixins[method] = function(value, context) {
-				var iterator = isFunction(value) ? value : function(model) {
-					return model.get ? model.get(value) : model[value];
+	}
+	function serializeBatchPermissions(state) {
+		const permissions = Object.fromEntries(PERMISSION_KEYS.map((key) => {
+			const isModel = key === "public_permission";
+			const cleaned = compact(map(isModel ? [state[key]] : state[key], (perm) => {
+				const perms = mapValues(perm, (v) => v === "mixed" ? void 0 : v);
+				return isModel ? perms : {
+					...perms,
+					subject: perm.subject && perm.subject.uuid
 				};
-				return _[method](this.models, iterator, context);
-			};
+			}));
+			return [key, isModel ? head(cleaned) : cleaned];
+		}));
+		return {
+			resource_ids: state.batchResourceIds,
+			permissions
+		};
+	}
+	async function saveBatchPermissions(state, saveAction, returnTo) {
+		const body = {
+			...serializeBatchPermissions(state),
+			return_to: returnTo
+		};
+		const res = await fetch(saveAction.url, {
+			method: saveAction.method,
+			headers: {
+				"Content-Type": "application/json",
+				Accept: "application/json",
+				"X-CSRF-Token": (0, import_rails_csrf_token$7.default)()
+			},
+			body: JSON.stringify(body)
 		});
-		mixins.where = function(attrs, first) {
-			if (_.isEmpty(attrs)) return first ? void 0 : [];
-			return this[first ? "find" : "filter"](function(model) {
-				var value;
-				for (var key in attrs) {
-					value = model.get ? model.get(key) : model[key];
-					if (attrs[key] !== value) return false;
-				}
-				return true;
-			});
-		};
-		mixins.findWhere = function(attrs) {
-			return this.where(attrs, true);
-		};
-		mixins.pluck = function(attr) {
-			return _.invokeMap(this.models, "get", attr);
-		};
-		mixins.first = function() {
-			return this.models[0];
-		};
-		mixins.last = function() {
-			return this.models[this.models.length - 1];
-		};
-		mixins.size = function() {
-			return this.models.length;
-		};
-		module.exports = mixins;
-	}));
-	//#endregion
-	//#region node_modules/lodash/result.js
-	var require_result = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var castPath = require__castPath();
-		var isFunction = require_isFunction();
-		var toKey = require__toKey();
-		/**
-		* This method is like `_.get` except that if the resolved value is a
-		* function it's invoked with the `this` binding of its parent object and
-		* its result is returned.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Object
-		* @param {Object} object The object to query.
-		* @param {Array|string} path The path of the property to resolve.
-		* @param {*} [defaultValue] The value returned for `undefined` resolved values.
-		* @returns {*} Returns the resolved value.
-		* @example
-		*
-		* var object = { 'a': [{ 'b': { 'c1': 3, 'c2': _.constant(4) } }] };
-		*
-		* _.result(object, 'a[0].b.c1');
-		* // => 3
-		*
-		* _.result(object, 'a[0].b.c2');
-		* // => 4
-		*
-		* _.result(object, 'a[0].b.c3', 'default');
-		* // => 'default'
-		*
-		* _.result(object, 'a[0].b.c3', _.constant('default'));
-		* // => 'default'
-		*/
-		function result(object, path, defaultValue) {
-			path = castPath(path, object);
-			var index = -1, length = path.length;
-			if (!length) {
-				length = 1;
-				object = void 0;
+		if (!res.ok) {
+			let err;
+			try {
+				err = await res.json();
+			} catch (_) {
+				err = res.statusText;
 			}
-			while (++index < length) {
-				var value = object == null ? void 0 : object[toKey(path[index])];
-				if (value === void 0) {
-					index = length;
-					value = defaultValue;
-				}
-				object = isFunction(value) ? value.call(object) : value;
-			}
-			return object;
+			throw err;
 		}
-		module.exports = result;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_nativeKeysIn.js
-	var require__nativeKeysIn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* This function is like
-		* [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
-		* except that it includes inherited enumerable properties.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @returns {Array} Returns the array of property names.
-		*/
-		function nativeKeysIn(object) {
-			var result = [];
-			if (object != null) for (var key in Object(object)) result.push(key);
-			return result;
-		}
-		module.exports = nativeKeysIn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseKeysIn.js
-	var require__baseKeysIn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isObject = require_isObject();
-		var isPrototype = require__isPrototype();
-		var nativeKeysIn = require__nativeKeysIn();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* The base implementation of `_.keysIn` which doesn't treat sparse arrays as dense.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @returns {Array} Returns the array of property names.
-		*/
-		function baseKeysIn(object) {
-			if (!isObject(object)) return nativeKeysIn(object);
-			var isProto = isPrototype(object), result = [];
-			for (var key in object) if (!(key == "constructor" && (isProto || !hasOwnProperty.call(object, key)))) result.push(key);
-			return result;
-		}
-		module.exports = baseKeysIn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/keysIn.js
-	var require_keysIn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayLikeKeys = require__arrayLikeKeys();
-		var baseKeysIn = require__baseKeysIn();
-		var isArrayLike = require_isArrayLike();
-		/**
-		* Creates an array of the own and inherited enumerable property names of `object`.
-		*
-		* **Note:** Non-object values are coerced to objects.
-		*
-		* @static
-		* @memberOf _
-		* @since 3.0.0
-		* @category Object
-		* @param {Object} object The object to query.
-		* @returns {Array} Returns the array of property names.
-		* @example
-		*
-		* function Foo() {
-		*   this.a = 1;
-		*   this.b = 2;
-		* }
-		*
-		* Foo.prototype.c = 3;
-		*
-		* _.keysIn(new Foo);
-		* // => ['a', 'b', 'c'] (iteration order is not guaranteed)
-		*/
-		function keysIn(object) {
-			return isArrayLike(object) ? arrayLikeKeys(object, true) : baseKeysIn(object);
-		}
-		module.exports = keysIn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/defaults.js
-	var require_defaults = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseRest = require__baseRest();
-		var eq = require_eq();
-		var isIterateeCall = require__isIterateeCall();
-		var keysIn = require_keysIn();
-		/** Used for built-in method references. */
-		var objectProto = Object.prototype;
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = objectProto.hasOwnProperty;
-		module.exports = baseRest(function(object, sources) {
-			object = Object(object);
-			var index = -1;
-			var length = sources.length;
-			var guard = length > 2 ? sources[2] : void 0;
-			if (guard && isIterateeCall(sources[0], sources[1], guard)) length = 1;
-			while (++index < length) {
-				var source = sources[index];
-				var props = keysIn(source);
-				var propsIndex = -1;
-				var propsLength = props.length;
-				while (++propsIndex < propsLength) {
-					var key = props[propsIndex];
-					var value = object[key];
-					if (value === void 0 || eq(value, objectProto[key]) && !hasOwnProperty.call(object, key)) object[key] = source[key];
-				}
-			}
-			return object;
+		return res.json();
+	}
+	function applyPermissionCascade(permission, permissionTypes, name, value) {
+		const updated = {
+			...permission,
+			[name]: value
+		};
+		const nameIndex = permissionTypes.indexOf(name);
+		permissionTypes.forEach((pt, i) => {
+			if (pt === name || permission[pt] == null) return;
+			if (value === true && i < nameIndex) updated[pt] = true;
+			if (value === false && i > nameIndex) updated[pt] = false;
 		});
-	}));
-	//#endregion
-	//#region node_modules/media-type/lib/mediaType.js
-	var require_mediaType = /* @__PURE__ */ __commonJSMin(((exports) => {
-		/**
-		* media-type
-		* @author Lovell Fuller
-		*
-		* This code is distributed under the Apache License Version 2.0, the terms of
-		* which may be found at http://www.apache.org/licenses/LICENSE-2.0.html
-		*/
-		var MediaType = function() {
-			this.type = null;
-			this._setSubtypeAndSuffix(null);
-			this.parameters = {};
-		};
-		MediaType.prototype.isValid = function() {
-			return this.type !== null && this.subtype !== null && this.subtype !== "example";
-		};
-		MediaType.prototype._setSubtypeAndSuffix = function(subtype) {
-			this.subtype = subtype;
-			this.subtypeFacets = [];
-			this.suffix = null;
-			if (subtype) if (subtype.indexOf("+") > -1 && subtype.substr(-1) !== "+") {
-				var fixes = subtype.split("+", 2);
-				this.subtype = fixes[0];
-				this.subtypeFacets = fixes[0].split(".");
-				this.suffix = fixes[1];
-			} else this.subtypeFacets = subtype.split(".");
-		};
-		MediaType.prototype.hasSuffix = function() {
-			return !!this.suffix;
-		};
-		MediaType.prototype._firstSubtypeFacetEquals = function(str) {
-			return this.subtypeFacets.length > 0 && this.subtypeFacets[0] === str;
-		};
-		MediaType.prototype.isVendor = function() {
-			return this._firstSubtypeFacetEquals("vnd");
-		};
-		MediaType.prototype.isPersonal = function() {
-			return this._firstSubtypeFacetEquals("prs");
-		};
-		MediaType.prototype.isExperimental = function() {
-			return this._firstSubtypeFacetEquals("x") || this.subtype.substring(0, 2).toLowerCase() === "x-";
-		};
-		MediaType.prototype.asString = function() {
-			var str = "";
-			if (this.isValid()) {
-				str = str + this.type + "/" + this.subtype;
-				if (this.hasSuffix()) str = str + "+" + this.suffix;
-				var parameterKeys = Object.keys(this.parameters);
-				if (parameterKeys.length > 0) {
-					var parameters = [];
-					var that = this;
-					parameterKeys.sort(function(a, b) {
-						return a.localeCompare(b);
-					}).forEach(function(element) {
-						parameters.push(element + "=" + wrapQuotes(that.parameters[element]));
-					});
-					str = str + ";" + parameters.join(";");
-				}
-			}
-			return str;
-		};
-		var wrapQuotes = function(str) {
-			return str.indexOf(";") > -1 ? "\"" + str + "\"" : str;
-		};
-		var unwrapQuotes = function(str) {
-			return str.substr(0, 1) === "\"" && str.substr(-1) === "\"" ? str.substr(1, str.length - 2) : str;
-		};
-		var mediaTypeMatcher = /^(application|audio|image|message|model|multipart|text|video|\*)\/([a-zA-Z0-9!#$%^&\*_\-\+{}\|'.`~]{1,127})(;.*)?$/;
-		var parameterSplitter = /;(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/;
-		exports.fromString = function(str) {
-			var mediaType = new MediaType();
-			if (str) {
-				var match = str.match(mediaTypeMatcher);
-				if (match && !(match[1] === "*" && match[2] !== "*")) {
-					mediaType.type = match[1];
-					mediaType._setSubtypeAndSuffix(match[2]);
-					if (match[3]) match[3].substr(1).split(parameterSplitter).forEach(function(parameter) {
-						var keyAndValue = parameter.split("=", 2);
-						if (keyAndValue.length === 2) mediaType.parameters[keyAndValue[0].toLowerCase().trim()] = unwrapQuotes(keyAndValue[1].trim());
-					});
-				}
-			}
-			return mediaType;
-		};
-	}));
-	//#endregion
-	//#region node_modules/ampersand-sync/core.js
-	var require_core = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var result = require_result();
-		var defaults = require_defaults();
-		var includes = require_includes();
-		var assign = require_assign$2();
-		var qs = require_lib$1();
-		var mediaType = require_mediaType();
-		module.exports = function(xhr) {
-			var urlError = function() {
-				throw new Error("A \"url\" property or function must be specified");
-			};
-			var methodMap = {
-				"create": "POST",
-				"update": "PUT",
-				"patch": "PATCH",
-				"delete": "DELETE",
-				"read": "GET"
-			};
-			return function(method, model, optionsInput) {
-				var options = assign({}, optionsInput);
-				var type = methodMap[method];
-				var headers = {};
-				defaults(options || (options = {}), {
-					emulateHTTP: false,
-					emulateJSON: false,
-					xhrImplementation: xhr
-				});
-				var params = { type };
-				var ajaxConfig = result(model, "ajaxConfig", {});
-				var key;
-				if (ajaxConfig.headers) for (key in ajaxConfig.headers) headers[key.toLowerCase()] = ajaxConfig.headers[key];
-				if (options.headers) {
-					for (key in options.headers) headers[key.toLowerCase()] = options.headers[key];
-					delete options.headers;
-				}
-				assign(params, ajaxConfig);
-				params.headers = headers;
-				if (!options.url) options.url = result(model, "url") || urlError();
-				if (options.data == null && model && (method === "create" || method === "update" || method === "patch")) params.json = options.attrs || model.toJSON(options);
-				if (options.data && type === "GET") {
-					options.url += includes(options.url, "?") ? "&" : "?";
-					options.url += qs.stringify(options.data, options.qsOptions);
-					delete options.data;
-				}
-				if (options.emulateJSON) {
-					params.headers["content-type"] = "application/x-www-form-urlencoded";
-					params.body = params.json ? { model: params.json } : {};
-					delete params.json;
-				}
-				if (options.emulateHTTP && (type === "PUT" || type === "DELETE" || type === "PATCH")) {
-					params.type = "POST";
-					if (options.emulateJSON) params.body._method = type;
-					params.headers["x-http-method-override"] = type;
-				}
-				if (options.emulateJSON) params.body = qs.stringify(params.body);
-				if (ajaxConfig.xhrFields) {
-					var beforeSend = ajaxConfig.beforeSend;
-					params.beforeSend = function(req) {
-						assign(req, ajaxConfig.xhrFields);
-						if (beforeSend) return beforeSend.apply(this, arguments);
-					};
-					params.xhrFields = ajaxConfig.xhrFields;
-				}
-				params.method = params.type;
-				var ajaxSettings = assign(params, options);
-				var request = options.xhrImplementation(ajaxSettings, function(err, resp, body) {
-					if (err || resp.statusCode >= 400) {
-						if (options.error) {
-							try {
-								body = JSON.parse(body);
-							} catch (e) {}
-							var message = err ? err.message : body || "HTTP" + resp.statusCode;
-							options.error(resp, "error", message);
-						}
-					} else {
-						var accept = mediaType.fromString(params.headers.accept);
-						var parseJson = accept.isValid() && accept.type === "application" && (accept.subtype === "json" || accept.suffix === "json");
-						if (typeof body === "string" && body !== "" && (!params.headers.accept || parseJson)) try {
-							body = JSON.parse(body);
-						} catch (err) {
-							if (options.error) options.error(resp, "error", err.message);
-							if (options.always) options.always(err, resp, body);
-							return;
-						}
-						if (options.success) options.success(body, "success", resp);
-					}
-					if (options.always) options.always(err, resp, body);
-				});
-				if (model) model.trigger("request", model, request, optionsInput, ajaxSettings);
-				request.ajaxSettings = ajaxSettings;
-				return request;
-			};
-		};
-	}));
-	//#endregion
-	//#region node_modules/ampersand-sync/ampersand-sync-browser.js
-	var require_ampersand_sync_browser = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var xhr = require_xhr();
-		module.exports = require_core()(xhr);
-	}));
-	//#endregion
-	//#region node_modules/ampersand-collection-rest-mixin/ampersand-collection-rest-mixin.js
-	var require_ampersand_collection_rest_mixin = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var sync = require_ampersand_sync_browser();
-		var assign = require_assign$2();
-		module.exports = {
-			fetch: function(options) {
-				options = options ? assign({}, options) : {};
-				if (options.parse === void 0) options.parse = true;
-				var self = this;
-				var success = options.success;
-				options.success = function(resp) {
-					var method = options.reset ? "reset" : "set";
-					if (options.set !== false) self[method](resp, options);
-					if (success) success(self, resp, options);
-					if (options.set !== false) self.trigger("sync", self, resp, options);
-				};
-				var error = options.error;
-				options.error = function(resp) {
-					if (error) error(self, resp, options);
-					self.trigger("error", self, resp, options);
-				};
-				var request = this.sync("read", this, options);
-				options.xhr = request;
-				return request;
+		return updated;
+	}
+	async function savePermissions(data) {
+		const resourceKey = data.type === "Collection" ? "collection" : "media_entry";
+		const res = await fetch(data.url, {
+			method: "PUT",
+			headers: {
+				"Content-Type": "application/json",
+				Accept: "application/json",
+				"X-CSRF-Token": (0, import_rails_csrf_token$7.default)()
 			},
-			create: function(model, options) {
-				options = options ? assign({}, options) : {};
-				if (!(model = this._prepareModel(model, options))) return false;
-				if (!options.wait) this.add(model, options);
-				var self = this;
-				var success = options.success;
-				options.success = function(model, resp) {
-					if (options.wait) self.add(model, options);
-					if (success) success(model, resp, options);
-				};
-				model.save(null, options);
-				return model;
-			},
-			sync: function() {
-				return sync.apply(this, arguments);
-			},
-			getOrFetch: function(id, options, cb) {
-				if (arguments.length !== 3) {
-					cb = options;
-					options = {};
-				}
-				var self = this;
-				var model = this.get(id);
-				if (model) return window.setTimeout(cb.bind(null, null, model), 0);
-				if (options.all) {
-					var always = options.always;
-					options.always = function(err, resp, body) {
-						if (always) always(err, resp, body);
-						if (!cb) return;
-						var model = self.get(id);
-						cb(model ? null : /* @__PURE__ */ new Error("not found"), model);
-					};
-					return this.fetch(options);
-				} else return this.fetchById(id, options, cb);
-			},
-			fetchById: function(id, options, cb) {
-				if (arguments.length !== 3) {
-					cb = options;
-					options = {};
-				}
-				var self = this;
-				var idObj = {};
-				idObj[this.mainIndex] = id;
-				var model = new this.model(idObj, { collection: this });
-				var success = options.success;
-				options.success = function(resp) {
-					model = self.add(model);
-					if (success) success(self, resp, options);
-					if (cb) cb(null, model);
-				};
-				var error = options.error;
-				options.error = function(collection, resp) {
-					delete model.collection;
-					if (error) error(collection, resp, options);
-					if (cb) {
-						var err = new Error(resp.rawRequest.statusText);
-						err.status = resp.rawRequest.status;
-						cb(err);
-					}
-				};
-				return model.fetch(options);
-			}
-		};
-	}));
-	//#endregion
-	//#region node_modules/ampersand-rest-collection/ampersand-rest-collection.js
-	var require_ampersand_rest_collection = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Collection = require_ampersand_collection();
-		var lodashMixin = require_ampersand_collection_lodash_mixin();
-		var restMixins = require_ampersand_collection_rest_mixin();
-		module.exports = Collection.extend(lodashMixin, restMixins);
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseAssign.js
-	var require__baseAssign = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var copyObject = require__copyObject();
-		var keys = require_keys$2();
-		/**
-		* The base implementation of `_.assign` without support for multiple sources
-		* or `customizer` functions.
-		*
-		* @private
-		* @param {Object} object The destination object.
-		* @param {Object} source The source object.
-		* @returns {Object} Returns `object`.
-		*/
-		function baseAssign(object, source) {
-			return object && copyObject(source, keys(source), object);
-		}
-		module.exports = baseAssign;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseAssignIn.js
-	var require__baseAssignIn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var copyObject = require__copyObject();
-		var keysIn = require_keysIn();
-		/**
-		* The base implementation of `_.assignIn` without support for multiple sources
-		* or `customizer` functions.
-		*
-		* @private
-		* @param {Object} object The destination object.
-		* @param {Object} source The source object.
-		* @returns {Object} Returns `object`.
-		*/
-		function baseAssignIn(object, source) {
-			return object && copyObject(source, keysIn(source), object);
-		}
-		module.exports = baseAssignIn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_cloneBuffer.js
-	var require__cloneBuffer = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var root = require__root();
-		/** Detect free variable `exports`. */
-		var freeExports = typeof exports == "object" && exports && !exports.nodeType && exports;
-		/** Detect free variable `module`. */
-		var freeModule = freeExports && typeof module == "object" && module && !module.nodeType && module;
-		/** Built-in value references. */
-		var Buffer = freeModule && freeModule.exports === freeExports ? root.Buffer : void 0;
-		var allocUnsafe = Buffer ? Buffer.allocUnsafe : void 0;
-		/**
-		* Creates a clone of  `buffer`.
-		*
-		* @private
-		* @param {Buffer} buffer The buffer to clone.
-		* @param {boolean} [isDeep] Specify a deep clone.
-		* @returns {Buffer} Returns the cloned buffer.
-		*/
-		function cloneBuffer(buffer, isDeep) {
-			if (isDeep) return buffer.slice();
-			var length = buffer.length, result = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
-			buffer.copy(result);
-			return result;
-		}
-		module.exports = cloneBuffer;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_copySymbols.js
-	var require__copySymbols = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var copyObject = require__copyObject();
-		var getSymbols = require__getSymbols();
-		/**
-		* Copies own symbols of `source` to `object`.
-		*
-		* @private
-		* @param {Object} source The object to copy symbols from.
-		* @param {Object} [object={}] The object to copy symbols to.
-		* @returns {Object} Returns `object`.
-		*/
-		function copySymbols(source, object) {
-			return copyObject(source, getSymbols(source), object);
-		}
-		module.exports = copySymbols;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getPrototype.js
-	var require__getPrototype = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__overArg()(Object.getPrototypeOf, Object);
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getSymbolsIn.js
-	var require__getSymbolsIn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayPush = require__arrayPush();
-		var getPrototype = require__getPrototype();
-		var getSymbols = require__getSymbols();
-		var stubArray = require_stubArray();
-		module.exports = !Object.getOwnPropertySymbols ? stubArray : function(object) {
-			var result = [];
-			while (object) {
-				arrayPush(result, getSymbols(object));
-				object = getPrototype(object);
-			}
-			return result;
-		};
-	}));
-	//#endregion
-	//#region node_modules/lodash/_copySymbolsIn.js
-	var require__copySymbolsIn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var copyObject = require__copyObject();
-		var getSymbolsIn = require__getSymbolsIn();
-		/**
-		* Copies own and inherited symbols of `source` to `object`.
-		*
-		* @private
-		* @param {Object} source The object to copy symbols from.
-		* @param {Object} [object={}] The object to copy symbols to.
-		* @returns {Object} Returns `object`.
-		*/
-		function copySymbolsIn(source, object) {
-			return copyObject(source, getSymbolsIn(source), object);
-		}
-		module.exports = copySymbolsIn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_getAllKeysIn.js
-	var require__getAllKeysIn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGetAllKeys = require__baseGetAllKeys();
-		var getSymbolsIn = require__getSymbolsIn();
-		var keysIn = require_keysIn();
-		/**
-		* Creates an array of own and inherited enumerable property names and
-		* symbols of `object`.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @returns {Array} Returns the array of property names and symbols.
-		*/
-		function getAllKeysIn(object) {
-			return baseGetAllKeys(object, keysIn, getSymbolsIn);
-		}
-		module.exports = getAllKeysIn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_initCloneArray.js
-	var require__initCloneArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* Initializes an array clone.
-		*
-		* @private
-		* @param {Array} array The array to clone.
-		* @returns {Array} Returns the initialized clone.
-		*/
-		function initCloneArray(array) {
-			var length = array.length, result = new array.constructor(length);
-			if (length && typeof array[0] == "string" && hasOwnProperty.call(array, "index")) {
-				result.index = array.index;
-				result.input = array.input;
-			}
-			return result;
-		}
-		module.exports = initCloneArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_cloneArrayBuffer.js
-	var require__cloneArrayBuffer = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Uint8Array = require__Uint8Array();
-		/**
-		* Creates a clone of `arrayBuffer`.
-		*
-		* @private
-		* @param {ArrayBuffer} arrayBuffer The array buffer to clone.
-		* @returns {ArrayBuffer} Returns the cloned array buffer.
-		*/
-		function cloneArrayBuffer(arrayBuffer) {
-			var result = new arrayBuffer.constructor(arrayBuffer.byteLength);
-			new Uint8Array(result).set(new Uint8Array(arrayBuffer));
-			return result;
-		}
-		module.exports = cloneArrayBuffer;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_cloneDataView.js
-	var require__cloneDataView = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var cloneArrayBuffer = require__cloneArrayBuffer();
-		/**
-		* Creates a clone of `dataView`.
-		*
-		* @private
-		* @param {Object} dataView The data view to clone.
-		* @param {boolean} [isDeep] Specify a deep clone.
-		* @returns {Object} Returns the cloned data view.
-		*/
-		function cloneDataView(dataView, isDeep) {
-			var buffer = isDeep ? cloneArrayBuffer(dataView.buffer) : dataView.buffer;
-			return new dataView.constructor(buffer, dataView.byteOffset, dataView.byteLength);
-		}
-		module.exports = cloneDataView;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_cloneRegExp.js
-	var require__cloneRegExp = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to match `RegExp` flags from their coerced string values. */
-		var reFlags = /\w*$/;
-		/**
-		* Creates a clone of `regexp`.
-		*
-		* @private
-		* @param {Object} regexp The regexp to clone.
-		* @returns {Object} Returns the cloned regexp.
-		*/
-		function cloneRegExp(regexp) {
-			var result = new regexp.constructor(regexp.source, reFlags.exec(regexp));
-			result.lastIndex = regexp.lastIndex;
-			return result;
-		}
-		module.exports = cloneRegExp;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_cloneSymbol.js
-	var require__cloneSymbol = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Symbol = require__Symbol();
-		/** Used to convert symbols to primitives and strings. */
-		var symbolProto = Symbol ? Symbol.prototype : void 0;
-		var symbolValueOf = symbolProto ? symbolProto.valueOf : void 0;
-		/**
-		* Creates a clone of the `symbol` object.
-		*
-		* @private
-		* @param {Object} symbol The symbol object to clone.
-		* @returns {Object} Returns the cloned symbol object.
-		*/
-		function cloneSymbol(symbol) {
-			return symbolValueOf ? Object(symbolValueOf.call(symbol)) : {};
-		}
-		module.exports = cloneSymbol;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_cloneTypedArray.js
-	var require__cloneTypedArray = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var cloneArrayBuffer = require__cloneArrayBuffer();
-		/**
-		* Creates a clone of `typedArray`.
-		*
-		* @private
-		* @param {Object} typedArray The typed array to clone.
-		* @param {boolean} [isDeep] Specify a deep clone.
-		* @returns {Object} Returns the cloned typed array.
-		*/
-		function cloneTypedArray(typedArray, isDeep) {
-			var buffer = isDeep ? cloneArrayBuffer(typedArray.buffer) : typedArray.buffer;
-			return new typedArray.constructor(buffer, typedArray.byteOffset, typedArray.length);
-		}
-		module.exports = cloneTypedArray;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_initCloneByTag.js
-	var require__initCloneByTag = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var cloneArrayBuffer = require__cloneArrayBuffer();
-		var cloneDataView = require__cloneDataView();
-		var cloneRegExp = require__cloneRegExp();
-		var cloneSymbol = require__cloneSymbol();
-		var cloneTypedArray = require__cloneTypedArray();
-		/** `Object#toString` result references. */
-		var boolTag = "[object Boolean]";
-		var dateTag = "[object Date]";
-		var mapTag = "[object Map]";
-		var numberTag = "[object Number]";
-		var regexpTag = "[object RegExp]";
-		var setTag = "[object Set]";
-		var stringTag = "[object String]";
-		var symbolTag = "[object Symbol]";
-		var arrayBufferTag = "[object ArrayBuffer]";
-		var dataViewTag = "[object DataView]";
-		var float32Tag = "[object Float32Array]";
-		var float64Tag = "[object Float64Array]";
-		var int8Tag = "[object Int8Array]";
-		var int16Tag = "[object Int16Array]";
-		var int32Tag = "[object Int32Array]";
-		var uint8Tag = "[object Uint8Array]";
-		var uint8ClampedTag = "[object Uint8ClampedArray]";
-		var uint16Tag = "[object Uint16Array]";
-		var uint32Tag = "[object Uint32Array]";
-		/**
-		* Initializes an object clone based on its `toStringTag`.
-		*
-		* **Note:** This function only supports cloning values with tags of
-		* `Boolean`, `Date`, `Error`, `Map`, `Number`, `RegExp`, `Set`, or `String`.
-		*
-		* @private
-		* @param {Object} object The object to clone.
-		* @param {string} tag The `toStringTag` of the object to clone.
-		* @param {boolean} [isDeep] Specify a deep clone.
-		* @returns {Object} Returns the initialized clone.
-		*/
-		function initCloneByTag(object, tag, isDeep) {
-			var Ctor = object.constructor;
-			switch (tag) {
-				case arrayBufferTag: return cloneArrayBuffer(object);
-				case boolTag:
-				case dateTag: return new Ctor(+object);
-				case dataViewTag: return cloneDataView(object, isDeep);
-				case float32Tag:
-				case float64Tag:
-				case int8Tag:
-				case int16Tag:
-				case int32Tag:
-				case uint8Tag:
-				case uint8ClampedTag:
-				case uint16Tag:
-				case uint32Tag: return cloneTypedArray(object, isDeep);
-				case mapTag: return new Ctor();
-				case numberTag:
-				case stringTag: return new Ctor(object);
-				case regexpTag: return cloneRegExp(object);
-				case setTag: return new Ctor();
-				case symbolTag: return cloneSymbol(object);
-			}
-		}
-		module.exports = initCloneByTag;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_initCloneObject.js
-	var require__initCloneObject = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseCreate = require__baseCreate();
-		var getPrototype = require__getPrototype();
-		var isPrototype = require__isPrototype();
-		/**
-		* Initializes an object clone.
-		*
-		* @private
-		* @param {Object} object The object to clone.
-		* @returns {Object} Returns the initialized clone.
-		*/
-		function initCloneObject(object) {
-			return typeof object.constructor == "function" && !isPrototype(object) ? baseCreate(getPrototype(object)) : {};
-		}
-		module.exports = initCloneObject;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsMap.js
-	var require__baseIsMap = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getTag = require__getTag();
-		var isObjectLike = require_isObjectLike();
-		/** `Object#toString` result references. */
-		var mapTag = "[object Map]";
-		/**
-		* The base implementation of `_.isMap` without Node.js optimizations.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a map, else `false`.
-		*/
-		function baseIsMap(value) {
-			return isObjectLike(value) && getTag(value) == mapTag;
-		}
-		module.exports = baseIsMap;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isMap.js
-	var require_isMap = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsMap = require__baseIsMap();
-		var baseUnary = require__baseUnary();
-		var nodeUtil = require__nodeUtil();
-		var nodeIsMap = nodeUtil && nodeUtil.isMap;
-		module.exports = nodeIsMap ? baseUnary(nodeIsMap) : baseIsMap;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsSet.js
-	var require__baseIsSet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getTag = require__getTag();
-		var isObjectLike = require_isObjectLike();
-		/** `Object#toString` result references. */
-		var setTag = "[object Set]";
-		/**
-		* The base implementation of `_.isSet` without Node.js optimizations.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a set, else `false`.
-		*/
-		function baseIsSet(value) {
-			return isObjectLike(value) && getTag(value) == setTag;
-		}
-		module.exports = baseIsSet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isSet.js
-	var require_isSet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsSet = require__baseIsSet();
-		var baseUnary = require__baseUnary();
-		var nodeUtil = require__nodeUtil();
-		var nodeIsSet = nodeUtil && nodeUtil.isSet;
-		module.exports = nodeIsSet ? baseUnary(nodeIsSet) : baseIsSet;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseClone.js
-	var require__baseClone = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Stack = require__Stack();
-		var arrayEach = require__arrayEach();
-		var assignValue = require__assignValue();
-		var baseAssign = require__baseAssign();
-		var baseAssignIn = require__baseAssignIn();
-		var cloneBuffer = require__cloneBuffer();
-		var copyArray = require__copyArray();
-		var copySymbols = require__copySymbols();
-		var copySymbolsIn = require__copySymbolsIn();
-		var getAllKeys = require__getAllKeys();
-		var getAllKeysIn = require__getAllKeysIn();
-		var getTag = require__getTag();
-		var initCloneArray = require__initCloneArray();
-		var initCloneByTag = require__initCloneByTag();
-		var initCloneObject = require__initCloneObject();
-		var isArray = require_isArray();
-		var isBuffer = require_isBuffer();
-		var isMap = require_isMap();
-		var isObject = require_isObject();
-		var isSet = require_isSet();
-		var keys = require_keys$2();
-		var keysIn = require_keysIn();
-		/** Used to compose bitmasks for cloning. */
-		var CLONE_DEEP_FLAG = 1;
-		var CLONE_FLAT_FLAG = 2;
-		var CLONE_SYMBOLS_FLAG = 4;
-		/** `Object#toString` result references. */
-		var argsTag = "[object Arguments]";
-		var arrayTag = "[object Array]";
-		var boolTag = "[object Boolean]";
-		var dateTag = "[object Date]";
-		var errorTag = "[object Error]";
-		var funcTag = "[object Function]";
-		var genTag = "[object GeneratorFunction]";
-		var mapTag = "[object Map]";
-		var numberTag = "[object Number]";
-		var objectTag = "[object Object]";
-		var regexpTag = "[object RegExp]";
-		var setTag = "[object Set]";
-		var stringTag = "[object String]";
-		var symbolTag = "[object Symbol]";
-		var weakMapTag = "[object WeakMap]";
-		var arrayBufferTag = "[object ArrayBuffer]";
-		var dataViewTag = "[object DataView]";
-		var float32Tag = "[object Float32Array]";
-		var float64Tag = "[object Float64Array]";
-		var int8Tag = "[object Int8Array]";
-		var int16Tag = "[object Int16Array]";
-		var int32Tag = "[object Int32Array]";
-		var uint8Tag = "[object Uint8Array]";
-		var uint8ClampedTag = "[object Uint8ClampedArray]";
-		var uint16Tag = "[object Uint16Array]";
-		var uint32Tag = "[object Uint32Array]";
-		/** Used to identify `toStringTag` values supported by `_.clone`. */
-		var cloneableTags = {};
-		cloneableTags[argsTag] = cloneableTags[arrayTag] = cloneableTags[arrayBufferTag] = cloneableTags[dataViewTag] = cloneableTags[boolTag] = cloneableTags[dateTag] = cloneableTags[float32Tag] = cloneableTags[float64Tag] = cloneableTags[int8Tag] = cloneableTags[int16Tag] = cloneableTags[int32Tag] = cloneableTags[mapTag] = cloneableTags[numberTag] = cloneableTags[objectTag] = cloneableTags[regexpTag] = cloneableTags[setTag] = cloneableTags[stringTag] = cloneableTags[symbolTag] = cloneableTags[uint8Tag] = cloneableTags[uint8ClampedTag] = cloneableTags[uint16Tag] = cloneableTags[uint32Tag] = true;
-		cloneableTags[errorTag] = cloneableTags[funcTag] = cloneableTags[weakMapTag] = false;
-		/**
-		* The base implementation of `_.clone` and `_.cloneDeep` which tracks
-		* traversed objects.
-		*
-		* @private
-		* @param {*} value The value to clone.
-		* @param {boolean} bitmask The bitmask flags.
-		*  1 - Deep clone
-		*  2 - Flatten inherited properties
-		*  4 - Clone symbols
-		* @param {Function} [customizer] The function to customize cloning.
-		* @param {string} [key] The key of `value`.
-		* @param {Object} [object] The parent object of `value`.
-		* @param {Object} [stack] Tracks traversed objects and their clone counterparts.
-		* @returns {*} Returns the cloned value.
-		*/
-		function baseClone(value, bitmask, customizer, key, object, stack) {
-			var result, isDeep = bitmask & CLONE_DEEP_FLAG, isFlat = bitmask & CLONE_FLAT_FLAG, isFull = bitmask & CLONE_SYMBOLS_FLAG;
-			if (customizer) result = object ? customizer(value, key, object, stack) : customizer(value);
-			if (result !== void 0) return result;
-			if (!isObject(value)) return value;
-			var isArr = isArray(value);
-			if (isArr) {
-				result = initCloneArray(value);
-				if (!isDeep) return copyArray(value, result);
-			} else {
-				var tag = getTag(value), isFunc = tag == funcTag || tag == genTag;
-				if (isBuffer(value)) return cloneBuffer(value, isDeep);
-				if (tag == objectTag || tag == argsTag || isFunc && !object) {
-					result = isFlat || isFunc ? {} : initCloneObject(value);
-					if (!isDeep) return isFlat ? copySymbolsIn(value, baseAssignIn(result, value)) : copySymbols(value, baseAssign(result, value));
-				} else {
-					if (!cloneableTags[tag]) return object ? value : {};
-					result = initCloneByTag(value, tag, isDeep);
-				}
-			}
-			stack || (stack = new Stack());
-			var stacked = stack.get(value);
-			if (stacked) return stacked;
-			stack.set(value, result);
-			if (isSet(value)) value.forEach(function(subValue) {
-				result.add(baseClone(subValue, bitmask, customizer, subValue, value, stack));
-			});
-			else if (isMap(value)) value.forEach(function(subValue, key) {
-				result.set(key, baseClone(subValue, bitmask, customizer, key, value, stack));
-			});
-			var props = isArr ? void 0 : (isFull ? isFlat ? getAllKeysIn : getAllKeys : isFlat ? keysIn : keys)(value);
-			arrayEach(props || value, function(subValue, key) {
-				if (props) {
-					key = subValue;
-					subValue = value[key];
-				}
-				assignValue(result, key, baseClone(subValue, bitmask, customizer, key, value, stack));
-			});
-			return result;
-		}
-		module.exports = baseClone;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseUnset.js
-	var require__baseUnset = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var castPath = require__castPath();
-		var last = require_last();
-		var parent = require__parent();
-		var toKey = require__toKey();
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* The base implementation of `_.unset`.
-		*
-		* @private
-		* @param {Object} object The object to modify.
-		* @param {Array|string} path The property path to unset.
-		* @returns {boolean} Returns `true` if the property is deleted, else `false`.
-		*/
-		function baseUnset(object, path) {
-			path = castPath(path, object);
-			var index = -1, length = path.length;
-			if (!length) return true;
-			while (++index < length) {
-				var key = toKey(path[index]);
-				if (key === "__proto__" && !hasOwnProperty.call(object, "__proto__")) return false;
-				if ((key === "constructor" || key === "prototype") && index < length - 1) return false;
-			}
-			var obj = parent(object, path);
-			return obj == null || delete obj[toKey(last(path))];
-		}
-		module.exports = baseUnset;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isPlainObject.js
-	var require_isPlainObject = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGetTag = require__baseGetTag();
-		var getPrototype = require__getPrototype();
-		var isObjectLike = require_isObjectLike();
-		/** `Object#toString` result references. */
-		var objectTag = "[object Object]";
-		/** Used for built-in method references. */
-		var funcProto = Function.prototype;
-		var objectProto = Object.prototype;
-		/** Used to resolve the decompiled source of functions. */
-		var funcToString = funcProto.toString;
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = objectProto.hasOwnProperty;
-		/** Used to infer the `Object` constructor. */
-		var objectCtorString = funcToString.call(Object);
-		/**
-		* Checks if `value` is a plain object, that is, an object created by the
-		* `Object` constructor or one with a `[[Prototype]]` of `null`.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.8.0
-		* @category Lang
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
-		* @example
-		*
-		* function Foo() {
-		*   this.a = 1;
-		* }
-		*
-		* _.isPlainObject(new Foo);
-		* // => false
-		*
-		* _.isPlainObject([1, 2, 3]);
-		* // => false
-		*
-		* _.isPlainObject({ 'x': 0, 'y': 0 });
-		* // => true
-		*
-		* _.isPlainObject(Object.create(null));
-		* // => true
-		*/
-		function isPlainObject(value) {
-			if (!isObjectLike(value) || baseGetTag(value) != objectTag) return false;
-			var proto = getPrototype(value);
-			if (proto === null) return true;
-			var Ctor = hasOwnProperty.call(proto, "constructor") && proto.constructor;
-			return typeof Ctor == "function" && Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString;
-		}
-		module.exports = isPlainObject;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_customOmitClone.js
-	var require__customOmitClone = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var isPlainObject = require_isPlainObject();
-		/**
-		* Used by `_.omit` to customize its `_.cloneDeep` use to only clone plain
-		* objects.
-		*
-		* @private
-		* @param {*} value The value to inspect.
-		* @param {string} key The key of the property to inspect.
-		* @returns {*} Returns the uncloned value or `undefined` to defer cloning to `_.cloneDeep`.
-		*/
-		function customOmitClone(value) {
-			return isPlainObject(value) ? void 0 : value;
-		}
-		module.exports = customOmitClone;
-	}));
-	//#endregion
-	//#region node_modules/lodash/flatten.js
-	var require_flatten = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseFlatten = require__baseFlatten();
-		/**
-		* Flattens `array` a single level deep.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Array
-		* @param {Array} array The array to flatten.
-		* @returns {Array} Returns the new flattened array.
-		* @example
-		*
-		* _.flatten([1, [2, [3, [4]], 5]]);
-		* // => [1, 2, [3, [4]], 5]
-		*/
-		function flatten(array) {
-			return (array == null ? 0 : array.length) ? baseFlatten(array, 1) : [];
-		}
-		module.exports = flatten;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_flatRest.js
-	var require__flatRest = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var flatten = require_flatten();
-		var overRest = require__overRest();
-		var setToString = require__setToString();
-		/**
-		* A specialized version of `baseRest` which flattens the rest array.
-		*
-		* @private
-		* @param {Function} func The function to apply a rest parameter to.
-		* @returns {Function} Returns the new function.
-		*/
-		function flatRest(func) {
-			return setToString(overRest(func, void 0, flatten), func + "");
-		}
-		module.exports = flatRest;
-	}));
-	//#endregion
-	//#region node_modules/lodash/omit.js
-	var require_omit = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var arrayMap = require__arrayMap();
-		var baseClone = require__baseClone();
-		var baseUnset = require__baseUnset();
-		var castPath = require__castPath();
-		var copyObject = require__copyObject();
-		var customOmitClone = require__customOmitClone();
-		var flatRest = require__flatRest();
-		var getAllKeysIn = require__getAllKeysIn();
-		/** Used to compose bitmasks for cloning. */
-		var CLONE_DEEP_FLAG = 1;
-		var CLONE_FLAT_FLAG = 2;
-		var CLONE_SYMBOLS_FLAG = 4;
-		module.exports = flatRest(function(object, paths) {
-			var result = {};
-			if (object == null) return result;
-			var isDeep = false;
-			paths = arrayMap(paths, function(path) {
-				path = castPath(path, object);
-				isDeep || (isDeep = path.length > 1);
-				return path;
-			});
-			copyObject(object, getAllKeysIn(object), result);
-			if (isDeep) result = baseClone(result, CLONE_DEEP_FLAG | CLONE_FLAT_FLAG | CLONE_SYMBOLS_FLAG, customOmitClone);
-			var length = paths.length;
-			while (length--) baseUnset(result, paths[length]);
-			return result;
+			body: JSON.stringify({ [resourceKey]: data })
 		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/_basePropertyOf.js
-	var require__basePropertyOf = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/**
-		* The base implementation of `_.propertyOf` without support for deep paths.
-		*
-		* @private
-		* @param {Object} object The object to query.
-		* @returns {Function} Returns the new accessor function.
-		*/
-		function basePropertyOf(object) {
-			return function(key) {
-				return object == null ? void 0 : object[key];
-			};
+		if (!res.ok) {
+			let err;
+			try {
+				err = await res.json();
+			} catch (_) {
+				err = res.statusText;
+			}
+			throw err;
 		}
-		module.exports = basePropertyOf;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_escapeHtmlChar.js
-	var require__escapeHtmlChar = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = require__basePropertyOf()({
-			"&": "&amp;",
-			"<": "&lt;",
-			">": "&gt;",
-			"\"": "&quot;",
-			"'": "&#39;"
-		});
-	}));
-	//#endregion
-	//#region node_modules/lodash/escape.js
-	var require_escape = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var escapeHtmlChar = require__escapeHtmlChar();
-		var toString = require_toString();
-		/** Used to match HTML entities and HTML characters. */
-		var reUnescapedHtml = /[&<>"']/g;
-		var reHasUnescapedHtml = RegExp(reUnescapedHtml.source);
-		/**
-		* Converts the characters "&", "<", ">", '"', and "'" in `string` to their
-		* corresponding HTML entities.
-		*
-		* **Note:** No other characters are escaped. To escape additional
-		* characters use a third-party library like [_he_](https://mths.be/he).
-		*
-		* Though the ">" character is escaped for symmetry, characters like
-		* ">" and "/" don't need escaping in HTML and have no special meaning
-		* unless they're part of a tag or unquoted attribute value. See
-		* [Mathias Bynens's article](https://mathiasbynens.be/notes/ambiguous-ampersands)
-		* (under "semi-related fun fact") for more details.
-		*
-		* When working with HTML you should always
-		* [quote attribute values](http://wonko.com/post/html-escaping) to reduce
-		* XSS vectors.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category String
-		* @param {string} [string=''] The string to escape.
-		* @returns {string} Returns the escaped string.
-		* @example
-		*
-		* _.escape('fred, barney, & pebbles');
-		* // => 'fred, barney, &amp; pebbles'
-		*/
-		function escape(string) {
-			string = toString(string);
-			return string && reHasUnescapedHtml.test(string) ? string.replace(reUnescapedHtml, escapeHtmlChar) : string;
-		}
-		module.exports = escape;
-	}));
-	//#endregion
-	//#region node_modules/lodash/forOwn.js
-	var require_forOwn = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseForOwn = require__baseForOwn();
-		var castFunction = require__castFunction();
-		/**
-		* Iterates over own enumerable string keyed properties of an object and
-		* invokes `iteratee` for each property. The iteratee is invoked with three
-		* arguments: (value, key, object). Iteratee functions may exit iteration
-		* early by explicitly returning `false`.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.3.0
-		* @category Object
-		* @param {Object} object The object to iterate over.
-		* @param {Function} [iteratee=_.identity] The function invoked per iteration.
-		* @returns {Object} Returns `object`.
-		* @see _.forOwnRight
-		* @example
-		*
-		* function Foo() {
-		*   this.a = 1;
-		*   this.b = 2;
-		* }
-		*
-		* Foo.prototype.c = 3;
-		*
-		* _.forOwn(new Foo, function(value, key) {
-		*   console.log(key);
-		* });
-		* // => Logs 'a' then 'b' (iteration order is not guaranteed).
-		*/
-		function forOwn(object, iteratee) {
-			return object && baseForOwn(object, castFunction(iteratee));
-		}
-		module.exports = forOwn;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseIsDate.js
-	var require__baseIsDate = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseGetTag = require__baseGetTag();
-		var isObjectLike = require_isObjectLike();
-		/** `Object#toString` result references. */
-		var dateTag = "[object Date]";
-		/**
-		* The base implementation of `_.isDate` without Node.js optimizations.
-		*
-		* @private
-		* @param {*} value The value to check.
-		* @returns {boolean} Returns `true` if `value` is a date object, else `false`.
-		*/
-		function baseIsDate(value) {
-			return isObjectLike(value) && baseGetTag(value) == dateTag;
-		}
-		module.exports = baseIsDate;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isDate.js
-	var require_isDate = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsDate = require__baseIsDate();
-		var baseUnary = require__baseUnary();
-		var nodeUtil = require__nodeUtil();
-		var nodeIsDate = nodeUtil && nodeUtil.isDate;
-		module.exports = nodeIsDate ? baseUnary(nodeIsDate) : baseIsDate;
-	}));
-	//#endregion
-	//#region node_modules/lodash/isEqual.js
-	var require_isEqual = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseIsEqual = require__baseIsEqual();
-		/**
-		* Performs a deep comparison between two values to determine if they are
-		* equivalent.
-		*
-		* **Note:** This method supports comparing arrays, array buffers, booleans,
-		* date objects, error objects, maps, numbers, `Object` objects, regexes,
-		* sets, strings, symbols, and typed arrays. `Object` objects are compared
-		* by their own, not inherited, enumerable properties. Functions and DOM
-		* nodes are compared by strict equality, i.e. `===`.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Lang
-		* @param {*} value The value to compare.
-		* @param {*} other The other value to compare.
-		* @returns {boolean} Returns `true` if the values are equivalent, else `false`.
-		* @example
-		*
-		* var object = { 'a': 1 };
-		* var other = { 'a': 1 };
-		*
-		* _.isEqual(object, other);
-		* // => true
-		*
-		* object === other;
-		* // => false
-		*/
-		function isEqual(value, other) {
-			return baseIsEqual(value, other);
-		}
-		module.exports = isEqual;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseHas.js
-	var require__baseHas = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		/** Used to check objects for own properties. */
-		var hasOwnProperty = Object.prototype.hasOwnProperty;
-		/**
-		* The base implementation of `_.has` without support for deep paths.
-		*
-		* @private
-		* @param {Object} [object] The object to query.
-		* @param {Array|string} key The key to check.
-		* @returns {boolean} Returns `true` if `key` exists, else `false`.
-		*/
-		function baseHas(object, key) {
-			return object != null && hasOwnProperty.call(object, key);
-		}
-		module.exports = baseHas;
-	}));
-	//#endregion
-	//#region node_modules/lodash/has.js
-	var require_has = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseHas = require__baseHas();
-		var hasPath = require__hasPath();
-		/**
-		* Checks if `path` is a direct property of `object`.
-		*
-		* @static
-		* @since 0.1.0
-		* @memberOf _
-		* @category Object
-		* @param {Object} object The object to query.
-		* @param {Array|string} path The path to check.
-		* @returns {boolean} Returns `true` if `path` exists, else `false`.
-		* @example
-		*
-		* var object = { 'a': { 'b': 2 } };
-		* var other = _.create({ 'a': _.create({ 'b': 2 }) });
-		*
-		* _.has(object, 'a');
-		* // => true
-		*
-		* _.has(object, 'a.b');
-		* // => true
-		*
-		* _.has(object, ['a', 'b']);
-		* // => true
-		*
-		* _.has(other, 'a');
-		* // => false
-		*/
-		function has(object, path) {
-			return object != null && hasPath(object, path, baseHas);
-		}
-		module.exports = has;
-	}));
-	//#endregion
-	//#region node_modules/lodash/_createSet.js
-	var require__createSet = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var Set = require__Set();
-		var noop = require_noop();
-		var setToArray = require__setToArray();
-		module.exports = !(Set && 1 / setToArray(new Set([, -0]))[1] == Infinity) ? noop : function(values) {
-			return new Set(values);
-		};
-	}));
-	//#endregion
-	//#region node_modules/lodash/_baseUniq.js
-	var require__baseUniq = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var SetCache = require__SetCache();
-		var arrayIncludes = require__arrayIncludes();
-		var arrayIncludesWith = require__arrayIncludesWith();
-		var cacheHas = require__cacheHas();
-		var createSet = require__createSet();
-		var setToArray = require__setToArray();
-		/** Used as the size to enable large array optimizations. */
-		var LARGE_ARRAY_SIZE = 200;
-		/**
-		* The base implementation of `_.uniqBy` without support for iteratee shorthands.
-		*
-		* @private
-		* @param {Array} array The array to inspect.
-		* @param {Function} [iteratee] The iteratee invoked per element.
-		* @param {Function} [comparator] The comparator invoked per element.
-		* @returns {Array} Returns the new duplicate free array.
-		*/
-		function baseUniq(array, iteratee, comparator) {
-			var index = -1, includes = arrayIncludes, length = array.length, isCommon = true, result = [], seen = result;
-			if (comparator) {
-				isCommon = false;
-				includes = arrayIncludesWith;
-			} else if (length >= LARGE_ARRAY_SIZE) {
-				var set = iteratee ? null : createSet(array);
-				if (set) return setToArray(set);
-				isCommon = false;
-				includes = cacheHas;
-				seen = new SetCache();
-			} else seen = iteratee ? [] : result;
-			outer: while (++index < length) {
-				var value = array[index], computed = iteratee ? iteratee(value) : value;
-				value = comparator || value !== 0 ? value : 0;
-				if (isCommon && computed === computed) {
-					var seenIndex = seen.length;
-					while (seenIndex--) if (seen[seenIndex] === computed) continue outer;
-					if (iteratee) seen.push(computed);
-					result.push(value);
-				} else if (!includes(seen, computed, comparator)) {
-					if (seen !== result) seen.push(computed);
-					result.push(value);
-				}
-			}
-			return result;
-		}
-		module.exports = baseUniq;
-	}));
-	//#endregion
-	//#region node_modules/lodash/union.js
-	var require_union = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseFlatten = require__baseFlatten();
-		var baseRest = require__baseRest();
-		var baseUniq = require__baseUniq();
-		var isArrayLikeObject = require_isArrayLikeObject();
-		module.exports = baseRest(function(arrays) {
-			return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true));
-		});
-	}));
-	//#endregion
-	//#region node_modules/ampersand-state/node_modules/ampersand-events/libs/utils.js
-	var require_utils = /* @__PURE__ */ __commonJSMin(((exports) => {
-		var uniqueId = require_uniqueId();
-		var eventSplitter = /\s+/;
-		exports.triggerEvents = function triggerEvents(events, args) {
-			var ev;
-			var i = -1;
-			var l = events.length;
-			var a1 = args[0];
-			var a2 = args[1];
-			var a3 = args[2];
-			switch (args.length) {
-				case 0:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx);
-					return;
-				case 1:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1);
-					return;
-				case 2:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1, a2);
-					return;
-				case 3:
-					while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1, a2, a3);
-					return;
-				default:
-					while (++i < l) (ev = events[i]).callback.apply(ev.ctx, args);
-					return;
-			}
-		};
-		exports.eventsApi = function eventsApi(obj, action, name, rest) {
-			if (!name) return true;
-			if (typeof name === "object") {
-				for (var key in name) obj[action].apply(obj, [key, name[key]].concat(rest));
-				return false;
-			}
-			if (eventSplitter.test(name)) {
-				var names = name.split(eventSplitter);
-				for (var i = 0, l = names.length; i < l; i++) obj[action].apply(obj, [names[i]].concat(rest));
-				return false;
-			}
-			return true;
-		};
-		exports.createListenMethod = function createListenMethod(implementation) {
-			return function listenMethod(obj, name, callback) {
-				if (!obj) throw new Error("Trying to listenTo event: '" + name + "' but the target object is undefined");
-				var listeningTo = this._listeningTo || (this._listeningTo = {});
-				var id = obj._listenId || (obj._listenId = uniqueId("l"));
-				listeningTo[id] = obj;
-				if (!callback && typeof name === "object") callback = this;
-				if (typeof obj[implementation] !== "function") throw new Error("Trying to listenTo event: '" + name + "' on object: " + obj.toString() + " but it does not have an 'on' method so is unbindable");
-				obj[implementation](name, callback, this);
-				return this;
-			};
-		};
-	}));
-	//#endregion
-	//#region node_modules/ampersand-state/node_modules/ampersand-events/ampersand-events.js
-	var require_ampersand_events = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var runOnce = require_once();
-		var keys = require_keys$2();
-		var isEmpty = require_isEmpty();
-		var assign = require_assign$2();
-		var forEach = require_forEach();
-		var slice = Array.prototype.slice;
-		var utils = require_utils();
-		var Events = {
-			on: function(name, callback, context) {
-				if (!utils.eventsApi(this, "on", name, [callback, context]) || !callback) return this;
-				this._events || (this._events = {});
-				(this._events[name] || (this._events[name] = [])).push({
-					callback,
-					context,
-					ctx: context || this
-				});
-				return this;
-			},
-			once: function(name, callback, context) {
-				if (!utils.eventsApi(this, "once", name, [callback, context]) || !callback) return this;
-				var self = this;
-				var once = runOnce(function() {
-					self.off(name, once);
-					callback.apply(this, arguments);
-				});
-				once._callback = callback;
-				return this.on(name, once, context);
-			},
-			off: function(name, callback, context) {
-				var retain, ev, events, names, i, l, j, k;
-				if (!this._events || !utils.eventsApi(this, "off", name, [callback, context])) return this;
-				if (!name && !callback && !context) {
-					this._events = void 0;
-					return this;
-				}
-				names = name ? [name] : keys(this._events);
-				for (i = 0, l = names.length; i < l; i++) {
-					name = names[i];
-					if (events = this._events[name]) {
-						this._events[name] = retain = [];
-						if (callback || context) for (j = 0, k = events.length; j < k; j++) {
-							ev = events[j];
-							if (callback && callback !== ev.callback && callback !== ev.callback._callback || context && context !== ev.context) retain.push(ev);
-						}
-						if (!retain.length) delete this._events[name];
-					}
-				}
-				return this;
-			},
-			trigger: function(name) {
-				if (!this._events) return this;
-				var args = slice.call(arguments, 1);
-				if (!utils.eventsApi(this, "trigger", name, args)) return this;
-				var events = this._events[name];
-				var allEvents = this._events.all;
-				if (events) utils.triggerEvents(events, args);
-				if (allEvents) utils.triggerEvents(allEvents, arguments);
-				return this;
-			},
-			stopListening: function(obj, name, callback) {
-				var listeningTo = this._listeningTo;
-				if (!listeningTo) return this;
-				var remove = !name && !callback;
-				if (!callback && typeof name === "object") callback = this;
-				if (obj) (listeningTo = {})[obj._listenId] = obj;
-				var self = this;
-				forEach(listeningTo, function(item, id) {
-					item.off(name, callback, self);
-					if (remove || isEmpty(item._events)) delete self._listeningTo[id];
-				});
-				return this;
-			},
-			createEmitter: function(obj) {
-				return assign(obj || {}, Events);
-			},
-			listenTo: utils.createListenMethod("on"),
-			listenToOnce: utils.createListenMethod("once"),
-			listenToAndRun: function(obj, name, callback) {
-				this.listenTo.apply(this, arguments);
-				if (!callback && typeof name === "object") callback = this;
-				callback.apply(this);
-				return this;
-			}
-		};
-		Events.bind = Events.on;
-		Events.unbind = Events.off;
-		Events.removeListener = Events.off;
-		Events.removeAllListeners = Events.off;
-		Events.emit = Events.trigger;
-		module.exports = Events;
-	}));
-	//#endregion
-	//#region node_modules/key-tree-store/key-tree-store.js
-	var require_key_tree_store = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var slice = Array.prototype.slice;
-		function KeyTreeStore(options) {
-			options = options || {};
-			if (typeof options !== "object") throw new TypeError("Options must be an object");
-			var DEFAULT_SEPARATOR = ".";
-			this.storage = {};
-			this.separator = options.separator || DEFAULT_SEPARATOR;
-		}
-		KeyTreeStore.prototype.add = function(keypath, obj) {
-			(this.storage[keypath] || (this.storage[keypath] = [])).push(obj);
-		};
-		KeyTreeStore.prototype.remove = function(obj) {
-			var path, arr;
-			for (path in this.storage) {
-				arr = this.storage[path];
-				arr.some(function(item, index) {
-					if (item === obj) {
-						arr.splice(index, 1);
-						return true;
-					}
-				});
-			}
-		};
-		KeyTreeStore.prototype.get = function(keypath) {
-			var res = [];
-			var key;
-			for (key in this.storage) if (!keypath || keypath === key || key.indexOf(keypath + this.separator) === 0) res = res.concat(this.storage[key]);
-			return res;
-		};
-		KeyTreeStore.prototype.getGrouped = function(keypath) {
-			var res = {};
-			var key;
-			for (key in this.storage) if (!keypath || keypath === key || key.indexOf(keypath + this.separator) === 0) res[key] = slice.call(this.storage[key]);
-			return res;
-		};
-		KeyTreeStore.prototype.getAll = function(keypath) {
-			var res = {};
-			var key;
-			for (key in this.storage) if (keypath === key || key.indexOf(keypath + this.separator) === 0) res[key] = slice.call(this.storage[key]);
-			return res;
-		};
-		KeyTreeStore.prototype.run = function(keypath, context) {
-			var args = slice.call(arguments, 2);
-			this.get(keypath).forEach(function(fn) {
-				fn.apply(context || this, args);
-			});
-		};
-		module.exports = KeyTreeStore;
-	}));
-	//#endregion
-	//#region node_modules/array-next/array-next.js
-	var require_array_next = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		module.exports = function arrayNext(array, currentItem) {
-			var len = array.length;
-			var newIndex = array.indexOf(currentItem) + 1;
-			if (newIndex > len - 1) newIndex = 0;
-			return array[newIndex];
-		};
-	}));
-	//#endregion
-	//#region node_modules/ampersand-state/ampersand-state.js
-	var require_ampersand_state = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var uniqueId = require_uniqueId();
-		var assign = require_assign$2();
-		var cloneObj = function(obj) {
-			return assign({}, obj);
-		};
-		var omit = require_omit();
-		var escape = require_escape();
-		var forOwn = require_forOwn();
-		var includes = require_includes();
-		var isString = require_isString();
-		var isObject = require_isObject();
-		var isDate = require_isDate();
-		var isFunction = require_isFunction();
-		var _isEqual = require_isEqual();
-		var has = require_has();
-		var result = require_result();
-		var union = require_union();
-		var Events = require_ampersand_events();
-		var KeyTree = require_key_tree_store();
-		var arrayNext = require_array_next();
-		var changeRE = /^change:/;
-		var noop = function() {};
-		function Base(attrs, options) {
-			options || (options = {});
-			this.cid || (this.cid = uniqueId("state"));
-			this._events = {};
-			this._values = {};
-			this._eventBubblingHandlerCache = {};
-			this._definition = Object.create(this._definition);
-			if (options.parse) attrs = this.parse(attrs, options);
-			this.parent = options.parent;
-			this.collection = options.collection;
-			this._keyTree = new KeyTree();
-			this._initCollections();
-			this._initChildren();
-			this._cache = {};
-			this._previousAttributes = {};
-			if (attrs) this.set(attrs, assign({
-				silent: true,
-				initial: true
-			}, options));
-			this._changed = {};
-			if (this._derived) this._initDerived();
-			if (options.init !== false) this.initialize.apply(this, arguments);
-		}
-		assign(Base.prototype, Events, {
-			extraProperties: "ignore",
-			idAttribute: "id",
-			namespaceAttribute: "namespace",
-			typeAttribute: "modelType",
-			initialize: function() {
-				return this;
-			},
-			getId: function() {
-				return this[this.idAttribute];
-			},
-			getNamespace: function() {
-				return this[this.namespaceAttribute];
-			},
-			getType: function() {
-				return this[this.typeAttribute];
-			},
-			isNew: function() {
-				return this.getId() == null;
-			},
-			escape: function(attr) {
-				return escape(this.get(attr));
-			},
-			isValid: function(options) {
-				return this._validate({}, assign(options || {}, { validate: true }));
-			},
-			parse: function(resp, options) {
-				return resp;
-			},
-			serialize: function(options) {
-				var attrOpts = assign({ props: true }, options);
-				var res = this.getAttributes(attrOpts, true);
-				var setFromSerializedValue = function(value, key) {
-					res[key] = this[key].serialize();
-				}.bind(this);
-				forOwn(this._children, setFromSerializedValue);
-				forOwn(this._collections, setFromSerializedValue);
-				return res;
-			},
-			set: function(key, value, options) {
-				var self = this;
-				var extraProperties = this.extraProperties;
-				var wasChanging, changeEvents, newType, newVal, def, cast, err, attr, attrs, dataType, silent, unset, currentVal, initial, hasChanged, isEqual, onChange;
-				if (isObject(key) || key === null) {
-					attrs = key;
-					options = value;
-				} else {
-					attrs = {};
-					attrs[key] = value;
-				}
-				options = options || {};
-				if (!this._validate(attrs, options)) return false;
-				unset = options.unset;
-				silent = options.silent;
-				initial = options.initial;
-				wasChanging = this._changing;
-				this._changing = true;
-				changeEvents = [];
-				if (initial) this._previousAttributes = {};
-				else if (!wasChanging) {
-					this._previousAttributes = this.attributes;
-					this._changed = {};
-				}
-				for (var i = 0, keys = Object.keys(attrs), len = keys.length; i < len; i++) {
-					attr = keys[i];
-					newVal = attrs[attr];
-					newType = typeof newVal;
-					currentVal = this._values[attr];
-					def = this._definition[attr];
-					if (!def) {
-						if (this._children[attr] || this._collections[attr]) {
-							if (!isObject(newVal)) newVal = {};
-							this[attr].set(newVal, options);
-							continue;
-						} else if (extraProperties === "ignore") continue;
-						else if (extraProperties === "reject") throw new TypeError("No \"" + attr + "\" property defined on " + (this.type || "this") + " model and extraProperties not set to \"ignore\" or \"allow\"");
-						else if (extraProperties === "allow") def = this._createPropertyDefinition(attr, "any");
-						else if (extraProperties) throw new TypeError("Invalid value for extraProperties: \"" + extraProperties + "\"");
-					}
-					isEqual = this._getCompareForType(def.type);
-					onChange = this._getOnChangeForType(def.type);
-					dataType = this._dataTypes[def.type];
-					if (dataType && dataType.set) {
-						cast = dataType.set(newVal);
-						newVal = cast.val;
-						newType = cast.type;
-					}
-					if (def.test) {
-						err = def.test.call(this, newVal, newType);
-						if (err) throw new TypeError("Property '" + attr + "' failed validation with error: " + err);
-					}
-					if (newVal === void 0 && def.required) throw new TypeError("Required property '" + attr + "' must be of type " + def.type + ". Tried to set " + newVal);
-					if (newVal === null && def.required && !def.allowNull) throw new TypeError("Property '" + attr + "' must be of type " + def.type + " (cannot be null). Tried to set " + newVal);
-					if (def.type && def.type !== "any" && def.type !== newType && newVal !== null && newVal !== void 0) throw new TypeError("Property '" + attr + "' must be of type " + def.type + ". Tried to set " + newVal);
-					if (def.values && !includes(def.values, newVal)) {
-						var defaultValue = result(def, "default");
-						if (unset && defaultValue !== void 0) newVal = defaultValue;
-						else if (!unset || unset && newVal !== void 0) throw new TypeError("Property '" + attr + "' must be one of values: " + def.values.join(", ") + ". Tried to set " + newVal);
-					}
-					hasChanged = initial || !isEqual(currentVal, newVal, attr);
-					if (def.setOnce && currentVal !== void 0 && hasChanged) throw new TypeError("Property '" + attr + "' can only be set once.");
-					if (hasChanged) {
-						onChange(newVal, currentVal, attr);
-						if (!initial) {
-							this._changed[attr] = newVal;
-							this._previousAttributes[attr] = currentVal;
-							if (unset) delete this._values[attr];
-							if (!silent) changeEvents.push({
-								prev: currentVal,
-								val: newVal,
-								key: attr
-							});
-						}
-						if (!unset) this._values[attr] = newVal;
-					} else delete this._changed[attr];
-				}
-				if (changeEvents.length) this._pending = true;
-				changeEvents.forEach(function(change) {
-					self.trigger("change:" + change.key, self, change.val, options);
-				});
-				if (wasChanging) return this;
-				while (this._pending) {
-					this._pending = false;
-					this.trigger("change", this, options);
-				}
-				this._pending = false;
-				this._changing = false;
-				return this;
-			},
-			get: function(attr) {
-				return this[attr];
-			},
-			toggle: function(property) {
-				var def = this._definition[property];
-				if (def.type === "boolean") this[property] = !this[property];
-				else if (def && def.values) this[property] = arrayNext(def.values, this[property]);
-				else throw new TypeError("Can only toggle properties that are type `boolean` or have `values` array.");
-				return this;
-			},
-			previousAttributes: function() {
-				return cloneObj(this._previousAttributes);
-			},
-			hasChanged: function(attr) {
-				if (attr == null) return !!Object.keys(this._changed).length;
-				if (has(this._derived, attr)) return this._derived[attr].depList.some(function(dep) {
-					return this.hasChanged(dep);
-				}, this);
-				return has(this._changed, attr);
-			},
-			changedAttributes: function(diff) {
-				if (!diff) return this.hasChanged() ? cloneObj(this._changed) : false;
-				var val, changed = false;
-				var old = this._changing ? this._previousAttributes : this.attributes;
-				var def, isEqual;
-				for (var attr in diff) {
-					def = this._definition[attr];
-					if (!def) continue;
-					isEqual = this._getCompareForType(def.type);
-					if (isEqual(old[attr], val = diff[attr])) continue;
-					(changed || (changed = {}))[attr] = val;
-				}
-				return changed;
-			},
-			toJSON: function() {
-				return this.serialize();
-			},
-			unset: function(attrs, options) {
-				var self = this;
-				attrs = Array.isArray(attrs) ? attrs : [attrs];
-				attrs.forEach(function(key) {
-					var def = self._definition[key];
-					if (!def) return;
-					var val;
-					if (def.required) {
-						val = result(def, "default");
-						return self.set(key, val, options);
-					} else return self.set(key, val, assign({}, options, { unset: true }));
-				});
-			},
-			clear: function(options) {
-				var self = this;
-				Object.keys(this.attributes).forEach(function(key) {
-					self.unset(key, options);
-				});
-				return this;
-			},
-			previous: function(attr) {
-				if (attr == null || !Object.keys(this._previousAttributes).length) return null;
-				return this._previousAttributes[attr];
-			},
-			_getDefaultForType: function(type) {
-				var dataType = this._dataTypes[type];
-				return dataType && dataType["default"];
-			},
-			_getCompareForType: function(type) {
-				var dataType = this._dataTypes[type];
-				if (dataType && dataType.compare) return dataType.compare.bind(this);
-				return _isEqual;
-			},
-			_getOnChangeForType: function(type) {
-				var dataType = this._dataTypes[type];
-				if (dataType && dataType.onChange) return dataType.onChange.bind(this);
-				return noop;
-			},
-			_validate: function(attrs, options) {
-				if (!options.validate || !this.validate) return true;
-				attrs = assign({}, this.attributes, attrs);
-				var error = this.validationError = this.validate(attrs, options) || null;
-				if (!error) return true;
-				this.trigger("invalid", this, error, assign(options || {}, { validationError: error }));
-				return false;
-			},
-			_createPropertyDefinition: function(name, desc, isSession) {
-				return createPropertyDefinition(this, name, desc, isSession);
-			},
-			_ensureValidType: function(type) {
-				return includes([
-					"string",
-					"number",
-					"boolean",
-					"array",
-					"object",
-					"date",
-					"state",
-					"any"
-				].concat(Object.keys(this._dataTypes)), type) ? type : void 0;
-			},
-			getAttributes: function(options, raw) {
-				options = assign({
-					session: false,
-					props: false,
-					derived: false
-				}, options || {});
-				var res = {};
-				var val, def;
-				for (var item in this._definition) {
-					def = this._definition[item];
-					if (options.session && def.session || options.props && !def.session) {
-						val = raw ? this._values[item] : this[item];
-						if (raw && val && isFunction(val.serialize)) val = val.serialize();
-						if (typeof val === "undefined") val = result(def, "default");
-						if (typeof val !== "undefined") res[item] = val;
-					}
-				}
-				if (options.derived) for (var derivedItem in this._derived) res[derivedItem] = this[derivedItem];
-				return res;
-			},
-			_initDerived: function() {
-				var self = this;
-				forOwn(this._derived, function(value, name) {
-					var def = self._derived[name];
-					def.deps = def.depList;
-					var update = function() {
-						var newVal = def.fn.call(self);
-						if (self._cache[name] !== newVal || !def.cache) {
-							if (def.cache) self._previousAttributes[name] = self._cache[name];
-							self._cache[name] = newVal;
-							self.trigger("change:" + name, self, self._cache[name]);
-						}
-					};
-					def.deps.forEach(function(propString) {
-						self._keyTree.add(propString, update);
-					});
-				});
-				this.on("all", function(eventName) {
-					if (changeRE.test(eventName)) self._keyTree.get(eventName.split(":")[1]).forEach(function(fn) {
-						fn();
-					});
-				}, this);
-			},
-			_getDerivedProperty: function(name, flushCache) {
-				if (this._derived[name].cache) {
-					if (flushCache || !this._cache.hasOwnProperty(name)) this._cache[name] = this._derived[name].fn.apply(this);
-					return this._cache[name];
-				} else return this._derived[name].fn.apply(this);
-			},
-			_initCollections: function() {
-				var coll;
-				if (!this._collections) return;
-				for (coll in this._collections) this._safeSet(coll, new this._collections[coll](null, { parent: this }));
-			},
-			_initChildren: function() {
-				var child;
-				if (!this._children) return;
-				for (child in this._children) {
-					this._safeSet(child, new this._children[child]({}, { parent: this }));
-					this.listenTo(this[child], "all", this._getCachedEventBubblingHandler(child));
-				}
-			},
-			_getCachedEventBubblingHandler: function(propertyName) {
-				if (!this._eventBubblingHandlerCache[propertyName]) this._eventBubblingHandlerCache[propertyName] = function(name, model, newValue) {
-					if (changeRE.test(name)) this.trigger("change:" + propertyName + "." + name.split(":")[1], model, newValue);
-					else if (name === "change") this.trigger("change", this);
-				}.bind(this);
-				return this._eventBubblingHandlerCache[propertyName];
-			},
-			_verifyRequired: function() {
-				var attrs = this.attributes;
-				for (var def in this._definition) if (this._definition[def].required && typeof attrs[def] === "undefined") return false;
-				return true;
-			},
-			_safeSet: function safeSet(property, value) {
-				if (property in this) throw new Error("Encountered namespace collision while setting instance property `" + property + "`");
-				this[property] = value;
-				return this;
-			}
-		});
-		Object.defineProperties(Base.prototype, {
-			attributes: { get: function() {
-				return this.getAttributes({
-					props: true,
-					session: true
-				});
-			} },
-			all: { get: function() {
-				return this.getAttributes({
-					session: true,
-					props: true,
-					derived: true
-				});
-			} },
-			isState: {
-				get: function() {
-					return true;
-				},
-				set: function() {}
-			}
-		});
-		function createPropertyDefinition(object, name, desc, isSession) {
-			var def = object._definition[name] = {};
-			var type, descArray;
-			if (isString(desc)) {
-				type = object._ensureValidType(desc);
-				if (type) def.type = type;
-			} else {
-				if (Array.isArray(desc)) {
-					descArray = desc;
-					desc = {
-						type: descArray[0],
-						required: descArray[1],
-						"default": descArray[2]
-					};
-				}
-				type = object._ensureValidType(desc.type);
-				if (type) def.type = type;
-				if (desc.required) def.required = true;
-				if (desc["default"] && typeof desc["default"] === "object") throw new TypeError("The default value for " + name + " cannot be an object/array, must be a value or a function which returns a value/object/array");
-				def["default"] = desc["default"];
-				def.allowNull = desc.allowNull ? desc.allowNull : false;
-				if (desc.setOnce) def.setOnce = true;
-				if (def.required && def["default"] === void 0 && !def.setOnce) def["default"] = object._getDefaultForType(type);
-				def.test = desc.test;
-				def.values = desc.values;
-			}
-			if (isSession) def.session = true;
-			if (!type) {
-				type = isString(desc) ? desc : desc.type;
-				console.warn("Invalid data type of `" + type + "` for `" + name + "` property. Use one of the default types or define your own");
-			}
-			Object.defineProperty(object, name, {
-				set: function(val) {
-					this.set(name, val);
-				},
-				get: function() {
-					if (!this._values) throw Error("You may be trying to `extend` a state object with \"" + name + "\" which has been defined in `props` on the object being extended");
-					var value = this._values[name];
-					var typeDef = this._dataTypes[def.type];
-					if (typeof value !== "undefined") {
-						if (typeDef && typeDef.get) value = typeDef.get(value);
-						return value;
-					}
-					var defaultValue = result(def, "default");
-					this._values[name] = defaultValue;
-					if (typeof defaultValue !== "undefined") this._getOnChangeForType(def.type)(defaultValue, value, name);
-					return defaultValue;
-				}
-			});
-			return def;
-		}
-		function createDerivedProperty(modelProto, name, definition) {
-			(modelProto._derived[name] = {
-				fn: isFunction(definition) ? definition : definition.fn,
-				cache: definition.cache !== false,
-				depList: definition.deps || []
-			}).depList.forEach(function(dep) {
-				modelProto._deps[dep] = union(modelProto._deps[dep] || [], [name]);
-			});
-			Object.defineProperty(modelProto, name, {
-				get: function() {
-					return this._getDerivedProperty(name);
-				},
-				set: function() {
-					throw new TypeError("`" + name + "` is a derived property, it can't be set directly.");
-				}
-			});
-		}
-		var dataTypes = {
-			string: { "default": function() {
-				return "";
-			} },
-			date: {
-				set: function(newVal) {
-					var newType;
-					if (newVal == null) newType = "object";
-					else if (!isDate(newVal)) {
-						var err = null;
-						var dateVal = new Date(newVal).valueOf();
-						if (isNaN(dateVal)) {
-							dateVal = new Date(parseInt(newVal, 10)).valueOf();
-							if (isNaN(dateVal)) err = true;
-						}
-						newVal = dateVal;
-						newType = "date";
-						if (err) newType = typeof newVal;
-					} else {
-						newType = "date";
-						newVal = newVal.valueOf();
-					}
-					return {
-						val: newVal,
-						type: newType
-					};
-				},
-				get: function(val) {
-					if (val == null) return val;
-					return new Date(val);
-				},
-				"default": function() {
-					return /* @__PURE__ */ new Date();
-				}
-			},
-			array: {
-				set: function(newVal) {
-					return {
-						val: newVal,
-						type: Array.isArray(newVal) ? "array" : typeof newVal
-					};
-				},
-				"default": function() {
-					return [];
-				}
-			},
-			object: {
-				set: function(newVal) {
-					var newType = typeof newVal;
-					if (newType !== "object" && newVal === void 0) {
-						newVal = null;
-						newType = "object";
-					}
-					return {
-						val: newVal,
-						type: newType
-					};
-				},
-				"default": function() {
-					return {};
-				}
-			},
-			state: {
-				set: function(newVal) {
-					if (newVal instanceof Base || newVal && newVal.isState) return {
-						val: newVal,
-						type: "state"
-					};
-					else return {
-						val: newVal,
-						type: typeof newVal
-					};
-				},
-				compare: function(currentVal, newVal) {
-					return currentVal === newVal;
-				},
-				onChange: function(newVal, previousVal, attributeName) {
-					if (previousVal) this.stopListening(previousVal, "all", this._getCachedEventBubblingHandler(attributeName));
-					if (newVal != null) this.listenTo(newVal, "all", this._getCachedEventBubblingHandler(attributeName));
-				}
-			}
-		};
-		function extend(protoProps) {
-			var parent = this;
-			var child;
-			if (protoProps && protoProps.hasOwnProperty("constructor")) child = protoProps.constructor;
-			else child = function() {
-				return parent.apply(this, arguments);
-			};
-			assign(child, parent);
-			var Surrogate = function() {
-				this.constructor = child;
-			};
-			Surrogate.prototype = parent.prototype;
-			child.prototype = new Surrogate();
-			child.prototype._derived = assign({}, parent.prototype._derived);
-			child.prototype._deps = assign({}, parent.prototype._deps);
-			child.prototype._definition = assign({}, parent.prototype._definition);
-			child.prototype._collections = assign({}, parent.prototype._collections);
-			child.prototype._children = assign({}, parent.prototype._children);
-			child.prototype._dataTypes = assign({}, parent.prototype._dataTypes || dataTypes);
-			if (protoProps) {
-				var omitFromExtend = [
-					"dataTypes",
-					"props",
-					"session",
-					"derived",
-					"collections",
-					"children"
-				];
-				for (var i = 0; i < arguments.length; i++) {
-					var def = arguments[i];
-					if (def.dataTypes) forOwn(def.dataTypes, function(def, name) {
-						child.prototype._dataTypes[name] = def;
-					});
-					if (def.props) forOwn(def.props, function(def, name) {
-						createPropertyDefinition(child.prototype, name, def);
-					});
-					if (def.session) forOwn(def.session, function(def, name) {
-						createPropertyDefinition(child.prototype, name, def, true);
-					});
-					if (def.derived) forOwn(def.derived, function(def, name) {
-						createDerivedProperty(child.prototype, name, def);
-					});
-					if (def.collections) forOwn(def.collections, function(constructor, name) {
-						child.prototype._collections[name] = constructor;
-					});
-					if (def.children) forOwn(def.children, function(constructor, name) {
-						child.prototype._children[name] = constructor;
-					});
-					assign(child.prototype, omit(def, omitFromExtend));
-				}
-			}
-			child.__super__ = parent.prototype;
-			return child;
-		}
-		Base.extend = extend;
-		module.exports = Base;
-	}));
-	//#endregion
-	//#region node_modules/lodash/clone.js
-	var require_clone = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var baseClone = require__baseClone();
-		/** Used to compose bitmasks for cloning. */
-		var CLONE_SYMBOLS_FLAG = 4;
-		/**
-		* Creates a shallow clone of `value`.
-		*
-		* **Note:** This method is loosely based on the
-		* [structured clone algorithm](https://mdn.io/Structured_clone_algorithm)
-		* and supports cloning arrays, array buffers, booleans, date objects, maps,
-		* numbers, `Object` objects, regexes, sets, strings, symbols, and typed
-		* arrays. The own enumerable properties of `arguments` objects are cloned
-		* as plain objects. An empty object is returned for uncloneable values such
-		* as error objects, functions, DOM nodes, and WeakMaps.
-		*
-		* @static
-		* @memberOf _
-		* @since 0.1.0
-		* @category Lang
-		* @param {*} value The value to clone.
-		* @returns {*} Returns the cloned value.
-		* @see _.cloneDeep
-		* @example
-		*
-		* var objects = [{ 'a': 1 }, { 'b': 2 }];
-		*
-		* var shallow = _.clone(objects);
-		* console.log(shallow[0] === objects[0]);
-		* // => true
-		*/
-		function clone(value) {
-			return baseClone(value, CLONE_SYMBOLS_FLAG);
-		}
-		module.exports = clone;
-	}));
-	//#endregion
-	//#region node_modules/ampersand-model/ampersand-model.js
-	var require_ampersand_model = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var State = require_ampersand_state();
-		var sync = require_ampersand_sync_browser();
-		var assign = require_assign$2();
-		var isObject = require_isObject();
-		var clone = require_clone();
-		var result = require_result();
-		var urlError = function() {
-			throw new Error("A \"url\" property or function must be specified");
-		};
-		var wrapError = function(model, options) {
-			var error = options.error;
-			options.error = function(resp) {
-				if (error) error(model, resp, options);
-				model.trigger("error", model, resp, options);
-			};
-		};
-		module.exports = State.extend({
-			save: function(key, val, options) {
-				var attrs, method;
-				if (key == null || typeof key === "object") {
-					attrs = key;
-					options = val;
-				} else (attrs = {})[key] = val;
-				options = assign({ validate: true }, options);
-				if (attrs && !options.wait) {
-					if (!this.set(attrs, options)) return false;
-				} else if (!this._validate(attrs, options)) return false;
-				if (options.parse === void 0) options.parse = true;
-				var model = this;
-				var success = options.success;
-				options.success = function(resp) {
-					var serverAttrs = model.parse(resp, options);
-					if (options.wait) serverAttrs = assign(attrs || {}, serverAttrs);
-					if (isObject(serverAttrs) && !model.set(serverAttrs, options)) return false;
-					if (success) success(model, resp, options);
-					model.trigger("sync", model, resp, options);
-				};
-				wrapError(this, options);
-				method = this.isNew() ? "create" : options.patch ? "patch" : "update";
-				if (method === "patch") options.attrs = attrs;
-				if (options.wait && method !== "patch") options.attrs = assign(model.serialize(), attrs);
-				var sync = this.sync(method, this, options);
-				options.xhr = sync;
-				return sync;
-			},
-			fetch: function(options) {
-				options = options ? clone(options) : {};
-				if (options.parse === void 0) options.parse = true;
-				var model = this;
-				var success = options.success;
-				options.success = function(resp) {
-					if (!model.set(model.parse(resp, options), options)) return false;
-					if (success) success(model, resp, options);
-					model.trigger("sync", model, resp, options);
-				};
-				wrapError(this, options);
-				var sync = this.sync("read", this, options);
-				options.xhr = sync;
-				return sync;
-			},
-			destroy: function(options) {
-				options = options ? clone(options) : {};
-				var model = this;
-				var success = options.success;
-				var destroy = function() {
-					model.trigger("destroy", model, model.collection, options);
-				};
-				options.success = function(resp) {
-					if (options.wait || model.isNew()) destroy();
-					if (success) success(model, resp, options);
-					if (!model.isNew()) model.trigger("sync", model, resp, options);
-				};
-				if (this.isNew()) {
-					options.success();
-					return false;
-				}
-				wrapError(this, options);
-				var sync = this.sync("delete", this, options);
-				options.xhr = sync;
-				if (!options.wait) destroy();
-				return sync;
-			},
-			sync: function() {
-				return sync.apply(this, arguments);
-			},
-			url: function() {
-				var base = result(this, "urlRoot") || result(this.collection, "url") || urlError();
-				if (this.isNew()) return base;
-				return base + (base.charAt(base.length - 1) === "/" ? "" : "/") + encodeURIComponent(this.getId());
-			}
-		});
-	}));
-	//#endregion
-	//#region app/javascript/models/shared/rails-resource-mixin.js
-	var import_rails_csrf_token$4, rails_resource_mixin_default;
-	var init_rails_resource_mixin = __esmMin((() => {
-		import_rails_csrf_token$4 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
-		rails_resource_mixin_default = { ajaxConfig: { headers: {
-			Accept: "application/json",
-			"X-CSRF-Token": (0, import_rails_csrf_token$4.default)()
-		} } };
-	}));
-	//#endregion
-	//#region app/javascript/models/shared/app-resource.js
-	var import_ampersand_model, import_xhr$4, import_rails_csrf_token$3, customDataTypes, app_resource_default;
-	var init_app_resource = __esmMin((() => {
-		init_lodash();
-		import_ampersand_model = /* @__PURE__ */ __toESM(require_ampersand_model());
-		import_xhr$4 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$3 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
-		init_rails_resource_mixin();
-		customDataTypes = { trilean: {
-			compare: function(a, b) {
-				return a === b;
-			},
-			set: function(newVal) {
-				if (includes([
-					true,
-					false,
-					"mixed"
-				], newVal)) return {
-					val: newVal,
-					type: "trilean"
-				};
-				else return {
-					val: newVal,
-					type: `'${newVal}' (${typeof newVal})`
-				};
-			}
-		} };
-		app_resource_default = import_ampersand_model.default.extend(rails_resource_mixin_default, {
-			type: "AppResource",
-			idAttribute: "url",
-			typeAttribute: "type",
-			dataTypes: customDataTypes,
-			props: {
-				url: "string",
-				uuid: "string"
-			},
-			save: function(config) {
-				return import_ampersand_model.default.prototype.save.call(this, {}, defaults$1({}, config, { wait: true }));
-			},
-			merge: function(prop, data) {
-				return this.set(prop, merge(this.get(prop), data));
-			},
-			dump: function() {
-				return import_ampersand_model.default.prototype.serialize.call(this, arguments);
-			},
-			_runRequest: function(req, callback) {
-				return (0, import_xhr$4.default)({
-					method: req.method,
-					url: req.url,
-					body: req.body,
-					beforeSend: req.beforeSend,
-					headers: {
-						Accept: "application/json",
-						"X-CSRF-Token": (0, import_rails_csrf_token$3.default)()
-					}
-				}, function(err, res, body) {
-					return callback(err, res, (() => {
-						try {
-							return JSON.parse(body);
-						} catch (e) {}
-					})() || body);
-				});
-			}
-		});
-	}));
-	//#endregion
-	//#region app/javascript/models/shared/resource-permissions.js
-	var resource_permissions_default;
-	var init_resource_permissions = __esmMin((() => {
-		init_app_resource();
-		resource_permissions_default = app_resource_default.extend({
-			type: "ResourcePermissions",
-			props: {
-				permission_types: ["array"],
-				responsible: ["object"],
-				current_user: ["object"],
-				current_user_permissions: ["array"],
-				can_edit: ["boolean"]
-			},
-			initialize: function() {
-				app_resource_default.prototype.initialize.apply(this, arguments);
-				return [
-					this.user_permissions,
-					this.group_permissions,
-					this.api_client_permissions
-				].map((child) => {
-					if ((child != null ? child.on : void 0) != null) return this.listenTo(child, "change add remove reset", () => this.trigger("change"));
-				});
-			}
-		});
-	}));
-	//#endregion
-	//#region app/javascript/models/person.js
-	var person_default;
-	var init_person = __esmMin((() => {
-		init_app_resource();
-		person_default = app_resource_default.extend({
-			type: "Person",
-			props: { name: ["string"] }
-		});
-	}));
-	//#endregion
-	//#region app/javascript/models/user.js
-	var user_default;
-	var init_user = __esmMin((() => {
-		init_app_resource();
-		init_person();
-		user_default = app_resource_default.extend({
-			type: "User",
-			props: {
-				name: "string",
-				resource_type: "string"
-			},
-			children: { person: person_default }
-		});
-	}));
-	//#endregion
-	//#region app/javascript/models/group.js
-	var group_default;
-	var init_group = __esmMin((() => {
-		init_app_resource();
-		group_default = app_resource_default.extend({
-			type: "Group",
-			extraProperties: "allow",
-			props: { name: ["string"] }
-		});
-	}));
-	//#endregion
-	//#region app/javascript/models/api-client.js
-	var api_client_default;
-	var init_api_client = __esmMin((() => {
-		init_app_resource();
-		api_client_default = app_resource_default.extend({
-			type: "ApiClient",
-			props: {
-				login: ["string"],
-				description: ["string"],
-				tooltip_text: {
-					type: "string",
-					default: "",
-					allowNull: true
-				}
-			}
-		});
-	}));
-	//#endregion
-	//#region app/javascript/models/collection/permissions.js
-	var import_ampersand_rest_collection$2, CollectionPublicPermission, CollectionUserPermissions, CollectionGroupPermissions, CollectionApiClientPermissions, permissions_default$1;
-	var init_permissions$1 = __esmMin((() => {
-		import_ampersand_rest_collection$2 = /* @__PURE__ */ __toESM(require_ampersand_rest_collection());
-		init_app_resource();
-		init_resource_permissions();
-		init_user();
-		init_group();
-		init_api_client();
-		CollectionPublicPermission = app_resource_default.extend({
-			type: "CollectionPublicPermission",
-			props: {
-				get_metadata_and_previews: ["trilean"],
-				get_full_size: ["trilean"],
-				tooltip_text: {
-					type: "string",
-					default: "",
-					allowNull: true
-				}
-			}
-		});
-		CollectionUserPermissions = import_ampersand_rest_collection$2.default.extend({ model: app_resource_default.extend({
-			type: "CollectionUserPermission",
-			children: { subject: user_default },
-			props: {
-				get_metadata_and_previews: [
-					"trilean",
-					false,
-					false
-				],
-				get_full_size: [
-					"trilean",
-					false,
-					false
-				],
-				edit_metadata_and_relations: [
-					"trilean",
-					false,
-					false
-				],
-				edit_permissions: [
-					"trilean",
-					false,
-					false
-				]
-			}
-		}) });
-		CollectionGroupPermissions = import_ampersand_rest_collection$2.default.extend({
-			type: "CollectionGroupPermissions",
-			model: app_resource_default.extend({
-				type: "CollectionGroupPermission",
-				children: { subject: group_default },
-				props: {
-					get_metadata_and_previews: [
-						"trilean",
-						false,
-						false
-					],
-					get_full_size: [
-						"trilean",
-						false,
-						false
-					],
-					edit_metadata_and_relations: [
-						"trilean",
-						false,
-						false
-					]
-				}
-			})
-		});
-		CollectionApiClientPermissions = import_ampersand_rest_collection$2.default.extend({
-			type: "CollectionApiClientPermissions",
-			model: app_resource_default.extend({
-				type: "CollectionApiClientPermission",
-				children: { subject: api_client_default },
-				props: {
-					get_metadata_and_previews: [
-						"trilean",
-						false,
-						false
-					],
-					get_full_size: [
-						"trilean",
-						false,
-						false
-					]
-				}
-			})
-		});
-		permissions_default$1 = resource_permissions_default.extend({
-			type: "CollectionPermissions",
-			children: { public_permission: CollectionPublicPermission },
-			collections: {
-				user_permissions: CollectionUserPermissions,
-				group_permissions: CollectionGroupPermissions,
-				api_client_permissions: CollectionApiClientPermissions
-			},
-			serialize: function(data) {
-				return { collection: app_resource_default.prototype.serialize.call(this, data) };
-			}
-		});
-	}));
-	//#endregion
-	//#region app/javascript/models/media-entry/permissions.js
-	var import_ampersand_rest_collection$1, MediaEntryPublicPermission, MediaEntryUserPermissions, MediaEntryGroupPermissions, MediaEntryApiClientPermissions, permissions_default;
+		return res.json();
+	}
+	var import_rails_csrf_token$7, PERMISSION_KEYS;
 	var init_permissions = __esmMin((() => {
-		import_ampersand_rest_collection$1 = /* @__PURE__ */ __toESM(require_ampersand_rest_collection());
-		init_app_resource();
-		init_resource_permissions();
-		init_user();
-		init_group();
-		init_api_client();
-		MediaEntryPublicPermission = app_resource_default.extend({
-			type: "MediaEntryPublicPermission",
-			props: {
-				get_metadata_and_previews: ["trilean"],
-				get_full_size: ["trilean"],
-				tooltip_text: {
-					type: "string",
-					default: "",
-					allowNull: true
-				}
-			}
-		});
-		MediaEntryUserPermissions = import_ampersand_rest_collection$1.default.extend({ model: app_resource_default.extend({
-			type: "MediaEntryUserPermission",
-			children: { subject: user_default },
-			props: {
-				get_metadata_and_previews: [
-					"trilean",
-					false,
-					false
-				],
-				get_full_size: [
-					"trilean",
-					false,
-					false
-				],
-				edit_metadata: [
-					"trilean",
-					false,
-					false
-				],
-				edit_permissions: [
-					"trilean",
-					false,
-					false
-				]
-			}
-		}) });
-		MediaEntryGroupPermissions = import_ampersand_rest_collection$1.default.extend({
-			type: "MediaEntryGroupPermissions",
-			model: app_resource_default.extend({
-				type: "MediaEntryGroupPermission",
-				children: { subject: group_default },
-				props: {
-					get_metadata_and_previews: [
-						"trilean",
-						false,
-						false
-					],
-					get_full_size: [
-						"trilean",
-						false,
-						false
-					],
-					edit_metadata: [
-						"trilean",
-						false,
-						false
-					]
-				}
-			})
-		});
-		MediaEntryApiClientPermissions = import_ampersand_rest_collection$1.default.extend({
-			type: "MediaEntryApiClientPermissions",
-			model: app_resource_default.extend({
-				type: "MediaEntryApiClientPermission",
-				children: { subject: api_client_default },
-				props: {
-					get_metadata_and_previews: [
-						"trilean",
-						false,
-						false
-					],
-					get_full_size: [
-						"trilean",
-						false,
-						false
-					]
-				}
-			})
-		});
-		permissions_default = resource_permissions_default.extend({
-			type: "MediaEntryPermissions",
-			children: { public_permission: MediaEntryPublicPermission },
-			collections: {
-				user_permissions: MediaEntryUserPermissions,
-				group_permissions: MediaEntryGroupPermissions,
-				api_client_permissions: MediaEntryApiClientPermissions
-			},
-			serialize: function(data) {
-				return { media_entry: app_resource_default.prototype.serialize.call(this, data) };
-			}
-		});
+		init_lodash();
+		import_rails_csrf_token$7 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		PERMISSION_KEYS = [
+			"public_permission",
+			"user_permissions",
+			"group_permissions",
+			"api_client_permissions"
+		];
 	}));
 	//#endregion
 	//#region app/javascript/lib/router.js
@@ -89967,139 +82049,147 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/react/templates/ResourcePermissions.jsx
-	var import_react$78, import_url$13, ResourcePermissions, PermissionsOverview;
+	function ResourcePermissions({ get, optionals, authToken }) {
+		const [permissions, setPermissions] = (0, import_react$78.useState)(get);
+		const [editing, setEditing] = (0, import_react$78.useState)(false);
+		const [transferModal, setTransferModal] = (0, import_react$78.useState)(false);
+		const routerRef = (0, import_react$78.useRef)(null);
+		const editingRef = (0, import_react$78.useRef)(false);
+		const isLoadingRef = (0, import_react$78.useRef)(false);
+		editingRef.current = editing;
+		const mutation = useMutation({
+			mutationFn: () => savePermissions(permissions),
+			onSuccess: (saved) => {
+				editingRef.current = false;
+				isLoadingRef.current = false;
+				routerRef.current.goTo(saved && saved.url || get.url);
+				setEditing(false);
+			},
+			onError: (err) => {
+				alert((() => {
+					try {
+						return JSON.stringify(err, null, 2);
+					} catch (_) {
+						return String(err);
+					}
+				})());
+			}
+		});
+		isLoadingRef.current = mutation.isLoading;
+		(0, import_react$78.useEffect)(() => {
+			const router = (init_router(), __toCommonJS(router_exports)).default;
+			const editUrl = import_url$13.parse(get.edit_permissions_url).pathname;
+			const stopListen = router.listen((location) => {
+				setEditing(location.pathname === editUrl);
+			});
+			const stopConfirming = router.confirmNavigation({ check: () => editingRef.current || isLoadingRef.current });
+			routerRef.current = router;
+			router.start();
+			return () => {
+				stopListen();
+				stopConfirming();
+			};
+		}, []);
+		const onStartEdit = (event) => {
+			if (event) event.preventDefault();
+			routerRef.current.goTo(event.target.href);
+		};
+		const onCancelEdit = () => {};
+		const onSubmitForm = (event) => {
+			event.preventDefault();
+			mutation.mutate();
+		};
+		const onPermissionChange = (collectionKey, subjectUuid, permissionTypes, name, value) => {
+			setPermissions((prev) => ({
+				...prev,
+				[collectionKey]: prev[collectionKey].map((p) => p.subject && p.subject.uuid === subjectUuid ? applyPermissionCascade(p, permissionTypes, name, value) : p)
+			}));
+		};
+		const onPublicPermissionChange = (permissionTypes, name, value) => {
+			setPermissions((prev) => ({
+				...prev,
+				public_permission: applyPermissionCascade(prev.public_permission, permissionTypes, name, value)
+			}));
+		};
+		const onAddSubject = (collectionKey, subject) => {
+			setPermissions((prev) => {
+				const list = prev[collectionKey];
+				if (list.some((p) => p.subject && p.subject.uuid === subject.uuid)) return prev;
+				const newPerm = { subject };
+				const template = list[0] || {};
+				const applicable = Object.keys(template).filter((k) => k !== "subject" && k !== "tooltip_text");
+				(applicable.length > 0 ? applicable : prev.permission_types || []).forEach((pt) => {
+					newPerm[pt] = false;
+				});
+				return {
+					...prev,
+					[collectionKey]: [...list, newPerm]
+				};
+			});
+		};
+		const onRemoveSubject = (collectionKey, subjectUuid) => {
+			setPermissions((prev) => ({
+				...prev,
+				[collectionKey]: prev[collectionKey].filter((p) => !(p.subject && p.subject.uuid === subjectUuid))
+			}));
+		};
+		const GroupIndex = ({ subject }) => /*#__PURE__*/ import_react$78.createElement("span", {
+			className: "text",
+			title: subject.detailed_name
+		}, subject.can_show ? /*#__PURE__*/ import_react$78.createElement("a", { href: subject.url }, subject.detailed_name) : subject.detailed_name);
+		return /*#__PURE__*/ import_react$78.createElement("div", null, transferModal && /*#__PURE__*/ import_react$78.createElement(Modal, { widthInPixel: 800 }, /*#__PURE__*/ import_react$78.createElement(EditTransferResponsibility, {
+			authToken,
+			batch: false,
+			resourceType: get.type,
+			singleResourceUrl: get.resource_url,
+			singleResourceFallbackUrl: get.fallback_url,
+			singleResourcePermissionsUrl: get.permissions_url,
+			singleResourceActionUrl: get.update_transfer_responsibility_url,
+			batchResourceIds: null,
+			responsible: get.responsible,
+			onClose: () => setTransferModal(false),
+			currentUser: get.current_user
+		})), /*#__PURE__*/ import_react$78.createElement(ResourcePermissionsForm, {
+			get: permissions,
+			editing,
+			saving: mutation.isLoading,
+			optionals,
+			onEdit: onStartEdit,
+			onSubmit: onSubmitForm,
+			onCancel: onCancelEdit,
+			editUrl: get.edit_permissions_url,
+			decos: { Groups: GroupIndex },
+			onPermissionChange,
+			onPublicPermissionChange,
+			onAddSubject,
+			onRemoveSubject
+		}, /*#__PURE__*/ import_react$78.createElement(PermissionsOverview, {
+			get: permissions,
+			openTransferModal: get.can_transfer ? () => setTransferModal(true) : void 0
+		}), /*#__PURE__*/ import_react$78.createElement("hr", { className: "separator light mvl" }), /*#__PURE__*/ import_react$78.createElement("h3", { className: "title-l mbs" }, I18nTranslate("permissions_table_title"))));
+	}
+	function PermissionsOverview({ get, openTransferModal }) {
+		return /*#__PURE__*/ import_react$78.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$78.createElement("h3", { className: "title-l mbl" }, I18nTranslate("permissions_responsibility_title")), /*#__PURE__*/ import_react$78.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$78.createElement("div", { className: "ui-info-box" }, /*#__PURE__*/ import_react$78.createElement("h2", {
+			className: "ui-rights-user-title mbs",
+			style: { fontWeight: "700" }
+		}, I18nTranslate("permissions_responsible_user_and_responsibility_group_title")), /*#__PURE__*/ import_react$78.createElement("p", { className: "ui-info-box-intro prm" }, I18nTranslate("permissions_responsible_user_and_responsibility_group_msg")), /*#__PURE__*/ import_react$78.createElement("ul", { className: "inline" }, /*#__PURE__*/ import_react$78.createElement("li", { className: "person-tag" }, get.responsible.name)), openTransferModal && /*#__PURE__*/ import_react$78.createElement("ul", { className: "inline mts" }, /*#__PURE__*/ import_react$78.createElement("a", {
+			className: "button",
+			onClick: openTransferModal
+		}, I18nTranslate("permissions_transfer_responsibility_link"))))), get.current_user && /*#__PURE__*/ import_react$78.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$78.createElement("h2", {
+			className: "ui-rights-user-title mbs",
+			style: { fontWeight: "700" }
+		}, I18nTranslate("permissions_overview_yours_title")), /*#__PURE__*/ import_react$78.createElement("p", { className: "ui-info-box-intro" }, I18nTranslate("permissions_overview_yours_msg_start"), get.current_user.name, I18nTranslate("permissions_overview_yours_msg_end")), /*#__PURE__*/ import_react$78.createElement("ul", { className: "inline" }, get.current_user_permissions.map((p) => /*#__PURE__*/ import_react$78.createElement("li", { key: p }, I18nTranslate(`permission_name_${p}`))))));
+	}
+	var import_react$78, import_url$13;
 	var init_ResourcePermissions = __esmMin((() => {
 		import_react$78 = /* @__PURE__ */ __toESM(require_react$1());
+		init_lib();
 		init_i18n_translate();
 		import_url$13 = /* @__PURE__ */ __toESM(require_url$1());
 		init_ResourcePermissionsForm();
 		init_Modal();
 		init_EditTransferResponsibility();
-		init_permissions$1();
 		init_permissions();
-		ResourcePermissions = class extends import_react$78.Component {
-			constructor(props) {
-				super(props);
-				this.state = {
-					editing: false,
-					saving: false,
-					transferModal: false
-				};
-				this._toBeCalledOnUnmount = [];
-				const model = (() => {
-					if (this.props.get.isState) return this.props.get;
-					else return new (this.props.get.type === "Collection" ? permissions_default$1 : permissions_default)(this.props.get);
-				})();
-				[
-					"add",
-					"remove",
-					"reset",
-					"change"
-				].forEach((eventName) => {
-					return model.on(eventName, () => this.forceUpdate());
-				});
-				this.state.model = model;
-			}
-			_showTransferModal = (show) => {
-				return this.setState({ transferModal: show });
-			};
-			componentWillUnmount() {
-				return this._toBeCalledOnUnmount.forEach((fn) => fn());
-			}
-			componentDidMount() {
-				const router = (init_router(), __toCommonJS(router_exports)).default;
-				const editUrl = import_url$13.parse(this.props.get.edit_permissions_url).pathname;
-				const stopListen = router.listen((location) => {
-					return this.setState({ editing: location.pathname === editUrl });
-				});
-				this._toBeCalledOnUnmount.push(stopListen);
-				const stopConfirming = router.confirmNavigation({ check: () => this.state.editing || this.state.saving });
-				this._toBeCalledOnUnmount.push(stopConfirming);
-				this._router = router;
-				return router.start();
-			}
-			_onStartEdit = (event) => {
-				if (event != null) event.preventDefault();
-				return this._router.goTo(event.target.href);
-			};
-			_onCancelEdit = () => {};
-			_onSubmitForm = (event) => {
-				event.preventDefault();
-				this.setState({ saving: true });
-				return this.state.model.save({
-					success: (model) => {
-						this.setState({
-							saving: false,
-							editing: false
-						});
-						return this._router.goTo(model.url);
-					},
-					error: (_, err) => {
-						this.setState({
-							saving: false,
-							editing: true
-						});
-						alert(`Error! ${(() => {
-							try {
-								return JSON.stringify((err != null ? err.body : void 0) || err, 0, 2);
-							} catch (e) {}
-						})() || ""}`);
-						return console.error(err);
-					}
-				});
-			};
-			render() {
-				let transferClick;
-				const { optionals } = this.props;
-				const { model, editing, saving } = this.state;
-				const GroupIndex = ({ subject }) => /*#__PURE__*/ import_react$78.createElement("span", {
-					className: "text",
-					title: subject.detailed_name
-				}, subject.can_show ? /*#__PURE__*/ import_react$78.createElement("a", { href: subject.url }, subject.detailed_name) : subject.detailed_name);
-				if (this.props.get.can_transfer) transferClick = (event) => this._showTransferModal(true, event);
-				return /*#__PURE__*/ import_react$78.createElement("div", null, this.state.transferModal ? /*#__PURE__*/ import_react$78.createElement(Modal, { widthInPixel: 800 }, /*#__PURE__*/ import_react$78.createElement(EditTransferResponsibility, {
-					authToken: this.props.authToken,
-					batch: false,
-					resourceType: this.props.get.type,
-					singleResourceUrl: this.props.get.resource_url,
-					singleResourceFallbackUrl: this.props.get.fallback_url,
-					singleResourcePermissionsUrl: this.props.get.permissions_url,
-					singleResourceActionUrl: this.props.get.update_transfer_responsibility_url,
-					batchResourceIds: null,
-					responsible: this.props.get.responsible,
-					onClose: (event) => this._showTransferModal(false, event),
-					currentUser: this.props.get.current_user
-				})) : void 0, /*#__PURE__*/ import_react$78.createElement(ResourcePermissionsForm, {
-					get: model,
-					editing,
-					saving,
-					optionals,
-					onEdit: this._onStartEdit,
-					onSubmit: this._onSubmitForm,
-					onCancel: this._onCancelEdit,
-					editUrl: this.props.get.edit_permissions_url,
-					decos: { Groups: GroupIndex }
-				}, /*#__PURE__*/ import_react$78.createElement(PermissionsOverview, {
-					get: model,
-					openTransferModal: transferClick
-				}), /*#__PURE__*/ import_react$78.createElement("hr", { className: "separator light mvl" }), /*#__PURE__*/ import_react$78.createElement("h3", { className: "title-l mbs" }, I18nTranslate("permissions_table_title"))));
-			}
-		};
-		PermissionsOverview = class extends import_react$78.Component {
-			render() {
-				const { get } = this.props;
-				return /*#__PURE__*/ import_react$78.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$78.createElement("h3", { className: "title-l mbl" }, I18nTranslate("permissions_responsibility_title")), /*#__PURE__*/ import_react$78.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$78.createElement("div", { className: "ui-info-box" }, /*#__PURE__*/ import_react$78.createElement("h2", {
-					className: "ui-rights-user-title mbs",
-					style: { fontWeight: "700" }
-				}, I18nTranslate("permissions_responsible_user_and_responsibility_group_title")), /*#__PURE__*/ import_react$78.createElement("p", { className: "ui-info-box-intro prm" }, I18nTranslate("permissions_responsible_user_and_responsibility_group_msg")), /*#__PURE__*/ import_react$78.createElement("ul", { className: "inline" }, /*#__PURE__*/ import_react$78.createElement("li", { className: "person-tag" }, get.responsible.name)), this.props.openTransferModal ? /*#__PURE__*/ import_react$78.createElement("ul", { className: "inline mts" }, /*#__PURE__*/ import_react$78.createElement("a", {
-					className: "button",
-					onClick: this.props.openTransferModal
-				}, I18nTranslate("permissions_transfer_responsibility_link"))) : void 0)), get.current_user ? /*#__PURE__*/ import_react$78.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$78.createElement("h2", {
-					className: "ui-rights-user-title mbs",
-					style: { fontWeight: "700" }
-				}, I18nTranslate("permissions_overview_yours_title")), /*#__PURE__*/ import_react$78.createElement("p", { className: "ui-info-box-intro" }, I18nTranslate("permissions_overview_yours_msg_start"), get.current_user.name, I18nTranslate("permissions_overview_yours_msg_end")), /*#__PURE__*/ import_react$78.createElement("ul", { className: "inline" }, get.current_user_permissions.map((p) => /*#__PURE__*/ import_react$78.createElement("li", { key: p }, I18nTranslate(`permission_name_${p}`))))) : void 0);
-			}
-		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/MediaEntryPermissions.jsx
@@ -91119,14 +83209,14 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/AsyncDashboardSection.jsx
-	var import_react$59, import_prop_types$10, import_rails_csrf_token$2, AsyncDashboardSection;
+	var import_react$59, import_prop_types$10, import_rails_csrf_token$6, AsyncDashboardSection;
 	var init_AsyncDashboardSection = __esmMin((() => {
 		init_present();
 		init_lodash();
 		import_react$59 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$10 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_app_request();
-		import_rails_csrf_token$2 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$6 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_SuperBoxDashboard();
 		init_Icon();
 		init_Preloader();
@@ -91179,7 +83269,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					if (err || res.statusCode >= 400) return callback(err || data);
 					const props = this.props.initial_props;
 					props.get = this.props.json_path ? get$1(data, this.props.json_path) : data;
-					props.authToken = (0, import_rails_csrf_token$2.default)();
+					props.authToken = (0, import_rails_csrf_token$6.default)();
 					return callback(null, props);
 				});
 			};
@@ -92740,13 +84830,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#region app/javascript/react/views/My/Notifications.jsx
 	var Notifications_exports = /* @__PURE__ */ __exportAll({ default: () => MyNotifications });
 	function sendAcknowledge(id, acknowledged, onSuccess) {
-		(0, import_xhr$3.default)({
+		(0, import_xhr$1.default)({
 			url: `/my/notifications/${id}`,
 			method: "PATCH",
 			body: JSON.stringify({ acknowledged }),
 			headers: {
 				"Content-Type": "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token$1.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$5.default)()
 			}
 		}, (err, res) => {
 			if (res.statusCode === 200) onSuccess();
@@ -92754,7 +84844,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		});
 	}
 	function sendAcknowledgeAll(caseLabel, delegationId, onSuccess) {
-		(0, import_xhr$3.default)({
+		(0, import_xhr$1.default)({
 			url: `/my/notifications/acknowledge_all`,
 			method: "POST",
 			body: JSON.stringify({
@@ -92763,7 +84853,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}),
 			headers: {
 				"Content-Type": "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token$1.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$5.default)()
 			}
 		}, (err, res) => {
 			if (res.statusCode === 200) onSuccess();
@@ -92771,27 +84861,27 @@ There are no contexts defined. Please configure them in the admin tool.\
 		});
 	}
 	function sendAcknowledgeMultiple(ids, onSuccess) {
-		(0, import_xhr$3.default)({
+		(0, import_xhr$1.default)({
 			url: `/my/notifications/acknowledge_multiple`,
 			method: "POST",
 			body: JSON.stringify({ notification_ids: ids }),
 			headers: {
 				"Content-Type": "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token$1.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$5.default)()
 			}
 		}, (err, res) => {
 			if (res.statusCode === 200) onSuccess();
 			else alert("Error");
 		});
 	}
-	var import_xhr$3, import_react$38, import_moment$5, import_rails_csrf_token$1, import_classnames$5, import_ui_components$8, MyNotifications;
+	var import_xhr$1, import_react$38, import_moment$5, import_rails_csrf_token$5, import_classnames$5, import_ui_components$8, MyNotifications;
 	var init_Notifications = __esmMin((() => {
-		import_xhr$3 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$1 = /* @__PURE__ */ __toESM(require_xhr());
 		import_react$38 = /* @__PURE__ */ __toESM(require_react$1());
 		import_moment$5 = /* @__PURE__ */ __toESM(require_moment$1());
 		init_current_locale();
 		init_i18n_translate();
-		import_rails_csrf_token$1 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$5 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_interpolate_split();
 		import_classnames$5 = /* @__PURE__ */ __toESM(require_classnames());
 		import_ui_components$8 = /* @__PURE__ */ __toESM(require_ui_components());
@@ -92968,13 +85058,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 				email_frequency: emailFrequency
 			}));
 		}
-		(0, import_xhr$2.default)({
+		(0, import_xhr.default)({
 			url,
 			method: "PATCH",
 			body: JSON.stringify(data),
 			headers: {
 				"Content-Type": "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$4.default)()
 			}
 		}, (err, res) => {
 			if (res.statusCode === 200) onSuccess();
@@ -92985,13 +85075,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 		event.preventDefault();
 		event.returnValue = "";
 	}
-	var import_xhr$2, import_react$37, import_rails_csrf_token, MySettings;
+	var import_xhr, import_react$37, import_rails_csrf_token$4, MySettings;
 	var init_Settings = __esmMin((() => {
-		import_xhr$2 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr = /* @__PURE__ */ __toESM(require_xhr());
 		import_react$37 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_interpolate_split();
-		import_rails_csrf_token = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$4 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		MySettings = class extends import_react$37.Component {
 			constructor(props) {
 				super(props);
@@ -98433,10 +90523,14 @@ There are no contexts defined. Please configure them in the admin tool.\
 						duplicatorConfiguration: configuration
 					});
 				}
-				const added = this.props.appCollection.add(files.map((file) => ({ uploading: {
-					file,
-					copyMdFrom
-				} })));
+				const added = this.props.appCollection.add(files.map((file) => ({
+					uploading: {
+						file,
+						copyMdFrom
+					},
+					title: file.name,
+					image_url: URL.createObjectURL(file)
+				})));
 				this.setState({ uploading: true });
 				return added.map((model) => UploadQueue.push(model, (err) => {
 					if (err) return console.error("Uploader failed!", model, err);
@@ -99500,178 +91594,110 @@ There are no contexts defined. Please configure them in the admin tool.\
 		};
 	}));
 	//#endregion
-	//#region app/javascript/models/shared/batch-resource-permissions-factory.js
-	function batch_resource_permissions_factory_default(name, baseModel) {
-		return baseModel.extend({
-			type: name,
-			props: {
-				batchResourceIds: "array",
-				batchResources: "array",
-				return_to: "string"
-			},
-			initialize: function(props) {
-				baseModel.prototype.initialize.apply(this, arguments);
-				const allPerms = props.batch_permissions;
-				const permissionTypes = uniq(flatten(map(allPerms, "permission_types")));
-				PERMISSIONS.forEach((...args) => {
-					const [permissionName, modelType] = Array.from(args[0]);
-					const batchPerms = map(groupBy(flatten(map(allPerms, permissionName)), "subject.uuid"), function(perms) {
-						return assignIn(Object.fromEntries(map(permissionTypes, function(key) {
-							const hasPermsForAll = allPerms.length === perms.length;
-							const allEqual = every(map(perms, key), (b) => b === head(perms)[key]);
-							return [key, !hasPermsForAll || !allEqual ? "mixed" : head(perms)[key]];
-						})), {
-							subject: head(perms).subject,
-							tooltip_text: permissionName === "public_permission" ? head(perms).tooltip_text : null
-						});
-					});
-					return this[permissionName].set(modelType === "model" ? batchPerms[0] : batchPerms);
-				});
-				this.set("permission_types", permissionTypes);
-				this.set("batchResources", props.batch_resources.resources);
-				this.set("batchResourceIds", map(props.batch_permissions, "uuid"));
-			},
-			serialize: function() {
-				const data = app_resource_default.prototype.serialize.call(this);
-				const permissionSubjects = map(PERMISSIONS, head);
-				return {
-					resource_ids: this.batchResourceIds,
-					permissions: Object.fromEntries(map(permissionSubjects, function(key) {
-						let list = key === "public_permission" ? [data[key]] : data[key];
-						list = compact(map(list, function(permissions) {
-							const perms = mapValues(permissions, function(permission) {
-								if (permission === "mixed") return;
-								else return permission;
-							});
-							if (key === "public_permission") return perms;
-							else return assignIn(perms, { subject: permissions.subject.uuid });
-						}));
-						return [key, key === "public_permission" ? head(list) : list];
-					}))
-				};
-			}
-		});
-	}
-	var PERMISSIONS;
-	var init_batch_resource_permissions_factory = __esmMin((() => {
-		init_lodash();
-		init_app_resource();
-		PERMISSIONS = [
-			["public_permission", "model"],
-			["user_permissions", "collection"],
-			["group_permissions", "collection"],
-			["api_client_permissions", "collection"]
-		];
-	}));
-	//#endregion
-	//#region app/javascript/models/batch/batch-media-entry-permissions.js
-	var batch_media_entry_permissions_default;
-	var init_batch_media_entry_permissions = __esmMin((() => {
-		init_permissions();
-		init_batch_resource_permissions_factory();
-		batch_media_entry_permissions_default = batch_resource_permissions_factory_default("BatchMediaEntryPermissions", permissions_default);
-	}));
-	//#endregion
-	//#region app/javascript/models/batch/batch-collection-permissions.js
-	var batch_collection_permissions_default;
-	var init_batch_collection_permissions = __esmMin((() => {
-		init_permissions$1();
-		init_batch_resource_permissions_factory();
-		batch_collection_permissions_default = batch_resource_permissions_factory_default("BatchCollectionPermissions", permissions_default$1);
-	}));
-	//#endregion
 	//#region app/javascript/react/views/batch/BatchResourcePermissions.jsx
 	var BatchResourcePermissions_exports = /* @__PURE__ */ __exportAll({ default: () => BatchResourcePermissions });
-	var import_react$16, import_prop_types, import_xhr$1, BatchResourcePermissions;
+	function BatchResourcePermissions({ get, authToken }) {
+		const [permissions, setPermissions] = (0, import_react$16.useState)(() => buildBatchPermissionsState(get));
+		const mutation = useMutation({
+			mutationFn: () => saveBatchPermissions(permissions, get.actions.save, get.actions.cancel.url),
+			onSuccess: (body) => {
+				if (body && body.forward_url) window.location = body.forward_url;
+				else alert("Error: no forward_url in response");
+			},
+			onError: (err, _, statusCode) => {
+				alert(`Error ${statusCode || ""}!`);
+				console.error(err);
+			}
+		});
+		const onSubmit = (event) => {
+			event.preventDefault();
+			mutation.mutate();
+		};
+		const onCancel = (event) => {
+			event.preventDefault();
+			window.location = get.actions.cancel.url;
+		};
+		const onPermissionChange = (collectionKey, subjectUuid, permissionTypes, name, value) => {
+			setPermissions((prev) => ({
+				...prev,
+				[collectionKey]: prev[collectionKey].map((p) => p.subject && p.subject.uuid === subjectUuid ? applyPermissionCascade(p, permissionTypes, name, value) : p)
+			}));
+		};
+		const onPublicPermissionChange = (permissionTypes, name, value) => {
+			setPermissions((prev) => ({
+				...prev,
+				public_permission: applyPermissionCascade(prev.public_permission, permissionTypes, name, value)
+			}));
+		};
+		const onAddSubject = (collectionKey, subject) => {
+			setPermissions((prev) => {
+				const list = prev[collectionKey];
+				if (list.some((p) => p.subject && p.subject.uuid === subject.uuid)) return prev;
+				const newPerm = { subject };
+				const template = list[0] || {};
+				const applicable = Object.keys(template).filter((k) => k !== "subject" && k !== "tooltip_text");
+				(applicable.length > 0 ? applicable : prev.permission_types).forEach((pt) => {
+					newPerm[pt] = false;
+				});
+				return {
+					...prev,
+					[collectionKey]: [...list, newPerm]
+				};
+			});
+		};
+		const onRemoveSubject = (collectionKey, subjectUuid) => {
+			setPermissions((prev) => ({
+				...prev,
+				[collectionKey]: prev[collectionKey].filter((p) => !(p.subject && p.subject.uuid === subjectUuid))
+			}));
+		};
+		const pageTitle = t$6("permissions_batch_title_pre") + get.batch_length + t$6("permissions_batch_title_post");
+		return /*#__PURE__*/ import_react$16.createElement(PageContent, null, /*#__PURE__*/ import_react$16.createElement(PageContentHeader, {
+			icon: "pen",
+			title: pageTitle
+		}), /*#__PURE__*/ import_react$16.createElement(ResourcesBatchBox, {
+			batchCount: get.batch_length,
+			resources: get.batch_resources.resources,
+			authToken
+		}), /*#__PURE__*/ import_react$16.createElement(TabContent, null, /*#__PURE__*/ import_react$16.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, mutation.isLoading && !permissions ? /*#__PURE__*/ import_react$16.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$16.createElement(ResourcePermissionsForm, {
+			editing: true,
+			get: permissions,
+			saving: mutation.isLoading,
+			onSubmit,
+			onCancel,
+			onPermissionChange,
+			onPublicPermissionChange,
+			onAddSubject,
+			onRemoveSubject
+		}))));
+	}
+	var import_react$16, import_prop_types;
 	var init_BatchResourcePermissions = __esmMin((() => {
-		init_lodash();
 		import_react$16 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types = /* @__PURE__ */ __toESM(require_prop_types());
+		init_lib();
 		init_ui();
-		init_batch_media_entry_permissions();
-		init_batch_collection_permissions();
 		init_ResourcePermissionsForm();
 		init_Preloader();
 		init_ResourcesBatchBox();
 		init_TabContent();
 		init_PageContent();
 		init_PageContentHeader();
-		import_xhr$1 = /* @__PURE__ */ __toESM(require_xhr());
-		BatchResourcePermissions = class extends import_react$16.Component {
-			static propTypes = {
-				get: import_prop_types.default.shape({
-					batch_permissions: import_prop_types.default.array.isRequired,
-					batch_resources: import_prop_types.default.shape({ resources: import_prop_types.default.array.isRequired }),
-					actions: import_prop_types.default.shape({
-						save: import_prop_types.default.shape({
-							url: import_prop_types.default.string.isRequired,
-							method: import_prop_types.default.string.isRequired
-						}),
-						cancel: import_prop_types.default.shape({ url: import_prop_types.default.string.isRequired })
-					})
-				}).isRequired,
-				authToken: import_prop_types.default.string.isRequired
-			};
-			constructor(props) {
-				super(props);
-				const Model = (() => {
-					switch (props.get.batch_permissions[0].type) {
-						case "MediaEntry": return batch_media_entry_permissions_default;
-						case "Collection": return batch_collection_permissions_default;
-						default: throw new Error("Invalid type!");
-					}
-				})();
-				this.state = {
-					isClient: false,
-					model: new Model(props.get)
-				};
-			}
-			componentDidMount() {
-				this.state.model.on("change", () => this.forceUpdate());
-				return this.setState({ isClient: true });
-			}
-			componentWillUnmount() {
-				return this.state.model.off();
-			}
-			_loadingMessage() {
-				return /*#__PURE__*/ import_react$16.createElement("div", null, /*#__PURE__*/ import_react$16.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$16.createElement("div", { className: "error ui-alert mbm" }, t$6("app_warning_jsonly"))), /*#__PURE__*/ import_react$16.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$16.createElement(Preloader$1, null)));
-			}
-			_onSubmit = (event) => {
-				event.preventDefault();
-				return (0, import_xhr$1.default)({
-					url: this.props.get.actions.save.url,
-					method: this.props.get.actions.save.method,
-					json: merge(this.state.model.serialize(), { return_to: this.props.get.actions.cancel.url }),
-					headers: { "X-CSRF-Token": this.props.authToken }
-				}, function(err, res, body) {
-					if (err || res.statusCode > 400 || !body.forward_url) {
-						alert(`Error ${res.statusCode}!`);
-						return console.error(err || body);
-					} else return window.location = body.forward_url;
-				});
-			};
-			_onCancel = (event) => {
-				event.preventDefault();
-				return window.location = this.props.get.actions.cancel.url;
-			};
-			render() {
-				const props = this.props;
-				const batchResources = props.get.batch_resources.resources;
-				const pageTitle = t$6("permissions_batch_title_pre") + props.get.batch_length + t$6("permissions_batch_title_post");
-				return /*#__PURE__*/ import_react$16.createElement(PageContent, null, /*#__PURE__*/ import_react$16.createElement(PageContentHeader, {
-					icon: "pen",
-					title: pageTitle
-				}), /*#__PURE__*/ import_react$16.createElement(ResourcesBatchBox, {
-					batchCount: this.props.get.batch_length,
-					resources: batchResources,
-					authToken: props.authToken
-				}), /*#__PURE__*/ import_react$16.createElement(TabContent, null, /*#__PURE__*/ import_react$16.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, !this.state.isClient ? this._loadingMessage() : /*#__PURE__*/ import_react$16.createElement(ResourcePermissionsForm, {
-					editing: true,
-					get: this.state.model,
-					onSubmit: this._onSubmit,
-					onCancel: this._onCancel
-				}))));
-			}
+		init_permissions();
+		BatchResourcePermissions.propTypes = {
+			get: import_prop_types.default.shape({
+				batch_permissions: import_prop_types.default.array.isRequired,
+				batch_length: import_prop_types.default.number,
+				batch_resources: import_prop_types.default.shape({ resources: import_prop_types.default.array.isRequired }),
+				actions: import_prop_types.default.shape({
+					save: import_prop_types.default.shape({
+						url: import_prop_types.default.string.isRequired,
+						method: import_prop_types.default.string.isRequired
+					}),
+					cancel: import_prop_types.default.shape({ url: import_prop_types.default.string.isRequired })
+				})
+			}).isRequired,
+			authToken: import_prop_types.default.string.isRequired
 		};
 	}));
 	//#endregion
@@ -100871,13 +92897,491 @@ There are no contexts defined. Please configure them in the admin tool.\
 		};
 	}));
 	//#endregion
+	//#region app/javascript/models/shared/base-model.js
+	function propDefault(def) {
+		if (Array.isArray(def)) return def[2];
+		if (def && typeof def === "object") return def.default;
+	}
+	function isDerivedKey(instance, key) {
+		let proto = Object.getPrototypeOf(instance);
+		while (proto && proto !== Object.prototype) {
+			const desc = Object.getOwnPropertyDescriptor(proto, key);
+			if (desc) return !!desc.get;
+			proto = Object.getPrototypeOf(proto);
+		}
+		return false;
+	}
+	function mergeConfigs(parentConfig = {}, mixins, ownConfig) {
+		const merged = {
+			props: { ...parentConfig.props || {} },
+			session: { ...parentConfig.session || {} },
+			children: { ...parentConfig.children || {} },
+			collections: { ...parentConfig.collections || {} },
+			derived: { ...parentConfig.derived || {} },
+			extraProperties: parentConfig.extraProperties,
+			initialize: parentConfig.initialize,
+			type: ownConfig.type !== void 0 ? ownConfig.type : parentConfig.type
+		};
+		mixins.forEach((mixin) => {
+			if (mixin.props) Object.assign(merged.props, mixin.props);
+			if (mixin.session) Object.assign(merged.session, mixin.session);
+			if (mixin.children) Object.assign(merged.children, mixin.children);
+			if (mixin.collections) Object.assign(merged.collections, mixin.collections);
+			if (mixin.derived) Object.assign(merged.derived, mixin.derived);
+			if (mixin.initialize) merged.initialize = mixin.initialize;
+			if (mixin.extraProperties) merged.extraProperties = mixin.extraProperties;
+		});
+		if (ownConfig.props) Object.assign(merged.props, ownConfig.props);
+		if (ownConfig.session) Object.assign(merged.session, ownConfig.session);
+		if (ownConfig.children) Object.assign(merged.children, ownConfig.children);
+		if (ownConfig.collections) Object.assign(merged.collections, ownConfig.collections);
+		if (ownConfig.derived) Object.assign(merged.derived, ownConfig.derived);
+		if (ownConfig.initialize) merged.initialize = ownConfig.initialize;
+		if (ownConfig.extraProperties) merged.extraProperties = ownConfig.extraProperties;
+		return merged;
+	}
+	var import_rails_csrf_token$3, SKIP_METHOD_KEYS$1, BaseModel;
+	var init_base_model = __esmMin((() => {
+		import_rails_csrf_token$3 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		SKIP_METHOD_KEYS$1 = /* @__PURE__ */ new Set([
+			.../* @__PURE__ */ new Set([
+				"props",
+				"session",
+				"children",
+				"collections",
+				"derived",
+				"initialize"
+			]),
+			"type",
+			"urlRoot",
+			"idAttribute",
+			"extraProperties",
+			"dataTypes",
+			"typeAttribute",
+			"mainIndex",
+			"indexes",
+			"ajaxConfig"
+		]);
+		BaseModel = class BaseModel {
+			constructor(data = {}) {
+				this._listeners = {};
+				this._listenedTo = [];
+				this._initFromConfig(data);
+			}
+			_initFromConfig(data) {
+				const config = this.constructor._config || {};
+				const allProps = {
+					...config.props || {},
+					...config.session || {}
+				};
+				if (config.type !== void 0) this.type = config.type;
+				Object.entries(allProps).forEach(([key, def]) => {
+					this[key] = key in data ? data[key] : propDefault(def);
+				});
+				Object.entries(config.children || {}).forEach(([key, ChildClass]) => {
+					this[key] = data[key] != null ? new ChildClass(data[key]) : null;
+				});
+				Object.entries(config.collections || {}).forEach(([key, CollClass]) => {
+					const coll = new CollClass(data[key] || []);
+					coll.parent = this;
+					this[key] = coll;
+				});
+				if (config.extraProperties === "allow") {
+					const handled = /* @__PURE__ */ new Set([
+						...Object.keys(allProps),
+						...Object.keys(config.children || {}),
+						...Object.keys(config.collections || {}),
+						...Object.keys(config.derived || {})
+					]);
+					Object.entries(data).forEach(([key, val]) => {
+						if (!handled.has(key)) this[key] = val;
+					});
+				}
+				if (config.initialize) config.initialize.call(this, data);
+			}
+			on(event, fn) {
+				(this._listeners[event] = this._listeners[event] || []).push(fn);
+				return this;
+			}
+			off(event, fn) {
+				if (!event) {
+					this._listeners = {};
+					return this;
+				}
+				if (!fn) {
+					this._listeners[event] = [];
+					return this;
+				}
+				this._listeners[event] = (this._listeners[event] || []).filter((f) => f !== fn);
+				return this;
+			}
+			trigger(event, ...args) {
+				const list = this._listeners[event];
+				if (list) list.slice().forEach((fn) => fn(...args));
+				return this;
+			}
+			listenTo(other, event, fn) {
+				other.on(event, fn);
+				this._listenedTo.push({
+					other,
+					event,
+					fn
+				});
+				return this;
+			}
+			stopListening(other) {
+				this._listenedTo = this._listenedTo.filter(({ other: o, event, fn }) => {
+					if (!other || o === other) {
+						o.off(event, fn);
+						return false;
+					}
+					return true;
+				});
+			}
+			set(keyOrObj, val) {
+				if (keyOrObj && typeof keyOrObj === "object") {
+					Object.entries(keyOrObj).forEach(([k, v]) => this.set(k, v));
+					return this;
+				}
+				if (isDerivedKey(this, keyOrObj)) return this;
+				this[keyOrObj] = val;
+				this.trigger("change");
+				return this;
+			}
+			get(key) {
+				return this[key];
+			}
+			merge(prop, data) {
+				return this.set(prop, Object.assign({}, this[prop], data));
+			}
+			unset(key) {
+				this[key] = void 0;
+				this.trigger("change");
+				return this;
+			}
+			_applyData(data) {
+				const config = this.constructor._config || {};
+				const allProps = {
+					...config.props || {},
+					...config.session || {}
+				};
+				Object.entries(data).forEach(([key, val]) => {
+					if (key in allProps) this[key] = val;
+					else if (config.children && key in config.children) this[key] = val != null ? new config.children[key](val) : null;
+					else if (config.collections && key in config.collections) {
+						const coll = new config.collections[key](val || []);
+						coll.parent = this;
+						this[key] = coll;
+					} else if (config.extraProperties === "allow" && !isDerivedKey(this, key)) this[key] = val;
+				});
+			}
+			serialize() {
+				const config = this.constructor._config || {};
+				const result = {};
+				Object.keys(config.props || {}).forEach((key) => {
+					result[key] = this[key];
+				});
+				Object.keys(config.children || {}).forEach((key) => {
+					const child = this[key];
+					result[key] = child && child.serialize ? child.serialize() : child;
+				});
+				Object.keys(config.collections || {}).forEach((key) => {
+					const coll = this[key];
+					result[key] = coll && coll.serialize ? coll.serialize() : coll || [];
+				});
+				return result;
+			}
+			dump() {
+				return this.serialize();
+			}
+			_runRequest(req, callback) {
+				const { method = "GET", url, body, json, headers: extra = {} } = req;
+				const isFormData = typeof FormData !== "undefined" && body instanceof FormData;
+				const headers = {
+					Accept: "application/json",
+					"X-CSRF-Token": (0, import_rails_csrf_token$3.default)(),
+					...extra
+				};
+				if (!isFormData) headers["Content-Type"] = "application/json";
+				fetch(url, {
+					method,
+					headers,
+					body: body !== void 0 ? body : json !== void 0 ? JSON.stringify(json) : void 0
+				}).then(async (res) => {
+					let data;
+					try {
+						data = await res.json();
+					} catch (_) {
+						data = null;
+					}
+					callback(null, { statusCode: res.status }, data);
+				}).catch((err) => callback(err, null, null));
+			}
+			save(config = {}) {
+				this._runRequest({
+					method: "PUT",
+					url: this.url,
+					json: this.serialize()
+				}, (err, res, data) => {
+					if (err || res.statusCode >= 400) {
+						if (config.error) config.error(this, err || data);
+					} else {
+						if (data && typeof data === "object") this._applyData(data);
+						if (config.success) config.success(this);
+					}
+				});
+			}
+			fetch(config = {}) {
+				this._runRequest({
+					method: "GET",
+					url: this.url
+				}, (err, res, data) => {
+					if (err || res.statusCode >= 400) {
+						if (config.error) config.error(this, err || data);
+					} else {
+						if (data && typeof data === "object") this._applyData(data);
+						if (config.success) config.success(this);
+					}
+				});
+			}
+			destroy(config = {}) {
+				this._runRequest({
+					method: "DELETE",
+					url: this.url
+				}, (err, res, data) => {
+					if (err || res.statusCode >= 400) {
+						if (config.error) config.error(this, err || data);
+					} else if (config.success) config.success(this);
+				});
+			}
+			static extend(...args) {
+				const ownConfig = args[args.length - 1] || {};
+				const mixins = args.slice(0, -1);
+				const Parent = this;
+				const merged = mergeConfigs(Parent._config || {}, mixins, ownConfig);
+				class Extended extends Parent {}
+				Extended._config = merged;
+				mixins.forEach((mixin) => {
+					Object.entries(mixin).forEach(([key, val]) => {
+						if (!SKIP_METHOD_KEYS$1.has(key) && typeof val === "function") Extended.prototype[key] = val;
+					});
+				});
+				Object.entries(ownConfig).forEach(([key, val]) => {
+					if (!SKIP_METHOD_KEYS$1.has(key)) Extended.prototype[key] = val;
+				});
+				Object.entries(merged.derived || {}).forEach(([key, { fn }]) => {
+					Object.defineProperty(Extended.prototype, key, {
+						get: fn,
+						enumerable: true,
+						configurable: true
+					});
+				});
+				Extended.extend = BaseModel.extend.bind(Extended);
+				return Extended;
+			}
+		};
+	}));
+	//#endregion
+	//#region app/javascript/models/shared/base-collection.js
+	var import_rails_csrf_token$2, SKIP_METHOD_KEYS, BaseCollection;
+	var init_base_collection = __esmMin((() => {
+		import_rails_csrf_token$2 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		init_base_model();
+		SKIP_METHOD_KEYS = /* @__PURE__ */ new Set([
+			"type",
+			"model",
+			"isModel",
+			"parse",
+			"initialize",
+			"mainIndex",
+			"indexes",
+			"ajaxConfig"
+		]);
+		BaseCollection = class BaseCollection {
+			constructor(data = []) {
+				this._listeners = {};
+				this._listenedTo = [];
+				this.models = [];
+				this.isCollection = true;
+				const config = this.constructor._config || {};
+				const raw = Array.isArray(data) ? data : [];
+				const parsed = config.parse ? config.parse.call(this, data) : raw;
+				if (config.initialize) config.initialize.call(this, data);
+				if (parsed && parsed.length) this._setModels(parsed);
+			}
+			_createModel(attrs) {
+				if (!attrs) return attrs;
+				const modelFn = (this.constructor._config || {}).model;
+				if (!modelFn) return attrs;
+				if (modelFn.prototype instanceof BaseModel) return new modelFn(attrs);
+				return modelFn.call(this, attrs, {});
+			}
+			_setModels(arr) {
+				this.models = arr.map((d) => {
+					if (d instanceof BaseModel) return d;
+					return this._createModel(d);
+				});
+			}
+			on(event, fn) {
+				(this._listeners[event] = this._listeners[event] || []).push(fn);
+				return this;
+			}
+			off(event, fn) {
+				if (!event) {
+					this._listeners = {};
+					return this;
+				}
+				if (!fn) {
+					this._listeners[event] = [];
+					return this;
+				}
+				this._listeners[event] = (this._listeners[event] || []).filter((f) => f !== fn);
+				return this;
+			}
+			trigger(event, ...args) {
+				const list = this._listeners[event];
+				if (list) list.slice().forEach((fn) => fn(...args));
+				return this;
+			}
+			listenTo(other, event, fn) {
+				other.on(event, fn);
+				this._listenedTo.push({
+					other,
+					event,
+					fn
+				});
+				return this;
+			}
+			get length() {
+				return this.models.length;
+			}
+			map(fn) {
+				return this.models.map(fn);
+			}
+			filter(fn) {
+				return this.models.filter(fn);
+			}
+			find(fn) {
+				return this.models.find(fn);
+			}
+			some(fn) {
+				return this.models.some(fn);
+			}
+			every(fn) {
+				return this.models.every(fn);
+			}
+			forEach(fn) {
+				return this.models.forEach(fn);
+			}
+			get(id) {
+				return this.models.find((m) => m.url === id || m.uuid === id);
+			}
+			has(id) {
+				return !!this.get(id);
+			}
+			add(attrsOrArray) {
+				(Array.isArray(attrsOrArray) ? attrsOrArray : [attrsOrArray]).forEach((attrs) => {
+					const model = this._createModel(attrs);
+					this.models.push(model);
+					this.trigger("add", model);
+				});
+				this.trigger("change");
+				return this;
+			}
+			remove(model) {
+				const idx = this.models.indexOf(model);
+				if (idx >= 0) {
+					this.models.splice(idx, 1);
+					this.trigger("remove", model);
+					this.trigger("change");
+				}
+				return this;
+			}
+			set(data) {
+				const arr = Array.isArray(data) ? data : data ? [data] : [];
+				this._setModels(arr);
+				this.trigger("reset");
+				this.trigger("change");
+				return this;
+			}
+			reset(data) {
+				return this.set(data);
+			}
+			serialize() {
+				return this.models.map((m) => m && m.serialize ? m.serialize() : m);
+			}
+			sync(method, model, opts = {}) {
+				const httpMethod = opts.method || {
+					create: "POST",
+					update: "PUT",
+					patch: "PATCH",
+					delete: "DELETE",
+					read: "GET"
+				}[method] || "GET";
+				return fetch(opts.url, {
+					method: httpMethod,
+					headers: {
+						"Content-Type": "application/json",
+						Accept: "application/json",
+						"X-CSRF-Token": (0, import_rails_csrf_token$2.default)()
+					},
+					body: opts.json ? JSON.stringify(opts.json) : void 0
+				}).then(async (res) => {
+					let data;
+					try {
+						data = await res.json();
+					} catch (_) {
+						data = null;
+					}
+					const resp = {
+						statusCode: res.status,
+						body: data
+					};
+					if (res.ok) {
+						if (opts.success) opts.success(model, data, resp);
+					} else if (opts.error) opts.error(model, resp);
+					return res;
+				}).catch((err) => {
+					if (opts.error) opts.error(model, err);
+					throw err;
+				});
+			}
+			static extend(...args) {
+				const ownConfig = args[args.length - 1] || {};
+				const Parent = this;
+				const merged = {
+					...Parent._config || {},
+					...ownConfig
+				};
+				class Extended extends Parent {}
+				Extended._config = merged;
+				Object.entries(ownConfig).forEach(([key, val]) => {
+					if (!SKIP_METHOD_KEYS.has(key)) Extended.prototype[key] = val;
+				});
+				Extended.extend = BaseCollection.extend.bind(Extended);
+				Extended.prototype.sync = Parent.prototype.sync;
+				return Extended;
+			}
+		};
+	}));
+	//#endregion
+	//#region app/javascript/models/shared/rails-resource-mixin.js
+	var import_rails_csrf_token$1, rails_resource_mixin_default;
+	var init_rails_resource_mixin = __esmMin((() => {
+		import_rails_csrf_token$1 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		rails_resource_mixin_default = { ajaxConfig: { headers: {
+			Accept: "application/json",
+			"X-CSRF-Token": (0, import_rails_csrf_token$1.default)()
+		} } };
+	}));
+	//#endregion
 	//#region app/javascript/models/shared/app-collection.js
-	var import_ampersand_rest_collection, app_collection_default;
+	var AppCollection;
 	var init_app_collection = __esmMin((() => {
 		init_present();
-		import_ampersand_rest_collection = /* @__PURE__ */ __toESM(require_ampersand_rest_collection());
+		init_base_collection();
 		init_rails_resource_mixin();
-		app_collection_default = import_ampersand_rest_collection.default.extend(rails_resource_mixin_default, {
+		AppCollection = BaseCollection.extend(rails_resource_mixin_default, {
 			type: "AppCollection",
 			mainIndex: ["url"],
 			indexes: ["uuid"],
@@ -100887,11 +93391,70 @@ There are no contexts defined. Please configure them in the admin tool.\
 		});
 	}));
 	//#endregion
+	//#region app/javascript/models/shared/app-resource.js
+	var import_rails_csrf_token, AppResource;
+	var init_app_resource = __esmMin((() => {
+		init_lodash();
+		init_base_model();
+		import_rails_csrf_token = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		init_rails_resource_mixin();
+		AppResource = BaseModel.extend(rails_resource_mixin_default, {
+			type: "AppResource",
+			idAttribute: "url",
+			props: {
+				url: "string",
+				uuid: "string"
+			},
+			save: function(config) {
+				return BaseModel.prototype.save.call(this, defaults$1({}, config, { wait: true }));
+			},
+			merge: function(prop, data) {
+				return this.set(prop, merge(this[prop], data));
+			},
+			dump: function() {
+				return this.serialize();
+			},
+			_runRequest: function(req, callback) {
+				const { method = "GET", url, body, json, headers: extra = {} } = req;
+				const isFormData = typeof FormData !== "undefined" && body instanceof FormData;
+				const headers = {
+					Accept: "application/json",
+					"X-CSRF-Token": (0, import_rails_csrf_token.default)(),
+					...extra
+				};
+				if (!isFormData) headers["Content-Type"] = "application/json";
+				fetch(url, {
+					method,
+					headers,
+					body: body !== void 0 ? body : json !== void 0 ? JSON.stringify(json) : void 0
+				}).then(async (res) => {
+					let data;
+					try {
+						data = await res.json();
+					} catch (_) {
+						data = null;
+					}
+					callback(null, { statusCode: res.status }, data);
+				}).catch((err) => callback(err, null, null));
+			}
+		});
+	}));
+	//#endregion
+	//#region app/javascript/models/person.js
+	var person_default;
+	var init_person = __esmMin((() => {
+		init_app_resource();
+		person_default = AppResource.extend({
+			type: "Person",
+			props: { name: ["string"] }
+		});
+	}));
+	//#endregion
 	//#region app/javascript/models/meta-key.js
 	var meta_key_default;
 	var init_meta_key = __esmMin((() => {
 		init_app_resource();
-		meta_key_default = app_resource_default.extend({
+		meta_key_default = AppResource.extend({
 			type: "MetaKey",
 			props: {
 				label: "string",
@@ -100905,7 +93468,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 	var init_meta_datum = __esmMin((() => {
 		init_app_resource();
 		init_meta_key();
-		MetaDatum = app_resource_default.extend({
+		MetaDatum = AppResource.extend({
 			type: "MetaDatum",
 			urlRoot: "/meta_data",
 			props: {
@@ -100939,7 +93502,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_lodash();
 		init_app_collection();
 		init_meta_datum();
-		meta_data_default = app_collection_default.extend({
+		meta_data_default = AppCollection.extend({
 			type: "MetaData",
 			model: function(attrs, options) {
 				const MetaDatumClass = meta_datum_default[attrs.type.replace(/^MetaDatum::/, "")];
@@ -100953,7 +93516,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				return filter(flatten(map(meta_data.by_vocabulary, "meta_data")));
 			},
 			save: function(opts) {
-				return app_collection_default.prototype.sync.call(this, "update", this, merge(opts, {
+				return AppCollection.prototype.sync.call(this, "update", this, merge(opts, {
 					url: this.parent.url + "/meta_data",
 					json: set({}, snakeCase$1(this.parent.type), serializeForSave(this))
 				}));
@@ -101053,13 +93616,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/models/media-entry.js
-	var import_ampersand_app, import_get_media_type, import_resource_deletable, BrowserFile, media_entry_default;
+	var import_get_media_type, import_resource_deletable, BrowserFile, media_entry_default;
 	var init_media_entry = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_ampersand_app = /* @__PURE__ */ __toESM(require_ampersand_app());
+		init_app_config();
 		init_app_resource();
-		init_permissions();
 		init_person();
 		init_i18n_translate();
 		import_get_media_type = /* @__PURE__ */ __toESM(require_get_media_type());
@@ -101068,7 +93630,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_resource_favoritable();
 		import_resource_deletable = /* @__PURE__ */ __toESM(require_resource_deletable());
 		BrowserFile = globalThis.File;
-		media_entry_default = app_resource_default.extend(resource_with_relations_default, resource_favoritable_default, import_resource_deletable.default, {
+		media_entry_default = AppResource.extend(resource_with_relations_default, resource_favoritable_default, import_resource_deletable.default, {
 			type: "MediaEntry",
 			urlRoot: "/entries",
 			extraProperties: "allow",
@@ -101098,10 +93660,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				more_data: ["object"],
 				media_file: ["object"]
 			},
-			children: {
-				permissions: permissions_default,
-				responsible: person_default
-			},
+			children: { responsible: person_default },
 			collections: { meta_data: meta_data_default },
 			session: { uploading: "object" },
 			derived: {
@@ -101155,28 +93714,23 @@ There are no contexts defined. Please configure them in the admin tool.\
 				};
 				return this._runRequest({
 					method: "POST",
-					url: import_ampersand_app.default.config.relativeUrlRoot + "/entries/",
+					url: config.relativeUrlRoot + "/entries/",
 					body: formData,
 					beforeSend: function(xhrObject) {
 						return xhrObject.upload.onprogress = handleOnProgress;
 					}
-				}, (err, res) => {
+				}, (err, res, data) => {
 					let error;
 					if (err || !res || res.statusCode >= 400) {
 						if (err) error = err;
 						else if (res) {
 							console.error(`Response status code = ${res.statusCode}`);
-							error = res.body;
+							error = data || res.statusCode;
 						} else error = "Error: no response data";
 						console.log("Date", Date());
 						this.set("uploading", merge(this.uploading, { error }));
 					} else {
-						const attrs = (() => {
-							try {
-								return JSON.parse(res.body);
-							} catch (e) {}
-						})();
-						if (attrs) this.set(attrs);
+						if (data && typeof data === "object") this.set(data);
 						this.unset("uploading");
 					}
 					if (isFunction(callback)) return callback(error || null, res);
@@ -101187,7 +93741,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/models/shared/paginated-collection-factory.js
 	function paginated_collection_factory_default(collectionClass, { jsonPath }) {
-		return import_ampersand_state.default.extend({
+		return State.extend({
 			collections: { resources: collectionClass },
 			props: {
 				url: ["object"],
@@ -101273,9 +93827,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 				const nextPage = this.currentPage + 1;
 				const nextUrl = set_params_for_url_default(this.url, { list: { page: nextPage } }, { ___sparse: JSON.stringify(set({}, this.getJsonPath(), {})) });
 				const localRequestId = this.requestId;
-				return import_xhr.default.get({
-					url: nextUrl,
-					json: true
+				return this._runRequest({
+					method: "GET",
+					url: nextUrl
 				}, (err, res, body) => {
 					if (this.requestId !== localRequestId) return;
 					else if (err || res.statusCode > 400) return callback(err || body);
@@ -101306,9 +93860,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 					uuid: {},
 					type: {}
 				}])) });
-				return import_xhr.default.get({
-					url: nextUrl,
-					json: true
+				return this._runRequest({
+					method: "GET",
+					url: nextUrl
 				}, (err, res, body) => {
 					if (err || res.statusCode > 400) return callback({ result: "error" });
 					else return callback({
@@ -101361,13 +93915,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 		});
 	}
-	var import_ampersand_state, import_xhr, getOrThrow;
+	var State, getOrThrow;
 	var init_paginated_collection_factory = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_ampersand_state = /* @__PURE__ */ __toESM(require_ampersand_state());
-		import_xhr = /* @__PURE__ */ __toESM(require_xhr());
+		init_base_model();
 		init_set_params_for_url();
+		State = BaseModel;
 		getOrThrow = function(obj, key) {
 			const val = get$1(obj, key);
 			if (!present$1(val)) throw new Error("Missing config! " + key);
@@ -101382,7 +93936,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_app_collection();
 		init_media_entry();
 		init_paginated_collection_factory();
-		MediaEntries = app_collection_default.extend({
+		MediaEntries = AppCollection.extend({
 			type: "MediaEntries",
 			model: media_entry_default,
 			getBatchEditableItems: function() {
@@ -101402,12 +93956,14 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_lodash();
 		import_react = /* @__PURE__ */ __toESM(require_react$1());
 		import_react_dom = /* @__PURE__ */ __toESM(require_react_dom());
+		init_lib();
+		init_query_client();
 		import_react$1 = /* @__PURE__ */ __toESM(require_react());
 		initByClass = { "Views.My.Uploader": function(data, callback) {
 			const MediaEntries = (init_media_entries(), __toCommonJS(media_entries_exports)).default;
 			const Uploader = (init_Uploader(), __toCommonJS(Uploader_exports)).default;
 			const props = set(data.reactProps, "appCollection", new MediaEntries());
-			return callback(/*#__PURE__*/ import_react.createElement(Uploader, props));
+			return callback(/*#__PURE__*/ import_react.createElement(QueryClientProvider, { client: queryClient }, /*#__PURE__*/ import_react.createElement(Uploader, props)));
 		} };
 		react_default = () => {
 			document.querySelectorAll("[data-react-class]").forEach((element) => {
@@ -101422,7 +93978,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				if (!init) init = function(data, callback) {
 					const component = get$1(import_react$1.default, componentClass);
 					if (!component) throw new Error(`No such component: \`${componentClass}\`!`);
-					return callback(/*#__PURE__*/ import_react.createElement(component, data.reactProps));
+					return callback(/*#__PURE__*/ import_react.createElement(QueryClientProvider, { client: queryClient }, /*#__PURE__*/ import_react.createElement(component, data.reactProps)));
 				};
 				if (isFunction(init)) return init(data, (enhanced) => import_react_dom.render(enhanced, element));
 			});
@@ -101435,9 +93991,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 	const { present } = (init_present(), __toCommonJS(present_exports));
 	const parseUrl = require_url$1().parse;
 	const buildUrl = require_url$1().format;
-	const app = require_ampersand_app();
 	if (!present(APP_CONFIG)) throw new Error("No `APP_CONFIG`!");
-	app.extend({ config: require_window$1().APP_CONFIG });
 	const ujs = [
 		interop((init_hashviz(), __toCommonJS(hashviz_exports))),
 		interop((init_react(), __toCommonJS(react_exports))),
