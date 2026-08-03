@@ -5258,7 +5258,7 @@
 					let data;
 					try {
 						data = await res.json();
-					} catch (_) {
+					} catch {
 						data = null;
 					}
 					callback(null, { statusCode: res.status }, data);
@@ -5379,7 +5379,7 @@
 					let data;
 					try {
 						data = await res.json();
-					} catch (_) {
+					} catch {
 						data = null;
 					}
 					callback(null, { statusCode: res.status }, data);
@@ -6101,7 +6101,7 @@
 					let data;
 					try {
 						data = await res.json();
-					} catch (_) {
+					} catch {
 						data = null;
 					}
 					const resp = {

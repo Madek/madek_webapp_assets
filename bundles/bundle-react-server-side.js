@@ -72816,7 +72816,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			let err;
 			try {
 				err = await res.json();
-			} catch (_) {
+			} catch {
 				err = res.statusText;
 			}
 			throw err;
@@ -72851,7 +72851,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			let err;
 			try {
 				err = await res.json();
-			} catch (_) {
+			} catch {
 				err = res.statusText;
 			}
 			throw err;
@@ -72936,7 +72936,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				alert((() => {
 					try {
 						return JSON.stringify(err, null, 2);
-					} catch (_) {
+					} catch {
 						return String(err);
 					}
 				})());

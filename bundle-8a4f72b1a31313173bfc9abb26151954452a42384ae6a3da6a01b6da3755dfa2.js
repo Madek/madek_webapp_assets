@@ -81949,7 +81949,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			let err;
 			try {
 				err = await res.json();
-			} catch (_) {
+			} catch {
 				err = res.statusText;
 			}
 			throw err;
@@ -81984,7 +81984,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			let err;
 			try {
 				err = await res.json();
-			} catch (_) {
+			} catch {
 				err = res.statusText;
 			}
 			throw err;
@@ -82069,7 +82069,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				alert((() => {
 					try {
 						return JSON.stringify(err, null, 2);
-					} catch (_) {
+					} catch {
 						return String(err);
 					}
 				})());
@@ -93111,7 +93111,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					let data;
 					try {
 						data = await res.json();
-					} catch (_) {
+					} catch {
 						data = null;
 					}
 					callback(null, { statusCode: res.status }, data);
@@ -93330,7 +93330,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					let data;
 					try {
 						data = await res.json();
-					} catch (_) {
+					} catch {
 						data = null;
 					}
 					const resp = {
@@ -93431,7 +93431,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					let data;
 					try {
 						data = await res.json();
-					} catch (_) {
+					} catch {
 						data = null;
 					}
 					callback(null, { statusCode: res.status }, data);
@@ -93970,7 +93970,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				const data = {};
 				for (const key of Object.keys(element.dataset)) try {
 					data[key] = JSON.parse(element.dataset[key]);
-				} catch (_) {
+				} catch {
 					data[key] = element.dataset[key];
 				}
 				const componentClass = (data.reactClass || "").replace(/^UI./, "");
