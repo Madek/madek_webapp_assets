@@ -62827,8 +62827,8 @@ Zu diesem hinzufügen\
 				else return this.renderJs();
 			}
 			renderFiltersNote() {
-				const { currentUrl, parentState } = this.props;
-				if (get$1(parentState, "boxState.props.get.content_type") !== "MediaResource") return null;
+				const { currentUrl, config } = this.props;
+				if (config.for_url.query.type !== "all") return null;
 				return /*#__PURE__*/ import_react$133.createElement("div", { className: "mtm" }, I18nTranslate("resources_box_filters_note_pre"), " ", /*#__PURE__*/ import_react$133.createElement(Link$5, { href: urlByType$1(currentUrl, null, "entries") }, I18nTranslate("sitemap_entries")), " ", I18nTranslate("resources_box_filters_note_or"), " ", /*#__PURE__*/ import_react$133.createElement(Link$5, { href: urlByType$1(currentUrl, null, "collections") }, I18nTranslate("sitemap_collections")), " ", I18nTranslate("resources_box_filters_note_post"));
 			}
 			render() {
