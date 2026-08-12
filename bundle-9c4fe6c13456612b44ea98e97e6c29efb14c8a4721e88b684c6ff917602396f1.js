@@ -94398,7 +94398,7 @@ ${e2}`);
           for (const key of Object.keys(element.dataset)) {
             try {
               data[key] = JSON.parse(element.dataset[key]);
-            } catch (_3) {
+            } catch {
               data[key] = element.dataset[key];
             }
           }
