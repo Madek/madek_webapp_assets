@@ -71517,7 +71517,7 @@ Zu diesem hinzufügen\
 			tagGroupId
 		]);
 	}
-	function getInitialState(props) {
+	function getInitialState$4(props) {
 		var _ref, _props$items, _ref2, _props$activeIndex;
 		var items = (_ref = (_props$items = props.items) != null ? _props$items : props.initialItems) != null ? _ref : [];
 		return {
@@ -72670,7 +72670,7 @@ Zu diesem hinzufügen\
 			if (userProps === void 0) userProps = {};
 			validatePropTypes$1(userProps, _useTagGroup, propTypes);
 			var props = getMergedProps(userProps);
-			var _useControlledReducer = useControlledReducer$1(useTagGroupReducer, props, getInitialState, isStateEqual), state = _useControlledReducer[0], dispatch = _useControlledReducer[1];
+			var _useControlledReducer = useControlledReducer$1(useTagGroupReducer, props, getInitialState$4, isStateEqual), state = _useControlledReducer[0], dispatch = _useControlledReducer[1];
 			var activeIndex = state.activeIndex, items = state.items;
 			var latest = useLatestRef({
 				state,
@@ -74824,7 +74824,29 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/InputTextDate.jsx
-	var import_react$120, import_prop_types$25, t$4, SUBTYPES, formatDuration, parseDuration, initialSubtype, InputTextDate;
+	function getInitialState(values) {
+		const value = Array.isArray(values) ? values[0] ?? "" : "";
+		if (isString(value) && value.includes(" - ")) {
+			const [from, to] = value.split(" - ");
+			if (parseDate(from) && parseDate(to)) return {
+				subType: "duration",
+				values: [from || "", to || ""]
+			};
+		}
+		if (isEmpty$1(value)) return {
+			subType: "timestamp",
+			values: [""]
+		};
+		if (isString(value) && parseDate(value)) return {
+			subType: "timestamp",
+			values: [value]
+		};
+		return {
+			subType: "text",
+			values: [value]
+		};
+	}
+	var import_react$120, import_prop_types$25, t$4, SUBTYPES, formatDuration, parseDuration, InputTextDate;
 	var init_InputTextDate = __esmMin((() => {
 		import_react$120 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$25 = /* @__PURE__ */ __toESM(require_prop_types());
@@ -74839,21 +74861,14 @@ Zu diesem hinzufügen\
 		];
 		formatDuration = (DateValues) => compact(DateValues).join(" - ");
 		parseDuration = (MdValues) => isString(MdValues[0]) && MdValues[0].split(" - ");
-		initialSubtype = (MdValues) => {
-			if (isEmpty$1(MdValues)) return SUBTYPES[1];
-			const dates = (parseDuration(MdValues) || []).map(parseDate);
-			if (!dates[0]) return SUBTYPES[0];
-			if (!dates[0]) return SUBTYPES[0];
-			if (!dates[1]) return SUBTYPES[1];
-			return SUBTYPES[2];
-		};
 		InputTextDate = class extends import_react$120.Component {
 			constructor(props) {
 				super(props);
+				const { subType, values } = getInitialState(props.values);
 				this.state = {
 					isClient: true,
-					subType: initialSubtype(props.values),
-					values: parseDuration(props.values) || []
+					subType,
+					values
 				};
 				this._onSelectSubtype = this._onSelectSubtype.bind(this);
 				this._formatValues = this._formatValues.bind(this);
