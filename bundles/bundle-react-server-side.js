@@ -70002,7 +70002,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					isSelected: false,
 					onSelect: null,
 					authToken: config.authToken,
-					key: "resource_" + (config.resource.uuid || config.resource.cid),
+					key: "resource_" + (config.resource.clientKey || config.resource.uuid),
 					pinThumb: false,
 					listThumb: false,
 					uploadMediaType: config.resource.mediaType
@@ -81405,14 +81405,16 @@ There are no contexts defined. Please configure them in the admin tool.\
 						duplicatorConfiguration: configuration
 					});
 				}
-				const added = this.props.appCollection.add(files.map((file) => ({
+				const collection = this.props.appCollection;
+				const from = collection.length;
+				collection.add(files.map((file, index) => ({
+					clientKey: `upload-${from + index}`,
 					uploading: {
 						file,
 						copyMdFrom
-					},
-					title: file.name,
-					image_url: URL.createObjectURL(file)
+					}
 				})));
+				const added = collection.models.slice(from);
 				this.setState({ uploading: true });
 				return added.map((model) => UploadQueue.push(model, (err) => {
 					if (err) return console.error("Uploader failed!", model, err);
