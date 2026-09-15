@@ -5036,6 +5036,217 @@
 		config = globalThis.APP_CONFIG;
 	}));
 	//#endregion
+	//#region node_modules/global/window.js
+	var require_window = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		var win;
+		if (typeof window !== "undefined") win = window;
+		else if (typeof global !== "undefined") win = global;
+		else if (typeof self !== "undefined") win = self;
+		else win = {};
+		module.exports = win;
+	}));
+	//#endregion
+	//#region node_modules/is-function/index.js
+	var require_is_function = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		module.exports = isFunction;
+		var toString = Object.prototype.toString;
+		function isFunction(fn) {
+			var string = toString.call(fn);
+			return string === "[object Function]" || typeof fn === "function" && string !== "[object RegExp]" || typeof window !== "undefined" && (fn === window.setTimeout || fn === window.alert || fn === window.confirm || fn === window.prompt);
+		}
+	}));
+	//#endregion
+	//#region node_modules/parse-headers/parse-headers.js
+	var require_parse_headers = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		var trim = function(string) {
+			return string.replace(/^\s+|\s+$/g, "");
+		};
+		var isArray = function(arg) {
+			return Object.prototype.toString.call(arg) === "[object Array]";
+		};
+		module.exports = function(headers) {
+			if (!headers) return {};
+			var result = Object.create(null);
+			var headersArr = trim(headers).split("\n");
+			for (var i = 0; i < headersArr.length; i++) {
+				var row = headersArr[i];
+				var index = row.indexOf(":"), key = trim(row.slice(0, index)).toLowerCase(), value = trim(row.slice(index + 1));
+				if (typeof result[key] === "undefined") result[key] = value;
+				else if (isArray(result[key])) result[key].push(value);
+				else result[key] = [result[key], value];
+			}
+			return result;
+		};
+	}));
+	//#endregion
+	//#region node_modules/xtend/immutable.js
+	var require_immutable = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		module.exports = extend;
+		var hasOwnProperty = Object.prototype.hasOwnProperty;
+		function extend() {
+			var target = {};
+			for (var i = 0; i < arguments.length; i++) {
+				var source = arguments[i];
+				for (var key in source) if (hasOwnProperty.call(source, key)) target[key] = source[key];
+			}
+			return target;
+		}
+	}));
+	//#endregion
+	//#region node_modules/xhr/index.js
+	var require_xhr = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		var window = require_window();
+		var isFunction = require_is_function();
+		var parseHeaders = require_parse_headers();
+		var xtend = require_immutable();
+		module.exports = createXHR;
+		createXHR.XMLHttpRequest = window.XMLHttpRequest || noop;
+		createXHR.XDomainRequest = "withCredentials" in new createXHR.XMLHttpRequest() ? createXHR.XMLHttpRequest : window.XDomainRequest;
+		forEachArray([
+			"get",
+			"put",
+			"post",
+			"patch",
+			"head",
+			"delete"
+		], function(method) {
+			createXHR[method === "delete" ? "del" : method] = function(uri, options, callback) {
+				options = initParams(uri, options, callback);
+				options.method = method.toUpperCase();
+				return _createXHR(options);
+			};
+		});
+		function forEachArray(array, iterator) {
+			for (var i = 0; i < array.length; i++) iterator(array[i]);
+		}
+		function isEmpty(obj) {
+			for (var i in obj) if (obj.hasOwnProperty(i)) return false;
+			return true;
+		}
+		function initParams(uri, options, callback) {
+			var params = uri;
+			if (isFunction(options)) {
+				callback = options;
+				if (typeof uri === "string") params = { uri };
+			} else params = xtend(options, { uri });
+			params.callback = callback;
+			return params;
+		}
+		function createXHR(uri, options, callback) {
+			options = initParams(uri, options, callback);
+			return _createXHR(options);
+		}
+		function _createXHR(options) {
+			if (typeof options.callback === "undefined") throw new Error("callback argument missing");
+			var called = false;
+			var callback = function cbOnce(err, response, body) {
+				if (!called) {
+					called = true;
+					options.callback(err, response, body);
+				}
+			};
+			function readystatechange() {
+				if (xhr.readyState === 4) setTimeout(loadFunc, 0);
+			}
+			function getBody() {
+				var body = void 0;
+				if (xhr.response) body = xhr.response;
+				else body = xhr.responseText || getXml(xhr);
+				if (isJson) try {
+					body = JSON.parse(body);
+				} catch (e) {}
+				return body;
+			}
+			function errorFunc(evt) {
+				clearTimeout(timeoutTimer);
+				if (!(evt instanceof Error)) evt = /* @__PURE__ */ new Error("" + (evt || "Unknown XMLHttpRequest Error"));
+				evt.statusCode = 0;
+				return callback(evt, failureResponse);
+			}
+			function loadFunc() {
+				if (aborted) return;
+				var status;
+				clearTimeout(timeoutTimer);
+				if (options.useXDR && xhr.status === void 0) status = 200;
+				else status = xhr.status === 1223 ? 204 : xhr.status;
+				var response = failureResponse;
+				var err = null;
+				if (status !== 0) {
+					response = {
+						body: getBody(),
+						statusCode: status,
+						method,
+						headers: {},
+						url: uri,
+						rawRequest: xhr
+					};
+					if (xhr.getAllResponseHeaders) response.headers = parseHeaders(xhr.getAllResponseHeaders());
+				} else err = /* @__PURE__ */ new Error("Internal XMLHttpRequest Error");
+				return callback(err, response, response.body);
+			}
+			var xhr = options.xhr || null;
+			if (!xhr) if (options.cors || options.useXDR) xhr = new createXHR.XDomainRequest();
+			else xhr = new createXHR.XMLHttpRequest();
+			var key;
+			var aborted;
+			var uri = xhr.url = options.uri || options.url;
+			var method = xhr.method = options.method || "GET";
+			var body = options.body || options.data;
+			var headers = xhr.headers = options.headers || {};
+			var sync = !!options.sync;
+			var isJson = false;
+			var timeoutTimer;
+			var failureResponse = {
+				body: void 0,
+				headers: {},
+				statusCode: 0,
+				method,
+				url: uri,
+				rawRequest: xhr
+			};
+			if ("json" in options && options.json !== false) {
+				isJson = true;
+				headers["accept"] || headers["Accept"] || (headers["Accept"] = "application/json");
+				if (method !== "GET" && method !== "HEAD") {
+					headers["content-type"] || headers["Content-Type"] || (headers["Content-Type"] = "application/json");
+					body = JSON.stringify(options.json === true ? body : options.json);
+				}
+			}
+			xhr.onreadystatechange = readystatechange;
+			xhr.onload = loadFunc;
+			xhr.onerror = errorFunc;
+			xhr.onprogress = function() {};
+			xhr.onabort = function() {
+				aborted = true;
+			};
+			xhr.ontimeout = errorFunc;
+			xhr.open(method, uri, !sync, options.username, options.password);
+			if (!sync) xhr.withCredentials = !!options.withCredentials;
+			if (!sync && options.timeout > 0) timeoutTimer = setTimeout(function() {
+				if (aborted) return;
+				aborted = true;
+				xhr.abort("timeout");
+				var e = /* @__PURE__ */ new Error("XMLHttpRequest timeout");
+				e.code = "ETIMEDOUT";
+				errorFunc(e);
+			}, options.timeout);
+			if (xhr.setRequestHeader) {
+				for (key in headers) if (headers.hasOwnProperty(key)) xhr.setRequestHeader(key, headers[key]);
+			} else if (options.headers && !isEmpty(options.headers)) throw new Error("Headers cannot be set on an XDomainRequest object");
+			if ("responseType" in options) xhr.responseType = options.responseType;
+			if ("beforeSend" in options && typeof options.beforeSend === "function") options.beforeSend(xhr);
+			xhr.send(body || null);
+			return xhr;
+		}
+		function getXml(xhr) {
+			if (xhr.responseType === "document") return xhr.responseXML;
+			var firefoxBugTakenEffect = xhr.responseXML && xhr.responseXML.documentElement.nodeName === "parsererror";
+			if (xhr.responseType === "" && !firefoxBugTakenEffect) return xhr.responseXML;
+			return null;
+		}
+		function noop() {}
+	}));
+	//#endregion
 	//#region app/javascript/lib/rails-csrf-token.js
 	var require_rails_csrf_token = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		module.exports = () => {
@@ -5087,9 +5298,10 @@
 		if (ownConfig.extraProperties) merged.extraProperties = ownConfig.extraProperties;
 		return merged;
 	}
-	var import_rails_csrf_token$3, SKIP_METHOD_KEYS$1, BaseModel;
+	var import_rails_csrf_token$3, cidCounter, SKIP_METHOD_KEYS$1, BaseModel;
 	var init_base_model = __esmMin((() => {
 		import_rails_csrf_token$3 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		cidCounter = 0;
 		SKIP_METHOD_KEYS$1 = /* @__PURE__ */ new Set([
 			.../* @__PURE__ */ new Set([
 				"props",
@@ -5111,6 +5323,7 @@
 		]);
 		BaseModel = class BaseModel {
 			constructor(data = {}) {
+				this.cid = "c" + ++cidCounter;
 				this._listeners = {};
 				this._listenedTo = [];
 				this._initFromConfig(data);
@@ -5340,9 +5553,10 @@
 	}));
 	//#endregion
 	//#region app/javascript/models/shared/app-resource.js
-	var import_rails_csrf_token$1, AppResource;
+	var import_xhr, import_rails_csrf_token$1, AppResource;
 	var init_app_resource = __esmMin((() => {
 		init_lodash();
+		import_xhr = /* @__PURE__ */ __toESM(require_xhr());
 		init_base_model();
 		import_rails_csrf_token$1 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_rails_resource_mixin();
@@ -5363,27 +5577,29 @@
 				return this.serialize();
 			},
 			_runRequest: function(req, callback) {
-				const { method = "GET", url, body, json, headers: extra = {} } = req;
-				const isFormData = typeof FormData !== "undefined" && body instanceof FormData;
 				const headers = {
 					Accept: "application/json",
 					"X-CSRF-Token": (0, import_rails_csrf_token$1.default)(),
-					...extra
+					...req.headers || {}
 				};
-				if (!isFormData) headers["Content-Type"] = "application/json";
-				fetch(url, {
-					method,
-					headers,
-					body: body !== void 0 ? body : json !== void 0 ? JSON.stringify(json) : void 0
-				}).then(async (res) => {
-					let data;
-					try {
-						data = await res.json();
-					} catch {
-						data = null;
-					}
-					callback(null, { statusCode: res.status }, data);
-				}).catch((err) => callback(err, null, null));
+				let body = req.body;
+				if (body === void 0 && req.json !== void 0) {
+					body = JSON.stringify(req.json);
+					headers["Content-Type"] = "application/json";
+				}
+				return (0, import_xhr.default)({
+					method: req.method,
+					url: req.url,
+					body,
+					beforeSend: req.beforeSend,
+					headers
+				}, function(err, res, body) {
+					return callback(err, res, (() => {
+						try {
+							return JSON.parse(body);
+						} catch (e) {}
+					})() || body);
+				});
 			}
 		});
 	}));

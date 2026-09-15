@@ -81410,8 +81410,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 						file,
 						copyMdFrom
 					},
-					title: file.name,
-					image_url: URL.createObjectURL(file)
+					title: file.name
 				})));
 				this.setState({ uploading: true });
 				return added.map((model) => UploadQueue.push(model, (err) => {

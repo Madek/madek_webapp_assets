@@ -64730,7 +64730,7 @@ viewBox='0 0 255 255'> \
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSet.jsx
 	var BatchAddToSet_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSet });
-	var import_react$169, import_lib$13, import_rails_csrf_token$20, import_xhr$15, BatchAddToSet;
+	var import_react$169, import_lib$13, import_rails_csrf_token$20, import_xhr$16, BatchAddToSet;
 	var init_BatchAddToSet = __esmMin((() => {
 		init_present();
 		init_lodash();
@@ -64742,7 +64742,7 @@ viewBox='0 0 255 255'> \
 		init_Preloader();
 		import_lib$13 = /* @__PURE__ */ __toESM(require_lib$1());
 		import_rails_csrf_token$20 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
-		import_xhr$15 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$16 = /* @__PURE__ */ __toESM(require_xhr());
 		BatchAddToSet = class extends import_react$169.Component {
 			constructor(props) {
 				super(props);
@@ -64775,7 +64775,7 @@ viewBox='0 0 255 255'> \
 						return_to: this.state.get.return_to
 					};
 					const body = import_lib$13.default.stringify(data, { arrayFormat: "brackets" });
-					return this.lastRequest = (0, import_xhr$15.default)({
+					return this.lastRequest = (0, import_xhr$16.default)({
 						url: this.props.get.batch_select_add_to_set_url,
 						method: "POST",
 						body,
@@ -64970,12 +64970,12 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSetModal.jsx
 	var BatchAddToSetModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSetModal });
-	var import_react$168, import_lib$12, import_xhr$14, import_rails_csrf_token$19, BatchAddToSetModal;
+	var import_react$168, import_lib$12, import_xhr$15, import_rails_csrf_token$19, BatchAddToSetModal;
 	var init_BatchAddToSetModal = __esmMin((() => {
 		import_react$168 = /* @__PURE__ */ __toESM(require_react$1());
 		init_BatchAddToSet();
 		import_lib$12 = /* @__PURE__ */ __toESM(require_lib$1());
-		import_xhr$14 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$15 = /* @__PURE__ */ __toESM(require_xhr());
 		init_Modal();
 		import_rails_csrf_token$19 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BatchAddToSetModal = ({ resourceIds, returnTo, authToken, onClose }) => {
@@ -64987,7 +64987,7 @@ Zu diesem hinzufügen\
 					resource_id: resourceIds,
 					return_to: returnTo
 				};
-				(0, import_xhr$14.default)({
+				(0, import_xhr$15.default)({
 					url: "/batch_select_add_to_set",
 					method: "POST",
 					body: import_lib$12.default.stringify(data, { arrayFormat: "brackets" }),
@@ -65017,13 +65017,13 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchEditTitleModal.jsx
 	var BatchEditTitleModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchEditTitleModal });
-	var import_react$167, import_xhr$13, import_lib$11, import_rails_csrf_token$18, endPointUrl, BatchEditTitleModal;
+	var import_react$167, import_xhr$14, import_lib$11, import_rails_csrf_token$18, endPointUrl, BatchEditTitleModal;
 	var init_BatchEditTitleModal = __esmMin((() => {
 		import_react$167 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Modal();
 		init_rails_form();
 		init_FormButton();
-		import_xhr$13 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$14 = /* @__PURE__ */ __toESM(require_xhr());
 		import_lib$11 = /* @__PURE__ */ __toESM(require_lib$1());
 		import_rails_csrf_token$18 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_i18n_translate();
@@ -65046,7 +65046,7 @@ Zu diesem hinzufügen\
 					return_to: returnTo
 				};
 				const body = import_lib$11.default.stringify(requestData, { arrayFormat: "brackets" });
-				(0, import_xhr$13.default)({
+				(0, import_xhr$14.default)({
 					url: endPointUrl,
 					method: "POST",
 					body,
@@ -65263,11 +65263,11 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/lib/load-xhr.js
-	var import_xhr$12, import_rails_csrf_token$17, load_xhr_default;
+	var import_xhr$13, import_rails_csrf_token$17, load_xhr_default;
 	var init_load_xhr = __esmMin((() => {
-		import_xhr$12 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$13 = /* @__PURE__ */ __toESM(require_xhr());
 		import_rails_csrf_token$17 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
-		load_xhr_default = (config, callback) => (0, import_xhr$12.default)({
+		load_xhr_default = (config, callback) => (0, import_xhr$13.default)({
 			method: config.method,
 			url: config.url,
 			headers: {
@@ -65412,12 +65412,12 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxDelete.js
 	var BoxDelete_exports = /* @__PURE__ */ __exportAll({ default: () => BoxDelete_default });
-	var import_xhr$11, import_rails_csrf_token$16, BoxDelete_default;
+	var import_xhr$12, import_rails_csrf_token$16, BoxDelete_default;
 	var init_BoxDelete = __esmMin((() => {
-		import_xhr$11 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$12 = /* @__PURE__ */ __toESM(require_xhr());
 		import_rails_csrf_token$16 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BoxDelete_default = (resource, callback) => {
-			(0, import_xhr$11.default)({
+			(0, import_xhr$12.default)({
 				url: resource.url,
 				method: "DELETE",
 				headers: {
@@ -65486,9 +65486,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxFavorite.js
 	var BoxFavorite_exports = /* @__PURE__ */ __exportAll({ default: () => BoxFavorite_default });
-	var import_xhr$10, import_rails_csrf_token$15, BoxFavorite_default;
+	var import_xhr$11, import_rails_csrf_token$15, BoxFavorite_default;
 	var init_BoxFavorite = __esmMin((() => {
-		import_xhr$10 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$11 = /* @__PURE__ */ __toESM(require_xhr());
 		import_rails_csrf_token$15 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BoxFavorite_default = (last, props, trigger) => {
 			var nextPendingFavorite = () => {
@@ -65503,7 +65503,7 @@ Zu diesem hinzufügen\
 			var sendToggle = () => {
 				var actionName = last.favored ? "disfavor" : "favor";
 				var url = props.resource[actionName + "_url"];
-				(0, import_xhr$10.default)({
+				(0, import_xhr$11.default)({
 					url,
 					method: "PATCH",
 					headers: {
@@ -65531,11 +65531,11 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxFetchRelations.js
 	var BoxFetchRelations_exports = /* @__PURE__ */ __exportAll({ default: () => BoxFetchRelations_default });
-	var import_url$24, import_xhr$9, import_rails_csrf_token$14, BoxFetchRelations_default;
+	var import_url$24, import_xhr$10, import_rails_csrf_token$14, BoxFetchRelations_default;
 	var init_BoxFetchRelations = __esmMin((() => {
 		init_lodash();
 		import_url$24 = /* @__PURE__ */ __toESM(require_url$1());
-		import_xhr$9 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$10 = /* @__PURE__ */ __toESM(require_xhr());
 		import_rails_csrf_token$14 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BoxFetchRelations_default = (last, props, trigger) => {
 			var next = () => {
@@ -65597,7 +65597,7 @@ Zu diesem hinzufügen\
 				parsedUrl.query["list[page]"] = 1;
 				parsedUrl.query["list[per_page]"] = 2;
 				parsedUrl.query["___sparse"] = sparseSpec;
-				(0, import_xhr$9.default)({
+				(0, import_xhr$10.default)({
 					url: import_url$24.format(parsedUrl),
 					json: true,
 					headers: {
@@ -74113,15 +74113,15 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/lib/form-put-with-errors.js
-	var import_xhr$8, import_rails_csrf_token$13, form_put_with_errors_default;
+	var import_xhr$9, import_rails_csrf_token$13, form_put_with_errors_default;
 	var init_form_put_with_errors = __esmMin((() => {
-		import_xhr$8 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$9 = /* @__PURE__ */ __toESM(require_xhr());
 		import_rails_csrf_token$13 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_i18n_translate();
 		init_lodash();
 		form_put_with_errors_default = {
 			shared: function(data, actionUrl, contentType, callback) {
-				return (0, import_xhr$8.default)({
+				return (0, import_xhr$9.default)({
 					method: "PUT",
 					url: actionUrl,
 					body: data,
@@ -78004,7 +78004,7 @@ Group\
 			jsonDefaultHeader,
 			csrfHeader
 		]) }, sparsedUrl);
-		const request = (callback) => (0, import_xhr$7.default)(requestConfig, function(err, res, body) {
+		const request = (callback) => (0, import_xhr$8.default)(requestConfig, function(err, res, body) {
 			if (!err && res.statusCode >= 400) {
 				let msg = `Error ${res.statusCode}!`;
 				if (!isEmpty$1(res.body)) msg = `${err}\n\n${res.body}`;
@@ -78028,10 +78028,10 @@ Group\
 		}, (retryCallback) => request(retryCallback), finalCallback);
 		else return request(finalCallback);
 	}
-	var import_xhr$7, import_retry, import_rails_csrf_token$12, mergeHeaders;
+	var import_xhr$8, import_retry, import_rails_csrf_token$12, mergeHeaders;
 	var init_app_request = __esmMin((() => {
 		init_lodash();
-		import_xhr$7 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$8 = /* @__PURE__ */ __toESM(require_xhr());
 		import_retry = /* @__PURE__ */ __toESM(require_retry());
 		init_set_params_for_url();
 		import_rails_csrf_token$12 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
@@ -78039,11 +78039,11 @@ Group\
 	}));
 	//#endregion
 	//#region app/javascript/lib/simple-xhr.js
-	var import_xhr$6, import_rails_csrf_token$11, simple_xhr_default;
+	var import_xhr$7, import_rails_csrf_token$11, simple_xhr_default;
 	var init_simple_xhr = __esmMin((() => {
-		import_xhr$6 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$7 = /* @__PURE__ */ __toESM(require_xhr());
 		import_rails_csrf_token$11 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
-		simple_xhr_default = (config, callback) => (0, import_xhr$6.default)({
+		simple_xhr_default = (config, callback) => (0, import_xhr$7.default)({
 			method: config.method,
 			url: config.url,
 			body: config.body,
@@ -78266,7 +78266,7 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/resourcesbox/Clipboard.jsx
 	var Clipboard_exports = /* @__PURE__ */ __exportAll({ default: () => Clipboard });
-	var import_react$109, import_xhr$5, Clipboard;
+	var import_react$109, import_xhr$6, Clipboard;
 	var init_Clipboard = __esmMin((() => {
 		init_lodash();
 		import_react$109 = /* @__PURE__ */ __toESM(require_react$1());
@@ -78274,7 +78274,7 @@ Group\
 		init_Modal();
 		init_set_params_for_url();
 		init_form_put_with_errors();
-		import_xhr$5 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$6 = /* @__PURE__ */ __toESM(require_xhr());
 		Clipboard = class extends import_react$109.Component {
 			constructor(props) {
 				super(props);
@@ -78306,7 +78306,7 @@ Group\
 					uuid: {},
 					type: {}
 				}])) });
-				return import_xhr$5.default.get({
+				return import_xhr$6.default.get({
 					url: nextUrl,
 					json: true
 				}, (err, res, body) => {
@@ -78546,7 +78546,7 @@ Group\
 			url = url + "?" + body;
 			body = "";
 		}
-		return (0, import_xhr$4.default)({
+		return (0, import_xhr$5.default)({
 			method: config.method,
 			url,
 			body,
@@ -78584,9 +78584,9 @@ Group\
 			return callback("success", data);
 		});
 	}
-	var import_xhr$4, import_rails_csrf_token$10;
+	var import_xhr$5, import_rails_csrf_token$10;
 	var init_form_xhr = __esmMin((() => {
-		import_xhr$4 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$5 = /* @__PURE__ */ __toESM(require_xhr());
 		import_rails_csrf_token$10 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 	}));
 	//#endregion
@@ -78750,7 +78750,7 @@ Group\
 	});
 	function fetchPage({ currentUrl, sparsePath, page, onFetched }) {
 		const url = set_params_for_url_default(currentUrl, { list: { page } }, { ___sparse: JSON.stringify(set({}, sparsePath, {})) });
-		return import_xhr$3.default.get({
+		return import_xhr$4.default.get({
 			url,
 			json: true
 		}, (err, res, body) => {
@@ -78766,7 +78766,7 @@ Group\
 		const parsedUrl = parseUrl$13(resourceUrl, true);
 		delete parsedUrl.search;
 		const url = set_params_for_url_default(buildUrl$6(parsedUrl), currentQuery);
-		import_xhr$3.default.get({
+		import_xhr$4.default.get({
 			url,
 			json: true
 		}, (err, res, json) => {
@@ -78777,10 +78777,10 @@ Group\
 			});
 		});
 	}
-	var import_xhr$3, import_url$19, import_lib$3, parseUrl$13, buildUrl$6, parseQuery$2, dataFetchers_default;
+	var import_xhr$4, import_url$19, import_lib$3, parseUrl$13, buildUrl$6, parseQuery$2, dataFetchers_default;
 	var init_dataFetchers = __esmMin((() => {
 		init_lodash();
-		import_xhr$3 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$4 = /* @__PURE__ */ __toESM(require_xhr());
 		init_set_params_for_url();
 		import_url$19 = /* @__PURE__ */ __toESM(require_url$1());
 		import_lib$3 = /* @__PURE__ */ __toESM(require_lib$1());
@@ -80281,7 +80281,7 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/ResourceMetaDataPagePerContext.jsx
 	var ResourceMetaDataPagePerContext_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceMetaDataPagePerContext });
-	var import_react$95, import_url$17, import_xhr$2, import_rails_csrf_token$8, ResourceMetaDataPagePerContext;
+	var import_react$95, import_url$17, import_xhr$3, import_rails_csrf_token$8, ResourceMetaDataPagePerContext;
 	var init_ResourceMetaDataPagePerContext = __esmMin((() => {
 		init_present();
 		init_lodash();
@@ -80295,7 +80295,7 @@ Group\
 		init_PageContent();
 		init_PageContentHeader();
 		init_TabContent();
-		import_xhr$2 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$3 = /* @__PURE__ */ __toESM(require_xhr());
 		init_rails_form();
 		import_rails_csrf_token$8 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_metadata_edit_validation();
@@ -80441,7 +80441,7 @@ Group\
 					systemError: false
 				});
 				const serialized = this.formRef.current.serialize();
-				return (0, import_xhr$2.default)({
+				return (0, import_xhr$3.default)({
 					method: "PUT",
 					url: this._actionUrl(),
 					body: serialized,
@@ -84845,7 +84845,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#region app/javascript/react/views/My/Notifications.jsx
 	var Notifications_exports = /* @__PURE__ */ __exportAll({ default: () => MyNotifications });
 	function sendAcknowledge(id, acknowledged, onSuccess) {
-		(0, import_xhr$1.default)({
+		(0, import_xhr$2.default)({
 			url: `/my/notifications/${id}`,
 			method: "PATCH",
 			body: JSON.stringify({ acknowledged }),
@@ -84859,7 +84859,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		});
 	}
 	function sendAcknowledgeAll(caseLabel, delegationId, onSuccess) {
-		(0, import_xhr$1.default)({
+		(0, import_xhr$2.default)({
 			url: `/my/notifications/acknowledge_all`,
 			method: "POST",
 			body: JSON.stringify({
@@ -84876,7 +84876,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		});
 	}
 	function sendAcknowledgeMultiple(ids, onSuccess) {
-		(0, import_xhr$1.default)({
+		(0, import_xhr$2.default)({
 			url: `/my/notifications/acknowledge_multiple`,
 			method: "POST",
 			body: JSON.stringify({ notification_ids: ids }),
@@ -84889,9 +84889,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 			else alert("Error");
 		});
 	}
-	var import_xhr$1, import_react$38, import_moment$5, import_rails_csrf_token$5, import_classnames$5, import_ui_components$8, MyNotifications;
+	var import_xhr$2, import_react$38, import_moment$5, import_rails_csrf_token$5, import_classnames$5, import_ui_components$8, MyNotifications;
 	var init_Notifications = __esmMin((() => {
-		import_xhr$1 = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$2 = /* @__PURE__ */ __toESM(require_xhr());
 		import_react$38 = /* @__PURE__ */ __toESM(require_react$1());
 		import_moment$5 = /* @__PURE__ */ __toESM(require_moment$1());
 		init_current_locale();
@@ -85073,7 +85073,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				email_frequency: emailFrequency
 			}));
 		}
-		(0, import_xhr.default)({
+		(0, import_xhr$1.default)({
 			url,
 			method: "PATCH",
 			body: JSON.stringify(data),
@@ -85090,9 +85090,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 		event.preventDefault();
 		event.returnValue = "";
 	}
-	var import_xhr, import_react$37, import_rails_csrf_token$4, MySettings;
+	var import_xhr$1, import_react$37, import_rails_csrf_token$4, MySettings;
 	var init_Settings = __esmMin((() => {
-		import_xhr = /* @__PURE__ */ __toESM(require_xhr());
+		import_xhr$1 = /* @__PURE__ */ __toESM(require_xhr());
 		import_react$37 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_interpolate_split();
@@ -90543,8 +90543,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 						file,
 						copyMdFrom
 					},
-					title: file.name,
-					image_url: URL.createObjectURL(file)
+					title: file.name
 				})));
 				this.setState({ uploading: true });
 				return added.map((model) => UploadQueue.push(model, (err) => {
@@ -92955,9 +92954,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 		if (ownConfig.extraProperties) merged.extraProperties = ownConfig.extraProperties;
 		return merged;
 	}
-	var import_rails_csrf_token$3, SKIP_METHOD_KEYS$1, BaseModel;
+	var import_rails_csrf_token$3, cidCounter, SKIP_METHOD_KEYS$1, BaseModel;
 	var init_base_model = __esmMin((() => {
 		import_rails_csrf_token$3 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		cidCounter = 0;
 		SKIP_METHOD_KEYS$1 = /* @__PURE__ */ new Set([
 			.../* @__PURE__ */ new Set([
 				"props",
@@ -92979,6 +92979,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		]);
 		BaseModel = class BaseModel {
 			constructor(data = {}) {
+				this.cid = "c" + ++cidCounter;
 				this._listeners = {};
 				this._listenedTo = [];
 				this._initFromConfig(data);
@@ -93407,9 +93408,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/models/shared/app-resource.js
-	var import_rails_csrf_token, AppResource;
+	var import_xhr, import_rails_csrf_token, AppResource;
 	var init_app_resource = __esmMin((() => {
 		init_lodash();
+		import_xhr = /* @__PURE__ */ __toESM(require_xhr());
 		init_base_model();
 		import_rails_csrf_token = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_rails_resource_mixin();
@@ -93430,27 +93432,29 @@ There are no contexts defined. Please configure them in the admin tool.\
 				return this.serialize();
 			},
 			_runRequest: function(req, callback) {
-				const { method = "GET", url, body, json, headers: extra = {} } = req;
-				const isFormData = typeof FormData !== "undefined" && body instanceof FormData;
 				const headers = {
 					Accept: "application/json",
 					"X-CSRF-Token": (0, import_rails_csrf_token.default)(),
-					...extra
+					...req.headers || {}
 				};
-				if (!isFormData) headers["Content-Type"] = "application/json";
-				fetch(url, {
-					method,
-					headers,
-					body: body !== void 0 ? body : json !== void 0 ? JSON.stringify(json) : void 0
-				}).then(async (res) => {
-					let data;
-					try {
-						data = await res.json();
-					} catch {
-						data = null;
-					}
-					callback(null, { statusCode: res.status }, data);
-				}).catch((err) => callback(err, null, null));
+				let body = req.body;
+				if (body === void 0 && req.json !== void 0) {
+					body = JSON.stringify(req.json);
+					headers["Content-Type"] = "application/json";
+				}
+				return (0, import_xhr.default)({
+					method: req.method,
+					url: req.url,
+					body,
+					beforeSend: req.beforeSend,
+					headers
+				}, function(err, res, body) {
+					return callback(err, res, (() => {
+						try {
+							return JSON.parse(body);
+						} catch (e) {}
+					})() || body);
+				});
 			}
 		});
 	}));
