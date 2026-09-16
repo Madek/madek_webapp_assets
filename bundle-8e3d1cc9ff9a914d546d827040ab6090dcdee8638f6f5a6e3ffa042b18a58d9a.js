@@ -64730,7 +64730,7 @@ viewBox='0 0 255 255'> \
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSet.jsx
 	var BatchAddToSet_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSet });
-	var import_react$169, import_lib$13, import_rails_csrf_token$20, import_xhr$16, BatchAddToSet;
+	var import_react$169, import_lib$13, import_rails_csrf_token$19, import_xhr$16, BatchAddToSet;
 	var init_BatchAddToSet = __esmMin((() => {
 		init_present();
 		init_lodash();
@@ -64741,7 +64741,7 @@ viewBox='0 0 255 255'> \
 		init_rails_form();
 		init_Preloader();
 		import_lib$13 = /* @__PURE__ */ __toESM(require_lib$1());
-		import_rails_csrf_token$20 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$19 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		import_xhr$16 = /* @__PURE__ */ __toESM(require_xhr());
 		BatchAddToSet = class extends import_react$169.Component {
 			constructor(props) {
@@ -64782,7 +64782,7 @@ viewBox='0 0 255 255'> \
 						headers: {
 							Accept: "application/json",
 							"Content-type": "application/x-www-form-urlencoded",
-							"X-CSRF-Token": (0, import_rails_csrf_token$20.default)()
+							"X-CSRF-Token": (0, import_rails_csrf_token$19.default)()
 						}
 					}, (err, res, json) => {
 						if (err || res.statusCode !== 200) return;
@@ -64970,14 +64970,14 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSetModal.jsx
 	var BatchAddToSetModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSetModal });
-	var import_react$168, import_lib$12, import_xhr$15, import_rails_csrf_token$19, BatchAddToSetModal;
+	var import_react$168, import_lib$12, import_xhr$15, import_rails_csrf_token$18, BatchAddToSetModal;
 	var init_BatchAddToSetModal = __esmMin((() => {
 		import_react$168 = /* @__PURE__ */ __toESM(require_react$1());
 		init_BatchAddToSet();
 		import_lib$12 = /* @__PURE__ */ __toESM(require_lib$1());
 		import_xhr$15 = /* @__PURE__ */ __toESM(require_xhr());
 		init_Modal();
-		import_rails_csrf_token$19 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$18 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BatchAddToSetModal = ({ resourceIds, returnTo, authToken, onClose }) => {
 			const [loading, setLoading] = (0, import_react$168.useState)(true);
 			const [get, setGet] = (0, import_react$168.useState)(null);
@@ -64994,7 +64994,7 @@ Zu diesem hinzufügen\
 					headers: {
 						Accept: "application/json",
 						"Content-type": "application/x-www-form-urlencoded",
-						"X-CSRF-Token": (0, import_rails_csrf_token$19.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$18.default)()
 					}
 				}, (err, res, json) => {
 					if (err || res.statusCode !== 200) return;
@@ -65017,7 +65017,7 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchEditTitleModal.jsx
 	var BatchEditTitleModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchEditTitleModal });
-	var import_react$167, import_xhr$14, import_lib$11, import_rails_csrf_token$18, endPointUrl, BatchEditTitleModal;
+	var import_react$167, import_xhr$14, import_lib$11, import_rails_csrf_token$17, endPointUrl, BatchEditTitleModal;
 	var init_BatchEditTitleModal = __esmMin((() => {
 		import_react$167 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Modal();
@@ -65025,7 +65025,7 @@ Zu diesem hinzufügen\
 		init_FormButton();
 		import_xhr$14 = /* @__PURE__ */ __toESM(require_xhr());
 		import_lib$11 = /* @__PURE__ */ __toESM(require_lib$1());
-		import_rails_csrf_token$18 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$17 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_i18n_translate();
 		endPointUrl = "/batch_edit_title";
 		BatchEditTitleModal = class extends import_react$167.Component {
@@ -65053,7 +65053,7 @@ Zu diesem hinzufügen\
 					headers: {
 						Accept: "application/json",
 						"Content-type": "application/x-www-form-urlencoded",
-						"X-CSRF-Token": (0, import_rails_csrf_token$18.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$17.default)()
 					}
 				}, (err, res, json) => {
 					if (err || res.statusCode !== 200) this.setState({
@@ -65263,17 +65263,17 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/lib/load-xhr.js
-	var import_xhr$13, import_rails_csrf_token$17, load_xhr_default;
+	var import_xhr$13, import_rails_csrf_token$16, load_xhr_default;
 	var init_load_xhr = __esmMin((() => {
 		import_xhr$13 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$17 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$16 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		load_xhr_default = (config, callback) => (0, import_xhr$13.default)({
 			method: config.method,
 			url: config.url,
 			headers: {
 				Accept: "application/json",
 				"Content-type": "application/x-www-form-urlencoded",
-				"X-CSRF-Token": (0, import_rails_csrf_token$17.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$16.default)()
 			}
 		}, function(err, res, body) {
 			let data;
@@ -65412,17 +65412,17 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxDelete.js
 	var BoxDelete_exports = /* @__PURE__ */ __exportAll({ default: () => BoxDelete_default });
-	var import_xhr$12, import_rails_csrf_token$16, BoxDelete_default;
+	var import_xhr$12, import_rails_csrf_token$15, BoxDelete_default;
 	var init_BoxDelete = __esmMin((() => {
 		import_xhr$12 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$16 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$15 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BoxDelete_default = (resource, callback) => {
 			(0, import_xhr$12.default)({
 				url: resource.url,
 				method: "DELETE",
 				headers: {
 					Accept: "application/json",
-					"X-CSRF-Token": (0, import_rails_csrf_token$16.default)()
+					"X-CSRF-Token": (0, import_rails_csrf_token$15.default)()
 				}
 			}, () => {
 				callback();
@@ -65486,10 +65486,10 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxFavorite.js
 	var BoxFavorite_exports = /* @__PURE__ */ __exportAll({ default: () => BoxFavorite_default });
-	var import_xhr$11, import_rails_csrf_token$15, BoxFavorite_default;
+	var import_xhr$11, import_rails_csrf_token$14, BoxFavorite_default;
 	var init_BoxFavorite = __esmMin((() => {
 		import_xhr$11 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$15 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$14 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BoxFavorite_default = (last, props, trigger) => {
 			var nextPendingFavorite = () => {
 				if (props.event == "toggle") return true;
@@ -65508,7 +65508,7 @@ Zu diesem hinzufügen\
 					method: "PATCH",
 					headers: {
 						Accept: "application/json",
-						"X-CSRF-Token": (0, import_rails_csrf_token$15.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$14.default)()
 					}
 				}, () => {
 					trigger({ event: "toggle-done" });
@@ -65531,12 +65531,12 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxFetchRelations.js
 	var BoxFetchRelations_exports = /* @__PURE__ */ __exportAll({ default: () => BoxFetchRelations_default });
-	var import_url$24, import_xhr$10, import_rails_csrf_token$14, BoxFetchRelations_default;
+	var import_url$24, import_xhr$10, import_rails_csrf_token$13, BoxFetchRelations_default;
 	var init_BoxFetchRelations = __esmMin((() => {
 		init_lodash();
 		import_url$24 = /* @__PURE__ */ __toESM(require_url$1());
 		import_xhr$10 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$14 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$13 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BoxFetchRelations_default = (last, props, trigger) => {
 			var next = () => {
 				if (props.event == "try-fetch") {
@@ -65602,7 +65602,7 @@ Zu diesem hinzufügen\
 					json: true,
 					headers: {
 						Accept: "application/json",
-						"X-CSRF-Token": (0, import_rails_csrf_token$14.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$13.default)()
 					}
 				}, (err, res, json) => {
 					trigger({
@@ -74113,10 +74113,10 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/lib/form-put-with-errors.js
-	var import_xhr$9, import_rails_csrf_token$13, form_put_with_errors_default;
+	var import_xhr$9, import_rails_csrf_token$12, form_put_with_errors_default;
 	var init_form_put_with_errors = __esmMin((() => {
 		import_xhr$9 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$13 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$12 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_i18n_translate();
 		init_lodash();
 		form_put_with_errors_default = {
@@ -74128,7 +74128,7 @@ Zu diesem hinzufügen\
 					headers: {
 						Accept: "application/json",
 						"Content-type": contentType,
-						"X-CSRF-Token": (0, import_rails_csrf_token$13.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$12.default)()
 					}
 				}, function(err, res, body) {
 					if (err) {
@@ -77990,7 +77990,7 @@ Group\
 		if (config.retries && !isNumber(config.retries)) throw new TypeError("Not a number!");
 		if (config.delay && !isNumber(config.delay)) throw new TypeError("Not a number!");
 		const jsonDefaultHeader = { Accept: "application/json" };
-		if (config.method && !includes(["GET", "HEAD"], config.method)) csrfHeader = { "X-CSRF-Token": (0, import_rails_csrf_token$12.default)() };
+		if (config.method && !includes(["GET", "HEAD"], config.method)) csrfHeader = { "X-CSRF-Token": (0, import_rails_csrf_token$11.default)() };
 		if (!isEmpty$1(config.sparse)) sparsedUrl = {
 			url: set_params_for_url_default(config.url, { ___sparse: config.sparse }),
 			sparse: null
@@ -78028,21 +78028,21 @@ Group\
 		}, (retryCallback) => request(retryCallback), finalCallback);
 		else return request(finalCallback);
 	}
-	var import_xhr$8, import_retry, import_rails_csrf_token$12, mergeHeaders;
+	var import_xhr$8, import_retry, import_rails_csrf_token$11, mergeHeaders;
 	var init_app_request = __esmMin((() => {
 		init_lodash();
 		import_xhr$8 = /* @__PURE__ */ __toESM(require_xhr());
 		import_retry = /* @__PURE__ */ __toESM(require_retry());
 		init_set_params_for_url();
-		import_rails_csrf_token$12 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$11 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		mergeHeaders = (arrayOfHeaders) => arrayOfHeaders.map((headers) => Object.fromEntries(map(headers, (v, k) => [k.toLowerCase(), v]))).reduce((headers, res) => merge(res, headers), {});
 	}));
 	//#endregion
 	//#region app/javascript/lib/simple-xhr.js
-	var import_xhr$7, import_rails_csrf_token$11, simple_xhr_default;
+	var import_xhr$7, import_rails_csrf_token$10, simple_xhr_default;
 	var init_simple_xhr = __esmMin((() => {
 		import_xhr$7 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$11 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$10 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		simple_xhr_default = (config, callback) => (0, import_xhr$7.default)({
 			method: config.method,
 			url: config.url,
@@ -78050,7 +78050,7 @@ Group\
 			headers: {
 				Accept: "application/json",
 				"Content-type": "application/x-www-form-urlencoded",
-				"X-CSRF-Token": (0, import_rails_csrf_token$11.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$10.default)()
 			}
 		}, function(err, res) {
 			let error = null;
@@ -78553,7 +78553,7 @@ Group\
 			headers: {
 				Accept: "application/json",
 				"Content-type": "application/x-www-form-urlencoded",
-				"X-CSRF-Token": (0, import_rails_csrf_token$10.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$9.default)()
 			}
 		}, function(err, res, body) {
 			let data;
@@ -78584,10 +78584,10 @@ Group\
 			return callback("success", data);
 		});
 	}
-	var import_xhr$5, import_rails_csrf_token$10;
+	var import_xhr$5, import_rails_csrf_token$9;
 	var init_form_xhr = __esmMin((() => {
 		import_xhr$5 = /* @__PURE__ */ __toESM(require_xhr());
-		import_rails_csrf_token$10 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$9 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 	}));
 	//#endregion
 	//#region app/javascript/react/views/My/CreateCollection.jsx
@@ -78927,7 +78927,7 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/MediaResourcesBox.jsx
 	var MediaResourcesBox_exports = /* @__PURE__ */ __exportAll({ default: () => MediaResourcesBox });
-	var import_react$105, import_url$18, import_local_links, import_createBrowserHistory$1, import_useBeforeUnload$1, import_rails_csrf_token$9, import_ui_components$14, getLocalLink, routerGoto, isNewTab, MediaResourcesBox;
+	var import_react$105, import_url$18, import_local_links, import_createBrowserHistory$1, import_useBeforeUnload$1, import_rails_csrf_token$8, import_ui_components$14, getLocalLink, routerGoto, isNewTab, MediaResourcesBox;
 	var init_MediaResourcesBox = __esmMin((() => {
 		init_present();
 		init_lodash();
@@ -78939,7 +78939,7 @@ Group\
 		init_ui();
 		init_set_params_for_url();
 		init_app_request();
-		import_rails_csrf_token$9 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$8 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_simple_xhr();
 		init_form_put_with_errors();
 		init_resource_type_switcher();
@@ -79186,7 +79186,7 @@ Group\
 			_sharedOnBatch = (resources, event, path) => {
 				event.preventDefault();
 				const selected = map(resources, "uuid");
-				const html = `<form method="post" acceptCharset="UTF-8" action="${path}"><input type="hidden" name="authenticity_token" value="` + (0, import_rails_csrf_token$9.default)() + "\"></input><input type=\"hidden\" name=\"return_to\" value=\"" + this._currentUrl() + "\"></input><button type=\"button\"></button>" + join(map(selected, (s) => {
+				const html = `<form method="post" acceptCharset="UTF-8" action="${path}"><input type="hidden" name="authenticity_token" value="` + (0, import_rails_csrf_token$8.default)() + "\"></input><input type=\"hidden\" name=\"return_to\" value=\"" + this._currentUrl() + "\"></input><button type=\"button\"></button>" + join(map(selected, (s) => {
 					return `<input type="hidden" name="id[]" value="${s}"></input>`;
 				}), "") + "</form>";
 				const form = document.createElement("div");
@@ -80281,7 +80281,7 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/ResourceMetaDataPagePerContext.jsx
 	var ResourceMetaDataPagePerContext_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceMetaDataPagePerContext });
-	var import_react$95, import_url$17, import_xhr$3, import_rails_csrf_token$8, ResourceMetaDataPagePerContext;
+	var import_react$95, import_url$17, import_xhr$3, import_rails_csrf_token$7, ResourceMetaDataPagePerContext;
 	var init_ResourceMetaDataPagePerContext = __esmMin((() => {
 		init_present();
 		init_lodash();
@@ -80297,7 +80297,7 @@ Group\
 		init_TabContent();
 		import_xhr$3 = /* @__PURE__ */ __toESM(require_xhr());
 		init_rails_form();
-		import_rails_csrf_token$8 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$7 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_metadata_edit_validation();
 		init_MetadataEditRenderer();
 		ResourceMetaDataPagePerContext = class extends import_react$95.Component {
@@ -80448,7 +80448,7 @@ Group\
 					headers: {
 						Accept: "application/json",
 						"Content-type": "application/x-www-form-urlencoded",
-						"X-CSRF-Token": (0, import_rails_csrf_token$8.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$7.default)()
 					}
 				}, (err, res, body) => {
 					let data;
@@ -81956,7 +81956,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			headers: {
 				"Content-Type": "application/json",
 				Accept: "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token$7.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$6.default)()
 			},
 			body: JSON.stringify(body)
 		});
@@ -81991,7 +81991,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			headers: {
 				"Content-Type": "application/json",
 				Accept: "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token$7.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$6.default)()
 			},
 			body: JSON.stringify({ [resourceKey]: data })
 		});
@@ -82006,10 +82006,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 		}
 		return res.json();
 	}
-	var import_rails_csrf_token$7, PERMISSION_KEYS;
+	var import_rails_csrf_token$6, PERMISSION_KEYS;
 	var init_permissions = __esmMin((() => {
 		init_lodash();
-		import_rails_csrf_token$7 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$6 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		PERMISSION_KEYS = [
 			"public_permission",
 			"user_permissions",
@@ -83224,14 +83224,14 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/AsyncDashboardSection.jsx
-	var import_react$59, import_prop_types$10, import_rails_csrf_token$6, AsyncDashboardSection;
+	var import_react$59, import_prop_types$10, import_rails_csrf_token$5, AsyncDashboardSection;
 	var init_AsyncDashboardSection = __esmMin((() => {
 		init_present();
 		init_lodash();
 		import_react$59 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$10 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_app_request();
-		import_rails_csrf_token$6 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$5 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_SuperBoxDashboard();
 		init_Icon();
 		init_Preloader();
@@ -83284,7 +83284,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					if (err || res.statusCode >= 400) return callback(err || data);
 					const props = this.props.initial_props;
 					props.get = this.props.json_path ? get$1(data, this.props.json_path) : data;
-					props.authToken = (0, import_rails_csrf_token$6.default)();
+					props.authToken = (0, import_rails_csrf_token$5.default)();
 					return callback(null, props);
 				});
 			};
@@ -84851,7 +84851,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			body: JSON.stringify({ acknowledged }),
 			headers: {
 				"Content-Type": "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token$5.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$4.default)()
 			}
 		}, (err, res) => {
 			if (res.statusCode === 200) onSuccess();
@@ -84868,7 +84868,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}),
 			headers: {
 				"Content-Type": "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token$5.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$4.default)()
 			}
 		}, (err, res) => {
 			if (res.statusCode === 200) onSuccess();
@@ -84882,21 +84882,21 @@ There are no contexts defined. Please configure them in the admin tool.\
 			body: JSON.stringify({ notification_ids: ids }),
 			headers: {
 				"Content-Type": "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token$5.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$4.default)()
 			}
 		}, (err, res) => {
 			if (res.statusCode === 200) onSuccess();
 			else alert("Error");
 		});
 	}
-	var import_xhr$2, import_react$38, import_moment$5, import_rails_csrf_token$5, import_classnames$5, import_ui_components$8, MyNotifications;
+	var import_xhr$2, import_react$38, import_moment$5, import_rails_csrf_token$4, import_classnames$5, import_ui_components$8, MyNotifications;
 	var init_Notifications = __esmMin((() => {
 		import_xhr$2 = /* @__PURE__ */ __toESM(require_xhr());
 		import_react$38 = /* @__PURE__ */ __toESM(require_react$1());
 		import_moment$5 = /* @__PURE__ */ __toESM(require_moment$1());
 		init_current_locale();
 		init_i18n_translate();
-		import_rails_csrf_token$5 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$4 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_interpolate_split();
 		import_classnames$5 = /* @__PURE__ */ __toESM(require_classnames());
 		import_ui_components$8 = /* @__PURE__ */ __toESM(require_ui_components());
@@ -85079,7 +85079,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			body: JSON.stringify(data),
 			headers: {
 				"Content-Type": "application/json",
-				"X-CSRF-Token": (0, import_rails_csrf_token$4.default)()
+				"X-CSRF-Token": (0, import_rails_csrf_token$3.default)()
 			}
 		}, (err, res) => {
 			if (res.statusCode === 200) onSuccess();
@@ -85090,13 +85090,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 		event.preventDefault();
 		event.returnValue = "";
 	}
-	var import_xhr$1, import_react$37, import_rails_csrf_token$4, MySettings;
+	var import_xhr$1, import_react$37, import_rails_csrf_token$3, MySettings;
 	var init_Settings = __esmMin((() => {
 		import_xhr$1 = /* @__PURE__ */ __toESM(require_xhr());
 		import_react$37 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_interpolate_split();
-		import_rails_csrf_token$4 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$3 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		MySettings = class extends import_react$37.Component {
 			constructor(props) {
 				super(props);
@@ -90538,13 +90538,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 						duplicatorConfiguration: configuration
 					});
 				}
-				const added = this.props.appCollection.add(files.map((file) => ({
-					uploading: {
-						file,
-						copyMdFrom
-					},
-					title: file.name
-				})));
+				const added = this.props.appCollection.add(files.map((file) => ({ uploading: {
+					file,
+					copyMdFrom
+				} })));
 				this.setState({ uploading: true });
 				return added.map((model) => UploadQueue.push(model, (err) => {
 					if (err) return console.error("Uploader failed!", model, err);
@@ -92954,9 +92951,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 		if (ownConfig.extraProperties) merged.extraProperties = ownConfig.extraProperties;
 		return merged;
 	}
-	var import_rails_csrf_token$3, cidCounter, SKIP_METHOD_KEYS$1, BaseModel;
+	var import_xhr, import_rails_csrf_token$2, cidCounter, SKIP_METHOD_KEYS$1, BaseModel;
 	var init_base_model = __esmMin((() => {
-		import_rails_csrf_token$3 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_xhr = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$2 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		cidCounter = 0;
 		SKIP_METHOD_KEYS$1 = /* @__PURE__ */ new Set([
 			.../* @__PURE__ */ new Set([
@@ -93111,27 +93109,29 @@ There are no contexts defined. Please configure them in the admin tool.\
 				return this.serialize();
 			}
 			_runRequest(req, callback) {
-				const { method = "GET", url, body, json, headers: extra = {} } = req;
-				const isFormData = typeof FormData !== "undefined" && body instanceof FormData;
 				const headers = {
 					Accept: "application/json",
-					"X-CSRF-Token": (0, import_rails_csrf_token$3.default)(),
-					...extra
+					"X-CSRF-Token": (0, import_rails_csrf_token$2.default)(),
+					...req.headers
 				};
-				if (!isFormData) headers["Content-Type"] = "application/json";
-				fetch(url, {
-					method,
-					headers,
-					body: body !== void 0 ? body : json !== void 0 ? JSON.stringify(json) : void 0
-				}).then(async (res) => {
-					let data;
+				let { body } = req;
+				if (body === void 0 && req.json !== void 0) {
+					body = JSON.stringify(req.json);
+					headers["Content-Type"] = "application/json";
+				}
+				return (0, import_xhr.default)({
+					method: req.method,
+					url: req.url,
+					body,
+					beforeSend: req.beforeSend,
+					headers
+				}, (err, res, raw) => {
+					let data = raw;
 					try {
-						data = await res.json();
-					} catch {
-						data = null;
-					}
-					callback(null, { statusCode: res.status }, data);
-				}).catch((err) => callback(err, null, null));
+						data = JSON.parse(raw);
+					} catch {}
+					callback(err, res, data);
+				});
 			}
 			save(config = {}) {
 				this._runRequest({
@@ -93199,9 +93199,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/models/shared/base-collection.js
-	var import_rails_csrf_token$2, SKIP_METHOD_KEYS, BaseCollection;
+	var import_rails_csrf_token$1, SKIP_METHOD_KEYS, BaseCollection;
 	var init_base_collection = __esmMin((() => {
-		import_rails_csrf_token$2 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$1 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_base_model();
 		SKIP_METHOD_KEYS = /* @__PURE__ */ new Set([
 			"type",
@@ -93296,13 +93296,15 @@ There are no contexts defined. Please configure them in the admin tool.\
 				return !!this.get(id);
 			}
 			add(attrsOrArray) {
-				(Array.isArray(attrsOrArray) ? attrsOrArray : [attrsOrArray]).forEach((attrs) => {
+				const wasArray = Array.isArray(attrsOrArray);
+				const added = (wasArray ? attrsOrArray : [attrsOrArray]).map((attrs) => {
 					const model = this._createModel(attrs);
 					this.models.push(model);
 					this.trigger("add", model);
+					return model;
 				});
 				this.trigger("change");
-				return this;
+				return wasArray ? added : added[0];
 			}
 			remove(model) {
 				const idx = this.models.indexOf(model);
@@ -93339,7 +93341,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					headers: {
 						"Content-Type": "application/json",
 						Accept: "application/json",
-						"X-CSRF-Token": (0, import_rails_csrf_token$2.default)()
+						"X-CSRF-Token": (0, import_rails_csrf_token$1.default)()
 					},
 					body: opts.json ? JSON.stringify(opts.json) : void 0
 				}).then(async (res) => {
@@ -93382,12 +93384,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/models/shared/rails-resource-mixin.js
-	var import_rails_csrf_token$1, rails_resource_mixin_default;
+	var import_rails_csrf_token, rails_resource_mixin_default;
 	var init_rails_resource_mixin = __esmMin((() => {
-		import_rails_csrf_token$1 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		rails_resource_mixin_default = { ajaxConfig: { headers: {
 			Accept: "application/json",
-			"X-CSRF-Token": (0, import_rails_csrf_token$1.default)()
+			"X-CSRF-Token": (0, import_rails_csrf_token.default)()
 		} } };
 	}));
 	//#endregion
@@ -93408,12 +93410,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/models/shared/app-resource.js
-	var import_xhr, import_rails_csrf_token, AppResource;
+	var AppResource;
 	var init_app_resource = __esmMin((() => {
 		init_lodash();
-		import_xhr = /* @__PURE__ */ __toESM(require_xhr());
 		init_base_model();
-		import_rails_csrf_token = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_rails_resource_mixin();
 		AppResource = BaseModel.extend(rails_resource_mixin_default, {
 			type: "AppResource",
@@ -93430,31 +93430,6 @@ There are no contexts defined. Please configure them in the admin tool.\
 			},
 			dump: function() {
 				return this.serialize();
-			},
-			_runRequest: function(req, callback) {
-				const headers = {
-					Accept: "application/json",
-					"X-CSRF-Token": (0, import_rails_csrf_token.default)(),
-					...req.headers || {}
-				};
-				let body = req.body;
-				if (body === void 0 && req.json !== void 0) {
-					body = JSON.stringify(req.json);
-					headers["Content-Type"] = "application/json";
-				}
-				return (0, import_xhr.default)({
-					method: req.method,
-					url: req.url,
-					body,
-					beforeSend: req.beforeSend,
-					headers
-				}, function(err, res, body) {
-					return callback(err, res, (() => {
-						try {
-							return JSON.parse(body);
-						} catch (e) {}
-					})() || body);
-				});
 			}
 		});
 	}));
@@ -93576,10 +93551,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				parsedUrl.query["list[per_page]"] = 2;
 				parsedUrl.query["___sparse"] = sparseSpec;
 				const relationsUrl = (0, import_url.format)(parsedUrl);
-				return this._runRequest({
-					url: relationsUrl,
-					json: true
-				}, (err, res, json) => {
+				return this._runRequest({ url: relationsUrl }, (err, res, json) => {
 					if (err || res.statusCode >= 400) {
 						console.error("Error fetching relations!", err || json);
 						if (isFunction(callback)) return callback(err || json);
@@ -93711,7 +93683,11 @@ There are no contexts defined. Please configure them in the admin tool.\
 				}
 			},
 			upload: function(callback) {
-				if (!(this.uploading.file instanceof BrowserFile)) throw new Error("Model: MediaEntry: #upload called but no file!");
+				if (!(this.uploading && this.uploading.file instanceof BrowserFile)) {
+					const err = /* @__PURE__ */ new Error("Model: MediaEntry: #upload called but no file!");
+					if (isFunction(callback)) return callback(err);
+					throw err;
+				}
 				const formData = new FormData();
 				formData.append("media_entry[media_file]", this.uploading.file);
 				if (has(this.uploading, "copyMdFrom.id") && has(this.uploading, "copyMdFrom.configuration")) {

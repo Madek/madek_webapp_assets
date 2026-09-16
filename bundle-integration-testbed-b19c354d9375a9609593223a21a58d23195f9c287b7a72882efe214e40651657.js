@@ -5298,9 +5298,10 @@
 		if (ownConfig.extraProperties) merged.extraProperties = ownConfig.extraProperties;
 		return merged;
 	}
-	var import_rails_csrf_token$3, cidCounter, SKIP_METHOD_KEYS$1, BaseModel;
+	var import_xhr, import_rails_csrf_token$2, cidCounter, SKIP_METHOD_KEYS$1, BaseModel;
 	var init_base_model = __esmMin((() => {
-		import_rails_csrf_token$3 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_xhr = /* @__PURE__ */ __toESM(require_xhr());
+		import_rails_csrf_token$2 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		cidCounter = 0;
 		SKIP_METHOD_KEYS$1 = /* @__PURE__ */ new Set([
 			.../* @__PURE__ */ new Set([
@@ -5455,27 +5456,29 @@
 				return this.serialize();
 			}
 			_runRequest(req, callback) {
-				const { method = "GET", url, body, json, headers: extra = {} } = req;
-				const isFormData = typeof FormData !== "undefined" && body instanceof FormData;
 				const headers = {
 					Accept: "application/json",
-					"X-CSRF-Token": (0, import_rails_csrf_token$3.default)(),
-					...extra
+					"X-CSRF-Token": (0, import_rails_csrf_token$2.default)(),
+					...req.headers
 				};
-				if (!isFormData) headers["Content-Type"] = "application/json";
-				fetch(url, {
-					method,
-					headers,
-					body: body !== void 0 ? body : json !== void 0 ? JSON.stringify(json) : void 0
-				}).then(async (res) => {
-					let data;
+				let { body } = req;
+				if (body === void 0 && req.json !== void 0) {
+					body = JSON.stringify(req.json);
+					headers["Content-Type"] = "application/json";
+				}
+				return (0, import_xhr.default)({
+					method: req.method,
+					url: req.url,
+					body,
+					beforeSend: req.beforeSend,
+					headers
+				}, (err, res, raw) => {
+					let data = raw;
 					try {
-						data = await res.json();
-					} catch {
-						data = null;
-					}
-					callback(null, { statusCode: res.status }, data);
-				}).catch((err) => callback(err, null, null));
+						data = JSON.parse(raw);
+					} catch {}
+					callback(err, res, data);
+				});
 			}
 			save(config = {}) {
 				this._runRequest({
@@ -5543,22 +5546,20 @@
 	}));
 	//#endregion
 	//#region app/javascript/models/shared/rails-resource-mixin.js
-	var import_rails_csrf_token$2, rails_resource_mixin_default;
+	var import_rails_csrf_token$1, rails_resource_mixin_default;
 	var init_rails_resource_mixin = __esmMin((() => {
-		import_rails_csrf_token$2 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
+		import_rails_csrf_token$1 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		rails_resource_mixin_default = { ajaxConfig: { headers: {
 			Accept: "application/json",
-			"X-CSRF-Token": (0, import_rails_csrf_token$2.default)()
+			"X-CSRF-Token": (0, import_rails_csrf_token$1.default)()
 		} } };
 	}));
 	//#endregion
 	//#region app/javascript/models/shared/app-resource.js
-	var import_xhr, import_rails_csrf_token$1, AppResource;
+	var AppResource;
 	var init_app_resource = __esmMin((() => {
 		init_lodash();
-		import_xhr = /* @__PURE__ */ __toESM(require_xhr());
 		init_base_model();
-		import_rails_csrf_token$1 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_rails_resource_mixin();
 		AppResource = BaseModel.extend(rails_resource_mixin_default, {
 			type: "AppResource",
@@ -5575,31 +5576,6 @@
 			},
 			dump: function() {
 				return this.serialize();
-			},
-			_runRequest: function(req, callback) {
-				const headers = {
-					Accept: "application/json",
-					"X-CSRF-Token": (0, import_rails_csrf_token$1.default)(),
-					...req.headers || {}
-				};
-				let body = req.body;
-				if (body === void 0 && req.json !== void 0) {
-					body = JSON.stringify(req.json);
-					headers["Content-Type"] = "application/json";
-				}
-				return (0, import_xhr.default)({
-					method: req.method,
-					url: req.url,
-					body,
-					beforeSend: req.beforeSend,
-					headers
-				}, function(err, res, body) {
-					return callback(err, res, (() => {
-						try {
-							return JSON.parse(body);
-						} catch (e) {}
-					})() || body);
-				});
 			}
 		});
 	}));
@@ -6267,13 +6243,15 @@
 				return !!this.get(id);
 			}
 			add(attrsOrArray) {
-				(Array.isArray(attrsOrArray) ? attrsOrArray : [attrsOrArray]).forEach((attrs) => {
+				const wasArray = Array.isArray(attrsOrArray);
+				const added = (wasArray ? attrsOrArray : [attrsOrArray]).map((attrs) => {
 					const model = this._createModel(attrs);
 					this.models.push(model);
 					this.trigger("add", model);
+					return model;
 				});
 				this.trigger("change");
-				return this;
+				return wasArray ? added : added[0];
 			}
 			remove(model) {
 				const idx = this.models.indexOf(model);
@@ -10290,10 +10268,7 @@
 				parsedUrl.query["list[per_page]"] = 2;
 				parsedUrl.query["___sparse"] = sparseSpec;
 				const relationsUrl = (0, import_url.format)(parsedUrl);
-				return this._runRequest({
-					url: relationsUrl,
-					json: true
-				}, (err, res, json) => {
+				return this._runRequest({ url: relationsUrl }, (err, res, json) => {
 					if (err || res.statusCode >= 400) {
 						console.error("Error fetching relations!", err || json);
 						if (isFunction(callback)) return callback(err || json);
@@ -10425,7 +10400,11 @@
 				}
 			},
 			upload: function(callback) {
-				if (!(this.uploading.file instanceof BrowserFile)) throw new Error("Model: MediaEntry: #upload called but no file!");
+				if (!(this.uploading && this.uploading.file instanceof BrowserFile)) {
+					const err = /* @__PURE__ */ new Error("Model: MediaEntry: #upload called but no file!");
+					if (isFunction(callback)) return callback(err);
+					throw err;
+				}
 				const formData = new FormData();
 				formData.append("media_entry[media_file]", this.uploading.file);
 				if (has(this.uploading, "copyMdFrom.id") && has(this.uploading, "copyMdFrom.configuration")) {

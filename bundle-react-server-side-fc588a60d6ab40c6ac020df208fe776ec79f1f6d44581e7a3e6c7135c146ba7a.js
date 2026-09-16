@@ -81405,13 +81405,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 						duplicatorConfiguration: configuration
 					});
 				}
-				const added = this.props.appCollection.add(files.map((file) => ({
-					uploading: {
-						file,
-						copyMdFrom
-					},
-					title: file.name
-				})));
+				const added = this.props.appCollection.add(files.map((file) => ({ uploading: {
+					file,
+					copyMdFrom
+				} })));
 				this.setState({ uploading: true });
 				return added.map((model) => UploadQueue.push(model, (err) => {
 					if (err) return console.error("Uploader failed!", model, err);
