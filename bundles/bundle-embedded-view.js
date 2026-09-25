@@ -42690,8 +42690,8 @@
 			} }, /*#__PURE__*/ import_react$1.createElement("iframe", {
 				src: iframeSrc,
 				style: {
-					height: "100% !important",
-					width: "100% !important",
+					height: "100%",
+					width: "100%",
 					position: "absolute",
 					top: "0",
 					left: "0"
