@@ -6125,7 +6125,7 @@
 	var init_i18n_translate = __esmMin((() => {
 		init_lodash();
 		init_parse_translations_from_csv();
-		translationsList = readTranslationsFromCSV("key,de,en,comment\najax_form_connection_error,Verbindungsfehler. Bitte versuchen Sie es noch einmal.,Connection error. Please try again.,\najax_form_no_longer_authorized,Sie sind für diese Aktion nicht mehr authorisiert.,You are no longer authorized to do this.,\najax_form_unexpected_error,Es gab einen unerwarteten Server-Fehler.,There was an unexpected server error.,\najax_form_validation_error_unparsable,Validation error with unparsable errors.,Validation error with unparsable errors.,\"Formular speichern, Edge case: Server gibt Fehlermeldung UND sie kann nicht gelesen werden.\"\najax_form_validation_error_without_any_data,Validation error without any data.,Validation error without any data.,\"Formular speichern, Edge case: Server gibt Fehlermeldungs-Code aber sonst keinen Inhalt\"\najax_form_validation_error_without_error_data,Validation error without error data.,Validation error without error data.,\"Formular speichern, Edge case: Server gibt Fehlermeldung, aber keine Details\"\napi_tokens_callback_description,Token wird für eine externe Applikation erstellt.,Token is being created for an external application.,\napi_tokens_create_cancel,Abbrechen,Cancel,\napi_tokens_create_description,Beschreibung,Description,\napi_tokens_create_submit,Token anlegen,Create token,\napi_tokens_create_title,Neuen Token hinzufügen,Add new token,\napi_tokens_created_back_btn,Zurück zu allen Tokens.,Back to all tokens.,\napi_tokens_created_callback_btn,Weiter zur Applikation,Continue to the application,\napi_tokens_created_callback_description,\"Falls die Weiterleitung nicht funktioniert, kann der Token auch manuell kopiert werden:\",\"If the redirect does not work, the token can also be copied manually:\",\napi_tokens_created_notice,Dieser Token wird nur einmal angezeigt. Bitte speichern Sie ihn jetzt.,This token is displayed only once. Please save it now.,\napi_tokens_created_title,Es wurde ein neuer Token erstellt.,A new token was created.,\napi_tokens_head_id,ID,ID,\napi_tokens_head_name,Name,Name,\napi_tokens_head_permissions,Berechtigungen,Permissions,\napi_tokens_head_valid_since,Gültig seit,Valid from,\napi_tokens_head_valid_until,Gültig bis,Valid to,\napi_tokens_list_created_hint_pre,Erstellt: ,Created: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_new_button,Neuen Token erstellen,Create new token,\napi_tokens_list_no_description,(Keine Beschreibung),No description),\"Platzhalter-Text, falls ein Token keine Beschreibung hat.\"\napi_tokens_list_revoke_btn_hint,Token zurückziehen.,Revoke token.,\napi_tokens_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Token zurückziehen wollen?\",Are you sure you want to revoke the token?,\napi_tokens_list_revoked_title,Abgelaufene und zurückgezogene Tokens,Expired and revoked tokens,\napi_tokens_list_scope_off,Nein,No,\napi_tokens_list_scope_on,Ja,Yes,\napi_tokens_list_scope_read,Lesen,Read,\napi_tokens_list_scope_write,Schreiben,Write,\napp_autocomplete_displayname_users,Nutzer/innen,Users,\napp_autocomplete_displayname_delegations,Verantwortungs-Gruppen,Responsibility groups,\napp_autocomplete_no_results,Keine Ergebnisse.,No results.,\napp_autocomplete_user_delegation_postfix, (Verantwortungs-Gruppe), (Responsibility group)\napp_autocomplete_enter_term,Suchbegriff eingeben für weitere Ergebnisse,Enter search term for further results,\napp_autocomplete_extend_term,Suchbegriff erweitern für weitere Ergebnisse,Extend search term for further results,\napp_confirm_form_leave_msg,\"Diese Seite bittet Sie zu bestätigen, dass Sie die Seite verlassen möchten. Daten, die Sie eingegeben haben, werden unter Umständen nicht gespeichert.\",Please confirm that you wish to leave this page – entered data might not be saved.,NOTE: German version copied from Firefox default message\napp_notice_admin_mode_on,Admin-Modus aktiviert!,Admin mode activated!,\napp_notice_admin_mode_off,Admin-Modus deaktiviert!,Admin mode deactivated!,\napp_notice_logged_in,Sie haben sich angemeldet.,You have logged in.,\napp_notice_logged_out,Sie haben sich abgemeldet.,You have logged out.,\napp_notice_wrong_credentials,Falscher Benutzername/Passwort.,Incorrect username/password.,\napp_notice_shibboleth_not_enabled,Die Anmeldung mittels Shibboleth ist nicht aktiviert!,Shibboleth sign in is not enabled!,\napp_notice_shibboleth_missing_fields,\"Die Authentifizierungsdaten von Shibboleth sind unvollständig. SURNAME, GIVENNAME und EMAIL sind Pflichtfelder!\",\"Shibboleth authentication data is incomplete. SURNAME, GIVENNAME and EMAIL are required fields!\",\napp_warning_jsonly,\"Diese Funktion erfordert JavaScript, aber es ist nicht aktiviert.\",\"This feature requires Javascript, but it is not activated.\",\nauthentication_groups,Systemgruppen,System groups,\nbatch_add_to_collection_hint,\"Nach Sets suchen, zu denen Sie die Medieneinträge hinzufügen möchten.\",Seach for sets to add media entries.,\nbatch_add_to_collection_post, Medieneinträge zu Set hinzufügen,Add media entries to set,(nach der Anzahl)\nbatch_add_to_collection_pre, ,,(vor der Anzahl)\nbatch_destroy_resources_ask_1,Möchten Sie folgende Inhalte löschen:,Do you want to delete the following items:,\nbatch_destroy_resources_ask_2, Medieneinträge, Media entries,\nbatch_destroy_resources_ask_3, Sets, Sets,\nbatch_destroy_resources_ask_4,(Die Inhalte von Sets werden nicht automatisch mit dem Set gelöscht.),\"(When a set is deleted, the items of this set are not deleted at the same time.)\",\nbatch_destroy_resources_cancel,Abbrechen,Cancel,\nbatch_destroy_resources_ok,OK,OK,\nbatch_destroy_resources_success,Inhalte wurden erfolgreich gelöscht.,Items are deleted successfully.,\nbatch_meta_data_edit,Metadaten für %{media_entry_count} Medieneinträge gleichzeitig editieren.,Edit metadata for %{media_entry_count} media entries at the same time.,\nbatch_remove_from_collection_cancel,Abbrechen,Cancel,\nbatch_remove_from_collection_question_part_1,Möchten Sie die ausgewählten ,Do you want to remove the selected ,\nbatch_remove_from_collection_question_part_2, Medieneinträge und , media entries and ,\nbatch_remove_from_collection_question_part_3, Sets aus dem Set entfernen?, sets from this set?,\nbatch_remove_from_collection_remove,Entfernen,Remove,\nbatch_remove_from_collection_title,Medieinträge/Sets aus Set entfernen,Remove media entries/sets from sets,\nbatch_warning_no_authorized_contents_collection,Sie haben für keines der Sets die nötige Berechtigung.,You have no permissions for these sets.,\nbatch_warning_no_authorized_contents_media_entry,Sie haben für keinen der Medieneinträge die nötige Berechtigung.,You have no permissions for these media entries.,\nbatch_warning_no_contents_collection,Sie haben keine Sets.,You have no sets.,\nbatch_warning_no_contents_media_entry,Sie haben keine Medieneinträge.,You have no media entries.,\nbatch_edit_title_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nbatch_edit_title_th_filename,Dateiname,File name,\nbatch_edit_title_th_title,Titel,Title,\nbatch_edit_title_save,Speichern,Save,\nbatch_edit_title_cancel,Abbrechen,Cancel,\nbrowse_entries_browse_link_title,In diese Richtung weiterstöbern,Browse further in this direction,\nbrowse_entries_filter_link,Weiter filtern →,Apply additional filter →,\nbrowse_entries_loading_error,Ladefehler,Loading error,\nbrowse_entries_title,Nach ähnlichen Inhalten stöbern,Browse similar items,\nbubble_batch_label,Stapel,Batch,Wo: Labels in der Stapelverarbeitung\nbubble_draft_label,Entwurf,Draft,Wo: Labels in der Stapelverarbeitung\nclipboard_add_hint,Zur Stapelverarbeitung hinzufügen,Add to batch processing,\nclipboard_adding_all_resources_cancelled,\"Das Hinzufügen zur Stapelverarbeitung wurde abgebrochen. Ein Teil der Inhalte wurde schon hinzugefügt. Wenn Sie alle hinzufügen möchten, versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.\",\"The process of adding items to batch processing was interrupted. Some items were successfully added to batch processing. If you wish to add all items, please try again.Those items already added will not be duplicated.\",\nclipboard_adding_all_resources_error,Es konnten nicht alle Inhalte zur Stapelverarbeitung hinzugefügt werden. Bitte versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.,It was not possible to add all items to batch processing. Please try again. Those items already added will not be duplicated.,\nclipboard_adding_all_resources_retry,Nochmals, Again,\nclipboard_adding_resources,Füge Inhalte zur Stapelverarbeitung hinzu …,Add items to batch processing …,\nclipboard_ask_add_all_1,Möchten sie alle ,Would you like to add all ,\nclipboard_ask_add_all_2, Inhalte zur Stapelverarbeitung hinzufügen?, items to batch processing?,\nclipboard_ask_add_all_cancel,Abbrechen,Cancel,\nclipboard_ask_add_all_ok,Ok,OK,\nclipboard_batch_add_success,Die Inhalte wurden der Stapelverarbeitung hinzugefügt.,Items were added to batch processing.,\nclipboard_batch_remove_success,Die Inhalte wurden aus der Stapelverarbeitung entfernt.,Items wer removed from batch processing.,\nclipboard_empty_message,Sie haben keine Inhalte für die Stapelverarbeitung ausgewählt.,Batch processing is empty,\nclipboard_fetching_resources,Lade Inhalte …,Items loading …,\"Wieso sind da Pünktchen? -> Ist eine Zustandsanzeige, Nutzer wartet.\"\nclipboard_removing_resources,Entferne Inhalte aus Stapelverarbeitung...,Remove items from batch processing ...,\ncollection_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgendes Set löschen möchten: \",Are you sure you want to delete the following set:,\ncollection_ask_delete_title,Set löschen,Delete set,\ncollection_deleted,Dieses Set wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This set has been deleted and is no longer visible to users.\ncollection_delete_success,Set wurde gelöscht.,Set deleted.,\ncollection_does_not_exist,Dieses Set existiert nicht.,This set does not exist.,\ncollection_edit_cover_submit_btn,Speichern,Submit,\ncollection_edit_cover_title,Titelbild für Set festlegen,Define set cover,\ncollection_edit_highlights_btn,Auswahl speichern,Submit selection,\ncollection_edit_highlights_empty,Dieses Set hat noch keine Inhalte.,This set has no items yet.,\ncollection_edit_highlights_title,Inhalte hervorheben,Highlight items,\ncollection_edit_permissions_btn,Speichern,Submit,\ncollection_highlighted_contents,Hervorgehobene Inhalte,Highlighted items,\ncollection_layout_save,Darstellung festlegen,Save type of display,\ncollection_layout_saved,Darstellung gespeichert,Type of display saved,\ncollection_meta_data_header_prefix,Set editieren: ,Edit set:,\ncollection_new_cancel,Abbrechen,Cancel,\ncollection_new_create_set,Set erstellen,Create set,\ncollection_new_dialog_title,Set erstellen,Create set,\ncollection_new_dialog_parent_warning,The new created set will be added as a child to:,The new created set will be added as a child to:,\ncollection_new_flash_successful,Set wurde erstellt.,Set was created.,\ncollection_new_flash_title_needed,Titel ist ein Pflichtfeld.,Title is a mandatory field.,\ncollection_new_header,Neues Set,New set,\ncollection_new_label_title,Titel,Title,\ncollection_permissions_btn,Zugriffsberechtigungen ändern,Change permissions,\ncollection_relations_child_sets,Untergeordnete Sets,Child sets,\ncollection_relations_children_hint,Diese Sets wurden dem ausgewählten Set hinzugefügt.,These sets are now related to the selected set.,\ncollection_relations_current,Aktuelles Set,Current set,\ncollection_relations_hint_text,\"Das ausgewählte Set ist mit anderen Sets verknüpft. Diese Zusammenhänge wurden aktiv durch Sie oder eine/n andere/n Nutzer/in festgelegt als übergeordnet, benachbart oder untergeordnet. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected set is related to other sets. The relationship between these sets was actively defined by you or another user. The type of relationship to the other sets could be described as parent, siblings or children relationship. The displayed sets are owned by yourself or shared by other users with you.\",\ncollection_relations_no_child_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_parent_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_sibling_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_parent_sets,Übergeordnete Sets,Parent sets,\ncollection_relations_parents_hint,Das ausgewählte Set wurde diesen Sets hinzugefügt.,The selected set is now related to this set.,\ncollection_relations_show_all,Alle anzeigen →,Show all →,\ncollection_relations_show_all_relations,Alle Zusammenhänge anzeigen,Show all relations,\ncollection_relations_sibling_sets,Benachbarte Sets,Sibling sets,\ncollection_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie das ausgewählte Set.,This set is related to the same sets as the selected set.,Wo: Zusammenhänge eines Sets\ncollection_resource_selection_cancel,Abbrechen,Cancel,\ncollection_resource_selection_h_author,Autor/in,Author,\ncollection_resource_selection_h_date,Datierung,Dating,\ncollection_resource_selection_h_keywords,Schlagworte,Keywords,\ncollection_resource_selection_h_responsible,Rechteinhaber,Holder of rights,\ncollection_resource_selection_h_selection,Auswahl,Selection,\ncollection_resource_selection_h_subtitle,Untertitel,Subtitle,\ncollection_resource_selection_h_title,Titel,Title,\ncollection_resource_selection_save,Auswahl speichern,Save selection,\ncollection_select_collection_flash_result,Set aus %{removed_count} Set(s) entfernt. Zu %{added_count} Set(s) hinzugefügt.,Removed set from %{removed_count} set(s). Added set to %{added_count} set(s).,\ncollection_sorting_created_at_asc,Sortieren nach Importierdatum aufsteigend,Sort by import date ascending,\ncollection_sorting_created_at_desc,Sortieren nach Importierdatum absteigend,Sort by import date descending,\ncollection_sorting_manual_asc,Sortieren manuell aufsteigend,Sort manually ascending,\ncollection_sorting_manual_desc,Sortieren manuell absteigend,Sort manually descending,\ncollection_sorting_last_change_desc,Sortieren nach letzter Änderung absteigend,Sort by date of update descending,\ncollection_sorting_last_change_asc,Sortieren nach letzter Änderung aufsteigend,Sort by date of update ascending,\ncollection_sorting_title_asc,Sortieren nach Titel alphabetisch,Sort by title alphabetically,\ncollection_sorting_title_desc,Sortieren nach Titel absteigend,\"Sort by title alphabetically, but descending\",\ncollection_tab_main,Set,Set,\ncollection_was_disfavored,Das Set wurde von den Favoriten entfernt.,Set was removed from favorites.,\ncollection_was_favored,Das Set wurde zu den Favoriten hinzugefügt.,Set was added to favorites.,\ncontents_privacy_private,Diese Inhalte sind nur für Sie zugänglich.,These items are only accessible to you.,\ncontents_privacy_public,Diese Inhalte sind öffentlich zugänglich.,These items are accessible to the public.,\ncustom_urls_canonical_hint,\"Jeder Inhalt hat eine automatisch erzeugte, kanonische Adresse bestehend aus Zahlen und Buchstaben, eine sog. UUID (Universally Unique Identifier). Diese Adresse kann nicht übertragen oder entfernt werden und ist deshalb immer an erster Stelle aufgelistet.\",\"Every item has a canonical address consisting of numbers und letters which is created automatically, a so- called UUID (Universally Unique Identifier). This address can not be transferred or deleted. For this reason it is always listed first.\",\ncustom_urls_canonical_title,Kanonische Adresse (UUID),Canonical address (UUID),\ncustom_urls_flash_create_successful_1,Adresse ,Address ,\ncustom_urls_flash_create_successful_2, wurde erstellt., was created.,\ncustom_urls_flash_empty,Adresse darf nicht leer sein.,Address is not allowed to be empty.,\ncustom_urls_flash_exists_on_itself_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_collection_2, existiert bereits für dieses Set., already exists for this set.,\ncustom_urls_flash_exists_on_itself_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_media_entry_2, existiert bereits für diesen Medieneintrag., already exists for this media entry.,\ncustom_urls_flash_not_allowed_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_collection_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung das Set zu verwalten, auf welches die Adresse \", can not be transferred. You do not have permission to manage the set to which the address ,\ncustom_urls_flash_not_allowed_collection_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_allowed_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_media_entry_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung den Medieneintrag zu verwalten, auf welchen die Adresse \", cannot be transferred. You do not have  permission to manage the media entry to which the address ,\ncustom_urls_flash_not_allowed_media_entry_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_same_type_collection_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_collection_2, kann nicht übertragen werden. Adressen von Medieneinträgen können nicht auf Sets übertragen werden., can not be transferred. Addresses from media entries can not be transferred to sets.,\ncustom_urls_flash_not_same_type_media_entry_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_media_entry_2, kann nicht übertragen werden. Adressen von Sets können nicht auf Medieneinträge übertragen werden., cannot be transferred. Addresses from sets cannot be transferred to media entries.,\ncustom_urls_flash_primary_url_set_1,,,\"Wo: Bestätigung CustomURL, vor der Adresse\"\ncustom_urls_flash_primary_url_set_2, wurde als primäre Adresse gesetzt., was set as primary address.,\"Wo: Bestätigung CustomURL, nach der Adresse\"\ncustom_urls_flash_transfer_confirmation_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_collection_2, ist gegenwärtig dem Set , is currently related to the set  ,\ncustom_urls_flash_transfer_confirmation_collection_3, zugewiesen. Wollen Sie diese Adresse auf das Set ,. Would you like to transfer this address to the set ,\ncustom_urls_flash_transfer_confirmation_collection_4, übertragen?,?,\ncustom_urls_flash_transfer_confirmation_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_media_entry_2, ist gegenwärtig dem Medieneintrag , is currently related to the media entry  ,\ncustom_urls_flash_transfer_confirmation_media_entry_3, zugewiesen. Wollen Sie diese Adresse auf den Medieneintrag ,. Would you like to transfer this address to the media entry ,\ncustom_urls_flash_transfer_confirmation_media_entry_4, übertragen?,?,\ncustom_urls_flash_transfer_successful_1,Adresse ,Address  ,\ncustom_urls_flash_transfer_successful_2, wurde von , was transferred from  ,\ncustom_urls_flash_transfer_successful_3, auf , to ,\ncustom_urls_flash_transfer_successful_4, übertragen.,0,\ncustom_urls_flash_wrong_format_1,Adresse ,Address ,\ncustom_urls_flash_wrong_format_2, erfüllt die Anforderungen nicht., does not meet the requirements.,\ncustom_urls_manage_address_title,Adressverwaltung,Address administration,\ncustom_urls_new,Adresse anlegen / übertragen,Create / transfer address,\ncustom_urls_no_addresses_defined,Noch keine Adressen definiert.,No address defined yet.,\ncustom_urls_primary_hint,\"Für jeden Inhalt (egal ob Medieneintrag oder Set) gibt es immer genau eine primäre Adresse. Diese ist in der Adressleiste des Browsers sichtbar, wenn der Inhalt angezeigt wird. Neben der primären Adresse können weitere gesetzt werden, die auf die primäre Adresse weiterleiten.\",Each item (media entry or set) has exactly one primary address. This address is displayed in the browsersaddress bar when the item is accessed.You have the option to create other addresses which are forwarded to the primary address.,\ncustom_urls_primary_title,Primäre Adresse,Primary address,\ncustom_urls_table_header_actions,Aktionen,Actions,\ncustom_urls_table_header_address,Adresse,Address ,\ncustom_urls_table_header_created_by,Erstellt durch,Created by,\ncustom_urls_table_header_date,Datum,Date,\ncustom_urls_table_header_type,Typ,Type,\ncustom_urls_title,Adressen für ,Addresses for ,\ndashboard_create_collection,Set erstellen,Create set,\ndashboard_create_collection_btn,Set erstellen,Create set,\ndashboard_create_media_entry_btn,Medien importieren,Upload media,\ndashboard_none_exist,Keine vorhanden.,There are none.,\ndashboard_show_all,Alle anzeigen,Show all,\ndashboard_title_head,Mein Archiv,My archive,\ndeleted,gelöscht,deleted,\ndynamic_filters_any_values_title,Jegliche Werte,Any values,\ndynamic_filters_authorization,Berechtigung,Authorization,\ndynamic_filters_visibility,Sichtbarkeit,Accessability,\ndynamic_filters_visibility_private,Nur für mich,Only for me,\ndynamic_filters_visibility_user_or_group,Geteilt mit Personen und Arbeitsgruppen,Shared with people and work groups,\ndynamic_filters_person_header,Personen,Persons,\ndynamic_filters_remove_all_title,Alle entfernen,Remove all,\ndynamic_filters_role_header,Funktionen,Functions,\ndynamic_filters_search_for_api_client_placeholder,Suche nach API-Applikation,Search for API client...,\ndynamic_filters_search_for_delegation_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_group_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_user_placeholder,Suche nach User...,Search for user...,\ndynamic_filters_search_for,Suche nach,Search for,\nedit_custom_urls_back_to_collection,Zurück zum Set,Back to the set,\nedit_custom_urls_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nedit_custom_urls_cancel,Abbrechen,Cancel,\nedit_custom_urls_confirmation,Bestätigung,Confirmation,\nedit_custom_urls_create_or_transfer,Adresse anlegen / übertragen,Create / transfer address,\nedit_custom_urls_preferred_address,Gewünschte Adresse:,Preferred address:,\nedit_custom_urls_requirements_hint,\"Eine Adresse darf nur genau einmal im System vorkommen – entweder für einen Medieneintrag oder für ein Set. Sie beginnt immer mit einem Kleinbuchstaben, gefolgt von (mindestens einem) weiteren Zeichen aus Kleinbuchstaben, Nummern, Bindestrichen ( - ) und Grundstrichen ( _ ) in beliebiger Reihenfolge.\",\"Each comprehensible address is unique in the system – either for a media entry or for a set. The address always begins with a lower case letter, followed by at least one other character. The following characters can bei lower case letters, numbers, hyphens ( - ) or low lines ( _ ) in any order.\",\nedit_custom_urls_requirements_title,Anforderungen,Requirements,\nedit_custom_urls_set_primary,Als primäre Adresse setzen,Set as primary address,\nedit_custom_urls_state_primary,Primäre Adresse,Primary address,\nedit_custom_urls_state_transfer,Weiterleitung,Forwarding,\nedit_custom_urls_title,Anforderungen,Requirements,\nedit_custom_urls_transfer,Übertragen,Transfer,\nedit_custom_urls_transfer_hint,\"Eine bereits bestehende Adresse kann von einem Medieneintrag auf einen anderen oder von einem Set auf ein anderes übertragen werden. Bestehende Adressen können nicht von einem Medieneintrag auf ein Set und umgekehrt übertragen werden. Wollen Sie eine Adresse übertragen, dann geben Sie diese hier ein. Sie müssen für beide Inhalte über die Zugriffsberechtigung 'Verwalten' verfügen.\",\"An existing address can be transferred from one media entry to another or from one set to another. Existing addresses cannfot be transferred from a media entry to a set or vice versa. If you want to transfer an address, please enter this address here. You have to have manage permissions for both items.\",\nedit_custom_urls_transfer_title,Übertragen,Transfer,\nembed_error_title,\"Fehler!\",\"Error!\",\nembed_error_context_pre,\"Angeforderte URL: \",\"Requested URL: \",\nembed_error_context_post,\"\",\"\",\nembed_error_help_pre,\"Hilfe: \",\"Help: \",\nembed_error_help_post,\"\",\"\",\nembed_error_msg,\"Dieser Inhalt kann nicht eingebettet werden.\",\"This content cannot be embedded.\",\nembed_error_msg_403,\"Dieser Inhalt kann nicht eingebettet werden, weil die nötigen Berechtigungen fehlen.\",\"This content cannot be embedded because the necessary permissions are missing.\",\nembed_error_msg_404,\"Der gewünschte Inhalt konnte nicht gefunden werden.\",\"The requested content could not be found.\",\nerror_401_title,\"Um Zugang zu diesem Bereich zu erhalten, melden Sie sich bitte an.\",To get access please login below with your user data.,\nerror_403_message,Bitte kontaktieren Sie die für die Ressource verantwortliche Person.,Please contact the responsible user for this resource.,\nerror_403_title,Sie haben keine Zugriffsrechte für diesen Inhalt.,You don’t have the necessary permissions to access this resource.,\nerror_404_title,Die gesuchte Seite kann nicht gefunden werden.,The requested page cannot be found.,\nerror_500_message,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (%{support_email}) mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\"If you require help in this matter, please contact the support (%{support_email}) with a description of your last working steps and a screen shot of this page.\",\nerror_500_message_pre,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (\",\"If you require help in this matter, please contact the support (\",\nerror_500_message_post,\") mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\") with a description of your last working steps and a screen shot of this page.\",\nerror_500_title,Es ist ein Server-Fehler aufgetreten.,A server error occurred.,\nexplore_keywords_section_title,Häufige Schlagworte,Frequent keywords,\nexplore_show_more,Weitere anzeigen,Show more,\nexplore_vocabulary_section_show_details,Details anzeigen,View details,\nexplore_vovabulary_section_title,Vokabulare,Vocabularies,\nexternal_groups,Abteilungsgruppen,Division groups,\nfooter_choose_language,Sprache wählen,Choose language,\ngroup_ask_delete_cancel,Abbrechen,Cancel,\ngroup_ask_delete_delete,Löschen,Delete,\ngroup_ask_delete_question_post, löschen?,?,\ngroup_ask_delete_question_pre,Möchten Sie die Arbeitsgruppe ,Would you like to delete work group ,\ngroup_ask_delete_title,Arbeitsgruppe löschen,Delete work group,\ngroup_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Arbeitsgruppe löschen wollen?\",Are you sure you want to delete this work group?,\ngroup_edit_at_least_one_member_delete,löschen,delete,VERB\ngroup_edit_at_least_one_member_post,0,0,NACH dem Verb und Namen der Gruppe\ngroup_edit_at_least_one_member_pre,Eine Arbeitsgruppe muss mindestens eine Person enthalten. Ganze Arbeitsgruppe ,A work group has at least one member. Whole work group,VOR dem Verb und Namen der Gruppe\ngroup_edit_btn,Bearbeiten,Edit,\ngroup_edit_cancel,Abbrechen,Cancel,\ngroup_edit_form_new_member_login_hint,Login des neuen Mitglieds dieser Arbeitsgruppe,New work group member login,\ngroup_edit_form_new_member_login_label,User hinzufügen,Add a member,\ngroup_edit_form_save_btn,Speichern,Save,\ngroup_edit_form_title_pre,Arbeitsgruppe bearbeiten: ,Edit work group: ,\ngroup_edit_hint_remove_yourself,Achtung: Sie entfernen sich selbst aus der Arbeitsgruppe!,Attention: You are about to remove yourself from the work group!,\ngroup_edit_member,Mitglieder,Members,\ngroup_edit_name,Name,Name,\ngroup_edit_person,Person,Person,\ngroup_edit_save,Speichern,Save,\ngroup_edit_username,Benutzername,Username,\ngroup_meta_data_institutional_name,Name der Abteilungsgruppe,Division group name,\ngroup_meta_data_name,Name,Name,\ngroup_new_form_title,Neue Arbeitsgruppe erstellen,Create group,\ngroup_new_group_btn,Neue Arbeitsgruppe,New work group,\ngroup_show_edit_button,Arbeitsgruppe bearbeiten,Edit work group,\ngroup_show_members,Mitglieder,Members,\ngroup_show_permissions_use,(anwenden),(execute),\ngroup_show_permissions_view,(betrachten),(view),\ngroup_show_permissions_view_use,(betrachten und anwenden),(view and execute),\ngroup_show_vocabulary_permissions,Berechtigungen Vokabulare,Permissions vocabularies,\ngroup_toolbar_header_entrusted_resources,Mir anvertraute Medieneinträge,Entrusted media entries,\ngroup_was_deleted,Arbeitsgruppe wurde gelöscht.,Work group has been deleted.,\nhome_page_new_contents,Neue Inhalte,New items,\ninternal_groups,Arbeitsgruppen,Work groups,\nlayout_mode_grid,Raster-Ansicht,Grid view,\nlayout_mode_list,Listen-Ansicht,List view,\nlayout_mode_miniature,Miniatur-Ansicht,Miniature view,\nlayout_mode_tiles,Kachel-Ansicht,Tile view,\nlogin_box_internal,Externe,External users,\nlogin_box_title,Anmelden,Log in,\nlogin_box_login_btn,Anmelden,Log in,\nlogin_box_email_or_login,E-Mail,Email,\nlogin_box_password,Passwort,Password,\nlogin_box_rememberme,Login merken,Remember me,\nlogin_box_username,Benutzername,User name,\nmedia_entry_all_metadata_title,Alle Metadaten nach Vokabularen,All metadata by vocabulary,\nmedia_entry_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgenden Medienintrag löschen möchten: \",Are you sure you want to delete the following media entry:,\nmedia_entry_ask_delete_title,Medieneintrag löschen,Delete media entry,\nmedia_entry_back_btn,Zurück,Back,\nmedia_entry_conversion_hint,\"Diese Datei wird gerade für eine Vorschau konvertiert. Sobald dies abgeschlossen ist, finden Sie hier eine abspielbare Version.\",\"Currently the system is converting this file to a preview. As soon as the conversion is finished, you will be able to play the file here.\",\nmedia_entry_conversion_progress_post,% abgeschlossen.,% completed.,\nmedia_entry_conversion_progress_pre,Konvertierung zu ,Conversion ,\nmedia_entry_conversion_reload,\"Laden Sie diese Seite neu, um den aktuellen Stand der Konvertierung zu erfahren.\",Reload this page to display the current state of conversion.,\nmedia_entry_conversion_status_failed,Die Konvertierung ist fehlgeschlagen. Bitte wenden Sie sich an den Support.,The file conversion has failed. Please contact support.,\nmedia_entry_conversion_status_initialized,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_conversion_status_submitted,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_deleted,Dieser Medieneintrag wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This media entry has been deleted and is no longer visible to users.\nmedia_entry_delete_success,Der Medieneintrag wurde gelöscht.,Media entry has been deleted.,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_post,erstellen,,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_pre,(Experte) Hinweis zu neuer Version inkl. Verlinkung zu,(Expert) Add annotation «new version of» and link to,\nmedia_entry_duplicator_configuration_copy_meta_data,Metadaten übertragen,Copy meta data,\nmedia_entry_duplicator_configuration_copy_permissions,Zugriffsberechtigungen übertragen,Copy permissions,\nmedia_entry_duplicator_configuration_copy_relations,Zusammenhänge übertragen (übergeordnete Sets und Favoriten),Copy relations (parent collections & favorites),\nmedia_entry_duplicator_configuration_move_custom_urls,(Experte) Sprechende Adresse (URL) übernehmen,(Expert) Move comprehensible Address (URL),\nmedia_entry_duplicator_configuration_instructions,Folgende Optionen können gewählt werden:,Choose options below:,\nmedia_entry_duplicator_custom_urls_already_moved,moved to the first successful upload!,moved to the first successful upload!,\nmedia_entry_duplicator_desc_post,zugewiesen.,by selected options.,\nmedia_entry_duplicator_desc_pre,\"Die unten importierten Mediendateien bekommen die den nachfolgend gewählten Optionen entsprechenden Metadaten, Zugriffsberechtigungen, Beziehungen und weitere Einstellungen des aktuellen Medieneintrags\",\"The media file to be imported below will get assigned meta data, permissions, relations and further settings from the actual media entry\",\nmedia_entry_duplicator_md_title_suffix,(updated),(updated),\nmedia_entry_duplicator_new_version_of_label,Updated file,Updated file,\nmedia_entry_export_close,Schliessen,Close,\nmedia_entry_export_download,Exportieren,Download,\nmedia_entry_export_has_no_original,Sie verfügen für den Export der Originaldatei nicht über die notwendige Berechtigung.,You are not allowed to download the original file.,\nmedia_entry_export_no_content,Sie haben keine Zugriffsberechtigung für die Originaldatei und es steht keine Vorschau zur Verfügung.,You do not have permission to access the original file and there is no preview available.,\nmedia_entry_export_original,Original,Original,\nmedia_entry_export_original_hint,Originaldatei herunterladen.,Download original file.,\nmedia_entry_export_subtitle_audios,Audio-Dateien,Audio files,\nmedia_entry_export_subtitle_documents,Dokumente,Documents,\nmedia_entry_export_subtitle_images,Bilder,Images,\nmedia_entry_export_subtitle_videos,Video-Dateien,Video files,\nmedia_entry_export_title,Medieneintrag exportieren,Download media entry,\nmedia_entry_export_rdf_title,RDF-Export Metadaten,RDF export metadata,\nmedia_entry_export_rdf_title_hint,(experimentell),(experimental),\nmedia_entry_export_rdf_experiment_footnote,\"Struktur und Format der Daten können sich ändern. Bitte geben sie eine Rückmeldung, falls Sie diese verwenden!\",\"Data structure and format is subject to change. Please send feedback if you are using this!\",\nmedia_entry_export_checksum_title,Prüfsumme,Checksum,\nmedia_entry_export_checksum_generate,Erzeugen,Generate,\nmedia_entry_export_checksum_verify,Prüfen,Verify,\nmedia_entry_export_checksum_empty,Prüfsumme erzeugen,Generate checksum,\nmedia_entry_export_checksum_generating,Wird erzeugt…,Generating…,\nmedia_entry_export_checksum_verifying,Wird verifiziert…,Verifying…,\nmedia_entry_export_checksum_generated_at,Erzeugt am,Generated at,\nmedia_entry_export_checksum_verified_at,Geprüft am,Verified at,\nmedia_entry_export_checksum_match,Prüfsumme stimmt überein,Checksum matches,\nmedia_entry_export_checksum_mismatch,Prüfsumme stimmt nicht überein,Checksum does not match,\nmedia_entry_export_checksum_error,Fehler bei der Prüfsummen-Operation,Error during checksum operation,\nmedia_entry_file_format_not_supported_1,\"Wahrscheinlich unterstützt Ihr Browser nicht die Darstellung dieses Dateiformats, aber Sie \",\"Your browser probably does not support the file format, but you can \",\nmedia_entry_file_format_not_supported_2,können die Datei ,download the file,\nmedia_entry_file_format_not_supported_3,exportieren.,0,\nmedia_entry_file_information_title,Datei,File information,\nmedia_entry_media_import_gotodrafts,Medieneinträge vervollständigen,Complete media entries,\nmedia_entry_media_import_gotomediaentries,Weiter zu Meine Medieneinträge,Continue to My media entries,\nmedia_entry_media_import_header,Medien importieren,Media upload,\nmedia_entry_media_import_box_header_a,,,\nmedia_entry_media_import_box_header_b, Upload(s), Upload(s),\nmedia_entry_media_import_box_upload_status_waiting,Warten…,Waiting…,\nmedia_entry_media_import_box_upload_status_error,Fehler!,Error!,\nmedia_entry_media_import_box_upload_status_progress_a,Hochladen… ,Uploading… ,\nmedia_entry_media_import_box_upload_status_progress_b,%,%,\nmedia_entry_media_import_box_upload_status_processing,Verarbeiten…,Processing…,\nmedia_entry_media_import_inside,Dateien auf dieses Feld ziehen oder ,Add files by drag and drop in this field or ,\nmedia_entry_media_import_inside_nojs,Dateien auswählen,Select files,\nmedia_entry_media_import_notes_msg,\"Bilder (TIFF, JPEG, PNG) sowie Audio- und Videofiles in den gängigsten Formaten werden direkt verarbeitet und dargestellt. Bilder im CMYK-Farbraum werden nicht korrekt dargestellt. Wandeln Sie diese vor dem Importieren in RGB um.\",\"Images (TIFF, JPEG, PNG) and audio/video files in the most common formats are processed and displayed directly. Images in the CMYK color model cannot be displayed correctly, please convert to RGB before uploading.\",\nmedia_entry_media_import_notes_title,Hinweise,Hints,\nmedia_entry_media_import_select_media,Medien auswählen,Select media files,\nmedia_entry_media_import_upload_error,überschreitet maximale Grösse von 16000 Pixel,exceeds size limit of 16000 pixel,\nmedia_entry_media_import_title,\"Bilder, Videos, Audio-Dateien oder Dokumente bereitstellen.\",\"Add images, video or audio files, or other documents.\",\nmedia_entry_meta_data_edit_by_context_btn,Metadaten nach Kontexten bearbeiten,Edit metadata by context,\nmedia_entry_meta_data_edit_by_vocab_btn,Metadaten nach Vokabularen bearbeiten,Edit metadata by vocabulary,\nmedia_entry_meta_data_header_prefix,Medieneintrag editieren: ,Edit media entry: ,\nmedia_entry_more_data_title,Verantwortlichkeit und Aktivität,Responsibility and activities,\nmedia_entry_not_published_warning_msg,Bei diesem Medieneintrag fehlen noch Pflichtangaben.,Media entry still needs mandatory data.,\nmedia_entry_relations_current,Aktueller Eintrag,Current entry,\nmedia_entry_relations_hint_text,\"Der ausgewählte Medieneintrag ist mit Sets verknüpft. Diese Zusammenhänge wurden aktiv festgelegt als übergeordnet oder benachbart. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected media entry is connected to sets. These relations are actively defined as a parent, a sibling or a child relationship. The sets displayed here are your own or are shared with you by other users.\",\nmedia_entry_relations_parents_hint,Der ausgewählte Medieneintrag wurde diesen Sets hinzugefügt.,The selected media entry was added to these sets.,\nmedia_entry_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie der ausgewählte Medieneintrag.,These sets were added to the same sets as the selected media entry.,\nmedia_entry_select_collection_flash_result,Der Medieneintrag wurde aus %{removed_count} Set(s) entfernt und zu %{added_count} Set(s) hinzugefügt.,Media entry removed from %{removed_count} set(s) and added to %{added_count} set(s).,\nmedia_entry_siblings_section_title,Weitere Medieneinträge im selben Set,Other media entries in the same set,\nmedia_entry_siblings_parent_set,Übergeordnetes Set:,Parent set:,\nmedia_entry_tab_main,Medieneintrag,Media entry,\nmedia_entry_tab_more_data,Alle Metadaten,All metadata,\nmedia_entry_tab_permissions,Berechtigungen,Permissions,\nmedia_entry_tab_relations,Zusammenhänge,Relations,\nmedia_entry_tab_usage_data,Nutzung,Usage,\nmedia_entry_upload_btn,Importieren,Upload,\nmedia_entry_was_disfavored,Der Medieneintrag wurde von den Favoriten entfernt.,Media entry was removed from favorites.,\nmedia_entry_was_favored,Der Medieneintrag wurde zu den Favoriten hinzugefügt.,Media entry was added to favorites.,\nmedia_entry_xmp_import_cancel,Abbrechen,Cancel,\nmedia_entry_xmp_import_flash_failed,\"Folgende Metadaten konnten nicht importiert werden: \",The following metadata could not be imported: ,\nmedia_entry_xmp_import_flash_invalid_file,Bitte eine XMP-Datei (.xmp) auswählen.,Please select an XMP file (.xmp).,\nmedia_entry_xmp_import_flash_nothing,Die XMP-Datei enthält keine importierbaren Metadaten.,The XMP file contains no importable metadata.,\nmedia_entry_xmp_import_flash_success,\"Metadaten aus XMP-Sidecar importiert: \",Metadata imported from XMP sidecar: ,\nmedia_entry_xmp_import_flash_unreadable,\"Die XMP-Datei konnte nicht gelesen werden: \",The XMP file could not be read: ,\nmedia_entry_xmp_import_hint,\"Metadaten aus einer XMP-Sidecar-Datei (.xmp) übernehmen. Nur Felder, die in der XMP-Datei einen Wert haben, werden überschrieben; alle anderen Metadaten bleiben unverändert.\",\"Import metadata from an XMP sidecar file (.xmp). Only fields that have a value in the XMP file will be overwritten; all other metadata remains unchanged.\",\nmedia_entry_xmp_import_submit,Importieren,Import,\nmedia_entry_xmp_import_title,XMP-Sidecar importieren,Import XMP sidecar,\nmedia_entry_xmp_sidecars_title,Importierte XMP-Sidecars,Imported XMP sidecars,\nmeta_data_action_delete_btn,Löschen,Delete,\nmeta_data_action_edit_btn,Bearbeiten,Edit,\nmeta_data_batch_action_remove_meta_data,Werte für alle Inhalte löschen,Delete data for all content,\nmeta_data_batch_failure,Metadaten konnten nicht aktualisiert werden.,Metadata could not be updated.,\nmeta_data_batch_hint_differences,Unterschiedliche Metadaten vorhanden,Different metadata in place.,\nmeta_data_batch_hint_differences_override,\"Achtung: Bestehende Werte werden durch Änderungen überschrieben! Wenn keine Änderungen vorgenommen werden, bleiben die verschiedenen Werte erhalten.\",\"Attention: Changes will replace exiting data. If not changes are made, data will be preserved.\",\nmeta_data_batch_hint_equal_data,Gleiche Metadaten vorhanden,Same metadata in place.,\nmeta_data_batch_hint_no_data,Noch keine Metadaten vorhanden,No metadata available yet.,\nmeta_data_batch_hint_value,Werte oder Text,Values or text,\nmeta_data_batch_item_selected,Medieneintrag selektiert,Media entry selected,\nmeta_data_batch_items_selected,Medieneinträge selektiert,Media entries selected,\nmeta_data_batch_more,weitere,More,\nmeta_data_batch_some_ignored_1,(,(,\nmeta_data_batch_some_ignored_2,\" Medieneinträge wurden ignoriert, da Sie nicht über die nötigen Berechtigungen verfügen)\",\"Media entries were ignored, because you do not have the required permissions.)\",\nmeta_data_batch_success,Metadaten wurden erfolgreich aktualisiert.,metadata have been updated successfully.,\nmeta_data_batch_summary_all_post, Medieneinträge wurden gespeichert., Media entries have been saved.,NACH der Anzahl\nmeta_data_batch_summary_all_pre,Alle ,All ,VOR der Anzahl\nmeta_data_batch_summary_missing, haben fehlende Pflichtangaben, have missing mandatory data,\nmeta_data_batch_summary_published, haben ausgefüllte Pflichtfelder, have mandatory data,\nmeta_data_batch_summary_were_published, hatten bereits ausgefüllte Pflichtfelder, already had mandatory data,\nmeta_data_batch_title_post_collections, Sets gleichzeitig editieren,Edit sets at the same time,\nmeta_data_batch_title_post_media_entries, Medieneinträge gleichzeitig bearbeiten, media entries at once,\nmeta_data_batch_title_pre,Metadaten für ,Edit metadata for ,\nmeta_data_blank_value_for_required_meta_key_post,0,0,\nmeta_data_blank_value_for_required_meta_key_pre,Kein Wert vorhanden für ,No value available for,\nmeta_data_collection_batch_summary_all_post, Sets wurden gespeichert., Sets were saved.,\nmeta_data_collection_batch_summary_all_pre,Alle ,All ,\nmeta_data_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Werte löschen wollen?\",Are you sure you want to delete these data?,\nmeta_data_edit_collection_saved,Set wurde gespeichert.,Set was saved.,\nmeta_data_edit_media_entry_published,Der Medieneintrag wurde gespeichert und alle Pflichtfelder sind ausgefüllt.,Media entry was saved and mandatory data have been entered.,\nmeta_data_edit_media_entry_saved,Der Medieneintrag wurde gespeichert.,Media entry was saved.,\nmeta_data_edit_media_entry_saved_missing,\"Der Medieneintrag wurde gespeichert, aber es wurden nicht alle Pflichtfelder ausgefüllt.\",Media entry was saved but there some mandatory data are missing.,\nmeta_data_edit_more_data,Weitere Angaben,More data,\nmeta_data_form_all_data,Alle Daten,All metadata,\nmeta_data_form_cancel,Abbrechen,Cancel,\nmeta_data_form_save,Speichern,Save,\nmeta_data_form_saving,Die Metadaten werden gerade gespeichert. Dies kann einige Zeit in Anspruch nehmen. Bitte gedulden Sie sich und schliessen Sie das Fenster nicht.,Meta data are currently being saved. This will take some time. Please be patient and do not close the browser.,\nmeta_data_form_submit_btn,Speichern,Save,\nmeta_data_header_text,Werte,Data,\nmeta_data_input_date_placeholder_duration_from,von,from,\nmeta_data_input_date_placeholder_duration_to,bis,to,\nmeta_data_input_date_placeholder_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_placeholder_timestamp,wird als Text gespeichert,on,\nmeta_data_input_date_type_duration,von/bis,from/to,\nmeta_data_input_date_type_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_type_timestamp,am,on,\nmeta_data_input_keywords_existing,Schlagwort ist bereits vergeben.,Keyword already assigned.,\nmeta_data_input_new_group_add,Arbeitsgruppe einfügen,Add work group,\nmeta_data_input_new_group_name,Name,Name,\nmeta_data_input_new_person_add,Person einfügen,Add person,\nmeta_data_input_new_person_first_name,Vorname,First name,\nmeta_data_input_new_person_last_name,Nachname,Last name,\nmeta_data_input_new_person_pseudonym,Pseudonym,Pseudonym,\nmeta_data_input_new_person_toggle,Neue Person oder Gruppe anlegen,Add new person or work group,\nmeta_data_input_person_save,Übernehmen,Apply,\nmeta_data_input_json_err_prefix,Eingabefehler: ,Input error: ,\nmeta_data_input_json_err_no_object,Wert ist nicht vom Typ 'Object'!,Value is not an 'Object'!,\nmeta_data_meta_key_documentation_url,> Online-Hilfe,click link for details,\nmeta_data_meta_key_label,Schlüssel,Key,\nmeta_data_role_add_another_btn,Weitere Funktion hinzufügen,Add another function,\nmeta_data_role_add_btn,Funktion hinzufügen,Add a function,\nmeta_data_role_add_heading,Funktion hinzufügen zu ,Add a function to,\nmeta_data_role_choose_label,Wählen Sie eine Funktion aus der Liste,Choose a function from the list,\nmeta_data_extensible_role_choose_label,Wählen Sie eine Funktion aus der Liste oder ergänzen Sie die Liste mit der gewünschten Funktion. Mit Enter die Eingabe abschliessen.,Choose a function from the list or enter the function and press Enter,\nmeta_data_role_edit_btn,Funktion bearbeiten,Edit function,\nmeta_data_role_edit_heading,Funktion bearbeiten,Edit the function of,\nmeta_data_role_remove_btn,Funktion entfernen,Remove function,\nmeta_data_type_label,Typ,Type,\nmeta_data_value_label,Wert,Data,\nmeta_datum_media_entry_label_id,Ressourcen-ID:,Resource ID:,\nmeta_datum_media_entry_label_string,Zusatztext:,additional text:,\nmeta_datum_media_entry_err_uuid_invalid,Ungültige UUID!,Invalid UUID!,\nmeta_datum_media_entry_value_unauthorized,Hinweis: Sie haben keinen Zugriff auf diese Ressource!,Notice: You do not have access to this resource!,\nmeta_datum_media_entry_value_not_found,Hinweis: Diese Ressource konnte nicht (mehr) gefunden werden!,Notice: This resource could not be found (anymore)!,\nmeta_key_order_alphabetical,a-z,a-z,\nmeta_key_order_alphabetical_hint,Die Schlagworte dieses Metadatenfeldes sind alphabetisch sortiert.,The keywords of this metakey are sorted alphabetically.,\nmeta_key_order_custom,redaktionell,editorial,\nmeta_key_order_custom_hint,Die Schlagworte dieses Metadatenfeldes sind redaktionell sortiert.,The keywords of this metakey are sorted editorially.,\nno_content_fallback,Keine Inhalte vorhanden.,No items available.,\nno_groups_fallback,Keine Arbeitsgruppen vorhanden.,No work groups available.,\nno_keywords_fallback,Keine Schlagworte vorhanden.,No keywords available.,\nno_relations_title,Es wurden keine Zusammenhänge gefunden.,No relations found.,\nnotifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nnotifications_message_transfer_responsibility,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to you.\",\nnotifications_message_transfer_responsibility_via_delegation,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to %{viaDelegation}.\",\nnotifications_message_transfer_responsibility_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to you.\",\nnotifications_message_transfer_responsibility_via_delegation_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to %{viaDelegation}.\",\nnotifications_media_entry,Medieneintrag,media entry,\nnotifications_collection,Set,set,\nnotifications_acknowledge_all,Alle Notifikationen löschen,Delete all notifications,\nnotifications_really_acknowledge_all,Wirklich alle löschen?,Really delete all?,\nnotifications_acknowledge,Löschen,Delete,\nnotifications_acknowledge_date_tooltip,Alle Notifikationen vom %{date} löschen,Delete all notifications of %{date},\nnotifications_no_notifications,Keine Einträge vorhanden,No entries present,\nnotifications_section_expand,Alle anzeigen,Show all,\nnotifications_section_collapse,Anzeige reduzieren,Reduce,\nnotifications_section_show_more,Weitere Einträge anzeigen,Show more,\npagination_nav_loadnext,Mehr laden,Load more,\npagination_nav_nextloading,Mehr Inhalte werden geladen.,More items are being loaded.,\npagination_nav_nextpage,Nächste Seite,Next page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_prevpage,Vorangehende Seite,Previous page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_thispage,Diese Seite,This page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_prefix,Seite ,Page ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_infix, von , of ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_postfix,,,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_selection_label,Seite auswählen,Select page,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npeople_toolbar_header,Ähnliche Inhalte,Related items,\npermission_entrusted_to_api_client,Sichtbar für API-Applikationen,Visible to API clients,\npermission_entrusted_to_group,Sichtbar für Arbeitsgruppen,Visible to work groups,\npermission_entrusted_to_user,Sichtbar für Nutzer/innen,Visible to users,\npermission_name_edit_metadata,Metadaten editieren,Edit metadata,\npermission_name_edit_metadata_and_relations,Metadaten editieren & Inhalte hinzufügen,Edit metadata and add items,\npermission_name_edit_permissions,Zugriffsberechtigungen ändern,Edit permissions,\npermission_name_get_full_size,Original exportieren & in PDF blättern,Download original & browse PDF,\npermission_name_get_metadata_and_previews,Betrachten,View,\npermission_name_use,Anwenden,Execute,bezieht sich auf Vokabulare!\npermission_name_view,Betrachten,View,bezieht sich auf Vokabulare!\npermission_overridden_by_public,(überschrieben durch die öffentlichen Berechtigungen),(overruled by public permissions),\npermission_subject_name_public,Internet,Internet,\npermission_subject_title_apiapps,API-Applikationen,API clients,\npermission_subject_title_groups,Gruppen,Groups,\npermission_subject_title_public,Öffentlichkeit,Public,\npermission_subject_title_users,Nutzer/innen,Users,\npermission_subject_title_users_or_delegations,Nutzer/innen / Verantwortungs-Gruppen,Users / Responsibility Groups,\npermissions_batch_success,Berechtigungen wurden erfolgreich aktualisiert.,Permissions have been updated succesfully.,\npermissions_batch_title_post, Inhalten., Items.,\npermissions_batch_title_pre,Berechtigungen ändern von ,Edit permissions of ,\npermissions_overview_yours_msg_end,\", haben gegenwärtig als Nutzer/in oder als Mitglied einer Verantwortungs-Gruppe oder Arbeitsgruppe folgende Berechtigungen:\",\", currently have the following permissions (either directly or as a member of a\nresponsibility group or as a member of a work group):\",\npermissions_overview_yours_msg_start,\"Sie, \",\"You, \",\npermissions_overview_yours_title,Ihre Berechtigungen,Your permissions,\npermissions_responsibility_title,Verantwortlichkeit,Responsibility,\npermissions_responsible_user_and_responsibility_group_title,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / Responsibility group,\npermissions_responsible_user_and_responsibility_group_msg,Der/die verantwortliche/r Nutzer/in hat alle Berechtigungen zu den ausgewählten Inhalten und kann diese auch löschen.,The responsible user / responsibility group has all permissions for the selected content and can also delete it.,\npermissions_responsible_delegation_title,Verantwortungs-Gruppe,Responsibility group,\npermissions_responsible_user_title,Verantwortliche Person,Responsible user,\npermissions_table_cancel_btn,Abbrechen,Cancel,\npermissions_table_edit_btn,Bearbeiten,Edit,\npermissions_table_remove_subject_btn,Berechtigung entfernen,Remove permission,\npermissions_table_save_btn,Speichern,Save,\npermissions_table_title,Zugriffsberechtigungen,Permissions,\npermissions_transfer_responsibility_link,Verantwortlichkeit übertragen,Transfer responsibility,\nperson_edit_add_uri_btn,URI hinzufügen,Add URL,\nperson_edit_cancel_btn,Abbrechen,Cancel,\nperson_edit_editing_header,Bearbeiten,editing,\nperson_show_external_uris,Links,Links,\nperson_edit_preview,Vorschau,Preview,\nperson_edit_save_btn,Speichern,Save,\nperson_edit_name_readonly_hint,\"Hinweis: Der eigene Name kann nicht geändert werden. Bitte wenden sie sich an den Support.\",\"Notice: Your own name can not be changed .Please contact the support.\"\nperson_show_description,Kurzbiographie,Short biography,\nperson_show_edit_btn,Seite bearbeiten,Edit Page,\nperson_show_external_uris,Links,Links,\nperson_show_external_uris_autority_control,Verzeichnis(se),Register,\nperson_show_first_name,Vorname,First name,\nperson_show_last_name,Nachname,Last name,\nperson_show_only_name,Name,Name,\nperson_show_pseudonym,Pseudonym,Pseudonym,\npicture_alt_fallback,(unbekannt),(unkown),\npicture_alt_prefix,Bild: ,Picture:,Prefix für Titel von Bildern (hover-titel/Screenreader)\nrelations_parents_title,Übergeordnete Sets,Parents,\nrelations_siblings_title,Benachbarte Sets,Siblings,\nrelations_title,Zusammenhänge,Relations,\nrelease_source_history,Source History,Source History,\nrelease_info,Release Info,Release info,\nrelease_local_git_version,Lokale Git Version,Local Git version,\nresource_action_collection_create,Set erstellen,Create set,\nresource_action_collection_destroy,Set löschen,Delete set,\nresource_action_collection_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_collection_edit_cover,Titelbild festlegen,Define set cover,\nresource_action_collection_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_collection_edit_highlight,Inhalte hervorheben,Highlight items,\nresource_action_collection_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_collection_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_collection_select_collection,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_action_collection_share,Set teilen,Share set,\nresource_action_media_entry_destroy,Medieneintrag löschen,Delete media entry,\nresource_action_media_entry_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_media_entry_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_media_entry_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_media_entry_export,Medieneintrag exportieren,Export media entry,\nresource_action_media_entry_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_media_entry_manage_confidential_links,Vertrauliche Links verwalten,Manage Confidential Links,\nresource_action_media_entry_select_collection,Zu Sets hinzufügen / Aus Sets entfernen,Add to/remove from set,\nresource_action_media_entry_share,Medieneintrag teilen,Share media entry,\nresource_action_media_entry_update_file,Medieneintrag ersetzen,Replace media entry,\nresource_action_media_entry_xmp_import,XMP-Sidecar importieren,Import XMP sidecar,\nresource_action_more_actions,Weitere Aktionen,Further actions,\nresource_action_show_in_admin,Zeige im Admin-Interface,Show in Admin Interface,\nresource_ask_delete_cancel,Abbrechen,Cancel,\nresource_ask_delete_ok,Löschen,Delete,\nresource_ask_delete_question_post,?,?,\nresource_meta_data_copyright_notice,Rechte am geistigen Eigentum,Copyright notice,\nresource_meta_data_date,Datierung,Date,\nresource_meta_data_description,Beschreibung,Description,\nresource_meta_data_document_type,Dokumenttyp,Type of document,\nresource_meta_data_fallback,Es sind keine Metadaten zu diesem Kontext bereitgestellt.,There are no metadata related to this context.,\nresource_meta_data_has_validation_errors,Es gibt fehlerhafte Eingabefelder.,There are erroneously entry fields.,\"Wo: Meldung wenn Metadaten fehlerhaft, z.B. fehlendes Pflichtfeld\"\nresource_meta_data_keywords,Schlagworte,Keywords,\nresource_meta_data_resource_type,Medientyp,Media type,\nresource_meta_data_responsible,Verantwortliche/r Nutzer/in,Responsible user,\nresource_meta_data_saved_filter,Gespeicherter Filter,Saved filter,\nresource_meta_data_title,Titel,Title,\nresource_select_collection_cancel,Abbrechen,Cancel,\nresource_select_collection_clear,Löschen,Clear,\nresource_select_collection_has_more,Es gibt noch weitere Resultate. Bitte Suche verfeinern.,There are more results. Please refine the search.,\nresource_select_collection_hint_more,Es wurden noch weitere Sets gefunden. Bitte verfeinern Sie Ihre Suche.,Additional sets were found. Please refine your search.,\nresource_select_collection_new,Neue,New,\nresource_select_collection_non_assigned,Inhalt ist noch keinem Set zugewiesen.,Item is not yet related to any set.,\nresource_select_collection_non_found,Zu dieser Suche wurde kein Set gefunden.,No set was found.,\nresource_select_collection_save,Speichern,Save,\nresource_select_collection_search,Suchen,Search,\nresource_select_collection_search_placeholder,Suche,Search,\nresource_select_collection_title,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_thumbnail_contents,Inhalte,Items,\nresource_thumbnail_sets,Sets,Sets,\nresources_box_batch_actions_addalltoclipboard_1,Alle ,Add all ,\nresources_box_batch_actions_addalltoclipboard_2, zur Stapelverarbeitung hinzufügen, to batch processing,\nresources_box_batch_actions_addselectedtoclipboard,Ausgewählte zur Stapelverarbeitung hinzufügen,Add selected to batch processing,\nresources_box_batch_actions_addtoset,Ausgewählte zu Set hinzufügen,Add selected to set,\nresources_box_batch_actions_clear_clipboard,Stapelverarbeitung leeren,Empty batch processing,\nresources_box_batch_actions_delete,Ausgewählte löschen,Delete selected,\nresources_box_batch_actions_edit,Metadaten von Medieneinträgen editieren,Edit metadata for media entries,\nresources_box_batch_actions_edit_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nresources_box_batch_actions_edit_all_collections,Metadaten von allen Sets editieren,Edit metadata of all sets at once,\nresources_box_batch_actions_edit_all_media_entries,Metadaten von allen Medieneinträgen editieren,Edit metadata of all media entries at once,\nresources_box_batch_actions_edit_sets,Metadaten von Sets editieren,Edit metadata of sets,\nresources_box_batch_actions_managepermissions,Berechtigungen von Medieneinträgen editieren,Edit permissions for media entries,\nresources_box_batch_actions_menu_title,Aktionen,Actions,\nresources_box_batch_actions_removefromclipboard,Ausgewählte aus der Stapelverarbeitung entfernen,Remove selected from batch processing,\nresources_box_batch_actions_removefromset,Aus Set entfernen,Remove from set,\nresources_box_batch_actions_sets_managepermissions,Berechtigungen von Sets editieren,Edit permissions for sets,\nresources_box_batch_actions_transfer_responsibility_entries,Verantwortlichkeit von Medieneinträgen übertragen,Transfer responsibility of media entries,\nresources_box_batch_actions_transfer_responsibility_sets,Verantwortlichkeit von Sets übertragen,Transfer responsibility of sets,\nresources_box_deselect_all,Alle abwählen,Deselect all,\nresources_box_filter,Filtern,Filter,\nresources_box_filters_note_post,\"aus, um weitere Filterkriterien anwenden zu können.\",\"in the Action bar to see more filter options.\",\nresources_box_filters_note_pre,Wählen Sie in der Aktionsleiste,Please select,\nresources_box_filters_note_or,oder,or,\nresources_box_new_search,Neue Suche,New search,\nresources_box_no_content,Keine Inhalte verfügbar,No items available.,\nresources_box_no_content_but_sets_1,Es gibt keine Medieneinträge für diese Suche. Es wurden aber ,There are no media entries related to this search process. But ,\nresources_box_no_content_but_sets_2,Sets,sets,\nresources_box_no_content_but_sets_3, gefunden., have been found.,\nresources_box_reset_filter,Filter zurücksetzen,Reset filter,\nresources_box_select_all,Alle auswählen,Select all,\nresources_box_selection_limit_ok,Ok,Ok,\nresources_box_selection_limit_page_1,\"Die Seite kann nicht selektiert werden, da sonst die maximale Anzahl von \",This page cannot be selected because otherwise the maximum number of,\nresources_box_selection_limit_page_2, ausgewählten Inhalten überstiegen würde., pages would be exceeded.,\nresources_box_selection_limit_single_1,\"Der Inhalt kann nicht selektiert werden, da sonst die maximale Anzahl von \",\"This item can not be selected, because otherwise the maximum number of\",\nresources_box_selection_limit_single_2, ausgewählten Inhalten überstiegen würde.,selected items would be exceeded.,\nresources_box_selection_remove_selection,Auswahl entfernen,Remove selection,\nresources_box_selection_select,Auswählen,Select,\nresources_box_title_count_post,Inhalte,Items,\nresources_box_info_header_no_system_groups,In dieser Auflistung werden %{system_groups_name} nicht berücksichtigt.,%{system_groups_name} are not taken into account.,\nresources_box_info_header_system_groups_name,Systemgruppen,System groups,\nresources_section_show_all,Alle anzeigen →,Show all →,\nresources_type_all,Alle,All,\nresponsibility_groups,Verantwortungs-Gruppen,Responsibility groups,\nsearch_btn_search,Suchen,Search,\nsearch_filename,Filename,File name,\nsearch_full_text,Volltext,Full text,\nsection_title_collections,Meine Sets,My sets,\nsection_title_groups,Meine Gruppen,My groups,\nsection_title_keywords,Meine Schlagworte,My keywords,\nsection_title_media_entries,Meine Medieneinträge,My media entries,\nsection_title_tokens,Meine Tokens,My tokens,\nsession_expiring_soon,Sie werden in weniger als %{minutes} Minuten ausgeloggt. Speichern Sie Ihre Eingaben und melden sich neu an.,You will be logged out in less than %{minutes} minutes. Save your input and log in again.\nshare_back_to_collection,Zurück zum Set,Back to the set,\nshare_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nshare_close,Schliessen,Close,\nshare_custom_url_hint_collection,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeiten), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-works-by-anna), use the following URL:\",\nshare_custom_url_hint_media_entry,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeit), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-work-by-anna), use the following URL:\",\nshare_custom_url_none_available,Es ist keine sprechende Adresse angelegt.,No comprehensible address has been defined.,\nshare_custom_url_subtitle,Sprechende Adresse teilen,Share comprehensible address,\nshare_embed_hint_iframe,\"Falls dies von Ihrem gewünschen System nicht unterstützt wird, kopieren Sie den nachfolgenden iFrame-Code und fügen diesen als HTML-Element in das gewünschte System ein.\",\"If your desired system does not support this, copy the following iFrame code and paste it into the desired system as an HTML element.\",\nshare_embed_hint_iframe_code,\"IFrame-Code\",\"IFrame Code\",\nshare_embed_hint_oembed,\"Viele Content Management Systeme lassen einfaches Einbetten von Inhalten via oEmbed zu. Dazu kopieren Sie die URL oben und fügen sie in ein Inhaltselement ein.\",\"Many content management systems allow easy embedding of content via oEmbed. To do so, copy the URL above and paste it into a content element.\",\nshare_embed_hint_subtitle,\"Medieneintrag einbetten\",\"Embed Media Entry\",\nshare_title_collection,Set teilen,Share set,\nshare_title_media_entry,Medieneintrag teilen,Share media entry,\nshare_uuid_url_hint_collection,\"Möchten Sie dieses Set teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this set? Use the following URL.\",\nshare_uuid_url_hint_exporter,Auch für den Export mit dem Madek-Exporter wird diese URL benötigt.,This URL is also required for exporting with the Madek exporter.,\nshare_uuid_url_hint_media_entry,\"Möchten Sie diesen Medieneintrag teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this media entry? Use the following URL.\",\nshare_uuid_url_subtitle,URL teilen,Share URL,\n\n\nsettings_notifications_title,Notifikationen,Notifications,\nsettings_notifications_info1,Notifikationen werden unter %{notifications} aufgeführt und optional per E-Mail verschickt.,Notifications are listed under %{notifications} and optionally sent via email.,\nsettings_notifications_info2,Notifikationen werden nach 6 Monaten gelöscht,Notifications will be removed after 6 months,\nsettings_notifications_info3,Die Einstellungen für die E-Mail-Notifikationen finden Sie nachstehend:,Choose your settings for e-mail notifications below:,\nsettings_notifications_email_label,An folgende E-Mail-Adresse bekommen Sie Notifikationen zugestellt:,Notifications will be sent to the following e-mail address:,\nsettings_notifications_locale_label,Die E-Mails werden in folgender Sprache verschickt:,You will receive emails in,\nsettings_notifications_locale_de,Deutsch,German,\nsettings_notifications_locale_en,Englisch,English,\nsettings_notifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nsettings_notifications_title_weather_report,Wetterbericht,Weather report,\nsettings_notifications_email_frequency_label,In welcher Häufigkeit möchten Sie E-Mails erhalten?,Frequency of email notification:,\nsettings_notifications_email_frequency_immediately,sofort,immediately,\nsettings_notifications_email_frequency_daily,täglich (Zusammenfassung),daily (digest),\nsettings_notifications_email_frequency_weekly,wöchentlich (Zusammenfassung),weekly (digest),\nsettings_notifications_email_frequency_never,keine,none,\nsettings_advanced_functions_title,Erweiterte Funktionen,Advanced functions,\nsettings_show_all_data_tab_in_edit_mode_label,Reiter «Alle Daten» im Bearbeitungsmodus einblenden,Show the «All metadata» Tab in edit mode,\nsettings_save_changes,Einstellungen speichern,Save settings,\nsettings_saved_changes,Einstellungen wurden gespeichert,Settings have been saved,\nsitemap_activities,Aktivitäten,Activities,\nsitemap_notifications,Notifikationen,Notifications,\nsitemap_api,API,API,\nsitemap_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_collections,Sets,Sets,\nsitemap_entries,Medieneinträge,Media entries,\nsitemap_explore,Erkunden,Explore,\nsitemap_filter_sets,Filtersets,Filter sets,\nsitemap_help,Hilfe,Support,\nsitemap_media_entries,Medieneinträge,Media entries,\nsitemap_metakey,Metakey,Metakey,\nsitemap_metakey_id,Metakey-ID,Metakey ID,\nsitemap_my_archive,Mein Archiv,My archive,\nsitemap_my_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_my_content_collections,Sets,Sets,\nsitemap_my_content_media_entries,Medieneinträge,Media entries,\nsitemap_my_delegated_collections,Sets in gemeinsamer Verantwortung,Sets with joint responsibility,\nsitemap_my_delegated_media_entries,Medieneinträge in gemeinsamer Verantwortung,Media entries with joint responsibility,\nsitemap_my_entrusted_collections,Mir anvertraute Sets,My entrusted sets,\nsitemap_my_entrusted_filter_sets,Mir anvertraute Filtersets,My entrusted filter sets,\nsitemap_my_entrusted_media_entries,Mir anvertraute Medieneinträge,My entrusted media entries,\nsitemap_my_favorite_collections,Favoriten-Sets,Favorite sets,\nsitemap_my_favorite_media_entries,Favoriten-Medieneinträge,Favorite media entries,\nsitemap_my_groups,Gruppen,Groups,\nsitemap_my_latest_imports,Letzte Importe,Last imports,\nsitemap_my_unpublished,Unvollständige Medieneinträge,Incomplete media entries,\nsitemap_my_used_keywords,Schlagworte,Keywords,\nsitemap_search,Suche,Search,\nsitemap_tokens,Tokens,Tokens,\nsitemap_settings,Einstellungen,Settings,\nsitemap_vocabularies,Vokabulare,Vocabularies,\nconfidential_links_help_title,Hinweise,Hints,\nsitemap_vocabulary,Vokabular,Vocabulary,\nconfidential_links_help_text,\"Vertrauliche Links ermöglichen den direkten Zugriff auf Medieneinträge, auch wenn sie nicht öffentlich sichtbar sind.\nDiese Links ermöglichen somit auch Benutzern ohne Login einen Zugang zum Medieneintrag. Binden Sie Vertrauliche Links nicht in öffentlich zugängliche Webseiten ein, sonst werden die regulären Zugriffsberechtigungen wirkungslos.\nVertrauliche Links können nur vom Verantwortlichen eines Medieneintrags erstellt und zurückgezogen werden. Die Links können mit einem Verfallsdatum erstellt oder zeitlich unbeschränkt erstellt werden.\",\"Confidential Links can be used to enable access to Entries without making them publicly visible.\nThese Links therefore also make it possible to share Entries with Users that don't have a login. Please do not share or embed Confidential Links onto publicly accessible websites, because it would render the regular permission settings useless.\nConfidential Links can only be created by the responsible user of an Entry. They can be manually revoked at any time, and optionally be set to expire automatically after a set day.\",\nconfidential_links_header,Vertrauliche Links,Confidential Links,\nconfidential_links_title_pre,Vertrauliche Links für ,Confidential Links for ,\nconfidential_links_title_post,Zurück zum Set,Back to the set,\nconfidential_links_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nconfidential_links_create_title,Neuen Vertraulichen Link erstellen,Create a new Confidential Link,\nconfidential_links_create_description,Beschreibung,Description,\nconfidential_links_create_submit,Vertraulichen Link erstellen,Create Confidential Link,\nconfidential_links_create_set_expiration_date,Ablaufdatum einstellen,Set expiration date,\nconfidential_links_create_cancel,Abbrechen,Cancel,\nconfidential_links_created_title,Neuer Vertraulicher Link erstellt,New Confidential Link created,\nconfidential_links_created_back_btn,Zurück zu allen Vertraulichen Links,Go back to all Confidential Links,\nconfidential_links_created_notice,Vertraulicher Link erstellt!,Confidential Link was created!,\nconfidential_links_show_link_for_copy,Link zum kopieren:,Link to copy:,\nconfidential_links_show_embedcode_for_copy,Embed-Code zum kopieren:,Embed-Code to copy:,\nconfidential_links_show_embed_link,Embed-Link:,Embed-link:,\nconfidential_links_show_embed_code_iframe,HTML-Code/iframe:,HTML-code/iframe:,\nconfidential_links_list_created_hint_pre,Erstellt: ,Created: ,\nconfidential_links_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\nconfidential_links_list_no_expiry,Nie,Never,\nconfidential_links_list_new_button,Neuen Vertraulichen Link erstellen,Add a new Confidential Link,\nconfidential_links_list_no_description,(Keine Beschreibung),(No description),\nconfidential_links_list_revoke_btn_hint,Zurückziehen,Revoke,\nconfidential_links_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Vertraulichen Link zurückziehen wollen?\",Are you sure you want to revoke this Confidential Link?,\nconfidential_links_list_revoked_title,Abgelaufene und zurückgezogene Vertrauliche Links,Expired and revoked Confidential Links,\nconfidential_links_list_show_url,Link anzeigen,Show Link,\nconfidential_links_list_copy_url,Vertraulichen Link kopieren,Copy Confidential Link,\nconfidential_links_head_id,ID,ID,\nconfidential_links_head_name,Name,Name,\nconfidential_links_head_token,Token,Token,\nconfidential_links_head_valid_since,Erstellt am,Created at,\nconfidential_links_head_valid_until,Läuft ab,Expires at,\nconfidential_links_show_title,Vertraulicher Link,Confidential Link,\nconfidential_links_access_notice,Dieser Medieneintrag wurde über einen Vertraulichen Link aufgerufen. Die URL dieser Seite darf nur einem eingeschränkten Personenkreis zugänglich sein.,This Entry was accessed via a Confidential Link. The URL of this page shall only be made accessible to a limited group of people.,\ntransfer_responsibility_batch_success_collection_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_collection_1a, Set , set ,\ntransfer_responsibility_batch_success_collection_1b, Sets , sets ,\ntransfer_responsibility_batch_success_collection_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_batch_success_media_entry_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_media_entry_1a, Medieneintrag , media entry,\ntransfer_responsibility_batch_success_media_entry_1b, Medieneinträge, media entries,\ntransfer_responsibility_batch_success_media_entry_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_cancel,Abbrechen,Cancel,\ntransfer_responsibility_currently_responsible,Bisher verantwortlich,Currently responsible,\ntransfer_responsibility_to,Verantwortlichkeit übertragen auf,Transfer responsibility to,\ntransfer_responsibility_for_1_media_entry,für 1 Medieneintrag,for 1 media entry,\ntransfer_responsibility_for_n_media_entries,für %{nofResources} Medieneinträge,for %{nofResources} media entries,\ntransfer_responsibility_for_1_collection,für 1 Set,for %{nofResources} set,\ntransfer_responsibility_for_n_collections,für %{nofResources} Sets,for %{nofResources} sets,\ntransfer_responsibility_multiple_will_receive,Die bisher Verantwortlichen behalten folgende Berechtigungen:,The ones currently responsible are retaining the following permissions:,\ntransfer_responsibility_single_will_receive,%{name} behält folgende Berechtigungen:,%{name} is retaining the following permissions:,\ntransfer_responsibility_submit,Übertragen,Transfer,\ntransfer_responsibility_success_collection,Sie haben die Verantwortlichkeit für das Set erfolgreich übertragen.,You have successfully transferred responsibility for the set.,\ntransfer_responsibility_success_media_entry,Sie haben die Verantwortlichkeit für den Medieneintrag erfolgreich übertragen.,You have successfully transferred responsibility for the media entry.,\ntransfer_responsibility_title_single,Verantwortlichkeit übertragen,Transfer responsibility,\ntransfer_responsibility_title_batch,Verantwortlichkeit %{forNResources} übertragen,Transfer responsibility %{forNResources},\ntransfer_responsibility_you_will_receive,\"Sie, %{name}, behalten folgende Berechtigungen:\",\"You, %{name}, are retaining the following permissions:\",\nusage_data_created_at,Erstellt am,Created on,\nusage_data_import_at,Importiert am,Imported on,\nusage_data_import_by,Importiert durch,Imported by,\nusage_data_last_changes_empty,Es wurden noch keine Änderungen festgehalten.,No changes have been recorded yet.,\nusage_data_last_changes_title,Letzte Änderungen der Metadaten,Last change of metadata,\nusage_data_relations_children,Set enthält,Set is related to,\nusage_data_relations_parents,Übergeordnete Sets,Parent sets,\nusage_data_relations_title,Zusammenhänge,Relations,\nusage_data_responsibility_title,Verantwortlichkeit und Aktivitäten,Responsibility and activities,\nusage_data_responsible,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / responsibility group,\nusage_terms_accept_btn,Nutzungsbedingungen akzeptieren,Accept usage terms,\nusage_terms_reject_btn,Ablehnen,Reject usage terms,\nuser_menu_admin_mode_toogle_off,Admin-Modus beenden,Stop admin mode,\nuser_menu_admin_mode_toogle_on,In Admin-Modus wechseln,Switch to admin mode,\nuser_menu_admin_ui,Admin-Interface öffnen,Open admin interface,\nuser_menu_login_btn,Anmelden,Log in,\nuser_menu_logout_btn,Abmelden,Log out,\nuser_menu_my_content_collections,Meine Sets,My sets,\nuser_menu_my_content_media_entries,Meine Medieneinträge,My media entries,\nuser_menu_my_favorite_collections,Favoriten - Sets,Favorites - sets,\nuser_menu_my_favorite_media_entries,Favoriten - Medieneinträge,Favorites - media entries,\nuser_menu_my_groups,Meine Gruppen,My groups,\nuser_menu_my_person,Meine Person,My person,\nuser_menu_upload,Medien importieren,Upload media,\nuser_name_deactivated,[Gelöschter User],[Deleted user],\nvocabularies_all,Alle Vokabulare,All vocabularies,\nvocabularies_contents_hint_1,Alle Inhalte mit Metadaten des Vokabulars ,All items with metadata related to the vocabulary,\nvocabularies_contents_hint_2,\". Sie sehen nur Inhalte, für die Sie berechtigt sind.\",. You can see only items you have permissions for.,\nvocabularies_keywords_hint_1,Alle im Vokabular ,All keywords contained in the vocabulary ,\nvocabularies_keywords_hint_2, enthaltenen Schlagworte und die dazugehörenden Metadatenfelder., and related meta data fields.,\nvocabularies_no_description,(Keine Beschreibung),(No description available),\nvocabularies_no_keywords,Keine Schlagworte vorhanden.,No keywords available.,\nvocabularies_no_people,Keine Personen vorhanden.,Keine Personen vorhanden.,\nvocabularies_people_hint_1,Alle im Vokabular ,Alle im Vokabular ,\nvocabularies_people_hint_2, enthaltenen Personen und die dazugehörenden Metadatenfelder., enthaltenen Personen und die dazugehörenden Metadatenfelder.,\nvocabularies_tabs_contents,Inhalte,Items,\nvocabularies_tabs_keywords,Schlagworte,Keywords,\nvocabularies_tabs_people,Personen,People,\nvocabularies_tabs_permissions,Berechtigungen,Permissions,\nvocabularies_tabs_vocabulary,Vokabular,Vocabulary,\nvocabulary_permissions_hint1,\"Für dieses Vokabular können die Berechtigungen \"\"Betrachten\"\" und \"\"Anwenden\"\" vergeben werden. Wenn Sie Mitglied einer berechtigten Arbeitsgruppe sind, können Sie weitere Personen zu dieser hinzufügen oder daraus entfernen. Bitte überlegen Sie Änderungen gut, da über Arbeitsgruppen auch weitere Berechtigungen gesteuert werden.\",\"This vocabulary can be managed with the permissions \"\"View\"\" and \"\"Execute\"\". If you are member of a work group which owns permissions, you are able to add or remove further users. Think carefully before you make changes to work groups as this may affect other permissions.\",\nvocabulary_permissions_hint2,\"Weitere Berechtigungen für Personen, Arbeitsgruppen, API-Applikationen oder die Öffentlichkeit werden durch den Administrator vergeben – bitte wenden Sie sich an den Support.\",\"Further permissions for persons, work groups, API clients or public usage are granted by the administrator. Please contact  support.\",\nvocabulary_term_info_contents,Inhalte,Items,\nvocabulary_term_info_description,Beschreibung,Description,\nvocabulary_term_info_rdfclass,Typ,Type,\nvocabulary_term_info_term,Begriff,Term,\nvocabulary_term_info_url,URL,URL,\nvocabulary_term_info_urls,URLs,URLs,\nworkgroup_link_to_contents_text,Inhalte,Items,\nworkgroup_link_to_contents_title,Inhalte dieser Arbeitsgruppe anzeigen,Show items of this work group,\nworkgroup_members_table_is_member,Mitglied?,Member?,\nworkgroup_members_table_login,Login,Login,\nworkgroup_members_table_title,Mitglieder,Members,\nmedia_entry_notice_new_versions,Für diesen Medieneintrag sind neuere Versionen vorhanden:,Newer versions are available for this media entry:,\nread_more_button,\"Mehr anzeigen\",\"Show more\",\nread_less_button,\"Weniger anzeigen\",\"Show less\",\n");
+		translationsList = readTranslationsFromCSV("key,de,en,comment\najax_form_connection_error,Verbindungsfehler. Bitte versuchen Sie es noch einmal.,Connection error. Please try again.,\najax_form_no_longer_authorized,Sie sind für diese Aktion nicht mehr authorisiert.,You are no longer authorized to do this.,\najax_form_unexpected_error,Es gab einen unerwarteten Server-Fehler.,There was an unexpected server error.,\najax_form_validation_error_unparsable,Validation error with unparsable errors.,Validation error with unparsable errors.,\"Formular speichern, Edge case: Server gibt Fehlermeldung UND sie kann nicht gelesen werden.\"\najax_form_validation_error_without_any_data,Validation error without any data.,Validation error without any data.,\"Formular speichern, Edge case: Server gibt Fehlermeldungs-Code aber sonst keinen Inhalt\"\najax_form_validation_error_without_error_data,Validation error without error data.,Validation error without error data.,\"Formular speichern, Edge case: Server gibt Fehlermeldung, aber keine Details\"\napi_tokens_callback_description,Token wird für eine externe Applikation erstellt.,Token is being created for an external application.,\napi_tokens_create_cancel,Abbrechen,Cancel,\napi_tokens_create_description,Beschreibung,Description,\napi_tokens_create_submit,Token anlegen,Create token,\napi_tokens_create_title,Neuen Token hinzufügen,Add new token,\napi_tokens_created_back_btn,Zurück zu allen Tokens.,Back to all tokens.,\napi_tokens_created_callback_btn,Weiter zur Applikation,Continue to the application,\napi_tokens_created_callback_description,\"Falls die Weiterleitung nicht funktioniert, kann der Token auch manuell kopiert werden:\",\"If the redirect does not work, the token can also be copied manually:\",\napi_tokens_created_notice,Dieser Token wird nur einmal angezeigt. Bitte speichern Sie ihn jetzt.,This token is displayed only once. Please save it now.,\napi_tokens_created_title,Es wurde ein neuer Token erstellt.,A new token was created.,\napi_tokens_head_id,ID,ID,\napi_tokens_head_name,Name,Name,\napi_tokens_head_permissions,Berechtigungen,Permissions,\napi_tokens_head_valid_since,Gültig seit,Valid from,\napi_tokens_head_valid_until,Gültig bis,Valid to,\napi_tokens_list_created_hint_pre,Erstellt: ,Created: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_new_button,Neuen Token erstellen,Create new token,\napi_tokens_list_no_description,(Keine Beschreibung),No description),\"Platzhalter-Text, falls ein Token keine Beschreibung hat.\"\napi_tokens_list_revoke_btn_hint,Token zurückziehen.,Revoke token.,\napi_tokens_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Token zurückziehen wollen?\",Are you sure you want to revoke the token?,\napi_tokens_list_revoked_title,Abgelaufene und zurückgezogene Tokens,Expired and revoked tokens,\napi_tokens_list_scope_off,Nein,No,\napi_tokens_list_scope_on,Ja,Yes,\napi_tokens_list_scope_read,Lesen,Read,\napi_tokens_list_scope_write,Schreiben,Write,\napp_autocomplete_displayname_users,Nutzer/innen,Users,\napp_autocomplete_displayname_delegations,Verantwortungs-Gruppen,Responsibility groups,\napp_autocomplete_no_results,Keine Ergebnisse.,No results.,\napp_autocomplete_user_delegation_postfix, (Verantwortungs-Gruppe), (Responsibility group)\napp_autocomplete_enter_term,Suchbegriff eingeben für weitere Ergebnisse,Enter search term for further results,\napp_autocomplete_extend_term,Suchbegriff erweitern für weitere Ergebnisse,Extend search term for further results,\napp_confirm_form_leave_msg,\"Diese Seite bittet Sie zu bestätigen, dass Sie die Seite verlassen möchten. Daten, die Sie eingegeben haben, werden unter Umständen nicht gespeichert.\",Please confirm that you wish to leave this page – entered data might not be saved.,NOTE: German version copied from Firefox default message\napp_notice_admin_mode_on,Admin-Modus aktiviert!,Admin mode activated!,\napp_notice_admin_mode_off,Admin-Modus deaktiviert!,Admin mode deactivated!,\napp_notice_logged_in,Sie haben sich angemeldet.,You have logged in.,\napp_notice_logged_out,Sie haben sich abgemeldet.,You have logged out.,\napp_notice_wrong_credentials,Falscher Benutzername/Passwort.,Incorrect username/password.,\napp_notice_shibboleth_not_enabled,Die Anmeldung mittels Shibboleth ist nicht aktiviert!,Shibboleth sign in is not enabled!,\napp_notice_shibboleth_missing_fields,\"Die Authentifizierungsdaten von Shibboleth sind unvollständig. SURNAME, GIVENNAME und EMAIL sind Pflichtfelder!\",\"Shibboleth authentication data is incomplete. SURNAME, GIVENNAME and EMAIL are required fields!\",\napp_warning_jsonly,\"Diese Funktion erfordert JavaScript, aber es ist nicht aktiviert.\",\"This feature requires Javascript, but it is not activated.\",\nauthentication_groups,Systemgruppen,System groups,\nbatch_add_to_collection_hint,\"Nach Sets suchen, zu denen Sie die Medieneinträge hinzufügen möchten.\",Seach for sets to add media entries.,\nbatch_add_to_collection_post, Medieneinträge zu Set hinzufügen,Add media entries to set,(nach der Anzahl)\nbatch_add_to_collection_pre, ,,(vor der Anzahl)\nbatch_destroy_resources_ask_1,Möchten Sie folgende Inhalte löschen:,Do you want to delete the following items:,\nbatch_destroy_resources_ask_2, Medieneinträge, Media entries,\nbatch_destroy_resources_ask_3, Sets, Sets,\nbatch_destroy_resources_ask_4,(Die Inhalte von Sets werden nicht automatisch mit dem Set gelöscht.),\"(When a set is deleted, the items of this set are not deleted at the same time.)\",\nbatch_destroy_resources_cancel,Abbrechen,Cancel,\nbatch_destroy_resources_ok,OK,OK,\nbatch_destroy_resources_success,Inhalte wurden erfolgreich gelöscht.,Items are deleted successfully.,\nbatch_meta_data_edit,Metadaten für %{media_entry_count} Medieneinträge gleichzeitig editieren.,Edit metadata for %{media_entry_count} media entries at the same time.,\nbatch_remove_from_collection_cancel,Abbrechen,Cancel,\nbatch_remove_from_collection_question_part_1,Möchten Sie die ausgewählten ,Do you want to remove the selected ,\nbatch_remove_from_collection_question_part_2, Medieneinträge und , media entries and ,\nbatch_remove_from_collection_question_part_3, Sets aus dem Set entfernen?, sets from this set?,\nbatch_remove_from_collection_remove,Entfernen,Remove,\nbatch_remove_from_collection_title,Medieinträge/Sets aus Set entfernen,Remove media entries/sets from sets,\nbatch_warning_no_authorized_contents_collection,Sie haben für keines der Sets die nötige Berechtigung.,You have no permissions for these sets.,\nbatch_warning_no_authorized_contents_media_entry,Sie haben für keinen der Medieneinträge die nötige Berechtigung.,You have no permissions for these media entries.,\nbatch_warning_no_contents_collection,Sie haben keine Sets.,You have no sets.,\nbatch_warning_no_contents_media_entry,Sie haben keine Medieneinträge.,You have no media entries.,\nbatch_edit_title_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nbatch_edit_title_th_filename,Dateiname,File name,\nbatch_edit_title_th_title,Titel,Title,\nbatch_edit_title_save,Speichern,Save,\nbatch_edit_title_cancel,Abbrechen,Cancel,\nbrowse_entries_browse_link_title,In diese Richtung weiterstöbern,Browse further in this direction,\nbrowse_entries_filter_link,Weiter filtern →,Apply additional filter →,\nbrowse_entries_loading_error,Ladefehler,Loading error,\nbrowse_entries_title,Nach ähnlichen Inhalten stöbern,Browse similar items,\nbubble_batch_label,Stapel,Batch,Wo: Labels in der Stapelverarbeitung\nbubble_draft_label,Entwurf,Draft,Wo: Labels in der Stapelverarbeitung\nclipboard_add_hint,Zur Stapelverarbeitung hinzufügen,Add to batch processing,\nclipboard_adding_all_resources_cancelled,\"Das Hinzufügen zur Stapelverarbeitung wurde abgebrochen. Ein Teil der Inhalte wurde schon hinzugefügt. Wenn Sie alle hinzufügen möchten, versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.\",\"The process of adding items to batch processing was interrupted. Some items were successfully added to batch processing. If you wish to add all items, please try again.Those items already added will not be duplicated.\",\nclipboard_adding_all_resources_error,Es konnten nicht alle Inhalte zur Stapelverarbeitung hinzugefügt werden. Bitte versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.,It was not possible to add all items to batch processing. Please try again. Those items already added will not be duplicated.,\nclipboard_adding_all_resources_retry,Nochmals, Again,\nclipboard_adding_resources,Füge Inhalte zur Stapelverarbeitung hinzu …,Add items to batch processing …,\nclipboard_ask_add_all_1,Möchten sie alle ,Would you like to add all ,\nclipboard_ask_add_all_2, Inhalte zur Stapelverarbeitung hinzufügen?, items to batch processing?,\nclipboard_ask_add_all_cancel,Abbrechen,Cancel,\nclipboard_ask_add_all_ok,Ok,OK,\nclipboard_batch_add_success,Die Inhalte wurden der Stapelverarbeitung hinzugefügt.,Items were added to batch processing.,\nclipboard_batch_remove_success,Die Inhalte wurden aus der Stapelverarbeitung entfernt.,Items wer removed from batch processing.,\nclipboard_empty_message,Sie haben keine Inhalte für die Stapelverarbeitung ausgewählt.,Batch processing is empty,\nclipboard_fetching_resources,Lade Inhalte …,Items loading …,\"Wieso sind da Pünktchen? -> Ist eine Zustandsanzeige, Nutzer wartet.\"\nclipboard_removing_resources,Entferne Inhalte aus Stapelverarbeitung...,Remove items from batch processing ...,\ncollection_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgendes Set löschen möchten: \",Are you sure you want to delete the following set:,\ncollection_ask_delete_title,Set löschen,Delete set,\ncollection_deleted,Dieses Set wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This set has been deleted and is no longer visible to users.\ncollection_delete_success,Set wurde gelöscht.,Set deleted.,\ncollection_does_not_exist,Dieses Set existiert nicht.,This set does not exist.,\ncollection_edit_cover_submit_btn,Speichern,Submit,\ncollection_edit_cover_title,Titelbild für Set festlegen,Define set cover,\ncollection_edit_highlights_btn,Auswahl speichern,Submit selection,\ncollection_edit_highlights_empty,Dieses Set hat noch keine Inhalte.,This set has no items yet.,\ncollection_edit_highlights_title,Inhalte hervorheben,Highlight items,\ncollection_edit_permissions_btn,Speichern,Submit,\ncollection_highlighted_contents,Hervorgehobene Inhalte,Highlighted items,\ncollection_layout_save,Darstellung festlegen,Save type of display,\ncollection_layout_saved,Darstellung gespeichert,Type of display saved,\ncollection_meta_data_header_prefix,Set editieren: ,Edit set:,\ncollection_new_cancel,Abbrechen,Cancel,\ncollection_new_create_set,Set erstellen,Create set,\ncollection_new_dialog_title,Set erstellen,Create set,\ncollection_new_dialog_parent_warning,The new created set will be added as a child to:,The new created set will be added as a child to:,\ncollection_new_flash_successful,Set wurde erstellt.,Set was created.,\ncollection_new_flash_title_needed,Titel ist ein Pflichtfeld.,Title is a mandatory field.,\ncollection_new_header,Neues Set,New set,\ncollection_new_label_title,Titel,Title,\ncollection_permissions_btn,Zugriffsberechtigungen ändern,Change permissions,\ncollection_relations_child_sets,Untergeordnete Sets,Child sets,\ncollection_relations_children_hint,Diese Sets wurden dem ausgewählten Set hinzugefügt.,These sets are now related to the selected set.,\ncollection_relations_current,Aktuelles Set,Current set,\ncollection_relations_hint_text,\"Das ausgewählte Set ist mit anderen Sets verknüpft. Diese Zusammenhänge wurden aktiv durch Sie oder eine/n andere/n Nutzer/in festgelegt als übergeordnet, benachbart oder untergeordnet. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected set is related to other sets. The relationship between these sets was actively defined by you or another user. The type of relationship to the other sets could be described as parent, siblings or children relationship. The displayed sets are owned by yourself or shared by other users with you.\",\ncollection_relations_no_child_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_parent_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_sibling_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_parent_sets,Übergeordnete Sets,Parent sets,\ncollection_relations_parents_hint,Das ausgewählte Set wurde diesen Sets hinzugefügt.,The selected set is now related to this set.,\ncollection_relations_show_all,Alle anzeigen →,Show all →,\ncollection_relations_show_all_relations,Alle Zusammenhänge anzeigen,Show all relations,\ncollection_relations_sibling_sets,Benachbarte Sets,Sibling sets,\ncollection_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie das ausgewählte Set.,This set is related to the same sets as the selected set.,Wo: Zusammenhänge eines Sets\ncollection_resource_selection_cancel,Abbrechen,Cancel,\ncollection_resource_selection_h_author,Autor/in,Author,\ncollection_resource_selection_h_date,Datierung,Dating,\ncollection_resource_selection_h_keywords,Schlagworte,Keywords,\ncollection_resource_selection_h_responsible,Rechteinhaber,Holder of rights,\ncollection_resource_selection_h_selection,Auswahl,Selection,\ncollection_resource_selection_h_subtitle,Untertitel,Subtitle,\ncollection_resource_selection_h_title,Titel,Title,\ncollection_resource_selection_save,Auswahl speichern,Save selection,\ncollection_select_collection_flash_result,Set aus %{removed_count} Set(s) entfernt. Zu %{added_count} Set(s) hinzugefügt.,Removed set from %{removed_count} set(s). Added set to %{added_count} set(s).,\ncollection_sorting_created_at_asc,Sortieren nach Importierdatum aufsteigend,Sort by import date ascending,\ncollection_sorting_created_at_desc,Sortieren nach Importierdatum absteigend,Sort by import date descending,\ncollection_sorting_manual_asc,Sortieren manuell aufsteigend,Sort manually ascending,\ncollection_sorting_manual_desc,Sortieren manuell absteigend,Sort manually descending,\ncollection_sorting_last_change_desc,Sortieren nach letzter Änderung absteigend,Sort by date of update descending,\ncollection_sorting_last_change_asc,Sortieren nach letzter Änderung aufsteigend,Sort by date of update ascending,\ncollection_sorting_title_asc,Sortieren nach Titel alphabetisch,Sort by title alphabetically,\ncollection_sorting_title_desc,Sortieren nach Titel absteigend,\"Sort by title alphabetically, but descending\",\ncollection_tab_main,Set,Set,\ncollection_was_disfavored,Das Set wurde von den Favoriten entfernt.,Set was removed from favorites.,\ncollection_was_favored,Das Set wurde zu den Favoriten hinzugefügt.,Set was added to favorites.,\ncontents_privacy_private,Diese Inhalte sind nur für Sie zugänglich.,These items are only accessible to you.,\ncontents_privacy_public,Diese Inhalte sind öffentlich zugänglich.,These items are accessible to the public.,\ncustom_urls_canonical_hint,\"Jeder Inhalt hat eine automatisch erzeugte, kanonische Adresse bestehend aus Zahlen und Buchstaben, eine sog. UUID (Universally Unique Identifier). Diese Adresse kann nicht übertragen oder entfernt werden und ist deshalb immer an erster Stelle aufgelistet.\",\"Every item has a canonical address consisting of numbers und letters which is created automatically, a so- called UUID (Universally Unique Identifier). This address can not be transferred or deleted. For this reason it is always listed first.\",\ncustom_urls_canonical_title,Kanonische Adresse (UUID),Canonical address (UUID),\ncustom_urls_flash_create_successful_1,Adresse ,Address ,\ncustom_urls_flash_create_successful_2, wurde erstellt., was created.,\ncustom_urls_flash_empty,Adresse darf nicht leer sein.,Address is not allowed to be empty.,\ncustom_urls_flash_exists_on_itself_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_collection_2, existiert bereits für dieses Set., already exists for this set.,\ncustom_urls_flash_exists_on_itself_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_media_entry_2, existiert bereits für diesen Medieneintrag., already exists for this media entry.,\ncustom_urls_flash_not_allowed_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_collection_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung das Set zu verwalten, auf welches die Adresse \", can not be transferred. You do not have permission to manage the set to which the address ,\ncustom_urls_flash_not_allowed_collection_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_allowed_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_media_entry_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung den Medieneintrag zu verwalten, auf welchen die Adresse \", cannot be transferred. You do not have  permission to manage the media entry to which the address ,\ncustom_urls_flash_not_allowed_media_entry_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_same_type_collection_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_collection_2, kann nicht übertragen werden. Adressen von Medieneinträgen können nicht auf Sets übertragen werden., can not be transferred. Addresses from media entries can not be transferred to sets.,\ncustom_urls_flash_not_same_type_media_entry_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_media_entry_2, kann nicht übertragen werden. Adressen von Sets können nicht auf Medieneinträge übertragen werden., cannot be transferred. Addresses from sets cannot be transferred to media entries.,\ncustom_urls_flash_primary_url_set_1,,,\"Wo: Bestätigung CustomURL, vor der Adresse\"\ncustom_urls_flash_primary_url_set_2, wurde als primäre Adresse gesetzt., was set as primary address.,\"Wo: Bestätigung CustomURL, nach der Adresse\"\ncustom_urls_flash_transfer_confirmation_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_collection_2, ist gegenwärtig dem Set , is currently related to the set  ,\ncustom_urls_flash_transfer_confirmation_collection_3, zugewiesen. Wollen Sie diese Adresse auf das Set ,. Would you like to transfer this address to the set ,\ncustom_urls_flash_transfer_confirmation_collection_4, übertragen?,?,\ncustom_urls_flash_transfer_confirmation_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_media_entry_2, ist gegenwärtig dem Medieneintrag , is currently related to the media entry  ,\ncustom_urls_flash_transfer_confirmation_media_entry_3, zugewiesen. Wollen Sie diese Adresse auf den Medieneintrag ,. Would you like to transfer this address to the media entry ,\ncustom_urls_flash_transfer_confirmation_media_entry_4, übertragen?,?,\ncustom_urls_flash_transfer_successful_1,Adresse ,Address  ,\ncustom_urls_flash_transfer_successful_2, wurde von , was transferred from  ,\ncustom_urls_flash_transfer_successful_3, auf , to ,\ncustom_urls_flash_transfer_successful_4, übertragen.,0,\ncustom_urls_flash_wrong_format_1,Adresse ,Address ,\ncustom_urls_flash_wrong_format_2, erfüllt die Anforderungen nicht., does not meet the requirements.,\ncustom_urls_manage_address_title,Adressverwaltung,Address administration,\ncustom_urls_new,Adresse anlegen / übertragen,Create / transfer address,\ncustom_urls_no_addresses_defined,Noch keine Adressen definiert.,No address defined yet.,\ncustom_urls_primary_hint,\"Für jeden Inhalt (egal ob Medieneintrag oder Set) gibt es immer genau eine primäre Adresse. Diese ist in der Adressleiste des Browsers sichtbar, wenn der Inhalt angezeigt wird. Neben der primären Adresse können weitere gesetzt werden, die auf die primäre Adresse weiterleiten.\",Each item (media entry or set) has exactly one primary address. This address is displayed in the browsersaddress bar when the item is accessed.You have the option to create other addresses which are forwarded to the primary address.,\ncustom_urls_primary_title,Primäre Adresse,Primary address,\ncustom_urls_table_header_actions,Aktionen,Actions,\ncustom_urls_table_header_address,Adresse,Address ,\ncustom_urls_table_header_created_by,Erstellt durch,Created by,\ncustom_urls_table_header_date,Datum,Date,\ncustom_urls_table_header_type,Typ,Type,\ncustom_urls_title,Adressen für ,Addresses for ,\ndashboard_create_collection,Set erstellen,Create set,\ndashboard_create_collection_btn,Set erstellen,Create set,\ndashboard_create_media_entry_btn,Medien importieren,Upload media,\ndashboard_none_exist,Keine vorhanden.,There are none.,\ndashboard_show_all,Alle anzeigen,Show all,\ndashboard_title_head,Mein Archiv,My archive,\ndeleted,gelöscht,deleted,\ndynamic_filters_any_values_title,Jegliche Werte,Any values,\ndynamic_filters_authorization,Berechtigung,Authorization,\ndynamic_filters_visibility,Sichtbarkeit,Accessability,\ndynamic_filters_visibility_private,Nur für mich,Only for me,\ndynamic_filters_visibility_user_or_group,Geteilt mit Personen und Arbeitsgruppen,Shared with people and work groups,\ndynamic_filters_person_header,Personen,Persons,\ndynamic_filters_remove_all_title,Alle entfernen,Remove all,\ndynamic_filters_role_header,Funktionen,Functions,\ndynamic_filters_search_for_api_client_placeholder,Suche nach API-Applikation,Search for API client...,\ndynamic_filters_search_for_delegation_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_group_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_user_placeholder,Suche nach User...,Search for user...,\ndynamic_filters_search_for,Suche nach,Search for,\nedit_custom_urls_back_to_collection,Zurück zum Set,Back to the set,\nedit_custom_urls_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nedit_custom_urls_cancel,Abbrechen,Cancel,\nedit_custom_urls_confirmation,Bestätigung,Confirmation,\nedit_custom_urls_create_or_transfer,Adresse anlegen / übertragen,Create / transfer address,\nedit_custom_urls_preferred_address,Gewünschte Adresse:,Preferred address:,\nedit_custom_urls_requirements_hint,\"Eine Adresse darf nur genau einmal im System vorkommen – entweder für einen Medieneintrag oder für ein Set. Sie beginnt immer mit einem Kleinbuchstaben, gefolgt von (mindestens einem) weiteren Zeichen aus Kleinbuchstaben, Nummern, Bindestrichen ( - ) und Grundstrichen ( _ ) in beliebiger Reihenfolge.\",\"Each comprehensible address is unique in the system – either for a media entry or for a set. The address always begins with a lower case letter, followed by at least one other character. The following characters can bei lower case letters, numbers, hyphens ( - ) or low lines ( _ ) in any order.\",\nedit_custom_urls_requirements_title,Anforderungen,Requirements,\nedit_custom_urls_set_primary,Als primäre Adresse setzen,Set as primary address,\nedit_custom_urls_state_primary,Primäre Adresse,Primary address,\nedit_custom_urls_state_transfer,Weiterleitung,Forwarding,\nedit_custom_urls_title,Anforderungen,Requirements,\nedit_custom_urls_transfer,Übertragen,Transfer,\nedit_custom_urls_transfer_hint,\"Eine bereits bestehende Adresse kann von einem Medieneintrag auf einen anderen oder von einem Set auf ein anderes übertragen werden. Bestehende Adressen können nicht von einem Medieneintrag auf ein Set und umgekehrt übertragen werden. Wollen Sie eine Adresse übertragen, dann geben Sie diese hier ein. Sie müssen für beide Inhalte über die Zugriffsberechtigung 'Verwalten' verfügen.\",\"An existing address can be transferred from one media entry to another or from one set to another. Existing addresses cannfot be transferred from a media entry to a set or vice versa. If you want to transfer an address, please enter this address here. You have to have manage permissions for both items.\",\nedit_custom_urls_transfer_title,Übertragen,Transfer,\nembed_error_title,\"Fehler!\",\"Error!\",\nembed_error_context_pre,\"Angeforderte URL: \",\"Requested URL: \",\nembed_error_context_post,\"\",\"\",\nembed_error_help_pre,\"Hilfe: \",\"Help: \",\nembed_error_help_post,\"\",\"\",\nembed_error_msg,\"Dieser Inhalt kann nicht eingebettet werden.\",\"This content cannot be embedded.\",\nembed_error_msg_403,\"Dieser Inhalt kann nicht eingebettet werden, weil die nötigen Berechtigungen fehlen.\",\"This content cannot be embedded because the necessary permissions are missing.\",\nembed_error_msg_404,\"Der gewünschte Inhalt konnte nicht gefunden werden.\",\"The requested content could not be found.\",\nerror_401_title,\"Um Zugang zu diesem Bereich zu erhalten, melden Sie sich bitte an.\",To get access please login below with your user data.,\nerror_403_message,Bitte kontaktieren Sie die für die Ressource verantwortliche Person.,Please contact the responsible user for this resource.,\nerror_403_title,Sie haben keine Zugriffsrechte für diesen Inhalt.,You don’t have the necessary permissions to access this resource.,\nerror_404_title,Die gesuchte Seite kann nicht gefunden werden.,The requested page cannot be found.,\nerror_500_message,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (%{support_email}) mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\"If you require help in this matter, please contact the support (%{support_email}) with a description of your last working steps and a screen shot of this page.\",\nerror_500_message_pre,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (\",\"If you require help in this matter, please contact the support (\",\nerror_500_message_post,\") mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\") with a description of your last working steps and a screen shot of this page.\",\nerror_500_title,Es ist ein Server-Fehler aufgetreten.,A server error occurred.,\nexplore_keywords_section_title,Häufige Schlagworte,Frequent keywords,\nexplore_show_more,Weitere anzeigen,Show more,\nexplore_vocabulary_section_show_details,Details anzeigen,View details,\nexplore_vovabulary_section_title,Vokabulare,Vocabularies,\nexternal_groups,Abteilungsgruppen,Division groups,\nfooter_choose_language,Sprache wählen,Choose language,\ngroup_ask_delete_cancel,Abbrechen,Cancel,\ngroup_ask_delete_delete,Löschen,Delete,\ngroup_ask_delete_question_post, löschen?,?,\ngroup_ask_delete_question_pre,Möchten Sie die Arbeitsgruppe ,Would you like to delete work group ,\ngroup_ask_delete_title,Arbeitsgruppe löschen,Delete work group,\ngroup_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Arbeitsgruppe löschen wollen?\",Are you sure you want to delete this work group?,\ngroup_edit_at_least_one_member_delete,löschen,delete,VERB\ngroup_edit_at_least_one_member_post,0,0,NACH dem Verb und Namen der Gruppe\ngroup_edit_at_least_one_member_pre,Eine Arbeitsgruppe muss mindestens eine Person enthalten. Ganze Arbeitsgruppe ,A work group has at least one member. Whole work group,VOR dem Verb und Namen der Gruppe\ngroup_edit_btn,Bearbeiten,Edit,\ngroup_edit_cancel,Abbrechen,Cancel,\ngroup_edit_form_new_member_login_hint,Login des neuen Mitglieds dieser Arbeitsgruppe,New work group member login,\ngroup_edit_form_new_member_login_label,User hinzufügen,Add a member,\ngroup_edit_form_save_btn,Speichern,Save,\ngroup_edit_form_title_pre,Arbeitsgruppe bearbeiten: ,Edit work group: ,\ngroup_edit_hint_remove_yourself,Achtung: Sie entfernen sich selbst aus der Arbeitsgruppe!,Attention: You are about to remove yourself from the work group!,\ngroup_edit_member,Mitglieder,Members,\ngroup_edit_name,Name,Name,\ngroup_edit_person,Person,Person,\ngroup_edit_save,Speichern,Save,\ngroup_edit_username,Benutzername,Username,\ngroup_meta_data_institutional_name,Name der Abteilungsgruppe,Division group name,\ngroup_meta_data_name,Name,Name,\ngroup_new_form_title,Neue Arbeitsgruppe erstellen,Create group,\ngroup_new_group_btn,Neue Arbeitsgruppe,New work group,\ngroup_show_edit_button,Arbeitsgruppe bearbeiten,Edit work group,\ngroup_show_members,Mitglieder,Members,\ngroup_show_permissions_use,(anwenden),(execute),\ngroup_show_permissions_view,(betrachten),(view),\ngroup_show_permissions_view_use,(betrachten und anwenden),(view and execute),\ngroup_show_vocabulary_permissions,Berechtigungen Vokabulare,Permissions vocabularies,\ngroup_toolbar_header_entrusted_resources,Mir anvertraute Medieneinträge,Entrusted media entries,\ngroup_was_deleted,Arbeitsgruppe wurde gelöscht.,Work group has been deleted.,\nhome_page_new_contents,Neue Inhalte,New items,\ninternal_groups,Arbeitsgruppen,Work groups,\nlayout_mode_grid,Raster-Ansicht,Grid view,\nlayout_mode_list,Listen-Ansicht,List view,\nlayout_mode_miniature,Miniatur-Ansicht,Miniature view,\nlayout_mode_tiles,Kachel-Ansicht,Tile view,\nlogin_box_internal,Externe,External users,\nlogin_box_title,Anmelden,Log in,\nlogin_box_login_btn,Anmelden,Log in,\nlogin_box_email_or_login,E-Mail,Email,\nlogin_box_password,Passwort,Password,\nlogin_box_rememberme,Login merken,Remember me,\nlogin_box_username,Benutzername,User name,\nmedia_entry_all_metadata_title,Alle Metadaten nach Vokabularen,All metadata by vocabulary,\nmedia_entry_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgenden Medienintrag löschen möchten: \",Are you sure you want to delete the following media entry:,\nmedia_entry_ask_delete_title,Medieneintrag löschen,Delete media entry,\nmedia_entry_back_btn,Zurück,Back,\nmedia_entry_conversion_hint,\"Diese Datei wird gerade für eine Vorschau konvertiert. Sobald dies abgeschlossen ist, finden Sie hier eine abspielbare Version.\",\"Currently the system is converting this file to a preview. As soon as the conversion is finished, you will be able to play the file here.\",\nmedia_entry_conversion_progress_post,% abgeschlossen.,% completed.,\nmedia_entry_conversion_progress_pre,Konvertierung zu ,Conversion ,\nmedia_entry_conversion_reload,\"Laden Sie diese Seite neu, um den aktuellen Stand der Konvertierung zu erfahren.\",Reload this page to display the current state of conversion.,\nmedia_entry_conversion_status_failed,Die Konvertierung ist fehlgeschlagen. Bitte wenden Sie sich an den Support.,The file conversion has failed. Please contact support.,\nmedia_entry_conversion_status_initialized,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_conversion_status_submitted,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_deleted,Dieser Medieneintrag wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This media entry has been deleted and is no longer visible to users.\nmedia_entry_delete_success,Der Medieneintrag wurde gelöscht.,Media entry has been deleted.,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_post,erstellen,,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_pre,(Experte) Hinweis zu neuer Version inkl. Verlinkung zu,(Expert) Add annotation «new version of» and link to,\nmedia_entry_duplicator_configuration_copy_meta_data,Metadaten übertragen,Copy meta data,\nmedia_entry_duplicator_configuration_copy_permissions,Zugriffsberechtigungen übertragen,Copy permissions,\nmedia_entry_duplicator_configuration_copy_relations,Zusammenhänge übertragen (übergeordnete Sets und Favoriten),Copy relations (parent collections & favorites),\nmedia_entry_duplicator_configuration_move_custom_urls,(Experte) Sprechende Adresse (URL) übernehmen,(Expert) Move comprehensible Address (URL),\nmedia_entry_duplicator_configuration_instructions,Folgende Optionen können gewählt werden:,Choose options below:,\nmedia_entry_duplicator_custom_urls_already_moved,moved to the first successful upload!,moved to the first successful upload!,\nmedia_entry_duplicator_desc_post,zugewiesen.,by selected options.,\nmedia_entry_duplicator_desc_pre,\"Die unten importierten Mediendateien bekommen die den nachfolgend gewählten Optionen entsprechenden Metadaten, Zugriffsberechtigungen, Beziehungen und weitere Einstellungen des aktuellen Medieneintrags\",\"The media file to be imported below will get assigned meta data, permissions, relations and further settings from the actual media entry\",\nmedia_entry_duplicator_md_title_suffix,(updated),(updated),\nmedia_entry_duplicator_new_version_of_label,Updated file,Updated file,\nmedia_entry_export_close,Schliessen,Close,\nmedia_entry_export_download,Exportieren,Download,\nmedia_entry_export_has_no_original,Sie verfügen für den Export der Originaldatei nicht über die notwendige Berechtigung.,You are not allowed to download the original file.,\nmedia_entry_export_no_content,Sie haben keine Zugriffsberechtigung für die Originaldatei und es steht keine Vorschau zur Verfügung.,You do not have permission to access the original file and there is no preview available.,\nmedia_entry_export_original,Original,Original,\nmedia_entry_export_original_hint,Originaldatei herunterladen.,Download original file.,\nmedia_entry_export_subtitle_audios,Audio-Dateien,Audio files,\nmedia_entry_export_subtitle_documents,Dokumente,Documents,\nmedia_entry_export_subtitle_images,Bilder,Images,\nmedia_entry_export_subtitle_videos,Video-Dateien,Video files,\nmedia_entry_export_title,Medieneintrag exportieren,Download media entry,\nmedia_entry_export_rdf_title,RDF-Export Metadaten,RDF export metadata,\nmedia_entry_export_rdf_title_hint,(experimentell),(experimental),\nmedia_entry_export_rdf_experiment_footnote,\"Struktur und Format der Daten können sich ändern. Bitte geben sie eine Rückmeldung, falls Sie diese verwenden!\",\"Data structure and format is subject to change. Please send feedback if you are using this!\",\nmedia_entry_export_checksum_title,Prüfsumme,Checksum,\nmedia_entry_export_checksum_generate,Erzeugen,Generate,\nmedia_entry_export_checksum_verify,Prüfen,Verify,\nmedia_entry_export_checksum_empty,Prüfsumme erzeugen,Generate checksum,\nmedia_entry_export_checksum_generating,Wird erzeugt…,Generating…,\nmedia_entry_export_checksum_verifying,Wird verifiziert…,Verifying…,\nmedia_entry_export_checksum_generated_at,Erzeugt am,Generated at,\nmedia_entry_export_checksum_verified_at,Geprüft am,Verified at,\nmedia_entry_export_checksum_match,Prüfsumme stimmt überein,Checksum matches,\nmedia_entry_export_checksum_mismatch,Prüfsumme stimmt nicht überein,Checksum does not match,\nmedia_entry_export_checksum_error,Fehler bei der Prüfsummen-Operation,Error during checksum operation,\nmedia_entry_file_format_not_supported_1,\"Wahrscheinlich unterstützt Ihr Browser nicht die Darstellung dieses Dateiformats, aber Sie \",\"Your browser probably does not support the file format, but you can \",\nmedia_entry_file_format_not_supported_2,können die Datei ,download the file,\nmedia_entry_file_format_not_supported_3,exportieren.,0,\nmedia_entry_file_information_title,Datei,File information,\nmedia_entry_media_import_gotodrafts,Medieneinträge vervollständigen,Complete media entries,\nmedia_entry_media_import_gotomediaentries,Weiter zu Meine Medieneinträge,Continue to My media entries,\nmedia_entry_media_import_header,Medien importieren,Media upload,\nmedia_entry_media_import_box_header_a,,,\nmedia_entry_media_import_box_header_b, Upload(s), Upload(s),\nmedia_entry_media_import_box_upload_status_waiting,Warten…,Waiting…,\nmedia_entry_media_import_box_upload_status_error,Fehler!,Error!,\nmedia_entry_media_import_box_upload_status_progress_a,Hochladen… ,Uploading… ,\nmedia_entry_media_import_box_upload_status_progress_b,%,%,\nmedia_entry_media_import_box_upload_status_processing,Verarbeiten…,Processing…,\nmedia_entry_media_import_inside,Dateien auf dieses Feld ziehen oder ,Add files by drag and drop in this field or ,\nmedia_entry_media_import_inside_nojs,Dateien auswählen,Select files,\nmedia_entry_media_import_notes_msg,\"Bilder (TIFF, JPEG, PNG) sowie Audio- und Videofiles in den gängigsten Formaten werden direkt verarbeitet und dargestellt. Bilder im CMYK-Farbraum werden nicht korrekt dargestellt. Wandeln Sie diese vor dem Importieren in RGB um.\",\"Images (TIFF, JPEG, PNG) and audio/video files in the most common formats are processed and displayed directly. Images in the CMYK color model cannot be displayed correctly, please convert to RGB before uploading.\",\nmedia_entry_media_import_notes_title,Hinweise,Hints,\nmedia_entry_media_import_select_media,Medien auswählen,Select media files,\nmedia_entry_media_import_upload_error,überschreitet maximale Grösse von 16000 Pixel,exceeds size limit of 16000 pixel,\nmedia_entry_media_import_title,\"Bilder, Videos, Audio-Dateien oder Dokumente bereitstellen.\",\"Add images, video or audio files, or other documents.\",\nmedia_entry_meta_data_edit_by_context_btn,Metadaten nach Kontexten bearbeiten,Edit metadata by context,\nmedia_entry_meta_data_edit_by_vocab_btn,Metadaten nach Vokabularen bearbeiten,Edit metadata by vocabulary,\nmedia_entry_meta_data_header_prefix,Medieneintrag editieren: ,Edit media entry: ,\nmedia_entry_more_data_title,Verantwortlichkeit und Aktivität,Responsibility and activities,\nmedia_entry_not_published_warning_msg,Bei diesem Medieneintrag fehlen noch Pflichtangaben.,Media entry still needs mandatory data.,\nmedia_entry_relations_current,Aktueller Eintrag,Current entry,\nmedia_entry_relations_hint_text,\"Der ausgewählte Medieneintrag ist mit Sets verknüpft. Diese Zusammenhänge wurden aktiv festgelegt als übergeordnet oder benachbart. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected media entry is connected to sets. These relations are actively defined as a parent, a sibling or a child relationship. The sets displayed here are your own or are shared with you by other users.\",\nmedia_entry_relations_parents_hint,Der ausgewählte Medieneintrag wurde diesen Sets hinzugefügt.,The selected media entry was added to these sets.,\nmedia_entry_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie der ausgewählte Medieneintrag.,These sets were added to the same sets as the selected media entry.,\nmedia_entry_select_collection_flash_result,Der Medieneintrag wurde aus %{removed_count} Set(s) entfernt und zu %{added_count} Set(s) hinzugefügt.,Media entry removed from %{removed_count} set(s) and added to %{added_count} set(s).,\nmedia_entry_siblings_section_title,Weitere Medieneinträge im selben Set,Other media entries in the same set,\nmedia_entry_siblings_parent_set,Übergeordnetes Set:,Parent set:,\nmedia_entry_tab_main,Medieneintrag,Media entry,\nmedia_entry_tab_more_data,Alle Metadaten,All metadata,\nmedia_entry_tab_permissions,Berechtigungen,Permissions,\nmedia_entry_tab_relations,Zusammenhänge,Relations,\nmedia_entry_tab_usage_data,Nutzung,Usage,\nmedia_entry_upload_btn,Importieren,Upload,\nmedia_entry_was_disfavored,Der Medieneintrag wurde von den Favoriten entfernt.,Media entry was removed from favorites.,\nmedia_entry_was_favored,Der Medieneintrag wurde zu den Favoriten hinzugefügt.,Media entry was added to favorites.,\nmeta_data_action_delete_btn,Löschen,Delete,\nmeta_data_action_edit_btn,Bearbeiten,Edit,\nmeta_data_batch_action_remove_meta_data,Werte für alle Inhalte löschen,Delete data for all content,\nmeta_data_batch_failure,Metadaten konnten nicht aktualisiert werden.,Metadata could not be updated.,\nmeta_data_batch_hint_differences,Unterschiedliche Metadaten vorhanden,Different metadata in place.,\nmeta_data_batch_hint_differences_override,\"Achtung: Bestehende Werte werden durch Änderungen überschrieben! Wenn keine Änderungen vorgenommen werden, bleiben die verschiedenen Werte erhalten.\",\"Attention: Changes will replace exiting data. If not changes are made, data will be preserved.\",\nmeta_data_batch_hint_equal_data,Gleiche Metadaten vorhanden,Same metadata in place.,\nmeta_data_batch_hint_no_data,Noch keine Metadaten vorhanden,No metadata available yet.,\nmeta_data_batch_hint_value,Werte oder Text,Values or text,\nmeta_data_batch_item_selected,Medieneintrag selektiert,Media entry selected,\nmeta_data_batch_items_selected,Medieneinträge selektiert,Media entries selected,\nmeta_data_batch_more,weitere,More,\nmeta_data_batch_some_ignored_1,(,(,\nmeta_data_batch_some_ignored_2,\" Medieneinträge wurden ignoriert, da Sie nicht über die nötigen Berechtigungen verfügen)\",\"Media entries were ignored, because you do not have the required permissions.)\",\nmeta_data_batch_success,Metadaten wurden erfolgreich aktualisiert.,metadata have been updated successfully.,\nmeta_data_batch_summary_all_post, Medieneinträge wurden gespeichert., Media entries have been saved.,NACH der Anzahl\nmeta_data_batch_summary_all_pre,Alle ,All ,VOR der Anzahl\nmeta_data_batch_summary_missing, haben fehlende Pflichtangaben, have missing mandatory data,\nmeta_data_batch_summary_published, haben ausgefüllte Pflichtfelder, have mandatory data,\nmeta_data_batch_summary_were_published, hatten bereits ausgefüllte Pflichtfelder, already had mandatory data,\nmeta_data_batch_title_post_collections, Sets gleichzeitig editieren,Edit sets at the same time,\nmeta_data_batch_title_post_media_entries, Medieneinträge gleichzeitig bearbeiten, media entries at once,\nmeta_data_batch_title_pre,Metadaten für ,Edit metadata for ,\nmeta_data_blank_value_for_required_meta_key_post,0,0,\nmeta_data_blank_value_for_required_meta_key_pre,Kein Wert vorhanden für ,No value available for,\nmeta_data_collection_batch_summary_all_post, Sets wurden gespeichert., Sets were saved.,\nmeta_data_collection_batch_summary_all_pre,Alle ,All ,\nmeta_data_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Werte löschen wollen?\",Are you sure you want to delete these data?,\nmeta_data_edit_collection_saved,Set wurde gespeichert.,Set was saved.,\nmeta_data_edit_media_entry_published,Der Medieneintrag wurde gespeichert und alle Pflichtfelder sind ausgefüllt.,Media entry was saved and mandatory data have been entered.,\nmeta_data_edit_media_entry_saved,Der Medieneintrag wurde gespeichert.,Media entry was saved.,\nmeta_data_edit_media_entry_saved_missing,\"Der Medieneintrag wurde gespeichert, aber es wurden nicht alle Pflichtfelder ausgefüllt.\",Media entry was saved but there some mandatory data are missing.,\nmeta_data_edit_more_data,Weitere Angaben,More data,\nmeta_data_form_all_data,Alle Daten,All metadata,\nmeta_data_form_cancel,Abbrechen,Cancel,\nmeta_data_form_save,Speichern,Save,\nmeta_data_form_saving,Die Metadaten werden gerade gespeichert. Dies kann einige Zeit in Anspruch nehmen. Bitte gedulden Sie sich und schliessen Sie das Fenster nicht.,Meta data are currently being saved. This will take some time. Please be patient and do not close the browser.,\nmeta_data_form_submit_btn,Speichern,Save,\nmeta_data_header_text,Werte,Data,\nmeta_data_input_date_placeholder_duration_from,von,from,\nmeta_data_input_date_placeholder_duration_to,bis,to,\nmeta_data_input_date_placeholder_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_placeholder_timestamp,wird als Text gespeichert,on,\nmeta_data_input_date_type_duration,von/bis,from/to,\nmeta_data_input_date_type_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_type_timestamp,am,on,\nmeta_data_input_keywords_existing,Schlagwort ist bereits vergeben.,Keyword already assigned.,\nmeta_data_input_new_group_add,Arbeitsgruppe einfügen,Add work group,\nmeta_data_input_new_group_name,Name,Name,\nmeta_data_input_new_person_add,Person einfügen,Add person,\nmeta_data_input_new_person_first_name,Vorname,First name,\nmeta_data_input_new_person_last_name,Nachname,Last name,\nmeta_data_input_new_person_pseudonym,Pseudonym,Pseudonym,\nmeta_data_input_new_person_toggle,Neue Person oder Gruppe anlegen,Add new person or work group,\nmeta_data_input_person_save,Übernehmen,Apply,\nmeta_data_input_json_err_prefix,Eingabefehler: ,Input error: ,\nmeta_data_input_json_err_no_object,Wert ist nicht vom Typ 'Object'!,Value is not an 'Object'!,\nmeta_data_meta_key_documentation_url,> Online-Hilfe,click link for details,\nmeta_data_meta_key_label,Schlüssel,Key,\nmeta_data_role_add_another_btn,Weitere Funktion hinzufügen,Add another function,\nmeta_data_role_add_btn,Funktion hinzufügen,Add a function,\nmeta_data_role_add_heading,Funktion hinzufügen zu ,Add a function to,\nmeta_data_role_choose_label,Wählen Sie eine Funktion aus der Liste,Choose a function from the list,\nmeta_data_extensible_role_choose_label,Wählen Sie eine Funktion aus der Liste oder ergänzen Sie die Liste mit der gewünschten Funktion. Mit Enter die Eingabe abschliessen.,Choose a function from the list or enter the function and press Enter,\nmeta_data_role_edit_btn,Funktion bearbeiten,Edit function,\nmeta_data_role_edit_heading,Funktion bearbeiten,Edit the function of,\nmeta_data_role_remove_btn,Funktion entfernen,Remove function,\nmeta_data_type_label,Typ,Type,\nmeta_data_value_label,Wert,Data,\nmeta_datum_media_entry_label_id,Ressourcen-ID:,Resource ID:,\nmeta_datum_media_entry_label_string,Zusatztext:,additional text:,\nmeta_datum_media_entry_err_uuid_invalid,Ungültige UUID!,Invalid UUID!,\nmeta_datum_media_entry_value_unauthorized,Hinweis: Sie haben keinen Zugriff auf diese Ressource!,Notice: You do not have access to this resource!,\nmeta_datum_media_entry_value_not_found,Hinweis: Diese Ressource konnte nicht (mehr) gefunden werden!,Notice: This resource could not be found (anymore)!,\nmeta_key_order_alphabetical,a-z,a-z,\nmeta_key_order_alphabetical_hint,Die Schlagworte dieses Metadatenfeldes sind alphabetisch sortiert.,The keywords of this metakey are sorted alphabetically.,\nmeta_key_order_custom,redaktionell,editorial,\nmeta_key_order_custom_hint,Die Schlagworte dieses Metadatenfeldes sind redaktionell sortiert.,The keywords of this metakey are sorted editorially.,\nno_content_fallback,Keine Inhalte vorhanden.,No items available.,\nno_groups_fallback,Keine Arbeitsgruppen vorhanden.,No work groups available.,\nno_keywords_fallback,Keine Schlagworte vorhanden.,No keywords available.,\nno_relations_title,Es wurden keine Zusammenhänge gefunden.,No relations found.,\nnotifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nnotifications_message_transfer_responsibility,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to you.\",\nnotifications_message_transfer_responsibility_via_delegation,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to %{viaDelegation}.\",\nnotifications_message_transfer_responsibility_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to you.\",\nnotifications_message_transfer_responsibility_via_delegation_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to %{viaDelegation}.\",\nnotifications_media_entry,Medieneintrag,media entry,\nnotifications_collection,Set,set,\nnotifications_acknowledge_all,Alle Notifikationen löschen,Delete all notifications,\nnotifications_really_acknowledge_all,Wirklich alle löschen?,Really delete all?,\nnotifications_acknowledge,Löschen,Delete,\nnotifications_acknowledge_date_tooltip,Alle Notifikationen vom %{date} löschen,Delete all notifications of %{date},\nnotifications_no_notifications,Keine Einträge vorhanden,No entries present,\nnotifications_section_expand,Alle anzeigen,Show all,\nnotifications_section_collapse,Anzeige reduzieren,Reduce,\nnotifications_section_show_more,Weitere Einträge anzeigen,Show more,\npagination_nav_loadnext,Mehr laden,Load more,\npagination_nav_nextloading,Mehr Inhalte werden geladen.,More items are being loaded.,\npagination_nav_nextpage,Nächste Seite,Next page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_prevpage,Vorangehende Seite,Previous page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_thispage,Diese Seite,This page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_prefix,Seite ,Page ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_infix, von , of ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_postfix,,,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_selection_label,Seite auswählen,Select page,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npeople_toolbar_header,Ähnliche Inhalte,Related items,\npermission_entrusted_to_api_client,Sichtbar für API-Applikationen,Visible to API clients,\npermission_entrusted_to_group,Sichtbar für Arbeitsgruppen,Visible to work groups,\npermission_entrusted_to_user,Sichtbar für Nutzer/innen,Visible to users,\npermission_name_edit_metadata,Metadaten editieren,Edit metadata,\npermission_name_edit_metadata_and_relations,Metadaten editieren & Inhalte hinzufügen,Edit metadata and add items,\npermission_name_edit_permissions,Zugriffsberechtigungen ändern,Edit permissions,\npermission_name_get_full_size,Original exportieren & in PDF blättern,Download original & browse PDF,\npermission_name_get_metadata_and_previews,Betrachten,View,\npermission_name_use,Anwenden,Execute,bezieht sich auf Vokabulare!\npermission_name_view,Betrachten,View,bezieht sich auf Vokabulare!\npermission_overridden_by_public,(überschrieben durch die öffentlichen Berechtigungen),(overruled by public permissions),\npermission_subject_name_public,Internet,Internet,\npermission_subject_title_apiapps,API-Applikationen,API clients,\npermission_subject_title_groups,Gruppen,Groups,\npermission_subject_title_public,Öffentlichkeit,Public,\npermission_subject_title_users,Nutzer/innen,Users,\npermission_subject_title_users_or_delegations,Nutzer/innen / Verantwortungs-Gruppen,Users / Responsibility Groups,\npermissions_batch_success,Berechtigungen wurden erfolgreich aktualisiert.,Permissions have been updated succesfully.,\npermissions_batch_title_post, Inhalten., Items.,\npermissions_batch_title_pre,Berechtigungen ändern von ,Edit permissions of ,\npermissions_overview_yours_msg_end,\", haben gegenwärtig als Nutzer/in oder als Mitglied einer Verantwortungs-Gruppe oder Arbeitsgruppe folgende Berechtigungen:\",\", currently have the following permissions (either directly or as a member of a\nresponsibility group or as a member of a work group):\",\npermissions_overview_yours_msg_start,\"Sie, \",\"You, \",\npermissions_overview_yours_title,Ihre Berechtigungen,Your permissions,\npermissions_responsibility_title,Verantwortlichkeit,Responsibility,\npermissions_responsible_user_and_responsibility_group_title,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / Responsibility group,\npermissions_responsible_user_and_responsibility_group_msg,Der/die verantwortliche/r Nutzer/in hat alle Berechtigungen zu den ausgewählten Inhalten und kann diese auch löschen.,The responsible user / responsibility group has all permissions for the selected content and can also delete it.,\npermissions_responsible_delegation_title,Verantwortungs-Gruppe,Responsibility group,\npermissions_responsible_user_title,Verantwortliche Person,Responsible user,\npermissions_table_cancel_btn,Abbrechen,Cancel,\npermissions_table_edit_btn,Bearbeiten,Edit,\npermissions_table_remove_subject_btn,Berechtigung entfernen,Remove permission,\npermissions_table_save_btn,Speichern,Save,\npermissions_table_title,Zugriffsberechtigungen,Permissions,\npermissions_transfer_responsibility_link,Verantwortlichkeit übertragen,Transfer responsibility,\nperson_edit_add_uri_btn,URI hinzufügen,Add URL,\nperson_edit_cancel_btn,Abbrechen,Cancel,\nperson_edit_editing_header,Bearbeiten,editing,\nperson_show_external_uris,Links,Links,\nperson_edit_preview,Vorschau,Preview,\nperson_edit_save_btn,Speichern,Save,\nperson_edit_name_readonly_hint,\"Hinweis: Der eigene Name kann nicht geändert werden. Bitte wenden sie sich an den Support.\",\"Notice: Your own name can not be changed .Please contact the support.\"\nperson_show_description,Kurzbiographie,Short biography,\nperson_show_edit_btn,Seite bearbeiten,Edit Page,\nperson_show_external_uris,Links,Links,\nperson_show_external_uris_autority_control,Verzeichnis(se),Register,\nperson_show_first_name,Vorname,First name,\nperson_show_last_name,Nachname,Last name,\nperson_show_only_name,Name,Name,\nperson_show_pseudonym,Pseudonym,Pseudonym,\npicture_alt_fallback,(unbekannt),(unkown),\npicture_alt_prefix,Bild: ,Picture:,Prefix für Titel von Bildern (hover-titel/Screenreader)\nrelations_parents_title,Übergeordnete Sets,Parents,\nrelations_siblings_title,Benachbarte Sets,Siblings,\nrelations_title,Zusammenhänge,Relations,\nrelease_source_history,Source History,Source History,\nrelease_info,Release Info,Release info,\nrelease_local_git_version,Lokale Git Version,Local Git version,\nresource_action_collection_create,Set erstellen,Create set,\nresource_action_collection_destroy,Set löschen,Delete set,\nresource_action_collection_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_collection_edit_cover,Titelbild festlegen,Define set cover,\nresource_action_collection_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_collection_edit_highlight,Inhalte hervorheben,Highlight items,\nresource_action_collection_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_collection_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_collection_select_collection,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_action_collection_share,Set teilen,Share set,\nresource_action_media_entry_destroy,Medieneintrag löschen,Delete media entry,\nresource_action_media_entry_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_media_entry_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_media_entry_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_media_entry_export,Medieneintrag exportieren,Export media entry,\nresource_action_media_entry_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_media_entry_manage_confidential_links,Vertrauliche Links verwalten,Manage Confidential Links,\nresource_action_media_entry_select_collection,Zu Sets hinzufügen / Aus Sets entfernen,Add to/remove from set,\nresource_action_media_entry_share,Medieneintrag teilen,Share media entry,\nresource_action_media_entry_update_file,Medieneintrag ersetzen,Replace media entry,\nresource_action_more_actions,Weitere Aktionen,Further actions,\nresource_action_show_in_admin,Zeige im Admin-Interface,Show in Admin Interface,\nresource_ask_delete_cancel,Abbrechen,Cancel,\nresource_ask_delete_ok,Löschen,Delete,\nresource_ask_delete_question_post,?,?,\nresource_meta_data_copyright_notice,Rechte am geistigen Eigentum,Copyright notice,\nresource_meta_data_date,Datierung,Date,\nresource_meta_data_description,Beschreibung,Description,\nresource_meta_data_document_type,Dokumenttyp,Type of document,\nresource_meta_data_fallback,Es sind keine Metadaten zu diesem Kontext bereitgestellt.,There are no metadata related to this context.,\nresource_meta_data_has_validation_errors,Es gibt fehlerhafte Eingabefelder.,There are erroneously entry fields.,\"Wo: Meldung wenn Metadaten fehlerhaft, z.B. fehlendes Pflichtfeld\"\nresource_meta_data_keywords,Schlagworte,Keywords,\nresource_meta_data_resource_type,Medientyp,Media type,\nresource_meta_data_responsible,Verantwortliche/r Nutzer/in,Responsible user,\nresource_meta_data_saved_filter,Gespeicherter Filter,Saved filter,\nresource_meta_data_title,Titel,Title,\nresource_select_collection_cancel,Abbrechen,Cancel,\nresource_select_collection_clear,Löschen,Clear,\nresource_select_collection_has_more,Es gibt noch weitere Resultate. Bitte Suche verfeinern.,There are more results. Please refine the search.,\nresource_select_collection_hint_more,Es wurden noch weitere Sets gefunden. Bitte verfeinern Sie Ihre Suche.,Additional sets were found. Please refine your search.,\nresource_select_collection_new,Neue,New,\nresource_select_collection_non_assigned,Inhalt ist noch keinem Set zugewiesen.,Item is not yet related to any set.,\nresource_select_collection_non_found,Zu dieser Suche wurde kein Set gefunden.,No set was found.,\nresource_select_collection_save,Speichern,Save,\nresource_select_collection_search,Suchen,Search,\nresource_select_collection_search_placeholder,Suche,Search,\nresource_select_collection_title,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_thumbnail_contents,Inhalte,Items,\nresource_thumbnail_sets,Sets,Sets,\nresources_box_batch_actions_addalltoclipboard_1,Alle ,Add all ,\nresources_box_batch_actions_addalltoclipboard_2, zur Stapelverarbeitung hinzufügen, to batch processing,\nresources_box_batch_actions_addselectedtoclipboard,Ausgewählte zur Stapelverarbeitung hinzufügen,Add selected to batch processing,\nresources_box_batch_actions_addtoset,Ausgewählte zu Set hinzufügen,Add selected to set,\nresources_box_batch_actions_clear_clipboard,Stapelverarbeitung leeren,Empty batch processing,\nresources_box_batch_actions_delete,Ausgewählte löschen,Delete selected,\nresources_box_batch_actions_edit,Metadaten von Medieneinträgen editieren,Edit metadata for media entries,\nresources_box_batch_actions_edit_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nresources_box_batch_actions_edit_all_collections,Metadaten von allen Sets editieren,Edit metadata of all sets at once,\nresources_box_batch_actions_edit_all_media_entries,Metadaten von allen Medieneinträgen editieren,Edit metadata of all media entries at once,\nresources_box_batch_actions_edit_sets,Metadaten von Sets editieren,Edit metadata of sets,\nresources_box_batch_actions_managepermissions,Berechtigungen von Medieneinträgen editieren,Edit permissions for media entries,\nresources_box_batch_actions_menu_title,Aktionen,Actions,\nresources_box_batch_actions_removefromclipboard,Ausgewählte aus der Stapelverarbeitung entfernen,Remove selected from batch processing,\nresources_box_batch_actions_removefromset,Aus Set entfernen,Remove from set,\nresources_box_batch_actions_sets_managepermissions,Berechtigungen von Sets editieren,Edit permissions for sets,\nresources_box_batch_actions_transfer_responsibility_entries,Verantwortlichkeit von Medieneinträgen übertragen,Transfer responsibility of media entries,\nresources_box_batch_actions_transfer_responsibility_sets,Verantwortlichkeit von Sets übertragen,Transfer responsibility of sets,\nresources_box_deselect_all,Alle abwählen,Deselect all,\nresources_box_filter,Filtern,Filter,\nresources_box_filters_note_post,\"aus, um weitere Filterkriterien anwenden zu können.\",\"in the Action bar to see more filter options.\",\nresources_box_filters_note_pre,Wählen Sie in der Aktionsleiste,Please select,\nresources_box_filters_note_or,oder,or,\nresources_box_new_search,Neue Suche,New search,\nresources_box_no_content,Keine Inhalte verfügbar,No items available.,\nresources_box_no_content_but_sets_1,Es gibt keine Medieneinträge für diese Suche. Es wurden aber ,There are no media entries related to this search process. But ,\nresources_box_no_content_but_sets_2,Sets,sets,\nresources_box_no_content_but_sets_3, gefunden., have been found.,\nresources_box_reset_filter,Filter zurücksetzen,Reset filter,\nresources_box_select_all,Alle auswählen,Select all,\nresources_box_selection_limit_ok,Ok,Ok,\nresources_box_selection_limit_page_1,\"Die Seite kann nicht selektiert werden, da sonst die maximale Anzahl von \",This page cannot be selected because otherwise the maximum number of,\nresources_box_selection_limit_page_2, ausgewählten Inhalten überstiegen würde., pages would be exceeded.,\nresources_box_selection_limit_single_1,\"Der Inhalt kann nicht selektiert werden, da sonst die maximale Anzahl von \",\"This item can not be selected, because otherwise the maximum number of\",\nresources_box_selection_limit_single_2, ausgewählten Inhalten überstiegen würde.,selected items would be exceeded.,\nresources_box_selection_remove_selection,Auswahl entfernen,Remove selection,\nresources_box_selection_select,Auswählen,Select,\nresources_box_title_count_post,Inhalte,Items,\nresources_box_info_header_no_system_groups,In dieser Auflistung werden %{system_groups_name} nicht berücksichtigt.,%{system_groups_name} are not taken into account.,\nresources_box_info_header_system_groups_name,Systemgruppen,System groups,\nresources_section_show_all,Alle anzeigen →,Show all →,\nresources_type_all,Alle,All,\nresponsibility_groups,Verantwortungs-Gruppen,Responsibility groups,\nsearch_btn_search,Suchen,Search,\nsearch_filename,Filename,File name,\nsearch_full_text,Volltext,Full text,\nsection_title_collections,Meine Sets,My sets,\nsection_title_groups,Meine Gruppen,My groups,\nsection_title_keywords,Meine Schlagworte,My keywords,\nsection_title_media_entries,Meine Medieneinträge,My media entries,\nsection_title_tokens,Meine Tokens,My tokens,\nsession_expiring_soon,Sie werden in weniger als %{minutes} Minuten ausgeloggt. Speichern Sie Ihre Eingaben und melden sich neu an.,You will be logged out in less than %{minutes} minutes. Save your input and log in again.\nshare_back_to_collection,Zurück zum Set,Back to the set,\nshare_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nshare_close,Schliessen,Close,\nshare_custom_url_hint_collection,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeiten), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-works-by-anna), use the following URL:\",\nshare_custom_url_hint_media_entry,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeit), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-work-by-anna), use the following URL:\",\nshare_custom_url_none_available,Es ist keine sprechende Adresse angelegt.,No comprehensible address has been defined.,\nshare_custom_url_subtitle,Sprechende Adresse teilen,Share comprehensible address,\nshare_embed_hint_iframe,\"Falls dies von Ihrem gewünschen System nicht unterstützt wird, kopieren Sie den nachfolgenden iFrame-Code und fügen diesen als HTML-Element in das gewünschte System ein.\",\"If your desired system does not support this, copy the following iFrame code and paste it into the desired system as an HTML element.\",\nshare_embed_hint_iframe_code,\"IFrame-Code\",\"IFrame Code\",\nshare_embed_hint_oembed,\"Viele Content Management Systeme lassen einfaches Einbetten von Inhalten via oEmbed zu. Dazu kopieren Sie die URL oben und fügen sie in ein Inhaltselement ein.\",\"Many content management systems allow easy embedding of content via oEmbed. To do so, copy the URL above and paste it into a content element.\",\nshare_embed_hint_subtitle,\"Medieneintrag einbetten\",\"Embed Media Entry\",\nshare_title_collection,Set teilen,Share set,\nshare_title_media_entry,Medieneintrag teilen,Share media entry,\nshare_uuid_url_hint_collection,\"Möchten Sie dieses Set teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this set? Use the following URL.\",\nshare_uuid_url_hint_exporter,Auch für den Export mit dem Madek-Exporter wird diese URL benötigt.,This URL is also required for exporting with the Madek exporter.,\nshare_uuid_url_hint_media_entry,\"Möchten Sie diesen Medieneintrag teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this media entry? Use the following URL.\",\nshare_uuid_url_subtitle,URL teilen,Share URL,\n\n\nsettings_notifications_title,Notifikationen,Notifications,\nsettings_notifications_info1,Notifikationen werden unter %{notifications} aufgeführt und optional per E-Mail verschickt.,Notifications are listed under %{notifications} and optionally sent via email.,\nsettings_notifications_info2,Notifikationen werden nach 6 Monaten gelöscht,Notifications will be removed after 6 months,\nsettings_notifications_info3,Die Einstellungen für die E-Mail-Notifikationen finden Sie nachstehend:,Choose your settings for e-mail notifications below:,\nsettings_notifications_email_label,An folgende E-Mail-Adresse bekommen Sie Notifikationen zugestellt:,Notifications will be sent to the following e-mail address:,\nsettings_notifications_locale_label,Die E-Mails werden in folgender Sprache verschickt:,You will receive emails in,\nsettings_notifications_locale_de,Deutsch,German,\nsettings_notifications_locale_en,Englisch,English,\nsettings_notifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nsettings_notifications_title_weather_report,Wetterbericht,Weather report,\nsettings_notifications_email_frequency_label,In welcher Häufigkeit möchten Sie E-Mails erhalten?,Frequency of email notification:,\nsettings_notifications_email_frequency_immediately,sofort,immediately,\nsettings_notifications_email_frequency_daily,täglich (Zusammenfassung),daily (digest),\nsettings_notifications_email_frequency_weekly,wöchentlich (Zusammenfassung),weekly (digest),\nsettings_notifications_email_frequency_never,keine,none,\nsettings_advanced_functions_title,Erweiterte Funktionen,Advanced functions,\nsettings_show_all_data_tab_in_edit_mode_label,Reiter «Alle Daten» im Bearbeitungsmodus einblenden,Show the «All metadata» Tab in edit mode,\nsettings_save_changes,Einstellungen speichern,Save settings,\nsettings_saved_changes,Einstellungen wurden gespeichert,Settings have been saved,\nsitemap_activities,Aktivitäten,Activities,\nsitemap_notifications,Notifikationen,Notifications,\nsitemap_api,API,API,\nsitemap_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_collections,Sets,Sets,\nsitemap_entries,Medieneinträge,Media entries,\nsitemap_explore,Erkunden,Explore,\nsitemap_filter_sets,Filtersets,Filter sets,\nsitemap_help,Hilfe,Support,\nsitemap_media_entries,Medieneinträge,Media entries,\nsitemap_metakey,Metakey,Metakey,\nsitemap_metakey_id,Metakey-ID,Metakey ID,\nsitemap_my_archive,Mein Archiv,My archive,\nsitemap_my_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_my_content_collections,Sets,Sets,\nsitemap_my_content_media_entries,Medieneinträge,Media entries,\nsitemap_my_delegated_collections,Sets in gemeinsamer Verantwortung,Sets with joint responsibility,\nsitemap_my_delegated_media_entries,Medieneinträge in gemeinsamer Verantwortung,Media entries with joint responsibility,\nsitemap_my_entrusted_collections,Mir anvertraute Sets,My entrusted sets,\nsitemap_my_entrusted_filter_sets,Mir anvertraute Filtersets,My entrusted filter sets,\nsitemap_my_entrusted_media_entries,Mir anvertraute Medieneinträge,My entrusted media entries,\nsitemap_my_favorite_collections,Favoriten-Sets,Favorite sets,\nsitemap_my_favorite_media_entries,Favoriten-Medieneinträge,Favorite media entries,\nsitemap_my_groups,Gruppen,Groups,\nsitemap_my_latest_imports,Letzte Importe,Last imports,\nsitemap_my_unpublished,Unvollständige Medieneinträge,Incomplete media entries,\nsitemap_my_used_keywords,Schlagworte,Keywords,\nsitemap_search,Suche,Search,\nsitemap_tokens,Tokens,Tokens,\nsitemap_settings,Einstellungen,Settings,\nsitemap_vocabularies,Vokabulare,Vocabularies,\nconfidential_links_help_title,Hinweise,Hints,\nsitemap_vocabulary,Vokabular,Vocabulary,\nconfidential_links_help_text,\"Vertrauliche Links ermöglichen den direkten Zugriff auf Medieneinträge, auch wenn sie nicht öffentlich sichtbar sind.\nDiese Links ermöglichen somit auch Benutzern ohne Login einen Zugang zum Medieneintrag. Binden Sie Vertrauliche Links nicht in öffentlich zugängliche Webseiten ein, sonst werden die regulären Zugriffsberechtigungen wirkungslos.\nVertrauliche Links können nur vom Verantwortlichen eines Medieneintrags erstellt und zurückgezogen werden. Die Links können mit einem Verfallsdatum erstellt oder zeitlich unbeschränkt erstellt werden.\",\"Confidential Links can be used to enable access to Entries without making them publicly visible.\nThese Links therefore also make it possible to share Entries with Users that don't have a login. Please do not share or embed Confidential Links onto publicly accessible websites, because it would render the regular permission settings useless.\nConfidential Links can only be created by the responsible user of an Entry. They can be manually revoked at any time, and optionally be set to expire automatically after a set day.\",\nconfidential_links_header,Vertrauliche Links,Confidential Links,\nconfidential_links_title_pre,Vertrauliche Links für ,Confidential Links for ,\nconfidential_links_title_post,Zurück zum Set,Back to the set,\nconfidential_links_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nconfidential_links_create_title,Neuen Vertraulichen Link erstellen,Create a new Confidential Link,\nconfidential_links_create_description,Beschreibung,Description,\nconfidential_links_create_submit,Vertraulichen Link erstellen,Create Confidential Link,\nconfidential_links_create_set_expiration_date,Ablaufdatum einstellen,Set expiration date,\nconfidential_links_create_cancel,Abbrechen,Cancel,\nconfidential_links_created_title,Neuer Vertraulicher Link erstellt,New Confidential Link created,\nconfidential_links_created_back_btn,Zurück zu allen Vertraulichen Links,Go back to all Confidential Links,\nconfidential_links_created_notice,Vertraulicher Link erstellt!,Confidential Link was created!,\nconfidential_links_show_link_for_copy,Link zum kopieren:,Link to copy:,\nconfidential_links_show_embedcode_for_copy,Embed-Code zum kopieren:,Embed-Code to copy:,\nconfidential_links_show_embed_link,Embed-Link:,Embed-link:,\nconfidential_links_show_embed_code_iframe,HTML-Code/iframe:,HTML-code/iframe:,\nconfidential_links_list_created_hint_pre,Erstellt: ,Created: ,\nconfidential_links_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\nconfidential_links_list_no_expiry,Nie,Never,\nconfidential_links_list_new_button,Neuen Vertraulichen Link erstellen,Add a new Confidential Link,\nconfidential_links_list_no_description,(Keine Beschreibung),(No description),\nconfidential_links_list_revoke_btn_hint,Zurückziehen,Revoke,\nconfidential_links_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Vertraulichen Link zurückziehen wollen?\",Are you sure you want to revoke this Confidential Link?,\nconfidential_links_list_revoked_title,Abgelaufene und zurückgezogene Vertrauliche Links,Expired and revoked Confidential Links,\nconfidential_links_list_show_url,Link anzeigen,Show Link,\nconfidential_links_list_copy_url,Vertraulichen Link kopieren,Copy Confidential Link,\nconfidential_links_head_id,ID,ID,\nconfidential_links_head_name,Name,Name,\nconfidential_links_head_token,Token,Token,\nconfidential_links_head_valid_since,Erstellt am,Created at,\nconfidential_links_head_valid_until,Läuft ab,Expires at,\nconfidential_links_show_title,Vertraulicher Link,Confidential Link,\nconfidential_links_access_notice,Dieser Medieneintrag wurde über einen Vertraulichen Link aufgerufen. Die URL dieser Seite darf nur einem eingeschränkten Personenkreis zugänglich sein.,This Entry was accessed via a Confidential Link. The URL of this page shall only be made accessible to a limited group of people.,\ntransfer_responsibility_batch_success_collection_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_collection_1a, Set , set ,\ntransfer_responsibility_batch_success_collection_1b, Sets , sets ,\ntransfer_responsibility_batch_success_collection_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_batch_success_media_entry_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_media_entry_1a, Medieneintrag , media entry,\ntransfer_responsibility_batch_success_media_entry_1b, Medieneinträge, media entries,\ntransfer_responsibility_batch_success_media_entry_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_cancel,Abbrechen,Cancel,\ntransfer_responsibility_currently_responsible,Bisher verantwortlich,Currently responsible,\ntransfer_responsibility_to,Verantwortlichkeit übertragen auf,Transfer responsibility to,\ntransfer_responsibility_for_1_media_entry,für 1 Medieneintrag,for 1 media entry,\ntransfer_responsibility_for_n_media_entries,für %{nofResources} Medieneinträge,for %{nofResources} media entries,\ntransfer_responsibility_for_1_collection,für 1 Set,for %{nofResources} set,\ntransfer_responsibility_for_n_collections,für %{nofResources} Sets,for %{nofResources} sets,\ntransfer_responsibility_multiple_will_receive,Die bisher Verantwortlichen behalten folgende Berechtigungen:,The ones currently responsible are retaining the following permissions:,\ntransfer_responsibility_single_will_receive,%{name} behält folgende Berechtigungen:,%{name} is retaining the following permissions:,\ntransfer_responsibility_submit,Übertragen,Transfer,\ntransfer_responsibility_success_collection,Sie haben die Verantwortlichkeit für das Set erfolgreich übertragen.,You have successfully transferred responsibility for the set.,\ntransfer_responsibility_success_media_entry,Sie haben die Verantwortlichkeit für den Medieneintrag erfolgreich übertragen.,You have successfully transferred responsibility for the media entry.,\ntransfer_responsibility_title_single,Verantwortlichkeit übertragen,Transfer responsibility,\ntransfer_responsibility_title_batch,Verantwortlichkeit %{forNResources} übertragen,Transfer responsibility %{forNResources},\ntransfer_responsibility_you_will_receive,\"Sie, %{name}, behalten folgende Berechtigungen:\",\"You, %{name}, are retaining the following permissions:\",\nusage_data_created_at,Erstellt am,Created on,\nusage_data_import_at,Importiert am,Imported on,\nusage_data_import_by,Importiert durch,Imported by,\nusage_data_last_changes_empty,Es wurden noch keine Änderungen festgehalten.,No changes have been recorded yet.,\nusage_data_last_changes_title,Letzte Änderungen der Metadaten,Last change of metadata,\nusage_data_relations_children,Set enthält,Set is related to,\nusage_data_relations_parents,Übergeordnete Sets,Parent sets,\nusage_data_relations_title,Zusammenhänge,Relations,\nusage_data_responsibility_title,Verantwortlichkeit und Aktivitäten,Responsibility and activities,\nusage_data_responsible,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / responsibility group,\nusage_terms_accept_btn,Nutzungsbedingungen akzeptieren,Accept usage terms,\nusage_terms_reject_btn,Ablehnen,Reject usage terms,\nuser_menu_admin_mode_toogle_off,Admin-Modus beenden,Stop admin mode,\nuser_menu_admin_mode_toogle_on,In Admin-Modus wechseln,Switch to admin mode,\nuser_menu_admin_ui,Admin-Interface öffnen,Open admin interface,\nuser_menu_login_btn,Anmelden,Log in,\nuser_menu_logout_btn,Abmelden,Log out,\nuser_menu_my_content_collections,Meine Sets,My sets,\nuser_menu_my_content_media_entries,Meine Medieneinträge,My media entries,\nuser_menu_my_favorite_collections,Favoriten - Sets,Favorites - sets,\nuser_menu_my_favorite_media_entries,Favoriten - Medieneinträge,Favorites - media entries,\nuser_menu_my_groups,Meine Gruppen,My groups,\nuser_menu_my_person,Meine Person,My person,\nuser_menu_upload,Medien importieren,Upload media,\nuser_name_deactivated,[Gelöschter User],[Deleted user],\nvocabularies_all,Alle Vokabulare,All vocabularies,\nvocabularies_contents_hint_1,Alle Inhalte mit Metadaten des Vokabulars ,All items with metadata related to the vocabulary,\nvocabularies_contents_hint_2,\". Sie sehen nur Inhalte, für die Sie berechtigt sind.\",. You can see only items you have permissions for.,\nvocabularies_keywords_hint_1,Alle im Vokabular ,All keywords contained in the vocabulary ,\nvocabularies_keywords_hint_2, enthaltenen Schlagworte und die dazugehörenden Metadatenfelder., and related meta data fields.,\nvocabularies_no_description,(Keine Beschreibung),(No description available),\nvocabularies_no_keywords,Keine Schlagworte vorhanden.,No keywords available.,\nvocabularies_no_people,Keine Personen vorhanden.,Keine Personen vorhanden.,\nvocabularies_people_hint_1,Alle im Vokabular ,Alle im Vokabular ,\nvocabularies_people_hint_2, enthaltenen Personen und die dazugehörenden Metadatenfelder., enthaltenen Personen und die dazugehörenden Metadatenfelder.,\nvocabularies_tabs_contents,Inhalte,Items,\nvocabularies_tabs_keywords,Schlagworte,Keywords,\nvocabularies_tabs_people,Personen,People,\nvocabularies_tabs_permissions,Berechtigungen,Permissions,\nvocabularies_tabs_vocabulary,Vokabular,Vocabulary,\nvocabulary_permissions_hint1,\"Für dieses Vokabular können die Berechtigungen \"\"Betrachten\"\" und \"\"Anwenden\"\" vergeben werden. Wenn Sie Mitglied einer berechtigten Arbeitsgruppe sind, können Sie weitere Personen zu dieser hinzufügen oder daraus entfernen. Bitte überlegen Sie Änderungen gut, da über Arbeitsgruppen auch weitere Berechtigungen gesteuert werden.\",\"This vocabulary can be managed with the permissions \"\"View\"\" and \"\"Execute\"\". If you are member of a work group which owns permissions, you are able to add or remove further users. Think carefully before you make changes to work groups as this may affect other permissions.\",\nvocabulary_permissions_hint2,\"Weitere Berechtigungen für Personen, Arbeitsgruppen, API-Applikationen oder die Öffentlichkeit werden durch den Administrator vergeben – bitte wenden Sie sich an den Support.\",\"Further permissions for persons, work groups, API clients or public usage are granted by the administrator. Please contact  support.\",\nvocabulary_term_info_contents,Inhalte,Items,\nvocabulary_term_info_description,Beschreibung,Description,\nvocabulary_term_info_rdfclass,Typ,Type,\nvocabulary_term_info_term,Begriff,Term,\nvocabulary_term_info_url,URL,URL,\nvocabulary_term_info_urls,URLs,URLs,\nworkgroup_link_to_contents_text,Inhalte,Items,\nworkgroup_link_to_contents_title,Inhalte dieser Arbeitsgruppe anzeigen,Show items of this work group,\nworkgroup_members_table_is_member,Mitglied?,Member?,\nworkgroup_members_table_login,Login,Login,\nworkgroup_members_table_title,Mitglieder,Members,\nmedia_entry_notice_new_versions,Für diesen Medieneintrag sind neuere Versionen vorhanden:,Newer versions are available for this media entry:,\nread_more_button,\"Mehr anzeigen\",\"Show more\",\nread_less_button,\"Weniger anzeigen\",\"Show less\",\nmedia_player_settings_title,Wiedergabe,Playback,\nmedia_player_media_config,Player-Konfiguration (JSON) / DEV-MODE,Player config (JSON) / DEV-MODE,\nmedia_player_media_config_hint_pre,\"JSON-Konfiguration für \",JSON configuration for ,\nmedia_player_media_config_hint_post,\": headers, overlays (stop_media_during_overlay true pausiert die Wiedergabe, solange das Overlay sichtbar ist) VTT-Dateien für Untertitel/Kapitel werden unten hochgeladen.\",\": headers, overlays (stop_media_during_overlay true pauses playback while the overlay is visible) VTT files for subtitles and chapters are uploaded below.\",\nmedia_player_save_config,Konfiguration speichern,Save config,\nmedia_player_config_invalid,Die Konfiguration ist kein gültiges JSON-Objekt.,Config is not a valid JSON object.,\nmedia_player_subtitles,Untertitel und Kapitel,Subtitles and chapters,\nmedia_player_no_subtitles,Keine VTT-Dateien.,No VTT files.,\nmedia_player_uploaded_subtitles,Hochgeladene Untertitel,Uploaded subtitles,\nmedia_player_language,Sprache,Language,\nmedia_player_label,Bezeichnung,Label,\nmedia_player_kind,Art,Kind,\nmedia_player_kind_hint,\"Untertitel sind der gesprochene Text. Kapitel sind Abschnitte auf der Zeitleiste.\",\"Subtitles are the spoken text. Chapters are sections on the timeline.\",\nmedia_player_kind_subtitles,Untertitel,Subtitles,\nmedia_player_kind_chapters,Kapitel,Chapters,\nmedia_player_default,Standard,Default,\nmedia_player_default_hint,\"Die Datei in der aktuellen Sprache der Oberfläche (Deutsch oder Englisch) wird vorausgewählt.\",\"The file in the current interface language (German or English) is selected.\",\nmedia_player_file,VTT-Datei,VTT file,\nmedia_player_choose_file,Datei auswählen,Choose file,\nmedia_player_no_file,Keine ausgewählt,No file chosen,\nmedia_player_upload,Hochladen,Upload,\nmedia_player_delete,Löschen,Delete,\nmedia_player_delete_confirm,Diese VTT-Datei löschen?,Delete this VTT file?,\n");
 		translations = Object.fromEntries(translationsList.map(function(item) {
 			return [item.lang, item.mapping];
 		}));
@@ -6728,11 +6728,11 @@
 		module.exports = TypeError;
 	}));
 	//#endregion
-	//#region (ignored) node_modules/object-inspect/util.inspect.js
-	var require_util_inspect = /* @__PURE__ */ __commonJSMin((() => {}));
+	//#region (ignored) node_modules/side-channel/node_modules/object-inspect/util.inspect.js
+	var require_util_inspect$3 = /* @__PURE__ */ __commonJSMin((() => {}));
 	//#endregion
-	//#region node_modules/object-inspect/index.js
-	var require_object_inspect = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	//#region node_modules/side-channel/node_modules/object-inspect/index.js
+	var require_object_inspect$3 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var hasMap = typeof Map === "function" && Map.prototype;
 		var mapSizeDescriptor = Object.getOwnPropertyDescriptor && hasMap ? Object.getOwnPropertyDescriptor(Map.prototype, "size") : null;
 		var mapSize = hasMap && mapSizeDescriptor && typeof mapSizeDescriptor.get === "function" ? mapSizeDescriptor.get : null;
@@ -6779,7 +6779,392 @@
 			}
 			return $replace.call(str, sepRegex, "$&_");
 		}
-		var utilInspect = require_util_inspect();
+		var utilInspect = require_util_inspect$3();
+		var inspectCustom = utilInspect.custom;
+		var inspectSymbol = isSymbol(inspectCustom) ? inspectCustom : null;
+		var quotes = {
+			__proto__: null,
+			"double": "\"",
+			single: "'"
+		};
+		var quoteREs = {
+			__proto__: null,
+			"double": /(["\\])/g,
+			single: /(['\\])/g
+		};
+		module.exports = function inspect_(obj, options, depth, seen) {
+			var opts = options || {};
+			if (has(opts, "quoteStyle") && !has(quotes, opts.quoteStyle)) throw new TypeError("option \"quoteStyle\" must be \"single\" or \"double\"");
+			if (has(opts, "maxStringLength") && (typeof opts.maxStringLength === "number" ? opts.maxStringLength < 0 && opts.maxStringLength !== Infinity : opts.maxStringLength !== null)) throw new TypeError("option \"maxStringLength\", if provided, must be a positive integer, Infinity, or `null`");
+			var customInspect = has(opts, "customInspect") ? opts.customInspect : true;
+			if (typeof customInspect !== "boolean" && customInspect !== "symbol") throw new TypeError("option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
+			if (has(opts, "indent") && opts.indent !== null && opts.indent !== "	" && !(parseInt(opts.indent, 10) === opts.indent && opts.indent > 0)) throw new TypeError("option \"indent\" must be \"\\t\", an integer > 0, or `null`");
+			if (has(opts, "numericSeparator") && typeof opts.numericSeparator !== "boolean") throw new TypeError("option \"numericSeparator\", if provided, must be `true` or `false`");
+			var numericSeparator = opts.numericSeparator;
+			if (typeof obj === "undefined") return "undefined";
+			if (obj === null) return "null";
+			if (typeof obj === "boolean") return obj ? "true" : "false";
+			if (typeof obj === "string") return inspectString(obj, opts);
+			if (typeof obj === "number") {
+				if (obj === 0) return Infinity / obj > 0 ? "0" : "-0";
+				var str = String(obj);
+				return numericSeparator ? addNumericSeparator(obj, str) : str;
+			}
+			if (typeof obj === "bigint") {
+				var bigIntStr = String(obj) + "n";
+				return numericSeparator ? addNumericSeparator(obj, bigIntStr) : bigIntStr;
+			}
+			var maxDepth = typeof opts.depth === "undefined" ? 5 : opts.depth;
+			if (typeof depth === "undefined") depth = 0;
+			if (depth >= maxDepth && maxDepth > 0 && typeof obj === "object") return isArray(obj) ? "[Array]" : "[Object]";
+			var indent = getIndent(opts, depth);
+			if (typeof seen === "undefined") seen = [];
+			else if (indexOf(seen, obj) >= 0) return "[Circular]";
+			function inspect(value, from, noIndent) {
+				if (from) {
+					seen = $arrSlice.call(seen);
+					seen.push(from);
+				}
+				if (noIndent) {
+					var newOpts = { depth: opts.depth };
+					if (has(opts, "quoteStyle")) newOpts.quoteStyle = opts.quoteStyle;
+					return inspect_(value, newOpts, depth + 1, seen);
+				}
+				return inspect_(value, opts, depth + 1, seen);
+			}
+			if (typeof obj === "function" && !isRegExp(obj)) {
+				var name = nameOf(obj);
+				var keys = arrObjKeys(obj, inspect);
+				return "[Function" + (name ? ": " + name : " (anonymous)") + "]" + (keys.length > 0 ? " { " + $join.call(keys, ", ") + " }" : "");
+			}
+			if (isSymbol(obj)) {
+				var symString = hasShammedSymbols ? $replace.call(String(obj), /^(Symbol\(.*\))_[^)]*$/, "$1") : symToString.call(obj);
+				return typeof obj === "object" && !hasShammedSymbols ? markBoxed(symString) : symString;
+			}
+			if (isElement(obj)) {
+				var s = "<" + $toLowerCase.call(String(obj.nodeName));
+				var attrs = obj.attributes || [];
+				for (var i = 0; i < attrs.length; i++) s += " " + attrs[i].name + "=" + wrapQuotes(quote(attrs[i].value), "double", opts);
+				s += ">";
+				if (obj.childNodes && obj.childNodes.length) s += "...";
+				s += "</" + $toLowerCase.call(String(obj.nodeName)) + ">";
+				return s;
+			}
+			if (isArray(obj)) {
+				if (obj.length === 0) return "[]";
+				var xs = arrObjKeys(obj, inspect);
+				if (indent && !singleLineValues(xs)) return "[" + indentedJoin(xs, indent) + "]";
+				return "[ " + $join.call(xs, ", ") + " ]";
+			}
+			if (isError(obj)) {
+				var parts = arrObjKeys(obj, inspect);
+				if (!("cause" in Error.prototype) && "cause" in obj && !isEnumerable.call(obj, "cause")) return "{ [" + String(obj) + "] " + $join.call($concat.call("[cause]: " + inspect(obj.cause), parts), ", ") + " }";
+				if (parts.length === 0) return "[" + String(obj) + "]";
+				return "{ [" + String(obj) + "] " + $join.call(parts, ", ") + " }";
+			}
+			if (typeof obj === "object" && customInspect) {
+				if (inspectSymbol && typeof obj[inspectSymbol] === "function" && utilInspect) return utilInspect(obj, { depth: maxDepth - depth });
+				else if (customInspect !== "symbol" && typeof obj.inspect === "function") return obj.inspect();
+			}
+			if (isMap(obj)) {
+				var mapParts = [];
+				if (mapForEach) mapForEach.call(obj, function(value, key) {
+					mapParts.push(inspect(key, obj, true) + " => " + inspect(value, obj));
+				});
+				return collectionOf("Map", mapSize.call(obj), mapParts, indent);
+			}
+			if (isSet(obj)) {
+				var setParts = [];
+				if (setForEach) setForEach.call(obj, function(value) {
+					setParts.push(inspect(value, obj));
+				});
+				return collectionOf("Set", setSize.call(obj), setParts, indent);
+			}
+			if (isWeakMap(obj)) return weakCollectionOf("WeakMap");
+			if (isWeakSet(obj)) return weakCollectionOf("WeakSet");
+			if (isWeakRef(obj)) return weakCollectionOf("WeakRef");
+			if (isNumber(obj)) return markBoxed(inspect(Number(obj)));
+			if (isBigInt(obj)) return markBoxed(inspect(bigIntValueOf.call(obj)));
+			if (isBoolean(obj)) return markBoxed(booleanValueOf.call(obj));
+			if (isString(obj)) return markBoxed(inspect(String(obj)));
+			if (typeof window !== "undefined" && obj === window) return "{ [object Window] }";
+			if (typeof globalThis !== "undefined" && obj === globalThis || typeof global !== "undefined" && obj === global) return "{ [object globalThis] }";
+			if (!isDate(obj) && !isRegExp(obj)) {
+				var ys = arrObjKeys(obj, inspect);
+				var isPlainObject = gPO ? gPO(obj) === Object.prototype : obj instanceof Object || obj.constructor === Object;
+				var protoTag = obj instanceof Object ? "" : "null prototype";
+				var stringTag = !isPlainObject && toStringTag && Object(obj) === obj && toStringTag in obj ? $slice.call(toStr(obj), 8, -1) : protoTag ? "Object" : "";
+				var tag = (isPlainObject || typeof obj.constructor !== "function" ? "" : obj.constructor.name ? obj.constructor.name + " " : "") + (stringTag || protoTag ? "[" + $join.call($concat.call([], stringTag || [], protoTag || []), ": ") + "] " : "");
+				if (ys.length === 0) return tag + "{}";
+				if (indent) return tag + "{" + indentedJoin(ys, indent) + "}";
+				return tag + "{ " + $join.call(ys, ", ") + " }";
+			}
+			return String(obj);
+		};
+		function wrapQuotes(s, defaultStyle, opts) {
+			var quoteChar = quotes[opts.quoteStyle || defaultStyle];
+			return quoteChar + s + quoteChar;
+		}
+		function quote(s) {
+			return $replace.call(String(s), /"/g, "&quot;");
+		}
+		function canTrustToString(obj) {
+			return !toStringTag || !(typeof obj === "object" && (toStringTag in obj || typeof obj[toStringTag] !== "undefined"));
+		}
+		function isArray(obj) {
+			return toStr(obj) === "[object Array]" && canTrustToString(obj);
+		}
+		function isDate(obj) {
+			return toStr(obj) === "[object Date]" && canTrustToString(obj);
+		}
+		function isRegExp(obj) {
+			return toStr(obj) === "[object RegExp]" && canTrustToString(obj);
+		}
+		function isError(obj) {
+			return toStr(obj) === "[object Error]" && canTrustToString(obj);
+		}
+		function isString(obj) {
+			return toStr(obj) === "[object String]" && canTrustToString(obj);
+		}
+		function isNumber(obj) {
+			return toStr(obj) === "[object Number]" && canTrustToString(obj);
+		}
+		function isBoolean(obj) {
+			return toStr(obj) === "[object Boolean]" && canTrustToString(obj);
+		}
+		function isSymbol(obj) {
+			if (hasShammedSymbols) return obj && typeof obj === "object" && obj instanceof Symbol;
+			if (typeof obj === "symbol") return true;
+			if (!obj || typeof obj !== "object" || !symToString) return false;
+			try {
+				symToString.call(obj);
+				return true;
+			} catch (e) {}
+			return false;
+		}
+		function isBigInt(obj) {
+			if (!obj || typeof obj !== "object" || !bigIntValueOf) return false;
+			try {
+				bigIntValueOf.call(obj);
+				return true;
+			} catch (e) {}
+			return false;
+		}
+		var hasOwn = Object.prototype.hasOwnProperty || function(key) {
+			return key in this;
+		};
+		function has(obj, key) {
+			return hasOwn.call(obj, key);
+		}
+		function toStr(obj) {
+			return objectToString.call(obj);
+		}
+		function nameOf(f) {
+			if (f.name) return f.name;
+			var m = $match.call(functionToString.call(f), /^function\s*([\w$]+)/);
+			if (m) return m[1];
+			return null;
+		}
+		function indexOf(xs, x) {
+			if (xs.indexOf) return xs.indexOf(x);
+			for (var i = 0, l = xs.length; i < l; i++) if (xs[i] === x) return i;
+			return -1;
+		}
+		function isMap(x) {
+			if (!mapSize || !x || typeof x !== "object") return false;
+			try {
+				mapSize.call(x);
+				try {
+					setSize.call(x);
+				} catch (s) {
+					return true;
+				}
+				return x instanceof Map;
+			} catch (e) {}
+			return false;
+		}
+		function isWeakMap(x) {
+			if (!weakMapHas || !x || typeof x !== "object") return false;
+			try {
+				weakMapHas.call(x, weakMapHas);
+				try {
+					weakSetHas.call(x, weakSetHas);
+				} catch (s) {
+					return true;
+				}
+				return x instanceof WeakMap;
+			} catch (e) {}
+			return false;
+		}
+		function isWeakRef(x) {
+			if (!weakRefDeref || !x || typeof x !== "object") return false;
+			try {
+				weakRefDeref.call(x);
+				return true;
+			} catch (e) {}
+			return false;
+		}
+		function isSet(x) {
+			if (!setSize || !x || typeof x !== "object") return false;
+			try {
+				setSize.call(x);
+				try {
+					mapSize.call(x);
+				} catch (m) {
+					return true;
+				}
+				return x instanceof Set;
+			} catch (e) {}
+			return false;
+		}
+		function isWeakSet(x) {
+			if (!weakSetHas || !x || typeof x !== "object") return false;
+			try {
+				weakSetHas.call(x, weakSetHas);
+				try {
+					weakMapHas.call(x, weakMapHas);
+				} catch (s) {
+					return true;
+				}
+				return x instanceof WeakSet;
+			} catch (e) {}
+			return false;
+		}
+		function isElement(x) {
+			if (!x || typeof x !== "object") return false;
+			if (typeof HTMLElement !== "undefined" && x instanceof HTMLElement) return true;
+			return typeof x.nodeName === "string" && typeof x.getAttribute === "function";
+		}
+		function inspectString(str, opts) {
+			if (str.length > opts.maxStringLength) {
+				var remaining = str.length - opts.maxStringLength;
+				var trailer = "... " + remaining + " more character" + (remaining > 1 ? "s" : "");
+				return inspectString($slice.call(str, 0, opts.maxStringLength), opts) + trailer;
+			}
+			var quoteRE = quoteREs[opts.quoteStyle || "single"];
+			quoteRE.lastIndex = 0;
+			return wrapQuotes($replace.call($replace.call(str, quoteRE, "\\$1"), /[\x00-\x1f]/g, lowbyte), "single", opts);
+		}
+		function lowbyte(c) {
+			var n = c.charCodeAt(0);
+			var x = {
+				8: "b",
+				9: "t",
+				10: "n",
+				12: "f",
+				13: "r"
+			}[n];
+			if (x) return "\\" + x;
+			return "\\x" + (n < 16 ? "0" : "") + $toUpperCase.call(n.toString(16));
+		}
+		function markBoxed(str) {
+			return "Object(" + str + ")";
+		}
+		function weakCollectionOf(type) {
+			return type + " { ? }";
+		}
+		function collectionOf(type, size, entries, indent) {
+			var joinedEntries = indent ? indentedJoin(entries, indent) : $join.call(entries, ", ");
+			return type + " (" + size + ") {" + joinedEntries + "}";
+		}
+		function singleLineValues(xs) {
+			for (var i = 0; i < xs.length; i++) if (indexOf(xs[i], "\n") >= 0) return false;
+			return true;
+		}
+		function getIndent(opts, depth) {
+			var baseIndent;
+			if (opts.indent === "	") baseIndent = "	";
+			else if (typeof opts.indent === "number" && opts.indent > 0) baseIndent = $join.call(Array(opts.indent + 1), " ");
+			else return null;
+			return {
+				base: baseIndent,
+				prev: $join.call(Array(depth + 1), baseIndent)
+			};
+		}
+		function indentedJoin(xs, indent) {
+			if (xs.length === 0) return "";
+			var lineJoiner = "\n" + indent.prev + indent.base;
+			return lineJoiner + $join.call(xs, "," + lineJoiner) + "\n" + indent.prev;
+		}
+		function arrObjKeys(obj, inspect) {
+			var isArr = isArray(obj);
+			var xs = [];
+			if (isArr) {
+				xs.length = obj.length;
+				for (var i = 0; i < obj.length; i++) xs[i] = has(obj, i) ? inspect(obj[i], obj) : "";
+			}
+			var syms = typeof gOPS === "function" ? gOPS(obj) : [];
+			var symMap;
+			if (hasShammedSymbols) {
+				symMap = {};
+				for (var k = 0; k < syms.length; k++) symMap["$" + syms[k]] = syms[k];
+			}
+			for (var key in obj) {
+				if (!has(obj, key)) continue;
+				if (isArr && String(Number(key)) === key && key < obj.length) continue;
+				if (hasShammedSymbols && symMap["$" + key] instanceof Symbol) continue;
+				else if ($test.call(/[^\w$]/, key)) xs.push(inspect(key, obj) + ": " + inspect(obj[key], obj));
+				else xs.push(key + ": " + inspect(obj[key], obj));
+			}
+			if (typeof gOPS === "function") {
+				for (var j = 0; j < syms.length; j++) if (isEnumerable.call(obj, syms[j])) xs.push("[" + inspect(syms[j]) + "]: " + inspect(obj[syms[j]], obj));
+			}
+			return xs;
+		}
+	}));
+	//#endregion
+	//#region (ignored) node_modules/side-channel-list/node_modules/object-inspect/util.inspect.js
+	var require_util_inspect$2 = /* @__PURE__ */ __commonJSMin((() => {}));
+	//#endregion
+	//#region node_modules/side-channel-list/node_modules/object-inspect/index.js
+	var require_object_inspect$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		var hasMap = typeof Map === "function" && Map.prototype;
+		var mapSizeDescriptor = Object.getOwnPropertyDescriptor && hasMap ? Object.getOwnPropertyDescriptor(Map.prototype, "size") : null;
+		var mapSize = hasMap && mapSizeDescriptor && typeof mapSizeDescriptor.get === "function" ? mapSizeDescriptor.get : null;
+		var mapForEach = hasMap && Map.prototype.forEach;
+		var hasSet = typeof Set === "function" && Set.prototype;
+		var setSizeDescriptor = Object.getOwnPropertyDescriptor && hasSet ? Object.getOwnPropertyDescriptor(Set.prototype, "size") : null;
+		var setSize = hasSet && setSizeDescriptor && typeof setSizeDescriptor.get === "function" ? setSizeDescriptor.get : null;
+		var setForEach = hasSet && Set.prototype.forEach;
+		var weakMapHas = typeof WeakMap === "function" && WeakMap.prototype ? WeakMap.prototype.has : null;
+		var weakSetHas = typeof WeakSet === "function" && WeakSet.prototype ? WeakSet.prototype.has : null;
+		var weakRefDeref = typeof WeakRef === "function" && WeakRef.prototype ? WeakRef.prototype.deref : null;
+		var booleanValueOf = Boolean.prototype.valueOf;
+		var objectToString = Object.prototype.toString;
+		var functionToString = Function.prototype.toString;
+		var $match = String.prototype.match;
+		var $slice = String.prototype.slice;
+		var $replace = String.prototype.replace;
+		var $toUpperCase = String.prototype.toUpperCase;
+		var $toLowerCase = String.prototype.toLowerCase;
+		var $test = RegExp.prototype.test;
+		var $concat = Array.prototype.concat;
+		var $join = Array.prototype.join;
+		var $arrSlice = Array.prototype.slice;
+		var $floor = Math.floor;
+		var bigIntValueOf = typeof BigInt === "function" ? BigInt.prototype.valueOf : null;
+		var gOPS = Object.getOwnPropertySymbols;
+		var symToString = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? Symbol.prototype.toString : null;
+		var hasShammedSymbols = typeof Symbol === "function" && typeof Symbol.iterator === "object";
+		var toStringTag = typeof Symbol === "function" && Symbol.toStringTag && (typeof Symbol.toStringTag === hasShammedSymbols ? "object" : "symbol") ? Symbol.toStringTag : null;
+		var isEnumerable = Object.prototype.propertyIsEnumerable;
+		var gPO = (typeof Reflect === "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(O) {
+			return O.__proto__;
+		} : null);
+		function addNumericSeparator(num, str) {
+			if (num === Infinity || num === -Infinity || num !== num || num && num > -1e3 && num < 1e3 || $test.call(/e/, str)) return str;
+			var sepRegex = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
+			if (typeof num === "number") {
+				var int = num < 0 ? -$floor(-num) : $floor(num);
+				if (int !== num) {
+					var intStr = String(int);
+					var dec = $slice.call(str, intStr.length + 1);
+					return $replace.call(intStr, sepRegex, "$&_") + "." + $replace.call($replace.call(dec, /([0-9]{3})/g, "$&_"), /_$/, "");
+				}
+			}
+			return $replace.call(str, sepRegex, "$&_");
+		}
+		var utilInspect = require_util_inspect$2();
 		var inspectCustom = utilInspect.custom;
 		var inspectSymbol = isSymbol(inspectCustom) ? inspectCustom : null;
 		var quotes = {
@@ -7115,7 +7500,7 @@
 	//#endregion
 	//#region node_modules/side-channel-list/index.js
 	var require_side_channel_list = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var inspect = require_object_inspect();
+		var inspect = require_object_inspect$2();
 		var $TypeError = require_type();
 		/** @type {import('./list.d.ts').listGetNode} */
 		var listGetNode = function(list, key, isDelete) {
@@ -7169,8 +7554,9 @@
 					if (!channel.has(key)) throw new $TypeError("Side channel does not contain " + inspect(key));
 				},
 				"delete": function(key) {
+					var root = $o && $o.next;
 					var deletedNode = listDelete($o, key);
-					if (deletedNode && $o && !$o.next) $o = void 0;
+					if (deletedNode && root && root === deletedNode) $o = void 0;
 					return !!deletedNode;
 				},
 				get: function(key) {
@@ -7850,11 +8236,396 @@
 		};
 	}));
 	//#endregion
+	//#region (ignored) node_modules/side-channel-map/node_modules/object-inspect/util.inspect.js
+	var require_util_inspect$1 = /* @__PURE__ */ __commonJSMin((() => {}));
+	//#endregion
+	//#region node_modules/side-channel-map/node_modules/object-inspect/index.js
+	var require_object_inspect$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		var hasMap = typeof Map === "function" && Map.prototype;
+		var mapSizeDescriptor = Object.getOwnPropertyDescriptor && hasMap ? Object.getOwnPropertyDescriptor(Map.prototype, "size") : null;
+		var mapSize = hasMap && mapSizeDescriptor && typeof mapSizeDescriptor.get === "function" ? mapSizeDescriptor.get : null;
+		var mapForEach = hasMap && Map.prototype.forEach;
+		var hasSet = typeof Set === "function" && Set.prototype;
+		var setSizeDescriptor = Object.getOwnPropertyDescriptor && hasSet ? Object.getOwnPropertyDescriptor(Set.prototype, "size") : null;
+		var setSize = hasSet && setSizeDescriptor && typeof setSizeDescriptor.get === "function" ? setSizeDescriptor.get : null;
+		var setForEach = hasSet && Set.prototype.forEach;
+		var weakMapHas = typeof WeakMap === "function" && WeakMap.prototype ? WeakMap.prototype.has : null;
+		var weakSetHas = typeof WeakSet === "function" && WeakSet.prototype ? WeakSet.prototype.has : null;
+		var weakRefDeref = typeof WeakRef === "function" && WeakRef.prototype ? WeakRef.prototype.deref : null;
+		var booleanValueOf = Boolean.prototype.valueOf;
+		var objectToString = Object.prototype.toString;
+		var functionToString = Function.prototype.toString;
+		var $match = String.prototype.match;
+		var $slice = String.prototype.slice;
+		var $replace = String.prototype.replace;
+		var $toUpperCase = String.prototype.toUpperCase;
+		var $toLowerCase = String.prototype.toLowerCase;
+		var $test = RegExp.prototype.test;
+		var $concat = Array.prototype.concat;
+		var $join = Array.prototype.join;
+		var $arrSlice = Array.prototype.slice;
+		var $floor = Math.floor;
+		var bigIntValueOf = typeof BigInt === "function" ? BigInt.prototype.valueOf : null;
+		var gOPS = Object.getOwnPropertySymbols;
+		var symToString = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? Symbol.prototype.toString : null;
+		var hasShammedSymbols = typeof Symbol === "function" && typeof Symbol.iterator === "object";
+		var toStringTag = typeof Symbol === "function" && Symbol.toStringTag && (typeof Symbol.toStringTag === hasShammedSymbols ? "object" : "symbol") ? Symbol.toStringTag : null;
+		var isEnumerable = Object.prototype.propertyIsEnumerable;
+		var gPO = (typeof Reflect === "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(O) {
+			return O.__proto__;
+		} : null);
+		function addNumericSeparator(num, str) {
+			if (num === Infinity || num === -Infinity || num !== num || num && num > -1e3 && num < 1e3 || $test.call(/e/, str)) return str;
+			var sepRegex = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
+			if (typeof num === "number") {
+				var int = num < 0 ? -$floor(-num) : $floor(num);
+				if (int !== num) {
+					var intStr = String(int);
+					var dec = $slice.call(str, intStr.length + 1);
+					return $replace.call(intStr, sepRegex, "$&_") + "." + $replace.call($replace.call(dec, /([0-9]{3})/g, "$&_"), /_$/, "");
+				}
+			}
+			return $replace.call(str, sepRegex, "$&_");
+		}
+		var utilInspect = require_util_inspect$1();
+		var inspectCustom = utilInspect.custom;
+		var inspectSymbol = isSymbol(inspectCustom) ? inspectCustom : null;
+		var quotes = {
+			__proto__: null,
+			"double": "\"",
+			single: "'"
+		};
+		var quoteREs = {
+			__proto__: null,
+			"double": /(["\\])/g,
+			single: /(['\\])/g
+		};
+		module.exports = function inspect_(obj, options, depth, seen) {
+			var opts = options || {};
+			if (has(opts, "quoteStyle") && !has(quotes, opts.quoteStyle)) throw new TypeError("option \"quoteStyle\" must be \"single\" or \"double\"");
+			if (has(opts, "maxStringLength") && (typeof opts.maxStringLength === "number" ? opts.maxStringLength < 0 && opts.maxStringLength !== Infinity : opts.maxStringLength !== null)) throw new TypeError("option \"maxStringLength\", if provided, must be a positive integer, Infinity, or `null`");
+			var customInspect = has(opts, "customInspect") ? opts.customInspect : true;
+			if (typeof customInspect !== "boolean" && customInspect !== "symbol") throw new TypeError("option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
+			if (has(opts, "indent") && opts.indent !== null && opts.indent !== "	" && !(parseInt(opts.indent, 10) === opts.indent && opts.indent > 0)) throw new TypeError("option \"indent\" must be \"\\t\", an integer > 0, or `null`");
+			if (has(opts, "numericSeparator") && typeof opts.numericSeparator !== "boolean") throw new TypeError("option \"numericSeparator\", if provided, must be `true` or `false`");
+			var numericSeparator = opts.numericSeparator;
+			if (typeof obj === "undefined") return "undefined";
+			if (obj === null) return "null";
+			if (typeof obj === "boolean") return obj ? "true" : "false";
+			if (typeof obj === "string") return inspectString(obj, opts);
+			if (typeof obj === "number") {
+				if (obj === 0) return Infinity / obj > 0 ? "0" : "-0";
+				var str = String(obj);
+				return numericSeparator ? addNumericSeparator(obj, str) : str;
+			}
+			if (typeof obj === "bigint") {
+				var bigIntStr = String(obj) + "n";
+				return numericSeparator ? addNumericSeparator(obj, bigIntStr) : bigIntStr;
+			}
+			var maxDepth = typeof opts.depth === "undefined" ? 5 : opts.depth;
+			if (typeof depth === "undefined") depth = 0;
+			if (depth >= maxDepth && maxDepth > 0 && typeof obj === "object") return isArray(obj) ? "[Array]" : "[Object]";
+			var indent = getIndent(opts, depth);
+			if (typeof seen === "undefined") seen = [];
+			else if (indexOf(seen, obj) >= 0) return "[Circular]";
+			function inspect(value, from, noIndent) {
+				if (from) {
+					seen = $arrSlice.call(seen);
+					seen.push(from);
+				}
+				if (noIndent) {
+					var newOpts = { depth: opts.depth };
+					if (has(opts, "quoteStyle")) newOpts.quoteStyle = opts.quoteStyle;
+					return inspect_(value, newOpts, depth + 1, seen);
+				}
+				return inspect_(value, opts, depth + 1, seen);
+			}
+			if (typeof obj === "function" && !isRegExp(obj)) {
+				var name = nameOf(obj);
+				var keys = arrObjKeys(obj, inspect);
+				return "[Function" + (name ? ": " + name : " (anonymous)") + "]" + (keys.length > 0 ? " { " + $join.call(keys, ", ") + " }" : "");
+			}
+			if (isSymbol(obj)) {
+				var symString = hasShammedSymbols ? $replace.call(String(obj), /^(Symbol\(.*\))_[^)]*$/, "$1") : symToString.call(obj);
+				return typeof obj === "object" && !hasShammedSymbols ? markBoxed(symString) : symString;
+			}
+			if (isElement(obj)) {
+				var s = "<" + $toLowerCase.call(String(obj.nodeName));
+				var attrs = obj.attributes || [];
+				for (var i = 0; i < attrs.length; i++) s += " " + attrs[i].name + "=" + wrapQuotes(quote(attrs[i].value), "double", opts);
+				s += ">";
+				if (obj.childNodes && obj.childNodes.length) s += "...";
+				s += "</" + $toLowerCase.call(String(obj.nodeName)) + ">";
+				return s;
+			}
+			if (isArray(obj)) {
+				if (obj.length === 0) return "[]";
+				var xs = arrObjKeys(obj, inspect);
+				if (indent && !singleLineValues(xs)) return "[" + indentedJoin(xs, indent) + "]";
+				return "[ " + $join.call(xs, ", ") + " ]";
+			}
+			if (isError(obj)) {
+				var parts = arrObjKeys(obj, inspect);
+				if (!("cause" in Error.prototype) && "cause" in obj && !isEnumerable.call(obj, "cause")) return "{ [" + String(obj) + "] " + $join.call($concat.call("[cause]: " + inspect(obj.cause), parts), ", ") + " }";
+				if (parts.length === 0) return "[" + String(obj) + "]";
+				return "{ [" + String(obj) + "] " + $join.call(parts, ", ") + " }";
+			}
+			if (typeof obj === "object" && customInspect) {
+				if (inspectSymbol && typeof obj[inspectSymbol] === "function" && utilInspect) return utilInspect(obj, { depth: maxDepth - depth });
+				else if (customInspect !== "symbol" && typeof obj.inspect === "function") return obj.inspect();
+			}
+			if (isMap(obj)) {
+				var mapParts = [];
+				if (mapForEach) mapForEach.call(obj, function(value, key) {
+					mapParts.push(inspect(key, obj, true) + " => " + inspect(value, obj));
+				});
+				return collectionOf("Map", mapSize.call(obj), mapParts, indent);
+			}
+			if (isSet(obj)) {
+				var setParts = [];
+				if (setForEach) setForEach.call(obj, function(value) {
+					setParts.push(inspect(value, obj));
+				});
+				return collectionOf("Set", setSize.call(obj), setParts, indent);
+			}
+			if (isWeakMap(obj)) return weakCollectionOf("WeakMap");
+			if (isWeakSet(obj)) return weakCollectionOf("WeakSet");
+			if (isWeakRef(obj)) return weakCollectionOf("WeakRef");
+			if (isNumber(obj)) return markBoxed(inspect(Number(obj)));
+			if (isBigInt(obj)) return markBoxed(inspect(bigIntValueOf.call(obj)));
+			if (isBoolean(obj)) return markBoxed(booleanValueOf.call(obj));
+			if (isString(obj)) return markBoxed(inspect(String(obj)));
+			if (typeof window !== "undefined" && obj === window) return "{ [object Window] }";
+			if (typeof globalThis !== "undefined" && obj === globalThis || typeof global !== "undefined" && obj === global) return "{ [object globalThis] }";
+			if (!isDate(obj) && !isRegExp(obj)) {
+				var ys = arrObjKeys(obj, inspect);
+				var isPlainObject = gPO ? gPO(obj) === Object.prototype : obj instanceof Object || obj.constructor === Object;
+				var protoTag = obj instanceof Object ? "" : "null prototype";
+				var stringTag = !isPlainObject && toStringTag && Object(obj) === obj && toStringTag in obj ? $slice.call(toStr(obj), 8, -1) : protoTag ? "Object" : "";
+				var tag = (isPlainObject || typeof obj.constructor !== "function" ? "" : obj.constructor.name ? obj.constructor.name + " " : "") + (stringTag || protoTag ? "[" + $join.call($concat.call([], stringTag || [], protoTag || []), ": ") + "] " : "");
+				if (ys.length === 0) return tag + "{}";
+				if (indent) return tag + "{" + indentedJoin(ys, indent) + "}";
+				return tag + "{ " + $join.call(ys, ", ") + " }";
+			}
+			return String(obj);
+		};
+		function wrapQuotes(s, defaultStyle, opts) {
+			var quoteChar = quotes[opts.quoteStyle || defaultStyle];
+			return quoteChar + s + quoteChar;
+		}
+		function quote(s) {
+			return $replace.call(String(s), /"/g, "&quot;");
+		}
+		function canTrustToString(obj) {
+			return !toStringTag || !(typeof obj === "object" && (toStringTag in obj || typeof obj[toStringTag] !== "undefined"));
+		}
+		function isArray(obj) {
+			return toStr(obj) === "[object Array]" && canTrustToString(obj);
+		}
+		function isDate(obj) {
+			return toStr(obj) === "[object Date]" && canTrustToString(obj);
+		}
+		function isRegExp(obj) {
+			return toStr(obj) === "[object RegExp]" && canTrustToString(obj);
+		}
+		function isError(obj) {
+			return toStr(obj) === "[object Error]" && canTrustToString(obj);
+		}
+		function isString(obj) {
+			return toStr(obj) === "[object String]" && canTrustToString(obj);
+		}
+		function isNumber(obj) {
+			return toStr(obj) === "[object Number]" && canTrustToString(obj);
+		}
+		function isBoolean(obj) {
+			return toStr(obj) === "[object Boolean]" && canTrustToString(obj);
+		}
+		function isSymbol(obj) {
+			if (hasShammedSymbols) return obj && typeof obj === "object" && obj instanceof Symbol;
+			if (typeof obj === "symbol") return true;
+			if (!obj || typeof obj !== "object" || !symToString) return false;
+			try {
+				symToString.call(obj);
+				return true;
+			} catch (e) {}
+			return false;
+		}
+		function isBigInt(obj) {
+			if (!obj || typeof obj !== "object" || !bigIntValueOf) return false;
+			try {
+				bigIntValueOf.call(obj);
+				return true;
+			} catch (e) {}
+			return false;
+		}
+		var hasOwn = Object.prototype.hasOwnProperty || function(key) {
+			return key in this;
+		};
+		function has(obj, key) {
+			return hasOwn.call(obj, key);
+		}
+		function toStr(obj) {
+			return objectToString.call(obj);
+		}
+		function nameOf(f) {
+			if (f.name) return f.name;
+			var m = $match.call(functionToString.call(f), /^function\s*([\w$]+)/);
+			if (m) return m[1];
+			return null;
+		}
+		function indexOf(xs, x) {
+			if (xs.indexOf) return xs.indexOf(x);
+			for (var i = 0, l = xs.length; i < l; i++) if (xs[i] === x) return i;
+			return -1;
+		}
+		function isMap(x) {
+			if (!mapSize || !x || typeof x !== "object") return false;
+			try {
+				mapSize.call(x);
+				try {
+					setSize.call(x);
+				} catch (s) {
+					return true;
+				}
+				return x instanceof Map;
+			} catch (e) {}
+			return false;
+		}
+		function isWeakMap(x) {
+			if (!weakMapHas || !x || typeof x !== "object") return false;
+			try {
+				weakMapHas.call(x, weakMapHas);
+				try {
+					weakSetHas.call(x, weakSetHas);
+				} catch (s) {
+					return true;
+				}
+				return x instanceof WeakMap;
+			} catch (e) {}
+			return false;
+		}
+		function isWeakRef(x) {
+			if (!weakRefDeref || !x || typeof x !== "object") return false;
+			try {
+				weakRefDeref.call(x);
+				return true;
+			} catch (e) {}
+			return false;
+		}
+		function isSet(x) {
+			if (!setSize || !x || typeof x !== "object") return false;
+			try {
+				setSize.call(x);
+				try {
+					mapSize.call(x);
+				} catch (m) {
+					return true;
+				}
+				return x instanceof Set;
+			} catch (e) {}
+			return false;
+		}
+		function isWeakSet(x) {
+			if (!weakSetHas || !x || typeof x !== "object") return false;
+			try {
+				weakSetHas.call(x, weakSetHas);
+				try {
+					weakMapHas.call(x, weakMapHas);
+				} catch (s) {
+					return true;
+				}
+				return x instanceof WeakSet;
+			} catch (e) {}
+			return false;
+		}
+		function isElement(x) {
+			if (!x || typeof x !== "object") return false;
+			if (typeof HTMLElement !== "undefined" && x instanceof HTMLElement) return true;
+			return typeof x.nodeName === "string" && typeof x.getAttribute === "function";
+		}
+		function inspectString(str, opts) {
+			if (str.length > opts.maxStringLength) {
+				var remaining = str.length - opts.maxStringLength;
+				var trailer = "... " + remaining + " more character" + (remaining > 1 ? "s" : "");
+				return inspectString($slice.call(str, 0, opts.maxStringLength), opts) + trailer;
+			}
+			var quoteRE = quoteREs[opts.quoteStyle || "single"];
+			quoteRE.lastIndex = 0;
+			return wrapQuotes($replace.call($replace.call(str, quoteRE, "\\$1"), /[\x00-\x1f]/g, lowbyte), "single", opts);
+		}
+		function lowbyte(c) {
+			var n = c.charCodeAt(0);
+			var x = {
+				8: "b",
+				9: "t",
+				10: "n",
+				12: "f",
+				13: "r"
+			}[n];
+			if (x) return "\\" + x;
+			return "\\x" + (n < 16 ? "0" : "") + $toUpperCase.call(n.toString(16));
+		}
+		function markBoxed(str) {
+			return "Object(" + str + ")";
+		}
+		function weakCollectionOf(type) {
+			return type + " { ? }";
+		}
+		function collectionOf(type, size, entries, indent) {
+			var joinedEntries = indent ? indentedJoin(entries, indent) : $join.call(entries, ", ");
+			return type + " (" + size + ") {" + joinedEntries + "}";
+		}
+		function singleLineValues(xs) {
+			for (var i = 0; i < xs.length; i++) if (indexOf(xs[i], "\n") >= 0) return false;
+			return true;
+		}
+		function getIndent(opts, depth) {
+			var baseIndent;
+			if (opts.indent === "	") baseIndent = "	";
+			else if (typeof opts.indent === "number" && opts.indent > 0) baseIndent = $join.call(Array(opts.indent + 1), " ");
+			else return null;
+			return {
+				base: baseIndent,
+				prev: $join.call(Array(depth + 1), baseIndent)
+			};
+		}
+		function indentedJoin(xs, indent) {
+			if (xs.length === 0) return "";
+			var lineJoiner = "\n" + indent.prev + indent.base;
+			return lineJoiner + $join.call(xs, "," + lineJoiner) + "\n" + indent.prev;
+		}
+		function arrObjKeys(obj, inspect) {
+			var isArr = isArray(obj);
+			var xs = [];
+			if (isArr) {
+				xs.length = obj.length;
+				for (var i = 0; i < obj.length; i++) xs[i] = has(obj, i) ? inspect(obj[i], obj) : "";
+			}
+			var syms = typeof gOPS === "function" ? gOPS(obj) : [];
+			var symMap;
+			if (hasShammedSymbols) {
+				symMap = {};
+				for (var k = 0; k < syms.length; k++) symMap["$" + syms[k]] = syms[k];
+			}
+			for (var key in obj) {
+				if (!has(obj, key)) continue;
+				if (isArr && String(Number(key)) === key && key < obj.length) continue;
+				if (hasShammedSymbols && symMap["$" + key] instanceof Symbol) continue;
+				else if ($test.call(/[^\w$]/, key)) xs.push(inspect(key, obj) + ": " + inspect(obj[key], obj));
+				else xs.push(key + ": " + inspect(obj[key], obj));
+			}
+			if (typeof gOPS === "function") {
+				for (var j = 0; j < syms.length; j++) if (isEnumerable.call(obj, syms[j])) xs.push("[" + inspect(syms[j]) + "]: " + inspect(obj[syms[j]], obj));
+			}
+			return xs;
+		}
+	}));
+	//#endregion
 	//#region node_modules/side-channel-map/index.js
 	var require_side_channel_map = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var GetIntrinsic = require_get_intrinsic();
 		var callBound = require_call_bound();
-		var inspect = require_object_inspect();
+		var inspect = require_object_inspect$1();
 		var $TypeError = require_type();
 		var $Map = GetIntrinsic("%Map%", true);
 		/** @type {<K, V>(thisArg: Map<K, V>, key: K) => V} */
@@ -7900,6 +8671,391 @@
 			};
 			return channel;
 		};
+	}));
+	//#endregion
+	//#region (ignored) node_modules/side-channel-weakmap/node_modules/object-inspect/util.inspect.js
+	var require_util_inspect = /* @__PURE__ */ __commonJSMin((() => {}));
+	//#endregion
+	//#region node_modules/side-channel-weakmap/node_modules/object-inspect/index.js
+	var require_object_inspect = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+		var hasMap = typeof Map === "function" && Map.prototype;
+		var mapSizeDescriptor = Object.getOwnPropertyDescriptor && hasMap ? Object.getOwnPropertyDescriptor(Map.prototype, "size") : null;
+		var mapSize = hasMap && mapSizeDescriptor && typeof mapSizeDescriptor.get === "function" ? mapSizeDescriptor.get : null;
+		var mapForEach = hasMap && Map.prototype.forEach;
+		var hasSet = typeof Set === "function" && Set.prototype;
+		var setSizeDescriptor = Object.getOwnPropertyDescriptor && hasSet ? Object.getOwnPropertyDescriptor(Set.prototype, "size") : null;
+		var setSize = hasSet && setSizeDescriptor && typeof setSizeDescriptor.get === "function" ? setSizeDescriptor.get : null;
+		var setForEach = hasSet && Set.prototype.forEach;
+		var weakMapHas = typeof WeakMap === "function" && WeakMap.prototype ? WeakMap.prototype.has : null;
+		var weakSetHas = typeof WeakSet === "function" && WeakSet.prototype ? WeakSet.prototype.has : null;
+		var weakRefDeref = typeof WeakRef === "function" && WeakRef.prototype ? WeakRef.prototype.deref : null;
+		var booleanValueOf = Boolean.prototype.valueOf;
+		var objectToString = Object.prototype.toString;
+		var functionToString = Function.prototype.toString;
+		var $match = String.prototype.match;
+		var $slice = String.prototype.slice;
+		var $replace = String.prototype.replace;
+		var $toUpperCase = String.prototype.toUpperCase;
+		var $toLowerCase = String.prototype.toLowerCase;
+		var $test = RegExp.prototype.test;
+		var $concat = Array.prototype.concat;
+		var $join = Array.prototype.join;
+		var $arrSlice = Array.prototype.slice;
+		var $floor = Math.floor;
+		var bigIntValueOf = typeof BigInt === "function" ? BigInt.prototype.valueOf : null;
+		var gOPS = Object.getOwnPropertySymbols;
+		var symToString = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? Symbol.prototype.toString : null;
+		var hasShammedSymbols = typeof Symbol === "function" && typeof Symbol.iterator === "object";
+		var toStringTag = typeof Symbol === "function" && Symbol.toStringTag && (typeof Symbol.toStringTag === hasShammedSymbols ? "object" : "symbol") ? Symbol.toStringTag : null;
+		var isEnumerable = Object.prototype.propertyIsEnumerable;
+		var gPO = (typeof Reflect === "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(O) {
+			return O.__proto__;
+		} : null);
+		function addNumericSeparator(num, str) {
+			if (num === Infinity || num === -Infinity || num !== num || num && num > -1e3 && num < 1e3 || $test.call(/e/, str)) return str;
+			var sepRegex = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
+			if (typeof num === "number") {
+				var int = num < 0 ? -$floor(-num) : $floor(num);
+				if (int !== num) {
+					var intStr = String(int);
+					var dec = $slice.call(str, intStr.length + 1);
+					return $replace.call(intStr, sepRegex, "$&_") + "." + $replace.call($replace.call(dec, /([0-9]{3})/g, "$&_"), /_$/, "");
+				}
+			}
+			return $replace.call(str, sepRegex, "$&_");
+		}
+		var utilInspect = require_util_inspect();
+		var inspectCustom = utilInspect.custom;
+		var inspectSymbol = isSymbol(inspectCustom) ? inspectCustom : null;
+		var quotes = {
+			__proto__: null,
+			"double": "\"",
+			single: "'"
+		};
+		var quoteREs = {
+			__proto__: null,
+			"double": /(["\\])/g,
+			single: /(['\\])/g
+		};
+		module.exports = function inspect_(obj, options, depth, seen) {
+			var opts = options || {};
+			if (has(opts, "quoteStyle") && !has(quotes, opts.quoteStyle)) throw new TypeError("option \"quoteStyle\" must be \"single\" or \"double\"");
+			if (has(opts, "maxStringLength") && (typeof opts.maxStringLength === "number" ? opts.maxStringLength < 0 && opts.maxStringLength !== Infinity : opts.maxStringLength !== null)) throw new TypeError("option \"maxStringLength\", if provided, must be a positive integer, Infinity, or `null`");
+			var customInspect = has(opts, "customInspect") ? opts.customInspect : true;
+			if (typeof customInspect !== "boolean" && customInspect !== "symbol") throw new TypeError("option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
+			if (has(opts, "indent") && opts.indent !== null && opts.indent !== "	" && !(parseInt(opts.indent, 10) === opts.indent && opts.indent > 0)) throw new TypeError("option \"indent\" must be \"\\t\", an integer > 0, or `null`");
+			if (has(opts, "numericSeparator") && typeof opts.numericSeparator !== "boolean") throw new TypeError("option \"numericSeparator\", if provided, must be `true` or `false`");
+			var numericSeparator = opts.numericSeparator;
+			if (typeof obj === "undefined") return "undefined";
+			if (obj === null) return "null";
+			if (typeof obj === "boolean") return obj ? "true" : "false";
+			if (typeof obj === "string") return inspectString(obj, opts);
+			if (typeof obj === "number") {
+				if (obj === 0) return Infinity / obj > 0 ? "0" : "-0";
+				var str = String(obj);
+				return numericSeparator ? addNumericSeparator(obj, str) : str;
+			}
+			if (typeof obj === "bigint") {
+				var bigIntStr = String(obj) + "n";
+				return numericSeparator ? addNumericSeparator(obj, bigIntStr) : bigIntStr;
+			}
+			var maxDepth = typeof opts.depth === "undefined" ? 5 : opts.depth;
+			if (typeof depth === "undefined") depth = 0;
+			if (depth >= maxDepth && maxDepth > 0 && typeof obj === "object") return isArray(obj) ? "[Array]" : "[Object]";
+			var indent = getIndent(opts, depth);
+			if (typeof seen === "undefined") seen = [];
+			else if (indexOf(seen, obj) >= 0) return "[Circular]";
+			function inspect(value, from, noIndent) {
+				if (from) {
+					seen = $arrSlice.call(seen);
+					seen.push(from);
+				}
+				if (noIndent) {
+					var newOpts = { depth: opts.depth };
+					if (has(opts, "quoteStyle")) newOpts.quoteStyle = opts.quoteStyle;
+					return inspect_(value, newOpts, depth + 1, seen);
+				}
+				return inspect_(value, opts, depth + 1, seen);
+			}
+			if (typeof obj === "function" && !isRegExp(obj)) {
+				var name = nameOf(obj);
+				var keys = arrObjKeys(obj, inspect);
+				return "[Function" + (name ? ": " + name : " (anonymous)") + "]" + (keys.length > 0 ? " { " + $join.call(keys, ", ") + " }" : "");
+			}
+			if (isSymbol(obj)) {
+				var symString = hasShammedSymbols ? $replace.call(String(obj), /^(Symbol\(.*\))_[^)]*$/, "$1") : symToString.call(obj);
+				return typeof obj === "object" && !hasShammedSymbols ? markBoxed(symString) : symString;
+			}
+			if (isElement(obj)) {
+				var s = "<" + $toLowerCase.call(String(obj.nodeName));
+				var attrs = obj.attributes || [];
+				for (var i = 0; i < attrs.length; i++) s += " " + attrs[i].name + "=" + wrapQuotes(quote(attrs[i].value), "double", opts);
+				s += ">";
+				if (obj.childNodes && obj.childNodes.length) s += "...";
+				s += "</" + $toLowerCase.call(String(obj.nodeName)) + ">";
+				return s;
+			}
+			if (isArray(obj)) {
+				if (obj.length === 0) return "[]";
+				var xs = arrObjKeys(obj, inspect);
+				if (indent && !singleLineValues(xs)) return "[" + indentedJoin(xs, indent) + "]";
+				return "[ " + $join.call(xs, ", ") + " ]";
+			}
+			if (isError(obj)) {
+				var parts = arrObjKeys(obj, inspect);
+				if (!("cause" in Error.prototype) && "cause" in obj && !isEnumerable.call(obj, "cause")) return "{ [" + String(obj) + "] " + $join.call($concat.call("[cause]: " + inspect(obj.cause), parts), ", ") + " }";
+				if (parts.length === 0) return "[" + String(obj) + "]";
+				return "{ [" + String(obj) + "] " + $join.call(parts, ", ") + " }";
+			}
+			if (typeof obj === "object" && customInspect) {
+				if (inspectSymbol && typeof obj[inspectSymbol] === "function" && utilInspect) return utilInspect(obj, { depth: maxDepth - depth });
+				else if (customInspect !== "symbol" && typeof obj.inspect === "function") return obj.inspect();
+			}
+			if (isMap(obj)) {
+				var mapParts = [];
+				if (mapForEach) mapForEach.call(obj, function(value, key) {
+					mapParts.push(inspect(key, obj, true) + " => " + inspect(value, obj));
+				});
+				return collectionOf("Map", mapSize.call(obj), mapParts, indent);
+			}
+			if (isSet(obj)) {
+				var setParts = [];
+				if (setForEach) setForEach.call(obj, function(value) {
+					setParts.push(inspect(value, obj));
+				});
+				return collectionOf("Set", setSize.call(obj), setParts, indent);
+			}
+			if (isWeakMap(obj)) return weakCollectionOf("WeakMap");
+			if (isWeakSet(obj)) return weakCollectionOf("WeakSet");
+			if (isWeakRef(obj)) return weakCollectionOf("WeakRef");
+			if (isNumber(obj)) return markBoxed(inspect(Number(obj)));
+			if (isBigInt(obj)) return markBoxed(inspect(bigIntValueOf.call(obj)));
+			if (isBoolean(obj)) return markBoxed(booleanValueOf.call(obj));
+			if (isString(obj)) return markBoxed(inspect(String(obj)));
+			if (typeof window !== "undefined" && obj === window) return "{ [object Window] }";
+			if (typeof globalThis !== "undefined" && obj === globalThis || typeof global !== "undefined" && obj === global) return "{ [object globalThis] }";
+			if (!isDate(obj) && !isRegExp(obj)) {
+				var ys = arrObjKeys(obj, inspect);
+				var isPlainObject = gPO ? gPO(obj) === Object.prototype : obj instanceof Object || obj.constructor === Object;
+				var protoTag = obj instanceof Object ? "" : "null prototype";
+				var stringTag = !isPlainObject && toStringTag && Object(obj) === obj && toStringTag in obj ? $slice.call(toStr(obj), 8, -1) : protoTag ? "Object" : "";
+				var tag = (isPlainObject || typeof obj.constructor !== "function" ? "" : obj.constructor.name ? obj.constructor.name + " " : "") + (stringTag || protoTag ? "[" + $join.call($concat.call([], stringTag || [], protoTag || []), ": ") + "] " : "");
+				if (ys.length === 0) return tag + "{}";
+				if (indent) return tag + "{" + indentedJoin(ys, indent) + "}";
+				return tag + "{ " + $join.call(ys, ", ") + " }";
+			}
+			return String(obj);
+		};
+		function wrapQuotes(s, defaultStyle, opts) {
+			var quoteChar = quotes[opts.quoteStyle || defaultStyle];
+			return quoteChar + s + quoteChar;
+		}
+		function quote(s) {
+			return $replace.call(String(s), /"/g, "&quot;");
+		}
+		function canTrustToString(obj) {
+			return !toStringTag || !(typeof obj === "object" && (toStringTag in obj || typeof obj[toStringTag] !== "undefined"));
+		}
+		function isArray(obj) {
+			return toStr(obj) === "[object Array]" && canTrustToString(obj);
+		}
+		function isDate(obj) {
+			return toStr(obj) === "[object Date]" && canTrustToString(obj);
+		}
+		function isRegExp(obj) {
+			return toStr(obj) === "[object RegExp]" && canTrustToString(obj);
+		}
+		function isError(obj) {
+			return toStr(obj) === "[object Error]" && canTrustToString(obj);
+		}
+		function isString(obj) {
+			return toStr(obj) === "[object String]" && canTrustToString(obj);
+		}
+		function isNumber(obj) {
+			return toStr(obj) === "[object Number]" && canTrustToString(obj);
+		}
+		function isBoolean(obj) {
+			return toStr(obj) === "[object Boolean]" && canTrustToString(obj);
+		}
+		function isSymbol(obj) {
+			if (hasShammedSymbols) return obj && typeof obj === "object" && obj instanceof Symbol;
+			if (typeof obj === "symbol") return true;
+			if (!obj || typeof obj !== "object" || !symToString) return false;
+			try {
+				symToString.call(obj);
+				return true;
+			} catch (e) {}
+			return false;
+		}
+		function isBigInt(obj) {
+			if (!obj || typeof obj !== "object" || !bigIntValueOf) return false;
+			try {
+				bigIntValueOf.call(obj);
+				return true;
+			} catch (e) {}
+			return false;
+		}
+		var hasOwn = Object.prototype.hasOwnProperty || function(key) {
+			return key in this;
+		};
+		function has(obj, key) {
+			return hasOwn.call(obj, key);
+		}
+		function toStr(obj) {
+			return objectToString.call(obj);
+		}
+		function nameOf(f) {
+			if (f.name) return f.name;
+			var m = $match.call(functionToString.call(f), /^function\s*([\w$]+)/);
+			if (m) return m[1];
+			return null;
+		}
+		function indexOf(xs, x) {
+			if (xs.indexOf) return xs.indexOf(x);
+			for (var i = 0, l = xs.length; i < l; i++) if (xs[i] === x) return i;
+			return -1;
+		}
+		function isMap(x) {
+			if (!mapSize || !x || typeof x !== "object") return false;
+			try {
+				mapSize.call(x);
+				try {
+					setSize.call(x);
+				} catch (s) {
+					return true;
+				}
+				return x instanceof Map;
+			} catch (e) {}
+			return false;
+		}
+		function isWeakMap(x) {
+			if (!weakMapHas || !x || typeof x !== "object") return false;
+			try {
+				weakMapHas.call(x, weakMapHas);
+				try {
+					weakSetHas.call(x, weakSetHas);
+				} catch (s) {
+					return true;
+				}
+				return x instanceof WeakMap;
+			} catch (e) {}
+			return false;
+		}
+		function isWeakRef(x) {
+			if (!weakRefDeref || !x || typeof x !== "object") return false;
+			try {
+				weakRefDeref.call(x);
+				return true;
+			} catch (e) {}
+			return false;
+		}
+		function isSet(x) {
+			if (!setSize || !x || typeof x !== "object") return false;
+			try {
+				setSize.call(x);
+				try {
+					mapSize.call(x);
+				} catch (m) {
+					return true;
+				}
+				return x instanceof Set;
+			} catch (e) {}
+			return false;
+		}
+		function isWeakSet(x) {
+			if (!weakSetHas || !x || typeof x !== "object") return false;
+			try {
+				weakSetHas.call(x, weakSetHas);
+				try {
+					weakMapHas.call(x, weakMapHas);
+				} catch (s) {
+					return true;
+				}
+				return x instanceof WeakSet;
+			} catch (e) {}
+			return false;
+		}
+		function isElement(x) {
+			if (!x || typeof x !== "object") return false;
+			if (typeof HTMLElement !== "undefined" && x instanceof HTMLElement) return true;
+			return typeof x.nodeName === "string" && typeof x.getAttribute === "function";
+		}
+		function inspectString(str, opts) {
+			if (str.length > opts.maxStringLength) {
+				var remaining = str.length - opts.maxStringLength;
+				var trailer = "... " + remaining + " more character" + (remaining > 1 ? "s" : "");
+				return inspectString($slice.call(str, 0, opts.maxStringLength), opts) + trailer;
+			}
+			var quoteRE = quoteREs[opts.quoteStyle || "single"];
+			quoteRE.lastIndex = 0;
+			return wrapQuotes($replace.call($replace.call(str, quoteRE, "\\$1"), /[\x00-\x1f]/g, lowbyte), "single", opts);
+		}
+		function lowbyte(c) {
+			var n = c.charCodeAt(0);
+			var x = {
+				8: "b",
+				9: "t",
+				10: "n",
+				12: "f",
+				13: "r"
+			}[n];
+			if (x) return "\\" + x;
+			return "\\x" + (n < 16 ? "0" : "") + $toUpperCase.call(n.toString(16));
+		}
+		function markBoxed(str) {
+			return "Object(" + str + ")";
+		}
+		function weakCollectionOf(type) {
+			return type + " { ? }";
+		}
+		function collectionOf(type, size, entries, indent) {
+			var joinedEntries = indent ? indentedJoin(entries, indent) : $join.call(entries, ", ");
+			return type + " (" + size + ") {" + joinedEntries + "}";
+		}
+		function singleLineValues(xs) {
+			for (var i = 0; i < xs.length; i++) if (indexOf(xs[i], "\n") >= 0) return false;
+			return true;
+		}
+		function getIndent(opts, depth) {
+			var baseIndent;
+			if (opts.indent === "	") baseIndent = "	";
+			else if (typeof opts.indent === "number" && opts.indent > 0) baseIndent = $join.call(Array(opts.indent + 1), " ");
+			else return null;
+			return {
+				base: baseIndent,
+				prev: $join.call(Array(depth + 1), baseIndent)
+			};
+		}
+		function indentedJoin(xs, indent) {
+			if (xs.length === 0) return "";
+			var lineJoiner = "\n" + indent.prev + indent.base;
+			return lineJoiner + $join.call(xs, "," + lineJoiner) + "\n" + indent.prev;
+		}
+		function arrObjKeys(obj, inspect) {
+			var isArr = isArray(obj);
+			var xs = [];
+			if (isArr) {
+				xs.length = obj.length;
+				for (var i = 0; i < obj.length; i++) xs[i] = has(obj, i) ? inspect(obj[i], obj) : "";
+			}
+			var syms = typeof gOPS === "function" ? gOPS(obj) : [];
+			var symMap;
+			if (hasShammedSymbols) {
+				symMap = {};
+				for (var k = 0; k < syms.length; k++) symMap["$" + syms[k]] = syms[k];
+			}
+			for (var key in obj) {
+				if (!has(obj, key)) continue;
+				if (isArr && String(Number(key)) === key && key < obj.length) continue;
+				if (hasShammedSymbols && symMap["$" + key] instanceof Symbol) continue;
+				else if ($test.call(/[^\w$]/, key)) xs.push(inspect(key, obj) + ": " + inspect(obj[key], obj));
+				else xs.push(key + ": " + inspect(obj[key], obj));
+			}
+			if (typeof gOPS === "function") {
+				for (var j = 0; j < syms.length; j++) if (isEnumerable.call(obj, syms[j])) xs.push("[" + inspect(syms[j]) + "]: " + inspect(obj[syms[j]], obj));
+			}
+			return xs;
+		}
 	}));
 	//#endregion
 	//#region node_modules/side-channel-weakmap/index.js
@@ -7967,7 +9123,7 @@
 	//#region node_modules/side-channel/index.js
 	var require_side_channel = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var $TypeError = require_type();
-		var inspect = require_object_inspect();
+		var inspect = require_object_inspect$3();
 		var getSideChannelList = require_side_channel_list();
 		var getSideChannelMap = require_side_channel_map();
 		var makeChannel = require_side_channel_weakmap() || getSideChannelMap || getSideChannelList;
@@ -7978,7 +9134,7 @@
 			/** @type {Channel} */
 			var channel = {
 				assert: function(key) {
-					if (!channel.has(key)) throw new $TypeError("Side channel does not contain " + (key && Object(key) === key ? "the given object key" : inspect(key)));
+					if (!channel.has(key)) throw new $TypeError("Side channel does not contain " + inspect(key));
 				},
 				"delete": function(key) {
 					return !!$channelData && $channelData["delete"](key);
@@ -8025,7 +9181,6 @@
 	var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var formats = require_formats();
 		var getSideChannel = require_side_channel();
-		var defineProperty = require_es_define_property();
 		var has = Object.prototype.hasOwnProperty;
 		var isArray = Array.isArray;
 		var overflowChannel = getSideChannel();
@@ -8041,17 +9196,6 @@
 		};
 		var setMaxIndex = function setMaxIndex(obj, maxIndex) {
 			overflowChannel.set(obj, maxIndex);
-		};
-		var conflictChannel = getSideChannel();
-		var markConflict = function markConflict(obj, maxIndex) {
-			conflictChannel.set(obj, maxIndex);
-			return obj;
-		};
-		var isConflict = function isConflict(obj) {
-			return conflictChannel.has(obj);
-		};
-		var getConflictIndex = function getConflictIndex(obj) {
-			return conflictChannel.get(obj);
 		};
 		var hexTable = function() {
 			var array = [];
@@ -8074,57 +9218,21 @@
 			for (var i = 0; i < source.length; ++i) if (typeof source[i] !== "undefined") obj[i] = source[i];
 			return obj;
 		};
-		var setProperty = function setProperty(obj, key, value) {
-			if (key === "__proto__" && defineProperty) defineProperty(obj, key, {
-				configurable: true,
-				enumerable: true,
-				value,
-				writable: true
-			});
-			else obj[key] = value;
-		};
-		var maxNumericIndex = function maxNumericIndex(obj, min) {
-			var max = min;
-			var keys = Object.keys(obj);
-			for (var i = 0; i < keys.length; ++i) {
-				var num = parseInt(keys[i], 10);
-				if (String(num) === keys[i] && num > max) max = num;
-			}
-			return max;
-		};
-		var limitedPair = function limitedPair(first, second, options) {
-			var pair = [first, second];
-			if (options && typeof options.arrayLimit === "number" && pair.length > options.arrayLimit) {
-				if (options.throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
-				return markOverflow(arrayToObject(pair, options), 1);
-			}
-			return pair;
-		};
 		var merge = function merge(target, source, options) {
 			if (!source) return target;
 			if (typeof source !== "object" && typeof source !== "function") {
 				if (isArray(target)) {
 					var nextIndex = target.length;
-					if (options && typeof options.arrayLimit === "number" && nextIndex >= options.arrayLimit) {
-						if (options.throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
-						return markOverflow(arrayToObject(target.concat(source), options), nextIndex);
-					}
+					if (options && typeof options.arrayLimit === "number" && nextIndex > options.arrayLimit) return markOverflow(arrayToObject(target.concat(source), options), nextIndex);
 					target[nextIndex] = source;
 				} else if (target && typeof target === "object") {
 					if (isOverflow(target)) {
 						var newIndex = getMaxIndex(target) + 1;
 						target[newIndex] = source;
 						setMaxIndex(target, newIndex);
-					} else if (options && options.strictMerge && isConflict(target)) {
-						var nextConflict = getConflictIndex(target) + 1;
-						if (options.throwOnLimitExceeded && typeof options.arrayLimit === "number" && nextConflict >= options.arrayLimit) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
-						target[nextConflict] = source;
-						markConflict(target, nextConflict);
-					} else if (options && options.strictMerge) {
-						var conflict = limitedPair(target, source, options);
-						return isArray(conflict) ? markConflict(conflict, 1) : conflict;
-					} else if (options && (options.plainObjects || options.allowPrototypes) || !has.call(Object.prototype, source)) target[source] = true;
-				} else return limitedPair(target, source, options);
+					} else if (options && options.strictMerge) return [target, source];
+					else if (options && (options.plainObjects || options.allowPrototypes) || !has.call(Object.prototype, source)) target[source] = true;
+				} else return [target, source];
 				return target;
 			}
 			if (!target || typeof target !== "object") {
@@ -8141,17 +9249,11 @@
 					return markOverflow(result, getMaxIndex(source) + 1);
 				}
 				var combined = [target].concat(source);
-				if (options && typeof options.arrayLimit === "number" && combined.length > options.arrayLimit) {
-					if (options.throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
-					return markOverflow(arrayToObject(combined, options), combined.length - 1);
-				}
+				if (options && typeof options.arrayLimit === "number" && combined.length > options.arrayLimit) return markOverflow(arrayToObject(combined, options), combined.length - 1);
 				return combined;
 			}
 			var mergeTarget = target;
-			if (isArray(target) && !isArray(source)) {
-				mergeTarget = arrayToObject(target, options);
-				if (isConflict(target)) markConflict(mergeTarget, target.length - 1);
-			}
+			if (isArray(target) && !isArray(source)) mergeTarget = arrayToObject(target, options);
 			if (isArray(target) && isArray(source)) {
 				source.forEach(function(item, i) {
 					if (has.call(target, i)) {
@@ -8160,36 +9262,27 @@
 						else target[target.length] = item;
 					} else target[i] = item;
 				});
-				if (options && typeof options.arrayLimit === "number" && target.length > options.arrayLimit) {
-					if (options.throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
-					return markOverflow(arrayToObject(target, options), target.length - 1);
-				}
 				return target;
 			}
 			return Object.keys(source).reduce(function(acc, key) {
 				var value = source[key];
-				if (has.call(acc, key)) setProperty(acc, key, merge(acc[key], value, options));
-				else setProperty(acc, key, value);
-				if (isOverflow(source) && !isOverflow(acc)) markOverflow(acc, maxNumericIndex(acc, getMaxIndex(source)));
+				if (has.call(acc, key)) acc[key] = merge(acc[key], value, options);
+				else acc[key] = value;
+				if (isOverflow(source) && !isOverflow(acc)) markOverflow(acc, getMaxIndex(source));
 				if (isOverflow(acc)) {
 					var keyNum = parseInt(key, 10);
 					if (String(keyNum) === key && keyNum >= 0 && keyNum > getMaxIndex(acc)) setMaxIndex(acc, keyNum);
-				}
-				if (isConflict(acc)) {
-					var conflictKey = parseInt(key, 10);
-					if (String(conflictKey) === key && conflictKey > getConflictIndex(acc)) markConflict(acc, conflictKey);
 				}
 				return acc;
 			}, mergeTarget);
 		};
 		var assign = function assignSingleSource(target, source) {
 			return Object.keys(source).reduce(function(acc, key) {
-				setProperty(acc, key, source[key]);
+				acc[key] = source[key];
 				return acc;
 			}, target);
 		};
 		var decode = function(str, defaultDecoder, charset) {
-			if (typeof str === "string" && str.indexOf("%") === -1) return str.indexOf("+") === -1 ? str : str.replace(/\+/g, " ");
 			var strWithoutPlus = str.replace(/\+/g, " ");
 			if (charset === "iso-8859-1") return strWithoutPlus.replace(/%[0-9a-f]{2}/gi, unescape);
 			try {
@@ -8198,59 +9291,19 @@
 				return strWithoutPlus;
 			}
 		};
-		var hasToPrimitive = typeof Symbol === "function" && typeof Symbol.toPrimitive === "symbol";
-		var arrayJoin = Array.prototype.join;
-		var arrayToString = Array.prototype.toString;
-		var objectToString = Object.prototype.toString;
-		var toCoercible = function toCoercible(value, joining) {
-			if (!value || typeof value !== "object" && typeof value !== "function") return value;
-			if (hasToPrimitive && value[Symbol.toPrimitive] != null) return value;
-			if (isArray(value) && value.toString === arrayToString && value.join === arrayJoin) {
-				var ancestors = joining || getSideChannel();
-				if (ancestors.has(value)) return "";
-				ancestors.set(value, true);
-				var copy;
-				for (var i = 0; i < value.length; i += 1) {
-					var item = value[i];
-					var coerced = toCoercible(item, ancestors);
-					if (!copy && coerced !== item) {
-						copy = [];
-						for (var j = 0; j < i; j += 1) copy[j] = value[j];
-					}
-					if (copy) copy[i] = coerced;
-				}
-				ancestors["delete"](value);
-				return copy || value;
-			}
-			if (typeof value.toString === "function") return value;
-			var valueOf = value.valueOf;
-			if (typeof valueOf === "function") {
-				var primitive = valueOf.call(value);
-				if (!primitive || typeof primitive !== "object" && typeof primitive !== "function") return String(primitive);
-			}
-			return objectToString.call(value);
-		};
 		var limit = 1024;
 		module.exports = {
 			arrayToObject,
 			assign,
-			combine: function combine(a, b, arrayLimit, plainObjects, throwOnLimitExceeded) {
+			combine: function combine(a, b, arrayLimit, plainObjects) {
 				if (isOverflow(a)) {
-					if (throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + arrayLimit + " element" + (arrayLimit === 1 ? "" : "s") + " allowed in an array.");
-					var bValues = isArray(b) ? b : [b];
-					var newIndex = getMaxIndex(a);
-					for (var i = 0; i < bValues.length; ++i) {
-						newIndex += 1;
-						a[newIndex] = bValues[i];
-					}
+					var newIndex = getMaxIndex(a) + 1;
+					a[newIndex] = b;
 					setMaxIndex(a, newIndex);
 					return a;
 				}
 				var result = [].concat(a, b);
-				if (result.length > arrayLimit) {
-					if (throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + arrayLimit + " element" + (arrayLimit === 1 ? "" : "s") + " allowed in an array.");
-					return markOverflow(arrayToObject(result, { plainObjects }), result.length - 1);
-				}
+				if (result.length > arrayLimit) return markOverflow(arrayToObject(result, { plainObjects }), result.length - 1);
 				return result;
 			},
 			compact: function compact(value) {
@@ -8258,7 +9311,7 @@
 					obj: { o: value },
 					prop: "o"
 				}];
-				var refs = getSideChannel();
+				var refs = [];
 				for (var i = 0; i < queue.length; ++i) {
 					var item = queue[i];
 					var obj = item.obj[item.prop];
@@ -8266,12 +9319,12 @@
 					for (var j = 0; j < keys.length; ++j) {
 						var key = keys[j];
 						var val = obj[key];
-						if (typeof val === "object" && val !== null && !refs.has(val)) {
+						if (typeof val === "object" && val !== null && refs.indexOf(val) === -1) {
 							queue[queue.length] = {
 								obj,
 								prop: key
 							};
-							refs.set(val, true);
+							refs[refs.length] = val;
 						}
 					}
 				}
@@ -8283,20 +9336,13 @@
 				if (str.length === 0) return str;
 				var string = str;
 				if (typeof str === "symbol") string = Symbol.prototype.toString.call(str);
-				else if (typeof str !== "string") string = String(toCoercible(str));
+				else if (typeof str !== "string") string = String(str);
 				if (charset === "iso-8859-1") return escape(string).replace(/%u[0-9a-f]{4}/gi, function($0) {
 					return "%26%23" + parseInt($0.slice(2), 16) + "%3B";
-				}).replace(/\+/g, "%2B");
+				});
 				var out = "";
 				for (var j = 0; j < string.length; j += limit) {
 					var segment = string.length >= limit ? string.slice(j, j + limit) : string;
-					if (j + limit < string.length) {
-						var last = segment.charCodeAt(segment.length - 1);
-						if (last >= 55296 && last <= 56319) {
-							segment = segment.slice(0, -1);
-							j -= 1;
-						}
-					}
 					var arr = [];
 					for (var i = 0; i < segment.length; ++i) {
 						var c = segment.charCodeAt(i);
@@ -8326,7 +9372,7 @@
 			},
 			isBuffer: function isBuffer(obj) {
 				if (!obj || typeof obj !== "object") return false;
-				return !!(obj.constructor && typeof obj.constructor.isBuffer === "function" && obj.constructor.isBuffer(obj));
+				return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
 			},
 			isOverflow,
 			isRegExp: function isRegExp(obj) {
@@ -8341,8 +9387,7 @@
 				}
 				return fn(val);
 			},
-			merge,
-			toCoercible
+			merge
 		};
 	}));
 	//#endregion
@@ -8380,7 +9425,6 @@
 			charsetSentinel: false,
 			commaRoundTrip: false,
 			delimiter: "&",
-			depth: Infinity,
 			encode: true,
 			encodeDotInKeys: false,
 			encoder: utils.encode,
@@ -8399,9 +9443,8 @@
 			return typeof v === "string" || typeof v === "number" || typeof v === "boolean" || typeof v === "symbol" || typeof v === "bigint";
 		};
 		var sentinel = {};
-		var stringify = function stringify(object, prefix, generateArrayPrefix, commaRoundTrip, allowEmptyArrays, strictNullHandling, skipNulls, encodeDotInKeys, encoder, filter, sort, allowDots, serializeDate, format, formatter, encodeValuesOnly, charset, sideChannel, depth, currentDepth) {
+		var stringify = function stringify(object, prefix, generateArrayPrefix, commaRoundTrip, allowEmptyArrays, strictNullHandling, skipNulls, encodeDotInKeys, encoder, filter, sort, allowDots, serializeDate, format, formatter, encodeValuesOnly, charset, sideChannel) {
 			var obj = object;
-			if (currentDepth > depth) throw new RangeError("Input depth exceeded depth option of " + depth);
 			var tmpSc = sideChannel;
 			var step = 0;
 			var findFlag = false;
@@ -8412,8 +9455,8 @@
 				else findFlag = true;
 				if (typeof tmpSc.get(sentinel) === "undefined") step = 0;
 			}
-			obj = typeof filter === "function" ? filter(prefix, obj) : obj;
-			if (obj instanceof Date) obj = serializeDate(obj);
+			if (typeof filter === "function") obj = filter(prefix, obj);
+			else if (obj instanceof Date) obj = serializeDate(obj);
 			else if (generateArrayPrefix === "comma" && isArray(obj)) obj = utils.maybeMap(obj, function(value) {
 				if (value instanceof Date) return serializeDate(value);
 				return value;
@@ -8431,17 +9474,17 @@
 			var objKeys;
 			if (generateArrayPrefix === "comma" && isArray(obj)) {
 				if (encodeValuesOnly && encoder) obj = utils.maybeMap(obj, function(v) {
-					return v == null ? v : encoder(v, defaults.encoder, charset, "value", format);
+					return v == null ? v : encoder(v);
 				});
-				objKeys = [{ value: obj.length > 0 ? utils.toCoercible(obj).join(",") || null : void 0 }];
+				objKeys = [{ value: obj.length > 0 ? obj.join(",") || null : void 0 }];
 			} else if (isArray(filter)) objKeys = filter;
 			else {
 				var keys = Object.keys(obj);
 				objKeys = sort ? keys.sort(sort) : keys;
 			}
-			var encodedPrefix = String(prefix);
+			var encodedPrefix = encodeDotInKeys ? String(prefix).replace(/\./g, "%2E") : String(prefix);
 			var adjustedPrefix = commaRoundTrip && isArray(obj) && obj.length === 1 ? encodedPrefix + "[]" : encodedPrefix;
-			if (allowEmptyArrays && isArray(obj) && obj.length === 0 && Object.keys(obj).length === 0) return adjustedPrefix + "[]";
+			if (allowEmptyArrays && isArray(obj) && obj.length === 0) return adjustedPrefix + "[]";
 			for (var j = 0; j < objKeys.length; ++j) {
 				var key = objKeys[j];
 				var value = typeof key === "object" && key && typeof key.value !== "undefined" ? key.value : obj[key];
@@ -8451,7 +9494,7 @@
 				sideChannel.set(object, step);
 				var valueSideChannel = getSideChannel();
 				valueSideChannel.set(sentinel, sideChannel);
-				pushToArray(values, stringify(value, keyPrefix, generateArrayPrefix, commaRoundTrip, allowEmptyArrays, strictNullHandling, skipNulls, encodeDotInKeys, generateArrayPrefix === "comma" && encodeValuesOnly && isArray(obj) ? null : encoder, filter, sort, allowDots, serializeDate, format, formatter, encodeValuesOnly, charset, valueSideChannel, depth, currentDepth + 1));
+				pushToArray(values, stringify(value, keyPrefix, generateArrayPrefix, commaRoundTrip, allowEmptyArrays, strictNullHandling, skipNulls, encodeDotInKeys, generateArrayPrefix === "comma" && encodeValuesOnly && isArray(obj) ? null : encoder, filter, sort, allowDots, serializeDate, format, formatter, encodeValuesOnly, charset, valueSideChannel));
 			}
 			return values;
 		};
@@ -8471,7 +9514,7 @@
 			var filter = defaults.filter;
 			if (typeof opts.filter === "function" || isArray(opts.filter)) filter = opts.filter;
 			var arrayFormat;
-			if (has.call(arrayPrefixGenerators, opts.arrayFormat)) arrayFormat = opts.arrayFormat;
+			if (opts.arrayFormat in arrayPrefixGenerators) arrayFormat = opts.arrayFormat;
 			else if ("indices" in opts) arrayFormat = opts.indices ? "indices" : "repeat";
 			else arrayFormat = defaults.arrayFormat;
 			if ("commaRoundTrip" in opts && typeof opts.commaRoundTrip !== "boolean") throw new TypeError("`commaRoundTrip` must be a boolean, or absent");
@@ -8485,7 +9528,6 @@
 				charsetSentinel: typeof opts.charsetSentinel === "boolean" ? opts.charsetSentinel : defaults.charsetSentinel,
 				commaRoundTrip: !!opts.commaRoundTrip,
 				delimiter: typeof opts.delimiter === "undefined" ? defaults.delimiter : opts.delimiter,
-				depth: typeof opts.depth === "number" ? opts.depth : defaults.depth,
 				encode: typeof opts.encode === "boolean" ? opts.encode : defaults.encode,
 				encodeDotInKeys: typeof opts.encodeDotInKeys === "boolean" ? opts.encodeDotInKeys : defaults.encodeDotInKeys,
 				encoder: typeof opts.encoder === "function" ? opts.encoder : defaults.encoder,
@@ -8523,7 +9565,7 @@
 				if (typeof key === "undefined" || key === null) continue;
 				var value = obj[key];
 				if (options.skipNulls && value === null) continue;
-				pushToArray(keys, stringify(value, options.encodeDotInKeys ? String(key).replace(/\./g, "%2E") : String(key), generateArrayPrefix, commaRoundTrip, options.allowEmptyArrays, options.strictNullHandling, options.skipNulls, options.encodeDotInKeys, options.encode ? options.encoder : null, options.filter, options.sort, options.allowDots, options.serializeDate, options.format, options.formatter, options.encodeValuesOnly, options.charset, sideChannel, options.depth, 0));
+				pushToArray(keys, stringify(value, key, generateArrayPrefix, commaRoundTrip, options.allowEmptyArrays, options.strictNullHandling, options.skipNulls, options.encodeDotInKeys, options.encode ? options.encoder : null, options.filter, options.sort, options.allowDots, options.serializeDate, options.format, options.formatter, options.encodeValuesOnly, options.charset, sideChannel));
 			}
 			var joined = keys.join(options.delimiter);
 			var prefix = options.addQueryPrefix === true ? "?" : "";
@@ -8535,53 +9577,9 @@
 	//#endregion
 	//#region node_modules/qs/lib/parse.js
 	var require_parse = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-		var getSideChannel = require_side_channel();
 		var utils = require_utils();
 		var has = Object.prototype.hasOwnProperty;
 		var isArray = Array.isArray;
-		var getPrototypeOf = Object.getPrototypeOf;
-		var isPlainContainer = function isPlainContainer(value) {
-			if (!value || typeof value !== "object") return false;
-			if (isArray(value)) return true;
-			var proto = getPrototypeOf(value);
-			return proto === Object.prototype || proto === null;
-		};
-		var emptyCopyOf = function emptyCopyOf(value) {
-			if (isArray(value)) {
-				var arr = [];
-				arr.length = value.length;
-				return arr;
-			}
-			return getPrototypeOf(value) === null ? { __proto__: null } : {};
-		};
-		var copyInput = function copyInput(input) {
-			var copies = getSideChannel();
-			var result = {};
-			var queue = [{
-				source: input,
-				target: result
-			}];
-			for (var i = 0; i < queue.length; ++i) {
-				var source = queue[i].source;
-				var target = queue[i].target;
-				var keys = Object.keys(source);
-				for (var j = 0; j < keys.length; ++j) {
-					var value = source[keys[j]];
-					if (isPlainContainer(value)) {
-						if (!copies.has(value)) {
-							var copy = emptyCopyOf(value);
-							copies.set(value, copy);
-							queue[queue.length] = {
-								source: value,
-								target: copy
-							};
-						}
-						target[keys[j]] = copies.get(value);
-					} else target[keys[j]] = value;
-				}
-			}
-			return result;
-		};
 		var defaults = {
 			allowDots: false,
 			allowEmptyArrays: false,
@@ -8612,18 +9610,7 @@
 			});
 		};
 		var parseArrayValue = function(val, options, currentArrayLength) {
-			if (val && typeof val === "string" && options.comma && val.indexOf(",") > -1) {
-				if (options.throwOnLimitExceeded) {
-					var commaCount = 0;
-					var commaIndex = val.indexOf(",");
-					while (commaIndex > -1) {
-						commaCount += 1;
-						if (commaCount >= options.arrayLimit) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
-						commaIndex = val.indexOf(",", commaIndex + 1);
-					}
-				}
-				return val.split(",");
-			}
+			if (val && typeof val === "string" && options.comma && val.indexOf(",") > -1) return val.split(",");
 			if (options.throwOnLimitExceeded && currentArrayLength >= options.arrayLimit) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
 			return val;
 		};
@@ -8652,7 +9639,6 @@
 				var part = parts[i];
 				var bracketEqualsPos = part.indexOf("]=");
 				var pos = bracketEqualsPos === -1 ? part.indexOf("=") : bracketEqualsPos + 1;
-				var isEmptyBracketKey = pos > 1 && part.slice(pos - 2, pos) === "[]";
 				var key;
 				var val;
 				if (pos === -1) {
@@ -8665,11 +9651,14 @@
 					});
 				}
 				if (val && options.interpretNumericEntities && charset === "iso-8859-1") val = interpretNumericEntities(String(val));
-				if (isEmptyBracketKey) val = isArray(val) ? [val] : val;
-				if (options.comma && isArray(val) && val.length > options.arrayLimit) val = utils.combine([], val, options.arrayLimit, options.plainObjects, options.throwOnLimitExceeded);
+				if (part.indexOf("[]=") > -1) val = isArray(val) ? [val] : val;
+				if (options.comma && isArray(val) && val.length > options.arrayLimit) {
+					if (options.throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
+					val = utils.combine([], val, options.arrayLimit, options.plainObjects);
+				}
 				if (key !== null) {
 					var existing = has.call(obj, key);
-					if (existing && (options.duplicates === "combine" || isEmptyBracketKey)) obj[key] = utils.combine(obj[key], val, options.arrayLimit, options.plainObjects, options.throwOnLimitExceeded);
+					if (existing && (options.duplicates === "combine" || part.indexOf("[]=") > -1)) obj[key] = utils.combine(obj[key], val, options.arrayLimit, options.plainObjects);
 					else if (!existing || options.duplicates === "last") obj[key] = val;
 				}
 			}
@@ -8686,7 +9675,7 @@
 				var obj;
 				var root = chain[i];
 				if (root === "[]" && options.parseArrays) if (utils.isOverflow(leaf)) obj = leaf;
-				else obj = options.allowEmptyArrays && (leaf === "" || options.strictNullHandling && leaf === null) ? [] : utils.combine([], leaf, options.arrayLimit, options.plainObjects, options.throwOnLimitExceeded);
+				else obj = options.allowEmptyArrays && (leaf === "" || options.strictNullHandling && leaf === null) ? [] : utils.combine([], leaf, options.arrayLimit, options.plainObjects);
 				else {
 					obj = options.plainObjects ? { __proto__: null } : {};
 					var cleanRoot = root.charAt(0) === "[" && root.charAt(root.length - 1) === "]" ? root.slice(1, -1) : root;
@@ -8707,29 +9696,8 @@
 			}
 			return leaf;
 		};
-		var topLevelDotsToBrackets = function topLevelDotsToBrackets(key) {
-			var result = "";
-			var depth = 0;
-			for (var i = 0; i < key.length; i += 1) {
-				var cu = key.charCodeAt(i);
-				if (cu === 91) {
-					depth += 1;
-					result += "[";
-				} else if (cu === 93) {
-					if (depth > 0) depth -= 1;
-					result += "]";
-				} else if (cu === 46 && depth === 0 && i + 1 < key.length && key.charCodeAt(i + 1) !== 46 && key.charCodeAt(i + 1) !== 91) {
-					var start = i + 1;
-					var j = start;
-					while (j < key.length && key.charCodeAt(j) !== 46 && key.charCodeAt(j) !== 91) j += 1;
-					result += "[" + key.slice(start, j) + "]";
-					i = j - 1;
-				} else result += key.charAt(i);
-			}
-			return result;
-		};
 		var splitKeyIntoSegments = function splitKeyIntoSegments(originalKey, options) {
-			var key = options.allowDots ? topLevelDotsToBrackets(originalKey) : originalKey;
+			var key = options.allowDots ? originalKey.replace(/\.([^.[]+)/g, "[$1]") : originalKey;
 			if (options.depth <= 0) {
 				if (!options.plainObjects && has.call(Object.prototype, key)) {
 					if (!options.allowPrototypes) return;
@@ -8822,7 +9790,7 @@
 		module.exports = function(str, opts) {
 			var options = normalizeParseOptions(opts);
 			if (str === "" || str === null || typeof str === "undefined") return options.plainObjects ? { __proto__: null } : {};
-			var tempObj = typeof str === "string" ? parseValues(str, options) : copyInput(str);
+			var tempObj = typeof str === "string" ? parseValues(str, options) : str;
 			var obj = options.plainObjects ? { __proto__: null } : {};
 			var keys = Object.keys(tempObj);
 			for (var i = 0; i < keys.length; ++i) {
