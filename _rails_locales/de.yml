@@ -8,6 +8,19 @@ de:
         record_invalid: 'Überprüfung fehlgeschlagen: %{errors}'
         taken: ist bereits vergeben
         blank: ist leer
+      models:
+        subtitle:
+          attributes:
+            content:
+              invalid: muss eine WebVTT-Datei sein (beginnt mit WEBVTT)
+            language:
+              invalid: ist kein Sprachcode
+  media_player_config_saved: Player-Konfiguration gespeichert.
+  media_player_config_invalid: Die Konfiguration ist kein gültiges JSON-Objekt.
+  media_player_subtitle_saved: Untertitel gespeichert.
+  media_player_subtitle_deleted: Untertitel gelöscht.
+  media_player_subtitle_file_missing: Bitte eine VTT-Datei auswählen.
+  media_player_subtitle_too_large: Die VTT-Datei ist zu gross.
   error_410_title: Entfernt
   error_410_message: Inhalt wurde entfernt und ist nicht mehr verfügbar.
   flash:
@@ -998,3 +1011,32 @@ de:
   media_entry_notice_new_versions: 'Für diesen Medieneintrag sind neuere Versionen vorhanden:'
   read_more_button: Mehr anzeigen
   read_less_button: Weniger anzeigen
+  media_player_settings_title: Wiedergabe
+  media_player_media_config: Player-Konfiguration (JSON) / DEV-MODE
+  media_player_media_config_hint_pre: 'JSON-Konfiguration für '
+  media_player_media_config_hint_post: >-
+    : headers, overlays (stop_media_during_overlay true pausiert die Wiedergabe,
+    solange das Overlay sichtbar ist) VTT-Dateien für Untertitel/Kapitel werden
+    unten hochgeladen.
+  media_player_save_config: Konfiguration speichern
+  media_player_subtitles: Untertitel und Kapitel
+  media_player_no_subtitles: Keine VTT-Dateien.
+  media_player_uploaded_subtitles: Hochgeladene Untertitel
+  media_player_language: Sprache
+  media_player_label: Bezeichnung
+  media_player_kind: Art
+  media_player_kind_hint: >-
+    Untertitel sind der gesprochene Text. Kapitel sind Abschnitte auf der
+    Zeitleiste.
+  media_player_kind_subtitles: Untertitel
+  media_player_kind_chapters: Kapitel
+  media_player_default: Standard
+  media_player_default_hint: >-
+    Die Datei in der aktuellen Sprache der Oberfläche (Deutsch oder Englisch)
+    wird vorausgewählt.
+  media_player_file: VTT-Datei
+  media_player_choose_file: Datei auswählen
+  media_player_no_file: Keine ausgewählt
+  media_player_upload: Hochladen
+  media_player_delete: Löschen
+  media_player_delete_confirm: Diese VTT-Datei löschen?

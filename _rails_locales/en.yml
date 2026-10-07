@@ -4,6 +4,13 @@ en:
       messages:
         record_invalid: 'Validation failed: %{errors}'
         taken: has already been taken
+      models:
+        subtitle:
+          attributes:
+            content:
+              invalid: must be a WebVTT file (starts with WEBVTT)
+            language:
+              invalid: is not a language code
   flash:
     actions:
       create:
@@ -15,6 +22,12 @@ en:
       destroy:
         success: '%{resource_name} was successfully destroyed.'
         error: '%{resource_name} could not be destroyed.'
+  media_player_config_saved: Player config saved.
+  media_player_config_invalid: Config is not a valid JSON object.
+  media_player_subtitle_saved: Subtitle saved.
+  media_player_subtitle_deleted: Subtitle deleted.
+  media_player_subtitle_file_missing: Choose a VTT file.
+  media_player_subtitle_too_large: The VTT file is too large.
   error_410_title: Gone
   error_410_message: Content has been removed and is no longer available.
   helpers:
@@ -971,3 +984,28 @@ en:
   media_entry_notice_new_versions: 'Newer versions are available for this media entry:'
   read_more_button: Show more
   read_less_button: Show less
+  media_player_settings_title: Playback
+  media_player_media_config: Player config (JSON) / DEV-MODE
+  media_player_media_config_hint_pre: 'JSON configuration for '
+  media_player_media_config_hint_post: >-
+    : headers, overlays (stop_media_during_overlay true pauses playback while
+    the overlay is visible) VTT files for subtitles and chapters are uploaded
+    below.
+  media_player_save_config: Save config
+  media_player_subtitles: Subtitles and chapters
+  media_player_no_subtitles: No VTT files.
+  media_player_uploaded_subtitles: Uploaded subtitles
+  media_player_language: Language
+  media_player_label: Label
+  media_player_kind: Kind
+  media_player_kind_hint: Subtitles are the spoken text. Chapters are sections on the timeline.
+  media_player_kind_subtitles: Subtitles
+  media_player_kind_chapters: Chapters
+  media_player_default: Default
+  media_player_default_hint: The file in the current interface language (German or English) is selected.
+  media_player_file: VTT file
+  media_player_choose_file: Choose file
+  media_player_no_file: No file chosen
+  media_player_upload: Upload
+  media_player_delete: Delete
+  media_player_delete_confirm: Delete this VTT file?
