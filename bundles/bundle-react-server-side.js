@@ -17123,7 +17123,7 @@ var require = (function() {
 		const rank = (type) => type === "audio/mpeg" ? 0 : 1;
 		return sources.filter((source) => source && source.src).slice().sort((a, b) => rank(a.type) - rank(b.type));
 	}
-	var import_react$195, import_prop_types$57, import_classnames$34, defaultProps$5, propTypes$8, CAST_CHROME_STYLE, AUDIO_CHROME_STYLE, VOLUME_POPOVER_STYLE, TitleOverlay, VideoJS;
+	var import_react$195, import_prop_types$57, import_classnames$34, defaultProps$5, propTypes$8, CAST_CHROME_STYLE, AUDIO_CHROME_STYLE, VOLUME_POPOVER_STYLE, AUDIO_VOLUME_ALWAYS_STYLE, TitleOverlay, VideoJS;
 	var init_VideoJs = __esmMin((() => {
 		import_react$195 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$57 = /* @__PURE__ */ __toESM(require_prop_types());
@@ -17221,6 +17221,14 @@ var require = (function() {
     padding-inline: calc(var(--media-spacing) * 3) !important;
   }
 `;
+		AUDIO_VOLUME_ALWAYS_STYLE = `
+  media-volume-popover {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+`;
 		TitleOverlay = class extends import_react$195.Component {
 			render() {
 				const { title, logoTitle, subtitle, link, hidden, logo } = this.props;
@@ -17267,7 +17275,8 @@ var require = (function() {
 			onAudioAreaClick(event) {
 				const media = this.mediaRef.current;
 				if (!media) return;
-				if ((typeof event.composedPath === "function" ? event.composedPath() : [event.target]).some((node) => {
+				const native = event.nativeEvent || event;
+				if ((typeof native.composedPath === "function" ? native.composedPath() : [event.target]).some((node) => {
 					if (!node || node === event.currentTarget) return false;
 					if (!node.tagName) return false;
 					const tag = node.tagName.toLowerCase();
@@ -17373,7 +17382,7 @@ var require = (function() {
 				if (!shadow.querySelector("#madek-volume-popover")) {
 					const style = document.createElement("style");
 					style.id = "madek-volume-popover";
-					style.textContent = VOLUME_POPOVER_STYLE;
+					style.textContent = VOLUME_POPOVER_STYLE + (this.props.mode === "audio" ? AUDIO_VOLUME_ALWAYS_STYLE : "");
 					shadow.append(style);
 				}
 				if (!pop.dataset.madekVolumePinned) {
