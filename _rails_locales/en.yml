@@ -474,6 +474,16 @@ en:
   media_entry_upload_btn: Upload
   media_entry_was_disfavored: Media entry was removed from favorites.
   media_entry_was_favored: Media entry was added to favorites.
+  media_entry_xmp_import_cancel: Cancel
+  media_entry_xmp_import_flash_failed: 'The following metadata could not be imported: '
+  media_entry_xmp_import_flash_invalid_file: Please select an XMP file (.xmp).
+  media_entry_xmp_import_flash_nothing: The XMP file contains no importable metadata.
+  media_entry_xmp_import_flash_success: 'Metadata imported from XMP sidecar: '
+  media_entry_xmp_import_hint: >-
+    Import metadata from an XMP sidecar file (.xmp). Existing values will be
+    overwritten.
+  media_entry_xmp_import_submit: Import
+  media_entry_xmp_import_title: Import XMP sidecar
   meta_data_action_delete_btn: Delete
   meta_data_action_edit_btn: Edit
   meta_data_batch_action_remove_meta_data: Delete data for all content
@@ -677,6 +687,7 @@ en:
   resource_action_media_entry_select_collection: Add to/remove from set
   resource_action_media_entry_share: Share media entry
   resource_action_media_entry_update_file: Replace media entry
+  resource_action_media_entry_xmp_import: Import XMP sidecar
   resource_action_more_actions: Further actions
   resource_action_show_in_admin: Show in Admin Interface
   resource_ask_delete_cancel: Cancel
