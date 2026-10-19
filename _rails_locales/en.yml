@@ -474,6 +474,19 @@ en:
   media_entry_upload_btn: Upload
   media_entry_was_disfavored: Media entry was removed from favorites.
   media_entry_was_favored: Media entry was added to favorites.
+  media_entry_xmp_import_cancel: Cancel
+  media_entry_xmp_import_flash_failed: 'The following metadata could not be imported: '
+  media_entry_xmp_import_flash_invalid_file: Please select an XMP file (.xmp).
+  media_entry_xmp_import_flash_nothing: The XMP file contains no importable metadata.
+  media_entry_xmp_import_flash_success: 'Metadata imported from XMP sidecar: '
+  media_entry_xmp_import_flash_unreadable: 'The XMP file could not be read: '
+  media_entry_xmp_import_hint: >-
+    Import metadata from an XMP sidecar file (.xmp). Only fields that have a
+    value in the XMP file will be overwritten; all other metadata remains
+    unchanged.
+  media_entry_xmp_import_submit: Import
+  media_entry_xmp_import_title: Import XMP sidecar
+  media_entry_xmp_sidecars_title: Imported XMP sidecars
   meta_data_action_delete_btn: Delete
   meta_data_action_edit_btn: Edit
   meta_data_batch_action_remove_meta_data: Delete data for all content
@@ -677,6 +690,7 @@ en:
   resource_action_media_entry_select_collection: Add to/remove from set
   resource_action_media_entry_share: Share media entry
   resource_action_media_entry_update_file: Replace media entry
+  resource_action_media_entry_xmp_import: Import XMP sidecar
   resource_action_more_actions: Further actions
   resource_action_show_in_admin: Show in Admin Interface
   resource_ask_delete_cancel: Cancel
@@ -968,6 +982,16 @@ en:
   workgroup_members_table_is_member: Member?
   workgroup_members_table_login: Login
   workgroup_members_table_title: Members
+  xmp_namespace_description: Description
+  xmp_namespace_download_template: Download XMP template
+  xmp_namespace_exiftool_key: ExifTool key
+  xmp_namespace_meta_keys: Imported into
+  xmp_namespace_no_properties: No properties defined.
+  xmp_namespace_properties: Properties
+  xmp_namespace_uri: Namespace URI
+  xmp_namespace_value_type: Value type
+  xmp_namespaces_empty: No XMP namespaces defined.
+  xmp_namespaces_title: XMP namespaces
   media_entry_notice_new_versions: 'Newer versions are available for this media entry:'
   read_more_button: Show more
   read_less_button: Show less
