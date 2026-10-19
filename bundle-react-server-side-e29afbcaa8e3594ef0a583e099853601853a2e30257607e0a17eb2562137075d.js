@@ -16157,21 +16157,21 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/ActionsBar.jsx
 	var ActionsBar_exports = /* @__PURE__ */ __exportAll({ default: () => ActionsBar$2 });
-	var import_react$199, ActionsBar$2;
+	var import_react$201, ActionsBar$2;
 	var init_ActionsBar = __esmMin((() => {
-		import_react$199 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$201 = /* @__PURE__ */ __toESM(require_react$1());
 		ActionsBar$2 = ({ children }) => {
-			return /*#__PURE__*/ import_react$199.createElement("div", { className: "ui-actions" }, children);
+			return /*#__PURE__*/ import_react$201.createElement("div", { className: "ui-actions" }, children);
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/FormButton.jsx
 	var FormButton_exports = /* @__PURE__ */ __exportAll({ default: () => FormButton });
-	var import_react$198, FormButton;
+	var import_react$200, FormButton;
 	var init_FormButton = __esmMin((() => {
-		import_react$198 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$200 = /* @__PURE__ */ __toESM(require_react$1());
 		FormButton = ({ text, onClick, disabled }) => {
-			return /*#__PURE__*/ import_react$198.createElement("button", {
+			return /*#__PURE__*/ import_react$200.createElement("button", {
 				className: "primary-button",
 				type: "submit",
 				onClick,
@@ -16774,7 +16774,7 @@ var require = (function() {
 	var init_i18n_translate = __esmMin((() => {
 		init_lodash();
 		init_parse_translations_from_csv();
-		translationsList = readTranslationsFromCSV("key,de,en,comment\najax_form_connection_error,Verbindungsfehler. Bitte versuchen Sie es noch einmal.,Connection error. Please try again.,\najax_form_no_longer_authorized,Sie sind für diese Aktion nicht mehr authorisiert.,You are no longer authorized to do this.,\najax_form_unexpected_error,Es gab einen unerwarteten Server-Fehler.,There was an unexpected server error.,\najax_form_validation_error_unparsable,Validation error with unparsable errors.,Validation error with unparsable errors.,\"Formular speichern, Edge case: Server gibt Fehlermeldung UND sie kann nicht gelesen werden.\"\najax_form_validation_error_without_any_data,Validation error without any data.,Validation error without any data.,\"Formular speichern, Edge case: Server gibt Fehlermeldungs-Code aber sonst keinen Inhalt\"\najax_form_validation_error_without_error_data,Validation error without error data.,Validation error without error data.,\"Formular speichern, Edge case: Server gibt Fehlermeldung, aber keine Details\"\napi_tokens_callback_description,Token wird für eine externe Applikation erstellt.,Token is being created for an external application.,\napi_tokens_create_cancel,Abbrechen,Cancel,\napi_tokens_create_description,Beschreibung,Description,\napi_tokens_create_submit,Token anlegen,Create token,\napi_tokens_create_title,Neuen Token hinzufügen,Add new token,\napi_tokens_created_back_btn,Zurück zu allen Tokens.,Back to all tokens.,\napi_tokens_created_callback_btn,Weiter zur Applikation,Continue to the application,\napi_tokens_created_callback_description,\"Falls die Weiterleitung nicht funktioniert, kann der Token auch manuell kopiert werden:\",\"If the redirect does not work, the token can also be copied manually:\",\napi_tokens_created_notice,Dieser Token wird nur einmal angezeigt. Bitte speichern Sie ihn jetzt.,This token is displayed only once. Please save it now.,\napi_tokens_created_title,Es wurde ein neuer Token erstellt.,A new token was created.,\napi_tokens_head_id,ID,ID,\napi_tokens_head_name,Name,Name,\napi_tokens_head_permissions,Berechtigungen,Permissions,\napi_tokens_head_valid_since,Gültig seit,Valid from,\napi_tokens_head_valid_until,Gültig bis,Valid to,\napi_tokens_list_created_hint_pre,Erstellt: ,Created: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_new_button,Neuen Token erstellen,Create new token,\napi_tokens_list_no_description,(Keine Beschreibung),No description),\"Platzhalter-Text, falls ein Token keine Beschreibung hat.\"\napi_tokens_list_revoke_btn_hint,Token zurückziehen.,Revoke token.,\napi_tokens_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Token zurückziehen wollen?\",Are you sure you want to revoke the token?,\napi_tokens_list_revoked_title,Abgelaufene und zurückgezogene Tokens,Expired and revoked tokens,\napi_tokens_list_scope_off,Nein,No,\napi_tokens_list_scope_on,Ja,Yes,\napi_tokens_list_scope_read,Lesen,Read,\napi_tokens_list_scope_write,Schreiben,Write,\napp_autocomplete_displayname_users,Nutzer/innen,Users,\napp_autocomplete_displayname_delegations,Verantwortungs-Gruppen,Responsibility groups,\napp_autocomplete_no_results,Keine Ergebnisse.,No results.,\napp_autocomplete_user_delegation_postfix, (Verantwortungs-Gruppe), (Responsibility group)\napp_autocomplete_enter_term,Suchbegriff eingeben für weitere Ergebnisse,Enter search term for further results,\napp_autocomplete_extend_term,Suchbegriff erweitern für weitere Ergebnisse,Extend search term for further results,\napp_confirm_form_leave_msg,\"Diese Seite bittet Sie zu bestätigen, dass Sie die Seite verlassen möchten. Daten, die Sie eingegeben haben, werden unter Umständen nicht gespeichert.\",Please confirm that you wish to leave this page – entered data might not be saved.,NOTE: German version copied from Firefox default message\napp_notice_admin_mode_on,Admin-Modus aktiviert!,Admin mode activated!,\napp_notice_admin_mode_off,Admin-Modus deaktiviert!,Admin mode deactivated!,\napp_notice_logged_in,Sie haben sich angemeldet.,You have logged in.,\napp_notice_logged_out,Sie haben sich abgemeldet.,You have logged out.,\napp_notice_wrong_credentials,Falscher Benutzername/Passwort.,Incorrect username/password.,\napp_notice_shibboleth_not_enabled,Die Anmeldung mittels Shibboleth ist nicht aktiviert!,Shibboleth sign in is not enabled!,\napp_notice_shibboleth_missing_fields,\"Die Authentifizierungsdaten von Shibboleth sind unvollständig. SURNAME, GIVENNAME und EMAIL sind Pflichtfelder!\",\"Shibboleth authentication data is incomplete. SURNAME, GIVENNAME and EMAIL are required fields!\",\napp_warning_jsonly,\"Diese Funktion erfordert JavaScript, aber es ist nicht aktiviert.\",\"This feature requires Javascript, but it is not activated.\",\nauthentication_groups,Systemgruppen,System groups,\nbatch_add_to_collection_hint,\"Nach Sets suchen, zu denen Sie die Medieneinträge hinzufügen möchten.\",Seach for sets to add media entries.,\nbatch_add_to_collection_post, Medieneinträge zu Set hinzufügen,Add media entries to set,(nach der Anzahl)\nbatch_add_to_collection_pre, ,,(vor der Anzahl)\nbatch_destroy_resources_ask_1,Möchten Sie folgende Inhalte löschen:,Do you want to delete the following items:,\nbatch_destroy_resources_ask_2, Medieneinträge, Media entries,\nbatch_destroy_resources_ask_3, Sets, Sets,\nbatch_destroy_resources_ask_4,(Die Inhalte von Sets werden nicht automatisch mit dem Set gelöscht.),\"(When a set is deleted, the items of this set are not deleted at the same time.)\",\nbatch_destroy_resources_cancel,Abbrechen,Cancel,\nbatch_destroy_resources_ok,OK,OK,\nbatch_destroy_resources_success,Inhalte wurden erfolgreich gelöscht.,Items are deleted successfully.,\nbatch_meta_data_edit,Metadaten für %{media_entry_count} Medieneinträge gleichzeitig editieren.,Edit metadata for %{media_entry_count} media entries at the same time.,\nbatch_remove_from_collection_cancel,Abbrechen,Cancel,\nbatch_remove_from_collection_question_part_1,Möchten Sie die ausgewählten ,Do you want to remove the selected ,\nbatch_remove_from_collection_question_part_2, Medieneinträge und , media entries and ,\nbatch_remove_from_collection_question_part_3, Sets aus dem Set entfernen?, sets from this set?,\nbatch_remove_from_collection_remove,Entfernen,Remove,\nbatch_remove_from_collection_title,Medieinträge/Sets aus Set entfernen,Remove media entries/sets from sets,\nbatch_warning_no_authorized_contents_collection,Sie haben für keines der Sets die nötige Berechtigung.,You have no permissions for these sets.,\nbatch_warning_no_authorized_contents_media_entry,Sie haben für keinen der Medieneinträge die nötige Berechtigung.,You have no permissions for these media entries.,\nbatch_warning_no_contents_collection,Sie haben keine Sets.,You have no sets.,\nbatch_warning_no_contents_media_entry,Sie haben keine Medieneinträge.,You have no media entries.,\nbatch_edit_title_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nbatch_edit_title_th_filename,Dateiname,File name,\nbatch_edit_title_th_title,Titel,Title,\nbatch_edit_title_save,Speichern,Save,\nbatch_edit_title_cancel,Abbrechen,Cancel,\nbrowse_entries_browse_link_title,In diese Richtung weiterstöbern,Browse further in this direction,\nbrowse_entries_filter_link,Weiter filtern →,Apply additional filter →,\nbrowse_entries_loading_error,Ladefehler,Loading error,\nbrowse_entries_title,Nach ähnlichen Inhalten stöbern,Browse similar items,\nbubble_batch_label,Stapel,Batch,Wo: Labels in der Stapelverarbeitung\nbubble_draft_label,Entwurf,Draft,Wo: Labels in der Stapelverarbeitung\nclipboard_add_hint,Zur Stapelverarbeitung hinzufügen,Add to batch processing,\nclipboard_adding_all_resources_cancelled,\"Das Hinzufügen zur Stapelverarbeitung wurde abgebrochen. Ein Teil der Inhalte wurde schon hinzugefügt. Wenn Sie alle hinzufügen möchten, versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.\",\"The process of adding items to batch processing was interrupted. Some items were successfully added to batch processing. If you wish to add all items, please try again.Those items already added will not be duplicated.\",\nclipboard_adding_all_resources_error,Es konnten nicht alle Inhalte zur Stapelverarbeitung hinzugefügt werden. Bitte versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.,It was not possible to add all items to batch processing. Please try again. Those items already added will not be duplicated.,\nclipboard_adding_all_resources_retry,Nochmals, Again,\nclipboard_adding_resources,Füge Inhalte zur Stapelverarbeitung hinzu …,Add items to batch processing …,\nclipboard_ask_add_all_1,Möchten sie alle ,Would you like to add all ,\nclipboard_ask_add_all_2, Inhalte zur Stapelverarbeitung hinzufügen?, items to batch processing?,\nclipboard_ask_add_all_cancel,Abbrechen,Cancel,\nclipboard_ask_add_all_ok,Ok,OK,\nclipboard_batch_add_success,Die Inhalte wurden der Stapelverarbeitung hinzugefügt.,Items were added to batch processing.,\nclipboard_batch_remove_success,Die Inhalte wurden aus der Stapelverarbeitung entfernt.,Items wer removed from batch processing.,\nclipboard_empty_message,Sie haben keine Inhalte für die Stapelverarbeitung ausgewählt.,Batch processing is empty,\nclipboard_fetching_resources,Lade Inhalte …,Items loading …,\"Wieso sind da Pünktchen? -> Ist eine Zustandsanzeige, Nutzer wartet.\"\nclipboard_removing_resources,Entferne Inhalte aus Stapelverarbeitung...,Remove items from batch processing ...,\ncollection_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgendes Set löschen möchten: \",Are you sure you want to delete the following set:,\ncollection_ask_delete_title,Set löschen,Delete set,\ncollection_deleted,Dieses Set wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This set has been deleted and is no longer visible to users.\ncollection_delete_success,Set wurde gelöscht.,Set deleted.,\ncollection_does_not_exist,Dieses Set existiert nicht.,This set does not exist.,\ncollection_edit_cover_submit_btn,Speichern,Submit,\ncollection_edit_cover_title,Titelbild für Set festlegen,Define set cover,\ncollection_edit_highlights_btn,Auswahl speichern,Submit selection,\ncollection_edit_highlights_empty,Dieses Set hat noch keine Inhalte.,This set has no items yet.,\ncollection_edit_highlights_title,Inhalte hervorheben,Highlight items,\ncollection_edit_permissions_btn,Speichern,Submit,\ncollection_highlighted_contents,Hervorgehobene Inhalte,Highlighted items,\ncollection_layout_save,Darstellung festlegen,Save type of display,\ncollection_layout_saved,Darstellung gespeichert,Type of display saved,\ncollection_meta_data_header_prefix,Set editieren: ,Edit set:,\ncollection_new_cancel,Abbrechen,Cancel,\ncollection_new_create_set,Set erstellen,Create set,\ncollection_new_dialog_title,Set erstellen,Create set,\ncollection_new_dialog_parent_warning,The new created set will be added as a child to:,The new created set will be added as a child to:,\ncollection_new_flash_successful,Set wurde erstellt.,Set was created.,\ncollection_new_flash_title_needed,Titel ist ein Pflichtfeld.,Title is a mandatory field.,\ncollection_new_header,Neues Set,New set,\ncollection_new_label_title,Titel,Title,\ncollection_permissions_btn,Zugriffsberechtigungen ändern,Change permissions,\ncollection_relations_child_sets,Untergeordnete Sets,Child sets,\ncollection_relations_children_hint,Diese Sets wurden dem ausgewählten Set hinzugefügt.,These sets are now related to the selected set.,\ncollection_relations_current,Aktuelles Set,Current set,\ncollection_relations_hint_text,\"Das ausgewählte Set ist mit anderen Sets verknüpft. Diese Zusammenhänge wurden aktiv durch Sie oder eine/n andere/n Nutzer/in festgelegt als übergeordnet, benachbart oder untergeordnet. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected set is related to other sets. The relationship between these sets was actively defined by you or another user. The type of relationship to the other sets could be described as parent, siblings or children relationship. The displayed sets are owned by yourself or shared by other users with you.\",\ncollection_relations_no_child_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_parent_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_sibling_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_parent_sets,Übergeordnete Sets,Parent sets,\ncollection_relations_parents_hint,Das ausgewählte Set wurde diesen Sets hinzugefügt.,The selected set is now related to this set.,\ncollection_relations_show_all,Alle anzeigen →,Show all →,\ncollection_relations_show_all_relations,Alle Zusammenhänge anzeigen,Show all relations,\ncollection_relations_sibling_sets,Benachbarte Sets,Sibling sets,\ncollection_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie das ausgewählte Set.,This set is related to the same sets as the selected set.,Wo: Zusammenhänge eines Sets\ncollection_resource_selection_cancel,Abbrechen,Cancel,\ncollection_resource_selection_h_author,Autor/in,Author,\ncollection_resource_selection_h_date,Datierung,Dating,\ncollection_resource_selection_h_keywords,Schlagworte,Keywords,\ncollection_resource_selection_h_responsible,Rechteinhaber,Holder of rights,\ncollection_resource_selection_h_selection,Auswahl,Selection,\ncollection_resource_selection_h_subtitle,Untertitel,Subtitle,\ncollection_resource_selection_h_title,Titel,Title,\ncollection_resource_selection_save,Auswahl speichern,Save selection,\ncollection_select_collection_flash_result,Set aus %{removed_count} Set(s) entfernt. Zu %{added_count} Set(s) hinzugefügt.,Removed set from %{removed_count} set(s). Added set to %{added_count} set(s).,\ncollection_sorting_created_at_asc,Sortieren nach Importierdatum aufsteigend,Sort by import date ascending,\ncollection_sorting_created_at_desc,Sortieren nach Importierdatum absteigend,Sort by import date descending,\ncollection_sorting_manual_asc,Sortieren manuell aufsteigend,Sort manually ascending,\ncollection_sorting_manual_desc,Sortieren manuell absteigend,Sort manually descending,\ncollection_sorting_last_change_desc,Sortieren nach letzter Änderung absteigend,Sort by date of update descending,\ncollection_sorting_last_change_asc,Sortieren nach letzter Änderung aufsteigend,Sort by date of update ascending,\ncollection_sorting_title_asc,Sortieren nach Titel alphabetisch,Sort by title alphabetically,\ncollection_sorting_title_desc,Sortieren nach Titel absteigend,\"Sort by title alphabetically, but descending\",\ncollection_tab_main,Set,Set,\ncollection_was_disfavored,Das Set wurde von den Favoriten entfernt.,Set was removed from favorites.,\ncollection_was_favored,Das Set wurde zu den Favoriten hinzugefügt.,Set was added to favorites.,\ncontents_privacy_private,Diese Inhalte sind nur für Sie zugänglich.,These items are only accessible to you.,\ncontents_privacy_public,Diese Inhalte sind öffentlich zugänglich.,These items are accessible to the public.,\ncustom_urls_canonical_hint,\"Jeder Inhalt hat eine automatisch erzeugte, kanonische Adresse bestehend aus Zahlen und Buchstaben, eine sog. UUID (Universally Unique Identifier). Diese Adresse kann nicht übertragen oder entfernt werden und ist deshalb immer an erster Stelle aufgelistet.\",\"Every item has a canonical address consisting of numbers und letters which is created automatically, a so- called UUID (Universally Unique Identifier). This address can not be transferred or deleted. For this reason it is always listed first.\",\ncustom_urls_canonical_title,Kanonische Adresse (UUID),Canonical address (UUID),\ncustom_urls_flash_create_successful_1,Adresse ,Address ,\ncustom_urls_flash_create_successful_2, wurde erstellt., was created.,\ncustom_urls_flash_empty,Adresse darf nicht leer sein.,Address is not allowed to be empty.,\ncustom_urls_flash_exists_on_itself_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_collection_2, existiert bereits für dieses Set., already exists for this set.,\ncustom_urls_flash_exists_on_itself_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_media_entry_2, existiert bereits für diesen Medieneintrag., already exists for this media entry.,\ncustom_urls_flash_not_allowed_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_collection_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung das Set zu verwalten, auf welches die Adresse \", can not be transferred. You do not have permission to manage the set to which the address ,\ncustom_urls_flash_not_allowed_collection_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_allowed_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_media_entry_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung den Medieneintrag zu verwalten, auf welchen die Adresse \", cannot be transferred. You do not have  permission to manage the media entry to which the address ,\ncustom_urls_flash_not_allowed_media_entry_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_same_type_collection_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_collection_2, kann nicht übertragen werden. Adressen von Medieneinträgen können nicht auf Sets übertragen werden., can not be transferred. Addresses from media entries can not be transferred to sets.,\ncustom_urls_flash_not_same_type_media_entry_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_media_entry_2, kann nicht übertragen werden. Adressen von Sets können nicht auf Medieneinträge übertragen werden., cannot be transferred. Addresses from sets cannot be transferred to media entries.,\ncustom_urls_flash_primary_url_set_1,,,\"Wo: Bestätigung CustomURL, vor der Adresse\"\ncustom_urls_flash_primary_url_set_2, wurde als primäre Adresse gesetzt., was set as primary address.,\"Wo: Bestätigung CustomURL, nach der Adresse\"\ncustom_urls_flash_transfer_confirmation_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_collection_2, ist gegenwärtig dem Set , is currently related to the set  ,\ncustom_urls_flash_transfer_confirmation_collection_3, zugewiesen. Wollen Sie diese Adresse auf das Set ,. Would you like to transfer this address to the set ,\ncustom_urls_flash_transfer_confirmation_collection_4, übertragen?,?,\ncustom_urls_flash_transfer_confirmation_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_media_entry_2, ist gegenwärtig dem Medieneintrag , is currently related to the media entry  ,\ncustom_urls_flash_transfer_confirmation_media_entry_3, zugewiesen. Wollen Sie diese Adresse auf den Medieneintrag ,. Would you like to transfer this address to the media entry ,\ncustom_urls_flash_transfer_confirmation_media_entry_4, übertragen?,?,\ncustom_urls_flash_transfer_successful_1,Adresse ,Address  ,\ncustom_urls_flash_transfer_successful_2, wurde von , was transferred from  ,\ncustom_urls_flash_transfer_successful_3, auf , to ,\ncustom_urls_flash_transfer_successful_4, übertragen.,0,\ncustom_urls_flash_wrong_format_1,Adresse ,Address ,\ncustom_urls_flash_wrong_format_2, erfüllt die Anforderungen nicht., does not meet the requirements.,\ncustom_urls_manage_address_title,Adressverwaltung,Address administration,\ncustom_urls_new,Adresse anlegen / übertragen,Create / transfer address,\ncustom_urls_no_addresses_defined,Noch keine Adressen definiert.,No address defined yet.,\ncustom_urls_primary_hint,\"Für jeden Inhalt (egal ob Medieneintrag oder Set) gibt es immer genau eine primäre Adresse. Diese ist in der Adressleiste des Browsers sichtbar, wenn der Inhalt angezeigt wird. Neben der primären Adresse können weitere gesetzt werden, die auf die primäre Adresse weiterleiten.\",Each item (media entry or set) has exactly one primary address. This address is displayed in the browsersaddress bar when the item is accessed.You have the option to create other addresses which are forwarded to the primary address.,\ncustom_urls_primary_title,Primäre Adresse,Primary address,\ncustom_urls_table_header_actions,Aktionen,Actions,\ncustom_urls_table_header_address,Adresse,Address ,\ncustom_urls_table_header_created_by,Erstellt durch,Created by,\ncustom_urls_table_header_date,Datum,Date,\ncustom_urls_table_header_type,Typ,Type,\ncustom_urls_title,Adressen für ,Addresses for ,\ndashboard_create_collection,Set erstellen,Create set,\ndashboard_create_collection_btn,Set erstellen,Create set,\ndashboard_create_media_entry_btn,Medien importieren,Upload media,\ndashboard_none_exist,Keine vorhanden.,There are none.,\ndashboard_show_all,Alle anzeigen,Show all,\ndashboard_title_head,Mein Archiv,My archive,\ndeleted,gelöscht,deleted,\ndynamic_filters_any_values_title,Jegliche Werte,Any values,\ndynamic_filters_authorization,Berechtigung,Authorization,\ndynamic_filters_visibility,Sichtbarkeit,Accessability,\ndynamic_filters_visibility_private,Nur für mich,Only for me,\ndynamic_filters_visibility_user_or_group,Geteilt mit Personen und Arbeitsgruppen,Shared with people and work groups,\ndynamic_filters_person_header,Personen,Persons,\ndynamic_filters_remove_all_title,Alle entfernen,Remove all,\ndynamic_filters_role_header,Funktionen,Functions,\ndynamic_filters_search_for_api_client_placeholder,Suche nach API-Applikation,Search for API client...,\ndynamic_filters_search_for_delegation_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_group_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_user_placeholder,Suche nach User...,Search for user...,\ndynamic_filters_search_for,Suche nach,Search for,\nedit_custom_urls_back_to_collection,Zurück zum Set,Back to the set,\nedit_custom_urls_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nedit_custom_urls_cancel,Abbrechen,Cancel,\nedit_custom_urls_confirmation,Bestätigung,Confirmation,\nedit_custom_urls_create_or_transfer,Adresse anlegen / übertragen,Create / transfer address,\nedit_custom_urls_preferred_address,Gewünschte Adresse:,Preferred address:,\nedit_custom_urls_requirements_hint,\"Eine Adresse darf nur genau einmal im System vorkommen – entweder für einen Medieneintrag oder für ein Set. Sie beginnt immer mit einem Kleinbuchstaben, gefolgt von (mindestens einem) weiteren Zeichen aus Kleinbuchstaben, Nummern, Bindestrichen ( - ) und Grundstrichen ( _ ) in beliebiger Reihenfolge.\",\"Each comprehensible address is unique in the system – either for a media entry or for a set. The address always begins with a lower case letter, followed by at least one other character. The following characters can bei lower case letters, numbers, hyphens ( - ) or low lines ( _ ) in any order.\",\nedit_custom_urls_requirements_title,Anforderungen,Requirements,\nedit_custom_urls_set_primary,Als primäre Adresse setzen,Set as primary address,\nedit_custom_urls_state_primary,Primäre Adresse,Primary address,\nedit_custom_urls_state_transfer,Weiterleitung,Forwarding,\nedit_custom_urls_title,Anforderungen,Requirements,\nedit_custom_urls_transfer,Übertragen,Transfer,\nedit_custom_urls_transfer_hint,\"Eine bereits bestehende Adresse kann von einem Medieneintrag auf einen anderen oder von einem Set auf ein anderes übertragen werden. Bestehende Adressen können nicht von einem Medieneintrag auf ein Set und umgekehrt übertragen werden. Wollen Sie eine Adresse übertragen, dann geben Sie diese hier ein. Sie müssen für beide Inhalte über die Zugriffsberechtigung 'Verwalten' verfügen.\",\"An existing address can be transferred from one media entry to another or from one set to another. Existing addresses cannfot be transferred from a media entry to a set or vice versa. If you want to transfer an address, please enter this address here. You have to have manage permissions for both items.\",\nedit_custom_urls_transfer_title,Übertragen,Transfer,\nembed_error_title,\"Fehler!\",\"Error!\",\nembed_error_context_pre,\"Angeforderte URL: \",\"Requested URL: \",\nembed_error_context_post,\"\",\"\",\nembed_error_help_pre,\"Hilfe: \",\"Help: \",\nembed_error_help_post,\"\",\"\",\nembed_error_msg,\"Dieser Inhalt kann nicht eingebettet werden.\",\"This content cannot be embedded.\",\nembed_error_msg_403,\"Dieser Inhalt kann nicht eingebettet werden, weil die nötigen Berechtigungen fehlen.\",\"This content cannot be embedded because the necessary permissions are missing.\",\nembed_error_msg_404,\"Der gewünschte Inhalt konnte nicht gefunden werden.\",\"The requested content could not be found.\",\nerror_401_title,\"Um Zugang zu diesem Bereich zu erhalten, melden Sie sich bitte an.\",To get access please login below with your user data.,\nerror_403_message,Bitte kontaktieren Sie die für die Ressource verantwortliche Person.,Please contact the responsible user for this resource.,\nerror_403_title,Sie haben keine Zugriffsrechte für diesen Inhalt.,You don’t have the necessary permissions to access this resource.,\nerror_404_title,Die gesuchte Seite kann nicht gefunden werden.,The requested page cannot be found.,\nerror_500_message,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (%{support_email}) mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\"If you require help in this matter, please contact the support (%{support_email}) with a description of your last working steps and a screen shot of this page.\",\nerror_500_message_pre,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (\",\"If you require help in this matter, please contact the support (\",\nerror_500_message_post,\") mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\") with a description of your last working steps and a screen shot of this page.\",\nerror_500_title,Es ist ein Server-Fehler aufgetreten.,A server error occurred.,\nexplore_keywords_section_title,Häufige Schlagworte,Frequent keywords,\nexplore_show_more,Weitere anzeigen,Show more,\nexplore_vocabulary_section_show_details,Details anzeigen,View details,\nexplore_vovabulary_section_title,Vokabulare,Vocabularies,\nexternal_groups,Abteilungsgruppen,Division groups,\nfooter_choose_language,Sprache wählen,Choose language,\ngroup_ask_delete_cancel,Abbrechen,Cancel,\ngroup_ask_delete_delete,Löschen,Delete,\ngroup_ask_delete_question_post, löschen?,?,\ngroup_ask_delete_question_pre,Möchten Sie die Arbeitsgruppe ,Would you like to delete work group ,\ngroup_ask_delete_title,Arbeitsgruppe löschen,Delete work group,\ngroup_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Arbeitsgruppe löschen wollen?\",Are you sure you want to delete this work group?,\ngroup_edit_at_least_one_member_delete,löschen,delete,VERB\ngroup_edit_at_least_one_member_post,0,0,NACH dem Verb und Namen der Gruppe\ngroup_edit_at_least_one_member_pre,Eine Arbeitsgruppe muss mindestens eine Person enthalten. Ganze Arbeitsgruppe ,A work group has at least one member. Whole work group,VOR dem Verb und Namen der Gruppe\ngroup_edit_btn,Bearbeiten,Edit,\ngroup_edit_cancel,Abbrechen,Cancel,\ngroup_edit_form_new_member_login_hint,Login des neuen Mitglieds dieser Arbeitsgruppe,New work group member login,\ngroup_edit_form_new_member_login_label,User hinzufügen,Add a member,\ngroup_edit_form_save_btn,Speichern,Save,\ngroup_edit_form_title_pre,Arbeitsgruppe bearbeiten: ,Edit work group: ,\ngroup_edit_hint_remove_yourself,Achtung: Sie entfernen sich selbst aus der Arbeitsgruppe!,Attention: You are about to remove yourself from the work group!,\ngroup_edit_member,Mitglieder,Members,\ngroup_edit_name,Name,Name,\ngroup_edit_person,Person,Person,\ngroup_edit_save,Speichern,Save,\ngroup_edit_username,Benutzername,Username,\ngroup_meta_data_institutional_name,Name der Abteilungsgruppe,Division group name,\ngroup_meta_data_name,Name,Name,\ngroup_new_form_title,Neue Arbeitsgruppe erstellen,Create group,\ngroup_new_group_btn,Neue Arbeitsgruppe,New work group,\ngroup_show_edit_button,Arbeitsgruppe bearbeiten,Edit work group,\ngroup_show_members,Mitglieder,Members,\ngroup_show_permissions_use,(anwenden),(execute),\ngroup_show_permissions_view,(betrachten),(view),\ngroup_show_permissions_view_use,(betrachten und anwenden),(view and execute),\ngroup_show_vocabulary_permissions,Berechtigungen Vokabulare,Permissions vocabularies,\ngroup_toolbar_header_entrusted_resources,Mir anvertraute Medieneinträge,Entrusted media entries,\ngroup_was_deleted,Arbeitsgruppe wurde gelöscht.,Work group has been deleted.,\nhome_page_new_contents,Neue Inhalte,New items,\ninternal_groups,Arbeitsgruppen,Work groups,\nlayout_mode_grid,Raster-Ansicht,Grid view,\nlayout_mode_list,Listen-Ansicht,List view,\nlayout_mode_miniature,Miniatur-Ansicht,Miniature view,\nlayout_mode_tiles,Kachel-Ansicht,Tile view,\nlogin_box_internal,Externe,External users,\nlogin_box_title,Anmelden,Log in,\nlogin_box_login_btn,Anmelden,Log in,\nlogin_box_email_or_login,E-Mail,Email,\nlogin_box_password,Passwort,Password,\nlogin_box_rememberme,Login merken,Remember me,\nlogin_box_username,Benutzername,User name,\nmedia_entry_all_metadata_title,Alle Metadaten nach Vokabularen,All metadata by vocabulary,\nmedia_entry_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgenden Medienintrag löschen möchten: \",Are you sure you want to delete the following media entry:,\nmedia_entry_ask_delete_title,Medieneintrag löschen,Delete media entry,\nmedia_entry_back_btn,Zurück,Back,\nmedia_entry_conversion_hint,\"Diese Datei wird gerade für eine Vorschau konvertiert. Sobald dies abgeschlossen ist, finden Sie hier eine abspielbare Version.\",\"Currently the system is converting this file to a preview. As soon as the conversion is finished, you will be able to play the file here.\",\nmedia_entry_conversion_progress_post,% abgeschlossen.,% completed.,\nmedia_entry_conversion_progress_pre,Konvertierung zu ,Conversion ,\nmedia_entry_conversion_reload,\"Laden Sie diese Seite neu, um den aktuellen Stand der Konvertierung zu erfahren.\",Reload this page to display the current state of conversion.,\nmedia_entry_conversion_status_failed,Die Konvertierung ist fehlgeschlagen. Bitte wenden Sie sich an den Support.,The file conversion has failed. Please contact support.,\nmedia_entry_conversion_status_initialized,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_conversion_status_submitted,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_deleted,Dieser Medieneintrag wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This media entry has been deleted and is no longer visible to users.\nmedia_entry_delete_success,Der Medieneintrag wurde gelöscht.,Media entry has been deleted.,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_post,erstellen,,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_pre,(Experte) Hinweis zu neuer Version inkl. Verlinkung zu,(Expert) Add annotation «new version of» and link to,\nmedia_entry_duplicator_configuration_copy_meta_data,Metadaten übertragen,Copy meta data,\nmedia_entry_duplicator_configuration_copy_permissions,Zugriffsberechtigungen übertragen,Copy permissions,\nmedia_entry_duplicator_configuration_copy_relations,Zusammenhänge übertragen (übergeordnete Sets und Favoriten),Copy relations (parent collections & favorites),\nmedia_entry_duplicator_configuration_move_custom_urls,(Experte) Sprechende Adresse (URL) übernehmen,(Expert) Move comprehensible Address (URL),\nmedia_entry_duplicator_configuration_instructions,Folgende Optionen können gewählt werden:,Choose options below:,\nmedia_entry_duplicator_custom_urls_already_moved,moved to the first successful upload!,moved to the first successful upload!,\nmedia_entry_duplicator_desc_post,zugewiesen.,by selected options.,\nmedia_entry_duplicator_desc_pre,\"Die unten importierten Mediendateien bekommen die den nachfolgend gewählten Optionen entsprechenden Metadaten, Zugriffsberechtigungen, Beziehungen und weitere Einstellungen des aktuellen Medieneintrags\",\"The media file to be imported below will get assigned meta data, permissions, relations and further settings from the actual media entry\",\nmedia_entry_duplicator_md_title_suffix,(updated),(updated),\nmedia_entry_duplicator_new_version_of_label,Updated file,Updated file,\nmedia_entry_export_close,Schliessen,Close,\nmedia_entry_export_download,Exportieren,Download,\nmedia_entry_export_has_no_original,Sie verfügen für den Export der Originaldatei nicht über die notwendige Berechtigung.,You are not allowed to download the original file.,\nmedia_entry_export_no_content,Sie haben keine Zugriffsberechtigung für die Originaldatei und es steht keine Vorschau zur Verfügung.,You do not have permission to access the original file and there is no preview available.,\nmedia_entry_export_original,Original,Original,\nmedia_entry_export_original_hint,Originaldatei herunterladen.,Download original file.,\nmedia_entry_export_subtitle_audios,Audio-Dateien,Audio files,\nmedia_entry_export_subtitle_documents,Dokumente,Documents,\nmedia_entry_export_subtitle_images,Bilder,Images,\nmedia_entry_export_subtitle_videos,Video-Dateien,Video files,\nmedia_entry_export_title,Medieneintrag exportieren,Download media entry,\nmedia_entry_export_rdf_title,RDF-Export Metadaten,RDF export metadata,\nmedia_entry_export_rdf_title_hint,(experimentell),(experimental),\nmedia_entry_export_rdf_experiment_footnote,\"Struktur und Format der Daten können sich ändern. Bitte geben sie eine Rückmeldung, falls Sie diese verwenden!\",\"Data structure and format is subject to change. Please send feedback if you are using this!\",\nmedia_entry_export_checksum_title,Prüfsumme,Checksum,\nmedia_entry_export_checksum_generate,Erzeugen,Generate,\nmedia_entry_export_checksum_verify,Prüfen,Verify,\nmedia_entry_export_checksum_empty,Prüfsumme erzeugen,Generate checksum,\nmedia_entry_export_checksum_generating,Wird erzeugt…,Generating…,\nmedia_entry_export_checksum_verifying,Wird verifiziert…,Verifying…,\nmedia_entry_export_checksum_generated_at,Erzeugt am,Generated at,\nmedia_entry_export_checksum_verified_at,Geprüft am,Verified at,\nmedia_entry_export_checksum_match,Prüfsumme stimmt überein,Checksum matches,\nmedia_entry_export_checksum_mismatch,Prüfsumme stimmt nicht überein,Checksum does not match,\nmedia_entry_export_checksum_error,Fehler bei der Prüfsummen-Operation,Error during checksum operation,\nmedia_entry_file_format_not_supported_1,\"Wahrscheinlich unterstützt Ihr Browser nicht die Darstellung dieses Dateiformats, aber Sie \",\"Your browser probably does not support the file format, but you can \",\nmedia_entry_file_format_not_supported_2,können die Datei ,download the file,\nmedia_entry_file_format_not_supported_3,exportieren.,0,\nmedia_entry_file_information_title,Datei,File information,\nmedia_entry_media_import_gotodrafts,Medieneinträge vervollständigen,Complete media entries,\nmedia_entry_media_import_gotomediaentries,Weiter zu Meine Medieneinträge,Continue to My media entries,\nmedia_entry_media_import_header,Medien importieren,Media upload,\nmedia_entry_media_import_box_header_a,,,\nmedia_entry_media_import_box_header_b, Upload(s), Upload(s),\nmedia_entry_media_import_box_upload_status_waiting,Warten…,Waiting…,\nmedia_entry_media_import_box_upload_status_error,Fehler!,Error!,\nmedia_entry_media_import_box_upload_status_progress_a,Hochladen… ,Uploading… ,\nmedia_entry_media_import_box_upload_status_progress_b,%,%,\nmedia_entry_media_import_box_upload_status_processing,Verarbeiten…,Processing…,\nmedia_entry_media_import_inside,Dateien auf dieses Feld ziehen oder ,Add files by drag and drop in this field or ,\nmedia_entry_media_import_inside_nojs,Dateien auswählen,Select files,\nmedia_entry_media_import_notes_msg,\"Bilder (TIFF, JPEG, PNG) sowie Audio- und Videofiles in den gängigsten Formaten werden direkt verarbeitet und dargestellt. Bilder im CMYK-Farbraum werden nicht korrekt dargestellt. Wandeln Sie diese vor dem Importieren in RGB um.\",\"Images (TIFF, JPEG, PNG) and audio/video files in the most common formats are processed and displayed directly. Images in the CMYK color model cannot be displayed correctly, please convert to RGB before uploading.\",\nmedia_entry_media_import_notes_title,Hinweise,Hints,\nmedia_entry_media_import_select_media,Medien auswählen,Select media files,\nmedia_entry_media_import_upload_error,überschreitet maximale Grösse von 16000 Pixel,exceeds size limit of 16000 pixel,\nmedia_entry_media_import_title,\"Bilder, Videos, Audio-Dateien oder Dokumente bereitstellen.\",\"Add images, video or audio files, or other documents.\",\nmedia_entry_meta_data_edit_by_context_btn,Metadaten nach Kontexten bearbeiten,Edit metadata by context,\nmedia_entry_meta_data_edit_by_vocab_btn,Metadaten nach Vokabularen bearbeiten,Edit metadata by vocabulary,\nmedia_entry_meta_data_header_prefix,Medieneintrag editieren: ,Edit media entry: ,\nmedia_entry_more_data_title,Verantwortlichkeit und Aktivität,Responsibility and activities,\nmedia_entry_not_published_warning_msg,Bei diesem Medieneintrag fehlen noch Pflichtangaben.,Media entry still needs mandatory data.,\nmedia_entry_relations_current,Aktueller Eintrag,Current entry,\nmedia_entry_relations_hint_text,\"Der ausgewählte Medieneintrag ist mit Sets verknüpft. Diese Zusammenhänge wurden aktiv festgelegt als übergeordnet oder benachbart. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected media entry is connected to sets. These relations are actively defined as a parent, a sibling or a child relationship. The sets displayed here are your own or are shared with you by other users.\",\nmedia_entry_relations_parents_hint,Der ausgewählte Medieneintrag wurde diesen Sets hinzugefügt.,The selected media entry was added to these sets.,\nmedia_entry_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie der ausgewählte Medieneintrag.,These sets were added to the same sets as the selected media entry.,\nmedia_entry_select_collection_flash_result,Der Medieneintrag wurde aus %{removed_count} Set(s) entfernt und zu %{added_count} Set(s) hinzugefügt.,Media entry removed from %{removed_count} set(s) and added to %{added_count} set(s).,\nmedia_entry_siblings_section_title,Weitere Medieneinträge im selben Set,Other media entries in the same set,\nmedia_entry_siblings_parent_set,Übergeordnetes Set:,Parent set:,\nmedia_entry_tab_main,Medieneintrag,Media entry,\nmedia_entry_tab_more_data,Alle Metadaten,All metadata,\nmedia_entry_tab_permissions,Berechtigungen,Permissions,\nmedia_entry_tab_relations,Zusammenhänge,Relations,\nmedia_entry_tab_usage_data,Nutzung,Usage,\nmedia_entry_upload_btn,Importieren,Upload,\nmedia_entry_was_disfavored,Der Medieneintrag wurde von den Favoriten entfernt.,Media entry was removed from favorites.,\nmedia_entry_was_favored,Der Medieneintrag wurde zu den Favoriten hinzugefügt.,Media entry was added to favorites.,\nmeta_data_action_delete_btn,Löschen,Delete,\nmeta_data_action_edit_btn,Bearbeiten,Edit,\nmeta_data_batch_action_remove_meta_data,Werte für alle Inhalte löschen,Delete data for all content,\nmeta_data_batch_failure,Metadaten konnten nicht aktualisiert werden.,Metadata could not be updated.,\nmeta_data_batch_hint_differences,Unterschiedliche Metadaten vorhanden,Different metadata in place.,\nmeta_data_batch_hint_differences_override,\"Achtung: Bestehende Werte werden durch Änderungen überschrieben! Wenn keine Änderungen vorgenommen werden, bleiben die verschiedenen Werte erhalten.\",\"Attention: Changes will replace exiting data. If not changes are made, data will be preserved.\",\nmeta_data_batch_hint_equal_data,Gleiche Metadaten vorhanden,Same metadata in place.,\nmeta_data_batch_hint_no_data,Noch keine Metadaten vorhanden,No metadata available yet.,\nmeta_data_batch_hint_value,Werte oder Text,Values or text,\nmeta_data_batch_item_selected,Medieneintrag selektiert,Media entry selected,\nmeta_data_batch_items_selected,Medieneinträge selektiert,Media entries selected,\nmeta_data_batch_more,weitere,More,\nmeta_data_batch_some_ignored_1,(,(,\nmeta_data_batch_some_ignored_2,\" Medieneinträge wurden ignoriert, da Sie nicht über die nötigen Berechtigungen verfügen)\",\"Media entries were ignored, because you do not have the required permissions.)\",\nmeta_data_batch_success,Metadaten wurden erfolgreich aktualisiert.,metadata have been updated successfully.,\nmeta_data_batch_summary_all_post, Medieneinträge wurden gespeichert., Media entries have been saved.,NACH der Anzahl\nmeta_data_batch_summary_all_pre,Alle ,All ,VOR der Anzahl\nmeta_data_batch_summary_missing, haben fehlende Pflichtangaben, have missing mandatory data,\nmeta_data_batch_summary_published, haben ausgefüllte Pflichtfelder, have mandatory data,\nmeta_data_batch_summary_were_published, hatten bereits ausgefüllte Pflichtfelder, already had mandatory data,\nmeta_data_batch_title_post_collections, Sets gleichzeitig editieren,Edit sets at the same time,\nmeta_data_batch_title_post_media_entries, Medieneinträge gleichzeitig bearbeiten, media entries at once,\nmeta_data_batch_title_pre,Metadaten für ,Edit metadata for ,\nmeta_data_blank_value_for_required_meta_key_post,0,0,\nmeta_data_blank_value_for_required_meta_key_pre,Kein Wert vorhanden für ,No value available for,\nmeta_data_collection_batch_summary_all_post, Sets wurden gespeichert., Sets were saved.,\nmeta_data_collection_batch_summary_all_pre,Alle ,All ,\nmeta_data_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Werte löschen wollen?\",Are you sure you want to delete these data?,\nmeta_data_edit_collection_saved,Set wurde gespeichert.,Set was saved.,\nmeta_data_edit_media_entry_published,Der Medieneintrag wurde gespeichert und alle Pflichtfelder sind ausgefüllt.,Media entry was saved and mandatory data have been entered.,\nmeta_data_edit_media_entry_saved,Der Medieneintrag wurde gespeichert.,Media entry was saved.,\nmeta_data_edit_media_entry_saved_missing,\"Der Medieneintrag wurde gespeichert, aber es wurden nicht alle Pflichtfelder ausgefüllt.\",Media entry was saved but there some mandatory data are missing.,\nmeta_data_edit_more_data,Weitere Angaben,More data,\nmeta_data_form_all_data,Alle Daten,All metadata,\nmeta_data_form_cancel,Abbrechen,Cancel,\nmeta_data_form_save,Speichern,Save,\nmeta_data_form_saving,Die Metadaten werden gerade gespeichert. Dies kann einige Zeit in Anspruch nehmen. Bitte gedulden Sie sich und schliessen Sie das Fenster nicht.,Meta data are currently being saved. This will take some time. Please be patient and do not close the browser.,\nmeta_data_form_submit_btn,Speichern,Save,\nmeta_data_header_text,Werte,Data,\nmeta_data_input_date_placeholder_duration_from,von,from,\nmeta_data_input_date_placeholder_duration_to,bis,to,\nmeta_data_input_date_placeholder_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_placeholder_timestamp,wird als Text gespeichert,on,\nmeta_data_input_date_type_duration,von/bis,from/to,\nmeta_data_input_date_type_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_type_timestamp,am,on,\nmeta_data_input_keywords_existing,Schlagwort ist bereits vergeben.,Keyword already assigned.,\nmeta_data_input_new_group_add,Arbeitsgruppe einfügen,Add work group,\nmeta_data_input_new_group_name,Name,Name,\nmeta_data_input_new_person_add,Person einfügen,Add person,\nmeta_data_input_new_person_first_name,Vorname,First name,\nmeta_data_input_new_person_last_name,Nachname,Last name,\nmeta_data_input_new_person_pseudonym,Pseudonym,Pseudonym,\nmeta_data_input_new_person_toggle,Neue Person oder Gruppe anlegen,Add new person or work group,\nmeta_data_input_person_save,Übernehmen,Apply,\nmeta_data_input_json_err_prefix,Eingabefehler: ,Input error: ,\nmeta_data_input_json_err_no_object,Wert ist nicht vom Typ 'Object'!,Value is not an 'Object'!,\nmeta_data_meta_key_documentation_url,> Online-Hilfe,click link for details,\nmeta_data_meta_key_label,Schlüssel,Key,\nmeta_data_role_add_another_btn,Weitere Funktion hinzufügen,Add another function,\nmeta_data_role_add_btn,Funktion hinzufügen,Add a function,\nmeta_data_role_add_heading,Funktion hinzufügen zu ,Add a function to,\nmeta_data_role_choose_label,Wählen Sie eine Funktion aus der Liste,Choose a function from the list,\nmeta_data_extensible_role_choose_label,Wählen Sie eine Funktion aus der Liste oder ergänzen Sie die Liste mit der gewünschten Funktion. Mit Enter die Eingabe abschliessen.,Choose a function from the list or enter the function and press Enter,\nmeta_data_role_edit_btn,Funktion bearbeiten,Edit function,\nmeta_data_role_edit_heading,Funktion bearbeiten,Edit the function of,\nmeta_data_role_remove_btn,Funktion entfernen,Remove function,\nmeta_data_type_label,Typ,Type,\nmeta_data_value_label,Wert,Data,\nmeta_datum_media_entry_label_id,Ressourcen-ID:,Resource ID:,\nmeta_datum_media_entry_label_string,Zusatztext:,additional text:,\nmeta_datum_media_entry_err_uuid_invalid,Ungültige UUID!,Invalid UUID!,\nmeta_datum_media_entry_value_unauthorized,Hinweis: Sie haben keinen Zugriff auf diese Ressource!,Notice: You do not have access to this resource!,\nmeta_datum_media_entry_value_not_found,Hinweis: Diese Ressource konnte nicht (mehr) gefunden werden!,Notice: This resource could not be found (anymore)!,\nmeta_key_order_alphabetical,a-z,a-z,\nmeta_key_order_alphabetical_hint,Die Schlagworte dieses Metadatenfeldes sind alphabetisch sortiert.,The keywords of this metakey are sorted alphabetically.,\nmeta_key_order_custom,redaktionell,editorial,\nmeta_key_order_custom_hint,Die Schlagworte dieses Metadatenfeldes sind redaktionell sortiert.,The keywords of this metakey are sorted editorially.,\nno_content_fallback,Keine Inhalte vorhanden.,No items available.,\nno_groups_fallback,Keine Arbeitsgruppen vorhanden.,No work groups available.,\nno_keywords_fallback,Keine Schlagworte vorhanden.,No keywords available.,\nno_relations_title,Es wurden keine Zusammenhänge gefunden.,No relations found.,\nnotifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nnotifications_message_transfer_responsibility,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to you.\",\nnotifications_message_transfer_responsibility_via_delegation,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to %{viaDelegation}.\",\nnotifications_message_transfer_responsibility_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to you.\",\nnotifications_message_transfer_responsibility_via_delegation_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to %{viaDelegation}.\",\nnotifications_media_entry,Medieneintrag,media entry,\nnotifications_collection,Set,set,\nnotifications_acknowledge_all,Alle Notifikationen löschen,Delete all notifications,\nnotifications_really_acknowledge_all,Wirklich alle löschen?,Really delete all?,\nnotifications_acknowledge,Löschen,Delete,\nnotifications_acknowledge_date_tooltip,Alle Notifikationen vom %{date} löschen,Delete all notifications of %{date},\nnotifications_no_notifications,Keine Einträge vorhanden,No entries present,\nnotifications_section_expand,Alle anzeigen,Show all,\nnotifications_section_collapse,Anzeige reduzieren,Reduce,\nnotifications_section_show_more,Weitere Einträge anzeigen,Show more,\npagination_nav_loadnext,Mehr laden,Load more,\npagination_nav_nextloading,Mehr Inhalte werden geladen.,More items are being loaded.,\npagination_nav_nextpage,Nächste Seite,Next page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_prevpage,Vorangehende Seite,Previous page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_thispage,Diese Seite,This page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_prefix,Seite ,Page ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_infix, von , of ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_postfix,,,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_selection_label,Seite auswählen,Select page,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npeople_toolbar_header,Ähnliche Inhalte,Related items,\npermission_entrusted_to_api_client,Sichtbar für API-Applikationen,Visible to API clients,\npermission_entrusted_to_group,Sichtbar für Arbeitsgruppen,Visible to work groups,\npermission_entrusted_to_user,Sichtbar für Nutzer/innen,Visible to users,\npermission_name_edit_metadata,Metadaten editieren,Edit metadata,\npermission_name_edit_metadata_and_relations,Metadaten editieren & Inhalte hinzufügen,Edit metadata and add items,\npermission_name_edit_permissions,Zugriffsberechtigungen ändern,Edit permissions,\npermission_name_get_full_size,Original exportieren & in PDF blättern,Download original & browse PDF,\npermission_name_get_metadata_and_previews,Betrachten,View,\npermission_name_use,Anwenden,Execute,bezieht sich auf Vokabulare!\npermission_name_view,Betrachten,View,bezieht sich auf Vokabulare!\npermission_overridden_by_public,(überschrieben durch die öffentlichen Berechtigungen),(overruled by public permissions),\npermission_subject_name_public,Internet,Internet,\npermission_subject_title_apiapps,API-Applikationen,API clients,\npermission_subject_title_groups,Gruppen,Groups,\npermission_subject_title_public,Öffentlichkeit,Public,\npermission_subject_title_users,Nutzer/innen,Users,\npermission_subject_title_users_or_delegations,Nutzer/innen / Verantwortungs-Gruppen,Users / Responsibility Groups,\npermissions_batch_success,Berechtigungen wurden erfolgreich aktualisiert.,Permissions have been updated succesfully.,\npermissions_batch_title_post, Inhalten., Items.,\npermissions_batch_title_pre,Berechtigungen ändern von ,Edit permissions of ,\npermissions_overview_yours_msg_end,\", haben gegenwärtig als Nutzer/in oder als Mitglied einer Verantwortungs-Gruppe oder Arbeitsgruppe folgende Berechtigungen:\",\", currently have the following permissions (either directly or as a member of a\nresponsibility group or as a member of a work group):\",\npermissions_overview_yours_msg_start,\"Sie, \",\"You, \",\npermissions_overview_yours_title,Ihre Berechtigungen,Your permissions,\npermissions_responsibility_title,Verantwortlichkeit,Responsibility,\npermissions_responsible_user_and_responsibility_group_title,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / Responsibility group,\npermissions_responsible_user_and_responsibility_group_msg,Der/die verantwortliche/r Nutzer/in hat alle Berechtigungen zu den ausgewählten Inhalten und kann diese auch löschen.,The responsible user / responsibility group has all permissions for the selected content and can also delete it.,\npermissions_responsible_delegation_title,Verantwortungs-Gruppe,Responsibility group,\npermissions_responsible_user_title,Verantwortliche Person,Responsible user,\npermissions_table_cancel_btn,Abbrechen,Cancel,\npermissions_table_edit_btn,Bearbeiten,Edit,\npermissions_table_remove_subject_btn,Berechtigung entfernen,Remove permission,\npermissions_table_save_btn,Speichern,Save,\npermissions_table_title,Zugriffsberechtigungen,Permissions,\npermissions_transfer_responsibility_link,Verantwortlichkeit übertragen,Transfer responsibility,\nperson_edit_add_uri_btn,URI hinzufügen,Add URL,\nperson_edit_cancel_btn,Abbrechen,Cancel,\nperson_edit_editing_header,Bearbeiten,editing,\nperson_show_external_uris,Links,Links,\nperson_edit_preview,Vorschau,Preview,\nperson_edit_save_btn,Speichern,Save,\nperson_edit_name_readonly_hint,\"Hinweis: Der eigene Name kann nicht geändert werden. Bitte wenden sie sich an den Support.\",\"Notice: Your own name can not be changed .Please contact the support.\"\nperson_show_description,Kurzbiographie,Short biography,\nperson_show_edit_btn,Seite bearbeiten,Edit Page,\nperson_show_external_uris,Links,Links,\nperson_show_external_uris_autority_control,Verzeichnis(se),Register,\nperson_show_first_name,Vorname,First name,\nperson_show_last_name,Nachname,Last name,\nperson_show_only_name,Name,Name,\nperson_show_pseudonym,Pseudonym,Pseudonym,\npicture_alt_fallback,(unbekannt),(unkown),\npicture_alt_prefix,Bild: ,Picture:,Prefix für Titel von Bildern (hover-titel/Screenreader)\nrelations_parents_title,Übergeordnete Sets,Parents,\nrelations_siblings_title,Benachbarte Sets,Siblings,\nrelations_title,Zusammenhänge,Relations,\nrelease_source_history,Source History,Source History,\nrelease_info,Release Info,Release info,\nrelease_local_git_version,Lokale Git Version,Local Git version,\nresource_action_collection_create,Set erstellen,Create set,\nresource_action_collection_destroy,Set löschen,Delete set,\nresource_action_collection_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_collection_edit_cover,Titelbild festlegen,Define set cover,\nresource_action_collection_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_collection_edit_highlight,Inhalte hervorheben,Highlight items,\nresource_action_collection_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_collection_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_collection_select_collection,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_action_collection_share,Set teilen,Share set,\nresource_action_media_entry_destroy,Medieneintrag löschen,Delete media entry,\nresource_action_media_entry_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_media_entry_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_media_entry_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_media_entry_export,Medieneintrag exportieren,Export media entry,\nresource_action_media_entry_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_media_entry_manage_confidential_links,Vertrauliche Links verwalten,Manage Confidential Links,\nresource_action_media_entry_select_collection,Zu Sets hinzufügen / Aus Sets entfernen,Add to/remove from set,\nresource_action_media_entry_share,Medieneintrag teilen,Share media entry,\nresource_action_media_entry_update_file,Medieneintrag ersetzen,Replace media entry,\nresource_action_more_actions,Weitere Aktionen,Further actions,\nresource_action_show_in_admin,Zeige im Admin-Interface,Show in Admin Interface,\nresource_ask_delete_cancel,Abbrechen,Cancel,\nresource_ask_delete_ok,Löschen,Delete,\nresource_ask_delete_question_post,?,?,\nresource_meta_data_copyright_notice,Rechte am geistigen Eigentum,Copyright notice,\nresource_meta_data_date,Datierung,Date,\nresource_meta_data_description,Beschreibung,Description,\nresource_meta_data_document_type,Dokumenttyp,Type of document,\nresource_meta_data_fallback,Es sind keine Metadaten zu diesem Kontext bereitgestellt.,There are no metadata related to this context.,\nresource_meta_data_has_validation_errors,Es gibt fehlerhafte Eingabefelder.,There are erroneously entry fields.,\"Wo: Meldung wenn Metadaten fehlerhaft, z.B. fehlendes Pflichtfeld\"\nresource_meta_data_keywords,Schlagworte,Keywords,\nresource_meta_data_resource_type,Medientyp,Media type,\nresource_meta_data_responsible,Verantwortliche/r Nutzer/in,Responsible user,\nresource_meta_data_saved_filter,Gespeicherter Filter,Saved filter,\nresource_meta_data_title,Titel,Title,\nresource_select_collection_cancel,Abbrechen,Cancel,\nresource_select_collection_clear,Löschen,Clear,\nresource_select_collection_has_more,Es gibt noch weitere Resultate. Bitte Suche verfeinern.,There are more results. Please refine the search.,\nresource_select_collection_hint_more,Es wurden noch weitere Sets gefunden. Bitte verfeinern Sie Ihre Suche.,Additional sets were found. Please refine your search.,\nresource_select_collection_new,Neue,New,\nresource_select_collection_non_assigned,Inhalt ist noch keinem Set zugewiesen.,Item is not yet related to any set.,\nresource_select_collection_non_found,Zu dieser Suche wurde kein Set gefunden.,No set was found.,\nresource_select_collection_save,Speichern,Save,\nresource_select_collection_search,Suchen,Search,\nresource_select_collection_search_placeholder,Suche,Search,\nresource_select_collection_title,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_thumbnail_contents,Inhalte,Items,\nresource_thumbnail_sets,Sets,Sets,\nresources_box_batch_actions_addalltoclipboard_1,Alle ,Add all ,\nresources_box_batch_actions_addalltoclipboard_2, zur Stapelverarbeitung hinzufügen, to batch processing,\nresources_box_batch_actions_addselectedtoclipboard,Ausgewählte zur Stapelverarbeitung hinzufügen,Add selected to batch processing,\nresources_box_batch_actions_addtoset,Ausgewählte zu Set hinzufügen,Add selected to set,\nresources_box_batch_actions_clear_clipboard,Stapelverarbeitung leeren,Empty batch processing,\nresources_box_batch_actions_delete,Ausgewählte löschen,Delete selected,\nresources_box_batch_actions_edit,Metadaten von Medieneinträgen editieren,Edit metadata for media entries,\nresources_box_batch_actions_edit_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nresources_box_batch_actions_edit_all_collections,Metadaten von allen Sets editieren,Edit metadata of all sets at once,\nresources_box_batch_actions_edit_all_media_entries,Metadaten von allen Medieneinträgen editieren,Edit metadata of all media entries at once,\nresources_box_batch_actions_edit_sets,Metadaten von Sets editieren,Edit metadata of sets,\nresources_box_batch_actions_managepermissions,Berechtigungen von Medieneinträgen editieren,Edit permissions for media entries,\nresources_box_batch_actions_menu_title,Aktionen,Actions,\nresources_box_batch_actions_removefromclipboard,Ausgewählte aus der Stapelverarbeitung entfernen,Remove selected from batch processing,\nresources_box_batch_actions_removefromset,Aus Set entfernen,Remove from set,\nresources_box_batch_actions_sets_managepermissions,Berechtigungen von Sets editieren,Edit permissions for sets,\nresources_box_batch_actions_transfer_responsibility_entries,Verantwortlichkeit von Medieneinträgen übertragen,Transfer responsibility of media entries,\nresources_box_batch_actions_transfer_responsibility_sets,Verantwortlichkeit von Sets übertragen,Transfer responsibility of sets,\nresources_box_deselect_all,Alle abwählen,Deselect all,\nresources_box_filter,Filtern,Filter,\nresources_box_filters_note_post,\"aus, um weitere Filterkriterien anwenden zu können.\",\"in the Action bar to see more filter options.\",\nresources_box_filters_note_pre,Wählen Sie in der Aktionsleiste,Please select,\nresources_box_filters_note_or,oder,or,\nresources_box_new_search,Neue Suche,New search,\nresources_box_no_content,Keine Inhalte verfügbar,No items available.,\nresources_box_no_content_but_sets_1,Es gibt keine Medieneinträge für diese Suche. Es wurden aber ,There are no media entries related to this search process. But ,\nresources_box_no_content_but_sets_2,Sets,sets,\nresources_box_no_content_but_sets_3, gefunden., have been found.,\nresources_box_reset_filter,Filter zurücksetzen,Reset filter,\nresources_box_select_all,Alle auswählen,Select all,\nresources_box_selection_limit_ok,Ok,Ok,\nresources_box_selection_limit_page_1,\"Die Seite kann nicht selektiert werden, da sonst die maximale Anzahl von \",This page cannot be selected because otherwise the maximum number of,\nresources_box_selection_limit_page_2, ausgewählten Inhalten überstiegen würde., pages would be exceeded.,\nresources_box_selection_limit_single_1,\"Der Inhalt kann nicht selektiert werden, da sonst die maximale Anzahl von \",\"This item can not be selected, because otherwise the maximum number of\",\nresources_box_selection_limit_single_2, ausgewählten Inhalten überstiegen würde.,selected items would be exceeded.,\nresources_box_selection_remove_selection,Auswahl entfernen,Remove selection,\nresources_box_selection_select,Auswählen,Select,\nresources_box_title_count_post,Inhalte,Items,\nresources_box_info_header_no_system_groups,In dieser Auflistung werden %{system_groups_name} nicht berücksichtigt.,%{system_groups_name} are not taken into account.,\nresources_box_info_header_system_groups_name,Systemgruppen,System groups,\nresources_section_show_all,Alle anzeigen →,Show all →,\nresources_type_all,Alle,All,\nresponsibility_groups,Verantwortungs-Gruppen,Responsibility groups,\nsearch_btn_search,Suchen,Search,\nsearch_filename,Filename,File name,\nsearch_full_text,Volltext,Full text,\nsection_title_collections,Meine Sets,My sets,\nsection_title_groups,Meine Gruppen,My groups,\nsection_title_keywords,Meine Schlagworte,My keywords,\nsection_title_media_entries,Meine Medieneinträge,My media entries,\nsection_title_tokens,Meine Tokens,My tokens,\nsession_expiring_soon,Sie werden in weniger als %{minutes} Minuten ausgeloggt. Speichern Sie Ihre Eingaben und melden sich neu an.,You will be logged out in less than %{minutes} minutes. Save your input and log in again.\nshare_back_to_collection,Zurück zum Set,Back to the set,\nshare_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nshare_close,Schliessen,Close,\nshare_custom_url_hint_collection,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeiten), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-works-by-anna), use the following URL:\",\nshare_custom_url_hint_media_entry,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeit), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-work-by-anna), use the following URL:\",\nshare_custom_url_none_available,Es ist keine sprechende Adresse angelegt.,No comprehensible address has been defined.,\nshare_custom_url_subtitle,Sprechende Adresse teilen,Share comprehensible address,\nshare_embed_hint_iframe,\"Falls dies von Ihrem gewünschen System nicht unterstützt wird, kopieren Sie den nachfolgenden iFrame-Code und fügen diesen als HTML-Element in das gewünschte System ein.\",\"If your desired system does not support this, copy the following iFrame code and paste it into the desired system as an HTML element.\",\nshare_embed_hint_iframe_code,\"IFrame-Code\",\"IFrame Code\",\nshare_embed_hint_oembed,\"Viele Content Management Systeme lassen einfaches Einbetten von Inhalten via oEmbed zu. Dazu kopieren Sie die URL oben und fügen sie in ein Inhaltselement ein.\",\"Many content management systems allow easy embedding of content via oEmbed. To do so, copy the URL above and paste it into a content element.\",\nshare_embed_hint_subtitle,\"Medieneintrag einbetten\",\"Embed Media Entry\",\nshare_title_collection,Set teilen,Share set,\nshare_title_media_entry,Medieneintrag teilen,Share media entry,\nshare_uuid_url_hint_collection,\"Möchten Sie dieses Set teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this set? Use the following URL.\",\nshare_uuid_url_hint_exporter,Auch für den Export mit dem Madek-Exporter wird diese URL benötigt.,This URL is also required for exporting with the Madek exporter.,\nshare_uuid_url_hint_media_entry,\"Möchten Sie diesen Medieneintrag teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this media entry? Use the following URL.\",\nshare_uuid_url_subtitle,URL teilen,Share URL,\n\n\nsettings_notifications_title,Notifikationen,Notifications,\nsettings_notifications_info1,Notifikationen werden unter %{notifications} aufgeführt und optional per E-Mail verschickt.,Notifications are listed under %{notifications} and optionally sent via email.,\nsettings_notifications_info2,Notifikationen werden nach 6 Monaten gelöscht,Notifications will be removed after 6 months,\nsettings_notifications_info3,Die Einstellungen für die E-Mail-Notifikationen finden Sie nachstehend:,Choose your settings for e-mail notifications below:,\nsettings_notifications_email_label,An folgende E-Mail-Adresse bekommen Sie Notifikationen zugestellt:,Notifications will be sent to the following e-mail address:,\nsettings_notifications_locale_label,Die E-Mails werden in folgender Sprache verschickt:,You will receive emails in,\nsettings_notifications_locale_de,Deutsch,German,\nsettings_notifications_locale_en,Englisch,English,\nsettings_notifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nsettings_notifications_title_weather_report,Wetterbericht,Weather report,\nsettings_notifications_email_frequency_label,In welcher Häufigkeit möchten Sie E-Mails erhalten?,Frequency of email notification:,\nsettings_notifications_email_frequency_immediately,sofort,immediately,\nsettings_notifications_email_frequency_daily,täglich (Zusammenfassung),daily (digest),\nsettings_notifications_email_frequency_weekly,wöchentlich (Zusammenfassung),weekly (digest),\nsettings_notifications_email_frequency_never,keine,none,\nsettings_advanced_functions_title,Erweiterte Funktionen,Advanced functions,\nsettings_show_all_data_tab_in_edit_mode_label,Reiter «Alle Daten» im Bearbeitungsmodus einblenden,Show the «All metadata» Tab in edit mode,\nsettings_save_changes,Einstellungen speichern,Save settings,\nsettings_saved_changes,Einstellungen wurden gespeichert,Settings have been saved,\nsitemap_activities,Aktivitäten,Activities,\nsitemap_notifications,Notifikationen,Notifications,\nsitemap_api,API,API,\nsitemap_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_collections,Sets,Sets,\nsitemap_entries,Medieneinträge,Media entries,\nsitemap_explore,Erkunden,Explore,\nsitemap_filter_sets,Filtersets,Filter sets,\nsitemap_help,Hilfe,Support,\nsitemap_media_entries,Medieneinträge,Media entries,\nsitemap_metakey,Metakey,Metakey,\nsitemap_metakey_id,Metakey-ID,Metakey ID,\nsitemap_my_archive,Mein Archiv,My archive,\nsitemap_my_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_my_content_collections,Sets,Sets,\nsitemap_my_content_media_entries,Medieneinträge,Media entries,\nsitemap_my_delegated_collections,Sets in gemeinsamer Verantwortung,Sets with joint responsibility,\nsitemap_my_delegated_media_entries,Medieneinträge in gemeinsamer Verantwortung,Media entries with joint responsibility,\nsitemap_my_entrusted_collections,Mir anvertraute Sets,My entrusted sets,\nsitemap_my_entrusted_filter_sets,Mir anvertraute Filtersets,My entrusted filter sets,\nsitemap_my_entrusted_media_entries,Mir anvertraute Medieneinträge,My entrusted media entries,\nsitemap_my_favorite_collections,Favoriten-Sets,Favorite sets,\nsitemap_my_favorite_media_entries,Favoriten-Medieneinträge,Favorite media entries,\nsitemap_my_groups,Gruppen,Groups,\nsitemap_my_latest_imports,Letzte Importe,Last imports,\nsitemap_my_unpublished,Unvollständige Medieneinträge,Incomplete media entries,\nsitemap_my_used_keywords,Schlagworte,Keywords,\nsitemap_search,Suche,Search,\nsitemap_tokens,Tokens,Tokens,\nsitemap_settings,Einstellungen,Settings,\nsitemap_vocabularies,Vokabulare,Vocabularies,\nconfidential_links_help_title,Hinweise,Hints,\nsitemap_vocabulary,Vokabular,Vocabulary,\nconfidential_links_help_text,\"Vertrauliche Links ermöglichen den direkten Zugriff auf Medieneinträge, auch wenn sie nicht öffentlich sichtbar sind.\nDiese Links ermöglichen somit auch Benutzern ohne Login einen Zugang zum Medieneintrag. Binden Sie Vertrauliche Links nicht in öffentlich zugängliche Webseiten ein, sonst werden die regulären Zugriffsberechtigungen wirkungslos.\nVertrauliche Links können nur vom Verantwortlichen eines Medieneintrags erstellt und zurückgezogen werden. Die Links können mit einem Verfallsdatum erstellt oder zeitlich unbeschränkt erstellt werden.\",\"Confidential Links can be used to enable access to Entries without making them publicly visible.\nThese Links therefore also make it possible to share Entries with Users that don't have a login. Please do not share or embed Confidential Links onto publicly accessible websites, because it would render the regular permission settings useless.\nConfidential Links can only be created by the responsible user of an Entry. They can be manually revoked at any time, and optionally be set to expire automatically after a set day.\",\nconfidential_links_header,Vertrauliche Links,Confidential Links,\nconfidential_links_title_pre,Vertrauliche Links für ,Confidential Links for ,\nconfidential_links_title_post,Zurück zum Set,Back to the set,\nconfidential_links_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nconfidential_links_create_title,Neuen Vertraulichen Link erstellen,Create a new Confidential Link,\nconfidential_links_create_description,Beschreibung,Description,\nconfidential_links_create_submit,Vertraulichen Link erstellen,Create Confidential Link,\nconfidential_links_create_set_expiration_date,Ablaufdatum einstellen,Set expiration date,\nconfidential_links_create_cancel,Abbrechen,Cancel,\nconfidential_links_created_title,Neuer Vertraulicher Link erstellt,New Confidential Link created,\nconfidential_links_created_back_btn,Zurück zu allen Vertraulichen Links,Go back to all Confidential Links,\nconfidential_links_created_notice,Vertraulicher Link erstellt!,Confidential Link was created!,\nconfidential_links_show_link_for_copy,Link zum kopieren:,Link to copy:,\nconfidential_links_show_embedcode_for_copy,Embed-Code zum kopieren:,Embed-Code to copy:,\nconfidential_links_show_embed_link,Embed-Link:,Embed-link:,\nconfidential_links_show_embed_code_iframe,HTML-Code/iframe:,HTML-code/iframe:,\nconfidential_links_list_created_hint_pre,Erstellt: ,Created: ,\nconfidential_links_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\nconfidential_links_list_no_expiry,Nie,Never,\nconfidential_links_list_new_button,Neuen Vertraulichen Link erstellen,Add a new Confidential Link,\nconfidential_links_list_no_description,(Keine Beschreibung),(No description),\nconfidential_links_list_revoke_btn_hint,Zurückziehen,Revoke,\nconfidential_links_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Vertraulichen Link zurückziehen wollen?\",Are you sure you want to revoke this Confidential Link?,\nconfidential_links_list_revoked_title,Abgelaufene und zurückgezogene Vertrauliche Links,Expired and revoked Confidential Links,\nconfidential_links_list_show_url,Link anzeigen,Show Link,\nconfidential_links_list_copy_url,Vertraulichen Link kopieren,Copy Confidential Link,\nconfidential_links_head_id,ID,ID,\nconfidential_links_head_name,Name,Name,\nconfidential_links_head_token,Token,Token,\nconfidential_links_head_valid_since,Erstellt am,Created at,\nconfidential_links_head_valid_until,Läuft ab,Expires at,\nconfidential_links_show_title,Vertraulicher Link,Confidential Link,\nconfidential_links_access_notice,Dieser Medieneintrag wurde über einen Vertraulichen Link aufgerufen. Die URL dieser Seite darf nur einem eingeschränkten Personenkreis zugänglich sein.,This Entry was accessed via a Confidential Link. The URL of this page shall only be made accessible to a limited group of people.,\ntransfer_responsibility_batch_success_collection_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_collection_1a, Set , set ,\ntransfer_responsibility_batch_success_collection_1b, Sets , sets ,\ntransfer_responsibility_batch_success_collection_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_batch_success_media_entry_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_media_entry_1a, Medieneintrag , media entry,\ntransfer_responsibility_batch_success_media_entry_1b, Medieneinträge, media entries,\ntransfer_responsibility_batch_success_media_entry_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_cancel,Abbrechen,Cancel,\ntransfer_responsibility_currently_responsible,Bisher verantwortlich,Currently responsible,\ntransfer_responsibility_to,Verantwortlichkeit übertragen auf,Transfer responsibility to,\ntransfer_responsibility_for_1_media_entry,für 1 Medieneintrag,for 1 media entry,\ntransfer_responsibility_for_n_media_entries,für %{nofResources} Medieneinträge,for %{nofResources} media entries,\ntransfer_responsibility_for_1_collection,für 1 Set,for %{nofResources} set,\ntransfer_responsibility_for_n_collections,für %{nofResources} Sets,for %{nofResources} sets,\ntransfer_responsibility_multiple_will_receive,Die bisher Verantwortlichen behalten folgende Berechtigungen:,The ones currently responsible are retaining the following permissions:,\ntransfer_responsibility_single_will_receive,%{name} behält folgende Berechtigungen:,%{name} is retaining the following permissions:,\ntransfer_responsibility_submit,Übertragen,Transfer,\ntransfer_responsibility_success_collection,Sie haben die Verantwortlichkeit für das Set erfolgreich übertragen.,You have successfully transferred responsibility for the set.,\ntransfer_responsibility_success_media_entry,Sie haben die Verantwortlichkeit für den Medieneintrag erfolgreich übertragen.,You have successfully transferred responsibility for the media entry.,\ntransfer_responsibility_title_single,Verantwortlichkeit übertragen,Transfer responsibility,\ntransfer_responsibility_title_batch,Verantwortlichkeit %{forNResources} übertragen,Transfer responsibility %{forNResources},\ntransfer_responsibility_you_will_receive,\"Sie, %{name}, behalten folgende Berechtigungen:\",\"You, %{name}, are retaining the following permissions:\",\nusage_data_created_at,Erstellt am,Created on,\nusage_data_import_at,Importiert am,Imported on,\nusage_data_import_by,Importiert durch,Imported by,\nusage_data_last_changes_empty,Es wurden noch keine Änderungen festgehalten.,No changes have been recorded yet.,\nusage_data_last_changes_title,Letzte Änderungen der Metadaten,Last change of metadata,\nusage_data_relations_children,Set enthält,Set is related to,\nusage_data_relations_parents,Übergeordnete Sets,Parent sets,\nusage_data_relations_title,Zusammenhänge,Relations,\nusage_data_responsibility_title,Verantwortlichkeit und Aktivitäten,Responsibility and activities,\nusage_data_responsible,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / responsibility group,\nusage_terms_accept_btn,Nutzungsbedingungen akzeptieren,Accept usage terms,\nusage_terms_reject_btn,Ablehnen,Reject usage terms,\nuser_menu_admin_mode_toogle_off,Admin-Modus beenden,Stop admin mode,\nuser_menu_admin_mode_toogle_on,In Admin-Modus wechseln,Switch to admin mode,\nuser_menu_admin_ui,Admin-Interface öffnen,Open admin interface,\nuser_menu_login_btn,Anmelden,Log in,\nuser_menu_logout_btn,Abmelden,Log out,\nuser_menu_my_content_collections,Meine Sets,My sets,\nuser_menu_my_content_media_entries,Meine Medieneinträge,My media entries,\nuser_menu_my_favorite_collections,Favoriten - Sets,Favorites - sets,\nuser_menu_my_favorite_media_entries,Favoriten - Medieneinträge,Favorites - media entries,\nuser_menu_my_groups,Meine Gruppen,My groups,\nuser_menu_my_person,Meine Person,My person,\nuser_menu_upload,Medien importieren,Upload media,\nuser_name_deactivated,[Gelöschter User],[Deleted user],\nvocabularies_all,Alle Vokabulare,All vocabularies,\nvocabularies_contents_hint_1,Alle Inhalte mit Metadaten des Vokabulars ,All items with metadata related to the vocabulary,\nvocabularies_contents_hint_2,\". Sie sehen nur Inhalte, für die Sie berechtigt sind.\",. You can see only items you have permissions for.,\nvocabularies_keywords_hint_1,Alle im Vokabular ,All keywords contained in the vocabulary ,\nvocabularies_keywords_hint_2, enthaltenen Schlagworte und die dazugehörenden Metadatenfelder., and related meta data fields.,\nvocabularies_no_description,(Keine Beschreibung),(No description available),\nvocabularies_no_keywords,Keine Schlagworte vorhanden.,No keywords available.,\nvocabularies_no_people,Keine Personen vorhanden.,Keine Personen vorhanden.,\nvocabularies_people_hint_1,Alle im Vokabular ,Alle im Vokabular ,\nvocabularies_people_hint_2, enthaltenen Personen und die dazugehörenden Metadatenfelder., enthaltenen Personen und die dazugehörenden Metadatenfelder.,\nvocabularies_tabs_contents,Inhalte,Items,\nvocabularies_tabs_keywords,Schlagworte,Keywords,\nvocabularies_tabs_people,Personen,People,\nvocabularies_tabs_permissions,Berechtigungen,Permissions,\nvocabularies_tabs_vocabulary,Vokabular,Vocabulary,\nvocabulary_permissions_hint1,\"Für dieses Vokabular können die Berechtigungen \"\"Betrachten\"\" und \"\"Anwenden\"\" vergeben werden. Wenn Sie Mitglied einer berechtigten Arbeitsgruppe sind, können Sie weitere Personen zu dieser hinzufügen oder daraus entfernen. Bitte überlegen Sie Änderungen gut, da über Arbeitsgruppen auch weitere Berechtigungen gesteuert werden.\",\"This vocabulary can be managed with the permissions \"\"View\"\" and \"\"Execute\"\". If you are member of a work group which owns permissions, you are able to add or remove further users. Think carefully before you make changes to work groups as this may affect other permissions.\",\nvocabulary_permissions_hint2,\"Weitere Berechtigungen für Personen, Arbeitsgruppen, API-Applikationen oder die Öffentlichkeit werden durch den Administrator vergeben – bitte wenden Sie sich an den Support.\",\"Further permissions for persons, work groups, API clients or public usage are granted by the administrator. Please contact  support.\",\nvocabulary_term_info_contents,Inhalte,Items,\nvocabulary_term_info_description,Beschreibung,Description,\nvocabulary_term_info_rdfclass,Typ,Type,\nvocabulary_term_info_term,Begriff,Term,\nvocabulary_term_info_url,URL,URL,\nvocabulary_term_info_urls,URLs,URLs,\nworkgroup_link_to_contents_text,Inhalte,Items,\nworkgroup_link_to_contents_title,Inhalte dieser Arbeitsgruppe anzeigen,Show items of this work group,\nworkgroup_members_table_is_member,Mitglied?,Member?,\nworkgroup_members_table_login,Login,Login,\nworkgroup_members_table_title,Mitglieder,Members,\nmedia_entry_notice_new_versions,Für diesen Medieneintrag sind neuere Versionen vorhanden:,Newer versions are available for this media entry:,\nread_more_button,\"Mehr anzeigen\",\"Show more\",\nread_less_button,\"Weniger anzeigen\",\"Show less\",\n");
+		translationsList = readTranslationsFromCSV("key,de,en,comment\najax_form_connection_error,Verbindungsfehler. Bitte versuchen Sie es noch einmal.,Connection error. Please try again.,\najax_form_no_longer_authorized,Sie sind für diese Aktion nicht mehr authorisiert.,You are no longer authorized to do this.,\najax_form_unexpected_error,Es gab einen unerwarteten Server-Fehler.,There was an unexpected server error.,\najax_form_validation_error_unparsable,Validation error with unparsable errors.,Validation error with unparsable errors.,\"Formular speichern, Edge case: Server gibt Fehlermeldung UND sie kann nicht gelesen werden.\"\najax_form_validation_error_without_any_data,Validation error without any data.,Validation error without any data.,\"Formular speichern, Edge case: Server gibt Fehlermeldungs-Code aber sonst keinen Inhalt\"\najax_form_validation_error_without_error_data,Validation error without error data.,Validation error without error data.,\"Formular speichern, Edge case: Server gibt Fehlermeldung, aber keine Details\"\napi_tokens_callback_description,Token wird für eine externe Applikation erstellt.,Token is being created for an external application.,\napi_tokens_create_cancel,Abbrechen,Cancel,\napi_tokens_create_description,Beschreibung,Description,\napi_tokens_create_submit,Token anlegen,Create token,\napi_tokens_create_title,Neuen Token hinzufügen,Add new token,\napi_tokens_created_back_btn,Zurück zu allen Tokens.,Back to all tokens.,\napi_tokens_created_callback_btn,Weiter zur Applikation,Continue to the application,\napi_tokens_created_callback_description,\"Falls die Weiterleitung nicht funktioniert, kann der Token auch manuell kopiert werden:\",\"If the redirect does not work, the token can also be copied manually:\",\napi_tokens_created_notice,Dieser Token wird nur einmal angezeigt. Bitte speichern Sie ihn jetzt.,This token is displayed only once. Please save it now.,\napi_tokens_created_title,Es wurde ein neuer Token erstellt.,A new token was created.,\napi_tokens_head_id,ID,ID,\napi_tokens_head_name,Name,Name,\napi_tokens_head_permissions,Berechtigungen,Permissions,\napi_tokens_head_valid_since,Gültig seit,Valid from,\napi_tokens_head_valid_until,Gültig bis,Valid to,\napi_tokens_list_created_hint_pre,Erstellt: ,Created: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_new_button,Neuen Token erstellen,Create new token,\napi_tokens_list_no_description,(Keine Beschreibung),No description),\"Platzhalter-Text, falls ein Token keine Beschreibung hat.\"\napi_tokens_list_revoke_btn_hint,Token zurückziehen.,Revoke token.,\napi_tokens_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Token zurückziehen wollen?\",Are you sure you want to revoke the token?,\napi_tokens_list_revoked_title,Abgelaufene und zurückgezogene Tokens,Expired and revoked tokens,\napi_tokens_list_scope_off,Nein,No,\napi_tokens_list_scope_on,Ja,Yes,\napi_tokens_list_scope_read,Lesen,Read,\napi_tokens_list_scope_write,Schreiben,Write,\napp_autocomplete_displayname_users,Nutzer/innen,Users,\napp_autocomplete_displayname_delegations,Verantwortungs-Gruppen,Responsibility groups,\napp_autocomplete_no_results,Keine Ergebnisse.,No results.,\napp_autocomplete_user_delegation_postfix, (Verantwortungs-Gruppe), (Responsibility group)\napp_autocomplete_enter_term,Suchbegriff eingeben für weitere Ergebnisse,Enter search term for further results,\napp_autocomplete_extend_term,Suchbegriff erweitern für weitere Ergebnisse,Extend search term for further results,\napp_confirm_form_leave_msg,\"Diese Seite bittet Sie zu bestätigen, dass Sie die Seite verlassen möchten. Daten, die Sie eingegeben haben, werden unter Umständen nicht gespeichert.\",Please confirm that you wish to leave this page – entered data might not be saved.,NOTE: German version copied from Firefox default message\napp_notice_admin_mode_on,Admin-Modus aktiviert!,Admin mode activated!,\napp_notice_admin_mode_off,Admin-Modus deaktiviert!,Admin mode deactivated!,\napp_notice_logged_in,Sie haben sich angemeldet.,You have logged in.,\napp_notice_logged_out,Sie haben sich abgemeldet.,You have logged out.,\napp_notice_wrong_credentials,Falscher Benutzername/Passwort.,Incorrect username/password.,\napp_notice_shibboleth_not_enabled,Die Anmeldung mittels Shibboleth ist nicht aktiviert!,Shibboleth sign in is not enabled!,\napp_notice_shibboleth_missing_fields,\"Die Authentifizierungsdaten von Shibboleth sind unvollständig. SURNAME, GIVENNAME und EMAIL sind Pflichtfelder!\",\"Shibboleth authentication data is incomplete. SURNAME, GIVENNAME and EMAIL are required fields!\",\napp_warning_jsonly,\"Diese Funktion erfordert JavaScript, aber es ist nicht aktiviert.\",\"This feature requires Javascript, but it is not activated.\",\nauthentication_groups,Systemgruppen,System groups,\nbatch_add_to_collection_hint,\"Nach Sets suchen, zu denen Sie die Medieneinträge hinzufügen möchten.\",Seach for sets to add media entries.,\nbatch_add_to_collection_post, Medieneinträge zu Set hinzufügen,Add media entries to set,(nach der Anzahl)\nbatch_add_to_collection_pre, ,,(vor der Anzahl)\nbatch_destroy_resources_ask_1,Möchten Sie folgende Inhalte löschen:,Do you want to delete the following items:,\nbatch_destroy_resources_ask_2, Medieneinträge, Media entries,\nbatch_destroy_resources_ask_3, Sets, Sets,\nbatch_destroy_resources_ask_4,(Die Inhalte von Sets werden nicht automatisch mit dem Set gelöscht.),\"(When a set is deleted, the items of this set are not deleted at the same time.)\",\nbatch_destroy_resources_cancel,Abbrechen,Cancel,\nbatch_destroy_resources_ok,OK,OK,\nbatch_destroy_resources_success,Inhalte wurden erfolgreich gelöscht.,Items are deleted successfully.,\nbatch_meta_data_edit,Metadaten für %{media_entry_count} Medieneinträge gleichzeitig editieren.,Edit metadata for %{media_entry_count} media entries at the same time.,\nbatch_remove_from_collection_cancel,Abbrechen,Cancel,\nbatch_remove_from_collection_question_part_1,Möchten Sie die ausgewählten ,Do you want to remove the selected ,\nbatch_remove_from_collection_question_part_2, Medieneinträge und , media entries and ,\nbatch_remove_from_collection_question_part_3, Sets aus dem Set entfernen?, sets from this set?,\nbatch_remove_from_collection_remove,Entfernen,Remove,\nbatch_remove_from_collection_title,Medieinträge/Sets aus Set entfernen,Remove media entries/sets from sets,\nbatch_warning_no_authorized_contents_collection,Sie haben für keines der Sets die nötige Berechtigung.,You have no permissions for these sets.,\nbatch_warning_no_authorized_contents_media_entry,Sie haben für keinen der Medieneinträge die nötige Berechtigung.,You have no permissions for these media entries.,\nbatch_warning_no_contents_collection,Sie haben keine Sets.,You have no sets.,\nbatch_warning_no_contents_media_entry,Sie haben keine Medieneinträge.,You have no media entries.,\nbatch_edit_title_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nbatch_edit_title_th_filename,Dateiname,File name,\nbatch_edit_title_th_title,Titel,Title,\nbatch_edit_title_save,Speichern,Save,\nbatch_edit_title_cancel,Abbrechen,Cancel,\nbrowse_entries_browse_link_title,In diese Richtung weiterstöbern,Browse further in this direction,\nbrowse_entries_filter_link,Weiter filtern →,Apply additional filter →,\nbrowse_entries_loading_error,Ladefehler,Loading error,\nbrowse_entries_title,Nach ähnlichen Inhalten stöbern,Browse similar items,\nbubble_batch_label,Stapel,Batch,Wo: Labels in der Stapelverarbeitung\nbubble_draft_label,Entwurf,Draft,Wo: Labels in der Stapelverarbeitung\nclipboard_add_hint,Zur Stapelverarbeitung hinzufügen,Add to batch processing,\nclipboard_adding_all_resources_cancelled,\"Das Hinzufügen zur Stapelverarbeitung wurde abgebrochen. Ein Teil der Inhalte wurde schon hinzugefügt. Wenn Sie alle hinzufügen möchten, versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.\",\"The process of adding items to batch processing was interrupted. Some items were successfully added to batch processing. If you wish to add all items, please try again.Those items already added will not be duplicated.\",\nclipboard_adding_all_resources_error,Es konnten nicht alle Inhalte zur Stapelverarbeitung hinzugefügt werden. Bitte versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.,It was not possible to add all items to batch processing. Please try again. Those items already added will not be duplicated.,\nclipboard_adding_all_resources_retry,Nochmals, Again,\nclipboard_adding_resources,Füge Inhalte zur Stapelverarbeitung hinzu …,Add items to batch processing …,\nclipboard_ask_add_all_1,Möchten sie alle ,Would you like to add all ,\nclipboard_ask_add_all_2, Inhalte zur Stapelverarbeitung hinzufügen?, items to batch processing?,\nclipboard_ask_add_all_cancel,Abbrechen,Cancel,\nclipboard_ask_add_all_ok,Ok,OK,\nclipboard_batch_add_success,Die Inhalte wurden der Stapelverarbeitung hinzugefügt.,Items were added to batch processing.,\nclipboard_batch_remove_success,Die Inhalte wurden aus der Stapelverarbeitung entfernt.,Items wer removed from batch processing.,\nclipboard_empty_message,Sie haben keine Inhalte für die Stapelverarbeitung ausgewählt.,Batch processing is empty,\nclipboard_fetching_resources,Lade Inhalte …,Items loading …,\"Wieso sind da Pünktchen? -> Ist eine Zustandsanzeige, Nutzer wartet.\"\nclipboard_removing_resources,Entferne Inhalte aus Stapelverarbeitung...,Remove items from batch processing ...,\ncollection_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgendes Set löschen möchten: \",Are you sure you want to delete the following set:,\ncollection_ask_delete_title,Set löschen,Delete set,\ncollection_deleted,Dieses Set wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This set has been deleted and is no longer visible to users.\ncollection_delete_success,Set wurde gelöscht.,Set deleted.,\ncollection_does_not_exist,Dieses Set existiert nicht.,This set does not exist.,\ncollection_edit_cover_submit_btn,Speichern,Submit,\ncollection_edit_cover_title,Titelbild für Set festlegen,Define set cover,\ncollection_edit_highlights_btn,Auswahl speichern,Submit selection,\ncollection_edit_highlights_empty,Dieses Set hat noch keine Inhalte.,This set has no items yet.,\ncollection_edit_highlights_title,Inhalte hervorheben,Highlight items,\ncollection_edit_permissions_btn,Speichern,Submit,\ncollection_highlighted_contents,Hervorgehobene Inhalte,Highlighted items,\ncollection_layout_save,Darstellung festlegen,Save type of display,\ncollection_layout_saved,Darstellung gespeichert,Type of display saved,\ncollection_meta_data_header_prefix,Set editieren: ,Edit set:,\ncollection_new_cancel,Abbrechen,Cancel,\ncollection_new_create_set,Set erstellen,Create set,\ncollection_new_dialog_title,Set erstellen,Create set,\ncollection_new_dialog_parent_warning,The new created set will be added as a child to:,The new created set will be added as a child to:,\ncollection_new_flash_successful,Set wurde erstellt.,Set was created.,\ncollection_new_flash_title_needed,Titel ist ein Pflichtfeld.,Title is a mandatory field.,\ncollection_new_header,Neues Set,New set,\ncollection_new_label_title,Titel,Title,\ncollection_permissions_btn,Zugriffsberechtigungen ändern,Change permissions,\ncollection_relations_child_sets,Untergeordnete Sets,Child sets,\ncollection_relations_children_hint,Diese Sets wurden dem ausgewählten Set hinzugefügt.,These sets are now related to the selected set.,\ncollection_relations_current,Aktuelles Set,Current set,\ncollection_relations_hint_text,\"Das ausgewählte Set ist mit anderen Sets verknüpft. Diese Zusammenhänge wurden aktiv durch Sie oder eine/n andere/n Nutzer/in festgelegt als übergeordnet, benachbart oder untergeordnet. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected set is related to other sets. The relationship between these sets was actively defined by you or another user. The type of relationship to the other sets could be described as parent, siblings or children relationship. The displayed sets are owned by yourself or shared by other users with you.\",\ncollection_relations_no_child_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_parent_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_sibling_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_parent_sets,Übergeordnete Sets,Parent sets,\ncollection_relations_parents_hint,Das ausgewählte Set wurde diesen Sets hinzugefügt.,The selected set is now related to this set.,\ncollection_relations_show_all,Alle anzeigen →,Show all →,\ncollection_relations_show_all_relations,Alle Zusammenhänge anzeigen,Show all relations,\ncollection_relations_sibling_sets,Benachbarte Sets,Sibling sets,\ncollection_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie das ausgewählte Set.,This set is related to the same sets as the selected set.,Wo: Zusammenhänge eines Sets\ncollection_resource_selection_cancel,Abbrechen,Cancel,\ncollection_resource_selection_h_author,Autor/in,Author,\ncollection_resource_selection_h_date,Datierung,Dating,\ncollection_resource_selection_h_keywords,Schlagworte,Keywords,\ncollection_resource_selection_h_responsible,Rechteinhaber,Holder of rights,\ncollection_resource_selection_h_selection,Auswahl,Selection,\ncollection_resource_selection_h_subtitle,Untertitel,Subtitle,\ncollection_resource_selection_h_title,Titel,Title,\ncollection_resource_selection_save,Auswahl speichern,Save selection,\ncollection_select_collection_flash_result,Set aus %{removed_count} Set(s) entfernt. Zu %{added_count} Set(s) hinzugefügt.,Removed set from %{removed_count} set(s). Added set to %{added_count} set(s).,\ncollection_sorting_created_at_asc,Sortieren nach Importierdatum aufsteigend,Sort by import date ascending,\ncollection_sorting_created_at_desc,Sortieren nach Importierdatum absteigend,Sort by import date descending,\ncollection_sorting_manual_asc,Sortieren manuell aufsteigend,Sort manually ascending,\ncollection_sorting_manual_desc,Sortieren manuell absteigend,Sort manually descending,\ncollection_sorting_last_change_desc,Sortieren nach letzter Änderung absteigend,Sort by date of update descending,\ncollection_sorting_last_change_asc,Sortieren nach letzter Änderung aufsteigend,Sort by date of update ascending,\ncollection_sorting_title_asc,Sortieren nach Titel alphabetisch,Sort by title alphabetically,\ncollection_sorting_title_desc,Sortieren nach Titel absteigend,\"Sort by title alphabetically, but descending\",\ncollection_tab_main,Set,Set,\ncollection_was_disfavored,Das Set wurde von den Favoriten entfernt.,Set was removed from favorites.,\ncollection_was_favored,Das Set wurde zu den Favoriten hinzugefügt.,Set was added to favorites.,\ncontents_privacy_private,Diese Inhalte sind nur für Sie zugänglich.,These items are only accessible to you.,\ncontents_privacy_public,Diese Inhalte sind öffentlich zugänglich.,These items are accessible to the public.,\ncustom_urls_canonical_hint,\"Jeder Inhalt hat eine automatisch erzeugte, kanonische Adresse bestehend aus Zahlen und Buchstaben, eine sog. UUID (Universally Unique Identifier). Diese Adresse kann nicht übertragen oder entfernt werden und ist deshalb immer an erster Stelle aufgelistet.\",\"Every item has a canonical address consisting of numbers und letters which is created automatically, a so- called UUID (Universally Unique Identifier). This address can not be transferred or deleted. For this reason it is always listed first.\",\ncustom_urls_canonical_title,Kanonische Adresse (UUID),Canonical address (UUID),\ncustom_urls_flash_create_successful_1,Adresse ,Address ,\ncustom_urls_flash_create_successful_2, wurde erstellt., was created.,\ncustom_urls_flash_empty,Adresse darf nicht leer sein.,Address is not allowed to be empty.,\ncustom_urls_flash_exists_on_itself_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_collection_2, existiert bereits für dieses Set., already exists for this set.,\ncustom_urls_flash_exists_on_itself_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_media_entry_2, existiert bereits für diesen Medieneintrag., already exists for this media entry.,\ncustom_urls_flash_not_allowed_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_collection_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung das Set zu verwalten, auf welches die Adresse \", can not be transferred. You do not have permission to manage the set to which the address ,\ncustom_urls_flash_not_allowed_collection_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_allowed_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_media_entry_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung den Medieneintrag zu verwalten, auf welchen die Adresse \", cannot be transferred. You do not have  permission to manage the media entry to which the address ,\ncustom_urls_flash_not_allowed_media_entry_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_same_type_collection_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_collection_2, kann nicht übertragen werden. Adressen von Medieneinträgen können nicht auf Sets übertragen werden., can not be transferred. Addresses from media entries can not be transferred to sets.,\ncustom_urls_flash_not_same_type_media_entry_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_media_entry_2, kann nicht übertragen werden. Adressen von Sets können nicht auf Medieneinträge übertragen werden., cannot be transferred. Addresses from sets cannot be transferred to media entries.,\ncustom_urls_flash_primary_url_set_1,,,\"Wo: Bestätigung CustomURL, vor der Adresse\"\ncustom_urls_flash_primary_url_set_2, wurde als primäre Adresse gesetzt., was set as primary address.,\"Wo: Bestätigung CustomURL, nach der Adresse\"\ncustom_urls_flash_transfer_confirmation_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_collection_2, ist gegenwärtig dem Set , is currently related to the set  ,\ncustom_urls_flash_transfer_confirmation_collection_3, zugewiesen. Wollen Sie diese Adresse auf das Set ,. Would you like to transfer this address to the set ,\ncustom_urls_flash_transfer_confirmation_collection_4, übertragen?,?,\ncustom_urls_flash_transfer_confirmation_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_media_entry_2, ist gegenwärtig dem Medieneintrag , is currently related to the media entry  ,\ncustom_urls_flash_transfer_confirmation_media_entry_3, zugewiesen. Wollen Sie diese Adresse auf den Medieneintrag ,. Would you like to transfer this address to the media entry ,\ncustom_urls_flash_transfer_confirmation_media_entry_4, übertragen?,?,\ncustom_urls_flash_transfer_successful_1,Adresse ,Address  ,\ncustom_urls_flash_transfer_successful_2, wurde von , was transferred from  ,\ncustom_urls_flash_transfer_successful_3, auf , to ,\ncustom_urls_flash_transfer_successful_4, übertragen.,0,\ncustom_urls_flash_wrong_format_1,Adresse ,Address ,\ncustom_urls_flash_wrong_format_2, erfüllt die Anforderungen nicht., does not meet the requirements.,\ncustom_urls_manage_address_title,Adressverwaltung,Address administration,\ncustom_urls_new,Adresse anlegen / übertragen,Create / transfer address,\ncustom_urls_no_addresses_defined,Noch keine Adressen definiert.,No address defined yet.,\ncustom_urls_primary_hint,\"Für jeden Inhalt (egal ob Medieneintrag oder Set) gibt es immer genau eine primäre Adresse. Diese ist in der Adressleiste des Browsers sichtbar, wenn der Inhalt angezeigt wird. Neben der primären Adresse können weitere gesetzt werden, die auf die primäre Adresse weiterleiten.\",Each item (media entry or set) has exactly one primary address. This address is displayed in the browsersaddress bar when the item is accessed.You have the option to create other addresses which are forwarded to the primary address.,\ncustom_urls_primary_title,Primäre Adresse,Primary address,\ncustom_urls_table_header_actions,Aktionen,Actions,\ncustom_urls_table_header_address,Adresse,Address ,\ncustom_urls_table_header_created_by,Erstellt durch,Created by,\ncustom_urls_table_header_date,Datum,Date,\ncustom_urls_table_header_type,Typ,Type,\ncustom_urls_title,Adressen für ,Addresses for ,\ndashboard_create_collection,Set erstellen,Create set,\ndashboard_create_collection_btn,Set erstellen,Create set,\ndashboard_create_media_entry_btn,Medien importieren,Upload media,\ndashboard_none_exist,Keine vorhanden.,There are none.,\ndashboard_show_all,Alle anzeigen,Show all,\ndashboard_title_head,Mein Archiv,My archive,\ndeleted,gelöscht,deleted,\ndynamic_filters_any_values_title,Jegliche Werte,Any values,\ndynamic_filters_authorization,Berechtigung,Authorization,\ndynamic_filters_visibility,Sichtbarkeit,Accessability,\ndynamic_filters_visibility_private,Nur für mich,Only for me,\ndynamic_filters_visibility_user_or_group,Geteilt mit Personen und Arbeitsgruppen,Shared with people and work groups,\ndynamic_filters_person_header,Personen,Persons,\ndynamic_filters_remove_all_title,Alle entfernen,Remove all,\ndynamic_filters_role_header,Funktionen,Functions,\ndynamic_filters_search_for_api_client_placeholder,Suche nach API-Applikation,Search for API client...,\ndynamic_filters_search_for_delegation_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_group_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_user_placeholder,Suche nach User...,Search for user...,\ndynamic_filters_search_for,Suche nach,Search for,\nedit_custom_urls_back_to_collection,Zurück zum Set,Back to the set,\nedit_custom_urls_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nedit_custom_urls_cancel,Abbrechen,Cancel,\nedit_custom_urls_confirmation,Bestätigung,Confirmation,\nedit_custom_urls_create_or_transfer,Adresse anlegen / übertragen,Create / transfer address,\nedit_custom_urls_preferred_address,Gewünschte Adresse:,Preferred address:,\nedit_custom_urls_requirements_hint,\"Eine Adresse darf nur genau einmal im System vorkommen – entweder für einen Medieneintrag oder für ein Set. Sie beginnt immer mit einem Kleinbuchstaben, gefolgt von (mindestens einem) weiteren Zeichen aus Kleinbuchstaben, Nummern, Bindestrichen ( - ) und Grundstrichen ( _ ) in beliebiger Reihenfolge.\",\"Each comprehensible address is unique in the system – either for a media entry or for a set. The address always begins with a lower case letter, followed by at least one other character. The following characters can bei lower case letters, numbers, hyphens ( - ) or low lines ( _ ) in any order.\",\nedit_custom_urls_requirements_title,Anforderungen,Requirements,\nedit_custom_urls_set_primary,Als primäre Adresse setzen,Set as primary address,\nedit_custom_urls_state_primary,Primäre Adresse,Primary address,\nedit_custom_urls_state_transfer,Weiterleitung,Forwarding,\nedit_custom_urls_title,Anforderungen,Requirements,\nedit_custom_urls_transfer,Übertragen,Transfer,\nedit_custom_urls_transfer_hint,\"Eine bereits bestehende Adresse kann von einem Medieneintrag auf einen anderen oder von einem Set auf ein anderes übertragen werden. Bestehende Adressen können nicht von einem Medieneintrag auf ein Set und umgekehrt übertragen werden. Wollen Sie eine Adresse übertragen, dann geben Sie diese hier ein. Sie müssen für beide Inhalte über die Zugriffsberechtigung 'Verwalten' verfügen.\",\"An existing address can be transferred from one media entry to another or from one set to another. Existing addresses cannfot be transferred from a media entry to a set or vice versa. If you want to transfer an address, please enter this address here. You have to have manage permissions for both items.\",\nedit_custom_urls_transfer_title,Übertragen,Transfer,\nembed_error_title,\"Fehler!\",\"Error!\",\nembed_error_context_pre,\"Angeforderte URL: \",\"Requested URL: \",\nembed_error_context_post,\"\",\"\",\nembed_error_help_pre,\"Hilfe: \",\"Help: \",\nembed_error_help_post,\"\",\"\",\nembed_error_msg,\"Dieser Inhalt kann nicht eingebettet werden.\",\"This content cannot be embedded.\",\nembed_error_msg_403,\"Dieser Inhalt kann nicht eingebettet werden, weil die nötigen Berechtigungen fehlen.\",\"This content cannot be embedded because the necessary permissions are missing.\",\nembed_error_msg_404,\"Der gewünschte Inhalt konnte nicht gefunden werden.\",\"The requested content could not be found.\",\nerror_401_title,\"Um Zugang zu diesem Bereich zu erhalten, melden Sie sich bitte an.\",To get access please login below with your user data.,\nerror_403_message,Bitte kontaktieren Sie die für die Ressource verantwortliche Person.,Please contact the responsible user for this resource.,\nerror_403_title,Sie haben keine Zugriffsrechte für diesen Inhalt.,You don’t have the necessary permissions to access this resource.,\nerror_404_title,Die gesuchte Seite kann nicht gefunden werden.,The requested page cannot be found.,\nerror_500_message,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (%{support_email}) mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\"If you require help in this matter, please contact the support (%{support_email}) with a description of your last working steps and a screen shot of this page.\",\nerror_500_message_pre,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (\",\"If you require help in this matter, please contact the support (\",\nerror_500_message_post,\") mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\") with a description of your last working steps and a screen shot of this page.\",\nerror_500_title,Es ist ein Server-Fehler aufgetreten.,A server error occurred.,\nexplore_keywords_section_title,Häufige Schlagworte,Frequent keywords,\nexplore_show_more,Weitere anzeigen,Show more,\nexplore_vocabulary_section_show_details,Details anzeigen,View details,\nexplore_vovabulary_section_title,Vokabulare,Vocabularies,\nexternal_groups,Abteilungsgruppen,Division groups,\nfooter_choose_language,Sprache wählen,Choose language,\ngroup_ask_delete_cancel,Abbrechen,Cancel,\ngroup_ask_delete_delete,Löschen,Delete,\ngroup_ask_delete_question_post, löschen?,?,\ngroup_ask_delete_question_pre,Möchten Sie die Arbeitsgruppe ,Would you like to delete work group ,\ngroup_ask_delete_title,Arbeitsgruppe löschen,Delete work group,\ngroup_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Arbeitsgruppe löschen wollen?\",Are you sure you want to delete this work group?,\ngroup_edit_at_least_one_member_delete,löschen,delete,VERB\ngroup_edit_at_least_one_member_post,0,0,NACH dem Verb und Namen der Gruppe\ngroup_edit_at_least_one_member_pre,Eine Arbeitsgruppe muss mindestens eine Person enthalten. Ganze Arbeitsgruppe ,A work group has at least one member. Whole work group,VOR dem Verb und Namen der Gruppe\ngroup_edit_btn,Bearbeiten,Edit,\ngroup_edit_cancel,Abbrechen,Cancel,\ngroup_edit_form_new_member_login_hint,Login des neuen Mitglieds dieser Arbeitsgruppe,New work group member login,\ngroup_edit_form_new_member_login_label,User hinzufügen,Add a member,\ngroup_edit_form_save_btn,Speichern,Save,\ngroup_edit_form_title_pre,Arbeitsgruppe bearbeiten: ,Edit work group: ,\ngroup_edit_hint_remove_yourself,Achtung: Sie entfernen sich selbst aus der Arbeitsgruppe!,Attention: You are about to remove yourself from the work group!,\ngroup_edit_member,Mitglieder,Members,\ngroup_edit_name,Name,Name,\ngroup_edit_person,Person,Person,\ngroup_edit_save,Speichern,Save,\ngroup_edit_username,Benutzername,Username,\ngroup_meta_data_institutional_name,Name der Abteilungsgruppe,Division group name,\ngroup_meta_data_name,Name,Name,\ngroup_new_form_title,Neue Arbeitsgruppe erstellen,Create group,\ngroup_new_group_btn,Neue Arbeitsgruppe,New work group,\ngroup_show_edit_button,Arbeitsgruppe bearbeiten,Edit work group,\ngroup_show_members,Mitglieder,Members,\ngroup_show_permissions_use,(anwenden),(execute),\ngroup_show_permissions_view,(betrachten),(view),\ngroup_show_permissions_view_use,(betrachten und anwenden),(view and execute),\ngroup_show_vocabulary_permissions,Berechtigungen Vokabulare,Permissions vocabularies,\ngroup_toolbar_header_entrusted_resources,Mir anvertraute Medieneinträge,Entrusted media entries,\ngroup_was_deleted,Arbeitsgruppe wurde gelöscht.,Work group has been deleted.,\nhome_page_new_contents,Neue Inhalte,New items,\ninternal_groups,Arbeitsgruppen,Work groups,\nlayout_mode_grid,Raster-Ansicht,Grid view,\nlayout_mode_list,Listen-Ansicht,List view,\nlayout_mode_miniature,Miniatur-Ansicht,Miniature view,\nlayout_mode_tiles,Kachel-Ansicht,Tile view,\nlogin_box_internal,Externe,External users,\nlogin_box_title,Anmelden,Log in,\nlogin_box_login_btn,Anmelden,Log in,\nlogin_box_email_or_login,E-Mail,Email,\nlogin_box_password,Passwort,Password,\nlogin_box_rememberme,Login merken,Remember me,\nlogin_box_username,Benutzername,User name,\nmedia_entry_all_metadata_title,Alle Metadaten nach Vokabularen,All metadata by vocabulary,\nmedia_entry_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgenden Medienintrag löschen möchten: \",Are you sure you want to delete the following media entry:,\nmedia_entry_ask_delete_title,Medieneintrag löschen,Delete media entry,\nmedia_entry_back_btn,Zurück,Back,\nmedia_entry_conversion_hint,\"Diese Datei wird gerade für eine Vorschau konvertiert. Sobald dies abgeschlossen ist, finden Sie hier eine abspielbare Version.\",\"Currently the system is converting this file to a preview. As soon as the conversion is finished, you will be able to play the file here.\",\nmedia_entry_conversion_progress_post,% abgeschlossen.,% completed.,\nmedia_entry_conversion_progress_pre,Konvertierung zu ,Conversion ,\nmedia_entry_conversion_reload,\"Laden Sie diese Seite neu, um den aktuellen Stand der Konvertierung zu erfahren.\",Reload this page to display the current state of conversion.,\nmedia_entry_conversion_status_failed,Die Konvertierung ist fehlgeschlagen. Bitte wenden Sie sich an den Support.,The file conversion has failed. Please contact support.,\nmedia_entry_conversion_status_initialized,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_conversion_status_submitted,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_deleted,Dieser Medieneintrag wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This media entry has been deleted and is no longer visible to users.\nmedia_entry_delete_success,Der Medieneintrag wurde gelöscht.,Media entry has been deleted.,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_post,erstellen,,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_pre,(Experte) Hinweis zu neuer Version inkl. Verlinkung zu,(Expert) Add annotation «new version of» and link to,\nmedia_entry_duplicator_configuration_copy_meta_data,Metadaten übertragen,Copy meta data,\nmedia_entry_duplicator_configuration_copy_permissions,Zugriffsberechtigungen übertragen,Copy permissions,\nmedia_entry_duplicator_configuration_copy_relations,Zusammenhänge übertragen (übergeordnete Sets und Favoriten),Copy relations (parent collections & favorites),\nmedia_entry_duplicator_configuration_move_custom_urls,(Experte) Sprechende Adresse (URL) übernehmen,(Expert) Move comprehensible Address (URL),\nmedia_entry_duplicator_configuration_instructions,Folgende Optionen können gewählt werden:,Choose options below:,\nmedia_entry_duplicator_custom_urls_already_moved,moved to the first successful upload!,moved to the first successful upload!,\nmedia_entry_duplicator_desc_post,zugewiesen.,by selected options.,\nmedia_entry_duplicator_desc_pre,\"Die unten importierten Mediendateien bekommen die den nachfolgend gewählten Optionen entsprechenden Metadaten, Zugriffsberechtigungen, Beziehungen und weitere Einstellungen des aktuellen Medieneintrags\",\"The media file to be imported below will get assigned meta data, permissions, relations and further settings from the actual media entry\",\nmedia_entry_duplicator_md_title_suffix,(updated),(updated),\nmedia_entry_duplicator_new_version_of_label,Updated file,Updated file,\nmedia_entry_export_close,Schliessen,Close,\nmedia_entry_export_download,Exportieren,Download,\nmedia_entry_export_has_no_original,Sie verfügen für den Export der Originaldatei nicht über die notwendige Berechtigung.,You are not allowed to download the original file.,\nmedia_entry_export_no_content,Sie haben keine Zugriffsberechtigung für die Originaldatei und es steht keine Vorschau zur Verfügung.,You do not have permission to access the original file and there is no preview available.,\nmedia_entry_export_original,Original,Original,\nmedia_entry_export_original_hint,Originaldatei herunterladen.,Download original file.,\nmedia_entry_export_subtitle_audios,Audio-Dateien,Audio files,\nmedia_entry_export_subtitle_documents,Dokumente,Documents,\nmedia_entry_export_subtitle_images,Bilder,Images,\nmedia_entry_export_subtitle_videos,Video-Dateien,Video files,\nmedia_entry_export_title,Medieneintrag exportieren,Download media entry,\nmedia_entry_export_rdf_title,RDF-Export Metadaten,RDF export metadata,\nmedia_entry_export_rdf_title_hint,(experimentell),(experimental),\nmedia_entry_export_rdf_experiment_footnote,\"Struktur und Format der Daten können sich ändern. Bitte geben sie eine Rückmeldung, falls Sie diese verwenden!\",\"Data structure and format is subject to change. Please send feedback if you are using this!\",\nmedia_entry_export_checksum_title,Prüfsumme,Checksum,\nmedia_entry_export_checksum_generate,Erzeugen,Generate,\nmedia_entry_export_checksum_verify,Prüfen,Verify,\nmedia_entry_export_checksum_empty,Prüfsumme erzeugen,Generate checksum,\nmedia_entry_export_checksum_generating,Wird erzeugt…,Generating…,\nmedia_entry_export_checksum_verifying,Wird verifiziert…,Verifying…,\nmedia_entry_export_checksum_generated_at,Erzeugt am,Generated at,\nmedia_entry_export_checksum_verified_at,Geprüft am,Verified at,\nmedia_entry_export_checksum_match,Prüfsumme stimmt überein,Checksum matches,\nmedia_entry_export_checksum_mismatch,Prüfsumme stimmt nicht überein,Checksum does not match,\nmedia_entry_export_checksum_error,Fehler bei der Prüfsummen-Operation,Error during checksum operation,\nmedia_entry_file_format_not_supported_1,\"Wahrscheinlich unterstützt Ihr Browser nicht die Darstellung dieses Dateiformats, aber Sie \",\"Your browser probably does not support the file format, but you can \",\nmedia_entry_file_format_not_supported_2,können die Datei ,download the file,\nmedia_entry_file_format_not_supported_3,exportieren.,0,\nmedia_entry_file_information_title,Datei,File information,\nmedia_entry_media_import_gotodrafts,Medieneinträge vervollständigen,Complete media entries,\nmedia_entry_media_import_gotomediaentries,Weiter zu Meine Medieneinträge,Continue to My media entries,\nmedia_entry_media_import_header,Medien importieren,Media upload,\nmedia_entry_media_import_box_header_a,,,\nmedia_entry_media_import_box_header_b, Upload(s), Upload(s),\nmedia_entry_media_import_box_upload_status_waiting,Warten…,Waiting…,\nmedia_entry_media_import_box_upload_status_error,Fehler!,Error!,\nmedia_entry_media_import_box_upload_status_progress_a,Hochladen… ,Uploading… ,\nmedia_entry_media_import_box_upload_status_progress_b,%,%,\nmedia_entry_media_import_box_upload_status_processing,Verarbeiten…,Processing…,\nmedia_entry_media_import_inside,Dateien auf dieses Feld ziehen oder ,Add files by drag and drop in this field or ,\nmedia_entry_media_import_inside_nojs,Dateien auswählen,Select files,\nmedia_entry_media_import_notes_msg,\"Bilder (TIFF, JPEG, PNG) sowie Audio- und Videofiles in den gängigsten Formaten werden direkt verarbeitet und dargestellt. Bilder im CMYK-Farbraum werden nicht korrekt dargestellt. Wandeln Sie diese vor dem Importieren in RGB um.\",\"Images (TIFF, JPEG, PNG) and audio/video files in the most common formats are processed and displayed directly. Images in the CMYK color model cannot be displayed correctly, please convert to RGB before uploading.\",\nmedia_entry_media_import_notes_title,Hinweise,Hints,\nmedia_entry_media_import_select_media,Medien auswählen,Select media files,\nmedia_entry_media_import_upload_error,überschreitet maximale Grösse von 16000 Pixel,exceeds size limit of 16000 pixel,\nmedia_entry_media_import_title,\"Bilder, Videos, Audio-Dateien oder Dokumente bereitstellen.\",\"Add images, video or audio files, or other documents.\",\nmedia_entry_meta_data_edit_by_context_btn,Metadaten nach Kontexten bearbeiten,Edit metadata by context,\nmedia_entry_meta_data_edit_by_vocab_btn,Metadaten nach Vokabularen bearbeiten,Edit metadata by vocabulary,\nmedia_entry_meta_data_header_prefix,Medieneintrag editieren: ,Edit media entry: ,\nmedia_entry_more_data_title,Verantwortlichkeit und Aktivität,Responsibility and activities,\nmedia_entry_not_published_warning_msg,Bei diesem Medieneintrag fehlen noch Pflichtangaben.,Media entry still needs mandatory data.,\nmedia_entry_relations_current,Aktueller Eintrag,Current entry,\nmedia_entry_relations_hint_text,\"Der ausgewählte Medieneintrag ist mit Sets verknüpft. Diese Zusammenhänge wurden aktiv festgelegt als übergeordnet oder benachbart. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected media entry is connected to sets. These relations are actively defined as a parent, a sibling or a child relationship. The sets displayed here are your own or are shared with you by other users.\",\nmedia_entry_relations_parents_hint,Der ausgewählte Medieneintrag wurde diesen Sets hinzugefügt.,The selected media entry was added to these sets.,\nmedia_entry_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie der ausgewählte Medieneintrag.,These sets were added to the same sets as the selected media entry.,\nmedia_entry_select_collection_flash_result,Der Medieneintrag wurde aus %{removed_count} Set(s) entfernt und zu %{added_count} Set(s) hinzugefügt.,Media entry removed from %{removed_count} set(s) and added to %{added_count} set(s).,\nmedia_entry_siblings_section_title,Weitere Medieneinträge im selben Set,Other media entries in the same set,\nmedia_entry_siblings_parent_set,Übergeordnetes Set:,Parent set:,\nmedia_entry_tab_main,Medieneintrag,Media entry,\nmedia_entry_tab_more_data,Alle Metadaten,All metadata,\nmedia_entry_tab_permissions,Berechtigungen,Permissions,\nmedia_entry_tab_relations,Zusammenhänge,Relations,\nmedia_entry_tab_usage_data,Nutzung,Usage,\nmedia_entry_upload_btn,Importieren,Upload,\nmedia_entry_was_disfavored,Der Medieneintrag wurde von den Favoriten entfernt.,Media entry was removed from favorites.,\nmedia_entry_was_favored,Der Medieneintrag wurde zu den Favoriten hinzugefügt.,Media entry was added to favorites.,\nmedia_entry_xmp_import_cancel,Abbrechen,Cancel,\nmedia_entry_xmp_import_flash_failed,\"Folgende Metadaten konnten nicht importiert werden: \",The following metadata could not be imported: ,\nmedia_entry_xmp_import_flash_invalid_file,Bitte eine XMP-Datei (.xmp) auswählen.,Please select an XMP file (.xmp).,\nmedia_entry_xmp_import_flash_nothing,Die XMP-Datei enthält keine importierbaren Metadaten.,The XMP file contains no importable metadata.,\nmedia_entry_xmp_import_flash_success,\"Metadaten aus XMP-Sidecar importiert: \",Metadata imported from XMP sidecar: ,\nmedia_entry_xmp_import_flash_unreadable,\"Die XMP-Datei konnte nicht gelesen werden: \",The XMP file could not be read: ,\nmedia_entry_xmp_import_hint,\"Metadaten aus einer XMP-Sidecar-Datei (.xmp) übernehmen. Nur Felder, die in der XMP-Datei einen Wert haben, werden überschrieben; alle anderen Metadaten bleiben unverändert.\",\"Import metadata from an XMP sidecar file (.xmp). Only fields that have a value in the XMP file will be overwritten; all other metadata remains unchanged.\",\nmedia_entry_xmp_import_submit,Importieren,Import,\nmedia_entry_xmp_import_title,XMP-Sidecar importieren,Import XMP sidecar,\nmedia_entry_xmp_sidecars_title,Importierte XMP-Sidecars,Imported XMP sidecars,\nmeta_data_action_delete_btn,Löschen,Delete,\nmeta_data_action_edit_btn,Bearbeiten,Edit,\nmeta_data_batch_action_remove_meta_data,Werte für alle Inhalte löschen,Delete data for all content,\nmeta_data_batch_failure,Metadaten konnten nicht aktualisiert werden.,Metadata could not be updated.,\nmeta_data_batch_hint_differences,Unterschiedliche Metadaten vorhanden,Different metadata in place.,\nmeta_data_batch_hint_differences_override,\"Achtung: Bestehende Werte werden durch Änderungen überschrieben! Wenn keine Änderungen vorgenommen werden, bleiben die verschiedenen Werte erhalten.\",\"Attention: Changes will replace exiting data. If not changes are made, data will be preserved.\",\nmeta_data_batch_hint_equal_data,Gleiche Metadaten vorhanden,Same metadata in place.,\nmeta_data_batch_hint_no_data,Noch keine Metadaten vorhanden,No metadata available yet.,\nmeta_data_batch_hint_value,Werte oder Text,Values or text,\nmeta_data_batch_item_selected,Medieneintrag selektiert,Media entry selected,\nmeta_data_batch_items_selected,Medieneinträge selektiert,Media entries selected,\nmeta_data_batch_more,weitere,More,\nmeta_data_batch_some_ignored_1,(,(,\nmeta_data_batch_some_ignored_2,\" Medieneinträge wurden ignoriert, da Sie nicht über die nötigen Berechtigungen verfügen)\",\"Media entries were ignored, because you do not have the required permissions.)\",\nmeta_data_batch_success,Metadaten wurden erfolgreich aktualisiert.,metadata have been updated successfully.,\nmeta_data_batch_summary_all_post, Medieneinträge wurden gespeichert., Media entries have been saved.,NACH der Anzahl\nmeta_data_batch_summary_all_pre,Alle ,All ,VOR der Anzahl\nmeta_data_batch_summary_missing, haben fehlende Pflichtangaben, have missing mandatory data,\nmeta_data_batch_summary_published, haben ausgefüllte Pflichtfelder, have mandatory data,\nmeta_data_batch_summary_were_published, hatten bereits ausgefüllte Pflichtfelder, already had mandatory data,\nmeta_data_batch_title_post_collections, Sets gleichzeitig editieren,Edit sets at the same time,\nmeta_data_batch_title_post_media_entries, Medieneinträge gleichzeitig bearbeiten, media entries at once,\nmeta_data_batch_title_pre,Metadaten für ,Edit metadata for ,\nmeta_data_blank_value_for_required_meta_key_post,0,0,\nmeta_data_blank_value_for_required_meta_key_pre,Kein Wert vorhanden für ,No value available for,\nmeta_data_collection_batch_summary_all_post, Sets wurden gespeichert., Sets were saved.,\nmeta_data_collection_batch_summary_all_pre,Alle ,All ,\nmeta_data_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Werte löschen wollen?\",Are you sure you want to delete these data?,\nmeta_data_edit_collection_saved,Set wurde gespeichert.,Set was saved.,\nmeta_data_edit_media_entry_published,Der Medieneintrag wurde gespeichert und alle Pflichtfelder sind ausgefüllt.,Media entry was saved and mandatory data have been entered.,\nmeta_data_edit_media_entry_saved,Der Medieneintrag wurde gespeichert.,Media entry was saved.,\nmeta_data_edit_media_entry_saved_missing,\"Der Medieneintrag wurde gespeichert, aber es wurden nicht alle Pflichtfelder ausgefüllt.\",Media entry was saved but there some mandatory data are missing.,\nmeta_data_edit_more_data,Weitere Angaben,More data,\nmeta_data_form_all_data,Alle Daten,All metadata,\nmeta_data_form_cancel,Abbrechen,Cancel,\nmeta_data_form_save,Speichern,Save,\nmeta_data_form_saving,Die Metadaten werden gerade gespeichert. Dies kann einige Zeit in Anspruch nehmen. Bitte gedulden Sie sich und schliessen Sie das Fenster nicht.,Meta data are currently being saved. This will take some time. Please be patient and do not close the browser.,\nmeta_data_form_submit_btn,Speichern,Save,\nmeta_data_header_text,Werte,Data,\nmeta_data_input_date_placeholder_duration_from,von,from,\nmeta_data_input_date_placeholder_duration_to,bis,to,\nmeta_data_input_date_placeholder_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_placeholder_timestamp,wird als Text gespeichert,on,\nmeta_data_input_date_type_duration,von/bis,from/to,\nmeta_data_input_date_type_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_type_timestamp,am,on,\nmeta_data_input_keywords_existing,Schlagwort ist bereits vergeben.,Keyword already assigned.,\nmeta_data_input_new_group_add,Arbeitsgruppe einfügen,Add work group,\nmeta_data_input_new_group_name,Name,Name,\nmeta_data_input_new_person_add,Person einfügen,Add person,\nmeta_data_input_new_person_first_name,Vorname,First name,\nmeta_data_input_new_person_last_name,Nachname,Last name,\nmeta_data_input_new_person_pseudonym,Pseudonym,Pseudonym,\nmeta_data_input_new_person_toggle,Neue Person oder Gruppe anlegen,Add new person or work group,\nmeta_data_input_person_save,Übernehmen,Apply,\nmeta_data_input_json_err_prefix,Eingabefehler: ,Input error: ,\nmeta_data_input_json_err_no_object,Wert ist nicht vom Typ 'Object'!,Value is not an 'Object'!,\nmeta_data_meta_key_documentation_url,> Online-Hilfe,click link for details,\nmeta_data_meta_key_label,Schlüssel,Key,\nmeta_data_role_add_another_btn,Weitere Funktion hinzufügen,Add another function,\nmeta_data_role_add_btn,Funktion hinzufügen,Add a function,\nmeta_data_role_add_heading,Funktion hinzufügen zu ,Add a function to,\nmeta_data_role_choose_label,Wählen Sie eine Funktion aus der Liste,Choose a function from the list,\nmeta_data_extensible_role_choose_label,Wählen Sie eine Funktion aus der Liste oder ergänzen Sie die Liste mit der gewünschten Funktion. Mit Enter die Eingabe abschliessen.,Choose a function from the list or enter the function and press Enter,\nmeta_data_role_edit_btn,Funktion bearbeiten,Edit function,\nmeta_data_role_edit_heading,Funktion bearbeiten,Edit the function of,\nmeta_data_role_remove_btn,Funktion entfernen,Remove function,\nmeta_data_type_label,Typ,Type,\nmeta_data_value_label,Wert,Data,\nmeta_datum_media_entry_label_id,Ressourcen-ID:,Resource ID:,\nmeta_datum_media_entry_label_string,Zusatztext:,additional text:,\nmeta_datum_media_entry_err_uuid_invalid,Ungültige UUID!,Invalid UUID!,\nmeta_datum_media_entry_value_unauthorized,Hinweis: Sie haben keinen Zugriff auf diese Ressource!,Notice: You do not have access to this resource!,\nmeta_datum_media_entry_value_not_found,Hinweis: Diese Ressource konnte nicht (mehr) gefunden werden!,Notice: This resource could not be found (anymore)!,\nmeta_key_order_alphabetical,a-z,a-z,\nmeta_key_order_alphabetical_hint,Die Schlagworte dieses Metadatenfeldes sind alphabetisch sortiert.,The keywords of this metakey are sorted alphabetically.,\nmeta_key_order_custom,redaktionell,editorial,\nmeta_key_order_custom_hint,Die Schlagworte dieses Metadatenfeldes sind redaktionell sortiert.,The keywords of this metakey are sorted editorially.,\nno_content_fallback,Keine Inhalte vorhanden.,No items available.,\nno_groups_fallback,Keine Arbeitsgruppen vorhanden.,No work groups available.,\nno_keywords_fallback,Keine Schlagworte vorhanden.,No keywords available.,\nno_relations_title,Es wurden keine Zusammenhänge gefunden.,No relations found.,\nnotifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nnotifications_message_transfer_responsibility,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to you.\",\nnotifications_message_transfer_responsibility_via_delegation,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to %{viaDelegation}.\",\nnotifications_message_transfer_responsibility_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to you.\",\nnotifications_message_transfer_responsibility_via_delegation_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to %{viaDelegation}.\",\nnotifications_media_entry,Medieneintrag,media entry,\nnotifications_collection,Set,set,\nnotifications_acknowledge_all,Alle Notifikationen löschen,Delete all notifications,\nnotifications_really_acknowledge_all,Wirklich alle löschen?,Really delete all?,\nnotifications_acknowledge,Löschen,Delete,\nnotifications_acknowledge_date_tooltip,Alle Notifikationen vom %{date} löschen,Delete all notifications of %{date},\nnotifications_no_notifications,Keine Einträge vorhanden,No entries present,\nnotifications_section_expand,Alle anzeigen,Show all,\nnotifications_section_collapse,Anzeige reduzieren,Reduce,\nnotifications_section_show_more,Weitere Einträge anzeigen,Show more,\npagination_nav_loadnext,Mehr laden,Load more,\npagination_nav_nextloading,Mehr Inhalte werden geladen.,More items are being loaded.,\npagination_nav_nextpage,Nächste Seite,Next page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_prevpage,Vorangehende Seite,Previous page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_thispage,Diese Seite,This page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_prefix,Seite ,Page ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_infix, von , of ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_postfix,,,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_selection_label,Seite auswählen,Select page,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npeople_toolbar_header,Ähnliche Inhalte,Related items,\npermission_entrusted_to_api_client,Sichtbar für API-Applikationen,Visible to API clients,\npermission_entrusted_to_group,Sichtbar für Arbeitsgruppen,Visible to work groups,\npermission_entrusted_to_user,Sichtbar für Nutzer/innen,Visible to users,\npermission_name_edit_metadata,Metadaten editieren,Edit metadata,\npermission_name_edit_metadata_and_relations,Metadaten editieren & Inhalte hinzufügen,Edit metadata and add items,\npermission_name_edit_permissions,Zugriffsberechtigungen ändern,Edit permissions,\npermission_name_get_full_size,Original exportieren & in PDF blättern,Download original & browse PDF,\npermission_name_get_metadata_and_previews,Betrachten,View,\npermission_name_use,Anwenden,Execute,bezieht sich auf Vokabulare!\npermission_name_view,Betrachten,View,bezieht sich auf Vokabulare!\npermission_overridden_by_public,(überschrieben durch die öffentlichen Berechtigungen),(overruled by public permissions),\npermission_subject_name_public,Internet,Internet,\npermission_subject_title_apiapps,API-Applikationen,API clients,\npermission_subject_title_groups,Gruppen,Groups,\npermission_subject_title_public,Öffentlichkeit,Public,\npermission_subject_title_users,Nutzer/innen,Users,\npermission_subject_title_users_or_delegations,Nutzer/innen / Verantwortungs-Gruppen,Users / Responsibility Groups,\npermissions_batch_success,Berechtigungen wurden erfolgreich aktualisiert.,Permissions have been updated succesfully.,\npermissions_batch_title_post, Inhalten., Items.,\npermissions_batch_title_pre,Berechtigungen ändern von ,Edit permissions of ,\npermissions_overview_yours_msg_end,\", haben gegenwärtig als Nutzer/in oder als Mitglied einer Verantwortungs-Gruppe oder Arbeitsgruppe folgende Berechtigungen:\",\", currently have the following permissions (either directly or as a member of a\nresponsibility group or as a member of a work group):\",\npermissions_overview_yours_msg_start,\"Sie, \",\"You, \",\npermissions_overview_yours_title,Ihre Berechtigungen,Your permissions,\npermissions_responsibility_title,Verantwortlichkeit,Responsibility,\npermissions_responsible_user_and_responsibility_group_title,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / Responsibility group,\npermissions_responsible_user_and_responsibility_group_msg,Der/die verantwortliche/r Nutzer/in hat alle Berechtigungen zu den ausgewählten Inhalten und kann diese auch löschen.,The responsible user / responsibility group has all permissions for the selected content and can also delete it.,\npermissions_responsible_delegation_title,Verantwortungs-Gruppe,Responsibility group,\npermissions_responsible_user_title,Verantwortliche Person,Responsible user,\npermissions_table_cancel_btn,Abbrechen,Cancel,\npermissions_table_edit_btn,Bearbeiten,Edit,\npermissions_table_remove_subject_btn,Berechtigung entfernen,Remove permission,\npermissions_table_save_btn,Speichern,Save,\npermissions_table_title,Zugriffsberechtigungen,Permissions,\npermissions_transfer_responsibility_link,Verantwortlichkeit übertragen,Transfer responsibility,\nperson_edit_add_uri_btn,URI hinzufügen,Add URL,\nperson_edit_cancel_btn,Abbrechen,Cancel,\nperson_edit_editing_header,Bearbeiten,editing,\nperson_show_external_uris,Links,Links,\nperson_edit_preview,Vorschau,Preview,\nperson_edit_save_btn,Speichern,Save,\nperson_edit_name_readonly_hint,\"Hinweis: Der eigene Name kann nicht geändert werden. Bitte wenden sie sich an den Support.\",\"Notice: Your own name can not be changed .Please contact the support.\"\nperson_show_description,Kurzbiographie,Short biography,\nperson_show_edit_btn,Seite bearbeiten,Edit Page,\nperson_show_external_uris,Links,Links,\nperson_show_external_uris_autority_control,Verzeichnis(se),Register,\nperson_show_first_name,Vorname,First name,\nperson_show_last_name,Nachname,Last name,\nperson_show_only_name,Name,Name,\nperson_show_pseudonym,Pseudonym,Pseudonym,\npicture_alt_fallback,(unbekannt),(unkown),\npicture_alt_prefix,Bild: ,Picture:,Prefix für Titel von Bildern (hover-titel/Screenreader)\nrelations_parents_title,Übergeordnete Sets,Parents,\nrelations_siblings_title,Benachbarte Sets,Siblings,\nrelations_title,Zusammenhänge,Relations,\nrelease_source_history,Source History,Source History,\nrelease_info,Release Info,Release info,\nrelease_local_git_version,Lokale Git Version,Local Git version,\nresource_action_collection_create,Set erstellen,Create set,\nresource_action_collection_destroy,Set löschen,Delete set,\nresource_action_collection_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_collection_edit_cover,Titelbild festlegen,Define set cover,\nresource_action_collection_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_collection_edit_highlight,Inhalte hervorheben,Highlight items,\nresource_action_collection_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_collection_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_collection_select_collection,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_action_collection_share,Set teilen,Share set,\nresource_action_media_entry_destroy,Medieneintrag löschen,Delete media entry,\nresource_action_media_entry_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_media_entry_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_media_entry_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_media_entry_export,Medieneintrag exportieren,Export media entry,\nresource_action_media_entry_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_media_entry_manage_confidential_links,Vertrauliche Links verwalten,Manage Confidential Links,\nresource_action_media_entry_select_collection,Zu Sets hinzufügen / Aus Sets entfernen,Add to/remove from set,\nresource_action_media_entry_share,Medieneintrag teilen,Share media entry,\nresource_action_media_entry_update_file,Medieneintrag ersetzen,Replace media entry,\nresource_action_media_entry_xmp_import,XMP-Sidecar importieren,Import XMP sidecar,\nresource_action_more_actions,Weitere Aktionen,Further actions,\nresource_action_show_in_admin,Zeige im Admin-Interface,Show in Admin Interface,\nresource_ask_delete_cancel,Abbrechen,Cancel,\nresource_ask_delete_ok,Löschen,Delete,\nresource_ask_delete_question_post,?,?,\nresource_meta_data_copyright_notice,Rechte am geistigen Eigentum,Copyright notice,\nresource_meta_data_date,Datierung,Date,\nresource_meta_data_description,Beschreibung,Description,\nresource_meta_data_document_type,Dokumenttyp,Type of document,\nresource_meta_data_fallback,Es sind keine Metadaten zu diesem Kontext bereitgestellt.,There are no metadata related to this context.,\nresource_meta_data_has_validation_errors,Es gibt fehlerhafte Eingabefelder.,There are erroneously entry fields.,\"Wo: Meldung wenn Metadaten fehlerhaft, z.B. fehlendes Pflichtfeld\"\nresource_meta_data_keywords,Schlagworte,Keywords,\nresource_meta_data_resource_type,Medientyp,Media type,\nresource_meta_data_responsible,Verantwortliche/r Nutzer/in,Responsible user,\nresource_meta_data_saved_filter,Gespeicherter Filter,Saved filter,\nresource_meta_data_title,Titel,Title,\nresource_select_collection_cancel,Abbrechen,Cancel,\nresource_select_collection_clear,Löschen,Clear,\nresource_select_collection_has_more,Es gibt noch weitere Resultate. Bitte Suche verfeinern.,There are more results. Please refine the search.,\nresource_select_collection_hint_more,Es wurden noch weitere Sets gefunden. Bitte verfeinern Sie Ihre Suche.,Additional sets were found. Please refine your search.,\nresource_select_collection_new,Neue,New,\nresource_select_collection_non_assigned,Inhalt ist noch keinem Set zugewiesen.,Item is not yet related to any set.,\nresource_select_collection_non_found,Zu dieser Suche wurde kein Set gefunden.,No set was found.,\nresource_select_collection_save,Speichern,Save,\nresource_select_collection_search,Suchen,Search,\nresource_select_collection_search_placeholder,Suche,Search,\nresource_select_collection_title,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_thumbnail_contents,Inhalte,Items,\nresource_thumbnail_sets,Sets,Sets,\nresources_box_batch_actions_addalltoclipboard_1,Alle ,Add all ,\nresources_box_batch_actions_addalltoclipboard_2, zur Stapelverarbeitung hinzufügen, to batch processing,\nresources_box_batch_actions_addselectedtoclipboard,Ausgewählte zur Stapelverarbeitung hinzufügen,Add selected to batch processing,\nresources_box_batch_actions_addtoset,Ausgewählte zu Set hinzufügen,Add selected to set,\nresources_box_batch_actions_clear_clipboard,Stapelverarbeitung leeren,Empty batch processing,\nresources_box_batch_actions_delete,Ausgewählte löschen,Delete selected,\nresources_box_batch_actions_edit,Metadaten von Medieneinträgen editieren,Edit metadata for media entries,\nresources_box_batch_actions_edit_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nresources_box_batch_actions_edit_all_collections,Metadaten von allen Sets editieren,Edit metadata of all sets at once,\nresources_box_batch_actions_edit_all_media_entries,Metadaten von allen Medieneinträgen editieren,Edit metadata of all media entries at once,\nresources_box_batch_actions_edit_sets,Metadaten von Sets editieren,Edit metadata of sets,\nresources_box_batch_actions_managepermissions,Berechtigungen von Medieneinträgen editieren,Edit permissions for media entries,\nresources_box_batch_actions_menu_title,Aktionen,Actions,\nresources_box_batch_actions_removefromclipboard,Ausgewählte aus der Stapelverarbeitung entfernen,Remove selected from batch processing,\nresources_box_batch_actions_removefromset,Aus Set entfernen,Remove from set,\nresources_box_batch_actions_sets_managepermissions,Berechtigungen von Sets editieren,Edit permissions for sets,\nresources_box_batch_actions_transfer_responsibility_entries,Verantwortlichkeit von Medieneinträgen übertragen,Transfer responsibility of media entries,\nresources_box_batch_actions_transfer_responsibility_sets,Verantwortlichkeit von Sets übertragen,Transfer responsibility of sets,\nresources_box_deselect_all,Alle abwählen,Deselect all,\nresources_box_filter,Filtern,Filter,\nresources_box_filters_note_post,\"aus, um weitere Filterkriterien anwenden zu können.\",\"in the Action bar to see more filter options.\",\nresources_box_filters_note_pre,Wählen Sie in der Aktionsleiste,Please select,\nresources_box_filters_note_or,oder,or,\nresources_box_new_search,Neue Suche,New search,\nresources_box_no_content,Keine Inhalte verfügbar,No items available.,\nresources_box_no_content_but_sets_1,Es gibt keine Medieneinträge für diese Suche. Es wurden aber ,There are no media entries related to this search process. But ,\nresources_box_no_content_but_sets_2,Sets,sets,\nresources_box_no_content_but_sets_3, gefunden., have been found.,\nresources_box_reset_filter,Filter zurücksetzen,Reset filter,\nresources_box_select_all,Alle auswählen,Select all,\nresources_box_selection_limit_ok,Ok,Ok,\nresources_box_selection_limit_page_1,\"Die Seite kann nicht selektiert werden, da sonst die maximale Anzahl von \",This page cannot be selected because otherwise the maximum number of,\nresources_box_selection_limit_page_2, ausgewählten Inhalten überstiegen würde., pages would be exceeded.,\nresources_box_selection_limit_single_1,\"Der Inhalt kann nicht selektiert werden, da sonst die maximale Anzahl von \",\"This item can not be selected, because otherwise the maximum number of\",\nresources_box_selection_limit_single_2, ausgewählten Inhalten überstiegen würde.,selected items would be exceeded.,\nresources_box_selection_remove_selection,Auswahl entfernen,Remove selection,\nresources_box_selection_select,Auswählen,Select,\nresources_box_title_count_post,Inhalte,Items,\nresources_box_info_header_no_system_groups,In dieser Auflistung werden %{system_groups_name} nicht berücksichtigt.,%{system_groups_name} are not taken into account.,\nresources_box_info_header_system_groups_name,Systemgruppen,System groups,\nresources_section_show_all,Alle anzeigen →,Show all →,\nresources_type_all,Alle,All,\nresponsibility_groups,Verantwortungs-Gruppen,Responsibility groups,\nsearch_btn_search,Suchen,Search,\nsearch_filename,Filename,File name,\nsearch_full_text,Volltext,Full text,\nsection_title_collections,Meine Sets,My sets,\nsection_title_groups,Meine Gruppen,My groups,\nsection_title_keywords,Meine Schlagworte,My keywords,\nsection_title_media_entries,Meine Medieneinträge,My media entries,\nsection_title_tokens,Meine Tokens,My tokens,\nsession_expiring_soon,Sie werden in weniger als %{minutes} Minuten ausgeloggt. Speichern Sie Ihre Eingaben und melden sich neu an.,You will be logged out in less than %{minutes} minutes. Save your input and log in again.\nshare_back_to_collection,Zurück zum Set,Back to the set,\nshare_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nshare_close,Schliessen,Close,\nshare_custom_url_hint_collection,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeiten), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-works-by-anna), use the following URL:\",\nshare_custom_url_hint_media_entry,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeit), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-work-by-anna), use the following URL:\",\nshare_custom_url_none_available,Es ist keine sprechende Adresse angelegt.,No comprehensible address has been defined.,\nshare_custom_url_subtitle,Sprechende Adresse teilen,Share comprehensible address,\nshare_embed_hint_iframe,\"Falls dies von Ihrem gewünschen System nicht unterstützt wird, kopieren Sie den nachfolgenden iFrame-Code und fügen diesen als HTML-Element in das gewünschte System ein.\",\"If your desired system does not support this, copy the following iFrame code and paste it into the desired system as an HTML element.\",\nshare_embed_hint_iframe_code,\"IFrame-Code\",\"IFrame Code\",\nshare_embed_hint_oembed,\"Viele Content Management Systeme lassen einfaches Einbetten von Inhalten via oEmbed zu. Dazu kopieren Sie die URL oben und fügen sie in ein Inhaltselement ein.\",\"Many content management systems allow easy embedding of content via oEmbed. To do so, copy the URL above and paste it into a content element.\",\nshare_embed_hint_subtitle,\"Medieneintrag einbetten\",\"Embed Media Entry\",\nshare_title_collection,Set teilen,Share set,\nshare_title_media_entry,Medieneintrag teilen,Share media entry,\nshare_uuid_url_hint_collection,\"Möchten Sie dieses Set teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this set? Use the following URL.\",\nshare_uuid_url_hint_exporter,Auch für den Export mit dem Madek-Exporter wird diese URL benötigt.,This URL is also required for exporting with the Madek exporter.,\nshare_uuid_url_hint_media_entry,\"Möchten Sie diesen Medieneintrag teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this media entry? Use the following URL.\",\nshare_uuid_url_subtitle,URL teilen,Share URL,\n\n\nsettings_notifications_title,Notifikationen,Notifications,\nsettings_notifications_info1,Notifikationen werden unter %{notifications} aufgeführt und optional per E-Mail verschickt.,Notifications are listed under %{notifications} and optionally sent via email.,\nsettings_notifications_info2,Notifikationen werden nach 6 Monaten gelöscht,Notifications will be removed after 6 months,\nsettings_notifications_info3,Die Einstellungen für die E-Mail-Notifikationen finden Sie nachstehend:,Choose your settings for e-mail notifications below:,\nsettings_notifications_email_label,An folgende E-Mail-Adresse bekommen Sie Notifikationen zugestellt:,Notifications will be sent to the following e-mail address:,\nsettings_notifications_locale_label,Die E-Mails werden in folgender Sprache verschickt:,You will receive emails in,\nsettings_notifications_locale_de,Deutsch,German,\nsettings_notifications_locale_en,Englisch,English,\nsettings_notifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nsettings_notifications_title_weather_report,Wetterbericht,Weather report,\nsettings_notifications_email_frequency_label,In welcher Häufigkeit möchten Sie E-Mails erhalten?,Frequency of email notification:,\nsettings_notifications_email_frequency_immediately,sofort,immediately,\nsettings_notifications_email_frequency_daily,täglich (Zusammenfassung),daily (digest),\nsettings_notifications_email_frequency_weekly,wöchentlich (Zusammenfassung),weekly (digest),\nsettings_notifications_email_frequency_never,keine,none,\nsettings_advanced_functions_title,Erweiterte Funktionen,Advanced functions,\nsettings_show_all_data_tab_in_edit_mode_label,Reiter «Alle Daten» im Bearbeitungsmodus einblenden,Show the «All metadata» Tab in edit mode,\nsettings_save_changes,Einstellungen speichern,Save settings,\nsettings_saved_changes,Einstellungen wurden gespeichert,Settings have been saved,\nsitemap_activities,Aktivitäten,Activities,\nsitemap_notifications,Notifikationen,Notifications,\nsitemap_api,API,API,\nsitemap_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_collections,Sets,Sets,\nsitemap_entries,Medieneinträge,Media entries,\nsitemap_explore,Erkunden,Explore,\nsitemap_filter_sets,Filtersets,Filter sets,\nsitemap_help,Hilfe,Support,\nsitemap_media_entries,Medieneinträge,Media entries,\nsitemap_metakey,Metakey,Metakey,\nsitemap_metakey_id,Metakey-ID,Metakey ID,\nsitemap_my_archive,Mein Archiv,My archive,\nsitemap_my_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_my_content_collections,Sets,Sets,\nsitemap_my_content_media_entries,Medieneinträge,Media entries,\nsitemap_my_delegated_collections,Sets in gemeinsamer Verantwortung,Sets with joint responsibility,\nsitemap_my_delegated_media_entries,Medieneinträge in gemeinsamer Verantwortung,Media entries with joint responsibility,\nsitemap_my_entrusted_collections,Mir anvertraute Sets,My entrusted sets,\nsitemap_my_entrusted_filter_sets,Mir anvertraute Filtersets,My entrusted filter sets,\nsitemap_my_entrusted_media_entries,Mir anvertraute Medieneinträge,My entrusted media entries,\nsitemap_my_favorite_collections,Favoriten-Sets,Favorite sets,\nsitemap_my_favorite_media_entries,Favoriten-Medieneinträge,Favorite media entries,\nsitemap_my_groups,Gruppen,Groups,\nsitemap_my_latest_imports,Letzte Importe,Last imports,\nsitemap_my_unpublished,Unvollständige Medieneinträge,Incomplete media entries,\nsitemap_my_used_keywords,Schlagworte,Keywords,\nsitemap_search,Suche,Search,\nsitemap_tokens,Tokens,Tokens,\nsitemap_settings,Einstellungen,Settings,\nsitemap_vocabularies,Vokabulare,Vocabularies,\nconfidential_links_help_title,Hinweise,Hints,\nsitemap_vocabulary,Vokabular,Vocabulary,\nconfidential_links_help_text,\"Vertrauliche Links ermöglichen den direkten Zugriff auf Medieneinträge, auch wenn sie nicht öffentlich sichtbar sind.\nDiese Links ermöglichen somit auch Benutzern ohne Login einen Zugang zum Medieneintrag. Binden Sie Vertrauliche Links nicht in öffentlich zugängliche Webseiten ein, sonst werden die regulären Zugriffsberechtigungen wirkungslos.\nVertrauliche Links können nur vom Verantwortlichen eines Medieneintrags erstellt und zurückgezogen werden. Die Links können mit einem Verfallsdatum erstellt oder zeitlich unbeschränkt erstellt werden.\",\"Confidential Links can be used to enable access to Entries without making them publicly visible.\nThese Links therefore also make it possible to share Entries with Users that don't have a login. Please do not share or embed Confidential Links onto publicly accessible websites, because it would render the regular permission settings useless.\nConfidential Links can only be created by the responsible user of an Entry. They can be manually revoked at any time, and optionally be set to expire automatically after a set day.\",\nconfidential_links_header,Vertrauliche Links,Confidential Links,\nconfidential_links_title_pre,Vertrauliche Links für ,Confidential Links for ,\nconfidential_links_title_post,Zurück zum Set,Back to the set,\nconfidential_links_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nconfidential_links_create_title,Neuen Vertraulichen Link erstellen,Create a new Confidential Link,\nconfidential_links_create_description,Beschreibung,Description,\nconfidential_links_create_submit,Vertraulichen Link erstellen,Create Confidential Link,\nconfidential_links_create_set_expiration_date,Ablaufdatum einstellen,Set expiration date,\nconfidential_links_create_cancel,Abbrechen,Cancel,\nconfidential_links_created_title,Neuer Vertraulicher Link erstellt,New Confidential Link created,\nconfidential_links_created_back_btn,Zurück zu allen Vertraulichen Links,Go back to all Confidential Links,\nconfidential_links_created_notice,Vertraulicher Link erstellt!,Confidential Link was created!,\nconfidential_links_show_link_for_copy,Link zum kopieren:,Link to copy:,\nconfidential_links_show_embedcode_for_copy,Embed-Code zum kopieren:,Embed-Code to copy:,\nconfidential_links_show_embed_link,Embed-Link:,Embed-link:,\nconfidential_links_show_embed_code_iframe,HTML-Code/iframe:,HTML-code/iframe:,\nconfidential_links_list_created_hint_pre,Erstellt: ,Created: ,\nconfidential_links_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\nconfidential_links_list_no_expiry,Nie,Never,\nconfidential_links_list_new_button,Neuen Vertraulichen Link erstellen,Add a new Confidential Link,\nconfidential_links_list_no_description,(Keine Beschreibung),(No description),\nconfidential_links_list_revoke_btn_hint,Zurückziehen,Revoke,\nconfidential_links_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Vertraulichen Link zurückziehen wollen?\",Are you sure you want to revoke this Confidential Link?,\nconfidential_links_list_revoked_title,Abgelaufene und zurückgezogene Vertrauliche Links,Expired and revoked Confidential Links,\nconfidential_links_list_show_url,Link anzeigen,Show Link,\nconfidential_links_list_copy_url,Vertraulichen Link kopieren,Copy Confidential Link,\nconfidential_links_head_id,ID,ID,\nconfidential_links_head_name,Name,Name,\nconfidential_links_head_token,Token,Token,\nconfidential_links_head_valid_since,Erstellt am,Created at,\nconfidential_links_head_valid_until,Läuft ab,Expires at,\nconfidential_links_show_title,Vertraulicher Link,Confidential Link,\nconfidential_links_access_notice,Dieser Medieneintrag wurde über einen Vertraulichen Link aufgerufen. Die URL dieser Seite darf nur einem eingeschränkten Personenkreis zugänglich sein.,This Entry was accessed via a Confidential Link. The URL of this page shall only be made accessible to a limited group of people.,\ntransfer_responsibility_batch_success_collection_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_collection_1a, Set , set ,\ntransfer_responsibility_batch_success_collection_1b, Sets , sets ,\ntransfer_responsibility_batch_success_collection_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_batch_success_media_entry_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_media_entry_1a, Medieneintrag , media entry,\ntransfer_responsibility_batch_success_media_entry_1b, Medieneinträge, media entries,\ntransfer_responsibility_batch_success_media_entry_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_cancel,Abbrechen,Cancel,\ntransfer_responsibility_currently_responsible,Bisher verantwortlich,Currently responsible,\ntransfer_responsibility_to,Verantwortlichkeit übertragen auf,Transfer responsibility to,\ntransfer_responsibility_for_1_media_entry,für 1 Medieneintrag,for 1 media entry,\ntransfer_responsibility_for_n_media_entries,für %{nofResources} Medieneinträge,for %{nofResources} media entries,\ntransfer_responsibility_for_1_collection,für 1 Set,for %{nofResources} set,\ntransfer_responsibility_for_n_collections,für %{nofResources} Sets,for %{nofResources} sets,\ntransfer_responsibility_multiple_will_receive,Die bisher Verantwortlichen behalten folgende Berechtigungen:,The ones currently responsible are retaining the following permissions:,\ntransfer_responsibility_single_will_receive,%{name} behält folgende Berechtigungen:,%{name} is retaining the following permissions:,\ntransfer_responsibility_submit,Übertragen,Transfer,\ntransfer_responsibility_success_collection,Sie haben die Verantwortlichkeit für das Set erfolgreich übertragen.,You have successfully transferred responsibility for the set.,\ntransfer_responsibility_success_media_entry,Sie haben die Verantwortlichkeit für den Medieneintrag erfolgreich übertragen.,You have successfully transferred responsibility for the media entry.,\ntransfer_responsibility_title_single,Verantwortlichkeit übertragen,Transfer responsibility,\ntransfer_responsibility_title_batch,Verantwortlichkeit %{forNResources} übertragen,Transfer responsibility %{forNResources},\ntransfer_responsibility_you_will_receive,\"Sie, %{name}, behalten folgende Berechtigungen:\",\"You, %{name}, are retaining the following permissions:\",\nusage_data_created_at,Erstellt am,Created on,\nusage_data_import_at,Importiert am,Imported on,\nusage_data_import_by,Importiert durch,Imported by,\nusage_data_last_changes_empty,Es wurden noch keine Änderungen festgehalten.,No changes have been recorded yet.,\nusage_data_last_changes_title,Letzte Änderungen der Metadaten,Last change of metadata,\nusage_data_relations_children,Set enthält,Set is related to,\nusage_data_relations_parents,Übergeordnete Sets,Parent sets,\nusage_data_relations_title,Zusammenhänge,Relations,\nusage_data_responsibility_title,Verantwortlichkeit und Aktivitäten,Responsibility and activities,\nusage_data_responsible,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / responsibility group,\nusage_terms_accept_btn,Nutzungsbedingungen akzeptieren,Accept usage terms,\nusage_terms_reject_btn,Ablehnen,Reject usage terms,\nuser_menu_admin_mode_toogle_off,Admin-Modus beenden,Stop admin mode,\nuser_menu_admin_mode_toogle_on,In Admin-Modus wechseln,Switch to admin mode,\nuser_menu_admin_ui,Admin-Interface öffnen,Open admin interface,\nuser_menu_login_btn,Anmelden,Log in,\nuser_menu_logout_btn,Abmelden,Log out,\nuser_menu_my_content_collections,Meine Sets,My sets,\nuser_menu_my_content_media_entries,Meine Medieneinträge,My media entries,\nuser_menu_my_favorite_collections,Favoriten - Sets,Favorites - sets,\nuser_menu_my_favorite_media_entries,Favoriten - Medieneinträge,Favorites - media entries,\nuser_menu_my_groups,Meine Gruppen,My groups,\nuser_menu_my_person,Meine Person,My person,\nuser_menu_upload,Medien importieren,Upload media,\nuser_name_deactivated,[Gelöschter User],[Deleted user],\nvocabularies_all,Alle Vokabulare,All vocabularies,\nvocabularies_contents_hint_1,Alle Inhalte mit Metadaten des Vokabulars ,All items with metadata related to the vocabulary,\nvocabularies_contents_hint_2,\". Sie sehen nur Inhalte, für die Sie berechtigt sind.\",. You can see only items you have permissions for.,\nvocabularies_keywords_hint_1,Alle im Vokabular ,All keywords contained in the vocabulary ,\nvocabularies_keywords_hint_2, enthaltenen Schlagworte und die dazugehörenden Metadatenfelder., and related meta data fields.,\nvocabularies_no_description,(Keine Beschreibung),(No description available),\nvocabularies_no_keywords,Keine Schlagworte vorhanden.,No keywords available.,\nvocabularies_no_people,Keine Personen vorhanden.,Keine Personen vorhanden.,\nvocabularies_people_hint_1,Alle im Vokabular ,Alle im Vokabular ,\nvocabularies_people_hint_2, enthaltenen Personen und die dazugehörenden Metadatenfelder., enthaltenen Personen und die dazugehörenden Metadatenfelder.,\nvocabularies_tabs_contents,Inhalte,Items,\nvocabularies_tabs_keywords,Schlagworte,Keywords,\nvocabularies_tabs_people,Personen,People,\nvocabularies_tabs_permissions,Berechtigungen,Permissions,\nvocabularies_tabs_vocabulary,Vokabular,Vocabulary,\nvocabulary_permissions_hint1,\"Für dieses Vokabular können die Berechtigungen \"\"Betrachten\"\" und \"\"Anwenden\"\" vergeben werden. Wenn Sie Mitglied einer berechtigten Arbeitsgruppe sind, können Sie weitere Personen zu dieser hinzufügen oder daraus entfernen. Bitte überlegen Sie Änderungen gut, da über Arbeitsgruppen auch weitere Berechtigungen gesteuert werden.\",\"This vocabulary can be managed with the permissions \"\"View\"\" and \"\"Execute\"\". If you are member of a work group which owns permissions, you are able to add or remove further users. Think carefully before you make changes to work groups as this may affect other permissions.\",\nvocabulary_permissions_hint2,\"Weitere Berechtigungen für Personen, Arbeitsgruppen, API-Applikationen oder die Öffentlichkeit werden durch den Administrator vergeben – bitte wenden Sie sich an den Support.\",\"Further permissions for persons, work groups, API clients or public usage are granted by the administrator. Please contact  support.\",\nvocabulary_term_info_contents,Inhalte,Items,\nvocabulary_term_info_description,Beschreibung,Description,\nvocabulary_term_info_rdfclass,Typ,Type,\nvocabulary_term_info_term,Begriff,Term,\nvocabulary_term_info_url,URL,URL,\nvocabulary_term_info_urls,URLs,URLs,\nworkgroup_link_to_contents_text,Inhalte,Items,\nworkgroup_link_to_contents_title,Inhalte dieser Arbeitsgruppe anzeigen,Show items of this work group,\nworkgroup_members_table_is_member,Mitglied?,Member?,\nworkgroup_members_table_login,Login,Login,\nworkgroup_members_table_title,Mitglieder,Members,\nmedia_entry_notice_new_versions,Für diesen Medieneintrag sind neuere Versionen vorhanden:,Newer versions are available for this media entry:,\nread_more_button,\"Mehr anzeigen\",\"Show more\",\nread_less_button,\"Weniger anzeigen\",\"Show less\",\n");
 		translations = Object.fromEntries(translationsList.map(function(item) {
 			return [item.lang, item.mapping];
 		}));
@@ -16877,26 +16877,26 @@ var require = (function() {
 			return n;
 		}, _extends$31.apply(null, arguments);
 	}
-	var import_react$197, Preloader$1;
+	var import_react$199, Preloader$1;
 	var init_Preloader = __esmMin((() => {
-		import_react$197 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$199 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ui();
 		init_utils$2();
 		Preloader$1 = (props) => {
 			const restProps = omit(props, ["mods"]);
-			return /*#__PURE__*/ import_react$197.createElement("div", _extends$31({}, restProps, { className: ui_default.cx(ui_default.parseMods(props), "ui-preloader") }));
+			return /*#__PURE__*/ import_react$199.createElement("div", _extends$31({}, restProps, { className: ui_default.cx(ui_default.parseMods(props), "ui-preloader") }));
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/Modal.jsx
 	var Modal_exports = /* @__PURE__ */ __exportAll({ default: () => Modal });
-	var import_react$196, Modal;
+	var import_react$198, Modal;
 	var init_Modal = __esmMin((() => {
-		import_react$196 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$198 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Preloader();
 		Modal = ({ widthInPixel, loading, children }) => {
-			const [active, setActive] = (0, import_react$196.useState)(false);
-			(0, import_react$196.useEffect)(() => {
+			const [active, setActive] = (0, import_react$198.useState)(false);
+			(0, import_react$198.useEffect)(() => {
 				setActive(true);
 				document.body.style.overflow = "hidden";
 				return () => {
@@ -16939,14 +16939,14 @@ var require = (function() {
 				modalStyle.width = widthInPixel + "px";
 				modalStyle.marginLeft = `-${widthInPixel / 2}px`;
 			} else modalStyle.width = widthInPixel + "px";
-			return /*#__PURE__*/ import_react$196.createElement("div", { style: {
+			return /*#__PURE__*/ import_react$198.createElement("div", { style: {
 				position: "absolute",
 				top: "0px",
 				bottom: "0px",
 				left: "0px",
 				right: "0px",
 				zIndex: "100000"
-			} }, /*#__PURE__*/ import_react$196.createElement("div", { className: "modal-backdrop" }), loading ? /*#__PURE__*/ import_react$196.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$196.createElement("div", { style: fixedStyle }, /*#__PURE__*/ import_react$196.createElement("div", { style: staticStyle }, /*#__PURE__*/ import_react$196.createElement("div", {
+			} }, /*#__PURE__*/ import_react$198.createElement("div", { className: "modal-backdrop" }), loading ? /*#__PURE__*/ import_react$198.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$198.createElement("div", { style: fixedStyle }, /*#__PURE__*/ import_react$198.createElement("div", { style: staticStyle }, /*#__PURE__*/ import_react$198.createElement("div", {
 				className: "modal",
 				style: modalStyle
 			}, children))));
@@ -16955,14 +16955,14 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/AskModal.jsx
 	var AskModal_exports = /* @__PURE__ */ __exportAll({ default: () => AskModal });
-	var import_react$195, AskModal;
+	var import_react$197, AskModal;
 	var init_AskModal = __esmMin((() => {
-		import_react$195 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$197 = /* @__PURE__ */ __toESM(require_react$1());
 		init_FormButton();
 		init_Modal();
 		init_Preloader();
 		AskModal = ({ title, error, onOk, onCancel, okText, cancelText, loading, children }) => {
-			return /*#__PURE__*/ import_react$195.createElement(Modal, { widthInPixel: "400" }, /*#__PURE__*/ import_react$195.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$195.createElement("a", {
+			return /*#__PURE__*/ import_react$197.createElement(Modal, { widthInPixel: "400" }, /*#__PURE__*/ import_react$197.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$197.createElement("a", {
 				onClick: onCancel,
 				"aria-hidden": "true",
 				className: "ui-modal-close",
@@ -16974,15 +16974,15 @@ var require = (function() {
 					float: "right",
 					paddingTop: "5px"
 				}
-			}, /*#__PURE__*/ import_react$195.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$195.createElement("h3", { className: "title-l" }, title)), /*#__PURE__*/ import_react$195.createElement("div", {
+			}, /*#__PURE__*/ import_react$197.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$197.createElement("h3", { className: "title-l" }, title)), /*#__PURE__*/ import_react$197.createElement("div", {
 				className: "ui-modal-body",
 				style: { maxHeight: "none" }
-			}, loading && /*#__PURE__*/ import_react$195.createElement(Preloader$1, null), error && !loading && /*#__PURE__*/ import_react$195.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$195.createElement("div", { className: "error ui-alert" }, error)), !loading && children), /*#__PURE__*/ import_react$195.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$195.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$195.createElement("a", {
+			}, loading && /*#__PURE__*/ import_react$197.createElement(Preloader$1, null), error && !loading && /*#__PURE__*/ import_react$197.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$197.createElement("div", { className: "error ui-alert" }, error)), !loading && children), /*#__PURE__*/ import_react$197.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$197.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$197.createElement("a", {
 				onClick: onCancel,
 				"aria-hidden": "true",
 				className: "link weak",
 				"data-dismiss": "modal"
-			}, cancelText), /*#__PURE__*/ import_react$195.createElement(FormButton, {
+			}, cancelText), /*#__PURE__*/ import_react$197.createElement(FormButton, {
 				onClick: onOk,
 				text: okText
 			}))));
@@ -38178,9 +38178,9 @@ var require = (function() {
 			return n;
 		}, _extends$30.apply(null, arguments);
 	}
-	var import_react$194, import_prop_types$56, import_classnames$34, videojs, defaultProps$5, propTypes$8, VideoJS;
+	var import_react$196, import_prop_types$56, import_classnames$34, videojs, defaultProps$5, propTypes$8, VideoJS;
 	var init_VideoJs = __esmMin((() => {
-		import_react$194 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$196 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$56 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$34 = /* @__PURE__ */ __toESM(require_classnames());
 		init_lodash();
@@ -38222,7 +38222,7 @@ var require = (function() {
 			controls: import_prop_types$56.default.bool,
 			className: import_prop_types$56.default.string
 		};
-		VideoJS = class extends import_react$194.Component {
+		VideoJS = class extends import_react$196.Component {
 			constructor() {
 				super();
 				this.state = { active: typeof window !== "undefined" && !!(window && window.document) };
@@ -38283,12 +38283,12 @@ var require = (function() {
 					controls
 				};
 				const classes = (0, import_classnames$34.default)(className, "videojs", "video-js", "video-fluid", "vjs-default-skin");
-				const playerContent = /*#__PURE__*/ import_react$194.createElement(MediaTag, _extends$30({ ref: "videojs" }, mediaProps, {
+				const playerContent = /*#__PURE__*/ import_react$196.createElement(MediaTag, _extends$30({ ref: "videojs" }, mediaProps, {
 					height: options.height,
 					width: options.width,
 					className: classes
-				}), sources.map((src) => /*#__PURE__*/ import_react$194.createElement("source", _extends$30({ key: src.key }, omit$1(src, "res"), { "data-resolution": src.res }))));
-				return /*#__PURE__*/ import_react$194.createElement("div", { "data-vjs-player": true }, playerContent);
+				}), sources.map((src) => /*#__PURE__*/ import_react$196.createElement("source", _extends$30({ key: src.key }, omit$1(src, "res"), { "data-resolution": src.res }))));
+				return /*#__PURE__*/ import_react$196.createElement("div", { "data-vjs-player": true }, playerContent);
 			}
 		};
 		VideoJS.propTypes = propTypes$8;
@@ -38306,9 +38306,9 @@ var require = (function() {
 			return n;
 		}, _extends$29.apply(null, arguments);
 	}
-	var import_react$193, import_prop_types$55, VIDEOJS_OPTIONS$1, propTypes$7, AudioPlayer;
+	var import_react$195, import_prop_types$55, VIDEOJS_OPTIONS$1, propTypes$7, AudioPlayer;
 	var init_AudioPlayer = __esmMin((() => {
-		import_react$193 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$195 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$55 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_VideoJs();
 		VIDEOJS_OPTIONS$1 = {
@@ -38342,7 +38342,7 @@ var require = (function() {
 				ratio: import_prop_types$55.default.string
 			})
 		};
-		AudioPlayer = class extends import_react$193.Component {
+		AudioPlayer = class extends import_react$195.Component {
 			constructor() {
 				super();
 			}
@@ -38352,10 +38352,10 @@ var require = (function() {
 					type: source.content_type,
 					key: `${source.url}${source.content_type}`
 				}));
-				return /*#__PURE__*/ import_react$193.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$195.createElement("div", { style: {
 					margin: "0px",
 					padding: "0px"
-				} }, /*#__PURE__*/ import_react$193.createElement(VideoJS, _extends$29({}, props, {
+				} }, /*#__PURE__*/ import_react$195.createElement(VideoJS, _extends$29({}, props, {
 					mode: "audio",
 					className: "ui-audio-player",
 					sources: videoSources,
@@ -38380,9 +38380,9 @@ var require = (function() {
 			return n;
 		}, _extends$28.apply(null, arguments);
 	}
-	var import_react$192, import_prop_types$54, Button$3;
+	var import_react$194, import_prop_types$54, Button$3;
 	var init_Button = __esmMin((() => {
-		import_react$192 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$194 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$54 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_utils$2();
@@ -38392,17 +38392,17 @@ var require = (function() {
 			const baseClass = className ? className : mod ? `${mod}-button` : "button";
 			const isDisabled = disabled || !(href || onClick || type);
 			const classes = ui_default.cx({ disabled: isDisabled }, ui_default.parseMods(props), baseClass);
-			if (href || onClick) return /*#__PURE__*/ import_react$192.createElement("a", _extends$28({}, cleanProps, {
+			if (href || onClick) return /*#__PURE__*/ import_react$194.createElement("a", _extends$28({}, cleanProps, {
 				href,
 				onClick,
 				className: classes
 			}), children);
-			else if (type) return /*#__PURE__*/ import_react$192.createElement("button", _extends$28({}, cleanProps, {
+			else if (type) return /*#__PURE__*/ import_react$194.createElement("button", _extends$28({}, cleanProps, {
 				type,
 				onClick,
 				className: classes
 			}), children);
-			else return /*#__PURE__*/ import_react$192.createElement("span", _extends$28({}, cleanProps, { className: classes }), children);
+			else return /*#__PURE__*/ import_react$194.createElement("span", _extends$28({}, cleanProps, { className: classes }), children);
 		};
 		Button$3.propTypes = {
 			href: import_prop_types$54.default.string,
@@ -38441,9 +38441,9 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/ButtonGroup.jsx
 	var ButtonGroup_exports = /* @__PURE__ */ __exportAll({ default: () => ButtonGroup });
-	var import_react$191, import_prop_types$52, ButtonGroup;
+	var import_react$193, import_prop_types$52, ButtonGroup;
 	var init_ButtonGroup = __esmMin((() => {
-		import_react$191 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$193 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$52 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_propTypes();
@@ -38451,7 +38451,7 @@ var require = (function() {
 			const { children } = props;
 			const classes = ui_default.cx(ui_default.parseMods(props), "button-group");
 			if (!children) return null;
-			return /*#__PURE__*/ import_react$191.createElement("div", {
+			return /*#__PURE__*/ import_react$193.createElement("div", {
 				className: classes,
 				"data-test-id": props["data-test-id"]
 			}, children);
@@ -46708,9 +46708,9 @@ var require = (function() {
 			return n;
 		}, _extends$27.apply(null, arguments);
 	}
-	var import_react$190, import_prop_types$51, import_Overlay$1, import_moment$11, import_DayPicker$1, import_moment$12, LOCALE, lazyDate, propTypeLazyDate, DatePicker, parseDate;
+	var import_react$192, import_prop_types$51, import_Overlay$1, import_moment$11, import_DayPicker$1, import_moment$12, LOCALE, lazyDate, propTypeLazyDate, DatePicker, parseDate;
 	var init_DatePicker = __esmMin((() => {
-		import_react$190 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$192 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$51 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_Overlay$1 = /* @__PURE__ */ __toESM(require_Overlay());
 		import_moment$11 = /* @__PURE__ */ __toESM(require_moment$1());
@@ -46725,7 +46725,7 @@ var require = (function() {
 			if (!isNaN(d)) return d;
 		});
 		propTypeLazyDate = import_prop_types$51.default.oneOfType([import_prop_types$51.default.string, import_prop_types$51.default.instanceOf(Date)]);
-		DatePicker = class extends import_react$190.Component {
+		DatePicker = class extends import_react$192.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -46805,10 +46805,10 @@ var require = (function() {
 			}
 			render({ props, state } = this) {
 				const { id, className, placeholder, laterThan, initialDate, ...restProps } = props;
-				return /*#__PURE__*/ import_react$190.createElement("div", {
+				return /*#__PURE__*/ import_react$192.createElement("div", {
 					id: `${id}.DatePicker`,
 					className: "ui-datepicker"
-				}, /*#__PURE__*/ import_react$190.createElement("input", {
+				}, /*#__PURE__*/ import_react$192.createElement("input", {
 					type: "text",
 					className,
 					placeholder,
@@ -46819,15 +46819,15 @@ var require = (function() {
 					ref: (el) => {
 						this.inputEl = el;
 					}
-				}), /*#__PURE__*/ import_react$190.createElement(import_Overlay$1.default, {
+				}), /*#__PURE__*/ import_react$192.createElement(import_Overlay$1.default, {
 					placement: "bottom",
 					show: this.inputEl && this.state.isFocused,
 					container: this,
 					target: () => this.inputEl
-				}, /*#__PURE__*/ import_react$190.createElement("div", {
+				}, /*#__PURE__*/ import_react$192.createElement("div", {
 					className: "ui-datepicker--overlay",
 					onMouseDown: this._onPickerClick
-				}, /*#__PURE__*/ import_react$190.createElement(import_DayPicker$1.default, _extends$27({}, restProps, {
+				}, /*#__PURE__*/ import_react$192.createElement(import_DayPicker$1.default, _extends$27({}, restProps, {
 					locale: LOCALE,
 					localeUtils: import_moment$12.default,
 					onDayClick: this._onDaySelect,
@@ -46868,9 +46868,9 @@ var require = (function() {
 			return n;
 		}, _extends$26.apply(null, arguments);
 	}
-	var import_react$189, import_prop_types$50, FONT_AWESOME_ICONS, Icon$4;
+	var import_react$191, import_prop_types$50, FONT_AWESOME_ICONS, Icon$4;
 	var init_Icon = __esmMin((() => {
-		import_react$189 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$191 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$50 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_utils$2();
@@ -46883,7 +46883,7 @@ var require = (function() {
 			const { i, ...restProps } = omit(props, ["mods"]);
 			const iconClass = FONT_AWESOME_ICONS.includes(i) ? `fa fa-${i}` : `icon-${i}`;
 			const classes = ui_default.cx(ui_default.parseMods(props), iconClass);
-			return /*#__PURE__*/ import_react$189.createElement("i", _extends$26({}, restProps, { className: classes }));
+			return /*#__PURE__*/ import_react$191.createElement("i", _extends$26({}, restProps, { className: classes }));
 		};
 		Icon$4.propTypes = { i: import_prop_types$50.default.string.isRequired };
 	}));
@@ -46899,9 +46899,9 @@ var require = (function() {
 			return n;
 		}, _extends$25.apply(null, arguments);
 	}
-	var import_react$188, import_prop_types$49, Link$5;
+	var import_react$190, import_prop_types$49, Link$5;
 	var init_Link = __esmMin((() => {
-		import_react$188 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$190 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$49 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_utils$2();
@@ -46911,7 +46911,7 @@ var require = (function() {
 			const isLink = !!(href || onClick);
 			const className = ui_default.cx({ link: isLink }, ui_default.parseMods(props), "ui-link");
 			const isDisabled = !isLink ? true : disabled;
-			return /*#__PURE__*/ import_react$188.createElement("a", _extends$25({}, restProps, {
+			return /*#__PURE__*/ import_react$190.createElement("a", _extends$25({}, restProps, {
 				className,
 				disabled: isDisabled
 			}), children);
@@ -48781,9 +48781,9 @@ var require = (function() {
 			return n;
 		}, _extends$24.apply(null, arguments);
 	}
-	var import_react$187, import_prop_types$48, import_Dropdown, import_MenuItem, UIDropdown, Menu, UIMenuItem;
+	var import_react$189, import_prop_types$48, import_Dropdown, import_MenuItem, UIDropdown, Menu, UIMenuItem;
 	var init_Dropdown = __esmMin((() => {
-		import_react$187 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$189 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$48 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_Icon();
@@ -48791,26 +48791,26 @@ var require = (function() {
 		import_Dropdown = /* @__PURE__ */ __toESM(require_Dropdown());
 		import_MenuItem = /* @__PURE__ */ __toESM(require_MenuItem());
 		UIDropdown = ({ toggle, toggleProps, children, id, mods, testId }) => {
-			const [isClient, setIsClient] = (0, import_react$187.useState)(false);
-			(0, import_react$187.useEffect)(() => {
+			const [isClient, setIsClient] = (0, import_react$189.useState)(false);
+			(0, import_react$189.useEffect)(() => {
 				setIsClient(true);
 			}, []);
 			const fallbackStyles = () => {
-				return /*#__PURE__*/ import_react$187.createElement("style", { type: "text/css" }, `\
+				return /*#__PURE__*/ import_react$189.createElement("style", { type: "text/css" }, `\
 .ui-dropdown .dropdown-toggle { padding-bottom: 7px }
 .dropdown:hover .dropdown-menu { display: block }\
 `);
 			};
 			if (children.props.bsRole !== "menu") throw new Error("Missing or invalid Menu!");
 			const dropdownId = id || `${toggle}_menu`;
-			return /*#__PURE__*/ import_react$187.createElement(import_Dropdown.default, {
+			return /*#__PURE__*/ import_react$189.createElement(import_Dropdown.default, {
 				id: dropdownId,
 				className: ui_default.cx(mods, "ui-dropdown"),
 				"data-test-id": testId
-			}, !isClient && fallbackStyles(), /*#__PURE__*/ import_react$187.createElement(import_Dropdown.default.Toggle, _extends$24({
+			}, !isClient && fallbackStyles(), /*#__PURE__*/ import_react$189.createElement(import_Dropdown.default.Toggle, _extends$24({
 				componentClass: Link$5,
 				bsClass: "dropdown-toggle ui-drop-toggle"
-			}, toggleProps), toggle, /*#__PURE__*/ import_react$187.createElement(Icon$4, { i: "arrow-down stand-alone small" })), children);
+			}, toggleProps), toggle, /*#__PURE__*/ import_react$189.createElement(Icon$4, { i: "arrow-down stand-alone small" })), children);
 		};
 		UIDropdown.propTypes = {
 			toggle: import_prop_types$48.default.string.isRequired,
@@ -48823,7 +48823,7 @@ var require = (function() {
 		UIDropdown.MenuItem = (props) => {
 			const hasLink = props.href || props.onClick;
 			const isDisabled = props.disabled !== void 0 ? props.disabled : !hasLink;
-			return /*#__PURE__*/ import_react$187.createElement(import_MenuItem.default, _extends$24({
+			return /*#__PURE__*/ import_react$189.createElement(import_MenuItem.default, _extends$24({
 				componentClass: Link$5,
 				className: "ui-drop-item",
 				disabled: isDisabled
@@ -48836,15 +48836,15 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/Keyword.jsx
 	var Keyword_exports = /* @__PURE__ */ __exportAll({ default: () => Keyword });
-	var import_react$186, Keyword;
+	var import_react$188, Keyword;
 	var init_Keyword = __esmMin((() => {
-		import_react$186 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$188 = /* @__PURE__ */ __toESM(require_react$1());
 		Keyword = ({ label, count, hrefUrl }) => {
-			return /*#__PURE__*/ import_react$186.createElement("li", { className: "ui-tag-cloud-item" }, /*#__PURE__*/ import_react$186.createElement("a", {
+			return /*#__PURE__*/ import_react$188.createElement("li", { className: "ui-tag-cloud-item" }, /*#__PURE__*/ import_react$188.createElement("a", {
 				className: "ui-tag-button",
 				href: hrefUrl,
 				title: label
-			}, /*#__PURE__*/ import_react$186.createElement("i", { className: "icon-tag-mini ui-tag-icon" }), label, /*#__PURE__*/ import_react$186.createElement("small", { className: "ui-tag-counter" }, count)));
+			}, /*#__PURE__*/ import_react$188.createElement("i", { className: "icon-tag-mini ui-tag-icon" }), label, /*#__PURE__*/ import_react$188.createElement("small", { className: "ui-tag-counter" }, count)));
 		};
 	}));
 	//#endregion
@@ -48859,9 +48859,9 @@ var require = (function() {
 			return n;
 		}, _extends$23.apply(null, arguments);
 	}
-	var import_react$185, import_prop_types$47, propTypes$6, VIDEOJS_OPTIONS, sourceLabel, VideoPlayer;
+	var import_react$187, import_prop_types$47, propTypes$6, VIDEOJS_OPTIONS, sourceLabel, VideoPlayer;
 	var init_VideoPlayer = __esmMin((() => {
-		import_react$185 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$187 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$47 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_lodash();
 		init_VideoJs();
@@ -48894,7 +48894,7 @@ var require = (function() {
 			"fullscreenToggle"
 		] } };
 		sourceLabel = ({ profile }) => endsWith(profile, "_HD") ? "HD" : "SD";
-		VideoPlayer = class extends import_react$185.Component {
+		VideoPlayer = class extends import_react$187.Component {
 			render({ sources, options, ...props } = this.props) {
 				const videoSources = sources.map((source) => ({
 					src: source.url,
@@ -48914,7 +48914,7 @@ var require = (function() {
 					return 0;
 				});
 				const sortedSources = mp4s.concat(webms);
-				return /*#__PURE__*/ import_react$185.createElement(VideoJS, _extends$23({}, props, {
+				return /*#__PURE__*/ import_react$187.createElement(VideoJS, _extends$23({}, props, {
 					sources: sortedSources,
 					options: {
 						...VIDEOJS_OPTIONS,
@@ -48928,18 +48928,18 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/MediaPlayer.jsx
 	var MediaPlayer_exports = /* @__PURE__ */ __exportAll({ default: () => MediaPlayer });
-	var import_react$184, import_prop_types$46, MediaPlayer;
+	var import_react$186, import_prop_types$46, MediaPlayer;
 	var init_MediaPlayer = __esmMin((() => {
-		import_react$184 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$186 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$46 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_utils$2();
 		init_i18n_translate();
 		init_AudioPlayer();
 		init_VideoPlayer();
 		MediaPlayer = ({ type, poster, sources, getUrl, ...props }) => {
-			const [active, setActive] = (0, import_react$184.useState)(false);
-			const [showHint] = (0, import_react$184.useState)(false);
-			(0, import_react$184.useEffect)(() => {
+			const [active, setActive] = (0, import_react$186.useState)(false);
+			const [showHint] = (0, import_react$186.useState)(false);
+			(0, import_react$186.useEffect)(() => {
 				setActive(true);
 			}, []);
 			const mediaProps = omit({
@@ -48949,18 +48949,18 @@ var require = (function() {
 				getUrl,
 				...props
 			}, ["originalUrl"]);
-			if (type === "audio") return /*#__PURE__*/ import_react$184.createElement("div", { style: {
+			if (type === "audio") return /*#__PURE__*/ import_react$186.createElement("div", { style: {
 				margin: "0px",
 				padding: "0px"
-			} }, /*#__PURE__*/ import_react$184.createElement(AudioPlayer, mediaProps), showHint && /*#__PURE__*/ import_react$184.createElement("p", { style: { marginTop: "40px" } }, I18nTranslate("media_entry_file_format_not_supported_1"), /*#__PURE__*/ import_react$184.createElement("a", { href: getUrl + "/export" }, I18nTranslate("media_entry_file_format_not_supported_2")), I18nTranslate("media_entry_file_format_not_supported_3")));
-			else if (!active) return /*#__PURE__*/ import_react$184.createElement("div", null, /*#__PURE__*/ import_react$184.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$184.createElement(VideoPlayer, mediaProps)), /*#__PURE__*/ import_react$184.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$184.createElement("img", {
+			} }, /*#__PURE__*/ import_react$186.createElement(AudioPlayer, mediaProps), showHint && /*#__PURE__*/ import_react$186.createElement("p", { style: { marginTop: "40px" } }, I18nTranslate("media_entry_file_format_not_supported_1"), /*#__PURE__*/ import_react$186.createElement("a", { href: getUrl + "/export" }, I18nTranslate("media_entry_file_format_not_supported_2")), I18nTranslate("media_entry_file_format_not_supported_3")));
+			else if (!active) return /*#__PURE__*/ import_react$186.createElement("div", null, /*#__PURE__*/ import_react$186.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$186.createElement(VideoPlayer, mediaProps)), /*#__PURE__*/ import_react$186.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$186.createElement("img", {
 				src: poster,
 				style: {
 					height: "100%",
 					width: "100%"
 				}
 			})));
-			else return /*#__PURE__*/ import_react$184.createElement(VideoPlayer, mediaProps);
+			else return /*#__PURE__*/ import_react$186.createElement(VideoPlayer, mediaProps);
 		};
 		MediaPlayer.propTypes = {
 			type: import_prop_types$46.default.oneOf(["audio", "video"]).isRequired,
@@ -48975,12 +48975,12 @@ var require = (function() {
 	//#region app/javascript/react/ui-components/SectionLabels.jsx
 	var SectionLabels_exports = /* @__PURE__ */ __exportAll({ default: () => SectionLabels });
 	function SectionLabels({ items = [] }) {
-		return /*#__PURE__*/ import_react$183.createElement("div", {
+		return /*#__PURE__*/ import_react$185.createElement("div", {
 			className: "section-labels",
 			"data-test-id": "section-labels"
 		}, items.map((item, index) => {
 			const El = item.href ? "a" : "div";
-			return /*#__PURE__*/ import_react$183.createElement(El, {
+			return /*#__PURE__*/ import_react$185.createElement(El, {
 				key: index,
 				href: item.href,
 				className: "section-labels__item",
@@ -48991,21 +48991,21 @@ var require = (function() {
 			}, item.label);
 		}));
 	}
-	var import_react$183;
+	var import_react$185;
 	var init_SectionLabels = __esmMin((() => {
-		import_react$183 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$185 = /* @__PURE__ */ __toESM(require_react$1());
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/PageHeader.jsx
 	var PageHeader_exports = /* @__PURE__ */ __exportAll({ default: () => PageHeader });
-	var import_react$182, import_prop_types$45, import_classnames$33, PageHeader;
+	var import_react$184, import_prop_types$45, import_classnames$33, PageHeader;
 	var init_PageHeader = __esmMin((() => {
-		import_react$182 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$184 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$45 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$33 = /* @__PURE__ */ __toESM(require_classnames());
 		init_SectionLabels();
 		PageHeader = ({ icon, fa, title, actions, banner, sectionLabels }) => {
-			return /*#__PURE__*/ import_react$182.createElement("div", null, sectionLabels && /*#__PURE__*/ import_react$182.createElement(SectionLabels, { items: sectionLabels }), banner, /*#__PURE__*/ import_react$182.createElement("div", { className: "ui-body-title" }, /*#__PURE__*/ import_react$182.createElement("div", { className: "ui-body-title-label" }, /*#__PURE__*/ import_react$182.createElement("h1", { className: "title-xl" }, !!icon && /*#__PURE__*/ import_react$182.createElement("span", null, /*#__PURE__*/ import_react$182.createElement("i", { className: "icon-" + icon }), " "), !!fa && /*#__PURE__*/ import_react$182.createElement("span", null, /*#__PURE__*/ import_react$182.createElement("span", { className: (0, import_classnames$33.default)("fa fa-share", "title-xl") }), " "), title)), !!actions && /*#__PURE__*/ import_react$182.createElement("div", { className: "ui-body-title-actions" }, /*#__PURE__*/ import_react$182.createElement("span", { data: "spacer-gif" }, "\xA0"), actions)));
+			return /*#__PURE__*/ import_react$184.createElement("div", null, sectionLabels && /*#__PURE__*/ import_react$184.createElement(SectionLabels, { items: sectionLabels }), banner, /*#__PURE__*/ import_react$184.createElement("div", { className: "ui-body-title" }, /*#__PURE__*/ import_react$184.createElement("div", { className: "ui-body-title-label" }, /*#__PURE__*/ import_react$184.createElement("h1", { className: "title-xl" }, !!icon && /*#__PURE__*/ import_react$184.createElement("span", null, /*#__PURE__*/ import_react$184.createElement("i", { className: "icon-" + icon }), " "), !!fa && /*#__PURE__*/ import_react$184.createElement("span", null, /*#__PURE__*/ import_react$184.createElement("span", { className: (0, import_classnames$33.default)("fa fa-share", "title-xl") }), " "), title)), !!actions && /*#__PURE__*/ import_react$184.createElement("div", { className: "ui-body-title-actions" }, /*#__PURE__*/ import_react$184.createElement("span", { data: "spacer-gif" }, "\xA0"), actions)));
 		};
 		PageHeader.propTypes = {
 			title: import_prop_types$45.default.string.isRequired,
@@ -49025,9 +49025,9 @@ var require = (function() {
 			return n;
 		}, _extends$22.apply(null, arguments);
 	}
-	var import_react$181, import_prop_types$44, Picture;
+	var import_react$183, import_prop_types$44, Picture;
 	var init_Picture = __esmMin((() => {
-		import_react$181 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$183 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$44 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_i18n_translate();
@@ -49038,7 +49038,7 @@ var require = (function() {
 			const classes = ui_default.cx(className, mods, "ui_picture");
 			const titleTxt = title || alt || I18nTranslate("picture_alt_fallback");
 			const altTxt = `${I18nTranslate("picture_alt_prefix")} ${titleTxt}`;
-			return /*#__PURE__*/ import_react$181.createElement("img", _extends$22({}, restProps, {
+			return /*#__PURE__*/ import_react$183.createElement("img", _extends$22({}, restProps, {
 				className: classes,
 				title: titleTxt,
 				alt: altTxt
@@ -49053,9 +49053,9 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/ResourceIcon.jsx
 	var ResourceIcon_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceIcon });
-	var import_react$180, import_prop_types$43, import_classnames$32, ResourceIcon;
+	var import_react$182, import_prop_types$43, import_classnames$32, ResourceIcon;
 	var init_ResourceIcon = __esmMin((() => {
-		import_react$180 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$182 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$43 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_Icon();
 		import_classnames$32 = /* @__PURE__ */ __toESM(require_classnames());
@@ -49092,16 +49092,16 @@ var require = (function() {
 			};
 			if (type === "MediaEntry") {
 				const mediaTypeIcon = mediaTypeIconMapping(mediaType);
-				return /*#__PURE__*/ import_react$180.createElement("i", {
+				return /*#__PURE__*/ import_react$182.createElement("i", {
 					className: (0, import_classnames$32.default)("ui_media-type-icon", mediaTypeIcon, overrideClasses),
 					style
 				});
-			} else if (type === "Collection") return /*#__PURE__*/ import_react$180.createElement(Icon$4, {
+			} else if (type === "Collection") return /*#__PURE__*/ import_react$182.createElement(Icon$4, {
 				i: "set",
 				mods: (0, import_classnames$32.default)("ui_media-type-icon", overrideClasses),
 				style
 			});
-			else return /*#__PURE__*/ import_react$180.createElement(Icon$4, {
+			else return /*#__PURE__*/ import_react$182.createElement(Icon$4, {
 				i: "bang",
 				mods: (0, import_classnames$32.default)("ui_media-type-icon", overrideClasses),
 				style
@@ -49125,7 +49125,7 @@ var require = (function() {
 		}, _extends$21.apply(null, arguments);
 	}
 	function splitTitleFromContent(children) {
-		const { titles, content } = import_react$179.Children.toArray(children).reduce((res, child) => {
+		const { titles, content } = import_react$181.Children.toArray(children).reduce((res, child) => {
 			if (child.type === SubSection.Title) res.titles.push(child);
 			else res.content.push(child);
 			return res;
@@ -49139,10 +49139,10 @@ var require = (function() {
 			content
 		};
 	}
-	var import_react$179, SubSection, SubSectionTitle;
+	var import_react$181, SubSection, SubSectionTitle;
 	var init_SubSection = __esmMin((() => {
-		import_react$179 = /* @__PURE__ */ __toESM(require_react$1());
-		SubSection = class extends import_react$179.Component {
+		import_react$181 = /* @__PURE__ */ __toESM(require_react$1());
+		SubSection = class extends import_react$181.Component {
 			constructor(props) {
 				super(props);
 				this.toggleOpen = this.toggleOpen.bind(this);
@@ -49152,7 +49152,7 @@ var require = (function() {
 			}
 			render({ children, startOpen } = this.props) {
 				const { title, content } = splitTitleFromContent(children);
-				return /*#__PURE__*/ import_react$179.createElement("details", {
+				return /*#__PURE__*/ import_react$181.createElement("details", {
 					className: "ui-subsection",
 					open: startOpen,
 					onClick: this.toggleOpen
@@ -49165,7 +49165,7 @@ var require = (function() {
 		};
 		SubSectionTitle = ({ tag, ...props }) => {
 			const Tag = tag;
-			return /*#__PURE__*/ import_react$179.createElement("summary", null, /*#__PURE__*/ import_react$179.createElement(Tag, _extends$21({}, props, { style: {
+			return /*#__PURE__*/ import_react$181.createElement("summary", null, /*#__PURE__*/ import_react$181.createElement(Tag, _extends$21({}, props, { style: {
 				display: "inline-block",
 				...props.style
 			} })));
@@ -49176,9 +49176,9 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/TagCloud.jsx
 	var TagCloud_exports = /* @__PURE__ */ __exportAll({ default: () => TagCloud });
-	var import_react$178, import_prop_types$42, import_classnames$31, TagCloud;
+	var import_react$180, import_prop_types$42, import_classnames$31, TagCloud;
 	var init_TagCloud = __esmMin((() => {
-		import_react$178 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$180 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$42 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$31 = /* @__PURE__ */ __toESM(require_classnames());
 		init_ui();
@@ -49189,7 +49189,7 @@ var require = (function() {
 			const { list, mod, mods } = props;
 			const baseClass = (0, import_classnames$31.default)(parseMods(props), "ui-tag-cloud");
 			const itemClass = (0, import_classnames$31.default)("ui-tag-cloud-item", { block: mod === "role" });
-			return /*#__PURE__*/ import_react$178.createElement("ul", {
+			return /*#__PURE__*/ import_react$180.createElement("ul", {
 				className: baseClass,
 				style: mods && mods.includes("inline") ? { display: "inline-block" } : {}
 			}, list.map((listItem) => {
@@ -49222,13 +49222,13 @@ var require = (function() {
 				}
 				if (tagIcon && !(mods && mods.includes("large"))) tagIcon = `${tagIcon}-mini`;
 				const TagElm = tag || Link$5;
-				return /*#__PURE__*/ import_react$178.createElement("li", {
+				return /*#__PURE__*/ import_react$180.createElement("li", {
 					key,
 					className: itemClass
-				}, /*#__PURE__*/ import_react$178.createElement(TagElm, linkProps, tagIcon && /*#__PURE__*/ import_react$178.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$180.createElement(TagElm, linkProps, tagIcon && /*#__PURE__*/ import_react$180.createElement(Icon$4, {
 					i: tagIcon,
 					mods: "ui-tag-icon"
-				}), children, count && /*#__PURE__*/ import_react$178.createElement("span", { className: "ui-tag-counter" }, count)));
+				}), children, count && /*#__PURE__*/ import_react$180.createElement("span", { className: "ui-tag-counter" }, count)));
 			}));
 		};
 		TagCloud.propTypes = {
@@ -49251,9 +49251,9 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/Thumbnail.jsx
 	var Thumbnail_exports = /* @__PURE__ */ __exportAll({ default: () => Thumbnail$1 });
-	var import_react$177, import_prop_types$41, flyoutProps, Thumbnail$1;
+	var import_react$179, import_prop_types$41, flyoutProps, Thumbnail$1;
 	var init_Thumbnail = __esmMin((() => {
-		import_react$177 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$179 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$41 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_utils$2();
 		init_ui();
@@ -49268,18 +49268,18 @@ var require = (function() {
 		});
 		Thumbnail$1 = ({ type, src, alt, meta, badgeRight: badgeRightProp, badgeLeft: badgeLeftProp, actionsLeft, actionsRight, flyoutTop: flyoutTopProp, flyoutBottom: flyoutBottomProp, mediaType, mods, className, draft, editMetaDataByContextUrl, onClipboard, clipboardUrl, disableLink, pictureLinkStyle, href, onPictureClick }) => {
 			const classes = ui_default.cx(kebabCase(type.replace(/Collection/, "MediaSet")), [mods, className], "ui-thumbnail");
-			const innerImage = src ? /*#__PURE__*/ import_react$177.createElement(Picture, {
+			const innerImage = src ? /*#__PURE__*/ import_react$179.createElement(Picture, {
 				mods: "ui-thumbnail-image",
 				src,
 				alt
-			}) : /*#__PURE__*/ import_react$177.createElement(ResourceIcon, {
+			}) : /*#__PURE__*/ import_react$179.createElement(ResourceIcon, {
 				mediaType,
 				thumbnail: true,
 				type
 			});
-			const flyoutTop = present(flyoutTopProp) ? /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-level-up-items" }, /*#__PURE__*/ import_react$177.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.title), /*#__PURE__*/ import_react$177.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutTopProp.children), /*#__PURE__*/ import_react$177.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.caption)) : void 0;
-			const flyoutBottom = present(flyoutBottomProp) ? /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-level-down-items" }, /*#__PURE__*/ import_react$177.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.title), /*#__PURE__*/ import_react$177.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutBottomProp.children), /*#__PURE__*/ import_react$177.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.caption)) : void 0;
-			const badgeLeft = badgeLeftProp ? /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-privacy" }, badgeLeftProp) : void 0;
+			const flyoutTop = present(flyoutTopProp) ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-level-up-items" }, /*#__PURE__*/ import_react$179.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.title), /*#__PURE__*/ import_react$179.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutTopProp.children), /*#__PURE__*/ import_react$179.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.caption)) : void 0;
+			const flyoutBottom = present(flyoutBottomProp) ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-level-down-items" }, /*#__PURE__*/ import_react$179.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.title), /*#__PURE__*/ import_react$179.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutBottomProp.children), /*#__PURE__*/ import_react$179.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.caption)) : void 0;
+			const badgeLeft = badgeLeftProp ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-privacy" }, badgeLeftProp) : void 0;
 			const bubbles = [];
 			if (draft) bubbles.push({
 				key: "draft",
@@ -49295,19 +49295,19 @@ var require = (function() {
 			});
 			bubbles.map((bubble, index) => {
 				const style = { backgroundColor: bubble.color };
-				return /*#__PURE__*/ import_react$177.createElement("a", {
+				return /*#__PURE__*/ import_react$179.createElement("a", {
 					href: bubble.href,
 					key: index
-				}, /*#__PURE__*/ import_react$177.createElement("div", {
+				}, /*#__PURE__*/ import_react$179.createElement("div", {
 					className: "ui-bubble",
 					style
 				}, bubble.label));
 			});
-			const badgeRight = badgeRightProp ? /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-filterset-flag" }, badgeRightProp) : void 0;
-			const metaElement = meta ? /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$177.createElement("h3", { className: "ui-thumbnail-meta-title" }, meta.title), /*#__PURE__*/ import_react$177.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, meta.subtitle)) : void 0;
-			const actions = /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-actions" }, /*#__PURE__*/ import_react$177.createElement("ul", { className: "left by-left" }, actionsLeft), /*#__PURE__*/ import_react$177.createElement("ul", { className: "right by-right" }, actionsRight));
-			const innerPart = /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage))));
-			return /*#__PURE__*/ import_react$177.createElement("div", { className: classes }, flyoutTop, badgeLeft, badgeRight, void 0, disableLink ? /*#__PURE__*/ import_react$177.createElement("div", { className: "ui-thumbnail-image-wrapper" }, innerPart) : /*#__PURE__*/ import_react$177.createElement(Link$5, {
+			const badgeRight = badgeRightProp ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-filterset-flag" }, badgeRightProp) : void 0;
+			const metaElement = meta ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$179.createElement("h3", { className: "ui-thumbnail-meta-title" }, meta.title), /*#__PURE__*/ import_react$179.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, meta.subtitle)) : void 0;
+			const actions = /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-actions" }, /*#__PURE__*/ import_react$179.createElement("ul", { className: "left by-left" }, actionsLeft), /*#__PURE__*/ import_react$179.createElement("ul", { className: "right by-right" }, actionsRight));
+			const innerPart = /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage))));
+			return /*#__PURE__*/ import_react$179.createElement("div", { className: classes }, flyoutTop, badgeLeft, badgeRight, void 0, disableLink ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-image-wrapper" }, innerPart) : /*#__PURE__*/ import_react$179.createElement(Link$5, {
 				className: "ui-thumbnail-image-wrapper",
 				style: pictureLinkStyle,
 				href,
@@ -49345,9 +49345,9 @@ var require = (function() {
 			return n;
 		}, _extends$20.apply(null, arguments);
 	}
-	var import_react$176, ToggableLink;
+	var import_react$178, ToggableLink;
 	var init_ToggableLink = __esmMin((() => {
-		import_react$176 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$178 = /* @__PURE__ */ __toESM(require_react$1());
 		init_utils$2();
 		ToggableLink = (props) => {
 			const { active, children, style: propStyle, onClick: propOnClick } = props;
@@ -49361,7 +49361,7 @@ var require = (function() {
 				...propStyle,
 				...inactiveStyle
 			};
-			return /*#__PURE__*/ import_react$176.createElement("a", _extends$20({}, restProps, {
+			return /*#__PURE__*/ import_react$178.createElement("a", _extends$20({}, restProps, {
 				onClick,
 				style
 			}), children);
@@ -49465,16 +49465,16 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/Tooltipped.jsx
 	var Tooltipped_exports = /* @__PURE__ */ __exportAll({ default: () => Tooltipped });
-	var import_react$175, import_prop_types$40, import_Tooltip, import_Overlay, Tooltipped;
+	var import_react$177, import_prop_types$40, import_Tooltip, import_Overlay, Tooltipped;
 	var init_Tooltipped = __esmMin((() => {
-		import_react$175 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$177 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$40 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_Tooltip = /* @__PURE__ */ __toESM(require_Tooltip());
 		import_Overlay = /* @__PURE__ */ __toESM(require_Overlay());
 		Tooltipped = ({ text, link, id, children }) => {
-			const [showTooltip, setShowTooltip] = (0, import_react$175.useState)(false);
-			const targetRef = (0, import_react$175.useRef)(null);
-			const timerRef = (0, import_react$175.useRef)(null);
+			const [showTooltip, setShowTooltip] = (0, import_react$177.useState)(false);
+			const targetRef = (0, import_react$177.useRef)(null);
+			const timerRef = (0, import_react$177.useRef)(null);
 			const handleShowTooltip = () => {
 				if (timerRef.current) clearTimeout(timerRef.current);
 				setShowTooltip(true);
@@ -49482,14 +49482,14 @@ var require = (function() {
 			const handleHideTooltip = () => {
 				timerRef.current = setTimeout(() => setShowTooltip(false), 30);
 			};
-			(0, import_react$175.useEffect)(() => {
+			(0, import_react$177.useEffect)(() => {
 				return () => {
 					if (timerRef.current) clearTimeout(timerRef.current);
 				};
 			}, []);
 			const getTriggerEl = (children) => {
-				const child = import_react$175.Children.toArray(children)[0];
-				return /*#__PURE__*/ import_react$175.cloneElement(child, {
+				const child = import_react$177.Children.toArray(children)[0];
+				return /*#__PURE__*/ import_react$177.cloneElement(child, {
 					onMouseEnter: handleShowTooltip,
 					onMouseLeave: handleHideTooltip,
 					ref: (el) => {
@@ -49497,15 +49497,15 @@ var require = (function() {
 					}
 				});
 			};
-			return /*#__PURE__*/ import_react$175.createElement("span", null, getTriggerEl(children), /*#__PURE__*/ import_react$175.createElement(import_Overlay.default, {
+			return /*#__PURE__*/ import_react$177.createElement("span", null, getTriggerEl(children), /*#__PURE__*/ import_react$177.createElement(import_Overlay.default, {
 				show: showTooltip,
 				target: targetRef.current,
 				placement: "top"
-			}, /*#__PURE__*/ import_react$175.createElement(import_Tooltip.default, {
+			}, /*#__PURE__*/ import_react$177.createElement(import_Tooltip.default, {
 				id,
 				onMouseEnter: handleShowTooltip,
 				onMouseLeave: handleHideTooltip
-			}, text, link && /*#__PURE__*/ import_react$175.createElement("div", null, "(", link, ")"))));
+			}, text, link && /*#__PURE__*/ import_react$177.createElement("div", null, "(", link, ")"))));
 		};
 		Tooltipped.propTypes = {
 			text: import_prop_types$40.default.string.isRequired,
@@ -49517,9 +49517,9 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/VocabTitleLink.jsx
 	var VocabTitleLink_exports = /* @__PURE__ */ __exportAll({ default: () => VocabTitleLink });
-	var import_react$174, import_classnames$30, VocabTitleLink;
+	var import_react$176, import_classnames$30, VocabTitleLink;
 	var init_VocabTitleLink = __esmMin((() => {
-		import_react$174 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$176 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Icon();
 		import_classnames$30 = /* @__PURE__ */ __toESM(require_classnames());
 		VocabTitleLink = ({ id, hi, text, href, separated, className }) => {
@@ -49529,13 +49529,13 @@ var require = (function() {
 				mbm: separated
 			});
 			const classes = className || defaultClasses;
-			return /*#__PURE__*/ import_react$174.createElement(H, {
+			return /*#__PURE__*/ import_react$176.createElement(H, {
 				className: classes,
 				id
-			}, text, href && " ", href && /*#__PURE__*/ import_react$174.createElement("a", {
+			}, text, href && " ", href && /*#__PURE__*/ import_react$176.createElement("a", {
 				href,
 				style: { textDecoration: "none" }
-			}, /*#__PURE__*/ import_react$174.createElement(Icon$4, { i: "link" })));
+			}, /*#__PURE__*/ import_react$176.createElement(Icon$4, { i: "link" })));
 		};
 	}));
 	//#endregion
@@ -52480,11 +52480,11 @@ var require = (function() {
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/rails-form.jsx
-	var import_react$173, import_prop_types$39, import_react_dom$1, import_url$25, checkForAuthToken, RestForm;
+	var import_react$175, import_prop_types$39, import_react_dom$1, import_url$25, checkForAuthToken, RestForm;
 	var init_rails_form = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$173 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$175 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$39 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_react_dom$1 = /* @__PURE__ */ __toESM(require_react_dom());
 		init_ui();
@@ -52494,7 +52494,7 @@ var require = (function() {
 			if (!present(authToken)) return /* @__PURE__ */ new Error("No `authToken` given!");
 			return authToken;
 		};
-		RestForm = class extends import_react$173.Component {
+		RestForm = class extends import_react$175.Component {
 			static propTypes = {
 				name: import_prop_types$39.default.string.isRequired,
 				action: import_prop_types$39.default.string,
@@ -52534,25 +52534,25 @@ var require = (function() {
 					method,
 					authToken
 				});
-				return /*#__PURE__*/ import_react$173.createElement("form", Object.assign({}, restProps, {
+				return /*#__PURE__*/ import_react$175.createElement("form", Object.assign({}, restProps, {
 					ref: "form",
 					name,
 					method: formMethod,
 					className: ui_default.cx(ui_default.parseMods(this.props)),
 					acceptCharset: "UTF-8"
-				}), /*#__PURE__*/ import_react$173.createElement("input", {
+				}), /*#__PURE__*/ import_react$175.createElement("input", {
 					name: "utf8",
 					type: "hidden",
 					value: "✓"
-				}), has(queryParams, "lang") ? /*#__PURE__*/ import_react$173.createElement("input", {
+				}), has(queryParams, "lang") ? /*#__PURE__*/ import_react$175.createElement("input", {
 					name: "lang",
 					type: "hidden",
 					value: queryParams["lang"]
-				}) : void 0, emulateHTTP ? /*#__PURE__*/ import_react$173.createElement("input", {
+				}) : void 0, emulateHTTP ? /*#__PURE__*/ import_react$175.createElement("input", {
 					name: "_method",
 					type: "hidden",
 					value: restMethod
-				}) : void 0, maybeAuthToken ? /*#__PURE__*/ import_react$173.createElement("input", {
+				}) : void 0, maybeAuthToken ? /*#__PURE__*/ import_react$175.createElement("input", {
 					name: authTokenParam,
 					type: "hidden",
 					value: maybeAuthToken
@@ -52563,13 +52563,13 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/views/Collection/SelectCollectionDialog.jsx
 	var SelectCollectionDialog_exports = /* @__PURE__ */ __exportAll({ default: () => SelectCollectionDialog });
-	var import_react$172, SelectCollectionDialog, SelectCollectionHeader, SelectCollectionFooter, SelectCollectionBody, SelectCollectionForm, SelectCollectionToolbar;
+	var import_react$174, SelectCollectionDialog, SelectCollectionHeader, SelectCollectionFooter, SelectCollectionBody, SelectCollectionForm, SelectCollectionToolbar;
 	var init_SelectCollectionDialog = __esmMin((() => {
-		import_react$172 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$174 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_rails_form();
 		init_Button();
-		SelectCollectionDialog = class extends import_react$172.Component {
+		SelectCollectionDialog = class extends import_react$174.Component {
 			_onCancel = (event) => {
 				if (this.props.onCancel) {
 					event.preventDefault();
@@ -52579,11 +52579,11 @@ var require = (function() {
 			};
 			render() {
 				const { cancelUrl, title, toolbar, action, authToken, content, method, showSave } = this.props;
-				return /*#__PURE__*/ import_react$172.createElement("div", null, /*#__PURE__*/ import_react$172.createElement(SelectCollectionHeader, {
+				return /*#__PURE__*/ import_react$174.createElement("div", null, /*#__PURE__*/ import_react$174.createElement(SelectCollectionHeader, {
 					onCancel: this._onCancel,
 					cancelUrl,
 					title
-				}), /*#__PURE__*/ import_react$172.createElement(SelectCollectionToolbar, null, toolbar), /*#__PURE__*/ import_react$172.createElement(SelectCollectionForm, {
+				}), /*#__PURE__*/ import_react$174.createElement(SelectCollectionToolbar, null, toolbar), /*#__PURE__*/ import_react$174.createElement(SelectCollectionForm, {
 					showAddToClipboard: this.props.showAddToClipboard,
 					action,
 					authToken,
@@ -52591,13 +52591,13 @@ var require = (function() {
 					onCancel: this._onCancel,
 					method,
 					showSave
-				}, /*#__PURE__*/ import_react$172.createElement(SelectCollectionBody, null, content)));
+				}, /*#__PURE__*/ import_react$174.createElement(SelectCollectionBody, null, content)));
 			}
 		};
-		SelectCollectionHeader = class extends import_react$172.Component {
+		SelectCollectionHeader = class extends import_react$174.Component {
 			render() {
 				const { cancelUrl, title, onCancel } = this.props;
-				return /*#__PURE__*/ import_react$172.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$172.createElement("a", {
+				return /*#__PURE__*/ import_react$174.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$174.createElement("a", {
 					href: cancelUrl,
 					"aria-hidden": "true",
 					className: "ui-modal-close",
@@ -52610,52 +52610,52 @@ var require = (function() {
 						paddingTop: "5px"
 					},
 					onClick: onCancel
-				}, /*#__PURE__*/ import_react$172.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$172.createElement("h3", { className: "title-l" }, title));
+				}, /*#__PURE__*/ import_react$174.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$174.createElement("h3", { className: "title-l" }, title));
 			}
 		};
-		SelectCollectionFooter = class extends import_react$172.Component {
+		SelectCollectionFooter = class extends import_react$174.Component {
 			render() {
 				const { cancelUrl, onCancel, showSave } = this.props;
 				const className = showSave ? "line weak" : "primary-button";
-				return /*#__PURE__*/ import_react$172.createElement("div", { className: "ui-modal-footer body-lower-limit" }, this.props.showAddToClipboard ? /*#__PURE__*/ import_react$172.createElement("div", null, /*#__PURE__*/ import_react$172.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$174.createElement("div", { className: "ui-modal-footer body-lower-limit" }, this.props.showAddToClipboard ? /*#__PURE__*/ import_react$174.createElement("div", null, /*#__PURE__*/ import_react$174.createElement("div", { style: {
 					textAlign: "center",
 					paddingTop: "0px",
 					paddingBottom: "10px"
-				} }, /*#__PURE__*/ import_react$172.createElement("input", {
+				} }, /*#__PURE__*/ import_react$174.createElement("input", {
 					type: "checkbox",
 					name: "add_to_clipboard"
-				}), I18nTranslate("clipboard_add_hint")), /*#__PURE__*/ import_react$172.createElement("hr", {
+				}), I18nTranslate("clipboard_add_hint")), /*#__PURE__*/ import_react$174.createElement("hr", {
 					className: "separator",
 					style: { marginBottom: "20px" }
-				})) : void 0, /*#__PURE__*/ import_react$172.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$172.createElement("a", {
+				})) : void 0, /*#__PURE__*/ import_react$174.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$174.createElement("a", {
 					href: cancelUrl,
 					className,
 					onClick: onCancel
-				}, I18nTranslate("resource_select_collection_cancel")), showSave ? /*#__PURE__*/ import_react$172.createElement(Button$3, {
+				}, I18nTranslate("resource_select_collection_cancel")), showSave ? /*#__PURE__*/ import_react$174.createElement(Button$3, {
 					className: "primary-button",
 					type: "submit"
 				}, I18nTranslate("resource_select_collection_save")) : void 0));
 			}
 		};
-		SelectCollectionBody = class extends import_react$172.Component {
+		SelectCollectionBody = class extends import_react$174.Component {
 			render() {
 				const { children } = this.props;
-				return /*#__PURE__*/ import_react$172.createElement("div", {
+				return /*#__PURE__*/ import_react$174.createElement("div", {
 					className: "ui-modal-body",
 					style: { maxHeight: "none" }
 				}, children);
 			}
 		};
-		SelectCollectionForm = class extends import_react$172.Component {
+		SelectCollectionForm = class extends import_react$174.Component {
 			render() {
 				const { children, action, authToken, cancelUrl, onCancel, method, showSave } = this.props;
-				return /*#__PURE__*/ import_react$172.createElement(RestForm, {
+				return /*#__PURE__*/ import_react$174.createElement(RestForm, {
 					name: "select_collections",
 					action,
 					method,
 					authToken,
 					className: "save-arcs"
-				}, children, /*#__PURE__*/ import_react$172.createElement(SelectCollectionFooter, {
+				}, children, /*#__PURE__*/ import_react$174.createElement(SelectCollectionFooter, {
 					showAddToClipboard: this.props.showAddToClipboard,
 					cancelUrl,
 					onCancel,
@@ -52663,10 +52663,10 @@ var require = (function() {
 				}));
 			}
 		};
-		SelectCollectionToolbar = class extends import_react$172.Component {
+		SelectCollectionToolbar = class extends import_react$174.Component {
 			render() {
 				const { children } = this.props;
-				return /*#__PURE__*/ import_react$172.createElement("div", { className: "ui-modal-toolbar top" }, children);
+				return /*#__PURE__*/ import_react$174.createElement("div", { className: "ui-modal-toolbar top" }, children);
 			}
 		};
 	}));
@@ -52845,11 +52845,11 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSet.jsx
 	var BatchAddToSet_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSet });
-	var import_react$171, import_lib$13, import_rails_csrf_token$16, import_xhr$15, BatchAddToSet;
+	var import_react$173, import_lib$13, import_rails_csrf_token$16, import_xhr$15, BatchAddToSet;
 	var init_BatchAddToSet = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$171 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$173 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_SelectCollectionDialog();
 		init_Button();
@@ -52858,7 +52858,7 @@ var require = (function() {
 		import_lib$13 = /* @__PURE__ */ __toESM(require_lib());
 		import_rails_csrf_token$16 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		import_xhr$15 = /* @__PURE__ */ __toESM(require_xhr());
-		BatchAddToSet = class extends import_react$171.Component {
+		BatchAddToSet = class extends import_react$173.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -52929,18 +52929,18 @@ var require = (function() {
 				};
 				const hasNew = this.state.newSets.length > 0;
 				const hasResultEntries = get.search_results.collections.length > 0;
-				const _search = /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-search" }, /*#__PURE__*/ import_react$171.createElement(RestForm, {
+				const _search = /*#__PURE__*/ import_react$173.createElement("div", { className: "ui-search" }, /*#__PURE__*/ import_react$173.createElement(RestForm, {
 					ref: "form",
 					name: "search_collections",
 					action: this.props.get.batch_select_add_to_set_url,
 					method: "post",
 					authToken,
 					className: "dummy"
-				}, /*#__PURE__*/ import_react$171.createElement("input", {
+				}, /*#__PURE__*/ import_react$173.createElement("input", {
 					type: "hidden",
 					name: "return_to",
 					value: this.state.get.return_to
-				}), /*#__PURE__*/ import_react$171.createElement("input", {
+				}), /*#__PURE__*/ import_react$173.createElement("input", {
 					type: "text",
 					autoCorrect: "off",
 					autoComplete: "off",
@@ -52950,59 +52950,59 @@ var require = (function() {
 					name: "search_term",
 					value: this.state.searchTerm,
 					onChange: this._onChange
-				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$171.createElement("input", {
+				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$173.createElement("input", {
 					key: `resource_id_${resource_id.uuid}`,
 					type: "hidden",
 					name: "resource_id[][uuid]",
 					value: resource_id.uuid
-				}), /*#__PURE__*/ import_react$171.createElement("input", {
+				}), /*#__PURE__*/ import_react$173.createElement("input", {
 					key: `resource_id_${resource_id.type}`,
 					type: "hidden",
 					name: "resource_id[][type]",
 					value: resource_id.type
-				})]), !this.state.isClient ? [/*#__PURE__*/ import_react$171.createElement(Button$3, {
+				})]), !this.state.isClient ? [/*#__PURE__*/ import_react$173.createElement(Button$3, {
 					key: "search_button",
 					style: buttonMargins,
 					className: "button",
 					type: "submit",
 					name: "search"
-				}, I18nTranslate("resource_select_collection_search")), /*#__PURE__*/ import_react$171.createElement(Button$3, {
+				}, I18nTranslate("resource_select_collection_search")), /*#__PURE__*/ import_react$173.createElement(Button$3, {
 					key: "clear_button",
 					style: buttonMargins,
 					className: "button",
 					type: "submit",
 					name: "clear"
-				}, I18nTranslate("resource_select_collection_clear"))] : /*#__PURE__*/ import_react$171.createElement("button", {
+				}, I18nTranslate("resource_select_collection_clear"))] : /*#__PURE__*/ import_react$173.createElement("button", {
 					onClick: this._onClickNew,
 					className: "button ui-search-button"
 				}, "Neues Set erstellen")));
 				const _content = [];
-				if (this.state.searching && !(hasNew || hasResultEntries)) _content.push(/*#__PURE__*/ import_react$171.createElement(Preloader$1, { key: "content1" }));
-				if (hasNew || hasResultEntries) _content.push(/*#__PURE__*/ import_react$171.createElement("ol", {
+				if (this.state.searching && !(hasNew || hasResultEntries)) _content.push(/*#__PURE__*/ import_react$173.createElement(Preloader$1, { key: "content1" }));
+				if (hasNew || hasResultEntries) _content.push(/*#__PURE__*/ import_react$173.createElement("ol", {
 					key: "content2",
 					className: "ui-set-list pbs"
-				}, /*#__PURE__*/ import_react$171.createElement("input", {
+				}, /*#__PURE__*/ import_react$173.createElement("input", {
 					type: "hidden",
 					name: "return_to",
 					value: this.state.get.return_to
-				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$171.createElement("input", {
+				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$173.createElement("input", {
 					key: `resource_id_${resource_id.uuid}`,
 					type: "hidden",
 					name: "resource_id[][uuid]",
 					value: resource_id.uuid
-				}), /*#__PURE__*/ import_react$171.createElement("input", {
+				}), /*#__PURE__*/ import_react$173.createElement("input", {
 					key: `resource_id_${resource_id.type}`,
 					type: "hidden",
 					name: "resource_id[][type]",
 					value: resource_id.type
-				})]), hasNew ? map(this.state.newSets, (row, index) => /*#__PURE__*/ import_react$171.createElement("li", {
+				})]), hasNew ? map(this.state.newSets, (row, index) => /*#__PURE__*/ import_react$173.createElement("li", {
 					style: {
 						paddingLeft: "60px",
 						paddingRight: "200px"
 					},
 					key: `new_${index}`,
 					className: "ui-set-list-item"
-				}, /*#__PURE__*/ import_react$171.createElement("img", {
+				}, /*#__PURE__*/ import_react$173.createElement("img", {
 					style: {
 						margin: "0px",
 						position: "absolute",
@@ -53011,7 +53011,7 @@ var require = (function() {
 					},
 					className: "ui-thumbnail micro",
 					src: null
-				}), /*#__PURE__*/ import_react$171.createElement("span", { className: "title" }, row), /*#__PURE__*/ import_react$171.createElement("span", { className: "owner" }, "New"), /*#__PURE__*/ import_react$171.createElement(Button$3, {
+				}), /*#__PURE__*/ import_react$173.createElement("span", { className: "title" }, row), /*#__PURE__*/ import_react$173.createElement("span", { className: "owner" }, "New"), /*#__PURE__*/ import_react$173.createElement(Button$3, {
 					style: {
 						position: "absolute",
 						right: "0px",
@@ -53024,15 +53024,15 @@ var require = (function() {
 				}, `\
 Neues Set erstellen und Einträge hinzufügen\
 `))) : void 0, (() => {
-					if (this.state.searching) return /*#__PURE__*/ import_react$171.createElement(Preloader$1, { style: { marginTop: "20px" } });
-					else if (hasResultEntries) return map(get.search_results.collections, (collection) => /*#__PURE__*/ import_react$171.createElement("li", {
+					if (this.state.searching) return /*#__PURE__*/ import_react$173.createElement(Preloader$1, { style: { marginTop: "20px" } });
+					else if (hasResultEntries) return map(get.search_results.collections, (collection) => /*#__PURE__*/ import_react$173.createElement("li", {
 						style: {
 							paddingLeft: "60px",
 							paddingRight: "200px"
 						},
 						key: collection.uuid,
 						className: "ui-set-list-item"
-					}, /*#__PURE__*/ import_react$171.createElement("img", {
+					}, /*#__PURE__*/ import_react$173.createElement("img", {
 						style: {
 							margin: "0px",
 							position: "absolute",
@@ -53041,7 +53041,7 @@ Neues Set erstellen und Einträge hinzufügen\
 						},
 						className: "ui-thumbnail micro",
 						src: collection.image_url
-					}), /*#__PURE__*/ import_react$171.createElement("span", { className: "title" }, collection.title), /*#__PURE__*/ import_react$171.createElement("span", { className: "owner" }, collection.responsible.name), /*#__PURE__*/ import_react$171.createElement("span", { className: "created-at" }, collection.created_at_pretty), /*#__PURE__*/ import_react$171.createElement(Button$3, {
+					}), /*#__PURE__*/ import_react$173.createElement("span", { className: "title" }, collection.title), /*#__PURE__*/ import_react$173.createElement("span", { className: "owner" }, collection.responsible.name), /*#__PURE__*/ import_react$173.createElement("span", { className: "created-at" }, collection.created_at_pretty), /*#__PURE__*/ import_react$173.createElement(Button$3, {
 						style: {
 							position: "absolute",
 							right: "0px",
@@ -53055,19 +53055,19 @@ Neues Set erstellen und Einträge hinzufügen\
 Zu diesem hinzufügen\
 `)));
 				})()));
-				if (!this.state.searching && hasResultEntries && get.search_results.has_more) _content.push(/*#__PURE__*/ import_react$171.createElement("h3", {
+				if (!this.state.searching && hasResultEntries && get.search_results.has_more) _content.push(/*#__PURE__*/ import_react$173.createElement("h3", {
 					key: "content3",
 					className: "by-center title-m"
 				}, I18nTranslate("resource_select_collection_has_more")));
-				if (!hasResultEntries && presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$171.createElement("h3", {
+				if (!hasResultEntries && presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$173.createElement("h3", {
 					key: "content3",
 					className: "by-center title-m"
 				}, I18nTranslate("resource_select_collection_non_found")));
-				if (!hasResultEntries && !presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$171.createElement("h3", {
+				if (!hasResultEntries && !presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$173.createElement("h3", {
 					key: "content4",
 					className: "by-center title-m"
 				}, I18nTranslate("batch_add_to_collection_hint")));
-				return /*#__PURE__*/ import_react$171.createElement(SelectCollectionDialog, {
+				return /*#__PURE__*/ import_react$173.createElement(SelectCollectionDialog, {
 					onCancel: this.props.onClose,
 					cancelUrl: this.state.get.return_to,
 					title: I18nTranslate("batch_add_to_collection_pre") + this.props.get.batch_count + I18nTranslate("batch_add_to_collection_post"),
@@ -53085,18 +53085,18 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSetModal.jsx
 	var BatchAddToSetModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSetModal });
-	var import_react$170, import_lib$12, import_xhr$14, import_rails_csrf_token$15, BatchAddToSetModal;
+	var import_react$172, import_lib$12, import_xhr$14, import_rails_csrf_token$15, BatchAddToSetModal;
 	var init_BatchAddToSetModal = __esmMin((() => {
-		import_react$170 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$172 = /* @__PURE__ */ __toESM(require_react$1());
 		init_BatchAddToSet();
 		import_lib$12 = /* @__PURE__ */ __toESM(require_lib());
 		import_xhr$14 = /* @__PURE__ */ __toESM(require_xhr());
 		init_Modal();
 		import_rails_csrf_token$15 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BatchAddToSetModal = ({ resourceIds, returnTo, authToken, onClose }) => {
-			const [loading, setLoading] = (0, import_react$170.useState)(true);
-			const [get, setGet] = (0, import_react$170.useState)(null);
-			(0, import_react$170.useEffect)(() => {
+			const [loading, setLoading] = (0, import_react$172.useState)(true);
+			const [get, setGet] = (0, import_react$172.useState)(null);
+			(0, import_react$172.useEffect)(() => {
 				const data = {
 					search_term: "",
 					resource_id: resourceIds,
@@ -53119,8 +53119,8 @@ Zu diesem hinzufügen\
 					}
 				});
 			}, [resourceIds, returnTo]);
-			if (loading) return /*#__PURE__*/ import_react$170.createElement(Modal, { loading: true });
-			return /*#__PURE__*/ import_react$170.createElement(Modal, { loading: false }, /*#__PURE__*/ import_react$170.createElement(BatchAddToSet, {
+			if (loading) return /*#__PURE__*/ import_react$172.createElement(Modal, { loading: true });
+			return /*#__PURE__*/ import_react$172.createElement(Modal, { loading: false }, /*#__PURE__*/ import_react$172.createElement(BatchAddToSet, {
 				returnTo,
 				get,
 				async: true,
@@ -53132,9 +53132,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchEditTitleModal.jsx
 	var BatchEditTitleModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchEditTitleModal });
-	var import_react$169, import_xhr$13, import_lib$11, import_rails_csrf_token$14, endPointUrl, BatchEditTitleModal;
+	var import_react$171, import_xhr$13, import_lib$11, import_rails_csrf_token$14, endPointUrl, BatchEditTitleModal;
 	var init_BatchEditTitleModal = __esmMin((() => {
-		import_react$169 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$171 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Modal();
 		init_rails_form();
 		init_FormButton();
@@ -53143,7 +53143,7 @@ Zu diesem hinzufügen\
 		import_rails_csrf_token$14 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_i18n_translate();
 		endPointUrl = "/batch_edit_title";
-		BatchEditTitleModal = class extends import_react$169.Component {
+		BatchEditTitleModal = class extends import_react$171.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -53207,12 +53207,12 @@ Zu diesem hinzufügen\
 				const { authToken, returnTo, resourceIds } = this.props;
 				const { loading, errorMessage, mediaEntries } = this.state;
 				const submitUrl = endPointUrl;
-				return /*#__PURE__*/ import_react$169.createElement(Modal, { widthInPixel: "800" }, /*#__PURE__*/ import_react$169.createElement(RestForm, {
+				return /*#__PURE__*/ import_react$171.createElement(Modal, { widthInPixel: "800" }, /*#__PURE__*/ import_react$171.createElement(RestForm, {
 					name: "batch_edit_title",
 					action: submitUrl,
 					method: "put",
 					authToken
-				}, /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$169.createElement("a", {
+				}, /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$171.createElement("a", {
 					href: returnTo,
 					onClick: (e) => this._onCancel(e),
 					className: "ui-modal-close",
@@ -53224,37 +53224,37 @@ Zu diesem hinzufügen\
 						float: "right",
 						paddingTop: "5px"
 					}
-				}, /*#__PURE__*/ import_react$169.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$169.createElement("h3", { className: "title-l" }, I18nTranslate("batch_edit_title_title"))), /*#__PURE__*/ import_react$169.createElement("div", {
+				}, /*#__PURE__*/ import_react$171.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$171.createElement("h3", { className: "title-l" }, I18nTranslate("batch_edit_title_title"))), /*#__PURE__*/ import_react$171.createElement("div", {
 					className: "ui-modal-body",
 					style: { maxHeight: "none" }
-				}, /*#__PURE__*/ import_react$169.createElement("input", {
+				}, /*#__PURE__*/ import_react$171.createElement("input", {
 					type: "hidden",
 					name: "return_to",
 					value: returnTo
-				}), resourceIds.map((resource_id) => [/*#__PURE__*/ import_react$169.createElement("input", {
+				}), resourceIds.map((resource_id) => [/*#__PURE__*/ import_react$171.createElement("input", {
 					key: "resource_id_" + resource_id.uuid,
 					type: "hidden",
 					name: "resource_id[][uuid]",
 					value: resource_id.uuid
-				}), /*#__PURE__*/ import_react$169.createElement("input", {
+				}), /*#__PURE__*/ import_react$171.createElement("input", {
 					key: "resource_id_" + resource_id.type,
 					type: "hidden",
 					name: "resource_id[][type]",
 					value: resource_id.type
-				})]), errorMessage && /*#__PURE__*/ import_react$169.createElement("div", { className: "error ui-alert" }, errorMessage), loading && /*#__PURE__*/ import_react$169.createElement("div", null, "Loading..."), !loading && !errorMessage && /*#__PURE__*/ import_react$169.createElement("table", {
+				})]), errorMessage && /*#__PURE__*/ import_react$171.createElement("div", { className: "error ui-alert" }, errorMessage), loading && /*#__PURE__*/ import_react$171.createElement("div", null, "Loading..."), !loading && !errorMessage && /*#__PURE__*/ import_react$171.createElement("table", {
 					className: "ui-table",
 					style: { width: "100%" }
-				}, /*#__PURE__*/ import_react$169.createElement("thead", null, /*#__PURE__*/ import_react$169.createElement("tr", null, /*#__PURE__*/ import_react$169.createElement("th", null), /*#__PURE__*/ import_react$169.createElement("th", { className: "phs" }, I18nTranslate("batch_edit_title_th_filename")), /*#__PURE__*/ import_react$169.createElement("th", null, I18nTranslate("batch_edit_title_th_title")))), /*#__PURE__*/ import_react$169.createElement("tbody", null, mediaEntries.map((entry) => /*#__PURE__*/ import_react$169.createElement("tr", { key: entry.id }, /*#__PURE__*/ import_react$169.createElement("td", { style: { width: "40px" } }, /*#__PURE__*/ import_react$169.createElement("img", {
+				}, /*#__PURE__*/ import_react$171.createElement("thead", null, /*#__PURE__*/ import_react$171.createElement("tr", null, /*#__PURE__*/ import_react$171.createElement("th", null), /*#__PURE__*/ import_react$171.createElement("th", { className: "phs" }, I18nTranslate("batch_edit_title_th_filename")), /*#__PURE__*/ import_react$171.createElement("th", null, I18nTranslate("batch_edit_title_th_title")))), /*#__PURE__*/ import_react$171.createElement("tbody", null, mediaEntries.map((entry) => /*#__PURE__*/ import_react$171.createElement("tr", { key: entry.id }, /*#__PURE__*/ import_react$171.createElement("td", { style: { width: "40px" } }, /*#__PURE__*/ import_react$171.createElement("img", {
 					className: "ui-thumbnail micro",
 					style: { margin: 0 },
 					src: entry.image_url
-				})), /*#__PURE__*/ import_react$169.createElement("td", {
+				})), /*#__PURE__*/ import_react$171.createElement("td", {
 					className: "phs",
 					style: {
 						width: "40%",
 						maxWidth: "250px"
 					}
-				}, /*#__PURE__*/ import_react$169.createElement("div", { style: { wordWrap: "break-word" } }, entry.file_name)), /*#__PURE__*/ import_react$169.createElement("td", { style: { width: "60%" } }, /*#__PURE__*/ import_react$169.createElement("input", {
+				}, /*#__PURE__*/ import_react$171.createElement("div", { style: { wordWrap: "break-word" } }, entry.file_name)), /*#__PURE__*/ import_react$171.createElement("td", { style: { width: "60%" } }, /*#__PURE__*/ import_react$171.createElement("input", {
 					type: "text",
 					className: "block",
 					style: { margin: 0 },
@@ -53262,32 +53262,32 @@ Zu diesem hinzufügen\
 					value: entry.title,
 					required: true,
 					onChange: (e) => this._onChangeTitle(e.target.value, entry.id)
-				}))))))), /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$169.createElement("a", {
+				}))))))), /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$171.createElement("a", {
 					href: returnTo,
 					onClick: (e) => this._onCancel(e),
 					className: "link weak",
 					"data-dismiss": "modal"
-				}, I18nTranslate("batch_edit_title_cancel")), !loading && !errorMessage && /*#__PURE__*/ import_react$169.createElement(FormButton, { text: I18nTranslate("batch_edit_title_save") })))));
+				}, I18nTranslate("batch_edit_title_cancel")), !loading && !errorMessage && /*#__PURE__*/ import_react$171.createElement(FormButton, { text: I18nTranslate("batch_edit_title_save") })))));
 			}
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/BatchHintBox.jsx
 	var BatchHintBox_exports = /* @__PURE__ */ __exportAll({ default: () => BatchHintBox });
-	var import_react$168, BatchHintBox;
+	var import_react$170, BatchHintBox;
 	var init_BatchHintBox = __esmMin((() => {
-		import_react$168 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$170 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		BatchHintBox = () => {
-			return /*#__PURE__*/ import_react$168.createElement("div", { className: "app-body-sidebar table-cell ui-container table-side pll" }, /*#__PURE__*/ import_react$168.createElement("div", { className: "ui-container bordered rounded" }, /*#__PURE__*/ import_react$168.createElement("div", { className: "ui-form-group rowed separated" }, /*#__PURE__*/ import_react$168.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_no_data")), /*#__PURE__*/ import_react$168.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$168.createElement("input", {
+			return /*#__PURE__*/ import_react$170.createElement("div", { className: "app-body-sidebar table-cell ui-container table-side pll" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-container bordered rounded" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-form-group rowed separated" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_no_data")), /*#__PURE__*/ import_react$170.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$170.createElement("input", {
 				className: "block",
 				type: "text",
 				readOnly: "true"
-			}))), /*#__PURE__*/ import_react$168.createElement("div", { className: "ui-form-group rowed highlight separated" }, /*#__PURE__*/ import_react$168.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_differences"), /*#__PURE__*/ import_react$168.createElement("small", null, I18nTranslate("meta_data_batch_hint_differences_override"))), /*#__PURE__*/ import_react$168.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$168.createElement("input", {
+			}))), /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-form-group rowed highlight separated" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_differences"), /*#__PURE__*/ import_react$170.createElement("small", null, I18nTranslate("meta_data_batch_hint_differences_override"))), /*#__PURE__*/ import_react$170.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$170.createElement("input", {
 				className: "block",
 				type: "text",
 				readOnly: "true"
-			}))), /*#__PURE__*/ import_react$168.createElement("div", { className: "ui-form-group rowed" }, /*#__PURE__*/ import_react$168.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_equal_data")), /*#__PURE__*/ import_react$168.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$168.createElement("input", {
+			}))), /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-form-group rowed" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_equal_data")), /*#__PURE__*/ import_react$170.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$170.createElement("input", {
 				className: "block",
 				type: "text",
 				value: I18nTranslate("meta_data_batch_hint_value"),
@@ -53327,9 +53327,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchRemoveFromSet.jsx
 	var BatchRemoveFromSet_exports = /* @__PURE__ */ __exportAll({ default: () => BatchRemoveFromSet });
-	var import_react$167, BatchRemoveFromSet;
+	var import_react$169, BatchRemoveFromSet;
 	var init_BatchRemoveFromSet = __esmMin((() => {
-		import_react$167 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$169 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_rails_form();
 		init_set_params_for_url();
@@ -53340,20 +53340,20 @@ Zu diesem hinzufügen\
 				return_to: get.return_to,
 				parent_collection_id: get.parent_collection_id
 			});
-			return /*#__PURE__*/ import_react$167.createElement(RestForm, {
+			return /*#__PURE__*/ import_react$169.createElement(RestForm, {
 				name: "resource_meta_data",
 				action: requestUrl,
 				method: "patch",
 				authToken
-			}, /*#__PURE__*/ import_react$167.createElement("input", {
+			}, /*#__PURE__*/ import_react$169.createElement("input", {
 				type: "hidden",
 				name: "return_to",
 				value: get.return_to
-			}), /*#__PURE__*/ import_react$167.createElement("input", {
+			}), /*#__PURE__*/ import_react$169.createElement("input", {
 				type: "hidden",
 				name: "parent_collection_id",
 				value: get.parent_collection_id
-			}), /*#__PURE__*/ import_react$167.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$167.createElement("a", {
+			}), /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$169.createElement("a", {
 				href: get.return_to,
 				"aria-hidden": "true",
 				className: "ui-modal-close",
@@ -53365,15 +53365,15 @@ Zu diesem hinzufügen\
 					float: "right",
 					paddingTop: "5px"
 				}
-			}, /*#__PURE__*/ import_react$167.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$167.createElement("h3", { className: "title-l" }, I18nTranslate("batch_remove_from_collection_title"))), /*#__PURE__*/ import_react$167.createElement("div", {
+			}, /*#__PURE__*/ import_react$169.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$169.createElement("h3", { className: "title-l" }, I18nTranslate("batch_remove_from_collection_title"))), /*#__PURE__*/ import_react$169.createElement("div", {
 				className: "ui-modal-body",
 				style: { maxHeight: "none" }
-			}, /*#__PURE__*/ import_react$167.createElement("p", { className: "pam by-center" }, I18nTranslate("batch_remove_from_collection_question_part_1"), /*#__PURE__*/ import_react$167.createElement("strong", null, get.media_entries_count), I18nTranslate("batch_remove_from_collection_question_part_2"), /*#__PURE__*/ import_react$167.createElement("strong", null, get.collections_count), I18nTranslate("batch_remove_from_collection_question_part_3"))), /*#__PURE__*/ import_react$167.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$167.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$167.createElement("a", {
+			}, /*#__PURE__*/ import_react$169.createElement("p", { className: "pam by-center" }, I18nTranslate("batch_remove_from_collection_question_part_1"), /*#__PURE__*/ import_react$169.createElement("strong", null, get.media_entries_count), I18nTranslate("batch_remove_from_collection_question_part_2"), /*#__PURE__*/ import_react$169.createElement("strong", null, get.collections_count), I18nTranslate("batch_remove_from_collection_question_part_3"))), /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$169.createElement("a", {
 				href: get.return_to,
 				"aria-hidden": "true",
 				className: "link weak",
 				"data-dismiss": "modal"
-			}, I18nTranslate("batch_remove_from_collection_cancel")), /*#__PURE__*/ import_react$167.createElement(FormButton, { text: I18nTranslate("batch_remove_from_collection_remove") }))));
+			}, I18nTranslate("batch_remove_from_collection_cancel")), /*#__PURE__*/ import_react$169.createElement(FormButton, { text: I18nTranslate("batch_remove_from_collection_remove") }))));
 		};
 	}));
 	//#endregion
@@ -53427,12 +53427,12 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/views/Collection/AsyncModal.jsx
 	var AsyncModal_exports = /* @__PURE__ */ __exportAll({ default: () => AsyncModal });
-	var import_react$166, AsyncModal;
+	var import_react$168, AsyncModal;
 	var init_AsyncModal = __esmMin((() => {
-		import_react$166 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$168 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Modal();
 		init_load_xhr();
-		AsyncModal = class extends import_react$166.Component {
+		AsyncModal = class extends import_react$168.Component {
 			constructor(props) {
 				super(props);
 				const initialGet = props.get;
@@ -53478,11 +53478,11 @@ Zu diesem hinzufügen\
 				this._isMounted = false;
 			}
 			render() {
-				if (!this.state.get) return /*#__PURE__*/ import_react$166.createElement(Modal, {
+				if (!this.state.get) return /*#__PURE__*/ import_react$168.createElement(Modal, {
 					loading: true,
 					widthInPixel: this.props.widthInPixel
 				});
-				else return /*#__PURE__*/ import_react$166.createElement(Modal, {
+				else return /*#__PURE__*/ import_react$168.createElement(Modal, {
 					loading: false,
 					widthInPixel: this.props.widthInPixel
 				}, this.state.children);
@@ -53492,15 +53492,15 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchRemoveFromSetModal.jsx
 	var BatchRemoveFromSetModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchRemoveFromSetModal });
-	var import_react$165, BatchRemoveFromSetModal;
+	var import_react$167, BatchRemoveFromSetModal;
 	var init_BatchRemoveFromSetModal = __esmMin((() => {
-		import_react$165 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$167 = /* @__PURE__ */ __toESM(require_react$1());
 		init_BatchRemoveFromSet();
 		init_AsyncModal();
 		init_set_params_for_url();
 		BatchRemoveFromSetModal = ({ get, collectionUuid, resourceIds, returnTo, authToken, onClose }) => {
 			const contentForGet = (get) => {
-				return /*#__PURE__*/ import_react$165.createElement(BatchRemoveFromSet, {
+				return /*#__PURE__*/ import_react$167.createElement(BatchRemoveFromSet, {
 					returnTo,
 					get,
 					async: true,
@@ -53516,7 +53516,7 @@ Zu diesem hinzufügen\
 				resource_id: resourceIds,
 				return_to: returnTo
 			});
-			return /*#__PURE__*/ import_react$165.createElement(AsyncModal, {
+			return /*#__PURE__*/ import_react$167.createElement(AsyncModal, {
 				get,
 				getUrl,
 				contentForGet,
@@ -53547,40 +53547,40 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxDestroy.jsx
 	var BoxDestroy_exports = /* @__PURE__ */ __exportAll({ default: () => BoxDestroy });
-	var import_react$164, BoxDestroy;
+	var import_react$166, BoxDestroy;
 	var init_BoxDestroy = __esmMin((() => {
-		import_react$164 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$166 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_i18n_translate();
 		init_Modal();
 		init_Preloader();
-		BoxDestroy = class extends import_react$164.Component {
+		BoxDestroy = class extends import_react$166.Component {
 			constructor(props) {
 				super(props);
 			}
 			renderLoading() {
-				return /*#__PURE__*/ import_react$164.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$166.createElement("div", { style: {
 					margin: "20px",
 					marginBottom: "20px",
 					textAlign: "center"
-				} }, /*#__PURE__*/ import_react$164.createElement(Preloader$1, null));
+				} }, /*#__PURE__*/ import_react$166.createElement(Preloader$1, null));
 			}
 			renderContent() {
 				if (this.props.loading) return this.renderLoading();
 				else return this.renderReady();
 			}
 			renderReady() {
-				return /*#__PURE__*/ import_react$164.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$166.createElement("div", { style: {
 					margin: "20px",
 					marginBottom: "20px",
 					textAlign: "center"
-				} }, this.renderError(), /*#__PURE__*/ import_react$164.createElement("div", { style: { marginBottom: "20px" } }, /*#__PURE__*/ import_react$164.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_1")), /*#__PURE__*/ import_react$164.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "MediaEntry" })), I18nTranslate("batch_destroy_resources_ask_2")), /*#__PURE__*/ import_react$164.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "Collection" })), I18nTranslate("batch_destroy_resources_ask_3")), /*#__PURE__*/ import_react$164.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_4"))), /*#__PURE__*/ import_react$164.createElement("div", {
+				} }, this.renderError(), /*#__PURE__*/ import_react$166.createElement("div", { style: { marginBottom: "20px" } }, /*#__PURE__*/ import_react$166.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_1")), /*#__PURE__*/ import_react$166.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "MediaEntry" })), I18nTranslate("batch_destroy_resources_ask_2")), /*#__PURE__*/ import_react$166.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "Collection" })), I18nTranslate("batch_destroy_resources_ask_3")), /*#__PURE__*/ import_react$166.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_4"))), /*#__PURE__*/ import_react$166.createElement("div", {
 					className: "ui-actions",
 					style: { padding: "10px" }
-				}, /*#__PURE__*/ import_react$164.createElement("a", {
+				}, /*#__PURE__*/ import_react$166.createElement("a", {
 					onClick: this.props.onClose,
 					className: "link weak"
-				}, I18nTranslate("batch_destroy_resources_cancel")), /*#__PURE__*/ import_react$164.createElement("button", {
+				}, I18nTranslate("batch_destroy_resources_cancel")), /*#__PURE__*/ import_react$166.createElement("button", {
 					className: "primary-button",
 					type: "submit",
 					onClick: this.props.onOk
@@ -53588,13 +53588,13 @@ Zu diesem hinzufügen\
 			}
 			renderError() {
 				if (!this.props.error) return null;
-				return /*#__PURE__*/ import_react$164.createElement("div", {
+				return /*#__PURE__*/ import_react$166.createElement("div", {
 					className: "ui-alerts",
 					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$164.createElement("div", { className: "error ui-alert" }, this.props.error));
+				}, /*#__PURE__*/ import_react$166.createElement("div", { className: "error ui-alert" }, this.props.error));
 			}
 			render() {
-				return /*#__PURE__*/ import_react$164.createElement(Modal, { widthInPixel: 400 }, this.renderContent());
+				return /*#__PURE__*/ import_react$166.createElement(Modal, { widthInPixel: 400 }, this.renderContent());
 			}
 		};
 	}));
@@ -53733,9 +53733,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxFilterButton.jsx
 	var BoxFilterButton_exports = /* @__PURE__ */ __exportAll({ default: () => BoxFilterButton_default });
-	var import_react$163, BoxFilterButton, BoxFilterButton_default;
+	var import_react$165, BoxFilterButton, BoxFilterButton_default;
 	var init_BoxFilterButton = __esmMin((() => {
-		import_react$163 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$165 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_Icon();
 		init_Button();
@@ -53745,25 +53745,25 @@ Zu diesem hinzufügen\
 			const renderResetFilterLink = () => {
 				return resetFilterLink || null;
 			};
-			return /*#__PURE__*/ import_react$163.createElement("div", null, /*#__PURE__*/ import_react$163.createElement(Button$3, {
+			return /*#__PURE__*/ import_react$165.createElement("div", null, /*#__PURE__*/ import_react$165.createElement(Button$3, {
 				"data-test-id": "filter-button",
 				name,
 				mods: { active: config.show_filter },
 				href: filterToggleLink,
 				onClick: (e) => _onFilterToggle(e, !config.show_filter)
-			}, /*#__PURE__*/ import_react$163.createElement(Icon$4, {
+			}, /*#__PURE__*/ import_react$165.createElement(Icon$4, {
 				i: "filter",
 				mods: "small"
 			}), " ", name), renderResetFilterLink());
 		};
-		BoxFilterButton_default = /*#__PURE__*/ (0, import_react$163.memo)(BoxFilterButton);
+		BoxFilterButton_default = /*#__PURE__*/ (0, import_react$165.memo)(BoxFilterButton);
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/BoxLayoutButton.jsx
 	var BoxLayoutButton_exports = /* @__PURE__ */ __exportAll({ default: () => BoxLayoutButton });
-	var import_react$162, import_dedupe$6, BoxLayoutButton;
+	var import_react$164, import_dedupe$6, BoxLayoutButton;
 	var init_BoxLayoutButton = __esmMin((() => {
-		import_react$162 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$164 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Button();
 		import_dedupe$6 = /* @__PURE__ */ __toESM(require_dedupe());
 		init_Icon();
@@ -53772,7 +53772,7 @@ Zu diesem hinzufügen\
 				onLayoutClick(event, layout);
 			};
 			const mods = (0, import_dedupe$6.default)("small", "ui-toolbar-vis-button", layout.mods);
-			return /*#__PURE__*/ import_react$162.createElement(Button$3, {
+			return /*#__PURE__*/ import_react$164.createElement(Button$3, {
 				mode: layout.mode,
 				title: layout.title,
 				icon: layout.icon,
@@ -53780,7 +53780,7 @@ Zu diesem hinzufügen\
 				onClick: handleClick,
 				mods,
 				key: layout.mode
-			}, /*#__PURE__*/ import_react$162.createElement(Icon$4, {
+			}, /*#__PURE__*/ import_react$164.createElement(Icon$4, {
 				i: layout.icon,
 				title: layout.title
 			}));
@@ -53789,13 +53789,13 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxPageCounter.jsx
 	var BoxPageCounter_exports = /* @__PURE__ */ __exportAll({ default: () => BoxPageCounter });
-	var import_react$161, BoxPageCounter;
+	var import_react$163, BoxPageCounter;
 	var init_BoxPageCounter = __esmMin((() => {
-		import_react$161 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$163 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_i18n_translate();
 		init_Icon();
-		BoxPageCounter = class extends import_react$161.Component {
+		BoxPageCounter = class extends import_react$163.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -53832,30 +53832,30 @@ Zu diesem hinzufügen\
 					top: "0px"
 				};
 				var determineIcon = () => {
-					if (checkState == "checked") return /*#__PURE__*/ import_react$161.createElement(Icon$4, {
+					if (checkState == "checked") return /*#__PURE__*/ import_react$163.createElement(Icon$4, {
 						style: checkBoxStyle,
 						i: "checkbox-active"
 					});
-					else if (checkState == "partial") return /*#__PURE__*/ import_react$161.createElement(Icon$4, {
+					else if (checkState == "partial") return /*#__PURE__*/ import_react$163.createElement(Icon$4, {
 						style: checkBoxStyle,
 						i: "checkbox-mixed"
 					});
-					else return /*#__PURE__*/ import_react$161.createElement(Icon$4, {
+					else return /*#__PURE__*/ import_react$163.createElement(Icon$4, {
 						style: checkBoxStyle,
 						i: "checkbox"
 					});
 				};
 				var showSelectPage = () => {
 					if (!onSelectPage) return;
-					return /*#__PURE__*/ import_react$161.createElement("div", {
+					return /*#__PURE__*/ import_react$163.createElement("div", {
 						style: {
 							float: "right",
 							position: "relative"
 						},
 						onClick: onSelectPage
-					}, /*#__PURE__*/ import_react$161.createElement("span", { style: { marginRight: "20px" } }, I18nTranslate("pagination_selection_label")), determineIcon());
+					}, /*#__PURE__*/ import_react$163.createElement("span", { style: { marginRight: "20px" } }, I18nTranslate("pagination_selection_label")), determineIcon());
 				};
-				return /*#__PURE__*/ import_react$161.createElement("div", { className: "ui-resources-page-counter ui-pager small" }, /*#__PURE__*/ import_react$161.createElement("div", { style: { display: "inline-block" } }, I18nTranslate("pagination_prefix"), page, I18nTranslate("pagination_infix"), totalPages, I18nTranslate("pagination_postfix")), showSelectPage());
+				return /*#__PURE__*/ import_react$163.createElement("div", { className: "ui-resources-page-counter ui-pager small" }, /*#__PURE__*/ import_react$163.createElement("div", { style: { display: "inline-block" } }, I18nTranslate("pagination_prefix"), page, I18nTranslate("pagination_infix"), totalPages, I18nTranslate("pagination_postfix")), showSelectPage());
 			}
 		};
 	}));
@@ -54042,7 +54042,7 @@ Zu diesem hinzufügen\
 	*/
 	function ensureChildrenIsValid(children) {
 		if (children) try {
-			import_react$160.Children.only(children);
+			import_react$162.Children.only(children);
 		} catch (e) {
 			throw new Error(errorMessage);
 		}
@@ -54127,9 +54127,9 @@ Zu diesem hinzufügen\
 		} });
 		if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
-	var import_react$160, import_prop_types$38, import_react_is$1, constants, errorMessage, errorMessage$1, timeout, timeoutQueue, _createClass, defaultProps$4, Waypoint;
+	var import_react$162, import_prop_types$38, import_react_is$1, constants, errorMessage, errorMessage$1, timeout, timeoutQueue, _createClass, defaultProps$4, Waypoint;
 	var init_es = __esmMin((() => {
-		import_react$160 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$162 = /* @__PURE__ */ __toESM(require_react$1());
 		init_index_esm();
 		import_prop_types$38 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_react_is$1 = require_react_is$1();
@@ -54357,7 +54357,7 @@ Zu diesem hinzufügen\
 						function render() {
 							var _this4 = this;
 							var children = this.props.children;
-							if (!children) return import_react$160.createElement("span", {
+							if (!children) return import_react$162.createElement("span", {
 								ref: this.refElement,
 								style: { fontSize: 0 }
 							});
@@ -54370,16 +54370,16 @@ Zu diesem hinzufügen\
 									}
 									return ref;
 								}();
-								return import_react$160.cloneElement(children, { ref });
+								return import_react$162.cloneElement(children, { ref });
 							}
-							return import_react$160.cloneElement(children, { innerRef: this.refElement });
+							return import_react$162.cloneElement(children, { innerRef: this.refElement });
 						}
 						return render;
 					}()
 				}
 			]);
 			return Waypoint;
-		}(typeof import_react$160.PureComponent !== "undefined" ? import_react$160.PureComponent : import_react$160.Component);
+		}(typeof import_react$162.PureComponent !== "undefined" ? import_react$162.PureComponent : import_react$162.Component);
 		Waypoint.propTypes = {
 			children: import_prop_types$38.default.node,
 			debug: import_prop_types$38.default.bool,
@@ -54414,9 +54414,9 @@ Zu diesem hinzufügen\
 			return n;
 		}, _extends$19.apply(null, arguments);
 	}
-	var import_react$159, BoxPaginationNav;
+	var import_react$161, BoxPaginationNav;
 	var init_BoxPaginationNav = __esmMin((() => {
-		import_react$159 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$161 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_BoxSetUrlParams();
 		init_ActionsBar();
@@ -54424,7 +54424,7 @@ Zu diesem hinzufügen\
 		init_ButtonGroup();
 		init_es();
 		init_Preloader();
-		BoxPaginationNav = class extends import_react$159.Component {
+		BoxPaginationNav = class extends import_react$161.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -54432,13 +54432,13 @@ Zu diesem hinzufügen\
 				var isLoading = this.props.loadingNextPage;
 				var renderWaypoint = () => {
 					if (isLoading) return null;
-					return /*#__PURE__*/ import_react$159.createElement(Waypoint, {
+					return /*#__PURE__*/ import_react$161.createElement(Waypoint, {
 						onEnter: this.props.onFetchNextPage,
 						bottomOffset: "-500%",
 						key: (/* @__PURE__ */ new Date()).getTime()
 					});
 				};
-				return /*#__PURE__*/ import_react$159.createElement("div", { className: "ui-actions" }, renderWaypoint(), isLoading ? /*#__PURE__*/ import_react$159.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$159.createElement(Button$3, { onClick: this.props.onFetchNextPage }, I18nTranslate("pagination_nav_loadnext")));
+				return /*#__PURE__*/ import_react$161.createElement("div", { className: "ui-actions" }, renderWaypoint(), isLoading ? /*#__PURE__*/ import_react$161.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$161.createElement(Button$3, { onClick: this.props.onFetchNextPage }, I18nTranslate("pagination_nav_loadnext")));
 			}
 			renderFallback() {
 				var pagination = this.props.staticPagination;
@@ -54447,10 +54447,10 @@ Zu diesem hinzufügen\
 					prev: pagination.prev ? { href: BoxSetUrlParams(this.props.currentUrl, { list: pagination.prev }) } : null,
 					next: pagination.next ? { href: BoxSetUrlParams(this.props.currentUrl, { list: pagination.next }) } : null
 				};
-				return /*#__PURE__*/ import_react$159.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$159.createElement(ActionsBar$2, null, /*#__PURE__*/ import_react$159.createElement(ButtonGroup, { mods: "mbm" }, /*#__PURE__*/ import_react$159.createElement(Button$3, _extends$19({}, navLinks.prev, {
+				return /*#__PURE__*/ import_react$161.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$161.createElement(ActionsBar$2, null, /*#__PURE__*/ import_react$161.createElement(ButtonGroup, { mods: "mbm" }, /*#__PURE__*/ import_react$161.createElement(Button$3, _extends$19({}, navLinks.prev, {
 					mods: "mhn",
 					disabled: !navLinks.prev
-				}), I18nTranslate("pagination_nav_prevpage")), /*#__PURE__*/ import_react$159.createElement(Button$3, _extends$19({}, navLinks.current, { mods: "mhn" }), I18nTranslate("pagination_nav_thispage")), /*#__PURE__*/ import_react$159.createElement(Button$3, _extends$19({}, navLinks.next, {
+				}), I18nTranslate("pagination_nav_prevpage")), /*#__PURE__*/ import_react$161.createElement(Button$3, _extends$19({}, navLinks.current, { mods: "mhn" }), I18nTranslate("pagination_nav_thispage")), /*#__PURE__*/ import_react$161.createElement(Button$3, _extends$19({}, navLinks.next, {
 					mods: "mhn",
 					disabled: !navLinks.next
 				}), I18nTranslate("pagination_nav_nextpage")))));
@@ -54719,9 +54719,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/thumbnail/StatusIcon.jsx
 	var StatusIcon_exports = /* @__PURE__ */ __exportAll({ default: () => StatusIcon });
-	var import_react$158, StatusIcon;
+	var import_react$160, StatusIcon;
 	var init_StatusIcon = __esmMin((() => {
-		import_react$158 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$160 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Icon();
 		StatusIcon = ({ privacyStatus, iconClass }) => {
 			const iconName = `privacy-${{
@@ -54729,7 +54729,7 @@ Zu diesem hinzufügen\
 				private: "private",
 				shared: "group"
 			}[privacyStatus]}`;
-			return /*#__PURE__*/ import_react$158.createElement(Icon$4, {
+			return /*#__PURE__*/ import_react$160.createElement(Icon$4, {
 				i: iconName,
 				title: privacyStatus,
 				className: iconClass
@@ -54739,26 +54739,26 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/thumbnail/FavoriteButton.jsx
 	var FavoriteButton_exports = /* @__PURE__ */ __exportAll({ default: () => FavoriteButton });
-	var import_react$157, FavoriteButton;
+	var import_react$159, FavoriteButton;
 	var init_FavoriteButton = __esmMin((() => {
-		import_react$157 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$159 = /* @__PURE__ */ __toESM(require_react$1());
 		init_rails_form();
 		init_Button();
 		FavoriteButton = ({ authToken, modelFavored, favorUrl, disfavorUrl, favorOnClick, pendingFavorite, stateIsClient, buttonClass }) => {
 			const actionUrl = modelFavored ? disfavorUrl : favorUrl;
 			const starClass = modelFavored ? "icon-star" : "icon-star-empty";
-			const favoriteIcon = /*#__PURE__*/ import_react$157.createElement("i", { className: starClass });
+			const favoriteIcon = /*#__PURE__*/ import_react$159.createElement("i", { className: starClass });
 			const handleClick = pendingFavorite ? void 0 : favorOnClick;
-			return stateIsClient ? /*#__PURE__*/ import_react$157.createElement(Button$3, {
+			return stateIsClient ? /*#__PURE__*/ import_react$159.createElement(Button$3, {
 				className: buttonClass,
 				onClick: handleClick,
 				"data-pending": pendingFavorite
-			}, favoriteIcon) : /*#__PURE__*/ import_react$157.createElement(RestForm, {
+			}, favoriteIcon) : /*#__PURE__*/ import_react$159.createElement(RestForm, {
 				name: "resource_meta_data",
 				action: actionUrl,
 				method: "patch",
 				authToken
-			}, /*#__PURE__*/ import_react$157.createElement("button", {
+			}, /*#__PURE__*/ import_react$159.createElement("button", {
 				className: buttonClass,
 				type: "submit"
 			}, favoriteIcon));
@@ -54767,29 +54767,29 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/thumbnail/DeleteModal.jsx
 	var DeleteModal_exports = /* @__PURE__ */ __exportAll({ default: () => DeleteModal });
-	var import_react$156, DeleteModal;
+	var import_react$158, DeleteModal;
 	var init_DeleteModal = __esmMin((() => {
-		import_react$156 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$158 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_AskModal();
 		init_utils$2();
 		DeleteModal = ({ resourceType, onModalOk, onModalCancel, modalTitle }) => {
 			const type = snakeCase(resourceType);
-			return /*#__PURE__*/ import_react$156.createElement(AskModal, {
+			return /*#__PURE__*/ import_react$158.createElement(AskModal, {
 				title: I18nTranslate(type + "_ask_delete_title"),
 				onCancel: onModalCancel,
 				onOk: onModalOk,
 				okText: I18nTranslate("resource_ask_delete_ok"),
 				cancelText: I18nTranslate("resource_ask_delete_cancel")
-			}, /*#__PURE__*/ import_react$156.createElement("p", { className: "pam by-center" }, I18nTranslate(type + "_ask_delete_question_pre"), /*#__PURE__*/ import_react$156.createElement("strong", null, modalTitle), I18nTranslate("resource_ask_delete_question_post")));
+			}, /*#__PURE__*/ import_react$158.createElement("p", { className: "pam by-center" }, I18nTranslate(type + "_ask_delete_question_pre"), /*#__PURE__*/ import_react$158.createElement("strong", null, modalTitle), I18nTranslate("resource_ask_delete_question_post")));
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/ResourceThumbnailRenderer.jsx
 	var ResourceThumbnailRenderer_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceThumbnailRenderer_default });
-	var import_react$155, import_classnames$29, import_ui_components$18, ResourceThumbnailRenderer, ResourceThumbnailRenderer_default;
+	var import_react$157, import_classnames$29, import_ui_components$18, ResourceThumbnailRenderer, ResourceThumbnailRenderer_default;
 	var init_ResourceThumbnailRenderer = __esmMin((() => {
-		import_react$155 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$157 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$29 = /* @__PURE__ */ __toESM(require_classnames());
 		import_ui_components$18 = /* @__PURE__ */ __toESM(require_ui_components());
 		init_StatusIcon();
@@ -54798,7 +54798,7 @@ Zu diesem hinzufügen\
 		init_utils$2();
 		ResourceThumbnailRenderer = ({ resourceType, mediaType, get: get$4, onPictureClick, relationsProps, favoriteProps, deleteProps, statusProps, selectProps, textProps, positionProps, pictureLinkStyle }) => {
 			let statusIcon;
-			if (statusProps) statusIcon = /*#__PURE__*/ import_react$155.createElement(StatusIcon, {
+			if (statusProps) statusIcon = /*#__PURE__*/ import_react$157.createElement(StatusIcon, {
 				privacyStatus: statusProps.privacyStatus,
 				resourceType,
 				modelPublished: statusProps.modelPublished
@@ -54806,22 +54806,22 @@ Zu diesem hinzufügen\
 			const actionsLeft = [];
 			const actionsRight = [];
 			if (selectProps && selectProps.onSelect) {
-				const selectAction = /*#__PURE__*/ import_react$155.createElement("li", {
+				const selectAction = /*#__PURE__*/ import_react$157.createElement("li", {
 					className: "ui-thumbnail-action",
 					key: "selector"
-				}, /*#__PURE__*/ import_react$155.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Link, {
+				}, /*#__PURE__*/ import_react$157.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Link, {
 					onClick: selectProps.onSelect,
 					style: selectProps.selectStyle,
 					className: "ui-thumbnail-action-checkbox",
 					title: selectProps.isSelected ? "Auswahl entfernen" : "auswählen"
-				}, /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Icon, {
+				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
 					i: "checkbox",
 					mods: selectProps.isSelected ? "active" : void 0
 				}))));
 				actionsLeft.push(selectAction);
 			}
 			if (favoriteProps && favoriteProps.favoritePolicy) {
-				const favorButton = /*#__PURE__*/ import_react$155.createElement(FavoriteButton, {
+				const favorButton = /*#__PURE__*/ import_react$157.createElement(FavoriteButton, {
 					modelFavored: favoriteProps.modelFavored,
 					favorUrl: favoriteProps.favorUrl,
 					disfavorUrl: favoriteProps.disfavorUrl,
@@ -54831,7 +54831,7 @@ Zu diesem hinzufügen\
 					authToken: favoriteProps.authToken,
 					buttonClass: "ui-thumbnail-action-favorite"
 				});
-				actionsLeft.push(/*#__PURE__*/ import_react$155.createElement("li", {
+				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
 					key: "favorite",
 					className: "ui-thumbnail-action"
 				}, favorButton));
@@ -54840,7 +54840,7 @@ Zu diesem hinzufügen\
 				const { handlePositionChange } = positionProps;
 				const commonCss = { cursor: positionProps.disabled ? "not-allowed" : "pointer" };
 				const iconCssClass = (0, import_classnames$29.default)({ mid: positionProps.disabled });
-				actionsLeft.push(/*#__PURE__*/ import_react$155.createElement("li", {
+				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
 					key: "action01",
 					className: "ui-thumbnail-action mrn",
 					style: commonCss,
@@ -54848,11 +54848,11 @@ Zu diesem hinzufügen\
 					onClick: function(e) {
 						return handlePositionChange(get$4.uuid, -2, e);
 					}
-				}, /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Icon, {
+				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
 					i: "move-left-first",
 					className: iconCssClass
 				})));
-				actionsLeft.push(/*#__PURE__*/ import_react$155.createElement("li", {
+				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
 					key: "action02",
 					className: "ui-thumbnail-action mhn",
 					style: commonCss,
@@ -54860,11 +54860,11 @@ Zu diesem hinzufügen\
 					onClick: function(e) {
 						return handlePositionChange(get$4.uuid, -1, e);
 					}
-				}, /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Icon, {
+				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
 					i: "move-left",
 					className: iconCssClass
 				})));
-				actionsLeft.push(/*#__PURE__*/ import_react$155.createElement("li", {
+				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
 					key: "action03",
 					className: "ui-thumbnail-action mhn",
 					style: commonCss,
@@ -54872,11 +54872,11 @@ Zu diesem hinzufügen\
 					onClick: function(e) {
 						return handlePositionChange(get$4.uuid, 1, e);
 					}
-				}, /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Icon, {
+				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
 					i: "move-right",
 					className: iconCssClass
 				})));
-				actionsLeft.push(/*#__PURE__*/ import_react$155.createElement("li", {
+				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
 					key: "action04",
 					className: "ui-thumbnail-action mln",
 					style: commonCss,
@@ -54884,25 +54884,25 @@ Zu diesem hinzufügen\
 					onClick: function(e) {
 						return handlePositionChange(get$4.uuid, 2, e);
 					}
-				}, /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Icon, {
+				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
 					i: "move-right-last",
 					className: iconCssClass
 				})));
 			}
-			if (get$4.editable) actionsRight.push(/*#__PURE__*/ import_react$155.createElement("li", {
+			if (get$4.editable) actionsRight.push(/*#__PURE__*/ import_react$157.createElement("li", {
 				key: "edit",
 				className: "ui-thumbnail-action"
-			}, /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Button, {
+			}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Button, {
 				className: "ui-thumbnail-action-favorite",
 				href: get$4.edit_meta_data_by_context_url
-			}, /*#__PURE__*/ import_react$155.createElement("i", { className: "icon-pen" }))));
-			if (deleteProps && get$4.destroyable) actionsRight.push(/*#__PURE__*/ import_react$155.createElement("li", {
+			}, /*#__PURE__*/ import_react$157.createElement("i", { className: "icon-pen" }))));
+			if (deleteProps && get$4.destroyable) actionsRight.push(/*#__PURE__*/ import_react$157.createElement("li", {
 				key: "destroy",
 				className: "ui-thumbnail-action"
-			}, /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Button, {
+			}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Button, {
 				className: "ui-thumbnail-action-favorite",
 				onClick: deleteProps.showModal
-			}, /*#__PURE__*/ import_react$155.createElement("i", { className: "icon-trash" }))));
+			}, /*#__PURE__*/ import_react$157.createElement("i", { className: "icon-trash" }))));
 			const thumbProps = {
 				draft: statusProps.modelPublished === false,
 				onClipboard: statusProps.onClipboard,
@@ -54917,7 +54917,7 @@ Zu diesem hinzufügen\
 				pictureLinkStyle,
 				meta: textProps,
 				badgeLeft: statusIcon,
-				badgeRight: get$4.type === "FilterSet" ? /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Icon, {
+				badgeRight: get$4.type === "FilterSet" ? /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
 					i: "filter",
 					title: "This is a Filterset"
 				}) : void 0,
@@ -54925,32 +54925,32 @@ Zu diesem hinzufügen\
 				actionsRight,
 				flyoutTop: relationsProps && relationsProps.parent && ["MediaEntry", "Collection"].includes(resourceType) ? {
 					title: "Übergeordnete Sets",
-					children: relationsProps.parent.ready ? relationsProps.parent.thumbs : /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Preloader, { mods: "small" }),
+					children: relationsProps.parent.ready ? relationsProps.parent.thumbs : /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Preloader, { mods: "small" }),
 					caption: relationsProps.parent.ready ? relationsProps.parent.count + " Sets" : ""
 				} : void 0,
 				flyoutBottom: relationsProps && relationsProps.child && resourceType === "Collection" ? {
 					title: "Set enthält",
-					children: relationsProps.child.ready ? relationsProps.child.thumbs : /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Preloader, { mods: "small" }),
+					children: relationsProps.child.ready ? relationsProps.child.thumbs : /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Preloader, { mods: "small" }),
 					caption: relationsProps.child.ready ? relationsProps.child.count + " Inhalte" : ""
 				} : void 0,
 				disableLink: get$4.disableLink,
 				editMetaDataByContextUrl: get$4.edit_meta_data_by_context_url
 			};
-			return /*#__PURE__*/ import_react$155.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$155.createElement(import_ui_components$18.Thumbnail, thumbProps), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$155.createElement(DeleteModal, {
+			return /*#__PURE__*/ import_react$157.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Thumbnail, thumbProps), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$157.createElement(DeleteModal, {
 				resourceType: get$4.type,
 				onModalOk: deleteProps.onModalOk,
 				onModalCancel: deleteProps.onModalCancel,
 				modalTitle: deleteProps.modalTitle
 			}) : null);
 		};
-		ResourceThumbnailRenderer_default = /*#__PURE__*/ (0, import_react$155.memo)(ResourceThumbnailRenderer);
+		ResourceThumbnailRenderer_default = /*#__PURE__*/ (0, import_react$157.memo)(ResourceThumbnailRenderer);
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/PinThumbnail.jsx
 	var PinThumbnail_exports = /* @__PURE__ */ __exportAll({ default: () => PinThumbnail });
-	var import_react$154, import_classnames$28, PinThumbnail;
+	var import_react$156, import_classnames$28, PinThumbnail;
 	var init_PinThumbnail = __esmMin((() => {
-		import_react$154 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$156 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$28 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
 		init_Picture();
@@ -54959,14 +54959,14 @@ Zu diesem hinzufügen\
 		init_FavoriteButton();
 		init_DeleteModal();
 		init_StatusIcon();
-		PinThumbnail = /*#__PURE__*/ (0, import_react$154.memo)((props) => {
+		PinThumbnail = /*#__PURE__*/ (0, import_react$156.memo)((props) => {
 			const { resourceType, imageUrl, mediaType, title, subtitle, mediaUrl, selectProps, favoriteProps, editable, editUrl, destroyable, deleteProps, statusProps, pictureLinkStyle, onPictureClick } = props;
 			const isCollection = resourceType === "Collection";
-			const innerImage = imageUrl ? /*#__PURE__*/ import_react$154.createElement(Picture, {
+			const innerImage = imageUrl ? /*#__PURE__*/ import_react$156.createElement(Picture, {
 				mods: "ui-tile__image",
 				src: imageUrl,
 				alt: title
-			}) : /*#__PURE__*/ import_react$154.createElement(ResourceIcon, {
+			}) : /*#__PURE__*/ import_react$156.createElement(ResourceIcon, {
 				mediaType,
 				thumbnail: false,
 				tiles: true,
@@ -54976,7 +54976,7 @@ Zu diesem hinzufügen\
 			const actionsLeft = [];
 			const actionsRight = [];
 			if (favoriteProps && favoriteProps.favoritePolicy) {
-				const favorButton = /*#__PURE__*/ import_react$154.createElement(FavoriteButton, {
+				const favorButton = /*#__PURE__*/ import_react$156.createElement(FavoriteButton, {
 					modelFavored: favoriteProps.modelFavored,
 					favorUrl: favoriteProps.favorUrl,
 					disfavorUrl: favoriteProps.disfavorUrl,
@@ -54989,57 +54989,57 @@ Zu diesem hinzufügen\
 				actionsLeft.push(favorButton);
 			}
 			if (selectProps && selectProps.onSelect) {
-				const selectAction = /*#__PURE__*/ import_react$154.createElement("a", {
+				const selectAction = /*#__PURE__*/ import_react$156.createElement("a", {
 					onClick: selectProps.onSelect,
 					className: "ui-tile__action-link",
 					title: selectProps.isSelected ? I18nTranslate("resources_box_selection_remove_selection") : I18nTranslate("resources_box_selection_select")
-				}, /*#__PURE__*/ import_react$154.createElement("i", { className: (0, import_classnames$28.default)("icon-checkbox", { active: selectProps.isSelected }) }));
+				}, /*#__PURE__*/ import_react$156.createElement("i", { className: (0, import_classnames$28.default)("icon-checkbox", { active: selectProps.isSelected }) }));
 				actionsLeft.push(selectAction);
 			}
-			if (editable) actionsRight.push(/*#__PURE__*/ import_react$154.createElement(Button$3, {
+			if (editable) actionsRight.push(/*#__PURE__*/ import_react$156.createElement(Button$3, {
 				className: "ui-tile__action-link",
 				href: editUrl
-			}, /*#__PURE__*/ import_react$154.createElement("i", { className: "icon-pen" })));
-			if (deleteProps && destroyable) actionsRight.push(/*#__PURE__*/ import_react$154.createElement(Button$3, {
+			}, /*#__PURE__*/ import_react$156.createElement("i", { className: "icon-pen" })));
+			if (deleteProps && destroyable) actionsRight.push(/*#__PURE__*/ import_react$156.createElement(Button$3, {
 				className: "ui-tile__action-link",
 				onClick: deleteProps.showModal
-			}, /*#__PURE__*/ import_react$154.createElement("i", { className: "icon-trash" })));
+			}, /*#__PURE__*/ import_react$156.createElement("i", { className: "icon-trash" })));
 			let badgeLeft, badgeRight;
-			if (statusProps) badgeLeft = /*#__PURE__*/ import_react$154.createElement(StatusIcon, {
+			if (statusProps) badgeLeft = /*#__PURE__*/ import_react$156.createElement(StatusIcon, {
 				privacyStatus: statusProps.privacyStatus,
 				resourceType,
 				modelPublished: statusProps.modelPublished,
 				iconClass: "ui-tile__flag ui-tile__flag--privac"
 			});
-			if (resourceType === "FilterSet") badgeRight = /*#__PURE__*/ import_react$154.createElement("i", { className: "ui-tile__flag ui-tile__flag--typ icon-filter" });
+			if (resourceType === "FilterSet") badgeRight = /*#__PURE__*/ import_react$156.createElement("i", { className: "ui-tile__flag ui-tile__flag--typ icon-filter" });
 			let starShadow = "1px 0px 1px rgba(255, 255, 255, 0.5)";
 			starShadow += ", 0px 1px 1px rgba(255, 255, 255, 0.5)";
 			starShadow += ", -1px 0px 1px rgba(255, 255, 255, 0.5)";
 			starShadow += ", 0px -1px 1px rgba(255, 255, 255, 0.5)";
-			return /*#__PURE__*/ import_react$154.createElement("div", null, deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$154.createElement(DeleteModal, {
+			return /*#__PURE__*/ import_react$156.createElement("div", null, deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$156.createElement(DeleteModal, {
 				resourceType,
 				onModalOk: deleteProps.onModalOk,
 				onModalCancel: deleteProps.onModalCancel,
 				modalTitle: deleteProps.modalTitle
-			}) : null, /*#__PURE__*/ import_react$154.createElement("div", { className: (0, import_classnames$28.default)("ui-tile", { "ui-tile--set": isCollection }) }, /*#__PURE__*/ import_react$154.createElement("div", { className: "ui-tile__head" }, favoriteProps && favoriteProps.favoritePolicy && favoriteProps.modelFavored && /*#__PURE__*/ import_react$154.createElement("i", {
+			}) : null, /*#__PURE__*/ import_react$156.createElement("div", { className: (0, import_classnames$28.default)("ui-tile", { "ui-tile--set": isCollection }) }, /*#__PURE__*/ import_react$156.createElement("div", { className: "ui-tile__head" }, favoriteProps && favoriteProps.favoritePolicy && favoriteProps.modelFavored && /*#__PURE__*/ import_react$156.createElement("i", {
 				className: "icon-star",
 				style: {
 					position: "absolute",
 					padding: "7px",
 					textShadow: starShadow
 				}
-			}), /*#__PURE__*/ import_react$154.createElement("ul", { className: "ui-tile__actions left by-left" }, actionsLeft.map((action, index) => /*#__PURE__*/ import_react$154.createElement("li", {
+			}), /*#__PURE__*/ import_react$156.createElement("ul", { className: "ui-tile__actions left by-left" }, actionsLeft.map((action, index) => /*#__PURE__*/ import_react$156.createElement("li", {
 				className: "ui-tile__action",
 				key: `action_left_${index}`
-			}, action))), /*#__PURE__*/ import_react$154.createElement("ul", { className: "ui-tile__actions right by-right" }, actionsRight.map((action, index) => /*#__PURE__*/ import_react$154.createElement("li", {
+			}, action))), /*#__PURE__*/ import_react$156.createElement("ul", { className: "ui-tile__actions right by-right" }, actionsRight.map((action, index) => /*#__PURE__*/ import_react$156.createElement("li", {
 				className: "ui-tile__action",
 				key: `action_right_${index}`
-			}, action)))), /*#__PURE__*/ import_react$154.createElement("div", { className: "ui-tile__body" }, /*#__PURE__*/ import_react$154.createElement("a", {
+			}, action)))), /*#__PURE__*/ import_react$156.createElement("div", { className: "ui-tile__body" }, /*#__PURE__*/ import_react$156.createElement("a", {
 				className: "ui-tile__thumbnail",
 				style: pictureLinkStyle,
 				onClick: onPictureClick,
 				href: mediaUrl
-			}, innerImage)), /*#__PURE__*/ import_react$154.createElement("a", { href: mediaUrl }, /*#__PURE__*/ import_react$154.createElement("div", { className: "ui-tile__foot" }, /*#__PURE__*/ import_react$154.createElement("h3", { className: "ui-tile__title" }, title), /*#__PURE__*/ import_react$154.createElement("h4", { className: "ui-tile__meta" }, subtitle), /*#__PURE__*/ import_react$154.createElement("span", { className: "ui-tile__flags" }, badgeLeft, badgeRight)))));
+			}, innerImage)), /*#__PURE__*/ import_react$156.createElement("a", { href: mediaUrl }, /*#__PURE__*/ import_react$156.createElement("div", { className: "ui-tile__foot" }, /*#__PURE__*/ import_react$156.createElement("h3", { className: "ui-tile__title" }, title), /*#__PURE__*/ import_react$156.createElement("h4", { className: "ui-tile__meta" }, subtitle), /*#__PURE__*/ import_react$156.createElement("span", { className: "ui-tile__flags" }, badgeLeft, badgeRight)))));
 		});
 		PinThumbnail.displayName = "PinThumbnail";
 	}));
@@ -55233,17 +55233,17 @@ Zu diesem hinzufügen\
 	function MetaDatumRolesCloud({ personRoleTuples, metaKeyId }) {
 		const persons = groupContiguous(personRoleTuples);
 		const anyRolePresent = persons.some((p) => p.roles.length > 0);
-		return /*#__PURE__*/ import_react$153.createElement("div", { className: "small ui-tag-cloud" }, persons.map(({ label, url, roles }, i) => {
-			return /*#__PURE__*/ import_react$153.createElement("div", {
+		return /*#__PURE__*/ import_react$155.createElement("div", { className: "small ui-tag-cloud" }, persons.map(({ label, url, roles }, i) => {
+			return /*#__PURE__*/ import_react$155.createElement("div", {
 				key: i,
 				className: (0, import_classnames$27.default)("ui-tag-cloud-item", { "ui-tag-cloud-person-roles-item block clearfix": anyRolePresent })
-			}, /*#__PURE__*/ import_react$153.createElement("a", {
+			}, /*#__PURE__*/ import_react$155.createElement("a", {
 				href: url,
 				className: "link ui-tag-button ui-link"
-			}, /*#__PURE__*/ import_react$153.createElement(Icon$4, {
+			}, /*#__PURE__*/ import_react$155.createElement(Icon$4, {
 				i: "user-mini",
 				mods: "ui-tag-icon"
-			}), label), roles.length > 0 && /*#__PURE__*/ import_react$153.createElement("div", { className: "ui-role-tags" }, /*#__PURE__*/ import_react$153.createElement("span", null, ":"), roles.map(({ label: roleLabel, id }, i) => {
+			}), label), roles.length > 0 && /*#__PURE__*/ import_react$155.createElement("div", { className: "ui-role-tags" }, /*#__PURE__*/ import_react$155.createElement("span", null, ":"), roles.map(({ label: roleLabel, id }, i) => {
 				var rolesUrl = set_params_for_url_default(url, { list: {
 					show_filter: true,
 					filter: JSON.stringify({ meta_data: [{
@@ -55251,7 +55251,7 @@ Zu diesem hinzufügen\
 						value: id
 					}] })
 				} });
-				return /*#__PURE__*/ import_react$153.createElement("a", {
+				return /*#__PURE__*/ import_react$155.createElement("a", {
 					key: i,
 					href: rolesUrl,
 					className: "link ui-tag-button ui-link",
@@ -55260,9 +55260,9 @@ Zu diesem hinzufügen\
 			})));
 		}));
 	}
-	var import_react$153, import_prop_types$35, import_classnames$27;
+	var import_react$155, import_prop_types$35, import_classnames$27;
 	var init_MetaDatumRolesCloud = __esmMin((() => {
-		import_react$153 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$155 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$35 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_set_params_for_url();
 		import_classnames$27 = /* @__PURE__ */ __toESM(require_classnames());
@@ -56569,13 +56569,13 @@ Zu diesem hinzufügen\
 		const estimatedLineLength = 110;
 		return (values.join(", ") || [""]).split(/\r\n|\r|\n/g).map((paragraph) => Math.ceil(paragraph.length / estimatedLineLength)).reduce((a, b) => a + b);
 	}
-	var import_react$152, import_classnames$26, MetaDatumText;
+	var import_react$154, import_classnames$26, MetaDatumText;
 	var init_MetaDatumText = __esmMin((() => {
-		import_react$152 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$154 = /* @__PURE__ */ __toESM(require_react$1());
 		init_linkify_inner_html();
 		import_classnames$26 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
-		MetaDatumText = class extends import_react$152.Component {
+		MetaDatumText = class extends import_react$154.Component {
 			constructor(props) {
 				super(props);
 				this.state = { isOpen: false };
@@ -56584,7 +56584,7 @@ Zu diesem hinzufügen\
 				this.setState((s) => ({ isOpen: !s.isOpen }));
 			}
 			renderContent({ values, className }) {
-				return /*#__PURE__*/ import_react$152.createElement("ul", { className: (0, import_classnames$26.default)("inline measure-double", className) }, values.map((value) => /*#__PURE__*/ import_react$152.createElement("li", {
+				return /*#__PURE__*/ import_react$154.createElement("ul", { className: (0, import_classnames$26.default)("inline measure-double", className) }, values.map((value) => /*#__PURE__*/ import_react$154.createElement("li", {
 					key: value,
 					dangerouslySetInnerHTML: linkify_inner_html_default(value)
 				})));
@@ -56592,13 +56592,13 @@ Zu diesem hinzufügen\
 			render({ props, state } = this) {
 				const { values = [], allowReadMore } = props;
 				const { isOpen } = state;
-				if (allowReadMore && estimateNumberOfLines(values) > 10) return /*#__PURE__*/ import_react$152.createElement("div", { className: (0, import_classnames$26.default)("read-more__container", { "read-more__container--open": isOpen }) }, this.renderContent({
+				if (allowReadMore && estimateNumberOfLines(values) > 10) return /*#__PURE__*/ import_react$154.createElement("div", { className: (0, import_classnames$26.default)("read-more__container", { "read-more__container--open": isOpen }) }, this.renderContent({
 					values,
 					className: "read-more__content"
-				}), /*#__PURE__*/ import_react$152.createElement("div", {
+				}), /*#__PURE__*/ import_react$154.createElement("div", {
 					className: (0, import_classnames$26.default)("read-more__toggler"),
 					"aria-hidden": "true"
-				}, /*#__PURE__*/ import_react$152.createElement("a", { onClick: () => this.toggleOpen() }, /*#__PURE__*/ import_react$152.createElement("div", { className: (0, import_classnames$26.default)("read-more__dust") }), isOpen ? I18nTranslate("read_less_button") : I18nTranslate("read_more_button"))));
+				}, /*#__PURE__*/ import_react$154.createElement("a", { onClick: () => this.toggleOpen() }, /*#__PURE__*/ import_react$154.createElement("div", { className: (0, import_classnames$26.default)("read-more__dust") }), isOpen ? I18nTranslate("read_less_button") : I18nTranslate("read_more_button"))));
 				else return this.renderContent({ values });
 			}
 		};
@@ -56606,9 +56606,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/MetaDatumValues.jsx
 	var MetaDatumValues_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDatumValues });
-	var import_react$151, import_prop_types$34, import_ui_components$17, prettifyJson, DecoratorsByType, MetaDatumValues;
+	var import_react$153, import_prop_types$34, import_ui_components$17, prettifyJson, DecoratorsByType, MetaDatumValues;
 	var init_MetaDatumValues = __esmMin((() => {
-		import_react$151 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$153 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$34 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_utils$2();
 		init_madek_prop_types();
@@ -56626,16 +56626,16 @@ Zu diesem hinzufügen\
 		};
 		DecoratorsByType = {
 			Text: function({ values, metaKeyId }) {
-				return /*#__PURE__*/ import_react$151.createElement(MetaDatumText, {
+				return /*#__PURE__*/ import_react$153.createElement(MetaDatumText, {
 					values,
 					allowReadMore: metaKeyId === "madek_core:description"
 				});
 			},
 			TextDate: function({ values }) {
-				return /*#__PURE__*/ import_react$151.createElement("ul", { className: "inline" }, values.map((string) => /*#__PURE__*/ import_react$151.createElement("li", { key: string }, string)));
+				return /*#__PURE__*/ import_react$153.createElement("ul", { className: "inline" }, values.map((string) => /*#__PURE__*/ import_react$153.createElement("li", { key: string }, string)));
 			},
 			JSON: function({ values }) {
-				return /*#__PURE__*/ import_react$151.createElement("ul", { className: "inline ui-md-json" }, values.map((obj, i) => /*#__PURE__*/ import_react$151.createElement("li", {
+				return /*#__PURE__*/ import_react$153.createElement("ul", { className: "inline ui-md-json" }, values.map((obj, i) => /*#__PURE__*/ import_react$153.createElement("li", {
 					className: "wrapped-textarea",
 					style: {
 						display: "block",
@@ -56643,7 +56643,7 @@ Zu diesem hinzufügen\
 						overflow: "hidden"
 					},
 					key: i
-				}, /*#__PURE__*/ import_react$151.createElement("textarea", {
+				}, /*#__PURE__*/ import_react$153.createElement("textarea", {
 					readOnly: true,
 					className: "code block",
 					rows: 10,
@@ -56659,24 +56659,24 @@ Zu diesem hinzufügen\
 				}))));
 			},
 			People: function({ values, metaKeyId, withRoles }) {
-				return withRoles ? /*#__PURE__*/ import_react$151.createElement(MetaDatumRolesCloud, {
+				return withRoles ? /*#__PURE__*/ import_react$153.createElement(MetaDatumRolesCloud, {
 					personRoleTuples: values,
 					metaKeyId
-				}) : /*#__PURE__*/ import_react$151.createElement(import_ui_components$17.default.TagCloud, {
+				}) : /*#__PURE__*/ import_react$153.createElement(import_ui_components$17.default.TagCloud, {
 					mod: "person",
 					mods: "small",
 					list: (0, import_ui_components$17.labelize)(values)
 				});
 			},
 			Groups: function({ values }) {
-				return /*#__PURE__*/ import_react$151.createElement(import_ui_components$17.default.TagCloud, {
+				return /*#__PURE__*/ import_react$153.createElement(import_ui_components$17.default.TagCloud, {
 					mod: "group",
 					mods: "small",
 					list: (0, import_ui_components$17.labelize)(values)
 				});
 			},
 			Keywords: function({ values }) {
-				return /*#__PURE__*/ import_react$151.createElement(import_ui_components$17.default.TagCloud, {
+				return /*#__PURE__*/ import_react$153.createElement(import_ui_components$17.default.TagCloud, {
 					mod: "label",
 					mods: "small",
 					list: (0, import_ui_components$17.labelize)(values)
@@ -56685,16 +56685,16 @@ Zu diesem hinzufügen\
 			MediaEntry: function({ values }) {
 				const [resource, description] = getPath(values, "0") || [];
 				const { url, title, unAuthorized, notFound } = resource || {};
-				return /*#__PURE__*/ import_react$151.createElement("div", null, /*#__PURE__*/ import_react$151.createElement(import_ui_components$17.default.Link, {
+				return /*#__PURE__*/ import_react$153.createElement("div", null, /*#__PURE__*/ import_react$153.createElement(import_ui_components$17.default.Link, {
 					href: url,
 					className: "link"
-				}, title), " ", present(description) && /*#__PURE__*/ import_react$151.createElement("p", null, "(", description, ")"), !!unAuthorized && /*#__PURE__*/ import_react$151.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_unauthorized")), !!notFound && /*#__PURE__*/ import_react$151.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_not_found")));
+				}, title), " ", present(description) && /*#__PURE__*/ import_react$153.createElement("p", null, "(", description, ")"), !!unAuthorized && /*#__PURE__*/ import_react$153.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_unauthorized")), !!notFound && /*#__PURE__*/ import_react$153.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_not_found")));
 			}
 		};
 		MetaDatumValues = ({ metaDatum, tagMods }) => {
 			const { type, values, meta_key_id } = metaDatum;
 			const DecoratorByType = DecoratorsByType[type.split("::").pop()];
-			return /*#__PURE__*/ import_react$151.createElement(DecoratorByType, {
+			return /*#__PURE__*/ import_react$153.createElement(DecoratorByType, {
 				values,
 				tagMods,
 				metaKeyId: meta_key_id,
@@ -56708,13 +56708,13 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/MetaDataTable.jsx
-	var MetaDataTable_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDataTable });
-	var import_react$150, MetaDataTable;
+	var MetaDataTable_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDataTable$1 });
+	var import_react$152, MetaDataTable$1;
 	var init_MetaDataTable = __esmMin((() => {
-		import_react$150 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$152 = /* @__PURE__ */ __toESM(require_react$1());
 		init_MetaDatumValues();
-		MetaDataTable = ({ labelValuePairs, fallbackMsg, tagMods, listClasses = "borderless", keyClasses = "ui-summary-label", valueClasses = "ui-summary-content" }) => {
-			return /*#__PURE__*/ import_react$150.createElement("table", { className: listClasses }, /*#__PURE__*/ import_react$150.createElement("tbody", null, fallbackMsg ? /*#__PURE__*/ import_react$150.createElement("tr", null, /*#__PURE__*/ import_react$150.createElement("td", { className: keyClasses }, fallbackMsg)) : labelValuePairs.map((item) => /*#__PURE__*/ import_react$150.createElement("tr", { key: item.key }, /*#__PURE__*/ import_react$150.createElement("td", { className: keyClasses }, item.label), /*#__PURE__*/ import_react$150.createElement("td", { className: valueClasses }, item.type === "datum" ? /*#__PURE__*/ import_react$150.createElement(MetaDatumValues, {
+		MetaDataTable$1 = ({ labelValuePairs, fallbackMsg, tagMods, listClasses = "borderless", keyClasses = "ui-summary-label", valueClasses = "ui-summary-content" }) => {
+			return /*#__PURE__*/ import_react$152.createElement("table", { className: listClasses }, /*#__PURE__*/ import_react$152.createElement("tbody", null, fallbackMsg ? /*#__PURE__*/ import_react$152.createElement("tr", null, /*#__PURE__*/ import_react$152.createElement("td", { className: keyClasses }, fallbackMsg)) : labelValuePairs.map((item) => /*#__PURE__*/ import_react$152.createElement("tr", { key: item.key }, /*#__PURE__*/ import_react$152.createElement("td", { className: keyClasses }, item.label), /*#__PURE__*/ import_react$152.createElement("td", { className: valueClasses }, item.type === "datum" ? /*#__PURE__*/ import_react$152.createElement(MetaDatumValues, {
 				metaDatum: item.value,
 				tagMods
 			}) : item.value)))));
@@ -56723,21 +56723,21 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/MetaDataDefinitionList.jsx
 	var MetaDataDefinitionList_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDataDefinitionList });
-	var import_react$149, MetaDataDefinitionList;
+	var import_react$151, MetaDataDefinitionList;
 	var init_MetaDataDefinitionList = __esmMin((() => {
-		import_react$149 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$151 = /* @__PURE__ */ __toESM(require_react$1());
 		init_MetaDatumValues();
 		MetaDataDefinitionList = ({ labelValuePairs, fallbackMsg, tagMods }) => {
 			const listClasses = "media-data";
 			const keyClass = "media-data-title title-xs-alt";
 			const valClass = "media-data-content";
-			return /*#__PURE__*/ import_react$149.createElement("dl", { className: listClasses }, fallbackMsg ? /*#__PURE__*/ import_react$149.createElement("dt", { className: keyClass }, fallbackMsg) : labelValuePairs.map((item) => [/*#__PURE__*/ import_react$149.createElement("dt", {
+			return /*#__PURE__*/ import_react$151.createElement("dl", { className: listClasses }, fallbackMsg ? /*#__PURE__*/ import_react$151.createElement("dt", { className: keyClass }, fallbackMsg) : labelValuePairs.map((item) => [/*#__PURE__*/ import_react$151.createElement("dt", {
 				key: `dt_${item.key}`,
 				className: keyClass
-			}, item.label), /*#__PURE__*/ import_react$149.createElement("dd", {
+			}, item.label), /*#__PURE__*/ import_react$151.createElement("dd", {
 				key: `dd_${item.key}`,
 				className: valClass
-			}, item.type === "datum" ? /*#__PURE__*/ import_react$149.createElement(MetaDatumValues, {
+			}, item.type === "datum" ? /*#__PURE__*/ import_react$151.createElement(MetaDatumValues, {
 				metaDatum: item.value,
 				tagMods
 			}) : item.value)]));
@@ -56746,9 +56746,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/MetaDataList.jsx
 	var MetaDataList_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDataList });
-	var import_react$148, import_prop_types$33, import_dedupe$5, getListingDataWithFallback, MetaDataList;
+	var import_react$150, import_prop_types$33, import_dedupe$5, getListingDataWithFallback, MetaDataList;
 	var init_MetaDataList = __esmMin((() => {
-		import_react$148 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$150 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$33 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_utils$2();
 		import_dedupe$5 = /* @__PURE__ */ __toESM(require_dedupe());
@@ -56791,15 +56791,15 @@ Zu diesem hinzufügen\
 			const { title, listingData, fallbackMsg } = getListingDataWithFallback(list, type, showTitle, showFallback);
 			if (renderer) return renderer(listingData, fallbackMsg, tagMods);
 			const wrapperClass = (0, import_dedupe$5.default)(parseMods(restProps), "ui-metadata-box");
-			return /*#__PURE__*/ import_react$148.createElement("div", { className: wrapperClass }, showTitle ? vocabUrl ? /*#__PURE__*/ import_react$148.createElement(VocabTitleLink, {
+			return /*#__PURE__*/ import_react$150.createElement("div", { className: wrapperClass }, showTitle ? vocabUrl ? /*#__PURE__*/ import_react$150.createElement(VocabTitleLink, {
 				text: title,
 				href: vocabUrl,
 				separated: true
-			}) : /*#__PURE__*/ import_react$148.createElement("h3", { className: "title-l separated mbm" }, title) : void 0, type === "list" ? /*#__PURE__*/ import_react$148.createElement(MetaDataDefinitionList, {
+			}) : /*#__PURE__*/ import_react$150.createElement("h3", { className: "title-l separated mbm" }, title) : void 0, type === "list" ? /*#__PURE__*/ import_react$150.createElement(MetaDataDefinitionList, {
 				labelValuePairs: listingData,
 				fallbackMsg,
 				tagMods
-			}) : /*#__PURE__*/ import_react$148.createElement(MetaDataTable, {
+			}) : /*#__PURE__*/ import_react$150.createElement(MetaDataTable$1, {
 				labelValuePairs: listingData,
 				fallbackMsg,
 				tagMods,
@@ -56820,9 +56820,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/ListThumbnail.jsx
 	var ListThumbnail_exports = /* @__PURE__ */ __exportAll({ default: () => ListThumbnail_default });
-	var import_react$147, import_classnames$25, ListThumbnail, Image$1, Titles, ListThumbnail_default;
+	var import_react$149, import_classnames$25, ListThumbnail, Image$1, Titles, ListThumbnail_default;
 	var init_ListThumbnail = __esmMin((() => {
-		import_react$147 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$149 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$25 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
 		init_Picture();
@@ -56871,7 +56871,7 @@ Zu diesem hinzufügen\
 					key: "parents",
 					type: "text",
 					label: I18nTranslate("usage_data_relations_parents"),
-					value: /*#__PURE__*/ import_react$147.createElement("span", null, relation_counts.parent_collections_count, " ", /*#__PURE__*/ import_react$147.createElement(Icon$4, {
+					value: /*#__PURE__*/ import_react$149.createElement("span", null, relation_counts.parent_collections_count, " ", /*#__PURE__*/ import_react$149.createElement(Icon$4, {
 						i: "set",
 						style: iconStyle
 					}))
@@ -56880,20 +56880,20 @@ Zu diesem hinzufügen\
 					key: "children",
 					type: "text",
 					label: I18nTranslate("usage_data_relations_children"),
-					value: /*#__PURE__*/ import_react$147.createElement("span", null, /*#__PURE__*/ import_react$147.createElement("span", null, relation_counts.child_collections_count, " ", /*#__PURE__*/ import_react$147.createElement(Icon$4, {
+					value: /*#__PURE__*/ import_react$149.createElement("span", null, /*#__PURE__*/ import_react$149.createElement("span", null, relation_counts.child_collections_count, " ", /*#__PURE__*/ import_react$149.createElement(Icon$4, {
 						i: "set",
 						style: iconStyle
-					})), /*#__PURE__*/ import_react$147.createElement("span", { style: { marginLeft: "15px" } }, relation_counts.child_media_entries_count, " ", /*#__PURE__*/ import_react$147.createElement(Icon$4, {
+					})), /*#__PURE__*/ import_react$149.createElement("span", { style: { marginLeft: "15px" } }, relation_counts.child_media_entries_count, " ", /*#__PURE__*/ import_react$149.createElement(Icon$4, {
 						i: "media-entry",
 						style: iconStyle
 					})))
 				});
 			}
-			const innerImage = imageUrl ? /*#__PURE__*/ import_react$147.createElement(Picture, {
+			const innerImage = imageUrl ? /*#__PURE__*/ import_react$149.createElement(Picture, {
 				mods: "ui-thumbnail-image",
 				src: imageUrl,
 				alt: title
-			}) : /*#__PURE__*/ import_react$147.createElement(ResourceIcon, {
+			}) : /*#__PURE__*/ import_react$149.createElement(ResourceIcon, {
 				mediaType,
 				thumbnail: true,
 				tiles: false,
@@ -56907,23 +56907,23 @@ Zu diesem hinzufügen\
 				padding: "2px"
 			};
 			if (selectProps && selectProps.onSelect) {
-				const selectAction = /*#__PURE__*/ import_react$147.createElement("li", {
+				const selectAction = /*#__PURE__*/ import_react$149.createElement("li", {
 					className: "ui-thumbnail-action",
 					key: "selector",
 					style: liStyle
-				}, /*#__PURE__*/ import_react$147.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$147.createElement(Link$5, {
+				}, /*#__PURE__*/ import_react$149.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$149.createElement(Link$5, {
 					onClick: selectProps.onSelect,
 					style: selectProps.selectStyle,
 					className: "ui-thumbnail-action-checkbox",
 					title: selectProps.isSelected ? I18nTranslate("resources_box_selection_remove_selection") : I18nTranslate("resources_box_selection_select")
-				}, /*#__PURE__*/ import_react$147.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
 					i: "checkbox",
 					mods: selectProps.isSelected ? "active" : void 0
 				}))));
 				actionList.push(selectAction);
 			}
 			if (favoriteProps && favoriteProps.favoritePolicy) {
-				const favorButton = /*#__PURE__*/ import_react$147.createElement(FavoriteButton, {
+				const favorButton = /*#__PURE__*/ import_react$149.createElement(FavoriteButton, {
 					modelFavored: favoriteProps.modelFavored,
 					favorUrl: favoriteProps.favorUrl,
 					disfavorUrl: favoriteProps.disfavorUrl,
@@ -56933,7 +56933,7 @@ Zu diesem hinzufügen\
 					authToken: favoriteProps.authToken,
 					buttonClass: "ui-thumbnail-action-favorite"
 				});
-				actionList.push(/*#__PURE__*/ import_react$147.createElement("li", {
+				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
 					key: "favorite",
 					className: "ui-thumbnail-action",
 					style: liStyle
@@ -56945,67 +56945,67 @@ Zu diesem hinzufügen\
 					cursor: positionProps.disabled ? "not-allowed" : "pointer"
 				};
 				const iconCssClass = (0, import_classnames$25.default)({ mid: positionProps.disabled });
-				actionList.push(/*#__PURE__*/ import_react$147.createElement("li", {
+				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
 					className: "ui-thumbnail-action",
 					style: commonCss,
 					title: "Move to the beginning",
 					onClick: function(e) {
 						return handlePositionChange(get.uuid, -2, e);
 					}
-				}, /*#__PURE__*/ import_react$147.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
 					i: "move-up-first",
 					className: iconCssClass
 				})));
-				actionList.push(/*#__PURE__*/ import_react$147.createElement("li", {
+				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
 					className: "ui-thumbnail-action",
 					style: commonCss,
 					title: "Move up",
 					onClick: function(e) {
 						return handlePositionChange(get.uuid, -1, e);
 					}
-				}, /*#__PURE__*/ import_react$147.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
 					i: "move-up",
 					className: iconCssClass
 				})));
-				actionList.push(/*#__PURE__*/ import_react$147.createElement("li", {
+				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
 					className: "ui-thumbnail-action",
 					style: commonCss,
 					title: "Move down",
 					onClick: function(e) {
 						return handlePositionChange(get.uuid, 1, e);
 					}
-				}, /*#__PURE__*/ import_react$147.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
 					i: "move-down",
 					className: iconCssClass
 				})));
-				actionList.push(/*#__PURE__*/ import_react$147.createElement("li", {
+				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
 					className: "ui-thumbnail-action",
 					style: commonCss,
 					title: "Move to the end",
 					onClick: function(e) {
 						return handlePositionChange(get.uuid, 2, e);
 					}
-				}, /*#__PURE__*/ import_react$147.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
 					i: "move-down-last",
 					className: iconCssClass
 				})));
 			}
-			if (get.editable) actionList.push(/*#__PURE__*/ import_react$147.createElement("li", {
+			if (get.editable) actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
 				key: "edit",
 				className: "ui-thumbnail-action",
 				style: liStyle
-			}, /*#__PURE__*/ import_react$147.createElement(Button$3, {
+			}, /*#__PURE__*/ import_react$149.createElement(Button$3, {
 				className: "ui-thumbnail-action-favorite",
 				href: get.edit_meta_data_by_context_url
-			}, /*#__PURE__*/ import_react$147.createElement("i", { className: "icon-pen" }))));
-			if (deleteProps && get.destroyable) actionList.push(/*#__PURE__*/ import_react$147.createElement("li", {
+			}, /*#__PURE__*/ import_react$149.createElement("i", { className: "icon-pen" }))));
+			if (deleteProps && get.destroyable) actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
 				key: "destroy",
 				className: "ui-thumbnail-action",
 				style: liStyle
-			}, /*#__PURE__*/ import_react$147.createElement(Button$3, {
+			}, /*#__PURE__*/ import_react$149.createElement(Button$3, {
 				className: "ui-thumbnail-action-favorite",
 				onClick: deleteProps.showModal
-			}, /*#__PURE__*/ import_react$147.createElement("i", { className: "icon-trash" }))));
+			}, /*#__PURE__*/ import_react$149.createElement("i", { className: "icon-trash" }))));
 			const actionsStyle = {
 				left: "0px",
 				top: "0px",
@@ -57016,28 +57016,28 @@ Zu diesem hinzufügen\
 				position: "static",
 				float: "left"
 			};
-			const actions = /*#__PURE__*/ import_react$147.createElement("div", {
+			const actions = /*#__PURE__*/ import_react$149.createElement("div", {
 				className: "ui-thumbnail-actions",
 				style: actionsStyle
-			}, /*#__PURE__*/ import_react$147.createElement("ul", { className: "left by-left" }, actionList));
-			return /*#__PURE__*/ import_react$147.createElement("div", null, /*#__PURE__*/ import_react$147.createElement("div", {
+			}, /*#__PURE__*/ import_react$149.createElement("ul", { className: "left by-left" }, actionList));
+			return /*#__PURE__*/ import_react$149.createElement("div", null, /*#__PURE__*/ import_react$149.createElement("div", {
 				className: "ui-resource-head",
 				style: { marginLeft: "168px" }
-			}, actions, /*#__PURE__*/ import_react$147.createElement("h3", { className: "ui-resource-title" }, title)), /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-resource-thumbnail" }, /*#__PURE__*/ import_react$147.createElement("div", { className: (0, import_classnames$25.default)("ui-thumbnail", thumbnailClass) }, /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-thumbnail-privacy" }, /*#__PURE__*/ import_react$147.createElement("i", { className: "icon-privacy-group" })), /*#__PURE__*/ import_react$147.createElement(Image$1, {
+			}, actions, /*#__PURE__*/ import_react$149.createElement("h3", { className: "ui-resource-title" }, title)), /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-resource-thumbnail" }, /*#__PURE__*/ import_react$149.createElement("div", { className: (0, import_classnames$25.default)("ui-thumbnail", thumbnailClass) }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-privacy" }, /*#__PURE__*/ import_react$149.createElement("i", { className: "icon-privacy-group" })), /*#__PURE__*/ import_react$149.createElement(Image$1, {
 				onPictureClick,
 				pictureLinkStyle,
 				innerImage,
 				mediaUrl
-			}), /*#__PURE__*/ import_react$147.createElement(Titles, null))), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$147.createElement(DeleteModal, {
+			}), /*#__PURE__*/ import_react$149.createElement(Titles, null))), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$149.createElement(DeleteModal, {
 				resourceType: get.type,
 				onModalOk: deleteProps.onModalOk,
 				onModalCancel: deleteProps.onModalCancel,
 				modalTitle: deleteProps.modalTitle
 			}) : null, metaData ? listsWithClasses.map((item) => {
-				return /*#__PURE__*/ import_react$147.createElement("div", {
+				return /*#__PURE__*/ import_react$149.createElement("div", {
 					className: item.className,
 					key: item.key
-				}, /*#__PURE__*/ import_react$147.createElement(MetaDataList, {
+				}, /*#__PURE__*/ import_react$149.createElement(MetaDataList, {
 					showTitle: false,
 					mods: "ui-resource-meta",
 					listMods: "block",
@@ -57047,27 +57047,27 @@ Zu diesem hinzufügen\
 					keyClasses: "ui-resource-meta-label",
 					valueClasses: "ui-resource-meta-content"
 				}));
-			}).concat(/*#__PURE__*/ import_react$147.createElement("div", {
+			}).concat(/*#__PURE__*/ import_react$149.createElement("div", {
 				className: usageData.className,
 				key: usageData.key
-			}, /*#__PURE__*/ import_react$147.createElement(MetaDataDefinitionList, {
+			}, /*#__PURE__*/ import_react$149.createElement(MetaDataDefinitionList, {
 				labelValuePairs: usageData.list,
 				fallbackMsg: null,
 				tagMods: null
-			}))) : /*#__PURE__*/ import_react$147.createElement(Preloader$1, null)));
+			}))) : /*#__PURE__*/ import_react$149.createElement(Preloader$1, null)));
 		};
 		Image$1 = ({ innerImage, mediaUrl, onPictureClick, pictureLinkStyle }) => {
-			return /*#__PURE__*/ import_react$147.createElement("a", {
+			return /*#__PURE__*/ import_react$149.createElement("a", {
 				className: "ui-thumbnail-image-wrapper",
 				onClick: onPictureClick,
 				style: pictureLinkStyle,
 				href: mediaUrl
-			}, /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage)))));
+			}, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage)))));
 		};
 		Titles = () => {
-			return /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$147.createElement("h3", { className: "ui-thumbnail-meta-title" }, "Name that can easily go onto 2 lines"), /*#__PURE__*/ import_react$147.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, "Author that can easily go onto 2 lines as well"));
+			return /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$149.createElement("h3", { className: "ui-thumbnail-meta-title" }, "Name that can easily go onto 2 lines"), /*#__PURE__*/ import_react$149.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, "Author that can easily go onto 2 lines as well"));
 		};
-		ListThumbnail_default = /*#__PURE__*/ (0, import_react$147.memo)(ListThumbnail);
+		ListThumbnail_default = /*#__PURE__*/ (0, import_react$149.memo)(ListThumbnail);
 	}));
 	//#endregion
 	//#region app/javascript/models/shared/get-media-type.js
@@ -57084,9 +57084,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/ResourceThumbnail.jsx
 	var ResourceThumbnail_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceThumbnail_default });
-	var import_react$146, import_prop_types$32, import_classnames$24, import_get_media_type, CURSOR_SELECT_STYLE, ResourceThumbnail, FlyoutImage, ResourceThumbnail_default;
+	var import_react$148, import_prop_types$32, import_classnames$24, import_get_media_type, CURSOR_SELECT_STYLE, ResourceThumbnail, FlyoutImage, ResourceThumbnail_default;
 	var init_ResourceThumbnail = __esmMin((() => {
-		import_react$146 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$148 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$32 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$24 = /* @__PURE__ */ __toESM(require_classnames());
 		init_ResourceThumbnailRenderer();
@@ -57101,16 +57101,16 @@ Zu diesem hinzufügen\
 		init_utils$2();
 		CURSOR_SELECT_STYLE = { cursor: "cell" };
 		ResourceThumbnail = ({ authToken, onSelect, fetchRelations, elm, get: get$3, isClient: isClientProp, onPictureClick, pictureLinkStyle, isSelected, pinThumb, listThumb, list_meta_data, uploadMediaType, style, positionProps }) => {
-			const [isClient, setIsClient] = (0, import_react$146.useState)(isClientProp || false);
-			const [deleteModal, setDeleteModal] = (0, import_react$146.useState)(false);
-			const relationsTransitionRef = (0, import_react$146.useRef)(null);
-			const favoriteTransitionRef = (0, import_react$146.useRef)(null);
-			const [relationsState, setRelationsState] = (0, import_react$146.useState)(() => {
+			const [isClient, setIsClient] = (0, import_react$148.useState)(isClientProp || false);
+			const [deleteModal, setDeleteModal] = (0, import_react$148.useState)(false);
+			const relationsTransitionRef = (0, import_react$148.useRef)(null);
+			const favoriteTransitionRef = (0, import_react$148.useRef)(null);
+			const [relationsState, setRelationsState] = (0, import_react$148.useState)(() => {
 				return BoxFetchRelations_default(null, { type: get$3.type }, (ps) => {
 					if (relationsTransitionRef.current) relationsTransitionRef.current(ps);
 				});
 			});
-			const [favoriteState, setFavoriteState] = (0, import_react$146.useState)(() => {
+			const [favoriteState, setFavoriteState] = (0, import_react$148.useState)(() => {
 				return BoxFavorite_default(null, { resource: get$3 }, (ps) => {
 					if (favoriteTransitionRef.current) favoriteTransitionRef.current(ps);
 				});
@@ -57123,41 +57123,41 @@ Zu diesem hinzufügen\
 				const next = BoxFavorite_default(cloneDeep(favoriteState), props, (ps) => favoriteTransitionRef.current(ps));
 				setFavoriteState(next);
 			};
-			(0, import_react$146.useEffect)(() => {
+			(0, import_react$148.useEffect)(() => {
 				setIsClient(true);
 			}, []);
-			const [, forceUpdate] = (0, import_react$146.useState)({});
-			(0, import_react$146.useEffect)(() => {
+			const [, forceUpdate] = (0, import_react$148.useState)({});
+			(0, import_react$148.useEffect)(() => {
 				const handleChange = () => forceUpdate({});
 				if (get$3 && get$3.on) {
 					get$3.on("change", handleChange);
 					return () => get$3.off("change", handleChange);
 				}
 			}, [get$3]);
-			const _fetchRelations = (0, import_react$146.useCallback)(() => {
+			const _fetchRelations = (0, import_react$148.useCallback)(() => {
 				if (relationsTransitionRef.current) relationsTransitionRef.current({
 					event: "try-fetch",
 					resource: get$3
 				});
 			}, [get$3]);
-			const _onHover = (0, import_react$146.useCallback)(() => {
+			const _onHover = (0, import_react$148.useCallback)(() => {
 				if (fetchRelations) _fetchRelations();
 			}, [fetchRelations, _fetchRelations]);
-			const _favorOnClick = (0, import_react$146.useCallback)(() => {
+			const _favorOnClick = (0, import_react$148.useCallback)(() => {
 				if (favoriteTransitionRef.current) favoriteTransitionRef.current({
 					event: "toggle",
 					resource: get$3
 				});
 			}, [get$3]);
-			const _showModal = (0, import_react$146.useCallback)(() => {
+			const _showModal = (0, import_react$148.useCallback)(() => {
 				setDeleteModal(true);
 			}, []);
-			const _onModalOk = (0, import_react$146.useCallback)(() => {
+			const _onModalOk = (0, import_react$148.useCallback)(() => {
 				BoxDelete_default(get$3, () => {
 					location.reload();
 				});
 			}, [get$3]);
-			const _onModalCancel = (0, import_react$146.useCallback)(() => {
+			const _onModalCancel = (0, import_react$148.useCallback)(() => {
 				setDeleteModal(false);
 			}, []);
 			const renderContent = () => {
@@ -57167,13 +57167,13 @@ Zu diesem hinzufügen\
 					childRelations = relationsState.relations.children;
 					if (parentRelations) {
 						parentsCount = parentRelations.pagination.total_count;
-						if (parentsCount > 0) parentThumbs = get(parentRelations, "resources", []).map((item) => /*#__PURE__*/ import_react$146.createElement("li", {
+						if (parentsCount > 0) parentThumbs = get(parentRelations, "resources", []).map((item) => /*#__PURE__*/ import_react$148.createElement("li", {
 							className: "ui-thumbnail-level-item media_set set odd",
 							key: item.uuid
-						}, /*#__PURE__*/ import_react$146.createElement("a", {
+						}, /*#__PURE__*/ import_react$148.createElement("a", {
 							className: "ui-level-image-wrapper",
 							href: item.url
-						}, /*#__PURE__*/ import_react$146.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$146.createElement(FlyoutImage, {
+						}, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$148.createElement(FlyoutImage, {
 							resourceType: item.type,
 							title: item.title,
 							imageUrl: item.image_url,
@@ -57185,13 +57185,13 @@ Zu diesem hinzufügen\
 						if (childrenCount > 0) childThumbs = get(childRelations, "resources", []).map(function(item) {
 							let classes = "ui-thumbnail-level-item media_set set odd";
 							if (item.type === "MediaEntry") classes = "ui-thumbnail-level-item media_entry image odd";
-							return /*#__PURE__*/ import_react$146.createElement("li", {
+							return /*#__PURE__*/ import_react$148.createElement("li", {
 								className: classes,
 								key: item.uuid
-							}, /*#__PURE__*/ import_react$146.createElement("a", {
+							}, /*#__PURE__*/ import_react$148.createElement("a", {
 								className: "ui-level-image-wrapper",
 								href: item.url
-							}, /*#__PURE__*/ import_react$146.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$146.createElement(FlyoutImage, {
+							}, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$148.createElement(FlyoutImage, {
 								resourceType: item.type,
 								title: item.title,
 								imageUrl: item.image_url,
@@ -57253,13 +57253,13 @@ Zu diesem hinzufügen\
 				};
 				const textProps = getTextProps();
 				const resourceMediaType = uploadMediaType ? uploadMediaType : (0, import_get_media_type.default)(get(get$3, "media_file.content_type"));
-				if (pinThumb) return /*#__PURE__*/ import_react$146.createElement("li", {
+				if (pinThumb) return /*#__PURE__*/ import_react$148.createElement("li", {
 					style,
 					className: (0, import_classnames$24.default)("ui-resource", {
 						"is-video": get$3.media_type === "video",
 						"ui-selected": selectProps && selectProps.isSelected
 					})
-				}, /*#__PURE__*/ import_react$146.createElement(PinThumbnail, {
+				}, /*#__PURE__*/ import_react$148.createElement(PinThumbnail, {
 					resourceType: get$3.type,
 					imageUrl: get(get$3, "media_file.previews.images.large.url", get$3.image_url),
 					mediaType: resourceMediaType,
@@ -57282,10 +57282,10 @@ Zu diesem hinzufügen\
 						"ui-resource": true,
 						"ui-selected": selectProps && selectProps.isSelected ? true : void 0
 					};
-					return /*#__PURE__*/ import_react$146.createElement("li", {
+					return /*#__PURE__*/ import_react$148.createElement("li", {
 						className: (0, import_classnames$24.default)(classes),
 						style
-					}, /*#__PURE__*/ import_react$146.createElement(ListThumbnail_default, {
+					}, /*#__PURE__*/ import_react$148.createElement(ListThumbnail_default, {
 						resourceType: get$3.type,
 						imageUrl: get$3.image_url,
 						mediaType: resourceMediaType,
@@ -57308,11 +57308,11 @@ Zu diesem hinzufügen\
 						"ui-resource": true,
 						"ui-selected": selectProps && selectProps.isSelected ? true : void 0
 					};
-					return /*#__PURE__*/ import_react$146.createElement(Element, {
+					return /*#__PURE__*/ import_react$148.createElement(Element, {
 						style,
 						className: (0, import_classnames$24.default)(classes),
 						onMouseOver: relationsProps ? relationsProps.onHover : void 0
-					}, /*#__PURE__*/ import_react$146.createElement(ResourceThumbnailRenderer_default, {
+					}, /*#__PURE__*/ import_react$148.createElement(ResourceThumbnailRenderer_default, {
 						resourceType: get$3.type,
 						mediaType: resourceMediaType,
 						elm,
@@ -57341,30 +57341,30 @@ Zu diesem hinzufügen\
 			resource: import_prop_types$32.default.shape({ type: import_prop_types$32.default.oneOf(["MediaEntry"]) })
 		};
 		FlyoutImage = ({ imageUrl, title, mediaType, resourceType }) => {
-			if (imageUrl) return /*#__PURE__*/ import_react$146.createElement(Picture, {
+			if (imageUrl) return /*#__PURE__*/ import_react$148.createElement(Picture, {
 				mods: "ui-thumbnail-level-image",
 				src: imageUrl,
 				alt: title
 			});
-			else return /*#__PURE__*/ import_react$146.createElement(ResourceIcon, {
+			else return /*#__PURE__*/ import_react$148.createElement(ResourceIcon, {
 				mediaType,
 				flyout: true,
 				type: resourceType,
 				overrideClasses: "ui-thumbnail-level-image"
 			});
 		};
-		ResourceThumbnail_default = /*#__PURE__*/ (0, import_react$146.memo)(ResourceThumbnail);
+		ResourceThumbnail_default = /*#__PURE__*/ (0, import_react$148.memo)(ResourceThumbnail);
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/BoxRenderResource.jsx
 	var BoxRenderResource_exports = /* @__PURE__ */ __exportAll({ default: () => BoxRenderResource });
-	var import_react$145, BoxRenderResource;
+	var import_react$147, BoxRenderResource;
 	var init_BoxRenderResource = __esmMin((() => {
 		init_lodash();
-		import_react$145 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$147 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ActionsDropdownHelper();
 		init_ResourceThumbnail();
-		BoxRenderResource = class extends import_react$145.Component {
+		BoxRenderResource = class extends import_react$147.Component {
 			constructor(props) {
 				super(props);
 				this.boundOnSelect = this.onSelect.bind(this);
@@ -57399,7 +57399,7 @@ Zu diesem hinzufügen\
 					}
 					if (ActionsDropdownHelper.isResourceNotInScope(item, isSelected, hoverMenuId)) style = { opacity: .35 };
 				}
-				return /*#__PURE__*/ import_react$145.createElement(ResourceThumbnail_default, {
+				return /*#__PURE__*/ import_react$147.createElement(ResourceThumbnail_default, {
 					elm: "div",
 					style,
 					get: item,
@@ -57422,15 +57422,15 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxRenderResources.jsx
 	var BoxRenderResources_exports = /* @__PURE__ */ __exportAll({ default: () => BoxRenderResources });
-	var import_react$144, import_dedupe$4, BoxRenderResources;
+	var import_react$146, import_dedupe$4, BoxRenderResources;
 	var init_BoxRenderResources = __esmMin((() => {
 		init_lodash();
-		import_react$144 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$146 = /* @__PURE__ */ __toESM(require_react$1());
 		import_dedupe$4 = /* @__PURE__ */ __toESM(require_dedupe());
 		init_ActionsDropdownHelper();
 		init_BoxRenderResource();
 		init_BoxPageCounter();
-		BoxRenderResources = class extends import_react$144.Component {
+		BoxRenderResources = class extends import_react$146.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -57453,7 +57453,7 @@ Zu diesem hinzufügen\
 				var fetchRelations = isClient && withActions && includes(["grid", "list"], config.layout);
 				var renderPage = (page, i) => {
 					var renderItem = (itemState) => {
-						return /*#__PURE__*/ import_react$144.createElement(BoxRenderResource, {
+						return /*#__PURE__*/ import_react$146.createElement(BoxRenderResource, {
 							resourceState: itemState,
 							isClient,
 							onSelectResource,
@@ -57473,7 +57473,7 @@ Zu diesem hinzufügen\
 					};
 					var renderCounter = () => {
 						var pagination = this.props.pagination;
-						return /*#__PURE__*/ import_react$144.createElement(BoxPageCounter, {
+						return /*#__PURE__*/ import_react$146.createElement(BoxPageCounter, {
 							showActions: ActionsDropdownHelper.showActionsConfig(actionsDropdownParameters),
 							selectedResources,
 							isClient,
@@ -57488,10 +57488,10 @@ Zu diesem hinzufügen\
 							selectResources: this.props.selectResources
 						});
 					};
-					return /*#__PURE__*/ import_react$144.createElement("li", {
+					return /*#__PURE__*/ import_react$146.createElement("li", {
 						className: "ui-resources-page",
 						key: i
-					}, renderCounter(), /*#__PURE__*/ import_react$144.createElement("ul", { className: "ui-resources-page-items" }, renderItems(page)));
+					}, renderCounter(), /*#__PURE__*/ import_react$146.createElement("ul", { className: "ui-resources-page-items" }, renderItems(page)));
 				};
 				var renderPages = () => {
 					var pageSize = this.props.perPage;
@@ -57505,16 +57505,16 @@ Zu diesem hinzufügen\
 						active: withActions
 					}, listMods, "ui-resources");
 				};
-				return /*#__PURE__*/ import_react$144.createElement("ul", { className: getListClasses() }, renderPages());
+				return /*#__PURE__*/ import_react$146.createElement("ul", { className: getListClasses() }, renderPages());
 			}
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/BoxSelectionLimit.jsx
 	var BoxSelectionLimit_exports = /* @__PURE__ */ __exportAll({ default: () => BoxSelectionLimit });
-	var import_react$143, BoxSelectionLimit;
+	var import_react$145, BoxSelectionLimit;
 	var init_BoxSelectionLimit = __esmMin((() => {
-		import_react$143 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$145 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_Modal();
 		BoxSelectionLimit = ({ showSelectionLimit, selectionLimit, onClose }) => {
@@ -57523,15 +57523,15 @@ Zu diesem hinzufügen\
 				else if (showSelectionLimit === "single-selection") return I18nTranslate("resources_box_selection_limit_single_1") + selectionLimit + I18nTranslate("resources_box_selection_limit_single_2");
 				else throw new Error("Unexpected show selection limit: " + showSelectionLimit);
 			};
-			return /*#__PURE__*/ import_react$143.createElement(Modal, { widthInPixel: 400 }, /*#__PURE__*/ import_react$143.createElement("div", { style: {
+			return /*#__PURE__*/ import_react$145.createElement(Modal, { widthInPixel: 400 }, /*#__PURE__*/ import_react$145.createElement("div", { style: {
 				margin: "20px",
 				marginBottom: "20px",
 				textAlign: "center"
-			} }, renderText()), /*#__PURE__*/ import_react$143.createElement("div", { style: {
+			} }, renderText()), /*#__PURE__*/ import_react$145.createElement("div", { style: {
 				margin: "20px",
 				marginBottom: "20px",
 				textAlign: "center"
-			} }, /*#__PURE__*/ import_react$143.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$143.createElement("a", {
+			} }, /*#__PURE__*/ import_react$145.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$145.createElement("a", {
 				onClick: onClose,
 				className: "primary-button"
 			}, I18nTranslate("resources_box_selection_limit_ok")))));
@@ -57568,13 +57568,13 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxSetFallback.jsx
 	var BoxSetFallback_exports = /* @__PURE__ */ __exportAll({ default: () => BoxSetFallback });
-	var import_react$142, BoxSetFallback;
+	var import_react$144, BoxSetFallback;
 	var init_BoxSetFallback = __esmMin((() => {
-		import_react$142 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$144 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_i18n_translate();
 		init_sets_fallback_url();
-		BoxSetFallback = class extends import_react$142.Component {
+		BoxSetFallback = class extends import_react$144.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -57589,14 +57589,14 @@ Zu diesem hinzufügen\
 				else {
 					var renderMessage = () => {
 						var setsUrl = sets_fallback_url_default(currentUrl, usePathUrlReplacement);
-						if (try_collections && setsUrl) return /*#__PURE__*/ import_react$142.createElement("div", null, I18nTranslate("resources_box_no_content_but_sets_1"), /*#__PURE__*/ import_react$142.createElement("a", { href: setsUrl }, I18nTranslate("resources_box_no_content_but_sets_2")), I18nTranslate("resources_box_no_content_but_sets_3"));
+						if (try_collections && setsUrl) return /*#__PURE__*/ import_react$144.createElement("div", null, I18nTranslate("resources_box_no_content_but_sets_1"), /*#__PURE__*/ import_react$144.createElement("a", { href: setsUrl }, I18nTranslate("resources_box_no_content_but_sets_2")), I18nTranslate("resources_box_no_content_but_sets_3"));
 						else return I18nTranslate("resources_box_no_content");
 					};
 					var renderBr = () => {
-						if (resetFilterLink) return /*#__PURE__*/ import_react$142.createElement("br", null);
+						if (resetFilterLink) return /*#__PURE__*/ import_react$144.createElement("br", null);
 						else return null;
 					};
-					return /*#__PURE__*/ import_react$142.createElement("div", { className: "pvh mth mbl" }, /*#__PURE__*/ import_react$142.createElement("div", { className: "title-l by-center" }, renderMessage(), renderBr(), resetFilterLink));
+					return /*#__PURE__*/ import_react$144.createElement("div", { className: "pvh mth mbl" }, /*#__PURE__*/ import_react$144.createElement("div", { className: "title-l by-center" }, renderMessage(), renderBr(), resetFilterLink));
 				}
 			}
 		};
@@ -57783,7 +57783,7 @@ Zu diesem hinzufügen\
 		return String(idCounter++);
 	}
 	function useLatestRef(val) {
-		var ref = import_react$140.useRef(val);
+		var ref = import_react$142.useRef(val);
 		ref.current = val;
 		return ref;
 	}
@@ -58176,19 +58176,19 @@ Zu diesem hinzufügen\
 	* @returns {Array} An array with the state and an action dispatcher.
 	*/
 	function useEnhancedReducer(reducer, props, createInitialState, isStateEqual) {
-		var prevStateRef = import_react$140.useRef(null);
-		var actionRef = import_react$140.useRef(void 0);
+		var prevStateRef = import_react$142.useRef(null);
+		var actionRef = import_react$142.useRef(void 0);
 		var propsRef = useLatestRef(props);
-		var enhancedReducer = import_react$140.useCallback(function(state, action) {
+		var enhancedReducer = import_react$142.useCallback(function(state, action) {
 			actionRef.current = action;
 			state = getState(state, propsRef.current);
 			var changes = reducer(state, propsRef.current, action);
 			var newState = propsRef.current.stateReducer(state, _extends$18({}, action, { changes }));
 			return _extends$18({}, state, newState);
 		}, [propsRef, reducer]);
-		var _React$useReducer = import_react$140.useReducer(enhancedReducer, props, createInitialState), state = _React$useReducer[0], dispatch = _React$useReducer[1];
+		var _React$useReducer = import_react$142.useReducer(enhancedReducer, props, createInitialState), state = _React$useReducer[0], dispatch = _React$useReducer[1];
 		var action = actionRef.current;
-		import_react$140.useEffect(function() {
+		import_react$142.useEffect(function() {
 			var _prevStateRef$current;
 			var prevState = getState((_prevStateRef$current = prevStateRef.current) != null ? _prevStateRef$current : {}, propsRef.current);
 			if (action && prevStateRef.current && !isStateEqual(prevState, state)) callOnChangeProps(action, propsRef.current, prevState, state);
@@ -58241,8 +58241,8 @@ Zu diesem hinzufügen\
 	* Tracks if it's the first render.
 	*/
 	function useIsInitialMount() {
-		var isInitialMountRef = import_react$140.useRef(true);
-		import_react$140.useEffect(function() {
+		var isInitialMountRef = import_react$142.useRef(true);
+		import_react$142.useEffect(function() {
 			isInitialMountRef.current = false;
 			return function() {
 				isInitialMountRef.current = true;
@@ -58279,11 +58279,11 @@ Zu diesem hinzufügen\
 	function useA11yMessageStatus(getA11yStatusMessage, options, dependencyArray, environment) {
 		var document = environment == null ? void 0 : environment.document;
 		var isInitialMount = useIsInitialMount();
-		import_react$140.useEffect(function() {
+		import_react$142.useEffect(function() {
 			if (!getA11yStatusMessage || isInitialMount || !document) return;
 			updateA11yStatus(getA11yStatusMessage(options), document);
 		}, dependencyArray);
-		import_react$140.useEffect(function() {
+		import_react$142.useEffect(function() {
 			return function() {
 				updateA11yStatus.cancel();
 				cleanupStatusDiv(document);
@@ -58329,17 +58329,17 @@ Zu diesem hinzufügen\
 	* @returns {{isMouseDown: boolean, isTouchMove: boolean, isTouchEnd: boolean}} The mouse and touch events information, if any of are happening.
 	*/
 	function useMouseAndTouchTracker(environment, handleBlur, downshiftRefs) {
-		var mouseAndTouchTrackersRef = import_react$140.useRef({
+		var mouseAndTouchTrackersRef = import_react$142.useRef({
 			isMouseDown: false,
 			isTouchMove: false,
 			isTouchEnd: false
 		});
-		var getDownshiftElements = import_react$140.useCallback(function() {
+		var getDownshiftElements = import_react$142.useCallback(function() {
 			return downshiftRefs.map(function(ref) {
 				return ref.current;
 			});
 		}, [downshiftRefs]);
-		import_react$140.useEffect(function() {
+		import_react$142.useEffect(function() {
 			if (!environment) return noop$2;
 			function onMouseDown() {
 				mouseAndTouchTrackersRef.current.isTouchEnd = false;
@@ -58381,7 +58381,7 @@ Zu diesem hinzufügen\
 	}
 	function useScrollIntoView(_ref) {
 		var highlightedIndex = _ref.highlightedIndex, isOpen = _ref.isOpen, itemRefs = _ref.itemRefs, getItemNodeFromIndex = _ref.getItemNodeFromIndex, menuElement = _ref.menuElement, scrollIntoViewProp = _ref.scrollIntoView;
-		var shouldScrollRef = import_react$140.useRef(true);
+		var shouldScrollRef = import_react$142.useRef(true);
 		useIsomorphicLayoutEffect(function() {
 			if (highlightedIndex < 0 || !isOpen || !Object.keys(itemRefs.current).length) return;
 			if (shouldScrollRef.current === false) shouldScrollRef.current = true;
@@ -58583,7 +58583,7 @@ Zu diesem hinzufügen\
 		var id = _ref.id, labelId = _ref.labelId, menuId = _ref.menuId, getItemId = _ref.getItemId, toggleButtonId = _ref.toggleButtonId, inputId = _ref.inputId;
 		var reactId = "downshift-" + reactUseId$1();
 		if (!id) id = reactId;
-		return import_react$140.useMemo(function() {
+		return import_react$142.useMemo(function() {
 			return {
 				labelId: labelId != null ? labelId : id + "-label",
 				menuId: menuId != null ? menuId : id + "-menu",
@@ -58604,8 +58604,8 @@ Zu diesem hinzufügen\
 	}
 	function useElementIdsLegacy$1(_ref2) {
 		var id = _ref2.id, labelId = _ref2.labelId, menuId = _ref2.menuId, getItemId = _ref2.getItemId, toggleButtonId = _ref2.toggleButtonId, inputId = _ref2.inputId;
-		var baseId = import_react$140.useRef(id != null ? id : "downshift-" + generateId()).current;
-		return import_react$140.useMemo(function() {
+		var baseId = import_react$142.useRef(id != null ? id : "downshift-" + generateId()).current;
+		return import_react$142.useMemo(function() {
 			return {
 				labelId: labelId != null ? labelId : baseId + "-label",
 				menuId: menuId != null ? menuId : baseId + "-menu",
@@ -58631,16 +58631,16 @@ Zu diesem hinzufügen\
 		var scrollIntoView = props.scrollIntoView, environment = props.environment, getA11yStatusMessage = props.getA11yStatusMessage;
 		var _useControlledReducer = useControlledReducer$1(downshiftSelectReducer, props, getInitialState$3, isDropdownsStateEqual), state = _useControlledReducer[0], dispatch = _useControlledReducer[1];
 		var isOpen = state.isOpen, highlightedIndex = state.highlightedIndex, selectedItem = state.selectedItem, inputValue = state.inputValue;
-		var toggleButtonRef = (0, import_react$141.useRef)(null);
-		var menuRef = (0, import_react$141.useRef)(null);
-		var itemRefs = (0, import_react$141.useRef)({});
-		var clearTimeoutRef = (0, import_react$141.useRef)(null);
+		var toggleButtonRef = (0, import_react$143.useRef)(null);
+		var menuRef = (0, import_react$143.useRef)(null);
+		var itemRefs = (0, import_react$143.useRef)({});
+		var clearTimeoutRef = (0, import_react$143.useRef)(null);
 		var elementIds = useElementIds$1(props);
 		var latest = useLatestRef({
 			state,
 			props
 		});
-		var getItemNodeFromIndex = (0, import_react$141.useCallback)(function(index) {
+		var getItemNodeFromIndex = (0, import_react$143.useCallback)(function(index) {
 			return itemRefs.current[elementIds.getItemId(index)];
 		}, [elementIds]);
 		useA11yMessageStatus(getA11yStatusMessage, state, [
@@ -58657,7 +58657,7 @@ Zu diesem hinzufügen\
 			scrollIntoView,
 			getItemNodeFromIndex
 		});
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			clearTimeoutRef.current = debounce(function(outerDispatch) {
 				outerDispatch({
 					type: FunctionSetInputValue$1,
@@ -58668,7 +58668,7 @@ Zu diesem hinzufügen\
 				clearTimeoutRef.current.cancel();
 			};
 		}, []);
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			if (!inputValue) return;
 			clearTimeoutRef.current(dispatch);
 		}, [dispatch, inputValue]);
@@ -58676,19 +58676,19 @@ Zu diesem hinzufügen\
 			props,
 			state
 		});
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			if (getInitialValue$1(props, "isOpen", defaultStateValues$1) && toggleButtonRef.current) toggleButtonRef.current.focus();
 		}, []);
-		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$141.useCallback)(function handleBlur() {
+		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$143.useCallback)(function handleBlur() {
 			if (latest.current.state.isOpen) dispatch({ type: ToggleButtonBlur });
-		}, [dispatch, latest]), (0, import_react$141.useMemo)(function() {
+		}, [dispatch, latest]), (0, import_react$143.useMemo)(function() {
 			return [menuRef, toggleButtonRef];
 		}, []));
 		var setGetterPropCallInfo = useGetterPropsCalledChecker("getMenuProps", "getToggleButtonProps");
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			if (!isOpen) itemRefs.current = {};
 		}, [isOpen]);
-		var toggleButtonKeyDownHandlers = (0, import_react$141.useMemo)(function() {
+		var toggleButtonKeyDownHandlers = (0, import_react$143.useMemo)(function() {
 			return {
 				ArrowDown: function ArrowDown(event) {
 					event.preventDefault();
@@ -58746,37 +58746,37 @@ Zu diesem hinzufügen\
 				}
 			};
 		}, [dispatch, latest]);
-		var toggleMenu = (0, import_react$141.useCallback)(function() {
+		var toggleMenu = (0, import_react$143.useCallback)(function() {
 			dispatch({ type: FunctionToggleMenu$1 });
 		}, [dispatch]);
-		var closeMenu = (0, import_react$141.useCallback)(function() {
+		var closeMenu = (0, import_react$143.useCallback)(function() {
 			dispatch({ type: FunctionCloseMenu$1 });
 		}, [dispatch]);
-		var openMenu = (0, import_react$141.useCallback)(function() {
+		var openMenu = (0, import_react$143.useCallback)(function() {
 			dispatch({ type: FunctionOpenMenu$1 });
 		}, [dispatch]);
-		var setHighlightedIndex = (0, import_react$141.useCallback)(function(newHighlightedIndex) {
+		var setHighlightedIndex = (0, import_react$143.useCallback)(function(newHighlightedIndex) {
 			dispatch({
 				type: FunctionSetHighlightedIndex$1,
 				highlightedIndex: newHighlightedIndex
 			});
 		}, [dispatch]);
-		var selectItem = (0, import_react$141.useCallback)(function(newSelectedItem) {
+		var selectItem = (0, import_react$143.useCallback)(function(newSelectedItem) {
 			dispatch({
 				type: FunctionSelectItem$1,
 				selectedItem: newSelectedItem
 			});
 		}, [dispatch]);
-		var reset = (0, import_react$141.useCallback)(function() {
+		var reset = (0, import_react$143.useCallback)(function() {
 			dispatch({ type: FunctionReset$2 });
 		}, [dispatch]);
-		var setInputValue = (0, import_react$141.useCallback)(function(newInputValue) {
+		var setInputValue = (0, import_react$143.useCallback)(function(newInputValue) {
 			dispatch({
 				type: FunctionSetInputValue$1,
 				inputValue: newInputValue
 			});
 		}, [dispatch]);
-		var getLabelProps = (0, import_react$141.useCallback)(function(_temp) {
+		var getLabelProps = (0, import_react$143.useCallback)(function(_temp) {
 			var _ref = _temp === void 0 ? {} : _temp, onClick = _ref.onClick, labelProps = _objectWithoutPropertiesLoose(_ref, _excluded$3);
 			return _extends$18({
 				id: elementIds.labelId,
@@ -58787,7 +58787,7 @@ Zu diesem hinzufügen\
 				})
 			}, labelProps);
 		}, [elementIds]);
-		var getMenuProps = (0, import_react$141.useCallback)(function(_temp2, _temp3) {
+		var getMenuProps = (0, import_react$143.useCallback)(function(_temp2, _temp3) {
 			var _extends2;
 			var _ref2 = _temp2 === void 0 ? {} : _temp2, onMouseLeave = _ref2.onMouseLeave, _ref2$refKey = _ref2.refKey, refKey = _ref2$refKey === void 0 ? "ref" : _ref2$refKey, ref = _ref2.ref, rest = _objectWithoutPropertiesLoose(_ref2, _excluded2$3);
 			var _ref3$suppressRefErro = (_temp3 === void 0 ? {} : _temp3).suppressRefError, suppressRefError = _ref3$suppressRefErro === void 0 ? false : _ref3$suppressRefErro;
@@ -58804,7 +58804,7 @@ Zu diesem hinzufügen\
 			elementIds
 		]);
 		return {
-			getToggleButtonProps: (0, import_react$141.useCallback)(function(_temp4, _temp5) {
+			getToggleButtonProps: (0, import_react$143.useCallback)(function(_temp4, _temp5) {
 				var _extends3;
 				var _ref4 = _temp4 === void 0 ? {} : _temp4, onBlur = _ref4.onBlur, onClick = _ref4.onClick;
 				_ref4.onPress;
@@ -58844,7 +58844,7 @@ Zu diesem hinzufügen\
 			]),
 			getLabelProps,
 			getMenuProps,
-			getItemProps: (0, import_react$141.useCallback)(function(_temp6) {
+			getItemProps: (0, import_react$143.useCallback)(function(_temp6) {
 				var _extends4;
 				var _ref6 = _temp6 === void 0 ? {} : _temp6, itemProp = _ref6.item, indexProp = _ref6.index, onMouseMove = _ref6.onMouseMove, onClick = _ref6.onClick, onMouseDown = _ref6.onMouseDown;
 				_ref6.onPress;
@@ -58919,10 +58919,10 @@ Zu diesem hinzufügen\
 	* @returns {Array} An array with the state and an action dispatcher.
 	*/
 	function useControlledReducer(reducer, props, createInitialState, isStateEqual) {
-		var previousSelectedItemRef = (0, import_react$141.useRef)();
+		var previousSelectedItemRef = (0, import_react$143.useRef)();
 		var _useEnhancedReducer = useEnhancedReducer(reducer, props, createInitialState, isStateEqual), state = _useEnhancedReducer[0], dispatch = _useEnhancedReducer[1];
 		var isInitialMount = useIsInitialMount();
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			if (!isControlledProp(props, "selectedItem")) return;
 			if (!isInitialMount) {
 				if (props.itemToKey(props.selectedItem) !== props.itemToKey(previousSelectedItemRef.current)) dispatch({
@@ -59028,18 +59028,18 @@ Zu diesem hinzufügen\
 		var items = props.items, scrollIntoView = props.scrollIntoView, environment = props.environment, getA11yStatusMessage = props.getA11yStatusMessage;
 		var _useControlledReducer = useControlledReducer(downshiftUseComboboxReducer, props, getInitialState$2, isDropdownsStateEqual), state = _useControlledReducer[0], dispatch = _useControlledReducer[1];
 		var isOpen = state.isOpen, highlightedIndex = state.highlightedIndex, selectedItem = state.selectedItem, inputValue = state.inputValue;
-		var menuRef = (0, import_react$141.useRef)(null);
-		var itemRefs = (0, import_react$141.useRef)({});
-		var inputRef = (0, import_react$141.useRef)(null);
-		var toggleButtonRef = (0, import_react$141.useRef)(null);
+		var menuRef = (0, import_react$143.useRef)(null);
+		var itemRefs = (0, import_react$143.useRef)({});
+		var inputRef = (0, import_react$143.useRef)(null);
+		var toggleButtonRef = (0, import_react$143.useRef)(null);
 		var isInitialMount = useIsInitialMount();
 		var elementIds = useElementIds$1(props);
-		var previousResultCountRef = (0, import_react$141.useRef)();
+		var previousResultCountRef = (0, import_react$143.useRef)();
 		var latest = useLatestRef({
 			state,
 			props
 		});
-		var getItemNodeFromIndex = (0, import_react$141.useCallback)(function(index) {
+		var getItemNodeFromIndex = (0, import_react$143.useCallback)(function(index) {
 			return itemRefs.current[elementIds.getItemId(index)];
 		}, [elementIds]);
 		useA11yMessageStatus(getA11yStatusMessage, state, [
@@ -59060,15 +59060,15 @@ Zu diesem hinzufügen\
 			props,
 			state
 		});
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			if (getInitialValue$1(props, "isOpen", defaultStateValues$1) && inputRef.current) inputRef.current.focus();
 		}, []);
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			if (!isInitialMount) previousResultCountRef.current = items.length;
 		});
-		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$141.useCallback)(function handleBlur() {
+		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$143.useCallback)(function handleBlur() {
 			if (latest.current.state.isOpen) dispatch({ type: InputBlur });
-		}, [dispatch, latest]), (0, import_react$141.useMemo)(function() {
+		}, [dispatch, latest]), (0, import_react$143.useMemo)(function() {
 			return [
 				menuRef,
 				toggleButtonRef,
@@ -59076,15 +59076,15 @@ Zu diesem hinzufügen\
 			];
 		}, []));
 		var setGetterPropCallInfo = useGetterPropsCalledChecker("getInputProps", "getMenuProps");
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			if (!isOpen) itemRefs.current = {};
 		}, [isOpen]);
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			var _inputRef$current;
 			if (!isOpen || !(environment != null && environment.document) || !(inputRef != null && (_inputRef$current = inputRef.current) != null && _inputRef$current.focus)) return;
 			if (environment.document.activeElement !== inputRef.current) inputRef.current.focus();
 		}, [isOpen, environment]);
-		var inputKeyDownHandlers = (0, import_react$141.useMemo)(function() {
+		var inputKeyDownHandlers = (0, import_react$143.useMemo)(function() {
 			return {
 				ArrowDown: function ArrowDown(event) {
 					event.preventDefault();
@@ -59136,13 +59136,13 @@ Zu diesem hinzufügen\
 				}
 			};
 		}, [dispatch, latest]);
-		var getLabelProps = (0, import_react$141.useCallback)(function(labelProps) {
+		var getLabelProps = (0, import_react$143.useCallback)(function(labelProps) {
 			return _extends$18({
 				id: elementIds.labelId,
 				htmlFor: elementIds.inputId
 			}, labelProps);
 		}, [elementIds]);
-		var getMenuProps = (0, import_react$141.useCallback)(function(_temp, _temp2) {
+		var getMenuProps = (0, import_react$143.useCallback)(function(_temp, _temp2) {
 			var _extends2;
 			var _ref = _temp === void 0 ? {} : _temp, onMouseLeave = _ref.onMouseLeave, _ref$refKey = _ref.refKey, refKey = _ref$refKey === void 0 ? "ref" : _ref$refKey, ref = _ref.ref, rest = _objectWithoutPropertiesLoose(_ref, _excluded$2);
 			var _ref2$suppressRefErro = (_temp2 === void 0 ? {} : _temp2).suppressRefError;
@@ -59157,7 +59157,7 @@ Zu diesem hinzufügen\
 			setGetterPropCallInfo,
 			elementIds
 		]);
-		var getItemProps = (0, import_react$141.useCallback)(function(_temp3) {
+		var getItemProps = (0, import_react$143.useCallback)(function(_temp3) {
 			var _extends3, _ref4;
 			var _ref3 = _temp3 === void 0 ? {} : _temp3, itemProp = _ref3.item, indexProp = _ref3.index, _ref3$refKey = _ref3.refKey, refKey = _ref3$refKey === void 0 ? "ref" : _ref3$refKey, ref = _ref3.ref, onMouseMove = _ref3.onMouseMove, onMouseDown = _ref3.onMouseDown, onClick = _ref3.onClick;
 			_ref3.onPress;
@@ -59196,7 +59196,7 @@ Zu diesem hinzufügen\
 			mouseAndTouchTrackers,
 			shouldScrollRef
 		]);
-		var getToggleButtonProps = (0, import_react$141.useCallback)(function(_temp4) {
+		var getToggleButtonProps = (0, import_react$143.useCallback)(function(_temp4) {
 			var _extends4;
 			var _ref5 = _temp4 === void 0 ? {} : _temp4, onClick = _ref5.onClick;
 			_ref5.onPress;
@@ -59212,7 +59212,7 @@ Zu diesem hinzufügen\
 			latest,
 			elementIds
 		]);
-		var getInputProps = (0, import_react$141.useCallback)(function(_temp5, _temp6) {
+		var getInputProps = (0, import_react$143.useCallback)(function(_temp5, _temp6) {
 			var _extends5;
 			var _ref6 = _temp5 === void 0 ? {} : _temp5, onKeyDown = _ref6.onKeyDown, onChange = _ref6.onChange, onInput = _ref6.onInput, onBlur = _ref6.onBlur;
 			_ref6.onChangeText;
@@ -59259,22 +59259,22 @@ Zu diesem hinzufügen\
 			mouseAndTouchTrackers,
 			setGetterPropCallInfo
 		]);
-		var toggleMenu = (0, import_react$141.useCallback)(function() {
+		var toggleMenu = (0, import_react$143.useCallback)(function() {
 			dispatch({ type: FunctionToggleMenu });
 		}, [dispatch]);
-		var closeMenu = (0, import_react$141.useCallback)(function() {
+		var closeMenu = (0, import_react$143.useCallback)(function() {
 			dispatch({ type: FunctionCloseMenu });
 		}, [dispatch]);
-		var openMenu = (0, import_react$141.useCallback)(function() {
+		var openMenu = (0, import_react$143.useCallback)(function() {
 			dispatch({ type: FunctionOpenMenu });
 		}, [dispatch]);
-		var setHighlightedIndex = (0, import_react$141.useCallback)(function(newHighlightedIndex) {
+		var setHighlightedIndex = (0, import_react$143.useCallback)(function(newHighlightedIndex) {
 			dispatch({
 				type: FunctionSetHighlightedIndex,
 				highlightedIndex: newHighlightedIndex
 			});
 		}, [dispatch]);
-		var selectItem = (0, import_react$141.useCallback)(function(newSelectedItem) {
+		var selectItem = (0, import_react$143.useCallback)(function(newSelectedItem) {
 			dispatch({
 				type: FunctionSelectItem,
 				selectedItem: newSelectedItem
@@ -59290,14 +59290,14 @@ Zu diesem hinzufügen\
 			openMenu,
 			closeMenu,
 			setHighlightedIndex,
-			setInputValue: (0, import_react$141.useCallback)(function(newInputValue) {
+			setInputValue: (0, import_react$143.useCallback)(function(newInputValue) {
 				dispatch({
 					type: FunctionSetInputValue,
 					inputValue: newInputValue
 				});
 			}, [dispatch]),
 			selectItem,
-			reset: (0, import_react$141.useCallback)(function() {
+			reset: (0, import_react$143.useCallback)(function() {
 				dispatch({ type: FunctionReset$1 });
 			}, [dispatch]),
 			highlightedIndex,
@@ -59439,15 +59439,15 @@ Zu diesem hinzufügen\
 		var _useControlledReducer = useControlledReducer$1(downshiftMultipleSelectionReducer, props, getInitialState$1, isStateEqual$1), state = _useControlledReducer[0], dispatch = _useControlledReducer[1];
 		var activeIndex = state.activeIndex, selectedItems = state.selectedItems;
 		var isInitialMount = useIsInitialMount();
-		var dropdownRef = (0, import_react$141.useRef)(null);
-		var selectedItemRefs = (0, import_react$141.useRef)();
+		var dropdownRef = (0, import_react$143.useRef)(null);
+		var selectedItemRefs = (0, import_react$143.useRef)();
 		selectedItemRefs.current = [];
 		var latest = useLatestRef({
 			state,
 			props
 		});
 		useA11yMessageStatus(getA11yStatusMessage, state, [activeIndex, selectedItems], environment);
-		(0, import_react$141.useEffect)(function() {
+		(0, import_react$143.useEffect)(function() {
 			if (isInitialMount) return;
 			if (activeIndex === -1 && dropdownRef.current) dropdownRef.current.focus();
 			else if (selectedItemRefs.current[activeIndex]) selectedItemRefs.current[activeIndex].focus();
@@ -59457,7 +59457,7 @@ Zu diesem hinzufügen\
 			state
 		});
 		var setGetterPropCallInfo = useGetterPropsCalledChecker("getDropdownProps");
-		var selectedItemKeyDownHandlers = (0, import_react$141.useMemo)(function() {
+		var selectedItemKeyDownHandlers = (0, import_react$143.useMemo)(function() {
 			var _ref;
 			return _ref = {}, _ref[keyNavigationPrevious] = function() {
 				dispatch({ type: SelectedItemKeyDownNavigationPrevious });
@@ -59473,7 +59473,7 @@ Zu diesem hinzufügen\
 			keyNavigationNext,
 			keyNavigationPrevious
 		]);
-		var dropdownKeyDownHandlers = (0, import_react$141.useMemo)(function() {
+		var dropdownKeyDownHandlers = (0, import_react$143.useMemo)(function() {
 			var _ref2;
 			return _ref2 = {}, _ref2[keyNavigationPrevious] = function(event) {
 				if (isKeyDownOperationPermitted(event)) dispatch({ type: DropdownKeyDownNavigationPrevious });
@@ -59482,7 +59482,7 @@ Zu diesem hinzufügen\
 			}, _ref2;
 		}, [dispatch, keyNavigationPrevious]);
 		return {
-			getSelectedItemProps: (0, import_react$141.useCallback)(function(_temp) {
+			getSelectedItemProps: (0, import_react$143.useCallback)(function(_temp) {
 				var _extends2;
 				var _ref3 = _temp === void 0 ? {} : _temp, _ref3$refKey = _ref3.refKey, refKey = _ref3$refKey === void 0 ? "ref" : _ref3$refKey, ref = _ref3.ref, onClick = _ref3.onClick, onKeyDown = _ref3.onKeyDown, selectedItemProp = _ref3.selectedItem, indexProp = _ref3.index, rest = _objectWithoutPropertiesLoose(_ref3, _excluded$1);
 				var latestState = latest.current.state;
@@ -59504,7 +59504,7 @@ Zu diesem hinzufügen\
 				latest,
 				selectedItemKeyDownHandlers
 			]),
-			getDropdownProps: (0, import_react$141.useCallback)(function(_temp2, _temp3) {
+			getDropdownProps: (0, import_react$143.useCallback)(function(_temp2, _temp3) {
 				var _extends3;
 				var _ref4 = _temp2 === void 0 ? {} : _temp2, _ref4$refKey = _ref4.refKey, refKey = _ref4$refKey === void 0 ? "ref" : _ref4$refKey, ref = _ref4.ref, onKeyDown = _ref4.onKeyDown, onClick = _ref4.onClick, _ref4$preventKeyActio = _ref4.preventKeyAction, preventKeyAction = _ref4$preventKeyActio === void 0 ? false : _ref4$preventKeyActio, rest = _objectWithoutPropertiesLoose(_ref4, _excluded2$1);
 				var _ref5$suppressRefErro = (_temp3 === void 0 ? {} : _temp3).suppressRefError;
@@ -59525,31 +59525,31 @@ Zu diesem hinzufügen\
 				dropdownKeyDownHandlers,
 				setGetterPropCallInfo
 			]),
-			addSelectedItem: (0, import_react$141.useCallback)(function(selectedItem) {
+			addSelectedItem: (0, import_react$143.useCallback)(function(selectedItem) {
 				dispatch({
 					type: FunctionAddSelectedItem,
 					selectedItem
 				});
 			}, [dispatch]),
-			removeSelectedItem: (0, import_react$141.useCallback)(function(selectedItem) {
+			removeSelectedItem: (0, import_react$143.useCallback)(function(selectedItem) {
 				dispatch({
 					type: FunctionRemoveSelectedItem,
 					selectedItem
 				});
 			}, [dispatch]),
-			setSelectedItems: (0, import_react$141.useCallback)(function(newSelectedItems) {
+			setSelectedItems: (0, import_react$143.useCallback)(function(newSelectedItems) {
 				dispatch({
 					type: FunctionSetSelectedItems,
 					selectedItems: newSelectedItems
 				});
 			}, [dispatch]),
-			setActiveIndex: (0, import_react$141.useCallback)(function(newActiveIndex) {
+			setActiveIndex: (0, import_react$143.useCallback)(function(newActiveIndex) {
 				dispatch({
 					type: FunctionSetActiveIndex,
 					activeIndex: newActiveIndex
 				});
 			}, [dispatch]),
-			reset: (0, import_react$141.useCallback)(function() {
+			reset: (0, import_react$143.useCallback)(function() {
 				dispatch({ type: FunctionReset });
 			}, [dispatch]),
 			selectedItems,
@@ -59603,7 +59603,7 @@ Zu diesem hinzufügen\
 		var id = _ref.id, tagGroupId = _ref.tagGroupId, getTagId = _ref.getTagId;
 		var reactId = "downshift-" + reactUseId();
 		if (!id) id = reactId;
-		return import_react$140.useMemo(function() {
+		return import_react$142.useMemo(function() {
 			return {
 				tagGroupId: tagGroupId != null ? tagGroupId : id + "-tag-group",
 				getTagId: getTagId != null ? getTagId : function(index) {
@@ -59618,8 +59618,8 @@ Zu diesem hinzufügen\
 	}
 	function useElementIdsLegacy(_ref2) {
 		var id = _ref2.id, getTagId = _ref2.getTagId, tagGroupId = _ref2.tagGroupId;
-		var baseId = import_react$140.useRef(id != null ? id : "downshift-" + generateId()).current;
-		return import_react$140.useMemo(function() {
+		var baseId = import_react$142.useRef(id != null ? id : "downshift-" + generateId()).current;
+		return import_react$142.useMemo(function() {
 			return {
 				tagGroupId: tagGroupId != null ? tagGroupId : baseId + "-tag-group",
 				getTagId: getTagId != null ? getTagId : function(index) {
@@ -59644,7 +59644,7 @@ Zu diesem hinzufügen\
 		return oldState.activeIndex === newState.activeIndex && oldState.items === newState.items;
 	}
 	function useAccessibleDescription(document, description) {
-		import_react$140.useEffect(function() {
+		import_react$142.useEffect(function() {
 			if (!document) return;
 			var accessibleDescriptionElement = document.createElement("div");
 			accessibleDescriptionElement.setAttribute("id", A11Y_DESCRIPTION_ELEMENT_ID);
@@ -59669,10 +59669,10 @@ Zu diesem hinzufügen\
 	* Focuses the tag at activeIndex when it changes or when an item is removed.
 	*/
 	function useRovingTagFocus(activeIndex, itemsLength, getTagId) {
-		var itemRefs = import_react$140.useRef({});
-		var previousActiveIndexRef = import_react$140.useRef(activeIndex);
-		var previousItemsLengthRef = import_react$140.useRef(itemsLength);
-		import_react$140.useEffect(function() {
+		var itemRefs = import_react$142.useRef({});
+		var previousActiveIndexRef = import_react$142.useRef(activeIndex);
+		var previousItemsLengthRef = import_react$142.useRef(itemsLength);
+		import_react$142.useEffect(function() {
 			if (activeIndex !== -1 && previousActiveIndexRef.current !== -1 && activeIndex !== previousActiveIndexRef.current || previousItemsLengthRef.current === itemsLength + 1) {
 				var _itemRefs$current$get;
 				(_itemRefs$current$get = itemRefs.current[getTagId(activeIndex)]) == null || _itemRefs$current$get.focus();
@@ -59686,14 +59686,14 @@ Zu diesem hinzufügen\
 		]);
 		return itemRefs;
 	}
-	var import_prop_types$31, import_react$140, import_react$141, import_react_is, unknown, mouseUp, itemMouseEnter, keyDownArrowUp, keyDownArrowDown, keyDownEscape, keyDownEnter, keyDownHome, keyDownEnd, clickItem, blurInput, changeInput, keyDownSpaceButton, clickButton, blurButton, controlledPropUpdatedSelectedItem, touchEnd, stateChangeTypes$4, idCounter, cleanupStatus, validatePropTypes$1, stateKeys, validateControlledUnchanged, _excluded$4, _excluded2$4, _excluded3$3, _excluded4$2, _excluded5, Downshift, propTypes$5, updateA11yStatus, propTypes$4, defaultProps$3, defaultStateValues$1, useIsomorphicLayoutEffect, useGetterPropsCalledChecker, useControlPropsValidator, propTypes$3, defaultProps$2, ToggleButtonClick$1, ToggleButtonKeyDownArrowDown, ToggleButtonKeyDownArrowUp, ToggleButtonKeyDownCharacter, ToggleButtonKeyDownEscape, ToggleButtonKeyDownHome, ToggleButtonKeyDownEnd, ToggleButtonKeyDownEnter, ToggleButtonKeyDownSpaceButton, ToggleButtonKeyDownPageUp, ToggleButtonKeyDownPageDown, ToggleButtonBlur, MenuMouseLeave$1, ItemMouseMove$1, ItemClick$1, FunctionToggleMenu$1, FunctionOpenMenu$1, FunctionCloseMenu$1, FunctionSetHighlightedIndex$1, FunctionSelectItem$1, FunctionSetInputValue$1, FunctionReset$2, stateChangeTypes$3, reactUseId$1, useElementIds$1, _excluded$3, _excluded2$3, _excluded3$2, _excluded4$1, InputKeyDownArrowDown, InputKeyDownArrowUp, InputKeyDownEscape, InputKeyDownHome, InputKeyDownEnd, InputKeyDownPageUp, InputKeyDownPageDown, InputKeyDownEnter, InputChange, InputBlur, InputClick, MenuMouseLeave, ItemMouseMove, ItemClick, ToggleButtonClick, FunctionToggleMenu, FunctionOpenMenu, FunctionCloseMenu, FunctionSetHighlightedIndex, FunctionSelectItem, FunctionSetInputValue, FunctionReset$1, ControlledPropUpdatedSelectedItem, stateChangeTypes$2, propTypes$2, defaultProps$1, _excluded$2, _excluded2$2, _excluded3$1, _excluded4, defaultStateValues, propTypes$1, defaultProps, validatePropTypes, SelectedItemClick, SelectedItemKeyDownDelete, SelectedItemKeyDownBackspace, SelectedItemKeyDownNavigationNext, SelectedItemKeyDownNavigationPrevious, DropdownKeyDownNavigationPrevious, DropdownKeyDownBackspace, DropdownClick, FunctionAddSelectedItem, FunctionRemoveSelectedItem, FunctionSetSelectedItems, FunctionSetActiveIndex, FunctionReset, stateChangeTypes$1, _excluded$1, _excluded2$1, TagClick, TagGroupKeyDownArrowLeft, TagGroupKeyDownArrowRight, TagGroupKeyDownDelete, TagGroupKeyDownBackspace, TagRemoveClick, FunctionAddItem, stateChangeTypes, reactUseId, useElementIds, A11Y_DESCRIPTION_ELEMENT_ID, propTypes, _excluded, _excluded2, _excluded3, _useTagGroup;
+	var import_prop_types$31, import_react$142, import_react$143, import_react_is, unknown, mouseUp, itemMouseEnter, keyDownArrowUp, keyDownArrowDown, keyDownEscape, keyDownEnter, keyDownHome, keyDownEnd, clickItem, blurInput, changeInput, keyDownSpaceButton, clickButton, blurButton, controlledPropUpdatedSelectedItem, touchEnd, stateChangeTypes$4, idCounter, cleanupStatus, validatePropTypes$1, stateKeys, validateControlledUnchanged, _excluded$4, _excluded2$4, _excluded3$3, _excluded4$2, _excluded5, Downshift, propTypes$5, updateA11yStatus, propTypes$4, defaultProps$3, defaultStateValues$1, useIsomorphicLayoutEffect, useGetterPropsCalledChecker, useControlPropsValidator, propTypes$3, defaultProps$2, ToggleButtonClick$1, ToggleButtonKeyDownArrowDown, ToggleButtonKeyDownArrowUp, ToggleButtonKeyDownCharacter, ToggleButtonKeyDownEscape, ToggleButtonKeyDownHome, ToggleButtonKeyDownEnd, ToggleButtonKeyDownEnter, ToggleButtonKeyDownSpaceButton, ToggleButtonKeyDownPageUp, ToggleButtonKeyDownPageDown, ToggleButtonBlur, MenuMouseLeave$1, ItemMouseMove$1, ItemClick$1, FunctionToggleMenu$1, FunctionOpenMenu$1, FunctionCloseMenu$1, FunctionSetHighlightedIndex$1, FunctionSelectItem$1, FunctionSetInputValue$1, FunctionReset$2, stateChangeTypes$3, reactUseId$1, useElementIds$1, _excluded$3, _excluded2$3, _excluded3$2, _excluded4$1, InputKeyDownArrowDown, InputKeyDownArrowUp, InputKeyDownEscape, InputKeyDownHome, InputKeyDownEnd, InputKeyDownPageUp, InputKeyDownPageDown, InputKeyDownEnter, InputChange, InputBlur, InputClick, MenuMouseLeave, ItemMouseMove, ItemClick, ToggleButtonClick, FunctionToggleMenu, FunctionOpenMenu, FunctionCloseMenu, FunctionSetHighlightedIndex, FunctionSelectItem, FunctionSetInputValue, FunctionReset$1, ControlledPropUpdatedSelectedItem, stateChangeTypes$2, propTypes$2, defaultProps$1, _excluded$2, _excluded2$2, _excluded3$1, _excluded4, defaultStateValues, propTypes$1, defaultProps, validatePropTypes, SelectedItemClick, SelectedItemKeyDownDelete, SelectedItemKeyDownBackspace, SelectedItemKeyDownNavigationNext, SelectedItemKeyDownNavigationPrevious, DropdownKeyDownNavigationPrevious, DropdownKeyDownBackspace, DropdownClick, FunctionAddSelectedItem, FunctionRemoveSelectedItem, FunctionSetSelectedItems, FunctionSetActiveIndex, FunctionReset, stateChangeTypes$1, _excluded$1, _excluded2$1, TagClick, TagGroupKeyDownArrowLeft, TagGroupKeyDownArrowRight, TagGroupKeyDownDelete, TagGroupKeyDownBackspace, TagRemoveClick, FunctionAddItem, stateChangeTypes, reactUseId, useElementIds, A11Y_DESCRIPTION_ELEMENT_ID, propTypes, _excluded, _excluded2, _excluded3, _useTagGroup;
 	var init_downshift_esm = __esmMin((() => {
 		init_objectWithoutPropertiesLoose();
 		init_extends();
 		init_inheritsLoose();
 		import_prop_types$31 = /* @__PURE__ */ __toESM(require_prop_types(), 1);
-		import_react$140 = /* @__PURE__ */ __toESM(require_react$1(), 1);
-		import_react$141 = /* @__PURE__ */ __toESM(require_react$1(), 1);
+		import_react$142 = /* @__PURE__ */ __toESM(require_react$1(), 1);
+		import_react$143 = /* @__PURE__ */ __toESM(require_react$1(), 1);
 		import_react_is = require_react_is();
 		init_dist();
 		unknown = "__autocomplete_unknown__";
@@ -60322,11 +60322,11 @@ Zu diesem hinzufügen\
 					if (this.getRootProps.called || this.props.suppressRefError) {
 						if (!this.getRootProps.suppressRefError && !this.props.suppressRefError) validateGetRootPropsCalledCorrectly(element, this.getRootProps);
 						return element;
-					} else if (isDOMElement(element)) return /*#__PURE__*/ (0, import_react$141.cloneElement)(element, this.getRootProps(getElementProps(element)));
+					} else if (isDOMElement(element)) return /*#__PURE__*/ (0, import_react$143.cloneElement)(element, this.getRootProps(getElementProps(element)));
 					throw new Error("downshift: If you return a non-DOM element, you must apply the getRootProps function");
 				};
 				return Downshift;
-			}(import_react$141.Component);
+			}(import_react$143.Component);
 			Downshift.defaultProps = {
 				defaultHighlightedIndex: null,
 				defaultIsOpen: false,
@@ -60454,17 +60454,17 @@ Zu diesem hinzufügen\
 			selectedItem: null,
 			inputValue: ""
 		};
-		useIsomorphicLayoutEffect = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? import_react$140.useLayoutEffect : import_react$140.useEffect;
+		useIsomorphicLayoutEffect = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? import_react$142.useLayoutEffect : import_react$142.useEffect;
 		useGetterPropsCalledChecker = function useGetterPropsCalledChecker() {
 			return noop$2;
 		};
 		useGetterPropsCalledChecker = function useGetterPropsCalledChecker() {
 			for (var _len = arguments.length, propKeys = new Array(_len), _key = 0; _key < _len; _key++) propKeys[_key] = arguments[_key];
-			var getterPropsCalledRef = import_react$140.useRef(propKeys.reduce(function(acc, propKey) {
+			var getterPropsCalledRef = import_react$142.useRef(propKeys.reduce(function(acc, propKey) {
 				acc[propKey] = {};
 				return acc;
 			}, {}));
-			import_react$140.useEffect(function() {
+			import_react$142.useEffect(function() {
 				Object.keys(getterPropsCalledRef.current).forEach(function(propKey) {
 					var propCallInfo = getterPropsCalledRef.current[propKey];
 					if (!Object.keys(propCallInfo).length) {
@@ -60476,7 +60476,7 @@ Zu diesem hinzufügen\
 					if (!(elementRef != null && elementRef.current)) console.error("downshift: The ref prop \"" + refKey + "\" from " + propKey + " was not applied correctly on your element.");
 				});
 			}, []);
-			return import_react$140.useCallback(function(propKey, suppressRefError, refKey, elementRef) {
+			return import_react$142.useCallback(function(propKey, suppressRefError, refKey, elementRef) {
 				getterPropsCalledRef.current[propKey] = {
 					suppressRefError,
 					refKey,
@@ -60487,9 +60487,9 @@ Zu diesem hinzufügen\
 		useControlPropsValidator = noop$2;
 		useControlPropsValidator = function useControlPropsValidator(_ref2) {
 			var props = _ref2.props, state = _ref2.state;
-			var prevPropsRef = import_react$140.useRef(props);
+			var prevPropsRef = import_react$142.useRef(props);
 			var isInitialMount = useIsInitialMount();
-			import_react$140.useEffect(function() {
+			import_react$142.useEffect(function() {
 				if (isInitialMount) return;
 				validateControlledUnchanged(state, prevPropsRef.current, props);
 				prevPropsRef.current = props;
@@ -60553,7 +60553,7 @@ Zu diesem hinzufügen\
 			ToggleButtonKeyDownPageUp,
 			ToggleButtonKeyDownSpaceButton
 		});
-		reactUseId$1 = _extends$18({}, import_react$140).useId;
+		reactUseId$1 = _extends$18({}, import_react$142).useId;
 		useElementIds$1 = typeof reactUseId$1 === "function" ? useElementIdsR18$1 : useElementIdsLegacy$1;
 		_excluded$3 = ["onClick"];
 		_excluded2$3 = [
@@ -60768,7 +60768,7 @@ Zu diesem hinzufügen\
 			TagGroupKeyDownDelete,
 			TagRemoveClick
 		});
-		reactUseId = _extends$18({}, import_react$140).useId;
+		reactUseId = _extends$18({}, import_react$142).useId;
 		useElementIds = typeof reactUseId === "function" ? useElementIdsR18 : useElementIdsLegacy;
 		A11Y_DESCRIPTION_ELEMENT_ID = "tag-group-a11y-description";
 		propTypes = { isItemDisabled: import_prop_types$31.default.func };
@@ -60798,7 +60798,7 @@ Zu diesem hinzufügen\
 			});
 			useAccessibleDescription((_props$environment = props.environment) == null ? void 0 : _props$environment.document, props.removeElementDescription);
 			var itemRefs = useRovingTagFocus(activeIndex, items.length, elementIds.getTagId);
-			var getTagGroupProps = (0, import_react$141.useCallback)(function(options) {
+			var getTagGroupProps = (0, import_react$143.useCallback)(function(options) {
 				var _ref = options != null ? options : {}, onKeyDown = _ref.onKeyDown, rest = _objectWithoutPropertiesLoose(_ref, _excluded);
 				return _extends$18({
 					id: elementIds.tagGroupId,
@@ -60824,7 +60824,7 @@ Zu diesem hinzufügen\
 					})
 				}, rest);
 			}, [dispatch, elementIds.tagGroupId]);
-			var getTagProps = (0, import_react$141.useCallback)(function(options) {
+			var getTagProps = (0, import_react$143.useCallback)(function(options) {
 				var _extends2;
 				var index = options.index, _options$refKey = options.refKey, refKey = _options$refKey === void 0 ? "ref" : _options$refKey, ref = options.ref, onClick = options.onClick, rest = _objectWithoutPropertiesLoose(options, _excluded2);
 				if (!Number.isInteger(index) || index < 0) throw new Error("Pass correct item index to getTagProps!");
@@ -60845,7 +60845,7 @@ Zu diesem hinzufügen\
 				latest,
 				itemRefs
 			]);
-			var getTagRemoveProps = (0, import_react$141.useCallback)(function(options) {
+			var getTagRemoveProps = (0, import_react$143.useCallback)(function(options) {
 				var index = options.index, onClick = options.onClick, rest = _objectWithoutPropertiesLoose(options, _excluded3);
 				if (!Number.isInteger(index) || index < 0) throw new Error("Pass correct item index to getTagRemoveProps!");
 				var handleClick = function handleClick(event) {
@@ -60866,7 +60866,7 @@ Zu diesem hinzufügen\
 			}, [elementIds, dispatch]);
 			return {
 				activeIndex,
-				addItem: (0, import_react$141.useCallback)(function(item, index) {
+				addItem: (0, import_react$143.useCallback)(function(item, index) {
 					dispatch({
 						type: FunctionAddItem,
 						item,
@@ -60888,14 +60888,14 @@ Zu diesem hinzufügen\
 		const escapedInput = inputValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 		const parts = itemLabel.split(new RegExp(`(${escapedInput})`, "gi"));
 		if (parts.length === 1) return itemLabel;
-		return /*#__PURE__*/ import_react$139.createElement(import_react$139.Fragment, null, parts.map((part, i) => part.toLowerCase() === inputValue.toLowerCase() ? /*#__PURE__*/ import_react$139.createElement("b", {
+		return /*#__PURE__*/ import_react$141.createElement(import_react$141.Fragment, null, parts.map((part, i) => part.toLowerCase() === inputValue.toLowerCase() ? /*#__PURE__*/ import_react$141.createElement("b", {
 			key: i,
 			className: "ui-autocomplete__matching-fragment"
 		}, part) : part));
 	}
-	var import_react$139;
+	var import_react$141;
 	var init_typeahead_utils = __esmMin((() => {
-		import_react$139 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$141 = /* @__PURE__ */ __toESM(require_react$1());
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/typeahead-input.jsx
@@ -60913,22 +60913,22 @@ Zu diesem hinzufügen\
 			...DEFAULT_CLASS_NAMES,
 			...classNameOverrides
 		};
-		const [items, setItems] = (0, import_react$138.useState)([]);
-		const [loading, setLoading] = (0, import_react$138.useState)(false);
-		const updateItems = (0, import_react$138.useCallback)((results) => {
+		const [items, setItems] = (0, import_react$140.useState)([]);
+		const [loading, setLoading] = (0, import_react$140.useState)(false);
+		const updateItems = (0, import_react$140.useCallback)((results) => {
 			setLoading(false);
 			setItems(results || []);
 		}, []);
-		const triggerSource = (0, import_react$138.useCallback)((q) => {
+		const triggerSource = (0, import_react$140.useCallback)((q) => {
 			setLoading(true);
 			source(q, updateItems);
 		});
-		(0, import_react$138.useEffect)(() => {
+		(0, import_react$140.useEffect)(() => {
 			triggerSource(defaultValue || "");
 		}, []);
-		const internalRef = (0, import_react$138.useRef)(null);
+		const internalRef = (0, import_react$140.useRef)(null);
 		const inputElement = externalRef || internalRef;
-		const getItemString = (0, import_react$138.useCallback)((item) => {
+		const getItemString = (0, import_react$140.useCallback)((item) => {
 			if (!item) return "[non-item]";
 			if (typeof item === "string") return item;
 			return item.label || item.name || item.autocomplete_label || "";
@@ -60961,10 +60961,10 @@ Zu diesem hinzufügen\
 		const showNoResultsMessage = inputValue && items.length === 0;
 		const hasContent = comboHead || comboFoot || items.length > 0 || showNoResultsMessage;
 		const showMenu = isOpen && hasContent;
-		return /*#__PURE__*/ import_react$138.createElement("div", {
+		return /*#__PURE__*/ import_react$140.createElement("div", {
 			className: wrapperClass,
 			style: { position: "relative" }
-		}, /*#__PURE__*/ import_react$138.createElement("input", _extends$17({ ref: inputElement }, getInputProps({
+		}, /*#__PURE__*/ import_react$140.createElement("input", _extends$17({ ref: inputElement }, getInputProps({
 			type: "text",
 			name,
 			placeholder,
@@ -60972,13 +60972,13 @@ Zu diesem hinzufügen\
 			onKeyDown: handleKeyDown,
 			"aria-label": placeholder || name || "search",
 			...dataAttributes
-		}))), /*#__PURE__*/ import_react$138.createElement("ul", _extends$17({}, getMenuProps(), { className: (0, import_classnames$23.default)(classes.menu, {
+		}))), /*#__PURE__*/ import_react$140.createElement("ul", _extends$17({}, getMenuProps(), { className: (0, import_classnames$23.default)(classes.menu, {
 			hidden: !showMenu,
 			"tt-open": showMenu
-		}) }), loading && /*#__PURE__*/ import_react$138.createElement("div", {
+		}) }), loading && /*#__PURE__*/ import_react$140.createElement("div", {
 			className: "ui-preloader small",
 			style: { height: "1.5em" }
-		}, "xxxxxx"), !loading && showMenu && /*#__PURE__*/ import_react$138.createElement(import_react$138.Fragment, null, comboHead && /*#__PURE__*/ import_react$138.createElement("li", { key: "head" }, comboHead), showNoResultsMessage && /*#__PURE__*/ import_react$138.createElement("li", { className: "ui-autocomplete-empty" }, I18nTranslate("app_autocomplete_no_results")), items.map((item, index) => {
+		}, "xxxxxx"), !loading && showMenu && /*#__PURE__*/ import_react$140.createElement(import_react$140.Fragment, null, comboHead && /*#__PURE__*/ import_react$140.createElement("li", { key: "head" }, comboHead), showNoResultsMessage && /*#__PURE__*/ import_react$140.createElement("li", { className: "ui-autocomplete-empty" }, I18nTranslate("app_autocomplete_no_results")), items.map((item, index) => {
 			const isHighlighted = highlightedIndex === index;
 			let content;
 			if (renderSuggestion) content = renderSuggestion(item, {
@@ -60986,15 +60986,15 @@ Zu diesem hinzufügen\
 				inputValue
 			});
 			else content = markMatchingFragment(getItemString(item), inputValue);
-			return /*#__PURE__*/ import_react$138.createElement("li", _extends$17({ key: index }, getItemProps({
+			return /*#__PURE__*/ import_react$140.createElement("li", _extends$17({ key: index }, getItemProps({
 				item,
 				index
 			}), { className: (0, import_classnames$23.default)(classes.suggestion, { [classes.cursor]: isHighlighted }, "tt-selectable") }), content);
-		}), comboFoot && /*#__PURE__*/ import_react$138.createElement("li", { key: "foot" }, comboFoot))));
+		}), comboFoot && /*#__PURE__*/ import_react$140.createElement("li", { key: "foot" }, comboFoot))));
 	}
-	var import_react$138, import_prop_types$30, import_classnames$23, DEFAULT_CLASS_NAMES;
+	var import_react$140, import_prop_types$30, import_classnames$23, DEFAULT_CLASS_NAMES;
 	var init_typeahead_input = __esmMin((() => {
-		import_react$138 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$140 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$30 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_downshift_esm();
 		import_classnames$23 = /* @__PURE__ */ __toESM(require_classnames());
@@ -61027,13 +61027,13 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/ResourcesBox/UserFilter.jsx
-	var import_react$137, import_classnames$22, UserFilter;
+	var import_react$139, import_classnames$22, UserFilter;
 	var init_UserFilter = __esmMin((() => {
 		init_lodash();
-		import_react$137 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$139 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$22 = /* @__PURE__ */ __toESM(require_classnames());
 		init_typeahead_input();
-		UserFilter = class extends import_react$137.Component {
+		UserFilter = class extends import_react$139.Component {
 			_source = (term, callback) => {
 				const children = this.props.node.children;
 				if (term.length > 0) {
@@ -61049,16 +61049,16 @@ Zu diesem hinzufügen\
 					event.preventDefault();
 					this.props.userChanged(selected, "remove");
 				};
-				return /*#__PURE__*/ import_react$137.createElement("ul", { className: this.props.togglebodyClass }, map(selection, (selected) => /*#__PURE__*/ import_react$137.createElement("li", {
+				return /*#__PURE__*/ import_react$139.createElement("ul", { className: this.props.togglebodyClass }, map(selection, (selected) => /*#__PURE__*/ import_react$139.createElement("li", {
 					key: `uuid_${selected.uuid}`,
 					className: (0, import_classnames$22.default)("ui-side-filter-lvl3-item", { active: true })
-				}, /*#__PURE__*/ import_react$137.createElement("a", {
+				}, /*#__PURE__*/ import_react$139.createElement("a", {
 					className: "link weak ui-link",
 					onClick: (event) => clear(selected, event)
-				}, selected.label, selected.label && /*#__PURE__*/ import_react$137.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), hasMore && /*#__PURE__*/ import_react$137.createElement("li", {
+				}, selected.label, selected.label && /*#__PURE__*/ import_react$139.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), hasMore && /*#__PURE__*/ import_react$139.createElement("li", {
 					key: "input",
 					className: (0, import_classnames$22.default)("ui-side-filter-lvl3-item", { mtx: selection.length > 0 })
-				}, /*#__PURE__*/ import_react$137.createElement(TypeaheadInput, {
+				}, /*#__PURE__*/ import_react$139.createElement(TypeaheadInput, {
 					source: this._source,
 					onSelect: (item) => this.props.userChanged(item, "add"),
 					placeholder,
@@ -61179,16 +61179,16 @@ Zu diesem hinzufügen\
 			else _remoteSource(query, callback);
 		};
 	}
-	var import_react$136, import_classnames$21, PersonFilter, maxHits;
+	var import_react$138, import_classnames$21, PersonFilter, maxHits;
 	var init_PersonFilter = __esmMin((() => {
 		init_lodash();
-		import_react$136 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$138 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$21 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
 		init_typeahead_input();
 		init_typeahead_utils();
 		init_remote_search();
-		PersonFilter = class extends import_react$136.Component {
+		PersonFilter = class extends import_react$138.Component {
 			constructor(props) {
 				super(props);
 				this.state = {};
@@ -61201,20 +61201,20 @@ Zu diesem hinzufügen\
 					onClear(selected);
 				};
 				const source = tooManyHits ? getRemoteSource(staticItems, contextKeyId, jsonPath) : getStaticSource(staticItems);
-				return /*#__PURE__*/ import_react$136.createElement("ul", { className }, withTitle && /*#__PURE__*/ import_react$136.createElement("li", {
+				return /*#__PURE__*/ import_react$138.createElement("ul", { className }, withTitle && /*#__PURE__*/ import_react$138.createElement("li", {
 					key: "title",
 					className: "ui-side-filter-lvl3-item ptx plm",
 					style: { fontSize: "12px" }
-				}, /*#__PURE__*/ import_react$136.createElement("strong", null, I18nTranslate("dynamic_filters_person_header"))), map(selection, (selected) => /*#__PURE__*/ import_react$136.createElement("li", {
+				}, /*#__PURE__*/ import_react$138.createElement("strong", null, I18nTranslate("dynamic_filters_person_header"))), map(selection, (selected) => /*#__PURE__*/ import_react$138.createElement("li", {
 					key: "uuid_" + selected.uuid,
 					className: (0, import_classnames$21.default)("ui-side-filter-lvl3-item", { active: true })
-				}, /*#__PURE__*/ import_react$136.createElement("a", {
+				}, /*#__PURE__*/ import_react$138.createElement("a", {
 					className: "link weak ui-link",
 					onClick: (event) => clear(selected, event)
-				}, selected.label, selected.label && /*#__PURE__*/ import_react$136.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), /*#__PURE__*/ import_react$136.createElement("li", {
+				}, selected.label, selected.label && /*#__PURE__*/ import_react$138.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), /*#__PURE__*/ import_react$138.createElement("li", {
 					key: "input",
 					className: (0, import_classnames$21.default)("ui-side-filter-lvl3-item", { mtx: selection.length > 0 })
-				}, /*#__PURE__*/ import_react$136.createElement(TypeaheadInput, {
+				}, /*#__PURE__*/ import_react$138.createElement(TypeaheadInput, {
 					source,
 					onSelect: (item) => {
 						onSelect(item);
@@ -61228,8 +61228,8 @@ Zu diesem hinzufügen\
 						cursor: "ui-autocomplete-cursor",
 						suggestion: ""
 					},
-					renderSuggestion: (value, { inputValue }) => /*#__PURE__*/ import_react$136.createElement("div", { className: (0, import_classnames$21.default)("ui-autocomplete-override-sidebar ui-autocomplete-override-sidebar--with-number", { "ui-autocomplete-disabled": value.disabled }) }, /*#__PURE__*/ import_react$136.createElement("div", { className: "ui-autocomplete-override-sidebar__label" }, markMatchingFragment(value.label, inputValue)), /*#__PURE__*/ import_react$136.createElement("div", { className: "ui-autocomplete-override-sidebar__number" }, value.count === void 0 ? "" : value.count)),
-					comboFoot: tooManyHits && /*#__PURE__*/ import_react$136.createElement("div", { className: "ui-autocomplete-footer" }, I18nTranslate("app_autocomplete_enter_term"))
+					renderSuggestion: (value, { inputValue }) => /*#__PURE__*/ import_react$138.createElement("div", { className: (0, import_classnames$21.default)("ui-autocomplete-override-sidebar ui-autocomplete-override-sidebar--with-number", { "ui-autocomplete-disabled": value.disabled }) }, /*#__PURE__*/ import_react$138.createElement("div", { className: "ui-autocomplete-override-sidebar__label" }, markMatchingFragment(value.label, inputValue)), /*#__PURE__*/ import_react$138.createElement("div", { className: "ui-autocomplete-override-sidebar__number" }, value.count === void 0 ? "" : value.count)),
+					comboFoot: tooManyHits && /*#__PURE__*/ import_react$138.createElement("div", { className: "ui-autocomplete-footer" }, I18nTranslate("app_autocomplete_enter_term"))
 				})));
 			}
 		};
@@ -61315,11 +61315,11 @@ Zu diesem hinzufügen\
 		jsonPath += `dynamic_filters.${key}`;
 		return jsonPath;
 	}
-	var import_react$135, import_prop_types$29, import_classnames$20, import_lib$8, SideFilter;
+	var import_react$137, import_prop_types$29, import_classnames$20, import_lib$8, SideFilter;
 	var init_SideFilter = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$135 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$137 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$29 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_i18n_translate();
 		import_classnames$20 = /* @__PURE__ */ __toESM(require_classnames());
@@ -61333,7 +61333,7 @@ Zu diesem hinzufügen\
 		import_lib$8 = /* @__PURE__ */ __toESM(require_lib());
 		init_set_params_for_url();
 		init_load_xhr();
-		SideFilter = class extends import_react$135.Component {
+		SideFilter = class extends import_react$137.Component {
 			static propTypes = {
 				forUrl: import_prop_types$29.default.object,
 				jsonPath: import_prop_types$29.default.string,
@@ -61500,13 +61500,13 @@ Zu diesem hinzufügen\
 			}
 			render() {
 				let { current } = this.props;
-				if (flatten(compact(map(this.state.sectionGroups, (sectionGroup) => sectionGroup.data))).length === 0) if (this.state.sectionGroups.find((x) => x.status === "initial")) return /*#__PURE__*/ import_react$135.createElement("ul", { "data-test-id": "side-filter" }, /*#__PURE__*/ import_react$135.createElement(Preloader$1, { mods: "small" }));
+				if (flatten(compact(map(this.state.sectionGroups, (sectionGroup) => sectionGroup.data))).length === 0) if (this.state.sectionGroups.find((x) => x.status === "initial")) return /*#__PURE__*/ import_react$137.createElement("ul", { "data-test-id": "side-filter" }, /*#__PURE__*/ import_react$137.createElement(Preloader$1, { mods: "small" }));
 				else return null;
-				return /*#__PURE__*/ import_react$135.createElement("ul", {
+				return /*#__PURE__*/ import_react$137.createElement("ul", {
 					className: ui_default.cx(ui_default.parseMods(this.props), "ui-side-filter-list"),
 					"data-test-id": "side-filter"
 				}, flatten(compact(map(this.state.sectionGroups, (sectionGroup) => {
-					if (sectionGroup.status == "initial") return /*#__PURE__*/ import_react$135.createElement(Preloader$1, {
+					if (sectionGroup.status == "initial") return /*#__PURE__*/ import_react$137.createElement(Preloader$1, {
 						key: `preloader_${sectionGroup.key}`,
 						mods: "small"
 					});
@@ -61526,14 +61526,14 @@ Zu diesem hinzufügen\
 				const sectionUuid = filterType + "-" + uuid;
 				const { isOpen } = this.getAccordionSection(sectionUuid);
 				const toggleOnClick = () => this.toggleSection(sectionUuid, section);
-				return /*#__PURE__*/ import_react$135.createElement("li", {
+				return /*#__PURE__*/ import_react$137.createElement("li", {
 					className: itemClass,
 					key: sectionUuid
-				}, /*#__PURE__*/ import_react$135.createElement("a", {
+				}, /*#__PURE__*/ import_react$137.createElement("a", {
 					className: (0, import_classnames$20.default)("ui-accordion-toggle", "strong", { open: isOpen }),
 					href: null,
 					onClick: toggleOnClick
-				}, label, " ", /*#__PURE__*/ import_react$135.createElement("i", { className: "ui-side-filter-lvl1-marker" })), /*#__PURE__*/ import_react$135.createElement("ul", { className: (0, import_classnames$20.default)("ui-accordion-body", "ui-side-filter-lvl2", { open: isOpen }) }, isOpen && (triggersLoadForGroup && children.length === 0 ? /*#__PURE__*/ import_react$135.createElement("li", null, /*#__PURE__*/ import_react$135.createElement(Preloader$1, { mods: "small" })) : map(children, (child) => {
+				}, label, " ", /*#__PURE__*/ import_react$137.createElement("i", { className: "ui-side-filter-lvl1-marker" })), /*#__PURE__*/ import_react$137.createElement("ul", { className: (0, import_classnames$20.default)("ui-accordion-body", "ui-side-filter-lvl2", { open: isOpen }) }, isOpen && (triggersLoadForGroup && children.length === 0 ? /*#__PURE__*/ import_react$137.createElement("li", null, /*#__PURE__*/ import_react$137.createElement(Preloader$1, { mods: "small" })) : map(children, (child) => {
 					return this.renderSubSection(current, filterType, section, child);
 				}))));
 			}
@@ -61548,29 +61548,29 @@ Zu diesem hinzufügen\
 				], child.uuid);
 				const keyClass = "ui-side-filter-lvl2-item";
 				const togglebodyClass = (0, import_classnames$20.default)("ui-accordion-body", "ui-side-filter-lvl3", { open: isOpen });
-				return /*#__PURE__*/ import_react$135.createElement("li", {
+				return /*#__PURE__*/ import_react$137.createElement("li", {
 					className: keyClass,
 					key: child.uuid
 				}, this.createToggleSubSection(filterType, parent, child, isOpen), this.createMultiSelectBox(child, current, filterType, !(parent.uuid === "permissions")), (() => {
 					if (parent.uuid === "permissions" && showSearchField) if (isOpen) return this.renderResponsibleUser(child, parent.uuid, current, child, filterType, togglebodyClass);
-					else return /*#__PURE__*/ import_react$135.createElement("ul", { className: togglebodyClass });
+					else return /*#__PURE__*/ import_react$137.createElement("ul", { className: togglebodyClass });
 					else if (isOpen) switch (child.metaDatumObjectType) {
 						case "MetaDatum::People": return this.renderPersonSelect(current, child, child.children, filterType, togglebodyClass, false);
 						case "MetaDatum::Roles": return map(["person", "role"], (type) => {
 							const items = child.children.filter((x) => x.type === type);
 							if (items.length === 0) return false;
 							if (type === "person") return this.renderPersonSelect(current, child, items, filterType, togglebodyClass, true);
-							else return /*#__PURE__*/ import_react$135.createElement("ul", {
+							else return /*#__PURE__*/ import_react$137.createElement("ul", {
 								className: togglebodyClass,
 								key: "role"
-							}, /*#__PURE__*/ import_react$135.createElement("li", {
+							}, /*#__PURE__*/ import_react$137.createElement("li", {
 								className: "ui-side-filter-lvl3-item ptx plm",
 								style: { fontSize: "12px" }
-							}, /*#__PURE__*/ import_react$135.createElement("strong", null, I18nTranslate("dynamic_filters_role_header"))), map(items, (item) => {
+							}, /*#__PURE__*/ import_react$137.createElement("strong", null, I18nTranslate("dynamic_filters_role_header"))), map(items, (item) => {
 								return this.renderItem(current, child, item, filterType);
 							}));
 						});
-						default: return /*#__PURE__*/ import_react$135.createElement("ul", { className: togglebodyClass }, map(child.children, (item) => {
+						default: return /*#__PURE__*/ import_react$137.createElement("ul", { className: togglebodyClass }, map(child.children, (item) => {
 							return this.renderItem(current, child, item, filterType);
 						}));
 					}
@@ -61580,7 +61580,7 @@ Zu diesem hinzufügen\
 				const onSelect = (person) => this.addItemFilter(this.props.onChange, current, child, person, filterType);
 				const onClear = (person) => this.removeItemFilter(this.props.onChange, current, person, filterType);
 				const jsonPath = getJsonPath(this.props.jsonPath, "section_group_meta_data");
-				return /*#__PURE__*/ import_react$135.createElement(PersonFilter, {
+				return /*#__PURE__*/ import_react$137.createElement(PersonFilter, {
 					key: "person",
 					label: child.label,
 					contextKeyId: child.contextKeyId,
@@ -61606,7 +61606,7 @@ Zu diesem hinzufügen\
 					entrusted_to_group: I18nTranslate("dynamic_filters_search_for_group_placeholder"),
 					entrusted_to_api_client: I18nTranslate("dynamic_filters_search_for_api_client_placeholder")
 				}[parent.uuid];
-				return /*#__PURE__*/ import_react$135.createElement(UserFilter, {
+				return /*#__PURE__*/ import_react$137.createElement(UserFilter, {
 					node,
 					userChanged,
 					placeholder,
@@ -61619,13 +61619,13 @@ Zu diesem hinzufügen\
 					if (item.selected) return this.removeItemFilter(onChange, current, item, filterType);
 					else return this.addItemFilter(onChange, current, parent, item, filterType);
 				};
-				return /*#__PURE__*/ import_react$135.createElement("li", {
+				return /*#__PURE__*/ import_react$137.createElement("li", {
 					key: item.uuid,
 					className: (0, import_classnames$20.default)("ui-side-filter-lvl3-item", { active: item.selected })
-				}, /*#__PURE__*/ import_react$135.createElement(Link$5, {
+				}, /*#__PURE__*/ import_react$137.createElement(Link$5, {
 					mods: "weak",
 					onClick: onItemClick
-				}, item.label || item.uuid || "(empty)", " ", /*#__PURE__*/ import_react$135.createElement("span", { className: "ui-lvl3-item-count" }, item.count)));
+				}, item.label || item.uuid || "(empty)", " ", /*#__PURE__*/ import_react$137.createElement("span", { className: "ui-lvl3-item-count" }, item.count)));
 			}
 			createToggleSubSection(filterType, parent, child, isOpen) {
 				const href = null;
@@ -61634,11 +61634,11 @@ Zu diesem hinzufügen\
 				};
 				const togglerClass = (0, import_classnames$20.default)("ui-accordion-toggle", "weak", { open: isOpen });
 				const toggleMarkerClass = (0, import_classnames$20.default)("ui-side-filter-lvl2-marker");
-				return /*#__PURE__*/ import_react$135.createElement("a", {
+				return /*#__PURE__*/ import_react$137.createElement("a", {
 					className: togglerClass,
 					href,
 					onClick: toggleOnClick
-				}, /*#__PURE__*/ import_react$135.createElement("span", { className: toggleMarkerClass }), child.label);
+				}, /*#__PURE__*/ import_react$137.createElement("span", { className: toggleMarkerClass }), child.label);
 			}
 			createMultiSelectBox(child, current, filterType, allowSelectAll) {
 				let icon, onChange, title;
@@ -61658,12 +61658,12 @@ Zu diesem hinzufügen\
 						return this.removeSubSectionFilter(onChange, current, child, filterType);
 					};
 					icon = "close";
-					multiSelectBox = /*#__PURE__*/ import_react$135.createElement(Link$5, {
+					multiSelectBox = /*#__PURE__*/ import_react$137.createElement(Link$5, {
 						style,
 						className: keyBtnClass,
 						title,
 						onClick: removeClick
-					}, /*#__PURE__*/ import_react$135.createElement(Icon$4, { i: icon }));
+					}, /*#__PURE__*/ import_react$137.createElement(Icon$4, { i: icon }));
 				}
 				if (showSelectAll && allowSelectAll) {
 					let iclass;
@@ -61675,12 +61675,12 @@ Zu diesem hinzufügen\
 						if (child.selected) return this.removeSubSectionFilter(onChange, current, child, filterType);
 						else return this.addSubSectionFilter(onChange, current, child, filterType);
 					};
-					multiSelectBox = /*#__PURE__*/ import_react$135.createElement(Link$5, {
+					multiSelectBox = /*#__PURE__*/ import_react$137.createElement(Link$5, {
 						style,
 						className: keyBtnClass,
 						title,
 						onClick: addClick
-					}, /*#__PURE__*/ import_react$135.createElement(Icon$4, {
+					}, /*#__PURE__*/ import_react$137.createElement(Icon$4, {
 						i: icon,
 						className: iclass
 					}));
@@ -61740,10 +61740,10 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/resource-type-switcher.jsx
-	var import_react$134, import_url$20, import_url$21, import_lib$6, import_lib$7, resourceTypeSwitcher, urlByType$1;
+	var import_react$136, import_url$20, import_url$21, import_lib$6, import_lib$7, resourceTypeSwitcher, urlByType$1;
 	var init_resource_type_switcher = __esmMin((() => {
 		init_lodash();
-		import_react$134 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$136 = /* @__PURE__ */ __toESM(require_react$1());
 		import_url$20 = /* @__PURE__ */ __toESM(require_url());
 		import_url$21 = /* @__PURE__ */ __toESM(require_url());
 		import_lib$6 = /* @__PURE__ */ __toESM(require_lib());
@@ -61768,12 +61768,12 @@ Zu diesem hinzufügen\
 					name: I18nTranslate("sitemap_collections")
 				}
 			]);
-			return /*#__PURE__*/ import_react$134.createElement(ButtonGroup, { "data-test-id": "resource-type-switcher" }, typeBbtns.map((btn) => {
+			return /*#__PURE__*/ import_react$136.createElement(ButtonGroup, { "data-test-id": "resource-type-switcher" }, typeBbtns.map((btn) => {
 				const isCurrent = currentType === btn.key;
 				const isDefault = !currentType ? showAll ? btn.key === "all" : btn.key === "entries" : void 0;
 				const isActive = isCurrent || isDefault;
 				const btnUrl = urlByType$1(forUrl, currentType, btn.key);
-				return /*#__PURE__*/ import_react$134.createElement(Button$3, {
+				return /*#__PURE__*/ import_react$136.createElement(Button$3, {
 					onClick,
 					href: btnUrl,
 					mods: isActive ? "active" : void 0,
@@ -61805,9 +61805,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxSidebar.jsx
 	var BoxSidebar_exports = /* @__PURE__ */ __exportAll({ default: () => BoxSidebar });
-	var import_react$133, BoxSidebar;
+	var import_react$135, BoxSidebar;
 	var init_BoxSidebar = __esmMin((() => {
-		import_react$133 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$135 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_Preloader();
 		init_Button();
@@ -61817,7 +61817,7 @@ Zu diesem hinzufügen\
 		init_set_params_for_url();
 		init_i18n_translate();
 		init_resource_type_switcher();
-		BoxSidebar = class extends import_react$133.Component {
+		BoxSidebar = class extends import_react$135.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -61879,19 +61879,19 @@ Zu diesem hinzufügen\
 				};
 			}
 			renderFilterPreloader() {
-				return /*#__PURE__*/ import_react$133.createElement("div", { className: "ui-slide-filter-item" }, /*#__PURE__*/ import_react$133.createElement("div", { className: "title-xs by-center" }, "Filter werden geladen"), /*#__PURE__*/ import_react$133.createElement(Preloader$1, { mods: "small" }));
+				return /*#__PURE__*/ import_react$135.createElement("div", { className: "ui-slide-filter-item" }, /*#__PURE__*/ import_react$135.createElement("div", { className: "title-xs by-center" }, "Filter werden geladen"), /*#__PURE__*/ import_react$135.createElement(Preloader$1, { mods: "small" }));
 			}
 			renderFilterExamples() {
 				const url = this.props.config.for_url;
 				const type = url.query.type || "all";
 				const query = this.props.currentQuery;
 				const examples = this.filterExamples();
-				return /*#__PURE__*/ import_react$133.createElement("div", null, /*#__PURE__*/ import_react$133.createElement("h4", null, "Examples:"), /*#__PURE__*/ import_react$133.createElement("ul", null, Object.entries(examples).filter(([, example]) => example.isAllowedForType(type)).map(([name, example]) => {
+				return /*#__PURE__*/ import_react$135.createElement("div", null, /*#__PURE__*/ import_react$135.createElement("h4", null, "Examples:"), /*#__PURE__*/ import_react$135.createElement("ul", null, Object.entries(examples).filter(([, example]) => example.isAllowedForType(type)).map(([name, example]) => {
 					var params = { list: {
 						page: 1,
 						filter: JSON.stringify(example, 0, 2)
 					} };
-					return /*#__PURE__*/ import_react$133.createElement("li", { key: name }, /*#__PURE__*/ import_react$133.createElement(Link$5, {
+					return /*#__PURE__*/ import_react$135.createElement("li", { key: name }, /*#__PURE__*/ import_react$135.createElement(Link$5, {
 						href: set_params_for_url_default(url, query, params),
 						rel: "nofollow"
 					}, name));
@@ -61900,15 +61900,15 @@ Zu diesem hinzufügen\
 			renderSideFilterFallback() {
 				var filter = this.props.config.filter;
 				filter = filter ? filter : {};
-				return /*#__PURE__*/ import_react$133.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$133.createElement(RestForm, {
+				return /*#__PURE__*/ import_react$135.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$135.createElement(RestForm, {
 					name: "list",
 					method: "get",
 					mods: "prm"
-				}, /*#__PURE__*/ import_react$133.createElement("input", {
+				}, /*#__PURE__*/ import_react$135.createElement("input", {
 					type: "hidden",
 					name: "list[show_filter]",
 					value: "true"
-				}), /*#__PURE__*/ import_react$133.createElement("textarea", {
+				}), /*#__PURE__*/ import_react$135.createElement("textarea", {
 					name: "list[filter]",
 					rows: "25",
 					style: {
@@ -61917,10 +61917,10 @@ Zu diesem hinzufügen\
 						width: "100%"
 					},
 					defaultValue: JSON.stringify(filter, 0, 2)
-				}), /*#__PURE__*/ import_react$133.createElement(Button$3, { type: "submit" }, "Submit")));
+				}), /*#__PURE__*/ import_react$135.createElement(Button$3, { type: "submit" }, "Submit")));
 			}
 			renderNoJs() {
-				return /*#__PURE__*/ import_react$133.createElement("div", null, /*#__PURE__*/ import_react$133.createElement("div", { className: "no-js" }, this.renderSideFilterFallback(), this.renderFilterExamples()), /*#__PURE__*/ import_react$133.createElement("div", { className: "js-only" }, this.renderFilterPreloader()));
+				return /*#__PURE__*/ import_react$135.createElement("div", null, /*#__PURE__*/ import_react$135.createElement("div", { className: "no-js" }, this.renderSideFilterFallback(), this.renderFilterExamples()), /*#__PURE__*/ import_react$135.createElement("div", { className: "js-only" }, this.renderFilterPreloader()));
 			}
 			searchValue() {
 				if (this.has_filename_filter()) return this.filename_filter_string();
@@ -61928,13 +61928,13 @@ Zu diesem hinzufügen\
 			}
 			renderFilesearch() {
 				if (!this.props.supportsFilesearch) return null;
-				return /*#__PURE__*/ import_react$133.createElement("div", { style: { marginTop: "2px" } }, /*#__PURE__*/ import_react$133.createElement("input", {
+				return /*#__PURE__*/ import_react$135.createElement("div", { style: { marginTop: "2px" } }, /*#__PURE__*/ import_react$135.createElement("input", {
 					ref: "searchTypeFulltext",
 					type: "radio",
 					name: "search_type",
 					value: "fulltext",
 					defaultChecked: !this.has_filename_filter()
-				}), " " + I18nTranslate("search_full_text") + " ", /*#__PURE__*/ import_react$133.createElement("input", {
+				}), " " + I18nTranslate("search_full_text") + " ", /*#__PURE__*/ import_react$135.createElement("input", {
 					ref: "searchTypeFilename",
 					type: "radio",
 					name: "search_type",
@@ -61944,7 +61944,7 @@ Zu diesem hinzufügen\
 			}
 			renderSideFilter() {
 				if (this.props.onlyFilterSearch) return null;
-				return /*#__PURE__*/ import_react$133.createElement(SideFilter, {
+				return /*#__PURE__*/ import_react$135.createElement(SideFilter, {
 					forUrl: this.props.parentState.config.for_url,
 					jsonPath: this.props.jsonPath,
 					current: this.props.config.filter ? this.props.config.filter : {},
@@ -61965,14 +61965,14 @@ Zu diesem hinzufügen\
 				});
 			}
 			renderJs() {
-				return /*#__PURE__*/ import_react$133.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$133.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$133.createElement("form", {
+				return /*#__PURE__*/ import_react$135.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$135.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$135.createElement("form", {
 					name: "filter_search_form",
 					onSubmit: (e) => this._onSearch(e)
-				}, /*#__PURE__*/ import_react$133.createElement("input", {
+				}, /*#__PURE__*/ import_react$135.createElement("input", {
 					type: "submit",
 					className: "unstyled",
 					value: I18nTranslate("resources_box_new_search")
-				}), /*#__PURE__*/ import_react$133.createElement("input", {
+				}), /*#__PURE__*/ import_react$135.createElement("input", {
 					type: "text",
 					className: "ui-filter-search-input block",
 					ref: "filterSearch",
@@ -61986,19 +61986,19 @@ Zu diesem hinzufügen\
 			renderFiltersNote() {
 				const { currentUrl, contentType } = this.props;
 				if (contentType !== "MediaResource") return null;
-				return /*#__PURE__*/ import_react$133.createElement("div", { className: "mtm" }, I18nTranslate("resources_box_filters_note_pre"), " ", /*#__PURE__*/ import_react$133.createElement(Link$5, { href: urlByType$1(currentUrl, null, "entries") }, I18nTranslate("sitemap_entries")), " ", I18nTranslate("resources_box_filters_note_or"), " ", /*#__PURE__*/ import_react$133.createElement(Link$5, { href: urlByType$1(currentUrl, null, "collections") }, I18nTranslate("sitemap_collections")), " ", I18nTranslate("resources_box_filters_note_post"));
+				return /*#__PURE__*/ import_react$135.createElement("div", { className: "mtm" }, I18nTranslate("resources_box_filters_note_pre"), " ", /*#__PURE__*/ import_react$135.createElement(Link$5, { href: urlByType$1(currentUrl, null, "entries") }, I18nTranslate("sitemap_entries")), " ", I18nTranslate("resources_box_filters_note_or"), " ", /*#__PURE__*/ import_react$135.createElement(Link$5, { href: urlByType$1(currentUrl, null, "collections") }, I18nTranslate("sitemap_collections")), " ", I18nTranslate("resources_box_filters_note_post"));
 			}
 			render() {
-				return /*#__PURE__*/ import_react$133.createElement("div", { className: "filter-panel ui-side-filter" }, this.renderJsSwitch(), this.renderFiltersNote());
+				return /*#__PURE__*/ import_react$135.createElement("div", { className: "filter-panel ui-side-filter" }, this.renderJsSwitch(), this.renderFiltersNote());
 			}
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/resourcesbox/SortDropdown.jsx
 	var SortDropdown_exports = /* @__PURE__ */ __exportAll({ default: () => SortDropdown });
-	var import_react$132, SortDropdown;
+	var import_react$134, SortDropdown;
 	var init_SortDropdown = __esmMin((() => {
-		import_react$132 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$134 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Dropdown();
 		SortDropdown = ({ items, selectedKey: initialKey, onItemClick }) => {
 			let selectedKey = initialKey;
@@ -62010,12 +62010,12 @@ Zu diesem hinzufügen\
 			const handleItemClick = (event, itemKey) => {
 				if (onItemClick) onItemClick(event, itemKey);
 			};
-			return /*#__PURE__*/ import_react$132.createElement(UIDropdown, {
+			return /*#__PURE__*/ import_react$134.createElement(UIDropdown, {
 				mods: "stick-right",
 				toggle: selectedItem.label
-			}, /*#__PURE__*/ import_react$132.createElement(UIDropdown.Menu, { className: "ui-drop-menu" }, items.map((item) => {
+			}, /*#__PURE__*/ import_react$134.createElement(UIDropdown.Menu, { className: "ui-drop-menu" }, items.map((item) => {
 				if (item.key === selectedKey) return null;
-				return /*#__PURE__*/ import_react$132.createElement(UIMenuItem, {
+				return /*#__PURE__*/ import_react$134.createElement(UIMenuItem, {
 					key: item.key,
 					onClick: (event) => handleItemClick(event, item.key),
 					href: item.href
@@ -62026,20 +62026,20 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxTitlebarRender.jsx
 	var BoxTitlebarRender_exports = /* @__PURE__ */ __exportAll({ default: () => BoxTitlebarRender });
-	var import_react$131, import_dedupe$3, BoxTitlebarRender;
+	var import_react$133, import_dedupe$3, BoxTitlebarRender;
 	var init_BoxTitlebarRender = __esmMin((() => {
-		import_react$131 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$133 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		import_dedupe$3 = /* @__PURE__ */ __toESM(require_dedupe());
 		init_ButtonGroup();
 		init_SortDropdown();
 		init_BoxLayoutButton();
-		BoxTitlebarRender = class extends import_react$131.Component {
+		BoxTitlebarRender = class extends import_react$133.Component {
 			constructor(props) {
 				super(props);
 			}
 			renderLayout(layout) {
-				return /*#__PURE__*/ import_react$131.createElement(BoxLayoutButton, {
+				return /*#__PURE__*/ import_react$133.createElement(BoxLayoutButton, {
 					key: layout.mode,
 					onLayoutClick: this.props.onLayoutClick,
 					layout
@@ -62054,23 +62054,23 @@ Zu diesem hinzufügen\
 				style = { minHeight: "1px" };
 				var renderCenterActions = () => {
 					if (isEmpty$1(centerActions)) return null;
-					return /*#__PURE__*/ import_react$131.createElement(ButtonGroup, { mods: "tertiary small center mls" }, centerActions);
+					return /*#__PURE__*/ import_react$133.createElement(ButtonGroup, { mods: "tertiary small center mls" }, centerActions);
 				};
 				var renderOrdering = () => {
 					if (!enableOrdering) return null;
-					return /*#__PURE__*/ import_react$131.createElement(SortDropdown, {
+					return /*#__PURE__*/ import_react$133.createElement(SortDropdown, {
 						items: dropdownItems,
 						selectedKey: selectedSort,
 						onItemClick: onSortItemClick
 					});
 				};
-				return /*#__PURE__*/ import_react$131.createElement("div", { className: classes }, /*#__PURE__*/ import_react$131.createElement("h2", {
+				return /*#__PURE__*/ import_react$133.createElement("div", { className: classes }, /*#__PURE__*/ import_react$133.createElement("h2", {
 					className: "ui-toolbar-header pls col2of6",
 					style
-				}, heading), /*#__PURE__*/ import_react$131.createElement("div", {
+				}, heading), /*#__PURE__*/ import_react$133.createElement("div", {
 					className: "col2of6",
 					style: { textAlign: "center" }
-				}, renderCenterActions()), /*#__PURE__*/ import_react$131.createElement("div", { className: "ui-toolbar-controls by-right" }, " ", /*#__PURE__*/ import_react$131.createElement(ButtonGroup, { mods: "tertiary small right mls" }, this.renderLayouts()), renderOrdering()));
+				}, renderCenterActions()), /*#__PURE__*/ import_react$133.createElement("div", { className: "ui-toolbar-controls by-right" }, " ", /*#__PURE__*/ import_react$133.createElement(ButtonGroup, { mods: "tertiary small right mls" }, this.renderLayouts()), renderOrdering()));
 			}
 		};
 	}));
@@ -62113,16 +62113,16 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxTitlebar.jsx
 	var BoxTitlebar_exports = /* @__PURE__ */ __exportAll({ default: () => BoxTitlebar });
-	var import_react$130, import_dedupe$1, BoxTitlebar;
+	var import_react$132, import_dedupe$1, BoxTitlebar;
 	var init_BoxTitlebar = __esmMin((() => {
 		init_lodash();
-		import_react$130 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$132 = /* @__PURE__ */ __toESM(require_react$1());
 		init_BoxTitlebarRender();
 		init_i18n_translate();
 		import_dedupe$1 = /* @__PURE__ */ __toESM(require_dedupe());
 		init_BoxSetUrlParams();
 		init_BoxUtil();
-		BoxTitlebar = class extends import_react$130.Component {
+		BoxTitlebar = class extends import_react$132.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -62193,7 +62193,7 @@ Zu diesem hinzufügen\
 				if (!this.props.collectionData || !this.props.collectionData.editable) return [];
 				var layoutChanged = this.getLayoutChanged();
 				var text = layoutChanged ? I18nTranslate("collection_layout_save") : I18nTranslate("collection_layout_saved");
-				return [/*#__PURE__*/ import_react$130.createElement("a", {
+				return [/*#__PURE__*/ import_react$132.createElement("a", {
 					key: "collection_layout",
 					disabled: this.getCenterDisabled(),
 					className: (0, import_dedupe$1.default)("small ui-toolbar-vis-button button", { active: !layoutChanged }),
@@ -62201,7 +62201,7 @@ Zu diesem hinzufügen\
 					onClick: layoutChanged ? (e) => {
 						this.props.layoutSave(e);
 					} : null
-				}, /*#__PURE__*/ import_react$130.createElement("i", { className: "icon-fixed-width icon-eye bright" }), /*#__PURE__*/ import_react$130.createElement("span", { className: "text" }, " " + text))];
+				}, /*#__PURE__*/ import_react$132.createElement("i", { className: "icon-fixed-width icon-eye bright" }), /*#__PURE__*/ import_react$132.createElement("span", { className: "text" }, " " + text))];
 			}
 			toolbarClasses() {
 				var boxClasses = BoxUtil_default.boxClasses(this.props.mods);
@@ -62212,7 +62212,7 @@ Zu diesem hinzufügen\
 				else return null;
 			}
 			render() {
-				return /*#__PURE__*/ import_react$130.createElement(BoxTitlebarRender, {
+				return /*#__PURE__*/ import_react$132.createElement(BoxTitlebarRender, {
 					heading: this.getHeading(),
 					mods: this.toolbarClasses(),
 					layouts: this.props.layouts,
@@ -62416,17 +62416,17 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/lib/autocomplete.jsx
 	var autocomplete_exports = /* @__PURE__ */ __exportAll({ default: () => AutoComplete$3 });
-	var import_react$129, import_prop_types$28, AutoComplete$3;
+	var import_react$131, import_prop_types$28, AutoComplete$3;
 	var init_autocomplete = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$129 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$131 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$28 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_typeahead_input();
 		init_ui();
 		init_search();
 		init_typeahead_utils();
-		AutoComplete$3 = class extends import_react$129.Component {
+		AutoComplete$3 = class extends import_react$131.Component {
 			static propTypes = {
 				name: import_prop_types$28.default.string.isRequired,
 				resourceType: import_prop_types$28.default.oneOfType([import_prop_types$28.default.string, import_prop_types$28.default.array]).isRequired,
@@ -62450,7 +62450,7 @@ Zu diesem hinzufügen\
 			};
 			constructor(props) {
 				super(props);
-				this._inputRef = /*#__PURE__*/ import_react$129.createRef();
+				this._inputRef = /*#__PURE__*/ import_react$131.createRef();
 				const { resourceType, searchParams, config } = props;
 				const conf = Object.assign({ minLength: 1 }, config);
 				const resourceTypes = Array.isArray(resourceType) ? resourceType : [resourceType];
@@ -62503,16 +62503,16 @@ Zu diesem hinzufügen\
 				const line = suggestionRenderer ? suggestionRenderer(item, {
 					isHighlighted,
 					inputValue
-				}) : /*#__PURE__*/ import_react$129.createElement("span", null, markMatchingFragment(content, inputValue));
-				if (isDisabled) return /*#__PURE__*/ import_react$129.createElement("div", {
+				}) : /*#__PURE__*/ import_react$131.createElement("span", null, markMatchingFragment(content, inputValue));
+				if (isDisabled) return /*#__PURE__*/ import_react$131.createElement("div", {
 					className: "ui-autocomplete-disabled",
 					title: presence(existingValueHint) || t$6("meta_data_input_keywords_existing")
 				}, line);
-				return /*#__PURE__*/ import_react$129.createElement("div", null, line);
+				return /*#__PURE__*/ import_react$131.createElement("div", null, line);
 			};
 			render() {
 				const { name, value, placeholder, className, positionRelative, onAddValue } = this.props;
-				return /*#__PURE__*/ import_react$129.createElement(TypeaheadInput, {
+				return /*#__PURE__*/ import_react$131.createElement(TypeaheadInput, {
 					inputRef: this._inputRef,
 					name,
 					defaultValue: value || "",
@@ -62530,16 +62530,16 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/autocomplete-wrapper.jsx
-	var import_react$128, AutoCompleteWrapper;
+	var import_react$130, AutoCompleteWrapper;
 	var init_autocomplete_wrapper = __esmMin((() => {
-		import_react$128 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$130 = /* @__PURE__ */ __toESM(require_react$1());
 		AutoCompleteWrapper = (props) => {
-			const [AutoComplete, setAutoComplete] = (0, import_react$128.useState)(null);
-			(0, import_react$128.useEffect)(() => {
+			const [AutoComplete, setAutoComplete] = (0, import_react$130.useState)(null);
+			(0, import_react$130.useEffect)(() => {
 				const AC = (init_autocomplete(), __toCommonJS(autocomplete_exports)).default;
 				setAutoComplete(() => AC);
 			}, []);
-			return /*#__PURE__*/ import_react$128.createElement("div", null, AutoComplete ? /*#__PURE__*/ import_react$128.createElement(AutoComplete, props) : null);
+			return /*#__PURE__*/ import_react$130.createElement("div", null, AutoComplete ? /*#__PURE__*/ import_react$130.createElement(AutoComplete, props) : null);
 		};
 	}));
 	//#endregion
@@ -62561,16 +62561,16 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/views/Shared/EditTransferResponsibility.jsx
 	var EditTransferResponsibility_exports = /* @__PURE__ */ __exportAll({ default: () => EditTransferResponsibility });
-	var import_react$127, EditTransferResponsibility;
+	var import_react$129, EditTransferResponsibility;
 	var init_EditTransferResponsibility = __esmMin((() => {
 		init_lodash();
-		import_react$127 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$129 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_rails_form();
 		init_form_put_with_errors();
 		init_autocomplete_wrapper();
 		init_interpolate_split();
-		EditTransferResponsibility = class extends import_react$127.Component {
+		EditTransferResponsibility = class extends import_react$129.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -62632,98 +62632,98 @@ Zu diesem hinzufügen\
 					}
 				})();
 				const responsibles = batch ? batchResponsibles : [responsible];
-				return /*#__PURE__*/ import_react$127.createElement("div", { className: "bright ui-container pal rounded" }, /*#__PURE__*/ import_react$127.createElement(RestForm, {
+				return /*#__PURE__*/ import_react$129.createElement("div", { className: "bright ui-container pal rounded" }, /*#__PURE__*/ import_react$129.createElement(RestForm, {
 					ref: "form",
 					name: "transfer_responsibility",
 					action: actionUrl,
 					onSubmit: this._onImplicitSumbit,
 					method: "put",
 					authToken
-				}, batch ? map(batchResourceIds, (resource_id) => /*#__PURE__*/ import_react$127.createElement("input", {
+				}, batch ? map(batchResourceIds, (resource_id) => /*#__PURE__*/ import_react$129.createElement("input", {
 					key: resource_id,
 					type: "hidden",
 					name: "id[]",
 					value: resource_id
-				})) : void 0, this.state.errorMessage ? /*#__PURE__*/ import_react$127.createElement("div", {
+				})) : void 0, this.state.errorMessage ? /*#__PURE__*/ import_react$129.createElement("div", {
 					className: "ui-alerts",
 					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$127.createElement("div", { className: "error ui-alert" }, this.state.errorMessage)) : void 0, batch ? /*#__PURE__*/ import_react$127.createElement("h2", { className: "title-l ui-info-box-title mbm" }, interpolateSplit(I18nTranslate("transfer_responsibility_title_batch"), { forNResources: this._translateForNResources(resourceType, batchResourceIds.length) })) : /*#__PURE__*/ import_react$127.createElement("h2", { className: "title-l ui-info-box-title mbm" }, I18nTranslate("transfer_responsibility_title_single")), /*#__PURE__*/ import_react$127.createElement("div", { className: "title-m " }, I18nTranslate("transfer_responsibility_currently_responsible")), /*#__PURE__*/ import_react$127.createElement("div", { className: "mbm" }, (() => {
+				}, /*#__PURE__*/ import_react$129.createElement("div", { className: "error ui-alert" }, this.state.errorMessage)) : void 0, batch ? /*#__PURE__*/ import_react$129.createElement("h2", { className: "title-l ui-info-box-title mbm" }, interpolateSplit(I18nTranslate("transfer_responsibility_title_batch"), { forNResources: this._translateForNResources(resourceType, batchResourceIds.length) })) : /*#__PURE__*/ import_react$129.createElement("h2", { className: "title-l ui-info-box-title mbm" }, I18nTranslate("transfer_responsibility_title_single")), /*#__PURE__*/ import_react$129.createElement("div", { className: "title-m " }, I18nTranslate("transfer_responsibility_currently_responsible")), /*#__PURE__*/ import_react$129.createElement("div", { className: "mbm" }, (() => {
 					const result = [];
 					for (var idx in responsibles) {
 						var r = responsibles[idx];
-						result.push(/*#__PURE__*/ import_react$127.createElement("div", { key: idx }, r.name, responsibles.length > 1 ? ` ${this._translateForNResources(resourceType, r.nofResources)}` : void 0));
+						result.push(/*#__PURE__*/ import_react$129.createElement("div", { key: idx }, r.name, responsibles.length > 1 ? ` ${this._translateForNResources(resourceType, r.nofResources)}` : void 0));
 					}
 					return result;
-				})()), /*#__PURE__*/ import_react$127.createElement("div", { className: "title-m" }, I18nTranslate("transfer_responsibility_to")), /*#__PURE__*/ import_react$127.createElement("div", {
+				})()), /*#__PURE__*/ import_react$129.createElement("div", { className: "title-m" }, I18nTranslate("transfer_responsibility_to")), /*#__PURE__*/ import_react$129.createElement("div", {
 					className: "ui-rights-user",
 					style: this._displayBlockIf(this.state.selectedEntity)
-				}, /*#__PURE__*/ import_react$127.createElement("a", {
+				}, /*#__PURE__*/ import_react$129.createElement("a", {
 					onClick: this.handleEntityClear,
 					className: "button small ui-rights-remove icon-close small",
 					title: I18nTranslate("permissions_table_remove_subject_btn")
-				}), /*#__PURE__*/ import_react$127.createElement("input", {
+				}), /*#__PURE__*/ import_react$129.createElement("input", {
 					type: "hidden",
 					name: "transfer_responsibility[entity]",
 					value: this.state.selectedEntity ? this.state.selectedEntity.uuid : ""
-				}), /*#__PURE__*/ import_react$127.createElement("input", {
+				}), /*#__PURE__*/ import_react$129.createElement("input", {
 					type: "hidden",
 					name: "transfer_responsibility[type]",
 					value: this.state.selectedEntity ? this.state.selectedEntity.type : ""
-				}), /*#__PURE__*/ import_react$127.createElement("span", { className: "text" }, this.state.selectedEntity ? this.state.selectedEntity.name : void 0)), /*#__PURE__*/ import_react$127.createElement("div", { style: this._displayBlockIf(!this.state.selectedEntity) }, /*#__PURE__*/ import_react$127.createElement(AutoCompleteWrapper, {
+				}), /*#__PURE__*/ import_react$129.createElement("span", { className: "text" }, this.state.selectedEntity ? this.state.selectedEntity.name : void 0)), /*#__PURE__*/ import_react$129.createElement("div", { style: this._displayBlockIf(!this.state.selectedEntity) }, /*#__PURE__*/ import_react$129.createElement(AutoCompleteWrapper, {
 					className: "block",
 					name: "transfer_responsibility[unused_look_at_the_hidden_user]",
 					resourceType: ["Delegations", "Users"],
 					onSelect: this.handleEntitySelect,
 					searchParams: { search_also_in_person: true },
 					positionRelative: true
-				})), /*#__PURE__*/ import_react$127.createElement("div", null, /*#__PURE__*/ import_react$127.createElement("h2", { className: "title-m ui-info-box-title mtm mbs" }, responsibles.length === 1 ? responsibles[0].uuid === currentUser.uuid ? interpolateSplit(I18nTranslate("transfer_responsibility_you_will_receive"), { name: responsibles[0].name }).join("") : interpolateSplit(I18nTranslate("transfer_responsibility_single_will_receive"), { name: responsibles[0].name }).join("") : I18nTranslate("transfer_responsibility_multiple_will_receive")), /*#__PURE__*/ import_react$127.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$127.createElement("tbody", null, /*#__PURE__*/ import_react$127.createElement("tr", null, /*#__PURE__*/ import_react$127.createElement("td", { style: {
+				})), /*#__PURE__*/ import_react$129.createElement("div", null, /*#__PURE__*/ import_react$129.createElement("h2", { className: "title-m ui-info-box-title mtm mbs" }, responsibles.length === 1 ? responsibles[0].uuid === currentUser.uuid ? interpolateSplit(I18nTranslate("transfer_responsibility_you_will_receive"), { name: responsibles[0].name }).join("") : interpolateSplit(I18nTranslate("transfer_responsibility_single_will_receive"), { name: responsibles[0].name }).join("") : I18nTranslate("transfer_responsibility_multiple_will_receive")), /*#__PURE__*/ import_react$129.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$129.createElement("tbody", null, /*#__PURE__*/ import_react$129.createElement("tr", null, /*#__PURE__*/ import_react$129.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, I18nTranslate("permission_name_get_metadata_and_previews")), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$127.createElement("td", { style: {
+				} }, I18nTranslate("permission_name_get_metadata_and_previews")), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$129.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, I18nTranslate("permission_name_get_full_size")) : void 0, /*#__PURE__*/ import_react$127.createElement("td", { style: {
+				} }, I18nTranslate("permission_name_get_full_size")) : void 0, /*#__PURE__*/ import_react$129.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, resourceType === "Collection" ? I18nTranslate("permission_name_edit_metadata_and_relations") : I18nTranslate("permission_name_edit_metadata")), /*#__PURE__*/ import_react$127.createElement("td", { style: {
+				} }, resourceType === "Collection" ? I18nTranslate("permission_name_edit_metadata_and_relations") : I18nTranslate("permission_name_edit_metadata")), /*#__PURE__*/ import_react$129.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, I18nTranslate("permission_name_edit_permissions"))), /*#__PURE__*/ import_react$127.createElement("tr", null, /*#__PURE__*/ import_react$127.createElement("td", { style: {
+				} }, I18nTranslate("permission_name_edit_permissions"))), /*#__PURE__*/ import_react$129.createElement("tr", null, /*#__PURE__*/ import_react$129.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, /*#__PURE__*/ import_react$127.createElement("input", {
+				} }, /*#__PURE__*/ import_react$129.createElement("input", {
 					type: "checkbox",
 					name: "transfer_responsibility[permissions][view]",
 					checked: this.state.permissionLevel >= 1,
 					onChange: (event) => this._onToggleCheckbox(1, event)
-				})), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$127.createElement("td", { style: {
+				})), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$129.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, /*#__PURE__*/ import_react$127.createElement("input", {
+				} }, /*#__PURE__*/ import_react$129.createElement("input", {
 					type: "checkbox",
 					name: "transfer_responsibility[permissions][download]",
 					checked: this.state.permissionLevel >= 2,
 					onChange: (event) => this._onToggleCheckbox(2, event)
-				})) : void 0, /*#__PURE__*/ import_react$127.createElement("td", { style: {
+				})) : void 0, /*#__PURE__*/ import_react$129.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, /*#__PURE__*/ import_react$127.createElement("input", {
+				} }, /*#__PURE__*/ import_react$129.createElement("input", {
 					type: "checkbox",
 					name: "transfer_responsibility[permissions][edit]",
 					checked: this.state.permissionLevel >= 3,
 					onChange: (event) => this._onToggleCheckbox(3, event)
-				})), /*#__PURE__*/ import_react$127.createElement("td", { style: {
+				})), /*#__PURE__*/ import_react$129.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, /*#__PURE__*/ import_react$127.createElement("input", {
+				} }, /*#__PURE__*/ import_react$129.createElement("input", {
 					type: "checkbox",
 					name: "transfer_responsibility[permissions][manage]",
 					checked: this.state.permissionLevel >= 4,
 					onChange: (event) => this._onToggleCheckbox(4, event)
-				})))))), /*#__PURE__*/ import_react$127.createElement("div", { className: "ui-actions phl pbl mtl" }, /*#__PURE__*/ import_react$127.createElement("a", {
+				})))))), /*#__PURE__*/ import_react$129.createElement("div", { className: "ui-actions phl pbl mtl" }, /*#__PURE__*/ import_react$129.createElement("a", {
 					className: "link weak",
 					onClick: onClose
-				}, " ", I18nTranslate("transfer_responsibility_cancel"), " "), /*#__PURE__*/ import_react$127.createElement("button", {
+				}, " ", I18nTranslate("transfer_responsibility_cancel"), " "), /*#__PURE__*/ import_react$129.createElement("button", {
 					disabled: !this.state.selectedEntity || this.state.saving,
 					className: "primary-button large",
 					onClick: this._onExplicitSubmit,
@@ -62749,13 +62749,13 @@ Zu diesem hinzufügen\
 		}, {});
 		return Object.values(map).sort((r) => r.name);
 	}
-	var import_react$126, BoxTransfer;
+	var import_react$128, BoxTransfer;
 	var init_BoxTransfer = __esmMin((() => {
-		import_react$126 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$128 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_Modal();
 		init_EditTransferResponsibility();
-		BoxTransfer = class extends import_react$126.Component {
+		BoxTransfer = class extends import_react$128.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -62764,7 +62764,7 @@ Zu diesem hinzufügen\
 				const resource_ids = map(transferResources, "uuid");
 				const responsibles = extractResponsibles(transferResources);
 				const batch_type = transferResources[0].type;
-				return /*#__PURE__*/ import_react$126.createElement(Modal, { widthInPixel: 800 }, /*#__PURE__*/ import_react$126.createElement(EditTransferResponsibility, {
+				return /*#__PURE__*/ import_react$128.createElement(Modal, { widthInPixel: 800 }, /*#__PURE__*/ import_react$128.createElement(EditTransferResponsibility, {
 					authToken: this.props.authToken,
 					batch: true,
 					resourceType: batch_type,
@@ -62782,14 +62782,14 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/ExploreLayout.jsx
 	var ExploreLayout_exports = /* @__PURE__ */ __exportAll({ default: () => ExploreLayout });
-	var import_react$125, ExploreLayout;
+	var import_react$127, ExploreLayout;
 	var init_ExploreLayout = __esmMin((() => {
-		import_react$125 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$127 = /* @__PURE__ */ __toESM(require_react$1());
 		ExploreLayout = ({ sections }) => {
-			return /*#__PURE__*/ import_react$125.createElement("div", null, /*#__PURE__*/ import_react$125.createElement("div", {
+			return /*#__PURE__*/ import_react$127.createElement("div", null, /*#__PURE__*/ import_react$127.createElement("div", {
 				className: "app-body-ui-container pts context-home",
 				style: { width: "1000px" }
-			}, /*#__PURE__*/ import_react$125.createElement("a", {
+			}, /*#__PURE__*/ import_react$127.createElement("a", {
 				className: "strong",
 				style: {
 					position: "relative",
@@ -62798,7 +62798,7 @@ Zu diesem hinzufügen\
 				href: "/explore"
 			}, "Zurück"), sections.map((section, index) => {
 				const list = [];
-				const separator = /*#__PURE__*/ import_react$125.createElement("hr", {
+				const separator = /*#__PURE__*/ import_react$127.createElement("hr", {
 					key: `separator_${index}`,
 					className: "separator"
 				});
@@ -62830,9 +62830,9 @@ Zu diesem hinzufügen\
 			suggestions: [defaultText, ...metaKey.copyright_notice_templates || []].filter(Boolean)
 		};
 	}
-	var import_react$124, import_prop_types$27, import_classnames$19, InputFieldText, InputWithSuggestions;
+	var import_react$126, import_prop_types$27, import_classnames$19, InputFieldText, InputWithSuggestions;
 	var init_input_field_text = __esmMin((() => {
-		import_react$124 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$126 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$27 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$19 = /* @__PURE__ */ __toESM(require_classnames());
 		init_downshift_esm();
@@ -62841,7 +62841,7 @@ Zu diesem hinzufügen\
 			const { name, type, value, placeholder, className, metaKey, onChange, batch } = props;
 			const { defaultText, suggestions } = getDefaultTextAndSuggestionsFor(metaKey);
 			const defaultValue = batch ? "" : defaultText;
-			if (suggestions.length > 0) return /*#__PURE__*/ import_react$124.createElement(InputWithSuggestions, {
+			if (suggestions.length > 0) return /*#__PURE__*/ import_react$126.createElement(InputWithSuggestions, {
 				name,
 				value,
 				defaultValue,
@@ -62858,7 +62858,7 @@ Zu diesem hinzufügen\
 					placeholder,
 					className: (0, import_classnames$19.default)(className, "block")
 				};
-				return /*#__PURE__*/ import_react$124.createElement(Element, _extends$16({
+				return /*#__PURE__*/ import_react$126.createElement(Element, _extends$16({
 					type: type || "text",
 					defaultValue: value || defaultValue,
 					style: {
@@ -62878,23 +62878,23 @@ Zu diesem hinzufügen\
 					if (onChange) onChange({ target: { value: selectedItem } });
 				}
 			});
-			return /*#__PURE__*/ import_react$124.createElement("div", {
+			return /*#__PURE__*/ import_react$126.createElement("div", {
 				className: "ui-autocomplete-holder ui-autocomplete-position-relative",
 				style: { position: "relative" }
-			}, /*#__PURE__*/ import_react$124.createElement("input", getInputProps({
+			}, /*#__PURE__*/ import_react$126.createElement("input", getInputProps({
 				type: "text",
 				name,
 				placeholder,
 				className: (0, import_classnames$19.default)(className, "block", "ui-typeahead-input"),
 				"aria-label": placeholder || name || "search",
 				"data-autocomplete-for": name
-			})), /*#__PURE__*/ import_react$124.createElement("ul", _extends$16({}, getMenuProps(), {
+			})), /*#__PURE__*/ import_react$126.createElement("ul", _extends$16({}, getMenuProps(), {
 				className: (0, import_classnames$19.default)("ui-autocomplete", "ui-menu", "ui-autocomplete-open-width", {
 					hidden: !isOpen || suggestions.length === 0,
 					"tt-open": isOpen
 				}),
 				style: { display: isOpen && suggestions.length > 0 ? void 0 : "none" }
-			}), isOpen && suggestions.map((item, index) => /*#__PURE__*/ import_react$124.createElement("li", _extends$16({ key: index }, getItemProps({
+			}), isOpen && suggestions.map((item, index) => /*#__PURE__*/ import_react$126.createElement("li", _extends$16({ key: index }, getItemProps({
 				item,
 				index
 			}), { className: (0, import_classnames$19.default)("ui-menu-item", { "ui-autocomplete-cursor": highlightedIndex === index }, "tt-selectable") }), markMatchingFragment(item, inputValue)))));
@@ -62910,20 +62910,20 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/input-text-async.jsx
-	var import_react$123, import_prop_types$26, InputTextAsync;
+	var import_react$125, import_prop_types$26, InputTextAsync;
 	var init_input_text_async = __esmMin((() => {
-		import_react$123 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$125 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$26 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_input_field_text();
 		InputTextAsync = ({ name, values: initialValues, metaKey, onChange, subForms, batch }) => {
-			const [values, setValues] = (0, import_react$123.useState)(initialValues);
+			const [values, setValues] = (0, import_react$125.useState)(initialValues);
 			const handleChange = (event) => {
 				const newValues = [event.target.value];
 				setValues(newValues);
 				if (onChange) onChange(newValues);
 			};
 			const value = values.length === 0 ? "" : values[0];
-			return /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item-values" }, /*#__PURE__*/ import_react$123.createElement(InputFieldText, {
+			return /*#__PURE__*/ import_react$125.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$125.createElement("div", { className: "form-item-values" }, /*#__PURE__*/ import_react$125.createElement(InputFieldText, {
 				onChange: handleChange,
 				name,
 				value,
@@ -62961,9 +62961,9 @@ Zu diesem hinzufügen\
 			values: [value]
 		};
 	}
-	var import_react$122, import_prop_types$25, t$4, SUBTYPES, formatDuration, parseDuration, InputTextDate;
+	var import_react$124, import_prop_types$25, t$4, SUBTYPES, formatDuration, parseDuration, InputTextDate;
 	var init_InputTextDate = __esmMin((() => {
-		import_react$122 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$124 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$25 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_lodash();
 		init_ui();
@@ -62976,7 +62976,7 @@ Zu diesem hinzufügen\
 		];
 		formatDuration = (DateValues) => compact(DateValues).join(" - ");
 		parseDuration = (MdValues) => isString(MdValues[0]) && MdValues[0].split(" - ");
-		InputTextDate = class extends import_react$122.Component {
+		InputTextDate = class extends import_react$124.Component {
 			constructor(props) {
 				super(props);
 				const { subType, values } = getInitialState(props.values);
@@ -63014,21 +63014,21 @@ Zu diesem hinzufügen\
 				const { id, name } = props;
 				const { subType, values } = state;
 				const stringifiedValue = this._formatValues(values);
-				return /*#__PURE__*/ import_react$122.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$122.createElement("input", {
+				return /*#__PURE__*/ import_react$124.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$124.createElement("input", {
 					type: "hidden",
 					name,
 					value: stringifiedValue
-				}), /*#__PURE__*/ import_react$122.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$122.createElement("div", { className: "mrs" }, /*#__PURE__*/ import_react$122.createElement("select", {
+				}), /*#__PURE__*/ import_react$124.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$124.createElement("div", { className: "mrs" }, /*#__PURE__*/ import_react$124.createElement("select", {
 					id: `${id}.select-input-type`,
 					className: "block",
 					onChange: this._onSelectSubtype,
 					value: subType
-				}, SUBTYPES.map((type) => /*#__PURE__*/ import_react$122.createElement("option", {
+				}, SUBTYPES.map((type) => /*#__PURE__*/ import_react$124.createElement("option", {
 					value: type,
 					key: type
-				}, t$4(`meta_data_input_date_type_${type}`)))))), /*#__PURE__*/ import_react$122.createElement("div", null, (() => {
+				}, t$4(`meta_data_input_date_type_${type}`)))))), /*#__PURE__*/ import_react$124.createElement("div", null, (() => {
 					switch (subType) {
-						case "text": return /*#__PURE__*/ import_react$122.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$122.createElement("input", {
+						case "text": return /*#__PURE__*/ import_react$124.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$124.createElement("input", {
 							type: "text",
 							className: "block",
 							placeholder: t$4("meta_data_input_date_placeholder_timestamp"),
@@ -63038,7 +63038,7 @@ Zu diesem hinzufügen\
 								this.inputEl = el;
 							}
 						}));
-						case "timestamp": return /*#__PURE__*/ import_react$122.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$122.createElement(DatePicker, {
+						case "timestamp": return /*#__PURE__*/ import_react$124.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$124.createElement(DatePicker, {
 							id,
 							className: "block",
 							value: state.values[0],
@@ -63048,7 +63048,7 @@ Zu diesem hinzufügen\
 								this.inputEl = el;
 							}
 						}));
-						case "duration": return /*#__PURE__*/ import_react$122.createElement("div", null, /*#__PURE__*/ import_react$122.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$122.createElement("div", { className: "mrx" }, /*#__PURE__*/ import_react$122.createElement(DatePicker, {
+						case "duration": return /*#__PURE__*/ import_react$124.createElement("div", null, /*#__PURE__*/ import_react$124.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$124.createElement("div", { className: "mrx" }, /*#__PURE__*/ import_react$124.createElement(DatePicker, {
 							id: `${id}.from`,
 							className: "block",
 							value: state.values[0],
@@ -63057,7 +63057,7 @@ Zu diesem hinzufügen\
 							ref: (el) => {
 								this.inputEl = el;
 							}
-						}))), /*#__PURE__*/ import_react$122.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$122.createElement("div", { className: "mlx" }, /*#__PURE__*/ import_react$122.createElement(DatePicker, {
+						}))), /*#__PURE__*/ import_react$124.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$124.createElement("div", { className: "mlx" }, /*#__PURE__*/ import_react$124.createElement(DatePicker, {
 							id: `${id}.to`,
 							className: "block",
 							value: state.values[1],
@@ -63876,10 +63876,10 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/new-person-widget.jsx
-	var import_react$121, import_prop_types$24, import_Tab$2, import_Nav, import_NavItem, import_ui_components$16, PEOPLE_SUBTYPES, SUPPORTED_PEOPLE_SUBTYPES, NewPersonWidget;
+	var import_react$123, import_prop_types$24, import_Tab$2, import_Nav, import_NavItem, import_ui_components$16, PEOPLE_SUBTYPES, SUPPORTED_PEOPLE_SUBTYPES, NewPersonWidget;
 	var init_new_person_widget = __esmMin((() => {
 		init_lodash();
-		import_react$121 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$123 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$24 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		import_Tab$2 = /* @__PURE__ */ __toESM(require_Tab());
@@ -63889,7 +63889,7 @@ Zu diesem hinzufügen\
 		import_ui_components$16 = /* @__PURE__ */ __toESM(require_ui_components());
 		({PEOPLE_SUBTYPES: PEOPLE_SUBTYPES} = MadekPropTypes);
 		SUPPORTED_PEOPLE_SUBTYPES = ["Person", "PeopleGroup"];
-		NewPersonWidget = class extends import_react$121.Component {
+		NewPersonWidget = class extends import_react$123.Component {
 			static propTypes = {
 				id: import_prop_types$24.default.string.isRequired,
 				onAddValue: import_prop_types$24.default.func.isRequired,
@@ -63921,7 +63921,7 @@ Zu diesem hinzufügen\
 				return this.setState({ newPerson: assignIn(this.state.newPerson, set({}, key, event.target.value)) });
 			};
 			_inputField = (key) => {
-				return /*#__PURE__*/ import_react$121.createElement("input", {
+				return /*#__PURE__*/ import_react$123.createElement("input", {
 					type: "text",
 					className: "block",
 					name: key,
@@ -63942,44 +63942,44 @@ Zu diesem hinzufügen\
 				if (!some(allowedTypes, (t) => includes(SUPPORTED_PEOPLE_SUBTYPES, t))) return false;
 				else {
 					const paneClass = "ui-container pam bordered rounded-right rounded-bottom";
-					return /*#__PURE__*/ import_react$121.createElement("div", { onKeyPress: this._onKeyPress }, /*#__PURE__*/ import_react$121.createElement("a", {
+					return /*#__PURE__*/ import_react$123.createElement("div", { onKeyPress: this._onKeyPress }, /*#__PURE__*/ import_react$123.createElement("a", {
 						className: "button small form-widget-toggle",
 						onClick: this._toggleOpen
-					}, /*#__PURE__*/ import_react$121.createElement(import_ui_components$16.Icon, {
+					}, /*#__PURE__*/ import_react$123.createElement(import_ui_components$16.Icon, {
 						i: "privacy-private",
 						mods: "small"
-					}), !this.state.isOpen ? ` ${t$6("meta_data_input_new_person_toggle")}` : void 0), this.state.isOpen ? /*#__PURE__*/ import_react$121.createElement(import_Tab$2.default.Container, {
+					}), !this.state.isOpen ? ` ${t$6("meta_data_input_new_person_toggle")}` : void 0), this.state.isOpen ? /*#__PURE__*/ import_react$123.createElement(import_Tab$2.default.Container, {
 						id,
 						className: "form-widget",
 						defaultActiveKey: "Person",
 						onSelect: this._onTabChange
-					}, /*#__PURE__*/ import_react$121.createElement("div", null, /*#__PURE__*/ import_react$121.createElement(import_Nav.default, { className: "ui-tabs ui-container" }, /*#__PURE__*/ import_react$121.createElement(import_NavItem.default, {
+					}, /*#__PURE__*/ import_react$123.createElement("div", null, /*#__PURE__*/ import_react$123.createElement(import_Nav.default, { className: "ui-tabs ui-container" }, /*#__PURE__*/ import_react$123.createElement(import_NavItem.default, {
 						eventKey: "Person",
 						className: "ui-tabs-item mll pls"
 					}, `\
 Person\
-`), /*#__PURE__*/ import_react$121.createElement(import_NavItem.default, {
+`), /*#__PURE__*/ import_react$123.createElement(import_NavItem.default, {
 						eventKey: "PeopleGroup",
 						className: "ui-tabs-item"
 					}, `\
 Group\
-`)), /*#__PURE__*/ import_react$121.createElement(import_Tab$2.default.Content, {
+`)), /*#__PURE__*/ import_react$123.createElement(import_Tab$2.default.Content, {
 						animation: false,
 						className: "ui-tab-content mbs"
 					}, allowedTypes.map((type) => {
-						if (type === "Person") return /*#__PURE__*/ import_react$121.createElement(import_Tab$2.default.Pane, {
+						if (type === "Person") return /*#__PURE__*/ import_react$123.createElement(import_Tab$2.default.Pane, {
 							eventKey: type,
 							className: paneClass,
 							key: type
-						}, /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$121.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_first_name")), /*#__PURE__*/ import_react$121.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$121.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_last_name")), /*#__PURE__*/ import_react$121.createElement("div", { className: "form-item" }, this._inputField("last_name"))), /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$121.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_pseudonym")), /*#__PURE__*/ import_react$121.createElement("div", { className: "form-item" }, this._inputField("pseudonym"))), /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$121.createElement("button", {
+						}, /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$123.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_first_name")), /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$123.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_last_name")), /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, this._inputField("last_name"))), /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$123.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_pseudonym")), /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, this._inputField("pseudonym"))), /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$123.createElement("button", {
 							className: "add-person button block",
 							onClick: this._onSubmit
 						}, t$6("meta_data_input_new_person_add"))));
-						else if (type === "PeopleGroup") return /*#__PURE__*/ import_react$121.createElement(import_Tab$2.default.Pane, {
+						else if (type === "PeopleGroup") return /*#__PURE__*/ import_react$123.createElement(import_Tab$2.default.Pane, {
 							eventKey: type,
 							className: paneClass,
 							key: type
-						}, /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$121.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_group_name")), /*#__PURE__*/ import_react$121.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$121.createElement("button", {
+						}, /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$123.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_group_name")), /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$123.createElement("button", {
 							className: "add-group button block",
 							onClick: this._onSubmit
 						}, t$6("meta_data_input_new_group_add"))));
@@ -63990,17 +63990,17 @@ Group\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/input-resources.jsx
-	var import_react$120, import_prop_types$23, AutoComplete$2, InputResources;
+	var import_react$122, import_prop_types$23, AutoComplete$2, InputResources;
 	var init_input_resources = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$120 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$122 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$23 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_decorate_resource_names();
 		init_new_person_widget();
 		AutoComplete$2 = null;
-		InputResources = class extends import_react$120.Component {
+		InputResources = class extends import_react$122.Component {
 			static propTypes = {
 				name: import_prop_types$23.default.string.isRequired,
 				resourceType: import_prop_types$23.default.string.isRequired,
@@ -64190,22 +64190,22 @@ Group\
 				values = compact(this.state.values || values);
 				const { selectedRole, roles } = this.state;
 				if (!AutoComplete$2) return null;
-				return /*#__PURE__*/ import_react$120.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$120.createElement("div", { className: "multi-select" }, /*#__PURE__*/ import_react$120.createElement("ul", { className: "multi-select-holder" }, !withRoles && map(values, (item, i) => {
+				return /*#__PURE__*/ import_react$122.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$122.createElement("div", { className: "multi-select" }, /*#__PURE__*/ import_react$122.createElement("ul", { className: "multi-select-holder" }, !withRoles && map(values, (item, i) => {
 					const remover = curry$1(_onItemRemove)(i);
 					const style = item.isNew ? { fontStyle: "italic" } : {};
-					return /*#__PURE__*/ import_react$120.createElement("li", {
+					return /*#__PURE__*/ import_react$122.createElement("li", {
 						className: "multi-select-tag",
 						style,
 						key: item.uuid || (typeof item.getId === "function" ? item.getId() : void 0) || JSON.stringify(item)
-					}, decorate_resource_names_default(item), /*#__PURE__*/ import_react$120.createElement("a", {
+					}, decorate_resource_names_default(item), /*#__PURE__*/ import_react$122.createElement("a", {
 						className: "multi-select-tag-remove",
 						onClick: remover
-					}, /*#__PURE__*/ import_react$120.createElement("i", { className: "icon-close" })));
+					}, /*#__PURE__*/ import_react$122.createElement("i", { className: "icon-close" })));
 				}), (() => {
 					if (multiple || isEmpty$1(values)) {
 						let addNewValue;
 						if (extensible && resourceType === "Keywords") addNewValue = _onNewKeyword;
-						return /*#__PURE__*/ import_react$120.createElement("div", null, /*#__PURE__*/ import_react$120.createElement("li", { className: "multi-select-input-holder mbs" }, /*#__PURE__*/ import_react$120.createElement(AutoComplete$2, {
+						return /*#__PURE__*/ import_react$122.createElement("div", null, /*#__PURE__*/ import_react$122.createElement("li", { className: "multi-select-input-holder mbs" }, /*#__PURE__*/ import_react$122.createElement(AutoComplete$2, {
 							className: "multi-select-input",
 							name,
 							resourceType,
@@ -64217,28 +64217,28 @@ Group\
 							onAddValue: addNewValue,
 							ref: "ListAdder",
 							suggestionRenderer: autoCompleteSuggestionRenderer
-						}), /*#__PURE__*/ import_react$120.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" })), resourceType === "People" ? /*#__PURE__*/ import_react$120.createElement(NewPersonWidget, {
+						}), /*#__PURE__*/ import_react$122.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" })), resourceType === "People" ? /*#__PURE__*/ import_react$122.createElement(NewPersonWidget, {
 							id: `${snakeCase$1(name)}_new_person`,
 							allowedTypes,
 							onAddValue: _onNewPerson
 						}) : void 0, (() => {
 							if (withRoles && present(this.state.editedItem)) {
 								const { _onRoleSelect, _onNewRole } = this;
-								return /*#__PURE__*/ import_react$120.createElement("div", { className: "multi-select mts" }, /*#__PURE__*/ import_react$120.createElement("label", { className: "form-label pvs phn" }, present(this.state.editedRole) ? t$6("meta_data_role_edit_heading") : t$6("meta_data_role_add_heading"), /*#__PURE__*/ import_react$120.createElement("strong", null, " ", decorate_resource_names_default(this.state.editedItem, false))), /*#__PURE__*/ import_react$120.createElement("div", {
+								return /*#__PURE__*/ import_react$122.createElement("div", { className: "multi-select mts" }, /*#__PURE__*/ import_react$122.createElement("label", { className: "form-label pvs phn" }, present(this.state.editedRole) ? t$6("meta_data_role_edit_heading") : t$6("meta_data_role_add_heading"), /*#__PURE__*/ import_react$122.createElement("strong", null, " ", decorate_resource_names_default(this.state.editedItem, false))), /*#__PURE__*/ import_react$122.createElement("div", {
 									className: "mbs",
 									style: {
 										display: "flex",
 										gap: "1.5rem"
 									}
-								}, /*#__PURE__*/ import_react$120.createElement("div", {
+								}, /*#__PURE__*/ import_react$122.createElement("div", {
 									style: { flex: "40% 1 0" },
 									className: "ptx ui-role-select mbs"
-								}, selectedRole ? /*#__PURE__*/ import_react$120.createElement("div", { style: {
+								}, selectedRole ? /*#__PURE__*/ import_react$122.createElement("div", { style: {
 									backgroundImage: "linear-gradient(to top, #eeeeee, #f3f3f3)",
 									border: "1px solid #eeeeee",
 									borderRadius: "5px",
 									padding: "0 5px"
-								} }, selectedRole.label) : void 0, /*#__PURE__*/ import_react$120.createElement("div", { className: "multi-select-input-holder mtn" }, /*#__PURE__*/ import_react$120.createElement(AutoComplete$2, {
+								} }, selectedRole.label) : void 0, /*#__PURE__*/ import_react$122.createElement("div", { className: "multi-select-input-holder mtn" }, /*#__PURE__*/ import_react$122.createElement(AutoComplete$2, {
 									className: "multi-select-input mbx",
 									name: "role_id",
 									resourceType: "Roles",
@@ -64250,61 +64250,61 @@ Group\
 									},
 									onAddValue: metaKey.is_extensible ? _onNewRole : void 0,
 									ref: "roleSelect"
-								}), /*#__PURE__*/ import_react$120.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" }))), /*#__PURE__*/ import_react$120.createElement("div", { style: { flex: "60% 0 1" } }, metaKey.is_extensible ? t$6("meta_data_extensible_role_choose_label") : t$6("meta_data_role_choose_label"))), /*#__PURE__*/ import_react$120.createElement("div", { className: "ui-form-group limited-width-s pan" }, /*#__PURE__*/ import_react$120.createElement("button", {
+								}), /*#__PURE__*/ import_react$122.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" }))), /*#__PURE__*/ import_react$122.createElement("div", { style: { flex: "60% 0 1" } }, metaKey.is_extensible ? t$6("meta_data_extensible_role_choose_label") : t$6("meta_data_role_choose_label"))), /*#__PURE__*/ import_react$122.createElement("div", { className: "ui-form-group limited-width-s pan" }, /*#__PURE__*/ import_react$122.createElement("button", {
 									className: "add-person button",
 									onClick: this._onRoleSave,
 									ref: "saveRoleButton"
-								}, t$6("meta_data_input_person_save")), /*#__PURE__*/ import_react$120.createElement("button", {
+								}, t$6("meta_data_input_person_save")), /*#__PURE__*/ import_react$122.createElement("button", {
 									className: "update-person button mls",
 									onClick: this._onRoleCancel
 								}, t$6("meta_data_form_cancel"))));
 							}
-						})(), withRoles ? /*#__PURE__*/ import_react$120.createElement("table", { className: "block mts" }, /*#__PURE__*/ import_react$120.createElement("tbody", null, values.map((item, i) => {
+						})(), withRoles ? /*#__PURE__*/ import_react$122.createElement("table", { className: "block mts" }, /*#__PURE__*/ import_react$122.createElement("tbody", null, values.map((item, i) => {
 							let role;
-							return /*#__PURE__*/ import_react$120.createElement("tr", { key: i }, /*#__PURE__*/ import_react$120.createElement("td", { className: "pas" }, /*#__PURE__*/ import_react$120.createElement("strong", { className: "mrs" }, i + 1, "."), decorate_resource_names_default(item), (() => {
+							return /*#__PURE__*/ import_react$122.createElement("tr", { key: i }, /*#__PURE__*/ import_react$122.createElement("td", { className: "pas" }, /*#__PURE__*/ import_react$122.createElement("strong", { className: "mrs" }, i + 1, "."), decorate_resource_names_default(item), (() => {
 								if (present(item.role)) {
 									({role: role} = item);
-									return /*#__PURE__*/ import_react$120.createElement("span", {
+									return /*#__PURE__*/ import_react$122.createElement("span", {
 										className: "mbs",
 										style: { float: "right" },
 										key: role.id
-									}, /*#__PURE__*/ import_react$120.createElement("a", {
+									}, /*#__PURE__*/ import_react$122.createElement("a", {
 										href: "#",
 										onClick: (e) => this._onRoleEdit(role, i, e),
 										className: "mls button small"
-									}, t$6("meta_data_role_edit_btn")), /*#__PURE__*/ import_react$120.createElement("a", {
+									}, t$6("meta_data_role_edit_btn")), /*#__PURE__*/ import_react$122.createElement("a", {
 										href: "#",
 										onClick: (e) => this._onRoleRemove(i, e),
 										className: "mlx button small"
 									}, t$6("meta_data_role_remove_btn")));
 								}
-							})()), /*#__PURE__*/ import_react$120.createElement("td", {
+							})()), /*#__PURE__*/ import_react$122.createElement("td", {
 								style: { width: "160px" },
 								className: "pvs by-center"
-							}, present(item.role) ? /*#__PURE__*/ import_react$120.createElement("a", {
+							}, present(item.role) ? /*#__PURE__*/ import_react$122.createElement("a", {
 								href: "#",
 								onClick: (e) => this._onRoleAdd(i, e),
 								className: "button small"
-							}, "+ ", t$6("meta_data_role_add_another_btn")) : void 0, !present(item.role) ? /*#__PURE__*/ import_react$120.createElement("a", {
+							}, "+ ", t$6("meta_data_role_add_another_btn")) : void 0, !present(item.role) ? /*#__PURE__*/ import_react$122.createElement("a", {
 								href: "#",
 								onClick: (e) => this._onRoleAdd(i, e),
 								className: "button small"
-							}, "+ ", t$6("meta_data_role_add_btn")) : void 0), /*#__PURE__*/ import_react$120.createElement("td", {
+							}, "+ ", t$6("meta_data_role_add_btn")) : void 0), /*#__PURE__*/ import_react$122.createElement("td", {
 								style: { width: "32px" },
 								className: "pvs by-center"
-							}, i < values.length - 1 && /*#__PURE__*/ import_react$120.createElement("a", {
+							}, i < values.length - 1 && /*#__PURE__*/ import_react$122.createElement("a", {
 								className: "button small",
 								onClick: (e) => this._handleMoveDown(i, e)
-							}, /*#__PURE__*/ import_react$120.createElement("span", { className: "icon-arrow-down" }))), /*#__PURE__*/ import_react$120.createElement("td", {
+							}, /*#__PURE__*/ import_react$122.createElement("span", { className: "icon-arrow-down" }))), /*#__PURE__*/ import_react$122.createElement("td", {
 								style: { width: "32px" },
 								className: "pvs by-center"
-							}, i > 0 && /*#__PURE__*/ import_react$120.createElement("a", {
+							}, i > 0 && /*#__PURE__*/ import_react$122.createElement("a", {
 								className: "button small",
 								onClick: (e) => this._handleMoveUp(i, e)
-							}, /*#__PURE__*/ import_react$120.createElement("span", { className: "icon-arrow-up" }))), /*#__PURE__*/ import_react$120.createElement("td", {
+							}, /*#__PURE__*/ import_react$122.createElement("span", { className: "icon-arrow-up" }))), /*#__PURE__*/ import_react$122.createElement("td", {
 								style: { width: "30px" },
 								className: "pas by-center"
-							}, /*#__PURE__*/ import_react$120.createElement("a", { onClick: (e) => this._onItemRemove(i, e) }, /*#__PURE__*/ import_react$120.createElement("i", { className: "icon-close" }))));
+							}, /*#__PURE__*/ import_react$122.createElement("a", { onClick: (e) => this._onItemRemove(i, e) }, /*#__PURE__*/ import_react$122.createElement("i", { className: "icon-close" }))));
 						}))) : void 0);
 					}
 				})())), map(presence(values) || [""], function(item) {
@@ -64321,14 +64321,14 @@ Group\
 						}));
 						else return [[name, item.val]];
 					})();
-					return [keyValuePairs.length > 1 ? /*#__PURE__*/ import_react$120.createElement("input", {
+					return [keyValuePairs.length > 1 ? /*#__PURE__*/ import_react$122.createElement("input", {
 						type: "hidden",
 						key: "_hashmarker",
 						name: `${name}[_hash]`,
 						defaultValue: "_start"
 					}) : void 0, map(keyValuePairs, function(item) {
 						const [fieldName, value] = Array.from(item);
-						return /*#__PURE__*/ import_react$120.createElement("input", {
+						return /*#__PURE__*/ import_react$122.createElement("input", {
 							type: "hidden",
 							key: value || `${name}_${fieldName}_empty`,
 							name: fieldName,
@@ -64341,14 +64341,14 @@ Group\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/input-keywords.jsx
-	var import_react$119, import_prop_types$22, InputKeywords;
+	var import_react$121, import_prop_types$22, InputKeywords;
 	var init_input_keywords = __esmMin((() => {
 		init_lodash();
-		import_react$119 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$121 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$22 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_madek_prop_types();
 		init_input_resources();
-		InputKeywords = class extends import_react$119.Component {
+		InputKeywords = class extends import_react$121.Component {
 			static propTypes = {
 				name: import_prop_types$22.default.string.isRequired,
 				values: import_prop_types$22.default.array.isRequired,
@@ -64378,22 +64378,22 @@ Group\
 						minLength: 0,
 						localData: keywords
 					};
-					return /*#__PURE__*/ import_react$119.createElement(InputResources, Object.assign({}, this.props, {
+					return /*#__PURE__*/ import_react$121.createElement(InputResources, Object.assign({}, this.props, {
 						resourceType: "Keywords",
 						searchParams: params,
 						extensible: meta_key.is_extensible,
 						autocompleteConfig
 					}));
-				} else return /*#__PURE__*/ import_react$119.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$119.createElement("input", {
+				} else return /*#__PURE__*/ import_react$121.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$121.createElement("input", {
 					type: "hidden",
 					name,
 					value: ""
 				}), keywords.map((kw) => {
 					const isInitiallySelected = some(values, { uuid: kw.uuid });
-					return /*#__PURE__*/ import_react$119.createElement("label", {
+					return /*#__PURE__*/ import_react$121.createElement("label", {
 						className: "col2of6",
 						key: kw.uuid
-					}, /*#__PURE__*/ import_react$119.createElement("input", {
+					}, /*#__PURE__*/ import_react$121.createElement("input", {
 						type: multiple ? "checkbox" : "radio",
 						onChange: this.props.onChange ? this._onChange : null,
 						onClick: this.props.onChange && !multiple ? this._onChange : null,
@@ -64416,17 +64416,17 @@ Group\
 			return n;
 		}, _extends$15.apply(null, arguments);
 	}
-	var import_react$118, autoCompleteSuggestionRenderer, InputPeople;
+	var import_react$120, autoCompleteSuggestionRenderer, InputPeople;
 	var init_input_people = __esmMin((() => {
-		import_react$118 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$120 = /* @__PURE__ */ __toESM(require_react$1());
 		init_input_resources();
 		init_typeahead_utils();
 		autoCompleteSuggestionRenderer = (person, { inputValue }) => {
 			const infos = person.info || [];
-			return /*#__PURE__*/ import_react$118.createElement("div", { className: "ui-autocomplete__person-suggestion" }, /*#__PURE__*/ import_react$118.createElement("div", { className: "ui-autocomplete__person-suggestion__col1" }, markMatchingFragment(person.name, inputValue)), /*#__PURE__*/ import_react$118.createElement("div", { className: "ui-autocomplete__person-suggestion__col2" }, infos.map((value, index) => /*#__PURE__*/ import_react$118.createElement(import_react$118.Fragment, { key: index }, /*#__PURE__*/ import_react$118.createElement("span", null, value), index < infos.length - 1 && ", "))));
+			return /*#__PURE__*/ import_react$120.createElement("div", { className: "ui-autocomplete__person-suggestion" }, /*#__PURE__*/ import_react$120.createElement("div", { className: "ui-autocomplete__person-suggestion__col1" }, markMatchingFragment(person.name, inputValue)), /*#__PURE__*/ import_react$120.createElement("div", { className: "ui-autocomplete__person-suggestion__col2" }, infos.map((value, index) => /*#__PURE__*/ import_react$120.createElement(import_react$120.Fragment, { key: index }, /*#__PURE__*/ import_react$120.createElement("span", null, value), index < infos.length - 1 && ", "))));
 		};
 		InputPeople = ({ metaKey, ...rest }) => {
-			return /*#__PURE__*/ import_react$118.createElement(InputResources, _extends$15({}, rest, {
+			return /*#__PURE__*/ import_react$120.createElement(InputResources, _extends$15({}, rest, {
 				metaKey,
 				resourceType: "People",
 				searchParams: { meta_key_id: metaKey.uuid },
@@ -64463,14 +64463,14 @@ Group\
 			return String(value);
 		}
 	}
-	var import_react$117, import_prop_types$21, import_classnames$18, InputJsonText;
+	var import_react$119, import_prop_types$21, import_classnames$18, InputJsonText;
 	var init_InputJsonText = __esmMin((() => {
-		import_react$117 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$119 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$21 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$18 = /* @__PURE__ */ __toESM(require_classnames());
 		init_lodash();
 		init_i18n_translate();
-		InputJsonText = class extends import_react$117.Component {
+		InputJsonText = class extends import_react$119.Component {
 			constructor(props) {
 				super(props);
 				const value = ensureText(head(props.values));
@@ -64503,7 +64503,7 @@ Group\
 				const { id, name } = props;
 				const { value, jsonError } = state;
 				const stringifiedValue = formatValue(value);
-				return /*#__PURE__*/ import_react$117.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$117.createElement("textarea", {
+				return /*#__PURE__*/ import_react$119.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$119.createElement("textarea", {
 					id,
 					name,
 					className: (0, import_classnames$18.default)("block code", { error: !!jsonError }),
@@ -64513,7 +64513,7 @@ Group\
 					},
 					onChange: (e) => this._onInputChange(e.target.value),
 					value: stringifiedValue || ""
-				}), !!jsonError && /*#__PURE__*/ import_react$117.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_data_input_json_err_prefix"), jsonError));
+				}), !!jsonError && /*#__PURE__*/ import_react$119.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_data_input_json_err_prefix"), jsonError));
 			}
 		};
 		InputJsonText.propTypes = {
@@ -64526,13 +64526,13 @@ Group\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/InputMediaEntry.jsx
-	var import_react$116, import_prop_types$20, InputMediaEntry;
+	var import_react$118, import_prop_types$20, InputMediaEntry;
 	var init_InputMediaEntry = __esmMin((() => {
-		import_react$116 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$118 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$20 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_lodash();
 		init_i18n_translate();
-		InputMediaEntry = class extends import_react$116.Component {
+		InputMediaEntry = class extends import_react$118.Component {
 			constructor(props) {
 				super(props);
 				const uuid = get$1(props.values, "0.0.uuid", "");
@@ -64571,16 +64571,16 @@ Group\
 			}
 			render({ name } = this.props) {
 				const { uuidError, values: { uuid, description } } = this.state;
-				return /*#__PURE__*/ import_react$116.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$116.createElement("input", {
+				return /*#__PURE__*/ import_react$118.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$118.createElement("input", {
 					type: "hidden",
 					name,
 					value: this.prepareValue()
-				}), /*#__PURE__*/ import_react$116.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_id"), /*#__PURE__*/ import_react$116.createElement("input", {
+				}), /*#__PURE__*/ import_react$118.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_id"), /*#__PURE__*/ import_react$118.createElement("input", {
 					type: "text",
 					value: uuid || "",
 					className: "block",
 					onChange: this.handleResourceIdChange
-				})), uuidError && /*#__PURE__*/ import_react$116.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_datum_media_entry_err_uuid_invalid")), /*#__PURE__*/ import_react$116.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_string"), /*#__PURE__*/ import_react$116.createElement("input", {
+				})), uuidError && /*#__PURE__*/ import_react$118.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_datum_media_entry_err_uuid_invalid")), /*#__PURE__*/ import_react$118.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_string"), /*#__PURE__*/ import_react$118.createElement("input", {
 					type: "text",
 					value: description || "",
 					className: "block",
@@ -64598,9 +64598,9 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/InputMetaDatum.jsx
 	var InputMetaDatum_exports = /* @__PURE__ */ __exportAll({ default: () => InputMetaDatum });
-	var import_react$115, import_prop_types$19, InputMetaDatum;
+	var import_react$117, import_prop_types$19, InputMetaDatum;
 	var init_InputMetaDatum = __esmMin((() => {
-		import_react$115 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$117 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$19 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_input_text_async();
 		init_InputTextDate();
@@ -64621,7 +64621,7 @@ Group\
 				}
 			})();
 			const values = model.values.map((value) => value);
-			if (resourceType === "Text") return /*#__PURE__*/ import_react$115.createElement(InputTextAsync, {
+			if (resourceType === "Text") return /*#__PURE__*/ import_react$117.createElement(InputTextAsync, {
 				metaKey,
 				name,
 				values,
@@ -64629,14 +64629,14 @@ Group\
 				subForms,
 				batch
 			});
-			else if (resourceType === "TextDate") return /*#__PURE__*/ import_react$115.createElement(InputTextDate, {
+			else if (resourceType === "TextDate") return /*#__PURE__*/ import_react$117.createElement(InputTextDate, {
 				onChange,
 				id,
 				name,
 				values,
 				subForms
 			});
-			else if (resourceType === "JSON") return /*#__PURE__*/ import_react$115.createElement(InputJsonText, {
+			else if (resourceType === "JSON") return /*#__PURE__*/ import_react$117.createElement(InputJsonText, {
 				metaKey,
 				id,
 				name,
@@ -64644,7 +64644,7 @@ Group\
 				onChange,
 				subForms
 			});
-			else if (resourceType === "People") return /*#__PURE__*/ import_react$115.createElement(InputPeople, {
+			else if (resourceType === "People") return /*#__PURE__*/ import_react$117.createElement(InputPeople, {
 				metaKey,
 				onChange,
 				name,
@@ -64653,7 +64653,7 @@ Group\
 				subForms,
 				withRoles: metaKey.with_roles
 			});
-			else if (resourceType === "Keywords") return /*#__PURE__*/ import_react$115.createElement(InputKeywords, {
+			else if (resourceType === "Keywords") return /*#__PURE__*/ import_react$117.createElement(InputKeywords, {
 				meta_key: metaKey,
 				keywords: metaKey.keywords,
 				show_checkboxes: metaKey.show_checkboxes,
@@ -64666,7 +64666,7 @@ Group\
 				contextKey,
 				subForms
 			});
-			else if (resourceType === "MediaEntry") return /*#__PURE__*/ import_react$115.createElement(InputMediaEntry, {
+			else if (resourceType === "MediaEntry") return /*#__PURE__*/ import_react$117.createElement(InputMediaEntry, {
 				meta_key: metaKey,
 				onChange,
 				id,
@@ -64696,10 +64696,10 @@ Group\
 			return n;
 		}, _extends$14.apply(null, arguments);
 	}
-	var import_react$114, import_prop_types$18, import_classnames$17, import_lib$5, import_url$19, MediaEntryPreview, IframeEmbed;
+	var import_react$116, import_prop_types$18, import_classnames$17, import_lib$5, import_url$19, MediaEntryPreview, IframeEmbed;
 	var init_MediaEntryPreview = __esmMin((() => {
 		init_lodash();
-		import_react$114 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$116 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$18 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_i18n_translate();
 		import_classnames$17 = /* @__PURE__ */ __toESM(require_classnames());
@@ -64709,7 +64709,7 @@ Group\
 		init_Picture();
 		init_ResourceIcon();
 		init_MediaPlayer();
-		MediaEntryPreview = class extends import_react$114.Component {
+		MediaEntryPreview = class extends import_react$116.Component {
 			static propTypes = {
 				get: import_prop_types$18.default.shape({
 					title: import_prop_types$18.default.string.isRequired,
@@ -64724,10 +64724,10 @@ Group\
 				const classes = (0, import_classnames$17.default)(this.props.mods);
 				const usesIframeEmbed = !isEmbedded && includes(["audio", "video"], media_type);
 				const imageHref = get$1(last(sortBy(previews.images, "width")), "url");
-				const picture = image_url || imageHref ? /*#__PURE__*/ import_react$114.createElement(Picture, _extends$14({
+				const picture = image_url || imageHref ? /*#__PURE__*/ import_react$116.createElement(Picture, _extends$14({
 					title,
 					src: image_url || imageHref
-				}, mediaProps)) : /*#__PURE__*/ import_react$114.createElement(ResourceIcon, {
+				}, mediaProps)) : /*#__PURE__*/ import_react$116.createElement(ResourceIcon, {
 					mediaType: media_type,
 					thumbnail: false,
 					type
@@ -64745,41 +64745,41 @@ Group\
 						get.media_file.conversion_progress,
 						I18nTranslate("media_entry_conversion_progress_post")
 					].join("") : I18nTranslate("media_entry_conversion_status_" + status);
-					return /*#__PURE__*/ import_react$114.createElement("div", { className: classes }, /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-alert warning" }, warningText), status === "failed" ? /*#__PURE__*/ import_react$114.createElement("div", { className: "p pvh mth" }) : /*#__PURE__*/ import_react$114.createElement("div", { className: "p pvh mth" }, I18nTranslate("media_entry_conversion_hint"), /*#__PURE__*/ import_react$114.createElement("br", null), /*#__PURE__*/ import_react$114.createElement("span", { className: "title-xs" }, I18nTranslate("media_entry_conversion_reload"))));
+					return /*#__PURE__*/ import_react$116.createElement("div", { className: classes }, /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-alert warning" }, warningText), status === "failed" ? /*#__PURE__*/ import_react$116.createElement("div", { className: "p pvh mth" }) : /*#__PURE__*/ import_react$116.createElement("div", { className: "p pvh mth" }, I18nTranslate("media_entry_conversion_hint"), /*#__PURE__*/ import_react$116.createElement("br", null), /*#__PURE__*/ import_react$116.createElement("span", { className: "title-xs" }, I18nTranslate("media_entry_conversion_reload"))));
 				}
-				if (usesIframeEmbed) return /*#__PURE__*/ import_react$114.createElement(IframeEmbed, {
+				if (usesIframeEmbed) return /*#__PURE__*/ import_react$116.createElement(IframeEmbed, {
 					url: get.url,
 					accessToken: get.used_confidential_access_token
 				});
 				const downloadRef = original_file_url ? original_file_url : export_url;
-				const content = this.props.get.media_type == "document" ? /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-has-magnifier" }, downloadRef ? /*#__PURE__*/ import_react$114.createElement("a", { href: downloadRef }, picture) : picture, downloadRef && /*#__PURE__*/ import_react$114.createElement("a", {
+				const content = this.props.get.media_type == "document" ? /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-has-magnifier" }, downloadRef ? /*#__PURE__*/ import_react$116.createElement("a", { href: downloadRef }, picture) : picture, downloadRef && /*#__PURE__*/ import_react$116.createElement("a", {
 					href: downloadRef,
 					className: "ui-magnifier"
-				}, /*#__PURE__*/ import_react$114.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$116.createElement(Icon$4, {
 					i: "magnifier",
 					mods: "bright"
-				}))) : previews.videos ? /*#__PURE__*/ import_react$114.createElement(MediaPlayer, _extends$14({ type: "video" }, mediaPlayerConfig, {
+				}))) : previews.videos ? /*#__PURE__*/ import_react$116.createElement(MediaPlayer, _extends$14({ type: "video" }, mediaPlayerConfig, {
 					sources: previews.videos,
 					options: merge({ fluid: true }, get$1(mediaPlayerConfig, "options")),
 					captionConf: this.props.captionConf,
 					isInternal: this.props.isInternal
-				})) : previews.audios ? /*#__PURE__*/ import_react$114.createElement(MediaPlayer, _extends$14({ type: "audio" }, mediaPlayerConfig, {
+				})) : previews.audios ? /*#__PURE__*/ import_react$116.createElement(MediaPlayer, _extends$14({ type: "audio" }, mediaPlayerConfig, {
 					getUrl: get.url,
 					sources: previews.audios,
 					options: merge({ fluid: true }, get$1(mediaPlayerConfig, "options")),
 					captionConf: this.props.captionConf,
 					isInternal: this.props.isInternal
-				})) : imageHref && (withLink || withZoomLink) ? /*#__PURE__*/ import_react$114.createElement("div", { className: (0, import_classnames$17.default)({ "ui-has-magnifier": withZoomLink }) }, /*#__PURE__*/ import_react$114.createElement("a", { href: imageHref }, picture), !!withZoomLink && /*#__PURE__*/ import_react$114.createElement("a", {
+				})) : imageHref && (withLink || withZoomLink) ? /*#__PURE__*/ import_react$116.createElement("div", { className: (0, import_classnames$17.default)({ "ui-has-magnifier": withZoomLink }) }, /*#__PURE__*/ import_react$116.createElement("a", { href: imageHref }, picture), !!withZoomLink && /*#__PURE__*/ import_react$116.createElement("a", {
 					href: imageHref,
 					target: "_blank",
 					rel: "noreferrer noopener",
 					className: "ui-magnifier",
 					style: { textDecoration: "none" }
-				}, /*#__PURE__*/ import_react$114.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$116.createElement(Icon$4, {
 					i: "magnifier",
 					mods: "bright"
 				}))) : picture;
-				return /*#__PURE__*/ import_react$114.createElement("div", { className: classes }, content);
+				return /*#__PURE__*/ import_react$116.createElement("div", { className: classes }, content);
 			}
 		};
 		IframeEmbed = ({ url, accessToken }) => {
@@ -64790,11 +64790,11 @@ Group\
 				internalEmbed: "yes",
 				accessToken
 			});
-			return /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-media-overview-preview" }, /*#__PURE__*/ import_react$114.createElement("div", { style: {
+			return /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-media-overview-preview" }, /*#__PURE__*/ import_react$116.createElement("div", { style: {
 				width: "100%",
 				position: "relative",
 				paddingTop: "56.25%"
-			} }, /*#__PURE__*/ import_react$114.createElement("iframe", {
+			} }, /*#__PURE__*/ import_react$116.createElement("iframe", {
 				src: iframeSrc,
 				style: {
 					height: "100%",
@@ -66235,9 +66235,9 @@ Group\
 			return n;
 		}, _extends$13.apply(null, arguments);
 	}
-	var import_react$113, import_prop_types$17, BoxToolBar;
+	var import_react$115, import_prop_types$17, BoxToolBar;
 	var init_BoxToolBar = __esmMin((() => {
-		import_react$113 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$115 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$17 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_utils$2();
@@ -66252,7 +66252,7 @@ Group\
 			const middleColClass = "by-center col2of6";
 			const lastColClass = "by-right col2of6";
 			const setminHeight = { style: { minHeight: "1px" } };
-			return /*#__PURE__*/ import_react$113.createElement("div", _extends$13({}, restProps, { className: classes }), /*#__PURE__*/ import_react$113.createElement("div", _extends$13({}, setminHeight, { className: firstColClass }), left), /*#__PURE__*/ import_react$113.createElement("div", _extends$13({}, setminHeight, { className: middleColClass }), middle), /*#__PURE__*/ import_react$113.createElement("div", _extends$13({}, setminHeight, { className: lastColClass }), right));
+			return /*#__PURE__*/ import_react$115.createElement("div", _extends$13({}, restProps, { className: classes }), /*#__PURE__*/ import_react$115.createElement("div", _extends$13({}, setminHeight, { className: firstColClass }), left), /*#__PURE__*/ import_react$115.createElement("div", _extends$13({}, setminHeight, { className: middleColClass }), middle), /*#__PURE__*/ import_react$115.createElement("div", _extends$13({}, setminHeight, { className: lastColClass }), right));
 		};
 		BoxToolBar.propTypes = {
 			left: import_prop_types$17.default.node,
@@ -66263,16 +66263,16 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/resourcesbox/ActionsDropdown.jsx
 	var ActionsDropdown_exports = /* @__PURE__ */ __exportAll({ default: () => ActionsDropdown });
-	var import_react$112, import_ui_components$15, ActionsDropdown;
+	var import_react$114, import_ui_components$15, ActionsDropdown;
 	var init_ActionsDropdown = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$112 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$114 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ui();
 		init_selection_scope();
 		import_ui_components$15 = /* @__PURE__ */ __toESM(require_ui_components());
 		init_ActionsDropdownHelper();
-		ActionsDropdown = class extends import_react$112.Component {
+		ActionsDropdown = class extends import_react$114.Component {
 			shouldComponentUpdate(nextProps, nextState) {
 				return !isEqual(this.state, nextState) || !isEqual(this.props, nextProps);
 			}
@@ -66282,11 +66282,11 @@ Group\
 				if (!some(values(showActions))) return null;
 				const { totalCount, selection, collectionData, isClipboard, content_type, showAddSetButton } = parameters;
 				const nofSelected = selection ? selection.length : 0;
-				const createHoverActionItem = (enableEntryByOnClick, hoverId, count, icon, text) => /*#__PURE__*/ import_react$112.createElement(import_ui_components$15.Dropdown.MenuItem, {
+				const createHoverActionItem = (enableEntryByOnClick, hoverId, count, icon, text) => /*#__PURE__*/ import_react$114.createElement(import_ui_components$15.Dropdown.MenuItem, {
 					onClick: enableEntryByOnClick,
 					onMouseEnter: curry$1(callbacks.onHoverMenu)(hoverId),
 					onMouseLeave: curry$1(callbacks.onHoverMenu)(null)
-				}, /*#__PURE__*/ import_react$112.createElement(import_ui_components$15.Icon, {
+				}, /*#__PURE__*/ import_react$114.createElement(import_ui_components$15.Icon, {
 					i: icon,
 					mods: "ui-drop-icon",
 					style: {
@@ -66295,7 +66295,7 @@ Group\
 						minWidth: "20px",
 						marginLeft: "5px"
 					}
-				}), count !== void 0 ? /*#__PURE__*/ import_react$112.createElement("span", {
+				}), count !== void 0 ? /*#__PURE__*/ import_react$114.createElement("span", {
 					className: "ui-count",
 					style: {
 						position: "static",
@@ -66305,16 +66305,16 @@ Group\
 						paddingLeft: "0px",
 						textAlign: "left"
 					}
-				}, count) : void 0, /*#__PURE__*/ import_react$112.createElement("span", { style: {
+				}, count) : void 0, /*#__PURE__*/ import_react$114.createElement("span", { style: {
 					display: "inline",
 					marginLeft: "5px"
 				} }, text));
-				return /*#__PURE__*/ import_react$112.createElement(import_ui_components$15.Dropdown, {
+				return /*#__PURE__*/ import_react$114.createElement(import_ui_components$15.Dropdown, {
 					mods: "stick-right mlm",
 					testId: "resources_box_dropdown",
 					toggle: t$6("resources_box_batch_actions_menu_title"),
 					toggleProps: { className: "button" }
-				}, /*#__PURE__*/ import_react$112.createElement(import_ui_components$15.Dropdown.Menu, { className: "ui-drop-menu" }, showAddSetButton && /*#__PURE__*/ import_react$112.createElement(import_ui_components$15.Dropdown.MenuItem, { onClick: callbacks.onShowCreateCollectionModal }, /*#__PURE__*/ import_react$112.createElement(import_ui_components$15.Icon, {
+				}, /*#__PURE__*/ import_react$114.createElement(import_ui_components$15.Dropdown.Menu, { className: "ui-drop-menu" }, showAddSetButton && /*#__PURE__*/ import_react$114.createElement(import_ui_components$15.Dropdown.MenuItem, { onClick: callbacks.onShowCreateCollectionModal }, /*#__PURE__*/ import_react$114.createElement(import_ui_components$15.Icon, {
 					i: "plus",
 					mods: "ui-drop-icon",
 					style: {
@@ -66322,10 +66322,10 @@ Group\
 						minWidth: "20px",
 						marginLeft: "5px"
 					}
-				}), /*#__PURE__*/ import_react$112.createElement("span", { style: {
+				}), /*#__PURE__*/ import_react$114.createElement("span", { style: {
 					display: "inline",
 					marginLeft: "5px"
-				} }, t$6("resource_action_collection_create"))), showAddSetButton && /*#__PURE__*/ import_react$112.createElement(import_ui_components$15.Dropdown.MenuItem, { className: "separator" }), showActions.addToSet && createHoverActionItem(nofSelected > 0 ? curry$1(callbacks.onBatchAddToSet)(selection) : void 0, "add_to_set", nofSelected, "move", t$6("resources_box_batch_actions_addtoset")), showActions.removeFromSet && createHoverActionItem(nofSelected > 0 ? curry$1(callbacks.onBatchRemoveFromSet)(selection) : void 0, "remove_from_set", nofSelected, "close", t$6("resources_box_batch_actions_removefromset")), (() => {
+				} }, t$6("resource_action_collection_create"))), showAddSetButton && /*#__PURE__*/ import_react$114.createElement(import_ui_components$15.Dropdown.MenuItem, { className: "separator" }), showActions.addToSet && createHoverActionItem(nofSelected > 0 ? curry$1(callbacks.onBatchAddToSet)(selection) : void 0, "add_to_set", nofSelected, "move", t$6("resources_box_batch_actions_addtoset")), showActions.removeFromSet && createHoverActionItem(nofSelected > 0 ? curry$1(callbacks.onBatchRemoveFromSet)(selection) : void 0, "remove_from_set", nofSelected, "close", t$6("resources_box_batch_actions_removefromset")), (() => {
 					if (showActions.edit) if ((collectionData || isClipboard) && nofSelected === 0 && (content_type === "MediaEntry" || content_type === "MediaResource")) return createHoverActionItem(totalCount > 0 ? callbacks.onBatchEditAll : void 0, "media_entries_edit_all", void 0, "pen", t$6("resources_box_batch_actions_edit_all_media_entries"));
 					else {
 						let batchEditables;
@@ -66381,16 +66381,16 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/resourcesbox/Clipboard.jsx
 	var Clipboard_exports = /* @__PURE__ */ __exportAll({ default: () => Clipboard });
-	var import_react$111, import_xhr$5, Clipboard;
+	var import_react$113, import_xhr$5, Clipboard;
 	var init_Clipboard = __esmMin((() => {
 		init_lodash();
-		import_react$111 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$113 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ui();
 		init_Modal();
 		init_set_params_for_url();
 		init_form_put_with_errors();
 		import_xhr$5 = /* @__PURE__ */ __toESM(require_xhr());
-		Clipboard = class extends import_react$111.Component {
+		Clipboard = class extends import_react$113.Component {
 			constructor(props) {
 				super(props);
 				this.state = { step: "initial" };
@@ -66543,28 +66543,28 @@ Group\
 				return false;
 			}
 			_infoText(text) {
-				return /*#__PURE__*/ import_react$111.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$113.createElement("div", { style: {
 					margin: "20px",
 					marginBottom: "20px",
 					textAlign: "center"
 				} }, text);
 			}
 			_errorBox(error) {
-				return /*#__PURE__*/ import_react$111.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$113.createElement("div", { style: {
 					margin: "20px",
 					marginBottom: "20px",
 					textAlign: "center"
-				} }, /*#__PURE__*/ import_react$111.createElement("div", {
+				} }, /*#__PURE__*/ import_react$113.createElement("div", {
 					className: "ui-alerts",
 					style: { marginBottom: "20px" }
-				}, /*#__PURE__*/ import_react$111.createElement("div", { className: "error ui-alert" }, error)));
+				}, /*#__PURE__*/ import_react$113.createElement("div", { className: "error ui-alert" }, error)));
 			}
 			_okCloseAction() {
-				return /*#__PURE__*/ import_react$111.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$113.createElement("div", { style: {
 					margin: "20px",
 					marginBottom: "20px",
 					textAlign: "center"
-				} }, /*#__PURE__*/ import_react$111.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$111.createElement("a", {
+				} }, /*#__PURE__*/ import_react$113.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$113.createElement("a", {
 					href: null,
 					className: "primary-button",
 					onClick: this.props.onClose
@@ -66572,10 +66572,10 @@ Group\
 			}
 			render() {
 				switch (this.state.step) {
-					case "initial": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 });
-					case "fetching": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_fetching_resources")));
-					case "fetching-error": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, this._errorBox(this.state.error), this._infoText(t$6("clipboard_fetching_resources")), this._okCloseAction());
-					case "adding-selected": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_adding_resources")));
+					case "initial": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 });
+					case "fetching": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_fetching_resources")));
+					case "fetching-error": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, this._errorBox(this.state.error), this._infoText(t$6("clipboard_fetching_resources")), this._okCloseAction());
+					case "adding-selected": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_adding_resources")));
 					case "adding-all":
 						var { chunks } = this.state;
 						var pending = filter(chunks, (chunk) => chunk.state !== "loaded");
@@ -66583,40 +66583,40 @@ Group\
 						var pendingCount = reduce(pending, (sum, chunk) => sum + size(chunk.ids), 0);
 						var doneCount = reduce(done, (sum, chunk) => sum + size(chunk.ids), 0);
 						var counter = size(chunks) > 1 ? doneCount + " / " + (pendingCount + doneCount) : "";
-						return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_adding_resources") + " " + counter), /*#__PURE__*/ import_react$111.createElement("div", { style: {
+						return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_adding_resources") + " " + counter), /*#__PURE__*/ import_react$113.createElement("div", { style: {
 							margin: "20px",
 							marginBottom: "20px",
 							textAlign: "center"
-						} }, /*#__PURE__*/ import_react$111.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$111.createElement("a", {
+						} }, /*#__PURE__*/ import_react$113.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$113.createElement("a", {
 							onClick: this._cancelAddingAll,
 							className: "link weak"
 						}, t$6("clipboard_ask_add_all_cancel")))));
-					case "adding-error": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, this._errorBox(this.state.error), this._infoText(t$6("clipboard_adding_resources")), this._okCloseAction());
-					case "adding-all-cancelled": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_adding_all_resources_cancelled")), this._okCloseAction());
-					case "adding-all-error": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, this._errorBox(this.state.error), this._infoText(t$6("clipboard_adding_all_resources_error")), /*#__PURE__*/ import_react$111.createElement("div", {
+					case "adding-error": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, this._errorBox(this.state.error), this._infoText(t$6("clipboard_adding_resources")), this._okCloseAction());
+					case "adding-all-cancelled": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_adding_all_resources_cancelled")), this._okCloseAction());
+					case "adding-all-error": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, this._errorBox(this.state.error), this._infoText(t$6("clipboard_adding_all_resources_error")), /*#__PURE__*/ import_react$113.createElement("div", {
 						className: "ui-actions",
 						style: { padding: "10px" }
-					}, /*#__PURE__*/ import_react$111.createElement("a", {
+					}, /*#__PURE__*/ import_react$113.createElement("a", {
 						onClick: this._cancelBatchAddToClipboard,
 						className: "link weak"
-					}, t$6("clipboard_ask_add_all_cancel")), /*#__PURE__*/ import_react$111.createElement("button", {
+					}, t$6("clipboard_ask_add_all_cancel")), /*#__PURE__*/ import_react$113.createElement("button", {
 						className: "primary-button",
 						type: "submit",
 						onClick: this._okBatchAddToClipboard
 					}, t$6("clipboard_adding_all_resources_retry"))));
-					case "removing": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_removing_resources")));
-					case "removing-error": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, this._errorBox(this.state.error), this._infoText(t$6("clipboard_removing_resources")), this._okCloseAction());
-					case "dialog": return /*#__PURE__*/ import_react$111.createElement(Modal, { widthInPixel: 400 }, /*#__PURE__*/ import_react$111.createElement("div", { style: {
+					case "removing": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, this._infoText(t$6("clipboard_removing_resources")));
+					case "removing-error": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, this._errorBox(this.state.error), this._infoText(t$6("clipboard_removing_resources")), this._okCloseAction());
+					case "dialog": return /*#__PURE__*/ import_react$113.createElement(Modal, { widthInPixel: 400 }, /*#__PURE__*/ import_react$113.createElement("div", { style: {
 						margin: "20px",
 						marginBottom: "20px",
 						textAlign: "center"
-					} }, t$6("clipboard_ask_add_all_1"), this.state.fetchedResources.length, t$6("clipboard_ask_add_all_2")), /*#__PURE__*/ import_react$111.createElement("div", {
+					} }, t$6("clipboard_ask_add_all_1"), this.state.fetchedResources.length, t$6("clipboard_ask_add_all_2")), /*#__PURE__*/ import_react$113.createElement("div", {
 						className: "ui-actions",
 						style: { padding: "10px" }
-					}, /*#__PURE__*/ import_react$111.createElement("a", {
+					}, /*#__PURE__*/ import_react$113.createElement("a", {
 						onClick: this._cancelBatchAddToClipboard,
 						className: "link weak"
-					}, t$6("clipboard_ask_add_all_cancel")), /*#__PURE__*/ import_react$111.createElement("button", {
+					}, t$6("clipboard_ask_add_all_cancel")), /*#__PURE__*/ import_react$113.createElement("button", {
 						className: "primary-button",
 						type: "submit",
 						onClick: this._okBatchAddToClipboard
@@ -66629,22 +66629,22 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/resourcesbox/InfoHeader.jsx
 	var InfoHeader_exports = /* @__PURE__ */ __exportAll({ default: () => InfoHeader });
-	var import_react$110, InfoHeader;
+	var import_react$112, InfoHeader;
 	var init_InfoHeader = __esmMin((() => {
-		import_react$110 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$112 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_interpolate_split();
-		InfoHeader = class extends import_react$110.Component {
+		InfoHeader = class extends import_react$112.Component {
 			constructor(props) {
 				super(props);
 				const renderFuncs = { entrustment: this._renderEntrustedResourcesInfo };
-				this.renderFunc = renderFuncs[props.type] || (() => /*#__PURE__*/ import_react$110.createElement("div", null, "No render func for type ", props.type));
+				this.renderFunc = renderFuncs[props.type] || (() => /*#__PURE__*/ import_react$112.createElement("div", null, "No render func for type ", props.type));
 			}
 			render() {
-				return /*#__PURE__*/ import_react$110.createElement("div", null, this.renderFunc(this.props));
+				return /*#__PURE__*/ import_react$112.createElement("div", null, this.renderFunc(this.props));
 			}
 			_renderEntrustedResourcesInfo({ authentication_group_names, groups_url }) {
-				return /*#__PURE__*/ import_react$110.createElement("div", null, interpolateSplit(I18nTranslate("resources_box_info_header_no_system_groups"), { system_groups_name: /*#__PURE__*/ import_react$110.createElement("a", {
+				return /*#__PURE__*/ import_react$112.createElement("div", null, interpolateSplit(I18nTranslate("resources_box_info_header_no_system_groups"), { system_groups_name: /*#__PURE__*/ import_react$112.createElement("a", {
 					href: groups_url,
 					title: I18nTranslate("resources_box_info_header_system_groups_name") + ": " + authentication_group_names.join(", "),
 					key: "system_groups_name"
@@ -66707,9 +66707,9 @@ Group\
 	//#endregion
 	//#region app/javascript/react/views/My/CreateCollection.jsx
 	var CreateCollection_exports = /* @__PURE__ */ __exportAll({ default: () => CreateCollection });
-	var import_react$109, CreateCollection;
+	var import_react$111, CreateCollection;
 	var init_CreateCollection = __esmMin((() => {
-		import_react$109 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$111 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_rails_form();
 		init_input_field_text();
@@ -66717,7 +66717,7 @@ Group\
 		init_ToggableLink();
 		init_form_xhr();
 		init_Preloader();
-		CreateCollection = class extends import_react$109.Component {
+		CreateCollection = class extends import_react$111.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -66766,17 +66766,17 @@ Group\
 			render() {
 				const { authToken, get } = this.props;
 				const error = this.state.error || get.error;
-				const alerts = error ? /*#__PURE__*/ import_react$109.createElement("div", {
+				const alerts = error ? /*#__PURE__*/ import_react$111.createElement("div", {
 					className: "ui-alerts",
 					key: "alerts"
-				}, /*#__PURE__*/ import_react$109.createElement("p", { className: "ui-alert error" }, error)) : void 0;
-				return /*#__PURE__*/ import_react$109.createElement(RestForm, {
+				}, /*#__PURE__*/ import_react$111.createElement("p", { className: "ui-alert error" }, error)) : void 0;
+				return /*#__PURE__*/ import_react$111.createElement(RestForm, {
 					ref: "form",
 					name: "resource_meta_data",
 					action: get.submit_url,
 					method: "post",
 					authToken
-				}, /*#__PURE__*/ import_react$109.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$109.createElement(ToggableLink, {
+				}, /*#__PURE__*/ import_react$111.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$111.createElement(ToggableLink, {
 					active: !this.state.saving || !this.state.mounted,
 					href: get.cancel_url,
 					"aria-hidden": "true",
@@ -66790,25 +66790,25 @@ Group\
 						paddingTop: "5px"
 					},
 					onClick: this._onCancel
-				}, /*#__PURE__*/ import_react$109.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$109.createElement("h3", { className: "title-l" }, I18nTranslate("collection_new_dialog_title"))), /*#__PURE__*/ import_react$109.createElement("div", {
+				}, /*#__PURE__*/ import_react$111.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$111.createElement("h3", { className: "title-l" }, I18nTranslate("collection_new_dialog_title"))), /*#__PURE__*/ import_react$111.createElement("div", {
 					className: "ui-modal-body",
 					style: { maxHeight: "none" }
-				}, get.parent_collection_title ? /*#__PURE__*/ import_react$109.createElement("div", { className: "ui-alert warning mbx" }, I18nTranslate("collection_new_dialog_parent_warning"), /*#__PURE__*/ import_react$109.createElement("code", { style: { display: "block" } }, get.parent_collection_title)) : void 0, this.state.saving ? /*#__PURE__*/ import_react$109.createElement(Preloader$1, null) : [alerts, /*#__PURE__*/ import_react$109.createElement("div", {
+				}, get.parent_collection_title ? /*#__PURE__*/ import_react$111.createElement("div", { className: "ui-alert warning mbx" }, I18nTranslate("collection_new_dialog_parent_warning"), /*#__PURE__*/ import_react$111.createElement("code", { style: { display: "block" } }, get.parent_collection_title)) : void 0, this.state.saving ? /*#__PURE__*/ import_react$111.createElement(Preloader$1, null) : [alerts, /*#__PURE__*/ import_react$111.createElement("div", {
 					className: "form-body",
 					key: "form-body"
-				}, /*#__PURE__*/ import_react$109.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$109.createElement("label", { className: "form-label" }, I18nTranslate("collection_new_label_title")), /*#__PURE__*/ import_react$109.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$109.createElement(InputFieldText, {
+				}, /*#__PURE__*/ import_react$111.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$111.createElement("label", { className: "form-label" }, I18nTranslate("collection_new_label_title")), /*#__PURE__*/ import_react$111.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$111.createElement(InputFieldText, {
 					autocomplete: "off",
 					autoFocus: "autofocus",
 					name: "collection_title",
 					value: ""
-				}))))]), /*#__PURE__*/ import_react$109.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$109.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$109.createElement(ToggableLink, {
+				}))))]), /*#__PURE__*/ import_react$111.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$111.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$111.createElement(ToggableLink, {
 					active: !this.state.saving || !this.state.mounted,
 					href: get.cancel_url,
 					"aria-hidden": "true",
 					className: "link weak",
 					"data-dismiss": "modal",
 					onClick: this._onCancel
-				}, I18nTranslate("collection_new_cancel")), /*#__PURE__*/ import_react$109.createElement(FormButton, {
+				}, I18nTranslate("collection_new_cancel")), /*#__PURE__*/ import_react$111.createElement(FormButton, {
 					onClick: this._onOk,
 					disabled: this.state.saving,
 					text: I18nTranslate("collection_new_create_set")
@@ -66819,17 +66819,17 @@ Group\
 	//#endregion
 	//#region app/javascript/react/views/My/CreateCollectionModal.jsx
 	var CreateCollectionModal_exports = /* @__PURE__ */ __exportAll({ default: () => CreateCollectionModal });
-	var import_react$108, CreateCollectionModal;
+	var import_react$110, CreateCollectionModal;
 	var init_CreateCollectionModal = __esmMin((() => {
-		import_react$108 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$110 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Modal();
 		init_load_xhr();
 		init_CreateCollection();
 		CreateCollectionModal = ({ get, newCollectionUrl, authToken, onClose, async }) => {
-			const [mounted, setMounted] = (0, import_react$108.useState)(false);
-			const [loading, setLoading] = (0, import_react$108.useState)(false);
-			const [data, setData] = (0, import_react$108.useState)(get || null);
-			(0, import_react$108.useEffect)(() => {
+			const [mounted, setMounted] = (0, import_react$110.useState)(false);
+			const [loading, setLoading] = (0, import_react$110.useState)(false);
+			const [data, setData] = (0, import_react$110.useState)(get || null);
+			(0, import_react$110.useEffect)(() => {
 				setMounted(true);
 				if (!data) {
 					setLoading(true);
@@ -66847,9 +66847,9 @@ Group\
 					});
 				}
 			}, []);
-			if (!data) return /*#__PURE__*/ import_react$108.createElement(Modal, { loading: true });
-			if (loading || async && !mounted) return /*#__PURE__*/ import_react$108.createElement(Modal, { loading: true });
-			return /*#__PURE__*/ import_react$108.createElement(Modal, { loading: false }, /*#__PURE__*/ import_react$108.createElement(CreateCollection, {
+			if (!data) return /*#__PURE__*/ import_react$110.createElement(Modal, { loading: true });
+			if (loading || async && !mounted) return /*#__PURE__*/ import_react$110.createElement(Modal, { loading: true });
+			return /*#__PURE__*/ import_react$110.createElement(Modal, { loading: false }, /*#__PURE__*/ import_react$110.createElement(CreateCollection, {
 				authToken,
 				get: data,
 				onClose
@@ -67042,11 +67042,11 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/MediaResourcesBox.jsx
 	var MediaResourcesBox_exports = /* @__PURE__ */ __exportAll({ default: () => MediaResourcesBox });
-	var import_react$107, import_url$17, import_local_links, import_createBrowserHistory$1, import_useBeforeUnload$1, import_rails_csrf_token$5, import_ui_components$14, getLocalLink, routerGoto, isNewTab, MediaResourcesBox;
+	var import_react$109, import_url$17, import_local_links, import_createBrowserHistory$1, import_useBeforeUnload$1, import_rails_csrf_token$5, import_ui_components$14, getLocalLink, routerGoto, isNewTab, MediaResourcesBox;
 	var init_MediaResourcesBox = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$107 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$109 = /* @__PURE__ */ __toESM(require_react$1());
 		import_url$17 = /* @__PURE__ */ __toESM(require_url());
 		import_local_links = /* @__PURE__ */ __toESM(require_local_links());
 		import_createBrowserHistory$1 = /* @__PURE__ */ __toESM(require_createBrowserHistory());
@@ -67094,7 +67094,7 @@ Group\
 			if (import_local_links.default.pathname(event)) return false;
 			else return true;
 		};
-		MediaResourcesBox = class extends import_react$107.Component {
+		MediaResourcesBox = class extends import_react$109.Component {
 			static defaultProps = { fallback: true };
 			constructor(props) {
 				super(props);
@@ -67453,10 +67453,10 @@ Group\
 					accordion: {}
 				} });
 				if (resetFilterHref) {
-					if (present(config.filter) || present(config.accordion)) return /*#__PURE__*/ import_react$107.createElement(import_ui_components$14.Link, {
+					if (present(config.filter) || present(config.accordion)) return /*#__PURE__*/ import_react$109.createElement(import_ui_components$14.Link, {
 						mods: "mlx weak",
 						href: resetFilterHref
-					}, /*#__PURE__*/ import_react$107.createElement(import_ui_components$14.Icon, { i: "undo" }), " ", t$6("resources_box_reset_filter"));
+					}, /*#__PURE__*/ import_react$109.createElement(import_ui_components$14.Icon, { i: "undo" }), " ", t$6("resources_box_reset_filter"));
 				}
 			};
 			unselectResources = (resources) => {
@@ -67544,7 +67544,7 @@ Group\
 							href
 						});
 					});
-					return /*#__PURE__*/ import_react$107.createElement(BoxTitlebar, {
+					return /*#__PURE__*/ import_react$109.createElement(BoxTitlebar, {
 						actionName: this.props.actionName,
 						enableOrderByTitle: this.props.enableOrderByTitle,
 						layout,
@@ -67582,7 +67582,7 @@ Group\
 					showAddSetButton: get$1(this.props, "showAddSetButton", false)
 				};
 				const boxToolBar = () => {
-					const actionsDropdown = /*#__PURE__*/ import_react$107.createElement(ActionsDropdown, {
+					const actionsDropdown = /*#__PURE__*/ import_react$109.createElement(ActionsDropdown, {
 						parameters: actionsDropdownParameters,
 						callbacks: {
 							onBatchAddAllToClipboard: this._onBatchAddAllToClipboard,
@@ -67607,21 +67607,21 @@ Group\
 					});
 					const filterToggleLink = BoxSetUrlParams(currentUrl, { list: { show_filter: !config.show_filter } });
 					const filterBarProps = {
-						left: /*#__PURE__*/ import_react$107.createElement(BoxFilterButton_default, {
+						left: /*#__PURE__*/ import_react$109.createElement(BoxFilterButton_default, {
 							get,
 							config,
 							_onFilterToggle: this._onFilterToggle,
 							filterToggleLink,
 							resetFilterLink: present(config.filter) ? this._resetFilterLink(config) : void 0
 						}),
-						right: actionsDropdown ? /*#__PURE__*/ import_react$107.createElement("div", null, actionsDropdown) : void 0,
+						right: actionsDropdown ? /*#__PURE__*/ import_react$109.createElement("div", null, actionsDropdown) : void 0,
 						middle: this.props.resourceTypeSwitcherConfig ? this.props.resourceTypeSwitcherConfig.customRenderer ? this.props.resourceTypeSwitcherConfig.customRenderer(currentUrl) : resourceTypeSwitcher(currentUrl, this.props.collectionData != null ? this.props.collectionData.defaultTypeFilter : void 0, this.props.resourceTypeSwitcherConfig.showAll, null) : void 0
 					};
-					return /*#__PURE__*/ import_react$107.createElement(BoxToolBar, Object.assign({}, filterBarProps));
+					return /*#__PURE__*/ import_react$109.createElement(BoxToolBar, Object.assign({}, filterBarProps));
 				};
 				const sidebar = (({ config, dynamic_filters }, { isClient }) => {
 					if (!config.show_filter) return null;
-					return /*#__PURE__*/ import_react$107.createElement(BoxSidebar, {
+					return /*#__PURE__*/ import_react$109.createElement(BoxSidebar, {
 						config,
 						dynamic_filters,
 						isClient,
@@ -67638,7 +67638,7 @@ Group\
 					});
 				})(get, this.state);
 				const paginationNav = (resources, staticPagination) => {
-					return /*#__PURE__*/ import_react$107.createElement(BoxPaginationNav, {
+					return /*#__PURE__*/ import_react$109.createElement(BoxPaginationNav, {
 						resources,
 						staticPagination,
 						onFetchNextPage: this.loadNextPage,
@@ -67649,7 +67649,7 @@ Group\
 						perPage: this.props.get.config.per_page
 					});
 				};
-				return /*#__PURE__*/ import_react$107.createElement("div", {
+				return /*#__PURE__*/ import_react$109.createElement("div", {
 					"data-test-id": "resources-box",
 					className: BoxUtil_default.boxClasses(mods)
 				}, (() => {
@@ -67658,7 +67658,7 @@ Group\
 							MediaEntry: this._routeUrl("batch_update_transfer_responsibility_media_entries"),
 							Collection: this._routeUrl("batch_update_transfer_responsibility_collections")
 						};
-						return /*#__PURE__*/ import_react$107.createElement(BoxTransfer, {
+						return /*#__PURE__*/ import_react$109.createElement(BoxTransfer, {
 							authToken: this.props.authToken,
 							transferResources: this.state.batchTransferResponsibilityResources,
 							onClose: this._hideBatchTransferResponsibility,
@@ -67670,21 +67670,21 @@ Group\
 						});
 					}
 				})(), (() => {
-					if (this.state.showSelectionLimit) return /*#__PURE__*/ import_react$107.createElement(BoxSelectionLimit, {
+					if (this.state.showSelectionLimit) return /*#__PURE__*/ import_react$109.createElement(BoxSelectionLimit, {
 						showSelectionLimit: this.state.showSelectionLimit,
 						selectionLimit: this._selectionLimit(),
 						onClose: this._closeSelectionLimit
 					});
-				})(), boxTitleBar(), get.info_header ? /*#__PURE__*/ import_react$107.createElement("div", { className: "mam" }, /*#__PURE__*/ import_react$107.createElement(InfoHeader, Object.assign({}, get.info_header))) : void 0, boxToolBar(), this.state.showCreateCollectionModal ? /*#__PURE__*/ import_react$107.createElement(CreateCollectionModal, {
+				})(), boxTitleBar(), get.info_header ? /*#__PURE__*/ import_react$109.createElement("div", { className: "mam" }, /*#__PURE__*/ import_react$109.createElement(InfoHeader, Object.assign({}, get.info_header))) : void 0, boxToolBar(), this.state.showCreateCollectionModal ? /*#__PURE__*/ import_react$109.createElement(CreateCollectionModal, {
 					get: get.new_collection,
 					async: false,
 					authToken,
 					onClose: () => this.setState({ showCreateCollectionModal: false }),
 					newCollectionUrl: get$1(this.props, "collectionData.newCollectionUrl")
-				}) : void 0, /*#__PURE__*/ import_react$107.createElement("div", { className: "ui-resources-holder pam" }, /*#__PURE__*/ import_react$107.createElement("div", { className: "ui-container table auto" }, sidebar, /*#__PURE__*/ import_react$107.createElement("div", { className: "ui-container table-cell table-substance" }, children, (() => {
-					if (resources.length === 0 && this.state.boxState.loadingNextPage) return /*#__PURE__*/ import_react$107.createElement(Preloader$1, null);
+				}) : void 0, /*#__PURE__*/ import_react$109.createElement("div", { className: "ui-resources-holder pam" }, /*#__PURE__*/ import_react$109.createElement("div", { className: "ui-container table auto" }, sidebar, /*#__PURE__*/ import_react$109.createElement("div", { className: "ui-container table-cell table-substance" }, children, (() => {
+					if (resources.length === 0 && this.state.boxState.loadingNextPage) return /*#__PURE__*/ import_react$109.createElement(Preloader$1, null);
 					else if (!present(resources) || resources.length === 0) return (() => {
-						return /*#__PURE__*/ import_react$107.createElement(BoxSetFallback, {
+						return /*#__PURE__*/ import_react$109.createElement(BoxSetFallback, {
 							fallback,
 							try_collections: get.try_collections,
 							currentUrl: this._currentUrl(),
@@ -67698,7 +67698,7 @@ Group\
 							changeable: get$1(this.props, "collectionData.position_changeable", false),
 							disabled: this.state.boxState.loadingNextPage
 						};
-						return /*#__PURE__*/ import_react$107.createElement(BoxRenderResources, {
+						return /*#__PURE__*/ import_react$109.createElement(BoxRenderResources, {
 							resources: map(this.state.boxState.resourceStates, (r) => r),
 							actionsDropdownParameters,
 							selectedResources: this.state.boxState.selectedResources,
@@ -67718,7 +67718,7 @@ Group\
 							selectResources: (resources) => this.selectResources(resources)
 						});
 					}
-				})(), paginationNav(resources, get.pagination)))), this.state.clipboardModal !== "hidden" ? /*#__PURE__*/ import_react$107.createElement(Clipboard, {
+				})(), paginationNav(resources, get.pagination)))), this.state.clipboardModal !== "hidden" ? /*#__PURE__*/ import_react$109.createElement(Clipboard, {
 					type: this.state.clipboardModal,
 					onClose: () => this.setState({ clipboardModal: "hidden" }),
 					resources: this.getResources(),
@@ -67726,26 +67726,26 @@ Group\
 					pagination: this.props.get.pagination,
 					forUrl: this.props.for_url,
 					jsonPath: this.getJsonPath()
-				}) : void 0, this.state.batchAddToSet ? /*#__PURE__*/ import_react$107.createElement(BatchAddToSetModal, {
+				}) : void 0, this.state.batchAddToSet ? /*#__PURE__*/ import_react$109.createElement(BatchAddToSetModal, {
 					resourceIds: this._selectedResourceIdsWithTypes(),
 					authToken: this.props.authToken,
 					get: null,
 					onClose: this._onCloseModal,
 					returnTo: currentUrl
-				}) : void 0, this.state.batchRemoveFromSet ? /*#__PURE__*/ import_react$107.createElement(BatchRemoveFromSetModal, {
+				}) : void 0, this.state.batchRemoveFromSet ? /*#__PURE__*/ import_react$109.createElement(BatchRemoveFromSetModal, {
 					collectionUuid: this.props.collectionData.uuid,
 					resourceIds: this._selectedResourceIdsWithTypes(),
 					authToken: this.props.authToken,
 					get: null,
 					onClose: this._onCloseModal,
 					returnTo: currentUrl
-				}) : void 0, this.state.batchEditTitleResourceIds ? /*#__PURE__*/ import_react$107.createElement(BatchEditTitleModal, {
+				}) : void 0, this.state.batchEditTitleResourceIds ? /*#__PURE__*/ import_react$109.createElement(BatchEditTitleModal, {
 					resourceIds: this.state.batchEditTitleResourceIds,
 					authToken: this.props.authToken,
 					onClose: this._onCloseModal,
 					returnTo: currentUrl
 				}) : void 0, (() => {
-					if (this.state.batchDestroyResourcesModal) return /*#__PURE__*/ import_react$107.createElement(BoxDestroy, {
+					if (this.state.batchDestroyResourcesModal) return /*#__PURE__*/ import_react$109.createElement(BoxDestroy, {
 						loading: this.state.batchDestroyResourcesWaiting,
 						error: this.state.batchDestroyResourcesError,
 						idsWithTypes: this.state.batchDestroyResourceIdsWithTypes,
@@ -67760,9 +67760,9 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/MetaDataByListing.jsx
 	var MetaDataByListing_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDataByListing });
-	var import_react$106, MetaDataByListing;
+	var import_react$108, MetaDataByListing;
 	var init_MetaDataByListing = __esmMin((() => {
-		import_react$106 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$108 = /* @__PURE__ */ __toESM(require_react$1());
 		init_madek_prop_types();
 		init_MetaDataList();
 		init_metadata_listing_helper();
@@ -67773,24 +67773,24 @@ Group\
 			const numColumns = Math.max(2, Math.min(4, numVocabs));
 			const columns = [];
 			for (let i = 0; i < onlyListsWithContent.length; i += numColumns) columns.push(onlyListsWithContent.slice(i, i + numColumns));
-			return /*#__PURE__*/ import_react$106.createElement("div", { className: "meta-data-summary mbl" }, columns.map((row, rowIndex) => [/*#__PURE__*/ import_react$106.createElement("div", {
+			return /*#__PURE__*/ import_react$108.createElement("div", { className: "meta-data-summary mbl" }, columns.map((row, rowIndex) => [/*#__PURE__*/ import_react$108.createElement("div", {
 				className: "ui-container media-entry-metadata",
 				key: row.map((r) => (r.context || r.vocabulary).uuid).join()
 			}, row.map((data) => {
 				const key = (data.context || data.vocabulary).uuid;
 				const vocabUrl = get(data, "vocabulary.url", "");
-				return /*#__PURE__*/ import_react$106.createElement("div", {
+				return /*#__PURE__*/ import_react$108.createElement("div", {
 					className: `col1of${numColumns}`,
 					key
-				}, /*#__PURE__*/ import_react$106.createElement(MetaDataList, {
+				}, /*#__PURE__*/ import_react$108.createElement(MetaDataList, {
 					mods: "prl",
 					list: data,
 					vocabUrl
 				}));
-			})), rowIndex !== columns.length - 1 ? !hideSeparator ? /*#__PURE__*/ import_react$106.createElement("hr", {
+			})), rowIndex !== columns.length - 1 ? !hideSeparator ? /*#__PURE__*/ import_react$108.createElement("hr", {
 				key: "sep",
 				className: "separator mini mvl"
-			}) : /*#__PURE__*/ import_react$106.createElement("div", {
+			}) : /*#__PURE__*/ import_react$108.createElement("div", {
 				className: "mvl",
 				key: "sep"
 			}) : null]));
@@ -67800,29 +67800,29 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/ResourcesBatchBox.jsx
 	var ResourcesBatchBox_exports = /* @__PURE__ */ __exportAll({ default: () => ResourcesBatchBox });
-	var import_react$105, import_prop_types$16, ResourcesBatchBox;
+	var import_react$107, import_prop_types$16, ResourcesBatchBox;
 	var init_ResourcesBatchBox = __esmMin((() => {
-		import_react$105 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$107 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$16 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_i18n_translate();
 		init_ResourceThumbnail();
 		ResourcesBatchBox = ({ resources, authToken, batchCount, counts }) => {
 			const actualBatchCount = typeof batchCount === "string" || typeof batchCount === "number" ? batchCount : resources.length;
-			return /*#__PURE__*/ import_react$105.createElement("div", { className: "bordered ui-container midtone rounded-right rounded-bottom mbm" }, /*#__PURE__*/ import_react$105.createElement("div", { className: "ui-resources-selection" }, /*#__PURE__*/ import_react$105.createElement("div", { className: "ui-toolbar inverted ui-container pvx phs rounded-top" }, /*#__PURE__*/ import_react$105.createElement("h2", { className: "ui-toolbar-header" }, actualBatchCount === 1 ? actualBatchCount + " " + I18nTranslate("meta_data_batch_item_selected") : actualBatchCount + " " + I18nTranslate("meta_data_batch_items_selected"), counts && counts.authorized_resources < counts.all_resources ? /*#__PURE__*/ import_react$105.createElement("span", { style: { color: "#e5b100" } }, ` ${I18nTranslate("meta_data_batch_some_ignored_1")}`, counts.all_resources - counts.authorized_resources, I18nTranslate("meta_data_batch_some_ignored_2")) : void 0)), /*#__PURE__*/ import_react$105.createElement("div", {
+			return /*#__PURE__*/ import_react$107.createElement("div", { className: "bordered ui-container midtone rounded-right rounded-bottom mbm" }, /*#__PURE__*/ import_react$107.createElement("div", { className: "ui-resources-selection" }, /*#__PURE__*/ import_react$107.createElement("div", { className: "ui-toolbar inverted ui-container pvx phs rounded-top" }, /*#__PURE__*/ import_react$107.createElement("h2", { className: "ui-toolbar-header" }, actualBatchCount === 1 ? actualBatchCount + " " + I18nTranslate("meta_data_batch_item_selected") : actualBatchCount + " " + I18nTranslate("meta_data_batch_items_selected"), counts && counts.authorized_resources < counts.all_resources ? /*#__PURE__*/ import_react$107.createElement("span", { style: { color: "#e5b100" } }, ` ${I18nTranslate("meta_data_batch_some_ignored_1")}`, counts.all_resources - counts.authorized_resources, I18nTranslate("meta_data_batch_some_ignored_2")) : void 0)), /*#__PURE__*/ import_react$107.createElement("div", {
 				style: { overflow: "hidden" },
 				className: "ui-resources-media"
-			}, /*#__PURE__*/ import_react$105.createElement("div", { className: "ui-resources-holder pal" }, /*#__PURE__*/ import_react$105.createElement("ul", { className: "grid ui-resources" }, resources.map((resource) => /*#__PURE__*/ import_react$105.createElement(ResourceThumbnail_default, {
+			}, /*#__PURE__*/ import_react$107.createElement("div", { className: "ui-resources-holder pal" }, /*#__PURE__*/ import_react$107.createElement("ul", { className: "grid ui-resources" }, resources.map((resource) => /*#__PURE__*/ import_react$107.createElement(ResourceThumbnail_default, {
 				elm: "li",
 				key: resource.uuid,
 				get: resource,
 				authToken
-			})), resources.length < actualBatchCount && /*#__PURE__*/ import_react$105.createElement("li", { style: {
+			})), resources.length < actualBatchCount && /*#__PURE__*/ import_react$107.createElement("li", { style: {
 				paddingTop: "50px",
 				paddingLeft: "20px",
 				display: "block",
 				float: "left",
 				fontSize: "24px"
-			} }, `+${actualBatchCount - resources.length}`, /*#__PURE__*/ import_react$105.createElement("br", null), I18nTranslate("meta_data_batch_more")))))));
+			} }, `+${actualBatchCount - resources.length}`, /*#__PURE__*/ import_react$107.createElement("br", null), I18nTranslate("meta_data_batch_more")))))));
 		};
 		ResourcesBatchBox.propTypes = {
 			resources: import_prop_types$16.default.array.isRequired,
@@ -67832,22 +67832,22 @@ Group\
 	//#endregion
 	//#region app/javascript/react/views/PageContent.jsx
 	var PageContent_exports = /* @__PURE__ */ __exportAll({ default: () => PageContent });
-	var import_react$104, PageContent;
+	var import_react$106, PageContent;
 	var init_PageContent = __esmMin((() => {
-		import_react$104 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$106 = /* @__PURE__ */ __toESM(require_react$1());
 		PageContent = ({ children }) => {
-			return /*#__PURE__*/ import_react$104.createElement("div", { className: "app-body-ui-container" }, children);
+			return /*#__PURE__*/ import_react$106.createElement("div", { className: "app-body-ui-container" }, children);
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/PageContentHeader.jsx
 	var PageContentHeader_exports = /* @__PURE__ */ __exportAll({ default: () => PageContentHeader });
-	var import_react$103, PageContentHeader;
+	var import_react$105, PageContentHeader;
 	var init_PageContentHeader = __esmMin((() => {
-		import_react$103 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$105 = /* @__PURE__ */ __toESM(require_react$1());
 		init_PageHeader();
 		PageContentHeader = ({ icon, title, children, banner, sectionLabels }) => {
-			return /*#__PURE__*/ import_react$103.createElement(PageHeader, {
+			return /*#__PURE__*/ import_react$105.createElement(PageHeader, {
 				icon,
 				title,
 				actions: children,
@@ -67859,11 +67859,11 @@ Group\
 	//#endregion
 	//#region app/javascript/react/views/TabContent.jsx
 	var TabContent_exports = /* @__PURE__ */ __exportAll({ default: () => TabContent });
-	var import_react$102, TabContent;
+	var import_react$104, TabContent;
 	var init_TabContent = __esmMin((() => {
-		import_react$102 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$104 = /* @__PURE__ */ __toESM(require_react$1());
 		TabContent = ({ testId, children }) => {
-			return /*#__PURE__*/ import_react$102.createElement("div", {
+			return /*#__PURE__*/ import_react$104.createElement("div", {
 				className: "ui-container tab-content bordered bright rounded-right rounded-bottom",
 				"data-test-id": testId
 			}, children);
@@ -67937,9 +67937,9 @@ Group\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/form-label.jsx
-	var import_react$101, MetaKeyFormLabel;
+	var import_react$103, MetaKeyFormLabel;
 	var init_form_label = __esmMin((() => {
-		import_react$101 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$103 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_madek_prop_types();
 		init_Icon();
@@ -67957,51 +67957,51 @@ Group\
 				if (contextKey.documentation_url) documentation_url = contextKey.documentation_url;
 			}
 			let linkToDocs;
-			if (documentation_url) linkToDocs = /*#__PURE__*/ import_react$101.createElement(Link$5, {
+			if (documentation_url) linkToDocs = /*#__PURE__*/ import_react$103.createElement(Link$5, {
 				href: documentation_url,
 				target: "_blank"
 			}, I18nTranslate("meta_data_meta_key_documentation_url"));
 			if (mandatory) label = label + " *";
-			return /*#__PURE__*/ import_react$101.createElement("div", { className: "form-label" }, label, description && /*#__PURE__*/ import_react$101.createElement(Tooltipped, {
+			return /*#__PURE__*/ import_react$103.createElement("div", { className: "form-label" }, label, description && /*#__PURE__*/ import_react$103.createElement(Tooltipped, {
 				text: description,
 				link: linkToDocs,
 				id: (metaKey || contextKey).uuid + "_tooltip"
-			}, /*#__PURE__*/ import_react$101.createElement("span", { className: "ui-form-ui-ttip-toggle ui-ttip-toggle" }, /*#__PURE__*/ import_react$101.createElement(Icon$4, { i: "question" }))), /*#__PURE__*/ import_react$101.createElement("small", null, hint));
+			}, /*#__PURE__*/ import_react$103.createElement("span", { className: "ui-form-ui-ttip-toggle ui-ttip-toggle" }, /*#__PURE__*/ import_react$103.createElement(Icon$4, { i: "question" }))), /*#__PURE__*/ import_react$103.createElement("small", null, hint));
 		};
 		MetaKeyFormLabel.propTypes = { metaKey: MadekPropTypes.metaKey };
 	}));
 	//#endregion
 	//#region app/javascript/react/views/Tabs.jsx
 	var Tabs_exports = /* @__PURE__ */ __exportAll({ default: () => Tabs });
-	var import_react$100, Tabs;
+	var import_react$102, Tabs;
 	var init_Tabs = __esmMin((() => {
-		import_react$100 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$102 = /* @__PURE__ */ __toESM(require_react$1());
 		Tabs = ({ children }) => {
-			return /*#__PURE__*/ import_react$100.createElement("ul", { className: "ui-tabs large" }, children);
+			return /*#__PURE__*/ import_react$102.createElement("ul", { className: "ui-tabs large" }, children);
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/Tab.jsx
 	var Tab_exports = /* @__PURE__ */ __exportAll({ default: () => Tab$2 });
-	var import_react$99, import_classnames$16, Tab$2;
+	var import_react$101, import_classnames$16, Tab$2;
 	var init_Tab = __esmMin((() => {
-		import_react$99 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$101 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$16 = /* @__PURE__ */ __toESM(require_classnames());
 		Tab$2 = ({ privacyStatus, label, href, iconType, active, testId, onClick }) => {
 			const classes = (0, import_classnames$16.default)({ active }, "ui-tabs-item");
 			let icon;
-			if (iconType === "privacy_status_icon" && privacyStatus) icon = /*#__PURE__*/ import_react$99.createElement("i", { className: `icon-privacy-${{
+			if (iconType === "privacy_status_icon" && privacyStatus) icon = /*#__PURE__*/ import_react$101.createElement("i", { className: `icon-privacy-${{
 				public: "open",
 				shared: "group",
 				private: "private"
 			}[privacyStatus]}` });
-			return /*#__PURE__*/ import_react$99.createElement("li", {
+			return /*#__PURE__*/ import_react$101.createElement("li", {
 				className: classes,
 				"data-test-id": testId
-			}, /*#__PURE__*/ import_react$99.createElement("a", {
+			}, /*#__PURE__*/ import_react$101.createElement("a", {
 				href,
 				onClick
-			}, icon ? /*#__PURE__*/ import_react$99.createElement("span", null, icon, " ", label) : label));
+			}, icon ? /*#__PURE__*/ import_react$101.createElement("span", null, icon, " ", label) : label));
 		};
 	}));
 	//#endregion
@@ -68072,10 +68072,10 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/metadataedit/MetadataEditRenderer.jsx
 	var MetadataEditRenderer_exports = /* @__PURE__ */ __exportAll({ default: () => MetadataEditRenderer_default });
-	var import_react$98, import_classnames$15, MetadataEditRenderer_default;
+	var import_react$100, import_classnames$15, MetadataEditRenderer_default;
 	var init_MetadataEditRenderer = __esmMin((() => {
 		init_lodash();
-		import_react$98 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$100 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		import_classnames$15 = /* @__PURE__ */ __toESM(require_classnames());
 		init_InputMetaDatum();
@@ -68094,7 +68094,7 @@ Group\
 				const meta_key_id = metaKey.uuid;
 				if (batch) name += `[${meta_key_id}][values][]`;
 				else name += `[${meta_key_id}][]`;
-				const input = /*#__PURE__*/ import_react$98.createElement(InputMetaDatum, {
+				const input = /*#__PURE__*/ import_react$100.createElement(InputMetaDatum, {
 					id: meta_key_id,
 					model,
 					name,
@@ -68103,7 +68103,7 @@ Group\
 					metaKey,
 					batch
 				});
-				if (batch) return /*#__PURE__*/ import_react$98.createElement("div", { style: {
+				if (batch) return /*#__PURE__*/ import_react$100.createElement("div", { style: {
 					marginRight: "200px",
 					marginLeft: "200px"
 				} }, input);
@@ -68113,7 +68113,7 @@ Group\
 				const contextKey = meta_meta_data.context_key_by_context_key_id[context_key_id];
 				const { meta_key_id } = contextKey;
 				const mandatory = meta_meta_data.mandatory_by_meta_key_id[meta_key_id];
-				return /*#__PURE__*/ import_react$98.createElement(MetaKeyFormLabel, {
+				return /*#__PURE__*/ import_react$100.createElement(MetaKeyFormLabel, {
 					metaKey: meta_meta_data.meta_key_by_meta_key_id[meta_key_id],
 					contextKey,
 					mandatory
@@ -68121,7 +68121,7 @@ Group\
 			},
 			_renderLabelByVocabularies: function(meta_meta_data, meta_key_id) {
 				const mandatory = meta_meta_data.mandatory_by_meta_key_id[meta_key_id];
-				return /*#__PURE__*/ import_react$98.createElement(MetaKeyFormLabel, {
+				return /*#__PURE__*/ import_react$100.createElement(MetaKeyFormLabel, {
 					metaKey: meta_meta_data.meta_key_by_meta_key_id[meta_key_id],
 					contextKey: null,
 					mandatory
@@ -68138,11 +68138,11 @@ Group\
 					return onChangeBatchAction(meta_key_id, event.target.value);
 				};
 				name += `[${meta_key_id}][batch_action]`;
-				return /*#__PURE__*/ import_react$98.createElement("div", { style }, /*#__PURE__*/ import_react$98.createElement("select", {
+				return /*#__PURE__*/ import_react$100.createElement("div", { style }, /*#__PURE__*/ import_react$100.createElement("select", {
 					name,
 					value: model.batchAction,
 					onChange: _onChange
-				}, /*#__PURE__*/ import_react$98.createElement("option", { value: "none" }, "..."), /*#__PURE__*/ import_react$98.createElement("option", { value: "remove" }, I18nTranslate("meta_data_batch_action_remove_meta_data"))));
+				}, /*#__PURE__*/ import_react$100.createElement("option", { value: "none" }, "..."), /*#__PURE__*/ import_react$100.createElement("option", { value: "remove" }, I18nTranslate("meta_data_batch_action_remove_meta_data"))));
 			},
 			_renderItemByContext2: function(meta_meta_data, published, name, context_key_id, subForms, rowed, batch, model, batchConflict, errors, _onChangeForm) {
 				const { meta_key_id } = meta_meta_data.context_key_by_context_key_id[context_key_id];
@@ -68151,13 +68151,13 @@ Group\
 				const error = errors[meta_key_id];
 				const validErr = published && mandatory && !metadata_edit_validation_default._validModel(model) && !batch;
 				const className = (0, import_classnames$15.default)("ui-form-group prh", { columned: !rowed }, { rowed }, { error: (error || validErr) && !batchConflict }, { highlight: batchConflict });
-				return /*#__PURE__*/ import_react$98.createElement("fieldset", {
+				return /*#__PURE__*/ import_react$100.createElement("fieldset", {
 					className,
 					key: meta_key_id
-				}, error ? /*#__PURE__*/ import_react$98.createElement("div", {
+				}, error ? /*#__PURE__*/ import_react$100.createElement("div", {
 					className: "ui-alerts",
 					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$98.createElement("div", { className: "error ui-alert" }, error)) : void 0, this._renderLabelByContext(meta_meta_data, context_key_id), batch ? this._renderBatchDropdown(meta_meta_data, meta_key_id, name, model, _onChangeForm.onChangeBatchAction) : void 0, this._renderValueByContext((values) => _onChangeForm.onValue(meta_key_id, values), name, subForms, metaKey, batch, model));
+				}, /*#__PURE__*/ import_react$100.createElement("div", { className: "error ui-alert" }, error)) : void 0, this._renderLabelByContext(meta_meta_data, context_key_id), batch ? this._renderBatchDropdown(meta_meta_data, meta_key_id, name, model, _onChangeForm.onChangeBatchAction) : void 0, this._renderValueByContext((values) => _onChangeForm.onValue(meta_key_id, values), name, subForms, metaKey, batch, model));
 			},
 			_renderItemByVocabularies2: function(meta_meta_data, published, name, meta_key_id, subForms, rowed, batch, model, batchConflict, errors, _onChangeForm) {
 				const metaKey = meta_meta_data.meta_key_by_meta_key_id[meta_key_id];
@@ -68165,13 +68165,13 @@ Group\
 				const error = errors[meta_key_id];
 				const validErr = published && mandatory && !metadata_edit_validation_default._validModel(model);
 				const className = (0, import_classnames$15.default)("ui-form-group prh", { columned: !rowed }, { rowed }, { error: (error || validErr) && !batchConflict }, { highlight: batchConflict });
-				return /*#__PURE__*/ import_react$98.createElement("fieldset", {
+				return /*#__PURE__*/ import_react$100.createElement("fieldset", {
 					className,
 					key: meta_key_id
-				}, error ? /*#__PURE__*/ import_react$98.createElement("div", {
+				}, error ? /*#__PURE__*/ import_react$100.createElement("div", {
 					className: "ui-alerts",
 					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$98.createElement("div", { className: "error ui-alert" }, error)) : void 0, this._renderLabelByVocabularies(meta_meta_data, meta_key_id), batch ? this._renderBatchDropdown(meta_meta_data, meta_key_id, name, model, _onChangeForm.onChangeBatchAction) : void 0, this._renderValueByContext((values) => _onChangeForm.onValue(meta_key_id, values), name, subForms, metaKey, batch, model));
+				}, /*#__PURE__*/ import_react$100.createElement("div", { className: "error ui-alert" }, error)) : void 0, this._renderLabelByVocabularies(meta_meta_data, meta_key_id), batch ? this._renderBatchDropdown(meta_meta_data, meta_key_id, name, model, _onChangeForm.onChangeBatchAction) : void 0, this._renderValueByContext((values) => _onChangeForm.onValue(meta_key_id, values), name, subForms, metaKey, batch, model));
 			},
 			_renderHiddenKeysByContext: function(meta_meta_data, currentContextId, batch, models, name) {
 				const meta_key_ids_in_current_context = map(meta_meta_data.context_key_ids_by_context_id[currentContextId], function(context_key_id) {
@@ -68180,7 +68180,7 @@ Group\
 				return map(filter(keys(meta_meta_data.meta_key_by_meta_key_id), (meta_key_id) => !includes(meta_key_ids_in_current_context, meta_key_id)), (meta_key_id) => {
 					const model = models[meta_key_id];
 					const metaKey = meta_meta_data.meta_key_by_meta_key_id[meta_key_id];
-					return /*#__PURE__*/ import_react$98.createElement("div", {
+					return /*#__PURE__*/ import_react$100.createElement("div", {
 						style: { display: "none" },
 						key: meta_key_id
 					}, batch ? this._renderBatchDropdown(meta_meta_data, meta_key_id, name, model, function() {}) : void 0, this._renderValueByContext(function() {}, name, null, metaKey, batch, model));
@@ -68199,11 +68199,11 @@ Group\
 					marginTop: "10px",
 					marginBottom: "20px"
 				};
-				return [/*#__PURE__*/ import_react$98.createElement("a", {
+				return [/*#__PURE__*/ import_react$100.createElement("a", {
 					key: "sub-form-link",
 					className: (0, import_classnames$15.default)("button small form-item-extension-toggle mtm", { active: isInvalid }),
 					onClick: !isInvalid ? () => _toggleBundle(bundle.bundle) : void 0
-				}, /*#__PURE__*/ import_react$98.createElement("i", { className: "icon-plus-small" }), " ", I18nTranslate("meta_data_edit_more_data")), /*#__PURE__*/ import_react$98.createElement("div", {
+				}, /*#__PURE__*/ import_react$100.createElement("i", { className: "icon-plus-small" }), " ", I18nTranslate("meta_data_edit_more_data")), /*#__PURE__*/ import_react$100.createElement("div", {
 					style,
 					className: "ui-container pam ui-container bordered rounded form-item-extension hidden",
 					key: `block_${bundle.bundle}`
@@ -68249,10 +68249,10 @@ Group\
 					const _renderItemByMetaKeyId = (meta_key_id, subForms, rowed) => {
 						return this._renderItemByVocabularies2(meta_meta_data, published, name, meta_key_id, subForms, rowed, batch, models[meta_key_id], _batchConflictByMetaKey(meta_key_id), errors, _onChangeForm);
 					};
-					return /*#__PURE__*/ import_react$98.createElement("div", {
+					return /*#__PURE__*/ import_react$100.createElement("div", {
 						className: "mbl",
 						key: vocabulary.uuid
-					}, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-container pas" }, /*#__PURE__*/ import_react$98.createElement(VocabTitleLink, {
+					}, /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-container pas" }, /*#__PURE__*/ import_react$100.createElement(VocabTitleLink, {
 						id: vocabulary.uuid,
 						text: vocabulary.label,
 						separated: true,
@@ -68274,12 +68274,12 @@ Group\
 			},
 			_renderVocabQuickLinks: function(meta_data, meta_meta_data) {
 				let vocabularies;
-				return /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-container pas" }, /*#__PURE__*/ import_react$98.createElement("div", { style: { paddingBottom: "30px" } }, (vocabularies = this._sortedVocabularies(meta_meta_data), flatten(map(vocabularies, (vocabulary, index) => {
-					return [/*#__PURE__*/ import_react$98.createElement("span", {
+				return /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-container pas" }, /*#__PURE__*/ import_react$100.createElement("div", { style: { paddingBottom: "30px" } }, (vocabularies = this._sortedVocabularies(meta_meta_data), flatten(map(vocabularies, (vocabulary, index) => {
+					return [/*#__PURE__*/ import_react$100.createElement("span", {
 						className: "title-l",
 						key: `href_${vocabulary.uuid}`,
 						style: { fontWeight: "normal" }
-					}, /*#__PURE__*/ import_react$98.createElement("a", { href: `#${vocabulary.uuid}` }, vocabulary.label)), index !== vocabularies.length - 1 ? /*#__PURE__*/ import_react$98.createElement("span", {
+					}, /*#__PURE__*/ import_react$100.createElement("a", { href: `#${vocabulary.uuid}` }, vocabulary.label)), index !== vocabularies.length - 1 ? /*#__PURE__*/ import_react$100.createElement("span", {
 						className: "title-l",
 						key: `separator_${vocabulary.uuid}`,
 						style: {
@@ -68288,7 +68288,7 @@ Group\
 							fontWeight: "normal"
 						}
 					}, "|") : void 0];
-				})))), /*#__PURE__*/ import_react$98.createElement("div", { style: { clear: "both" } }));
+				})))), /*#__PURE__*/ import_react$100.createElement("div", { style: { clear: "both" } }));
 			},
 			_renderThumbnail: function(resource, displayMetaData, href = null) {
 				if (displayMetaData == null) displayMetaData = true;
@@ -68297,37 +68297,37 @@ Group\
 					const { previews } = resource.media_file;
 					href = href || get$1(last(sortBy(previews.images, "width")), "url");
 				}
-				const image = src ? /*#__PURE__*/ import_react$98.createElement(Picture, {
+				const image = src ? /*#__PURE__*/ import_react$100.createElement(Picture, {
 					mods: "ui-thumbnail-image",
 					src,
 					alt: ""
-				}) : /*#__PURE__*/ import_react$98.createElement(ResourceIcon, {
+				}) : /*#__PURE__*/ import_react$100.createElement(ResourceIcon, {
 					thumbnail: true,
 					mediaType: resource.media_type,
 					type: resource.type
 				});
 				const className = resource.type === "Collection" ? "media-set ui-thumbnail" : "image media-entry ui-thumbnail";
-				return /*#__PURE__*/ import_react$98.createElement("div", { className: "app-body-sidebar table-cell ui-container table-side" }, /*#__PURE__*/ import_react$98.createElement("ul", { className: "ui-resources grid" }, /*#__PURE__*/ import_react$98.createElement("li", { className: "ui-resource mrl" }, /*#__PURE__*/ import_react$98.createElement("div", { className }, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-privacy" }, /*#__PURE__*/ import_react$98.createElement("i", {
+				return /*#__PURE__*/ import_react$100.createElement("div", { className: "app-body-sidebar table-cell ui-container table-side" }, /*#__PURE__*/ import_react$100.createElement("ul", { className: "ui-resources grid" }, /*#__PURE__*/ import_react$100.createElement("li", { className: "ui-resource mrl" }, /*#__PURE__*/ import_react$100.createElement("div", { className }, /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-privacy" }, /*#__PURE__*/ import_react$100.createElement("i", {
 					className: "icon-privacy-private",
 					title: I18nTranslate("contents_privacy_private")
-				})), /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-image-wrapper" }, href ? /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-has-magnifier" }, /*#__PURE__*/ import_react$98.createElement("a", {
+				})), /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-image-wrapper" }, href ? /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-has-magnifier" }, /*#__PURE__*/ import_react$100.createElement("a", {
 					href,
 					target: "_blank",
 					rel: "noreferrer"
-				}, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, image))))), /*#__PURE__*/ import_react$98.createElement("a", {
+				}, /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, image))))), /*#__PURE__*/ import_react$100.createElement("a", {
 					href,
 					target: "_blank",
 					className: "ui-magnifier",
 					style: { textDecoration: "none" },
 					rel: "noreferrer"
-				}, /*#__PURE__*/ import_react$98.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$100.createElement(Icon$4, {
 					i: "magnifier",
 					mods: "bright"
-				}))) : /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, image))))), displayMetaData && /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$98.createElement("h3", { className: "ui-thumbnail-meta-title" }, resource.title), /*#__PURE__*/ import_react$98.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, resource.subtitle))))));
+				}))) : /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, image))))), displayMetaData && /*#__PURE__*/ import_react$100.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$100.createElement("h3", { className: "ui-thumbnail-meta-title" }, resource.title), /*#__PURE__*/ import_react$100.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, resource.subtitle))))));
 			},
 			_renderTabs: function(meta_meta_data, batch, batch_ids, return_to, url, onTabClick, currentTab, collection_id, resource_type, edit_by_context_urls, edit_by_context_fallback_url, batch_edit_by_context_urls, batch_edit_by_context_fallback_url, edit_by_vocabularies_url, batch_edit_by_vocabularies_url, batch_edit_all_collection_url, show_all_data_tab_in_edit_mode) {
 				let tabUrl, nextCurrentTab, active;
-				return /*#__PURE__*/ import_react$98.createElement(Tabs, null, map(meta_meta_data.meta_data_edit_context_ids, function(context_id) {
+				return /*#__PURE__*/ import_react$100.createElement(Tabs, null, map(meta_meta_data.meta_data_edit_context_ids, function(context_id) {
 					const context = meta_meta_data.contexts_by_context_id[context_id];
 					tabUrl = (() => {
 						if (batch) if (collection_id) return set_params_for_url_default(batch_edit_all_collection_url, {
@@ -68354,7 +68354,7 @@ Group\
 							byVocabularies: false
 						};
 						active = !currentTab.byVocabularies && currentTab.byContext === context.uuid;
-						return /*#__PURE__*/ import_react$98.createElement(Tab$2, {
+						return /*#__PURE__*/ import_react$100.createElement(Tab$2, {
 							privacyStatus: "public",
 							key: context.uuid,
 							iconType: null,
@@ -68380,7 +68380,7 @@ Group\
 							byVocabularies: true
 						};
 						active = currentTab.byVocabularies;
-						return /*#__PURE__*/ import_react$98.createElement(Tab$2, {
+						return /*#__PURE__*/ import_react$100.createElement(Tab$2, {
 							privacyStatus: "public",
 							key: "byVocabularies",
 							iconType: null,
@@ -68397,11 +68397,11 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/ResourceMetaDataPagePerContext.jsx
 	var ResourceMetaDataPagePerContext_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceMetaDataPagePerContext });
-	var import_react$97, import_url$16, import_xhr$2, import_rails_csrf_token$4, ResourceMetaDataPagePerContext;
+	var import_react$99, import_url$16, import_xhr$2, import_rails_csrf_token$4, ResourceMetaDataPagePerContext;
 	var init_ResourceMetaDataPagePerContext = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$97 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$99 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_set_params_for_url();
 		import_url$16 = /* @__PURE__ */ __toESM(require_url());
@@ -68416,10 +68416,10 @@ Group\
 		import_rails_csrf_token$4 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_metadata_edit_validation();
 		init_MetadataEditRenderer();
-		ResourceMetaDataPagePerContext = class extends import_react$97.Component {
+		ResourceMetaDataPagePerContext = class extends import_react$99.Component {
 			constructor(props) {
 				super(props);
-				this.formRef = /*#__PURE__*/ import_react$97.createRef();
+				this.formRef = /*#__PURE__*/ import_react$99.createRef();
 				this._isMounted = false;
 				const initialState = this._getInitialState(props);
 				this.state = initialState;
@@ -68650,7 +68650,7 @@ Group\
 				return this.state.saving || metadata_edit_validation_default._validityForAll(this.props.get.meta_meta_data, this.state.models) !== "valid";
 			}
 			_showNoContextDefinedIfNeeded() {
-				return /*#__PURE__*/ import_react$97.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$97.createElement("div", { className: "ui-alert warning" }, `\
+				return /*#__PURE__*/ import_react$99.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$99.createElement("div", { className: "ui-alert warning" }, `\
 There are no contexts defined. Please configure them in the admin tool.\
 `));
 			}
@@ -68672,7 +68672,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					currentTab != null ? currentTab.byContext : void 0,
 					"description"
 				]);
-				if (description) return /*#__PURE__*/ import_react$97.createElement("div", { className: "context-description mbm" }, description);
+				if (description) return /*#__PURE__*/ import_react$99.createElement("div", { className: "context-description mbm" }, description);
 			}
 			render(param) {
 				let currentContextId;
@@ -68682,36 +68682,36 @@ There are no contexts defined. Please configure them in the admin tool.\
 				const { currentTab } = this.state;
 				const name = this._namePrefix(get.resource, this.props.batch, get.resource_type);
 				const published = this._atLeastOnePublished();
-				return /*#__PURE__*/ import_react$97.createElement(PageContent, null, this.state.saving ? /*#__PURE__*/ import_react$97.createElement(Modal, { widthInPixel: 400 }, /*#__PURE__*/ import_react$97.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$99.createElement(PageContent, null, this.state.saving ? /*#__PURE__*/ import_react$99.createElement(Modal, { widthInPixel: 400 }, /*#__PURE__*/ import_react$99.createElement("div", { style: {
 					margin: "20px",
 					marginBottom: "20px",
 					textAlign: "center"
-				} }, I18nTranslate("meta_data_form_saving"))) : void 0, /*#__PURE__*/ import_react$97.createElement(PageContentHeader, {
+				} }, I18nTranslate("meta_data_form_saving"))) : void 0, /*#__PURE__*/ import_react$99.createElement(PageContentHeader, {
 					icon: "pen",
 					title: this._title(get)
-				}), this.props.batch ? /*#__PURE__*/ import_react$97.createElement(ResourcesBatchBox, {
+				}), this.props.batch ? /*#__PURE__*/ import_react$99.createElement(ResourcesBatchBox, {
 					batchCount: this.props.get.batch_length,
 					counts: this.props.get.counts,
 					resources: get.resources.resources,
 					authToken
-				}) : void 0, MetadataEditRenderer_default._renderTabs(this.props.get.meta_meta_data, this.props.batch, this.props.get.batch_ids, this.props.get.return_to, this.props.get.url, this._onTabClick, currentTab, get.collection_id, this.props.get.resource_type, get.edit_by_context_urls, get.edit_by_context_fallback_url, get.batch_edit_by_context_urls, get.batch_edit_by_context_fallback_url, get.edit_by_vocabularies_url, get.batch_edit_by_vocabularies_url, get.batch_edit_all_collection_url, this.props.get.show_all_data_tab_in_edit_mode), /*#__PURE__*/ import_react$97.createElement(TabContent, null, /*#__PURE__*/ import_react$97.createElement(RestForm, {
+				}) : void 0, MetadataEditRenderer_default._renderTabs(this.props.get.meta_meta_data, this.props.batch, this.props.get.batch_ids, this.props.get.return_to, this.props.get.url, this._onTabClick, currentTab, get.collection_id, this.props.get.resource_type, get.edit_by_context_urls, get.edit_by_context_fallback_url, get.batch_edit_by_context_urls, get.batch_edit_by_context_fallback_url, get.edit_by_vocabularies_url, get.batch_edit_by_vocabularies_url, get.batch_edit_all_collection_url, this.props.get.show_all_data_tab_in_edit_mode), /*#__PURE__*/ import_react$99.createElement(TabContent, null, /*#__PURE__*/ import_react$99.createElement(RestForm, {
 					ref: this.formRef,
 					name: "resource_meta_data",
 					action: this._actionUrl(),
 					onSubmit: this._onImplicitSumbit,
 					method: "put",
 					authToken
-				}, /*#__PURE__*/ import_react$97.createElement("input", {
+				}, /*#__PURE__*/ import_react$99.createElement("input", {
 					type: "hidden",
 					name: "return_to",
 					value: this.props.get.return_to
-				}), /*#__PURE__*/ import_react$97.createElement("div", { className: "ui-container phl ptl" }, this.contextDescription(), !this.props.batch ? MetadataEditRenderer_default._renderThumbnail(this.props.get.resource) : void 0, /*#__PURE__*/ import_react$97.createElement("div", { className: "app-body-content table-cell ui-container table-substance ui-container" }, /*#__PURE__*/ import_react$97.createElement("div", { className: "active" }, this.state.systemError ? /*#__PURE__*/ import_react$97.createElement("div", {
+				}), /*#__PURE__*/ import_react$99.createElement("div", { className: "ui-container phl ptl" }, this.contextDescription(), !this.props.batch ? MetadataEditRenderer_default._renderThumbnail(this.props.get.resource) : void 0, /*#__PURE__*/ import_react$99.createElement("div", { className: "app-body-content table-cell ui-container table-substance ui-container" }, /*#__PURE__*/ import_react$99.createElement("div", { className: "active" }, this.state.systemError ? /*#__PURE__*/ import_react$99.createElement("div", {
 					className: "ui-alerts",
 					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$97.createElement("div", { className: "error ui-alert" }, this.state.systemError)) : void 0, this.state.errors && keys(this.state.errors).length > 0 ? /*#__PURE__*/ import_react$97.createElement("div", {
+				}, /*#__PURE__*/ import_react$99.createElement("div", { className: "error ui-alert" }, this.state.systemError)) : void 0, this.state.errors && keys(this.state.errors).length > 0 ? /*#__PURE__*/ import_react$99.createElement("div", {
 					className: "ui-alerts",
 					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$97.createElement("div", { className: "error ui-alert" }, I18nTranslate("resource_meta_data_has_validation_errors"))) : void 0, /*#__PURE__*/ import_react$97.createElement("div", { className: "form-body" }, this.props.batch && !get.collection_id ? map(get.batch_ids, (id) => /*#__PURE__*/ import_react$97.createElement("input", {
+				}, /*#__PURE__*/ import_react$99.createElement("div", { className: "error ui-alert" }, I18nTranslate("resource_meta_data_has_validation_errors"))) : void 0, /*#__PURE__*/ import_react$99.createElement("div", { className: "form-body" }, this.props.batch && !get.collection_id ? map(get.batch_ids, (id) => /*#__PURE__*/ import_react$99.createElement("input", {
 					key: id,
 					type: "hidden",
 					name: "batch_resource_meta_data[id][]",
@@ -68732,10 +68732,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 						const currentContext = get.meta_meta_data.contexts_by_context_id[currentContextId];
 						return MetadataEditRenderer_default._renderHiddenKeysByContext(this.props.get.meta_meta_data, currentContext.uuid, this.props.batch, this.state.models, name);
 					}
-				})()))), this.props.batch ? /*#__PURE__*/ import_react$97.createElement(BatchHintBox, null) : void 0), /*#__PURE__*/ import_react$97.createElement("div", { className: "ui-actions phl pbl mtl" }, /*#__PURE__*/ import_react$97.createElement("a", {
+				})()))), this.props.batch ? /*#__PURE__*/ import_react$99.createElement(BatchHintBox, null) : void 0), /*#__PURE__*/ import_react$99.createElement("div", { className: "ui-actions phl pbl mtl" }, /*#__PURE__*/ import_react$99.createElement("a", {
 					className: "link weak",
 					href: get.return_to || get.resource.url
-				}, ` ${I18nTranslate("meta_data_form_cancel")} `), /*#__PURE__*/ import_react$97.createElement("button", {
+				}, ` ${I18nTranslate("meta_data_form_cancel")} `), /*#__PURE__*/ import_react$99.createElement("button", {
 					className: "primary-button large",
 					type: this.state.mounted ? "button" : "submit",
 					name: "actionType",
@@ -68758,9 +68758,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 			return n;
 		}, _extends$12.apply(null, arguments);
 	}
-	var import_react$96, import_prop_types$15, AutoComplete$1, defaultSubjectDecos, doOptionalsInclude, ResourcePermissionsForm, PermissionsBySubjectType, PermissionsSubjectHeader, PermissionsSubject, RemoveButton, TristateCheckbox;
+	var import_react$98, import_prop_types$15, AutoComplete$1, defaultSubjectDecos, doOptionalsInclude, ResourcePermissionsForm, PermissionsBySubjectType, PermissionsSubjectHeader, PermissionsSubject, RemoveButton, TristateCheckbox;
 	var init_ResourcePermissionsForm = __esmMin((() => {
-		import_react$96 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$98 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$15 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_i18n_translate();
 		init_utils$2();
@@ -68769,22 +68769,22 @@ There are no contexts defined. Please configure them in the admin tool.\
 		AutoComplete$1 = null;
 		defaultSubjectDecos = {
 			User: function({ subject }) {
-				return /*#__PURE__*/ import_react$96.createElement("span", { className: "text" }, subject.name);
+				return /*#__PURE__*/ import_react$98.createElement("span", { className: "text" }, subject.name);
 			},
 			Group: function({ subject }) {
-				return /*#__PURE__*/ import_react$96.createElement("span", { className: "text" }, subject.detailed_name);
+				return /*#__PURE__*/ import_react$98.createElement("span", { className: "text" }, subject.detailed_name);
 			},
 			ApiClient: function({ subject }) {
-				return /*#__PURE__*/ import_react$96.createElement("span", { className: "text" }, subject.login);
+				return /*#__PURE__*/ import_react$98.createElement("span", { className: "text" }, subject.login);
 			},
 			Public: function({ subject }) {
-				return /*#__PURE__*/ import_react$96.createElement("span", null, subject);
+				return /*#__PURE__*/ import_react$98.createElement("span", null, subject);
 			}
 		};
 		doOptionalsInclude = function(optionals, type) {
 			return (isArray(type) ? type : [type]).some((t) => optionals.includes(t));
 		};
-		ResourcePermissionsForm = class extends import_react$96.Component {
+		ResourcePermissionsForm = class extends import_react$98.Component {
 			static defaultProps = {
 				children: null,
 				onSubmit: function() {},
@@ -68853,12 +68853,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 					}
 				];
 				rows = rows.filter(({ type, permissionsList }) => !(!editing && type && doOptionalsInclude(optionals, type) && permissionsList.length < 1));
-				return /*#__PURE__*/ import_react$96.createElement("form", {
+				return /*#__PURE__*/ import_react$98.createElement("form", {
 					name: "ui-rights-management",
 					onSubmit
-				}, children, /*#__PURE__*/ import_react$96.createElement("div", { className: "ui-rights-management" }, rows.map(function(row, i) {
+				}, children, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-rights-management" }, rows.map(function(row, i) {
 					const showTitles = i === 0;
-					return /*#__PURE__*/ import_react$96.createElement(PermissionsBySubjectType, _extends$12({ key: i }, Object.assign({}, row, {
+					return /*#__PURE__*/ import_react$98.createElement(PermissionsBySubjectType, _extends$12({ key: i }, Object.assign({}, row, {
 						showTitles,
 						editing,
 						permissionTypes: get.permission_types,
@@ -68866,21 +68866,21 @@ There are no contexts defined. Please configure them in the admin tool.\
 						onAddSubject,
 						onRemoveSubject
 					})));
-				})), /*#__PURE__*/ import_react$96.createElement("div", { className: "ptl" }, /*#__PURE__*/ import_react$96.createElement("div", { className: "form-footer" }, editable && onEdit && !editing && /*#__PURE__*/ import_react$96.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$96.createElement("a", {
+				})), /*#__PURE__*/ import_react$98.createElement("div", { className: "ptl" }, /*#__PURE__*/ import_react$98.createElement("div", { className: "form-footer" }, editable && onEdit && !editing && /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$98.createElement("a", {
 					href: this.props.editUrl,
 					onClick: onEdit,
 					className: "primary-button large"
-				}, I18nTranslate("permissions_table_edit_btn"))), editing && (onCancel || onSubmit) && /*#__PURE__*/ import_react$96.createElement("div", { className: "ui-actions" }, onCancel ? /*#__PURE__*/ import_react$96.createElement("a", {
+				}, I18nTranslate("permissions_table_edit_btn"))), editing && (onCancel || onSubmit) && /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-actions" }, onCancel ? /*#__PURE__*/ import_react$98.createElement("a", {
 					className: "link weak",
 					href: get.url,
 					onClick: onCancel
-				}, I18nTranslate("permissions_table_cancel_btn")) : void 0, onSubmit ? /*#__PURE__*/ import_react$96.createElement("button", {
+				}, I18nTranslate("permissions_table_cancel_btn")) : void 0, onSubmit ? /*#__PURE__*/ import_react$98.createElement("button", {
 					className: "primary-button large",
 					disabled: saving
 				}, I18nTranslate("permissions_table_save_btn")) : void 0))));
 			}
 		};
-		PermissionsBySubjectType = class extends import_react$96.Component {
+		PermissionsBySubjectType = class extends import_react$98.Component {
 			constructor(props) {
 				super(props);
 				this.onAddSubject = this.onAddSubject.bind(this);
@@ -68898,12 +68898,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 				const items = permissionsList;
 				const existingUuids = () => (permissionsList.models || permissionsList).map((m) => m.subject && m.subject.uuid);
 				const showAddSubject = editing && (isSubjectList != null ? isSubjectList : permissionsList.isCollection);
-				return /*#__PURE__*/ import_react$96.createElement("div", { className: "ui-rights-management-editing" }, /*#__PURE__*/ import_react$96.createElement("div", { className: "ui-rights-body" }, /*#__PURE__*/ import_react$96.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$96.createElement(PermissionsSubjectHeader, {
+				return /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-rights-management-editing" }, /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-rights-body" }, /*#__PURE__*/ import_react$98.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$98.createElement(PermissionsSubjectHeader, {
 					name: title,
 					icon,
 					titles: permissionTypes,
 					showTitles: !!showTitles
-				}), /*#__PURE__*/ import_react$96.createElement("tbody", null, items.map(function(permissions) {
+				}), /*#__PURE__*/ import_react$98.createElement("tbody", null, items.map(function(permissions) {
 					const subject = permissions.subject || subjectName;
 					const tooltipText = permissions.tooltip_text || subject && subject.tooltip_text;
 					const handlePermissionChange = onPermissionChange ? (name, value) => {
@@ -68911,7 +68911,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 						else onPermissionChange(permissionTypes, name, value);
 					} : void 0;
 					const handleRemove = onRemoveSubject && permissions.subject ? () => onRemoveSubject(collectionKey, permissions.subject.uuid) : void 0;
-					return /*#__PURE__*/ import_react$96.createElement(PermissionsSubject, {
+					return /*#__PURE__*/ import_react$98.createElement(PermissionsSubject, {
 						key: subject && subject.uuid || "pub",
 						permissions,
 						subject,
@@ -68923,13 +68923,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 						onPermissionChange: handlePermissionChange,
 						onRemoveSubject: handleRemove
 					});
-				}))), showAddSubject ? /*#__PURE__*/ import_react$96.createElement("div", { className: "ui-add-subject ptx" }, /*#__PURE__*/ import_react$96.createElement("div", {
+				}))), showAddSubject ? /*#__PURE__*/ import_react$98.createElement("div", { className: "ui-add-subject ptx" }, /*#__PURE__*/ import_react$98.createElement("div", {
 					className: "col1of3",
 					style: {
 						position: "relative",
 						maxWidth: "300px"
 					}
-				}, type != null && AutoComplete$1 ? /*#__PURE__*/ import_react$96.createElement(AutoComplete$1, {
+				}, type != null && AutoComplete$1 ? /*#__PURE__*/ import_react$98.createElement(AutoComplete$1, {
 					className: "block",
 					name: `add_${type}`,
 					resourceType: type,
@@ -68941,16 +68941,16 @@ There are no contexts defined. Please configure them in the admin tool.\
 				}) : void 0)) : void 0));
 			}
 		};
-		PermissionsSubjectHeader = class extends import_react$96.Component {
+		PermissionsSubjectHeader = class extends import_react$98.Component {
 			render() {
 				const { name, icon, titles, showTitles } = this.props;
-				return /*#__PURE__*/ import_react$96.createElement("thead", null, /*#__PURE__*/ import_react$96.createElement("tr", null, /*#__PURE__*/ import_react$96.createElement("td", { className: "ui-rights-user-title" }, name, " ", /*#__PURE__*/ import_react$96.createElement("i", { className: `icon-${icon}` })), titles.map((name) => /*#__PURE__*/ import_react$96.createElement("td", {
+				return /*#__PURE__*/ import_react$98.createElement("thead", null, /*#__PURE__*/ import_react$98.createElement("tr", null, /*#__PURE__*/ import_react$98.createElement("td", { className: "ui-rights-user-title" }, name, " ", /*#__PURE__*/ import_react$98.createElement("i", { className: `icon-${icon}` })), titles.map((name) => /*#__PURE__*/ import_react$98.createElement("td", {
 					className: "ui-rights-check-title",
 					key: name
 				}, showTitles && I18nTranslate(`permission_name_${name}`)))));
 			}
 		};
-		PermissionsSubject = class extends import_react$96.Component {
+		PermissionsSubject = class extends import_react$98.Component {
 			constructor(props) {
 				super(props);
 				this.onPermissionChange = this.onPermissionChange.bind(this);
@@ -68996,51 +68996,51 @@ There are no contexts defined. Please configure them in the admin tool.\
 			render() {
 				const { permissions, overriddenBy, subject, permissionTypes, SubjectDeco, editing, tooltipText } = this.props;
 				const { onPermissionChange, onSubjectRemove } = this;
-				return /*#__PURE__*/ import_react$96.createElement("tr", null, /*#__PURE__*/ import_react$96.createElement("td", { className: "ui-rights-user" }, editing && permissions.subject != null ? /*#__PURE__*/ import_react$96.createElement(RemoveButton, { onClick: onSubjectRemove }) : void 0, /*#__PURE__*/ import_react$96.createElement(SubjectDeco, { subject }), tooltipText && /*#__PURE__*/ import_react$96.createElement(Tooltipped, {
+				return /*#__PURE__*/ import_react$98.createElement("tr", null, /*#__PURE__*/ import_react$98.createElement("td", { className: "ui-rights-user" }, editing && permissions.subject != null ? /*#__PURE__*/ import_react$98.createElement(RemoveButton, { onClick: onSubjectRemove }) : void 0, /*#__PURE__*/ import_react$98.createElement(SubjectDeco, { subject }), tooltipText && /*#__PURE__*/ import_react$98.createElement(Tooltipped, {
 					text: tooltipText,
 					id: "tooltip" + Math.random()
-				}, /*#__PURE__*/ import_react$96.createElement("span", { className: "ui-rights-management__ttip-toggle" }, /*#__PURE__*/ import_react$96.createElement(Icon$4, { i: "question" })))), permissionTypes.map(function(name) {
+				}, /*#__PURE__*/ import_react$98.createElement("span", { className: "ui-rights-management__ttip-toggle" }, /*#__PURE__*/ import_react$98.createElement(Icon$4, { i: "question" })))), permissionTypes.map(function(name) {
 					const isEnabled = present(permissions[name]);
 					const curState = permissions[name];
 					const isOverridden = overriddenBy ? overriddenBy[name] === true : false;
 					let title = I18nTranslate(`permission_name_${name}`);
-					return /*#__PURE__*/ import_react$96.createElement("td", {
+					return /*#__PURE__*/ import_react$98.createElement("td", {
 						className: "ui-rights-check view",
 						key: name
-					}, !isEnabled ? null : /*#__PURE__*/ import_react$96.createElement("span", { className: "ui-rights-check-container" }, (() => {
+					}, !isEnabled ? null : /*#__PURE__*/ import_react$98.createElement("span", { className: "ui-rights-check-container" }, (() => {
 						if (isOverridden) {
 							title += ` ${I18nTranslate("permission_overridden_by_public")}`;
-							return /*#__PURE__*/ import_react$96.createElement("i", {
+							return /*#__PURE__*/ import_react$98.createElement("i", {
 								className: "icon-privacy-open",
 								title
 							});
 						}
-					})(), editing ? /*#__PURE__*/ import_react$96.createElement("label", { className: "ui-rights-check-label" }, /*#__PURE__*/ import_react$96.createElement(TristateCheckbox, {
+					})(), editing ? /*#__PURE__*/ import_react$98.createElement("label", { className: "ui-rights-check-label" }, /*#__PURE__*/ import_react$98.createElement(TristateCheckbox, {
 						checked: curState,
 						onChange: curry(onPermissionChange)(name),
 						name,
 						title
-					})) : curState === true ? /*#__PURE__*/ import_react$96.createElement("i", {
+					})) : curState === true ? /*#__PURE__*/ import_react$98.createElement("i", {
 						className: "icon-checkmark",
 						title
-					}) : /*#__PURE__*/ import_react$96.createElement("span", {
+					}) : /*#__PURE__*/ import_react$98.createElement("span", {
 						className: "pseudo-icon-dash",
 						title
 					}, "—")));
 				}));
 			}
 		};
-		RemoveButton = class extends import_react$96.Component {
+		RemoveButton = class extends import_react$98.Component {
 			render() {
 				const onClick = this.props.onClick || null;
-				return /*#__PURE__*/ import_react$96.createElement("a", {
+				return /*#__PURE__*/ import_react$98.createElement("a", {
 					onClick,
 					className: "button small ui-rights-remove icon-close small",
 					title: I18nTranslate("permissions_table_remove_subject_btn")
 				});
 			}
 		};
-		TristateCheckbox = class extends import_react$96.Component {
+		TristateCheckbox = class extends import_react$98.Component {
 			static propTypes = { checked: import_prop_types$15.default.oneOf([
 				true,
 				false,
@@ -69062,7 +69062,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				if (props == null) ({props: props} = this);
 				const restProps = omit(props, ["checked"]);
 				const isMixed = !isBoolean(props.checked);
-				return /*#__PURE__*/ import_react$96.createElement("input", Object.assign({ type: "checkbox" }, restProps, {
+				return /*#__PURE__*/ import_react$98.createElement("input", Object.assign({ type: "checkbox" }, restProps, {
 					checked: isMixed ? false : props.checked,
 					ref: (inputNode) => {
 						this._inputNode = inputNode;
@@ -69075,9 +69075,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/decorators/SimpleResourceThumbnail.jsx
 	var SimpleResourceThumbnail_exports = /* @__PURE__ */ __exportAll({ default: () => SimpleResourceThumbnail });
-	var import_react$95, SimpleResourceThumbnail;
+	var import_react$97, SimpleResourceThumbnail;
 	var init_SimpleResourceThumbnail = __esmMin((() => {
-		import_react$95 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$97 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ResourceThumbnail();
 		SimpleResourceThumbnail = ({ type, title, authors_pretty, image_url }) => {
 			const get = {
@@ -69087,7 +69087,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				image_url,
 				disableLink: true
 			};
-			return /*#__PURE__*/ import_react$95.createElement(ResourceThumbnail_default, {
+			return /*#__PURE__*/ import_react$97.createElement(ResourceThumbnail_default, {
 				authToken: "",
 				get
 			});
@@ -69096,17 +69096,17 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/decorators/SuperBoxDashboard.jsx
 	var SuperBoxDashboard_exports = /* @__PURE__ */ __exportAll({ default: () => SuperBoxDashboard });
-	var import_react$94, SuperBoxDashboard;
+	var import_react$96, SuperBoxDashboard;
 	var init_SuperBoxDashboard = __esmMin((() => {
-		import_react$94 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$96 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_ResourceThumbnail();
-		SuperBoxDashboard = class extends import_react$94.Component {
+		SuperBoxDashboard = class extends import_react$96.Component {
 			constructor(props) {
 				super(props);
 			}
 			renderResource(config) {
-				return /*#__PURE__*/ import_react$94.createElement(ResourceThumbnail_default, {
+				return /*#__PURE__*/ import_react$96.createElement(ResourceThumbnail_default, {
 					elm: "div",
 					style: null,
 					get: config.resource,
@@ -69131,7 +69131,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			render() {
 				var resources = this.props.resources;
 				var authToken = this.props.authToken;
-				return /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-resources-holder" }, /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-container table auto" }, /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-container table-cell table-substance" }, /*#__PURE__*/ import_react$94.createElement("ul", { className: "grid active ui-resources" }, /*#__PURE__*/ import_react$94.createElement("li", { className: "ui-resources-page" }, /*#__PURE__*/ import_react$94.createElement("ul", { className: "ui-resources-page-items" }, this.renderResources({
+				return /*#__PURE__*/ import_react$96.createElement("div", { className: "ui-resources-holder" }, /*#__PURE__*/ import_react$96.createElement("div", { className: "ui-container table auto" }, /*#__PURE__*/ import_react$96.createElement("div", { className: "ui-container table-cell table-substance" }, /*#__PURE__*/ import_react$96.createElement("ul", { className: "grid active ui-resources" }, /*#__PURE__*/ import_react$96.createElement("li", { className: "ui-resources-page" }, /*#__PURE__*/ import_react$96.createElement("ul", { className: "ui-resources-page-items" }, this.renderResources({
 					resources,
 					authToken
 				})))))));
@@ -69141,17 +69141,17 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/decorators/SuperBoxUpload.jsx
 	var SuperBoxUpload_exports = /* @__PURE__ */ __exportAll({ default: () => SuperBoxUpload });
-	var import_react$93, SuperBoxUpload;
+	var import_react$95, SuperBoxUpload;
 	var init_SuperBoxUpload = __esmMin((() => {
-		import_react$93 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$95 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ResourceThumbnail();
 		init_i18n_translate();
-		SuperBoxUpload = class extends import_react$93.Component {
+		SuperBoxUpload = class extends import_react$95.Component {
 			constructor(props) {
 				super(props);
 			}
 			renderResource(config) {
-				return /*#__PURE__*/ import_react$93.createElement(ResourceThumbnail_default, {
+				return /*#__PURE__*/ import_react$95.createElement(ResourceThumbnail_default, {
 					elm: "div",
 					style: null,
 					get: config.resource,
@@ -69175,20 +69175,20 @@ There are no contexts defined. Please configure them in the admin tool.\
 				});
 			}
 			renderContent(config) {
-				if (config.collection.length == 0) return /*#__PURE__*/ import_react$93.createElement("div", { style: { height: "250px" } });
-				return /*#__PURE__*/ import_react$93.createElement("ul", { className: "grid show_permissions ui-resources" }, /*#__PURE__*/ import_react$93.createElement("li", { className: "ui-resources-page" }, /*#__PURE__*/ import_react$93.createElement("ul", { className: "ui-resources-page-items" }, this.renderResources(config))));
+				if (config.collection.length == 0) return /*#__PURE__*/ import_react$95.createElement("div", { style: { height: "250px" } });
+				return /*#__PURE__*/ import_react$95.createElement("ul", { className: "grid show_permissions ui-resources" }, /*#__PURE__*/ import_react$95.createElement("li", { className: "ui-resources-page" }, /*#__PURE__*/ import_react$95.createElement("ul", { className: "ui-resources-page-items" }, this.renderResources(config))));
 			}
 			render() {
 				const collection = this.props.collection;
 				const authToken = this.props.authToken;
 				const children = this.props.children;
-				return /*#__PURE__*/ import_react$93.createElement("div", {
+				return /*#__PURE__*/ import_react$95.createElement("div", {
 					"data-test-id": "resources-box",
 					className: "ui-container midtone bordered rounded mvl ui-polybox"
-				}, /*#__PURE__*/ import_react$93.createElement("div", { className: "ui-container inverted ui-toolbar pvx rounded-top" }, /*#__PURE__*/ import_react$93.createElement("h2", {
+				}, /*#__PURE__*/ import_react$95.createElement("div", { className: "ui-container inverted ui-toolbar pvx rounded-top" }, /*#__PURE__*/ import_react$95.createElement("h2", {
 					className: "ui-toolbar-header pls",
 					style: { minHeight: "1px" }
-				}, I18nTranslate("media_entry_media_import_box_header_a") + collection.length + I18nTranslate("media_entry_media_import_box_header_b"))), /*#__PURE__*/ import_react$93.createElement("div", { className: "ui-resources-holder pam" }, /*#__PURE__*/ import_react$93.createElement("div", { className: "ui-container table auto" }, /*#__PURE__*/ import_react$93.createElement("div", { className: "ui-container table-cell table-substance" }, children, this.renderContent({
+				}, I18nTranslate("media_entry_media_import_box_header_a") + collection.length + I18nTranslate("media_entry_media_import_box_header_b"))), /*#__PURE__*/ import_react$95.createElement("div", { className: "ui-resources-holder pam" }, /*#__PURE__*/ import_react$95.createElement("div", { className: "ui-container table auto" }, /*#__PURE__*/ import_react$95.createElement("div", { className: "ui-container table-cell table-substance" }, children, this.renderContent({
 					collection,
 					authToken
 				})))));
@@ -69198,9 +69198,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/decorators/UsageData.jsx
 	var UsageData_exports = /* @__PURE__ */ __exportAll({ default: () => UsageData });
-	var import_react$92, UsageData;
+	var import_react$94, UsageData;
 	var init_UsageData = __esmMin((() => {
-		import_react$92 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$94 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_Icon();
 		UsageData = ({ get }) => {
@@ -69209,19 +69209,19 @@ There are no contexts defined. Please configure them in the admin tool.\
 				position: "relative",
 				top: "2px"
 			};
-			return /*#__PURE__*/ import_react$92.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$92.createElement("div", { className: "ui-container prl" }, /*#__PURE__*/ import_react$92.createElement("h3", { className: "title-l separated mbm" }, I18nTranslate("usage_data_responsibility_title")), /*#__PURE__*/ import_react$92.createElement("div", { className: "ui-metadata-box" }, /*#__PURE__*/ import_react$92.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$92.createElement("tbody", null, /*#__PURE__*/ import_react$92.createElement("tr", null, /*#__PURE__*/ import_react$92.createElement("td", { className: "ui-summary-label" }, I18nTranslate("usage_data_responsible")), /*#__PURE__*/ import_react$92.createElement("td", { className: "ui-summary-content" }, responsible.name)), /*#__PURE__*/ import_react$92.createElement("tr", null, /*#__PURE__*/ import_react$92.createElement("td", { className: "ui-summary-label" }, type === "MediaEntry" ? I18nTranslate("usage_data_import_at") : I18nTranslate("usage_data_created_at")), /*#__PURE__*/ import_react$92.createElement("td", { className: "ui-summary-content" }, created_at_pretty)))))), /*#__PURE__*/ import_react$92.createElement("div", { className: "ui-container prl" }, /*#__PURE__*/ import_react$92.createElement("h3", { className: "title-l separated mvm mtl" }, I18nTranslate("usage_data_last_changes_title")), !edit_sessions || edit_sessions.length === 0 ? /*#__PURE__*/ import_react$92.createElement("div", null, I18nTranslate("usage_data_last_changes_empty")) : /*#__PURE__*/ import_react$92.createElement("div", { className: "ui-metadata-box" }, /*#__PURE__*/ import_react$92.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$92.createElement("tbody", null, edit_sessions.map(function(edit_session) {
+			return /*#__PURE__*/ import_react$94.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-container prl" }, /*#__PURE__*/ import_react$94.createElement("h3", { className: "title-l separated mbm" }, I18nTranslate("usage_data_responsibility_title")), /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-metadata-box" }, /*#__PURE__*/ import_react$94.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$94.createElement("tbody", null, /*#__PURE__*/ import_react$94.createElement("tr", null, /*#__PURE__*/ import_react$94.createElement("td", { className: "ui-summary-label" }, I18nTranslate("usage_data_responsible")), /*#__PURE__*/ import_react$94.createElement("td", { className: "ui-summary-content" }, responsible.name)), /*#__PURE__*/ import_react$94.createElement("tr", null, /*#__PURE__*/ import_react$94.createElement("td", { className: "ui-summary-label" }, type === "MediaEntry" ? I18nTranslate("usage_data_import_at") : I18nTranslate("usage_data_created_at")), /*#__PURE__*/ import_react$94.createElement("td", { className: "ui-summary-content" }, created_at_pretty)))))), /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-container prl" }, /*#__PURE__*/ import_react$94.createElement("h3", { className: "title-l separated mvm mtl" }, I18nTranslate("usage_data_last_changes_title")), !edit_sessions || edit_sessions.length === 0 ? /*#__PURE__*/ import_react$94.createElement("div", null, I18nTranslate("usage_data_last_changes_empty")) : /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-metadata-box" }, /*#__PURE__*/ import_react$94.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$94.createElement("tbody", null, edit_sessions.map(function(edit_session) {
 				if (!edit_session.user) return null;
-				return /*#__PURE__*/ import_react$92.createElement("tr", { key: edit_session.uuid }, /*#__PURE__*/ import_react$92.createElement("td", {
+				return /*#__PURE__*/ import_react$94.createElement("tr", { key: edit_session.uuid }, /*#__PURE__*/ import_react$94.createElement("td", {
 					className: "ui-summary-label",
 					title: edit_session.change_date_iso
-				}, edit_session.change_date), /*#__PURE__*/ import_react$92.createElement("td", { className: "ui-summary-content" }, edit_session.user.name));
-			}))))), /*#__PURE__*/ import_react$92.createElement("div", { className: "ui-container prl" }, /*#__PURE__*/ import_react$92.createElement("h3", { className: "title-l separated mvm mtl" }, I18nTranslate("usage_data_relations_title")), /*#__PURE__*/ import_react$92.createElement("div", { className: "ui-metadata-box" }, /*#__PURE__*/ import_react$92.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$92.createElement("tbody", null, /*#__PURE__*/ import_react$92.createElement("tr", null, /*#__PURE__*/ import_react$92.createElement("td", { className: "ui-summary-label" }, I18nTranslate("usage_data_relations_parents")), /*#__PURE__*/ import_react$92.createElement("td", { className: "ui-summary-content" }, /*#__PURE__*/ import_react$92.createElement("span", null, relation_counts.parent_collections_count, " ", /*#__PURE__*/ import_react$92.createElement(Icon$4, {
+				}, edit_session.change_date), /*#__PURE__*/ import_react$94.createElement("td", { className: "ui-summary-content" }, edit_session.user.name));
+			}))))), /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-container prl" }, /*#__PURE__*/ import_react$94.createElement("h3", { className: "title-l separated mvm mtl" }, I18nTranslate("usage_data_relations_title")), /*#__PURE__*/ import_react$94.createElement("div", { className: "ui-metadata-box" }, /*#__PURE__*/ import_react$94.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$94.createElement("tbody", null, /*#__PURE__*/ import_react$94.createElement("tr", null, /*#__PURE__*/ import_react$94.createElement("td", { className: "ui-summary-label" }, I18nTranslate("usage_data_relations_parents")), /*#__PURE__*/ import_react$94.createElement("td", { className: "ui-summary-content" }, /*#__PURE__*/ import_react$94.createElement("span", null, relation_counts.parent_collections_count, " ", /*#__PURE__*/ import_react$94.createElement(Icon$4, {
 				i: "set",
 				style: iconStyle
-			})))), type === "Collection" && /*#__PURE__*/ import_react$92.createElement("tr", null, /*#__PURE__*/ import_react$92.createElement("td", { className: "ui-summary-label" }, I18nTranslate("usage_data_relations_children")), /*#__PURE__*/ import_react$92.createElement("td", { className: "ui-summary-content" }, /*#__PURE__*/ import_react$92.createElement("span", null, /*#__PURE__*/ import_react$92.createElement("span", null, relation_counts.child_collections_count, " ", /*#__PURE__*/ import_react$92.createElement(Icon$4, {
+			})))), type === "Collection" && /*#__PURE__*/ import_react$94.createElement("tr", null, /*#__PURE__*/ import_react$94.createElement("td", { className: "ui-summary-label" }, I18nTranslate("usage_data_relations_children")), /*#__PURE__*/ import_react$94.createElement("td", { className: "ui-summary-content" }, /*#__PURE__*/ import_react$94.createElement("span", null, /*#__PURE__*/ import_react$94.createElement("span", null, relation_counts.child_collections_count, " ", /*#__PURE__*/ import_react$94.createElement(Icon$4, {
 				i: "set",
 				style: iconStyle
-			})), /*#__PURE__*/ import_react$92.createElement("span", { style: { marginLeft: "15px" } }, relation_counts.child_media_entries_count, " ", /*#__PURE__*/ import_react$92.createElement(Icon$4, {
+			})), /*#__PURE__*/ import_react$94.createElement("span", { style: { marginLeft: "15px" } }, relation_counts.child_media_entries_count, " ", /*#__PURE__*/ import_react$94.createElement(Icon$4, {
 				i: "media-entry",
 				style: iconStyle
 			}))))))))));
@@ -69244,15 +69244,15 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/HeaderPrimaryButton.jsx
 	var HeaderPrimaryButton_exports = /* @__PURE__ */ __exportAll({ default: () => HeaderPrimaryButton });
-	var import_react$91, HeaderPrimaryButton;
+	var import_react$93, HeaderPrimaryButton;
 	var init_HeaderPrimaryButton = __esmMin((() => {
-		import_react$91 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$93 = /* @__PURE__ */ __toESM(require_react$1());
 		HeaderPrimaryButton = ({ href, text, icon, onClick }) => {
-			return /*#__PURE__*/ import_react$91.createElement("a", {
+			return /*#__PURE__*/ import_react$93.createElement("a", {
 				className: "button-primary primary-button",
 				href,
 				onClick
-			}, icon && /*#__PURE__*/ import_react$91.createElement("span", null, /*#__PURE__*/ import_react$91.createElement("i", { className: `icon-${icon}` }), " "), text);
+			}, icon && /*#__PURE__*/ import_react$93.createElement("span", null, /*#__PURE__*/ import_react$93.createElement("i", { className: `icon-${icon}` }), " "), text);
 		};
 	}));
 	//#endregion
@@ -69277,47 +69277,47 @@ There are no contexts defined. Please configure them in the admin tool.\
 		];
 		return raw ? result : result.join("");
 	}
-	var import_react$90, import_moment$10, UserCreatedItem, activityGroup, activityItemByType, resourceInfo, ResourceLink, ResourceLabel, ResourceLabelPlural;
+	var import_react$92, import_moment$10, UserCreatedItem, activityGroup, activityItemByType, resourceInfo, ResourceLink, ResourceLabel, ResourceLabelPlural;
 	var init_UserActivityStreamDeco = __esmMin((() => {
-		import_react$90 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$92 = /* @__PURE__ */ __toESM(require_react$1());
 		import_moment$10 = /* @__PURE__ */ __toESM(require_moment$1());
 		init_lodash();
-		UserCreatedItem = ({ user }) => user && user.created_at && /*#__PURE__*/ import_react$90.createElement("div", { className: "event event-item" }, /*#__PURE__*/ import_react$90.createElement("div", { className: "label" }, /*#__PURE__*/ import_react$90.createElement("i", { className: "icon icon-user" })), /*#__PURE__*/ import_react$90.createElement("div", { className: "content" }, /*#__PURE__*/ import_react$90.createElement("div", { className: "date title-xs-alt" }, (0, import_moment$10.default)(user.created_at).calendar()), /*#__PURE__*/ import_react$90.createElement("div", { className: "summary" }, /*#__PURE__*/ import_react$90.createElement("h2", { className: "title-l" }, `Sie haben sich angemeldet.`))));
+		UserCreatedItem = ({ user }) => user && user.created_at && /*#__PURE__*/ import_react$92.createElement("div", { className: "event event-item" }, /*#__PURE__*/ import_react$92.createElement("div", { className: "label" }, /*#__PURE__*/ import_react$92.createElement("i", { className: "icon icon-user" })), /*#__PURE__*/ import_react$92.createElement("div", { className: "content" }, /*#__PURE__*/ import_react$92.createElement("div", { className: "date title-xs-alt" }, (0, import_moment$10.default)(user.created_at).calendar()), /*#__PURE__*/ import_react$92.createElement("div", { className: "summary" }, /*#__PURE__*/ import_react$92.createElement("h2", { className: "title-l" }, `Sie haben sich angemeldet.`))));
 		activityGroup = ({ group }) => {
 			const { type, subject, object } = group[0];
 			const count = group.length;
 			const sub = subject ? subject.label : "Jemand";
 			switch (type) {
-				case "create": return [/*#__PURE__*/ import_react$90.createElement("i", {
+				case "create": return [/*#__PURE__*/ import_react$92.createElement("i", {
 					key: "icon",
 					className: "icon icon-plus"
-				}), /*#__PURE__*/ import_react$90.createElement("span", { key: "msg" }, `Sie haben ${count} `, /*#__PURE__*/ import_react$90.createElement(ResourceLabelPlural, object), " ", "erstellt.")];
-				case "edit": return [/*#__PURE__*/ import_react$90.createElement("i", {
+				}), /*#__PURE__*/ import_react$92.createElement("span", { key: "msg" }, `Sie haben ${count} `, /*#__PURE__*/ import_react$92.createElement(ResourceLabelPlural, object), " ", "erstellt.")];
+				case "edit": return [/*#__PURE__*/ import_react$92.createElement("i", {
 					key: "icon",
 					className: "icon icon-pen"
-				}), /*#__PURE__*/ import_react$90.createElement("span", { key: "msg" }, `Sie haben ${count} `, /*#__PURE__*/ import_react$90.createElement(ResourceLabelPlural, object), " ", "bearbeitet.")];
-				case "share": return [/*#__PURE__*/ import_react$90.createElement("i", {
+				}), /*#__PURE__*/ import_react$92.createElement("span", { key: "msg" }, `Sie haben ${count} `, /*#__PURE__*/ import_react$92.createElement(ResourceLabelPlural, object), " ", "bearbeitet.")];
+				case "share": return [/*#__PURE__*/ import_react$92.createElement("i", {
 					key: "icon",
 					className: "icon icon-privacy-private-alt"
-				}), /*#__PURE__*/ import_react$90.createElement("span", { key: "msg" }, sub, " ", `hat ${count} `, /*#__PURE__*/ import_react$90.createElement(ResourceLabelPlural, object), " ", "mit ihnen geteilt.")];
+				}), /*#__PURE__*/ import_react$92.createElement("span", { key: "msg" }, sub, " ", `hat ${count} `, /*#__PURE__*/ import_react$92.createElement(ResourceLabelPlural, object), " ", "mit ihnen geteilt.")];
 				default: throw new TypeError("Unknown activity type! " + type);
 			}
 		};
 		activityItemByType = ({ type, subject, object }) => {
 			const sub = subject ? subject.label : "Jemand";
 			switch (type) {
-				case "create": return [/*#__PURE__*/ import_react$90.createElement("i", {
+				case "create": return [/*#__PURE__*/ import_react$92.createElement("i", {
 					key: "icon",
 					className: "icon icon-plus"
-				}), /*#__PURE__*/ import_react$90.createElement("span", { key: "msg" }, "Sie haben ", /*#__PURE__*/ import_react$90.createElement(ResourceLabel, object), " ", " erstellt.")];
-				case "edit": return [/*#__PURE__*/ import_react$90.createElement("i", {
+				}), /*#__PURE__*/ import_react$92.createElement("span", { key: "msg" }, "Sie haben ", /*#__PURE__*/ import_react$92.createElement(ResourceLabel, object), " ", " erstellt.")];
+				case "edit": return [/*#__PURE__*/ import_react$92.createElement("i", {
 					key: "icon",
 					className: "icon icon-pen"
-				}), /*#__PURE__*/ import_react$90.createElement("span", { key: "msg" }, "Sie haben ", /*#__PURE__*/ import_react$90.createElement(ResourceLabel, object), " ", "bearbeitet.")];
-				case "share": return [/*#__PURE__*/ import_react$90.createElement("i", {
+				}), /*#__PURE__*/ import_react$92.createElement("span", { key: "msg" }, "Sie haben ", /*#__PURE__*/ import_react$92.createElement(ResourceLabel, object), " ", "bearbeitet.")];
+				case "share": return [/*#__PURE__*/ import_react$92.createElement("i", {
 					key: "icon",
 					className: "icon icon-privacy-private-alt"
-				}), /*#__PURE__*/ import_react$90.createElement("span", { key: "msg" }, sub, " ", "hat ", /*#__PURE__*/ import_react$90.createElement(ResourceLabel, object), " ", "mit ihnen geteilt.")];
+				}), /*#__PURE__*/ import_react$92.createElement("span", { key: "msg" }, sub, " ", "hat ", /*#__PURE__*/ import_react$92.createElement(ResourceLabel, object), " ", "mit ihnen geteilt.")];
 				default: throw new TypeError("Unknown activity type! " + type);
 			}
 		};
@@ -69330,13 +69330,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 		};
 		ResourceLink = ({ url, title = "(Unbekannt)" }) => {
-			return /*#__PURE__*/ import_react$90.createElement("a", {
+			return /*#__PURE__*/ import_react$92.createElement("a", {
 				href: url,
 				title
 			}, truncateMiddle(title, { length: 100 }));
 		};
-		ResourceLabel = (resource) => /*#__PURE__*/ import_react$90.createElement("span", null, resource.type === "MediaEntry" ? "den Eintrag" : "das Set", " ", /*#__PURE__*/ import_react$90.createElement(ResourceLink, resource));
-		ResourceLabelPlural = ({ type }) => /*#__PURE__*/ import_react$90.createElement("span", null, type === "MediaEntry" ? "Einträge" : "Sets");
+		ResourceLabel = (resource) => /*#__PURE__*/ import_react$92.createElement("span", null, resource.type === "MediaEntry" ? "den Eintrag" : "das Set", " ", /*#__PURE__*/ import_react$92.createElement(ResourceLink, resource));
+		ResourceLabelPlural = ({ type }) => /*#__PURE__*/ import_react$92.createElement("span", null, type === "MediaEntry" ? "Einträge" : "Sets");
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/UserActivityStream.jsx
@@ -69350,9 +69350,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 			return n;
 		}, _extends$11.apply(null, arguments);
 	}
-	var import_react$89, import_moment$9, import_ui_components$13, t$3, ActivityStream, ActivityGroup, ActivityItem, fallbackMessage, PaginationNav;
+	var import_react$91, import_moment$9, import_ui_components$13, t$3, ActivityStream, ActivityGroup, ActivityItem, fallbackMessage, PaginationNav;
 	var init_UserActivityStream = __esmMin((() => {
-		import_react$89 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$91 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ui();
 		import_moment$9 = /* @__PURE__ */ __toESM(require_moment$1());
 		init_lodash();
@@ -69372,11 +69372,11 @@ There are no contexts defined. Please configure them in the admin tool.\
 				isPaginated,
 				firstDate,
 				importUrl
-			}) : events.map((group, i) => !!group && group.length > 1 ? /*#__PURE__*/ import_react$89.createElement(ActivityGroup, {
+			}) : events.map((group, i) => !!group && group.length > 1 ? /*#__PURE__*/ import_react$91.createElement(ActivityGroup, {
 				group,
 				key: i
-			}) : /*#__PURE__*/ import_react$89.createElement(ActivityItem, _extends$11({}, group[0], { key: i })));
-			return /*#__PURE__*/ import_react$89.createElement("div", { className: "ui-container ptm pbl prl plm" }, /*#__PURE__*/ import_react$89.createElement("div", { className: "ui-activity-stream" }, content, isEndOfStream && !isEmpty$1(events) ? /*#__PURE__*/ import_react$89.createElement(UserCreatedItem, { user }) : !isEmpty$1(events) && /*#__PURE__*/ import_react$89.createElement(PaginationNav, {
+			}) : /*#__PURE__*/ import_react$91.createElement(ActivityItem, _extends$11({}, group[0], { key: i })));
+			return /*#__PURE__*/ import_react$91.createElement("div", { className: "ui-container ptm pbl prl plm" }, /*#__PURE__*/ import_react$91.createElement("div", { className: "ui-activity-stream" }, content, isEndOfStream && !isEmpty$1(events) ? /*#__PURE__*/ import_react$91.createElement(UserCreatedItem, { user }) : !isEmpty$1(events) && /*#__PURE__*/ import_react$91.createElement(PaginationNav, {
 				href: nextLink,
 				isLoading: isFetchingPast
 			})));
@@ -69387,55 +69387,55 @@ There are no contexts defined. Please configure them in the admin tool.\
 			const firstDate = (0, import_moment$9.default)(head(group).date).calendar();
 			const lastDate = (0, import_moment$9.default)(last(group).date).calendar();
 			const date = firstDate === lastDate ? firstDate : `${firstDate} — ${lastDate}`;
-			return /*#__PURE__*/ import_react$89.createElement("div", { className: "event event-group" }, /*#__PURE__*/ import_react$89.createElement("div", { className: "label" }, icon), /*#__PURE__*/ import_react$89.createElement("div", { className: "content" }, /*#__PURE__*/ import_react$89.createElement("span", { className: "date title-xs-alt" }, date), /*#__PURE__*/ import_react$89.createElement("div", { className: "summary" }, /*#__PURE__*/ import_react$89.createElement("h2", null, summary)), /*#__PURE__*/ import_react$89.createElement("ul", { className: "extra text" }, group.map((item, i) => {
+			return /*#__PURE__*/ import_react$91.createElement("div", { className: "event event-group" }, /*#__PURE__*/ import_react$91.createElement("div", { className: "label" }, icon), /*#__PURE__*/ import_react$91.createElement("div", { className: "content" }, /*#__PURE__*/ import_react$91.createElement("span", { className: "date title-xs-alt" }, date), /*#__PURE__*/ import_react$91.createElement("div", { className: "summary" }, /*#__PURE__*/ import_react$91.createElement("h2", null, summary)), /*#__PURE__*/ import_react$91.createElement("ul", { className: "extra text" }, group.map((item, i) => {
 				const info = resourceInfo({
 					item,
 					activityType: group[0].type
 				});
-				return /*#__PURE__*/ import_react$89.createElement("li", {
+				return /*#__PURE__*/ import_react$91.createElement("li", {
 					className: "event",
 					key: i
-				}, /*#__PURE__*/ import_react$89.createElement("div", { className: "content" }, /*#__PURE__*/ import_react$89.createElement("div", { className: "summary" }, /*#__PURE__*/ import_react$89.createElement("h3", null, /*#__PURE__*/ import_react$89.createElement(ResourceLink, item.object), !!info && /*#__PURE__*/ import_react$89.createElement("span", { className: "date title-xs-alt" }, " ", info)))));
+				}, /*#__PURE__*/ import_react$91.createElement("div", { className: "content" }, /*#__PURE__*/ import_react$91.createElement("div", { className: "summary" }, /*#__PURE__*/ import_react$91.createElement("h3", null, /*#__PURE__*/ import_react$91.createElement(ResourceLink, item.object), !!info && /*#__PURE__*/ import_react$91.createElement("span", { className: "date title-xs-alt" }, " ", info)))));
 			}))));
 		};
 		ActivityItem = (item) => {
 			import_moment$9.default.locale(currentLocale());
 			const [icon, summary] = activityItemByType(item);
-			return /*#__PURE__*/ import_react$89.createElement("div", { className: "event event-item" }, /*#__PURE__*/ import_react$89.createElement("div", { className: "label" }, icon), /*#__PURE__*/ import_react$89.createElement("div", { className: "content" }, /*#__PURE__*/ import_react$89.createElement("div", { className: "date title-xs-alt" }, (0, import_moment$9.default)(item.date).calendar()), /*#__PURE__*/ import_react$89.createElement("div", { className: "summary" }, /*#__PURE__*/ import_react$89.createElement("h2", { className: "title-l" }, summary)), !isEmpty$1(item.moreDates) && /*#__PURE__*/ import_react$89.createElement("div", { className: "meta" }, /*#__PURE__*/ import_react$89.createElement("span", { className: "date title-xs-alt" }, resourceInfo({
+			return /*#__PURE__*/ import_react$91.createElement("div", { className: "event event-item" }, /*#__PURE__*/ import_react$91.createElement("div", { className: "label" }, icon), /*#__PURE__*/ import_react$91.createElement("div", { className: "content" }, /*#__PURE__*/ import_react$91.createElement("div", { className: "date title-xs-alt" }, (0, import_moment$9.default)(item.date).calendar()), /*#__PURE__*/ import_react$91.createElement("div", { className: "summary" }, /*#__PURE__*/ import_react$91.createElement("h2", { className: "title-l" }, summary)), !isEmpty$1(item.moreDates) && /*#__PURE__*/ import_react$91.createElement("div", { className: "meta" }, /*#__PURE__*/ import_react$91.createElement("span", { className: "date title-xs-alt" }, resourceInfo({
 				item,
 				activityType: item.type
 			})))));
 		};
 		fallbackMessage = ({ isPaginated, importUrl }) => {
 			const message = isPaginated ? "Nichts gefunden für diesen Zeitraum." : "Sie haben noch keine Aktivitäten durchgeführt.";
-			const action = isPaginated ? null : /*#__PURE__*/ import_react$89.createElement(HeaderPrimaryButton, {
+			const action = isPaginated ? null : /*#__PURE__*/ import_react$91.createElement(HeaderPrimaryButton, {
 				icon: "upload",
 				text: t$3("dashboard_create_media_entry_btn"),
 				href: importUrl
 			});
-			return /*#__PURE__*/ import_react$89.createElement("div", { className: "pvh mth mbl" }, /*#__PURE__*/ import_react$89.createElement("div", { className: "by-center" }, /*#__PURE__*/ import_react$89.createElement("p", { className: "title-l mbm" }, message), action));
+			return /*#__PURE__*/ import_react$91.createElement("div", { className: "pvh mth mbl" }, /*#__PURE__*/ import_react$91.createElement("div", { className: "by-center" }, /*#__PURE__*/ import_react$91.createElement("p", { className: "title-l mbm" }, message), action));
 		};
 		PaginationNav = ({ isLoading, ...props }) => {
 			const showActive = isLoading;
 			const text = showActive ? t$3("pagination_nav_nextloading") : t$3("pagination_nav_prevpage");
-			return /*#__PURE__*/ import_react$89.createElement("div", { className: "ui-container pal" }, /*#__PURE__*/ import_react$89.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$89.createElement(import_ui_components$13.ActionsBar, null, /*#__PURE__*/ import_react$89.createElement(import_ui_components$13.Button, props, t$3("pagination_nav_prevpage")))), /*#__PURE__*/ import_react$89.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$89.createElement(import_ui_components$13.ActionsBar, null, /*#__PURE__*/ import_react$89.createElement(import_ui_components$13.Button, _extends$11({ disabled: showActive }, props), text))));
+			return /*#__PURE__*/ import_react$91.createElement("div", { className: "ui-container pal" }, /*#__PURE__*/ import_react$91.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$91.createElement(import_ui_components$13.ActionsBar, null, /*#__PURE__*/ import_react$91.createElement(import_ui_components$13.Button, props, t$3("pagination_nav_prevpage")))), /*#__PURE__*/ import_react$91.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$91.createElement(import_ui_components$13.ActionsBar, null, /*#__PURE__*/ import_react$91.createElement(import_ui_components$13.Button, _extends$11({ disabled: showActive }, props), text))));
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/Collection/SelectCollection.jsx
 	var SelectCollection_exports = /* @__PURE__ */ __exportAll({ default: () => SelectCollection });
-	var import_react$88, SelectCollection, ControlledCheckbox;
+	var import_react$90, SelectCollection, ControlledCheckbox;
 	var init_SelectCollection = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$88 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$90 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_rails_form();
 		init_form_xhr();
 		init_Preloader();
 		init_Button();
 		init_SelectCollectionDialog();
-		SelectCollection = class extends import_react$88.Component {
+		SelectCollection = class extends import_react$90.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -69500,14 +69500,14 @@ There are no contexts defined. Please configure them in the admin tool.\
 				};
 				const hasNew = this.state.newSets.length > 0;
 				const hasResultEntries = get.collection_rows.length !== 0;
-				const _search = /*#__PURE__*/ import_react$88.createElement("div", { className: "ui-search" }, /*#__PURE__*/ import_react$88.createElement(RestForm, {
+				const _search = /*#__PURE__*/ import_react$90.createElement("div", { className: "ui-search" }, /*#__PURE__*/ import_react$90.createElement(RestForm, {
 					ref: "form",
 					name: "search_collections",
 					action: get.select_collection_url,
 					method: "get",
 					authToken,
 					className: "dummy"
-				}, /*#__PURE__*/ import_react$88.createElement("input", {
+				}, /*#__PURE__*/ import_react$90.createElement("input", {
 					type: "text",
 					autoCorrect: "off",
 					autoComplete: "off",
@@ -69517,72 +69517,72 @@ There are no contexts defined. Please configure them in the admin tool.\
 					name: "search_term",
 					value: this.state.searchTerm,
 					onChange: this._onChange
-				}), !this.state.mounted ? [/*#__PURE__*/ import_react$88.createElement(Button$3, {
+				}), !this.state.mounted ? [/*#__PURE__*/ import_react$90.createElement(Button$3, {
 					key: "search_button",
 					style: buttonMargins,
 					className: "button",
 					type: "submit",
 					name: "search"
-				}, I18nTranslate("resource_select_collection_search")), /*#__PURE__*/ import_react$88.createElement(Button$3, {
+				}, I18nTranslate("resource_select_collection_search")), /*#__PURE__*/ import_react$90.createElement(Button$3, {
 					key: "clear_button",
 					style: buttonMargins,
 					className: "button",
 					type: "submit",
 					name: "clear"
-				}, I18nTranslate("resource_select_collection_clear"))] : /*#__PURE__*/ import_react$88.createElement("button", {
+				}, I18nTranslate("resource_select_collection_clear"))] : /*#__PURE__*/ import_react$90.createElement("button", {
 					onClick: this._onClickNew,
 					className: "button ui-search-button"
 				}, "Neues Set erstellen")));
 				const _content = [];
-				if (this.state.searching && !(hasNew || hasResultEntries)) _content.push(/*#__PURE__*/ import_react$88.createElement(Preloader$1, { key: "content1" }));
-				if (hasNew || hasResultEntries) _content.push(/*#__PURE__*/ import_react$88.createElement("ol", {
+				if (this.state.searching && !(hasNew || hasResultEntries)) _content.push(/*#__PURE__*/ import_react$90.createElement(Preloader$1, { key: "content1" }));
+				if (hasNew || hasResultEntries) _content.push(/*#__PURE__*/ import_react$90.createElement("ol", {
 					key: "content2",
 					className: "ui-set-list pbs"
-				}, hasNew ? map(this.state.newSets, (row, index) => /*#__PURE__*/ import_react$88.createElement("li", {
+				}, hasNew ? map(this.state.newSets, (row, index) => /*#__PURE__*/ import_react$90.createElement("li", {
 					key: `new_${index}`,
 					className: "ui-set-list-item"
-				}, /*#__PURE__*/ import_react$88.createElement("label", null, /*#__PURE__*/ import_react$88.createElement("input", {
+				}, /*#__PURE__*/ import_react$90.createElement("label", null, /*#__PURE__*/ import_react$90.createElement("input", {
 					type: "hidden",
 					name: `new_collections[new_${index}][checked]`,
 					value: "false"
-				}), /*#__PURE__*/ import_react$88.createElement("input", {
+				}), /*#__PURE__*/ import_react$90.createElement("input", {
 					type: "hidden",
 					name: `new_collections[new_${index}][name]`,
 					value: row
-				}), /*#__PURE__*/ import_react$88.createElement(ControlledCheckbox, {
+				}), /*#__PURE__*/ import_react$90.createElement(ControlledCheckbox, {
 					className: "ui-set-list-input",
 					name: `new_collections[new_${index}][checked]`,
 					value: "true",
 					checked: true
-				}), /*#__PURE__*/ import_react$88.createElement("span", { className: "title" }, row), /*#__PURE__*/ import_react$88.createElement("span", { className: "owner" }, get.current_user.label), /*#__PURE__*/ import_react$88.createElement("span", { className: "created-at" }, I18nTranslate("resource_select_collection_new"))))) : void 0, (() => {
-					if (this.state.searching) return /*#__PURE__*/ import_react$88.createElement(Preloader$1, { style: { marginTop: "20px" } });
+				}), /*#__PURE__*/ import_react$90.createElement("span", { className: "title" }, row), /*#__PURE__*/ import_react$90.createElement("span", { className: "owner" }, get.current_user.label), /*#__PURE__*/ import_react$90.createElement("span", { className: "created-at" }, I18nTranslate("resource_select_collection_new"))))) : void 0, (() => {
+					if (this.state.searching) return /*#__PURE__*/ import_react$90.createElement(Preloader$1, { style: { marginTop: "20px" } });
 					else if (hasResultEntries) return map(get.collection_rows, function(row) {
 						const { collection } = row;
 						const checked = row.contains_media_entry;
-						return /*#__PURE__*/ import_react$88.createElement("li", {
+						return /*#__PURE__*/ import_react$90.createElement("li", {
 							key: collection.uuid,
 							className: "ui-set-list-item"
-						}, /*#__PURE__*/ import_react$88.createElement("label", null, /*#__PURE__*/ import_react$88.createElement("input", {
+						}, /*#__PURE__*/ import_react$90.createElement("label", null, /*#__PURE__*/ import_react$90.createElement("input", {
 							type: "hidden",
 							name: `selected_collections[${collection.uuid}][]`,
 							value: "false"
-						}), /*#__PURE__*/ import_react$88.createElement(ControlledCheckbox, {
+						}), /*#__PURE__*/ import_react$90.createElement(ControlledCheckbox, {
 							className: "ui-set-list-input",
 							name: `selected_collections[${collection.uuid}][]`,
 							value: "true",
 							checked
-						}), /*#__PURE__*/ import_react$88.createElement("span", { className: "title" }, collection.title), /*#__PURE__*/ import_react$88.createElement("span", { className: "owner" }, collection.authors_pretty), /*#__PURE__*/ import_react$88.createElement("span", { className: "created-at" }, collection.created_at_pretty)));
+						}), /*#__PURE__*/ import_react$90.createElement("span", { className: "title" }, collection.title), /*#__PURE__*/ import_react$90.createElement("span", { className: "owner" }, collection.authors_pretty), /*#__PURE__*/ import_react$90.createElement("span", { className: "created-at" }, collection.created_at_pretty)));
 					});
 				})()));
-				if (!hasResultEntries && presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$88.createElement("h3", {
+				if (!hasResultEntries && presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$90.createElement("h3", {
 					key: "content3",
 					className: "by-center title-m"
 				}, I18nTranslate("resource_select_collection_non_found")));
-				if (!hasResultEntries && !presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$88.createElement("h3", {
+				if (!hasResultEntries && !presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$90.createElement("h3", {
 					key: "content4",
 					className: "by-center title-m"
 				}, I18nTranslate("resource_select_collection_non_assigned")));
-				return /*#__PURE__*/ import_react$88.createElement(SelectCollectionDialog, {
+				return /*#__PURE__*/ import_react$90.createElement(SelectCollectionDialog, {
 					onCancel: this.props.onClose,
 					cancelUrl: get.resource_url,
 					title: I18nTranslate("resource_select_collection_title"),
@@ -69596,7 +69596,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				});
 			}
 		};
-		ControlledCheckbox = class extends import_react$88.Component {
+		ControlledCheckbox = class extends import_react$90.Component {
 			constructor(props) {
 				super(props);
 				this.state = { checked: props.checked };
@@ -69605,7 +69605,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				return this.setState({ checked: event.target.checked });
 			};
 			render() {
-				return /*#__PURE__*/ import_react$88.createElement("input", {
+				return /*#__PURE__*/ import_react$90.createElement("input", {
 					className: this.props.className,
 					type: "checkbox",
 					name: this.props.name,
@@ -69619,9 +69619,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/HeaderButton.jsx
 	var HeaderButton_exports = /* @__PURE__ */ __exportAll({ default: () => HeaderButton });
-	var import_react$87, HeaderButton;
+	var import_react$89, HeaderButton;
 	var init_HeaderButton = __esmMin((() => {
-		import_react$87 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$89 = /* @__PURE__ */ __toESM(require_react$1());
 		init_rails_form();
 		HeaderButton = ({ authToken, href, method = "post", icon, fa, title, onClick, children }) => {
 			const handleClick = (event) => {
@@ -69629,26 +69629,26 @@ There are no contexts defined. Please configure them in the admin tool.\
 				if (onClick) onClick(event);
 				return false;
 			};
-			return /*#__PURE__*/ import_react$87.createElement(RestForm, {
+			return /*#__PURE__*/ import_react$89.createElement(RestForm, {
 				className: "button_to",
 				name: "",
 				method,
 				action: href,
 				authToken
-			}, /*#__PURE__*/ import_react$87.createElement("button", {
+			}, /*#__PURE__*/ import_react$89.createElement("button", {
 				className: "button",
 				type: "submit",
 				title,
 				onClick: onClick ? handleClick : void 0
-			}, icon && /*#__PURE__*/ import_react$87.createElement("i", { className: `icon-${icon}` }), fa && /*#__PURE__*/ import_react$87.createElement("span", { className: fa })), children);
+			}, icon && /*#__PURE__*/ import_react$89.createElement("i", { className: `icon-${icon}` }), fa && /*#__PURE__*/ import_react$89.createElement("span", { className: fa })), children);
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/MediaEntryHeader.jsx
 	var MediaEntryHeader_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryHeader });
-	var import_react$86, MediaEntryHeader;
+	var import_react$88, MediaEntryHeader;
 	var init_MediaEntryHeader = __esmMin((() => {
-		import_react$86 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$88 = /* @__PURE__ */ __toESM(require_react$1());
 		init_HeaderButton();
 		init_PageContentHeader();
 		init_Dropdown();
@@ -69656,7 +69656,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_Link();
 		init_i18n_translate();
 		init_utils$2();
-		MediaEntryHeader = class extends import_react$86.Component {
+		MediaEntryHeader = class extends import_react$88.Component {
 			constructor(props) {
 				super(props);
 				this.state = { active: this.props.isClient };
@@ -69669,19 +69669,19 @@ There are no contexts defined. Please configure them in the admin tool.\
 				const icon = get.type === "Collection" ? "set" : "media-entry";
 				const buttons = get.button_actions.map((button_id) => get.buttons.find((b) => b.id === button_id)).filter(Boolean);
 				const menuItems = get.dropdown_actions.map((button_id) => get.buttons.find((b) => b.id === button_id)).filter(Boolean);
-				const banner = get.new_version_entries && get.new_version_entries.length > 0 ? /*#__PURE__*/ import_react$86.createElement("div", { className: "ui-alert warning ui-container inverted paragraph-l mbm" }, I18nTranslate("media_entry_notice_new_versions"), /*#__PURE__*/ import_react$86.createElement("ul", null, get.new_version_entries.map((i, idx) => {
+				const banner = get.new_version_entries && get.new_version_entries.length > 0 ? /*#__PURE__*/ import_react$88.createElement("div", { className: "ui-alert warning ui-container inverted paragraph-l mbm" }, I18nTranslate("media_entry_notice_new_versions"), /*#__PURE__*/ import_react$88.createElement("ul", null, get.new_version_entries.map((i, idx) => {
 					const me = i.entry;
 					const desc = present(i.description) ? i.description + ", " : "";
-					return /*#__PURE__*/ import_react$86.createElement("li", { key: idx }, /*#__PURE__*/ import_react$86.createElement(Link$5, {
+					return /*#__PURE__*/ import_react$88.createElement("li", { key: idx }, /*#__PURE__*/ import_react$88.createElement(Link$5, {
 						href: me.url,
 						mods: "strong",
 						style: {
 							color: "#adc671",
 							textDecoration: "underline"
 						}
-					}, me.title), " ", /*#__PURE__*/ import_react$86.createElement("em", { style: { fontStyle: "italic" } }, "(", desc, me.date, ")"));
+					}, me.title), " ", /*#__PURE__*/ import_react$88.createElement("em", { style: { fontStyle: "italic" } }, "(", desc, me.date, ")"));
 				}))) : void 0;
-				return /*#__PURE__*/ import_react$86.createElement(PageContentHeader, {
+				return /*#__PURE__*/ import_react$88.createElement(PageContentHeader, {
 					icon,
 					title: get.title,
 					banner,
@@ -69689,7 +69689,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				}, buttons.map((button) => {
 					let onClick;
 					if (button.async_action) onClick = () => this._onClick(button.async_action);
-					return /*#__PURE__*/ import_react$86.createElement(HeaderButton, {
+					return /*#__PURE__*/ import_react$88.createElement(HeaderButton, {
 						key: button.id,
 						onClick,
 						icon: button.icon,
@@ -69700,23 +69700,23 @@ There are no contexts defined. Please configure them in the admin tool.\
 						method: button.method,
 						authToken
 					});
-				}), menuItems.length > 0 ? /*#__PURE__*/ import_react$86.createElement(UIDropdown, {
+				}), menuItems.length > 0 ? /*#__PURE__*/ import_react$88.createElement(UIDropdown, {
 					mods: "stick-right",
 					toggle: I18nTranslate("resource_action_more_actions"),
 					toggleProps: { className: "button" }
-				}, /*#__PURE__*/ import_react$86.createElement(Menu, { className: "ui-drop-menu" }, menuItems.map((button) => {
+				}, /*#__PURE__*/ import_react$88.createElement(Menu, { className: "ui-drop-menu" }, menuItems.map((button) => {
 					let href, onClick;
 					if (button.async_action) onClick = () => this._onClick(button.async_action);
 					else if (button.method === "get") href = button.action;
 					else throw new Error("In dropdown, a button must be either async or method \"get\", but the dropdown does not support a form with \"put/patch\".");
-					return /*#__PURE__*/ import_react$86.createElement(UIMenuItem, {
+					return /*#__PURE__*/ import_react$88.createElement(UIMenuItem, {
 						key: button.id,
 						onClick,
 						href,
 						onMouseEnter: null,
 						onMouseLeave: null,
 						target: button.target
-					}, /*#__PURE__*/ import_react$86.createElement(Icon$4, {
+					}, /*#__PURE__*/ import_react$88.createElement(Icon$4, {
 						i: button.icon,
 						mods: "ui-drop-icon",
 						style: {
@@ -69725,7 +69725,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 							minWidth: "20px",
 							marginLeft: "5px"
 						}
-					}), /*#__PURE__*/ import_react$86.createElement("span", { style: {
+					}), /*#__PURE__*/ import_react$88.createElement("span", { style: {
 						display: "inline",
 						marginLeft: "5px"
 					} }, button.title));
@@ -69758,7 +69758,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				target.focus();
 			}, 1);
 		};
-		return /*#__PURE__*/ import_react$85.createElement("textarea", _extends$10({ rows: "4" }, props, {
+		return /*#__PURE__*/ import_react$87.createElement("textarea", _extends$10({ rows: "4" }, props, {
 			value: props.value || props.children,
 			style: {
 				display: "inline-block",
@@ -69772,22 +69772,22 @@ There are no contexts defined. Please configure them in the admin tool.\
 			onChange: doSelect
 		}));
 	}
-	var import_react$85;
+	var import_react$87;
 	var init_SelectingTextarea = __esmMin((() => {
-		import_react$85 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$87 = /* @__PURE__ */ __toESM(require_react$1());
 	}));
 	//#endregion
 	//#region app/javascript/react/views/Shared/Share.jsx
 	var Share_exports = /* @__PURE__ */ __exportAll({ default: () => Share });
-	var import_react$84, Share;
+	var import_react$86, Share;
 	var init_Share = __esmMin((() => {
-		import_react$84 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$86 = /* @__PURE__ */ __toESM(require_react$1());
 		init_PageContent();
 		init_TabContent();
 		init_PageHeader();
 		init_i18n_translate();
 		init_SelectingTextarea();
-		Share = class extends import_react$84.Component {
+		Share = class extends import_react$86.Component {
 			_onClick = (event) => {
 				event.preventDefault();
 				if (this.props.onClose) return this.props.onClose();
@@ -69805,19 +69805,19 @@ There are no contexts defined. Please configure them in the admin tool.\
 				return this.props.get.uuid_url;
 			}
 			renderContent(get) {
-				return /*#__PURE__*/ import_react$84.createElement("div", null, /*#__PURE__*/ import_react$84.createElement("div", { className: "ui-info-box prm mbs" }, /*#__PURE__*/ import_react$84.createElement("h2", { className: "title-l ui-info-box-title mbs" }, I18nTranslate("share_uuid_url_subtitle")), /*#__PURE__*/ import_react$84.createElement("div", null, I18nTranslate(`share_uuid_url_hint_${this._typeUnderscore()}`)), /*#__PURE__*/ import_react$84.createElement("div", null, I18nTranslate("share_uuid_url_hint_exporter")), /*#__PURE__*/ import_react$84.createElement("div", null, /*#__PURE__*/ import_react$84.createElement("input", {
+				return /*#__PURE__*/ import_react$86.createElement("div", null, /*#__PURE__*/ import_react$86.createElement("div", { className: "ui-info-box prm mbs" }, /*#__PURE__*/ import_react$86.createElement("h2", { className: "title-l ui-info-box-title mbs" }, I18nTranslate("share_uuid_url_subtitle")), /*#__PURE__*/ import_react$86.createElement("div", null, I18nTranslate(`share_uuid_url_hint_${this._typeUnderscore()}`)), /*#__PURE__*/ import_react$86.createElement("div", null, I18nTranslate("share_uuid_url_hint_exporter")), /*#__PURE__*/ import_react$86.createElement("div", null, /*#__PURE__*/ import_react$86.createElement("input", {
 					type: "text",
 					className: "mtm",
 					value: this._uuidUrl(),
 					onChange: () => {},
 					style: { width: "100%" }
-				}))), get.type === "MediaEntry" && /*#__PURE__*/ import_react$84.createElement("div", { className: "ui-info-box prm mbs mtl" }, /*#__PURE__*/ import_react$84.createElement("h2", { className: "title-l ui-info-box-title mbs" }, I18nTranslate("share_embed_hint_subtitle")), /*#__PURE__*/ import_react$84.createElement("div", { className: "mbm" }, I18nTranslate("share_embed_hint_oembed")), /*#__PURE__*/ import_react$84.createElement("div", { className: "mbm" }, I18nTranslate("share_embed_hint_iframe")), /*#__PURE__*/ import_react$84.createElement("details", { open: true }, /*#__PURE__*/ import_react$84.createElement("summary", null, I18nTranslate("share_embed_hint_iframe_code")), /*#__PURE__*/ import_react$84.createElement(SelectingTextarea, { className: "code block pas" }, get.embed_html_code))), /*#__PURE__*/ import_react$84.createElement("div", { className: "ui-info-box prm mbs mtl" }, /*#__PURE__*/ import_react$84.createElement("h2", { className: "title-l ui-info-box-title mbs" }, I18nTranslate("share_custom_url_subtitle")), I18nTranslate(`share_custom_url_hint_${this._typeUnderscore()}`), get.primary_custom_url ? /*#__PURE__*/ import_react$84.createElement("div", null, /*#__PURE__*/ import_react$84.createElement("input", {
+				}))), get.type === "MediaEntry" && /*#__PURE__*/ import_react$86.createElement("div", { className: "ui-info-box prm mbs mtl" }, /*#__PURE__*/ import_react$86.createElement("h2", { className: "title-l ui-info-box-title mbs" }, I18nTranslate("share_embed_hint_subtitle")), /*#__PURE__*/ import_react$86.createElement("div", { className: "mbm" }, I18nTranslate("share_embed_hint_oembed")), /*#__PURE__*/ import_react$86.createElement("div", { className: "mbm" }, I18nTranslate("share_embed_hint_iframe")), /*#__PURE__*/ import_react$86.createElement("details", { open: true }, /*#__PURE__*/ import_react$86.createElement("summary", null, I18nTranslate("share_embed_hint_iframe_code")), /*#__PURE__*/ import_react$86.createElement(SelectingTextarea, { className: "code block pas" }, get.embed_html_code))), /*#__PURE__*/ import_react$86.createElement("div", { className: "ui-info-box prm mbs mtl" }, /*#__PURE__*/ import_react$86.createElement("h2", { className: "title-l ui-info-box-title mbs" }, I18nTranslate("share_custom_url_subtitle")), I18nTranslate(`share_custom_url_hint_${this._typeUnderscore()}`), get.primary_custom_url ? /*#__PURE__*/ import_react$86.createElement("div", null, /*#__PURE__*/ import_react$86.createElement("input", {
 					className: "mtm",
 					type: "text",
 					value: this._primaryCustomUrl(),
 					onChange: () => {},
 					style: { width: "100%" }
-				})) : /*#__PURE__*/ import_react$84.createElement("div", null, /*#__PURE__*/ import_react$84.createElement("input", {
+				})) : /*#__PURE__*/ import_react$86.createElement("div", null, /*#__PURE__*/ import_react$86.createElement("input", {
 					disabled: true,
 					className: "mtm",
 					type: "text",
@@ -69831,14 +69831,14 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 			render() {
 				const { get, fullPage } = this.props;
-				if (fullPage) return /*#__PURE__*/ import_react$84.createElement(PageContent, null, /*#__PURE__*/ import_react$84.createElement(PageHeader, {
+				if (fullPage) return /*#__PURE__*/ import_react$86.createElement(PageContent, null, /*#__PURE__*/ import_react$86.createElement(PageHeader, {
 					title: get.title,
 					fa: "fa fa-share"
-				}), /*#__PURE__*/ import_react$84.createElement(TabContent, null, /*#__PURE__*/ import_react$84.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, /*#__PURE__*/ import_react$84.createElement("div", { className: "ui-container" }, this.renderContent(get), /*#__PURE__*/ import_react$84.createElement("div", { className: "ui-actions mtl" }, /*#__PURE__*/ import_react$84.createElement("a", {
+				}), /*#__PURE__*/ import_react$86.createElement(TabContent, null, /*#__PURE__*/ import_react$86.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, /*#__PURE__*/ import_react$86.createElement("div", { className: "ui-container" }, this.renderContent(get), /*#__PURE__*/ import_react$86.createElement("div", { className: "ui-actions mtl" }, /*#__PURE__*/ import_react$86.createElement("a", {
 					href: get.resource_url,
 					className: "button"
 				}, I18nTranslate(`share_back_to_${this._typeUnderscore()}`)))))));
-				else return /*#__PURE__*/ import_react$84.createElement("div", null, /*#__PURE__*/ import_react$84.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$84.createElement("a", {
+				else return /*#__PURE__*/ import_react$86.createElement("div", null, /*#__PURE__*/ import_react$86.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$86.createElement("a", {
 					href: get.resource_url,
 					"aria-hidden": "true",
 					onClick: this._onClick,
@@ -69851,10 +69851,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 						float: "right",
 						paddingTop: "5px"
 					}
-				}, /*#__PURE__*/ import_react$84.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$84.createElement("h3", { className: "title-l" }, I18nTranslate(`share_title_${this._typeUnderscore()}`))), /*#__PURE__*/ import_react$84.createElement("div", {
+				}, /*#__PURE__*/ import_react$86.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$86.createElement("h3", { className: "title-l" }, I18nTranslate(`share_title_${this._typeUnderscore()}`))), /*#__PURE__*/ import_react$86.createElement("div", {
 					className: "ui-modal-body",
 					style: { maxHeight: "none" }
-				}, this.renderContent(get)), /*#__PURE__*/ import_react$84.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$84.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$84.createElement("a", {
+				}, this.renderContent(get)), /*#__PURE__*/ import_react$86.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$86.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$86.createElement("a", {
 					href: get.resource_url,
 					"aria-hidden": "true",
 					className: "link weak",
@@ -69867,15 +69867,15 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntryHeaderWithModal.jsx
 	var MediaEntryHeaderWithModal_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryHeaderWithModal });
-	var import_react$83, import_url$15, MediaEntryHeaderWithModal;
+	var import_react$85, import_url$15, MediaEntryHeaderWithModal;
 	var init_MediaEntryHeaderWithModal = __esmMin((() => {
-		import_react$83 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$85 = /* @__PURE__ */ __toESM(require_react$1());
 		import_url$15 = /* @__PURE__ */ __toESM(require_url());
 		init_AsyncModal();
 		init_SelectCollection();
 		init_MediaEntryHeader();
 		init_Share();
-		MediaEntryHeaderWithModal = class extends import_react$83.Component {
+		MediaEntryHeaderWithModal = class extends import_react$85.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -69889,7 +69889,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			};
 			render() {
 				const { authToken, get } = this.props;
-				return /*#__PURE__*/ import_react$83.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$85.createElement("div", { style: {
 					margin: "0px",
 					padding: "0px"
 				} }, (() => {
@@ -69898,7 +69898,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 							return this.setState({ selectCollectionModal: false });
 						};
 						const contentForGet = (get) => {
-							return /*#__PURE__*/ import_react$83.createElement(SelectCollection, {
+							return /*#__PURE__*/ import_react$85.createElement(SelectCollection, {
 								get,
 								async: true,
 								authToken: this.props.authToken,
@@ -69914,7 +69914,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 							parsedUrl.query["___sparse"] = "{collection_selection:{}}";
 							return (0, import_url$15.format)(parsedUrl);
 						};
-						return /*#__PURE__*/ import_react$83.createElement(AsyncModal, {
+						return /*#__PURE__*/ import_react$85.createElement(AsyncModal, {
 							get: get.collection_selection,
 							getUrl: getUrl(),
 							contentForGet,
@@ -69927,7 +69927,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 							return this.setState({ shareModal: false });
 						};
 						const contentForGet = (get) => {
-							return /*#__PURE__*/ import_react$83.createElement(Share, {
+							return /*#__PURE__*/ import_react$85.createElement(Share, {
 								fullPage: false,
 								get,
 								async: true,
@@ -69939,7 +69939,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 							return json;
 						};
 						const getUrl = get.header.share_url;
-						return /*#__PURE__*/ import_react$83.createElement(AsyncModal, {
+						return /*#__PURE__*/ import_react$85.createElement(AsyncModal, {
 							get: null,
 							getUrl,
 							widthInPixel: 800,
@@ -69947,7 +69947,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 							extractGet
 						});
 					}
-				})(), /*#__PURE__*/ import_react$83.createElement(MediaEntryHeader, {
+				})(), /*#__PURE__*/ import_react$85.createElement(MediaEntryHeader, {
 					authToken,
 					get: get.header,
 					async: true,
@@ -69959,12 +69959,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntryPrivacyStatusIcon.jsx
 	var MediaEntryPrivacyStatusIcon_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryPrivacyStatusIcon });
-	var import_react$82, MediaEntryPrivacyStatusIcon;
+	var import_react$84, MediaEntryPrivacyStatusIcon;
 	var init_MediaEntryPrivacyStatusIcon = __esmMin((() => {
-		import_react$82 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$84 = /* @__PURE__ */ __toESM(require_react$1());
 		MediaEntryPrivacyStatusIcon = ({ get }) => {
 			const status = get.privacy_status;
-			return /*#__PURE__*/ import_react$82.createElement("i", { className: `icon-privacy-${{
+			return /*#__PURE__*/ import_react$84.createElement("i", { className: `icon-privacy-${{
 				public: "open",
 				shared: "group",
 				private: "private"
@@ -69974,9 +69974,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntryTabs.jsx
 	var MediaEntryTabs_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryTabs });
-	var import_react$81, import_classnames$14, import_url$14, parseUrlState$2, activeTabId, MediaEntryTabs;
+	var import_react$83, import_classnames$14, import_url$14, parseUrlState$2, activeTabId, MediaEntryTabs;
 	var init_MediaEntryTabs = __esmMin((() => {
-		import_react$81 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$83 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$14 = /* @__PURE__ */ __toESM(require_classnames());
 		init_MediaEntryPrivacyStatusIcon();
 		import_url$14 = /* @__PURE__ */ __toESM(require_url());
@@ -69993,25 +69993,25 @@ There are no contexts defined. Please configure them in the admin tool.\
 		};
 		activeTabId = (urlState) => urlState.action;
 		MediaEntryTabs = ({ get, for_url }) => {
-			const [urlState, setUrlState] = (0, import_react$81.useState)(parseUrlState$2(for_url));
-			(0, import_react$81.useEffect)(() => {
+			const [urlState, setUrlState] = (0, import_react$83.useState)(parseUrlState$2(for_url));
+			(0, import_react$83.useEffect)(() => {
 				setUrlState(parseUrlState$2(for_url));
 			}, [for_url]);
 			const media_entry_path = get.url;
 			const tabs = Object.fromEntries(get.tabs.map((tab) => {
 				const path = tab.href ? tab.href : media_entry_path;
-				const icon = tab.icon_type === "privacy_status_icon" ? /*#__PURE__*/ import_react$81.createElement(MediaEntryPrivacyStatusIcon, { get }) : null;
+				const icon = tab.icon_type === "privacy_status_icon" ? /*#__PURE__*/ import_react$83.createElement(MediaEntryPrivacyStatusIcon, { get }) : null;
 				return [path, {
 					...tab,
 					icon
 				}];
 			}));
-			return /*#__PURE__*/ import_react$81.createElement("ul", { className: "ui-tabs large" }, Object.entries(tabs).map(([path, tab]) => {
+			return /*#__PURE__*/ import_react$83.createElement("ul", { className: "ui-tabs large" }, Object.entries(tabs).map(([path, tab]) => {
 				const classes = (0, import_classnames$14.default)("ui-tabs-item", { active: tab.id === activeTabId(urlState) });
-				return /*#__PURE__*/ import_react$81.createElement("li", {
+				return /*#__PURE__*/ import_react$83.createElement("li", {
 					key: tab.id,
 					className: classes
-				}, /*#__PURE__*/ import_react$81.createElement("a", { href: path }, tab.icon, ` ${tab.title} `));
+				}, /*#__PURE__*/ import_react$83.createElement("a", { href: path }, tab.icon, ` ${tab.title} `));
 			}));
 		};
 	}));
@@ -71857,18 +71857,18 @@ There are no contexts defined. Please configure them in the admin tool.\
 		}
 		return defaultContext;
 	}
-	var import_react$80, defaultContext, QueryClientSharingContext, useQueryClient, QueryClientProvider;
+	var import_react$82, defaultContext, QueryClientSharingContext, useQueryClient, QueryClientProvider;
 	var init_QueryClientProvider = __esmMin((() => {
-		import_react$80 = /* @__PURE__ */ __toESM(require_react$1(), 1);
-		defaultContext = /*#__PURE__*/ import_react$80.createContext(void 0);
-		QueryClientSharingContext = /*#__PURE__*/ import_react$80.createContext(false);
+		import_react$82 = /* @__PURE__ */ __toESM(require_react$1(), 1);
+		defaultContext = /*#__PURE__*/ import_react$82.createContext(void 0);
+		QueryClientSharingContext = /*#__PURE__*/ import_react$82.createContext(false);
 		useQueryClient = ({ context } = {}) => {
-			const queryClient = import_react$80.useContext(getQueryClientContext(context, import_react$80.useContext(QueryClientSharingContext)));
+			const queryClient = import_react$82.useContext(getQueryClientContext(context, import_react$82.useContext(QueryClientSharingContext)));
 			if (!queryClient) throw new Error("No QueryClient set, use QueryClientProvider to set one");
 			return queryClient;
 		};
 		QueryClientProvider = ({ client, children, context, contextSharing = false }) => {
-			import_react$80.useEffect(() => {
+			import_react$82.useEffect(() => {
 				client.mount();
 				return () => {
 					client.unmount();
@@ -71876,7 +71876,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}, [client]);
 			if (contextSharing) client.getLogger().error("The contextSharing option has been deprecated and will be removed in the next major version");
 			const Context = getQueryClientContext(context, contextSharing);
-			return /*#__PURE__*/ import_react$80.createElement(QueryClientSharingContext.Provider, { value: !context && contextSharing }, /*#__PURE__*/ import_react$80.createElement(Context.Provider, { value: client }, children));
+			return /*#__PURE__*/ import_react$82.createElement(QueryClientSharingContext.Provider, { value: !context && contextSharing }, /*#__PURE__*/ import_react$82.createElement(Context.Provider, { value: client }, children));
 		};
 	}));
 	//#endregion
@@ -71891,12 +71891,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 	function useMutation(arg1, arg2, arg3) {
 		const options = parseMutationArgs(arg1, arg2, arg3);
 		const queryClient = useQueryClient({ context: options.context });
-		const [observer] = import_react$79.useState(() => new MutationObserver(queryClient, options));
-		import_react$79.useEffect(() => {
+		const [observer] = import_react$81.useState(() => new MutationObserver(queryClient, options));
+		import_react$81.useEffect(() => {
 			observer.setOptions(options);
 		}, [observer, options]);
-		const result = useSyncExternalStore(import_react$79.useCallback((onStoreChange) => observer.subscribe(notifyManager.batchCalls(onStoreChange)), [observer]), () => observer.getCurrentResult(), () => observer.getCurrentResult());
-		const mutate = import_react$79.useCallback((variables, mutateOptions) => {
+		const result = useSyncExternalStore(import_react$81.useCallback((onStoreChange) => observer.subscribe(notifyManager.batchCalls(onStoreChange)), [observer]), () => observer.getCurrentResult(), () => observer.getCurrentResult());
+		const mutate = import_react$81.useCallback((variables, mutateOptions) => {
 			observer.mutate(variables, mutateOptions).catch(noop);
 		}, [observer]);
 		if (result.error && shouldThrowError(observer.options.useErrorBoundary, [result.error])) throw result.error;
@@ -71907,9 +71907,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 		};
 	}
 	function noop() {}
-	var import_react$79;
+	var import_react$81;
 	var init_useMutation = __esmMin((() => {
-		import_react$79 = /* @__PURE__ */ __toESM(require_react$1(), 1);
+		import_react$81 = /* @__PURE__ */ __toESM(require_react$1(), 1);
 		init_lib$1();
 		init_useSyncExternalStore();
 		init_QueryClientProvider();
@@ -72090,12 +72090,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/templates/ResourcePermissions.jsx
 	function ResourcePermissions({ get, optionals, authToken }) {
-		const [permissions, setPermissions] = (0, import_react$78.useState)(get);
-		const [editing, setEditing] = (0, import_react$78.useState)(false);
-		const [transferModal, setTransferModal] = (0, import_react$78.useState)(false);
-		const routerRef = (0, import_react$78.useRef)(null);
-		const editingRef = (0, import_react$78.useRef)(false);
-		const isLoadingRef = (0, import_react$78.useRef)(false);
+		const [permissions, setPermissions] = (0, import_react$80.useState)(get);
+		const [editing, setEditing] = (0, import_react$80.useState)(false);
+		const [transferModal, setTransferModal] = (0, import_react$80.useState)(false);
+		const routerRef = (0, import_react$80.useRef)(null);
+		const editingRef = (0, import_react$80.useRef)(false);
+		const isLoadingRef = (0, import_react$80.useRef)(false);
 		editingRef.current = editing;
 		const mutation = useMutation({
 			mutationFn: () => savePermissions(permissions),
@@ -72116,7 +72116,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 		});
 		isLoadingRef.current = mutation.isLoading;
-		(0, import_react$78.useEffect)(() => {
+		(0, import_react$80.useEffect)(() => {
 			const router = (init_router(), __toCommonJS(router_exports)).default;
 			const editUrl = import_url$12.parse(get.edit_permissions_url).pathname;
 			const stopListen = router.listen((location) => {
@@ -72173,11 +72173,11 @@ There are no contexts defined. Please configure them in the admin tool.\
 				[collectionKey]: prev[collectionKey].filter((p) => !(p.subject && p.subject.uuid === subjectUuid))
 			}));
 		};
-		const GroupIndex = ({ subject }) => /*#__PURE__*/ import_react$78.createElement("span", {
+		const GroupIndex = ({ subject }) => /*#__PURE__*/ import_react$80.createElement("span", {
 			className: "text",
 			title: subject.detailed_name
-		}, subject.can_show ? /*#__PURE__*/ import_react$78.createElement("a", { href: subject.url }, subject.detailed_name) : subject.detailed_name);
-		return /*#__PURE__*/ import_react$78.createElement("div", null, transferModal && /*#__PURE__*/ import_react$78.createElement(Modal, { widthInPixel: 800 }, /*#__PURE__*/ import_react$78.createElement(EditTransferResponsibility, {
+		}, subject.can_show ? /*#__PURE__*/ import_react$80.createElement("a", { href: subject.url }, subject.detailed_name) : subject.detailed_name);
+		return /*#__PURE__*/ import_react$80.createElement("div", null, transferModal && /*#__PURE__*/ import_react$80.createElement(Modal, { widthInPixel: 800 }, /*#__PURE__*/ import_react$80.createElement(EditTransferResponsibility, {
 			authToken,
 			batch: false,
 			resourceType: get.type,
@@ -72189,7 +72189,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			responsible: get.responsible,
 			onClose: () => setTransferModal(false),
 			currentUser: get.current_user
-		})), /*#__PURE__*/ import_react$78.createElement(ResourcePermissionsForm, {
+		})), /*#__PURE__*/ import_react$80.createElement(ResourcePermissionsForm, {
 			get: permissions,
 			editing,
 			saving: mutation.isLoading,
@@ -72203,26 +72203,26 @@ There are no contexts defined. Please configure them in the admin tool.\
 			onPublicPermissionChange,
 			onAddSubject,
 			onRemoveSubject
-		}, /*#__PURE__*/ import_react$78.createElement(PermissionsOverview, {
+		}, /*#__PURE__*/ import_react$80.createElement(PermissionsOverview, {
 			get: permissions,
 			openTransferModal: get.can_transfer ? () => setTransferModal(true) : void 0
-		}), /*#__PURE__*/ import_react$78.createElement("hr", { className: "separator light mvl" }), /*#__PURE__*/ import_react$78.createElement("h3", { className: "title-l mbs" }, I18nTranslate("permissions_table_title"))));
+		}), /*#__PURE__*/ import_react$80.createElement("hr", { className: "separator light mvl" }), /*#__PURE__*/ import_react$80.createElement("h3", { className: "title-l mbs" }, I18nTranslate("permissions_table_title"))));
 	}
 	function PermissionsOverview({ get, openTransferModal }) {
-		return /*#__PURE__*/ import_react$78.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$78.createElement("h3", { className: "title-l mbl" }, I18nTranslate("permissions_responsibility_title")), /*#__PURE__*/ import_react$78.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$78.createElement("div", { className: "ui-info-box" }, /*#__PURE__*/ import_react$78.createElement("h2", {
+		return /*#__PURE__*/ import_react$80.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$80.createElement("h3", { className: "title-l mbl" }, I18nTranslate("permissions_responsibility_title")), /*#__PURE__*/ import_react$80.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$80.createElement("div", { className: "ui-info-box" }, /*#__PURE__*/ import_react$80.createElement("h2", {
 			className: "ui-rights-user-title mbs",
 			style: { fontWeight: "700" }
-		}, I18nTranslate("permissions_responsible_user_and_responsibility_group_title")), /*#__PURE__*/ import_react$78.createElement("p", { className: "ui-info-box-intro prm" }, I18nTranslate("permissions_responsible_user_and_responsibility_group_msg")), /*#__PURE__*/ import_react$78.createElement("ul", { className: "inline" }, /*#__PURE__*/ import_react$78.createElement("li", { className: "person-tag" }, get.responsible.name)), openTransferModal && /*#__PURE__*/ import_react$78.createElement("ul", { className: "inline mts" }, /*#__PURE__*/ import_react$78.createElement("a", {
+		}, I18nTranslate("permissions_responsible_user_and_responsibility_group_title")), /*#__PURE__*/ import_react$80.createElement("p", { className: "ui-info-box-intro prm" }, I18nTranslate("permissions_responsible_user_and_responsibility_group_msg")), /*#__PURE__*/ import_react$80.createElement("ul", { className: "inline" }, /*#__PURE__*/ import_react$80.createElement("li", { className: "person-tag" }, get.responsible.name)), openTransferModal && /*#__PURE__*/ import_react$80.createElement("ul", { className: "inline mts" }, /*#__PURE__*/ import_react$80.createElement("a", {
 			className: "button",
 			onClick: openTransferModal
-		}, I18nTranslate("permissions_transfer_responsibility_link"))))), get.current_user && /*#__PURE__*/ import_react$78.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$78.createElement("h2", {
+		}, I18nTranslate("permissions_transfer_responsibility_link"))))), get.current_user && /*#__PURE__*/ import_react$80.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$80.createElement("h2", {
 			className: "ui-rights-user-title mbs",
 			style: { fontWeight: "700" }
-		}, I18nTranslate("permissions_overview_yours_title")), /*#__PURE__*/ import_react$78.createElement("p", { className: "ui-info-box-intro" }, I18nTranslate("permissions_overview_yours_msg_start"), get.current_user.name, I18nTranslate("permissions_overview_yours_msg_end")), /*#__PURE__*/ import_react$78.createElement("ul", { className: "inline" }, get.current_user_permissions.map((p) => /*#__PURE__*/ import_react$78.createElement("li", { key: p }, I18nTranslate(`permission_name_${p}`))))));
+		}, I18nTranslate("permissions_overview_yours_title")), /*#__PURE__*/ import_react$80.createElement("p", { className: "ui-info-box-intro" }, I18nTranslate("permissions_overview_yours_msg_start"), get.current_user.name, I18nTranslate("permissions_overview_yours_msg_end")), /*#__PURE__*/ import_react$80.createElement("ul", { className: "inline" }, get.current_user_permissions.map((p) => /*#__PURE__*/ import_react$80.createElement("li", { key: p }, I18nTranslate(`permission_name_${p}`))))));
 	}
-	var import_react$78, import_url$12;
+	var import_react$80, import_url$12;
 	var init_ResourcePermissions = __esmMin((() => {
-		import_react$78 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$80 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lib();
 		init_i18n_translate();
 		import_url$12 = /* @__PURE__ */ __toESM(require_url());
@@ -72234,13 +72234,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/MediaEntryPermissions.jsx
 	var MediaEntryPermissions_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryPermissions });
-	var import_react$77, import_prop_types$14, MediaEntryPermissions;
+	var import_react$79, import_prop_types$14, MediaEntryPermissions;
 	var init_MediaEntryPermissions = __esmMin((() => {
-		import_react$77 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$79 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$14 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ResourcePermissions();
 		MediaEntryPermissions = ({ authToken, get }) => {
-			return /*#__PURE__*/ import_react$77.createElement(ResourcePermissions, {
+			return /*#__PURE__*/ import_react$79.createElement(ResourcePermissions, {
 				authToken,
 				get
 			});
@@ -72248,66 +72248,89 @@ There are no contexts defined. Please configure them in the admin tool.\
 		MediaEntryPermissions.propTypes = { get: import_prop_types$14.default.object.isRequired };
 	}));
 	//#endregion
+	//#region app/javascript/react/views/MediaEntry/MediaEntryUsageData.jsx
+	var MediaEntryUsageData_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryUsageData });
+	var import_react$78, import_classnames$13, MediaEntryUsageData, MetaDataTable;
+	var init_MediaEntryUsageData = __esmMin((() => {
+		import_react$78 = /* @__PURE__ */ __toESM(require_react$1());
+		import_classnames$13 = /* @__PURE__ */ __toESM(require_classnames());
+		init_i18n_translate();
+		init_UsageData();
+		MediaEntryUsageData = ({ get, for_url, authToken }) => {
+			const list = get.more_data.file_information;
+			const sidecars = get.more_data.xmp_sidecars;
+			return [/*#__PURE__*/ import_react$78.createElement(UsageData, {
+				key: "usage_data",
+				get,
+				for_url,
+				authToken
+			}), /*#__PURE__*/ import_react$78.createElement("div", {
+				key: "file_information",
+				className: "col2of3"
+			}, /*#__PURE__*/ import_react$78.createElement("h3", { className: "title-l separated mbm" }, I18nTranslate("media_entry_file_information_title")), /*#__PURE__*/ import_react$78.createElement("div", null, list ? /*#__PURE__*/ import_react$78.createElement(MetaDataTable, { list }) : void 0), sidecars && sidecars.length > 0 && /*#__PURE__*/ import_react$78.createElement("div", null, /*#__PURE__*/ import_react$78.createElement("h3", { className: "title-l separated mtl mbm" }, I18nTranslate("media_entry_xmp_sidecars_title")), sidecars.map((sidecar) => /*#__PURE__*/ import_react$78.createElement("div", {
+				key: sidecar.uuid,
+				className: "mbm"
+			}, /*#__PURE__*/ import_react$78.createElement("h4", { className: "title-m mbs" }, [
+				sidecar.filename,
+				sidecar.import_date,
+				sidecar.user && sidecar.user.name
+			].filter(Boolean).join(" · ")), /*#__PURE__*/ import_react$78.createElement(MetaDataTable, { list: sidecar.meta_data })))))];
+		};
+		MetaDataTable = ({ list }) => /*#__PURE__*/ import_react$78.createElement("div", { className: "ui-metadata-box" }, /*#__PURE__*/ import_react$78.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$78.createElement("tbody", null, list.map((item) => {
+			const key = item[0];
+			const value = item[1];
+			const mod = item[2];
+			if (value) return /*#__PURE__*/ import_react$78.createElement("tr", { key }, /*#__PURE__*/ import_react$78.createElement("td", { className: "ui-summary-label" }, key), /*#__PURE__*/ import_react$78.createElement("td", { className: (0, import_classnames$13.default)("ui-summary-content", mod) }, value));
+			return null;
+		}).filter(Boolean))));
+	}));
+	//#endregion
 	//#region app/javascript/react/views/Base.jsx
 	var Base_exports = /* @__PURE__ */ __exportAll({ default: () => Base });
-	var import_react$76, import_classnames$13, Base;
+	var import_react$77, Base;
 	var init_Base = __esmMin((() => {
-		import_react$76 = /* @__PURE__ */ __toESM(require_react$1());
-		import_classnames$13 = /* @__PURE__ */ __toESM(require_classnames());
+		import_react$77 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_MediaEntryHeaderWithModal();
 		init_MediaEntryTabs();
 		init_MetaDataByListing();
 		init_MediaEntryPermissions();
-		init_UsageData();
+		init_MediaEntryUsageData();
 		Base = ({ get, action_name, for_url, authToken }) => {
 			const main = (() => {
-				if (action_name === "more_data") return /*#__PURE__*/ import_react$76.createElement("div", { className: "ui-container" }, /*#__PURE__*/ import_react$76.createElement("h3", { className: "title-l mbl" }, I18nTranslate("media_entry_all_metadata_title")), /*#__PURE__*/ import_react$76.createElement(MetaDataByListing, {
+				if (action_name === "more_data") return /*#__PURE__*/ import_react$77.createElement("div", { className: "ui-container" }, /*#__PURE__*/ import_react$77.createElement("h3", { className: "title-l mbl" }, I18nTranslate("media_entry_all_metadata_title")), /*#__PURE__*/ import_react$77.createElement(MetaDataByListing, {
 					list: get.meta_data.by_vocabulary,
 					hideSeparator: true,
 					authToken
 				}));
-				else if (["permissions", "permissions_edit"].includes(action_name)) return /*#__PURE__*/ import_react$76.createElement(MediaEntryPermissions, {
+				else if (["permissions", "permissions_edit"].includes(action_name)) return /*#__PURE__*/ import_react$77.createElement(MediaEntryPermissions, {
 					get: get.permissions,
 					for_url,
 					authToken
 				});
-				else if (action_name === "usage_data") {
-					const list = get.more_data.file_information;
-					return [/*#__PURE__*/ import_react$76.createElement(UsageData, {
-						key: "usage_data",
-						get,
-						for_url,
-						authToken
-					}), /*#__PURE__*/ import_react$76.createElement("div", {
-						key: "file_information",
-						className: "col2of3"
-					}, /*#__PURE__*/ import_react$76.createElement("h3", { className: "title-l separated mbm" }, I18nTranslate("media_entry_file_information_title")), /*#__PURE__*/ import_react$76.createElement("div", null, list ? /*#__PURE__*/ import_react$76.createElement("div", { className: "ui-metadata-box" }, /*#__PURE__*/ import_react$76.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$76.createElement("tbody", null, list.map((item) => {
-						const key = item[0];
-						const value = item[1];
-						const mod = item[2];
-						if (value) return /*#__PURE__*/ import_react$76.createElement("tr", { key }, /*#__PURE__*/ import_react$76.createElement("td", { className: "ui-summary-label" }, key), /*#__PURE__*/ import_react$76.createElement("td", { className: (0, import_classnames$13.default)("ui-summary-content", mod) }, value));
-						return null;
-					}).filter(Boolean)))) : void 0))];
-				}
+				else if (action_name === "usage_data") return /*#__PURE__*/ import_react$77.createElement(MediaEntryUsageData, {
+					get,
+					for_url,
+					authToken
+				});
 			})();
-			return /*#__PURE__*/ import_react$76.createElement("div", { className: "app-body-ui-container" }, /*#__PURE__*/ import_react$76.createElement(MediaEntryHeaderWithModal, {
+			return /*#__PURE__*/ import_react$77.createElement("div", { className: "app-body-ui-container" }, /*#__PURE__*/ import_react$77.createElement(MediaEntryHeaderWithModal, {
 				get,
 				for_url,
 				authToken
-			}), /*#__PURE__*/ import_react$76.createElement(MediaEntryTabs, {
+			}), /*#__PURE__*/ import_react$77.createElement(MediaEntryTabs, {
 				get,
 				for_url,
 				authToken
-			}), /*#__PURE__*/ import_react$76.createElement("div", { className: "ui-container tab-content bordered rounded-right rounded-bottom mbh" }, /*#__PURE__*/ import_react$76.createElement("div", { className: "ui-container bright pal rounded-top-right rounded-bottom" }, main)));
+			}), /*#__PURE__*/ import_react$77.createElement("div", { className: "ui-container tab-content bordered rounded-right rounded-bottom mbh" }, /*#__PURE__*/ import_react$77.createElement("div", { className: "ui-container bright pal rounded-top-right rounded-bottom" }, main)));
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/Collection/RelationResources.jsx
 	var RelationResources_exports = /* @__PURE__ */ __exportAll({ default: () => RelationResources });
-	var import_react$75, RelationResources;
+	var import_react$76, RelationResources;
 	var init_RelationResources = __esmMin((() => {
-		import_react$75 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$76 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_MediaResourcesBox();
 		init_utils$2();
@@ -72322,16 +72345,16 @@ There are no contexts defined. Please configure them in the admin tool.\
 				parents: typeKebab + "_relations_parents_hint",
 				siblings: typeKebab + "_relations_siblings_hint"
 			};
-			return /*#__PURE__*/ import_react$75.createElement("div", {
+			return /*#__PURE__*/ import_react$76.createElement("div", {
 				className: "ui-container tab-content bordered rounded-right rounded-bottom mbh",
 				"data-test-id": testId
-			}, /*#__PURE__*/ import_react$75.createElement("div", { className: "ui-container bright rounded-right rounded-bottom phl ptl" }, /*#__PURE__*/ import_react$75.createElement("h2", { className: "ui-resources-header title-l separated mbm" }, I18nTranslate(titles[scope]), " ", /*#__PURE__*/ import_react$75.createElement("span", {
+			}, /*#__PURE__*/ import_react$76.createElement("div", { className: "ui-container bright rounded-right rounded-bottom phl ptl" }, /*#__PURE__*/ import_react$76.createElement("h2", { className: "ui-resources-header title-l separated mbm" }, I18nTranslate(titles[scope]), " ", /*#__PURE__*/ import_react$76.createElement("span", {
 				className: "ui-counter",
 				style: { fontWeight: "normal" }
-			}, "(", get.relation_resources.pagination.total_count, ")"), /*#__PURE__*/ import_react$75.createElement("a", {
+			}, "(", get.relation_resources.pagination.total_count, ")"), /*#__PURE__*/ import_react$76.createElement("a", {
 				className: "strong",
 				href: get.relations_url
-			}, I18nTranslate("collection_relations_show_all_relations"))), /*#__PURE__*/ import_react$75.createElement("p", { className: "mbm mts" }, I18nTranslate(hints[scope]))), /*#__PURE__*/ import_react$75.createElement(MediaResourcesBox, {
+			}, I18nTranslate("collection_relations_show_all_relations"))), /*#__PURE__*/ import_react$76.createElement("p", { className: "mbm mts" }, I18nTranslate(hints[scope]))), /*#__PURE__*/ import_react$76.createElement(MediaResourcesBox, {
 				get: get.relation_resources,
 				authToken,
 				initial: { show_filter: true },
@@ -72344,59 +72367,59 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/Collection/Relations.jsx
 	var Relations_exports = /* @__PURE__ */ __exportAll({ default: () => Relations });
-	var import_react$74, import_classnames$12, import_url$11, Relations;
+	var import_react$75, import_classnames$12, import_url$11, Relations;
 	var init_Relations = __esmMin((() => {
 		init_lodash();
-		import_react$74 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$75 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$12 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
 		init_ResourceThumbnail();
 		import_url$11 = /* @__PURE__ */ __toESM(require_url());
-		Relations = class extends import_react$74.Component {
+		Relations = class extends import_react$75.Component {
 			render() {
 				const { authToken, get } = this.props;
 				const typeKebab = kebabCase$1(get.type).replace("-", "_");
 				const parentCount = get.relations.parent_collections.pagination.total_count;
 				const siblingCount = get.relations.sibling_collections.pagination.total_count;
-				return /*#__PURE__*/ import_react$74.createElement("div", {
+				return /*#__PURE__*/ import_react$75.createElement("div", {
 					className: "ui-container tab-content bordered rounded-right rounded-bottom mbh",
 					"data-test-id": this.props.testId
-				}, /*#__PURE__*/ import_react$74.createElement("div", {
+				}, /*#__PURE__*/ import_react$75.createElement("div", {
 					className: "ui-container midtone-darker bordered-bottom bordered-top relationships-wrapper",
 					style: { border: "0px" }
-				}, /*#__PURE__*/ import_react$74.createElement("div", {
+				}, /*#__PURE__*/ import_react$75.createElement("div", {
 					className: "ui-resources-holder",
 					id: "set-relations-parents"
-				}, /*#__PURE__*/ import_react$74.createElement("div", { className: "ui-resources-header mbn" }, /*#__PURE__*/ import_react$74.createElement("h2", { className: "title-l ui-resource-title mtl mll" }, I18nTranslate("collection_relations_parent_sets"), /*#__PURE__*/ import_react$74.createElement("span", { className: "ui-counter" }, `(${parentCount})`), parentCount > 0 ? /*#__PURE__*/ import_react$74.createElement("a", {
+				}, /*#__PURE__*/ import_react$75.createElement("div", { className: "ui-resources-header mbn" }, /*#__PURE__*/ import_react$75.createElement("h2", { className: "title-l ui-resource-title mtl mll" }, I18nTranslate("collection_relations_parent_sets"), /*#__PURE__*/ import_react$75.createElement("span", { className: "ui-counter" }, `(${parentCount})`), parentCount > 0 ? /*#__PURE__*/ import_react$75.createElement("a", {
 					className: "strong",
 					href: get.relations_parents_url
-				}, I18nTranslate("collection_relations_show_all")) : void 0), /*#__PURE__*/ import_react$74.createElement("p", { className: "mll mts" }, I18nTranslate(typeKebab + "_relations_parents_hint"))), /*#__PURE__*/ import_react$74.createElement("ul", { className: "grid horizontal ui-resources" }, parentCount === 0 ? /*#__PURE__*/ import_react$74.createElement("div", { className: "ui-container ptm pbh" }, /*#__PURE__*/ import_react$74.createElement("div", { className: "title-m by-center" }, I18nTranslate("collection_relations_no_parent_sets"))) : void 0, map(get.relations.parent_collections.resources, (resource) => /*#__PURE__*/ import_react$74.createElement(ResourceThumbnail_default, {
+				}, I18nTranslate("collection_relations_show_all")) : void 0), /*#__PURE__*/ import_react$75.createElement("p", { className: "mll mts" }, I18nTranslate(typeKebab + "_relations_parents_hint"))), /*#__PURE__*/ import_react$75.createElement("ul", { className: "grid horizontal ui-resources" }, parentCount === 0 ? /*#__PURE__*/ import_react$75.createElement("div", { className: "ui-container ptm pbh" }, /*#__PURE__*/ import_react$75.createElement("div", { className: "title-m by-center" }, I18nTranslate("collection_relations_no_parent_sets"))) : void 0, map(get.relations.parent_collections.resources, (resource) => /*#__PURE__*/ import_react$75.createElement(ResourceThumbnail_default, {
 					key: resource.uuid,
 					authToken,
 					elm: "li",
 					get: resource,
 					style: { verticalAlign: "top" }
-				}))))), /*#__PURE__*/ import_react$74.createElement("div", {
+				}))))), /*#__PURE__*/ import_react$75.createElement("div", {
 					className: (0, import_classnames$12.default)("bright relationships-this-wrapper relationships-wrapper ui-container", { "pointing-bottom": get.type === "Collection" }),
 					style: { height: "360px" }
-				}, /*#__PURE__*/ import_react$74.createElement("div", {
+				}, /*#__PURE__*/ import_react$75.createElement("div", {
 					className: "bordered-right bright pointing-right relationships-this ui-container",
 					style: { height: "360px" }
-				}, /*#__PURE__*/ import_react$74.createElement("div", { className: "pointing-top" }, /*#__PURE__*/ import_react$74.createElement("div", {
+				}, /*#__PURE__*/ import_react$75.createElement("div", { className: "pointing-top" }, /*#__PURE__*/ import_react$75.createElement("div", {
 					className: "ui-resources-holder",
 					id: "set-relations-self"
-				}, /*#__PURE__*/ import_react$74.createElement("div", { className: "ui-resources-header mbn" }, /*#__PURE__*/ import_react$74.createElement("h2", { className: "title-l ui-resource-title mtl mll" }, I18nTranslate(typeKebab + "_relations_current")), /*#__PURE__*/ import_react$74.createElement("p", { className: "mll mts" }, "\xA0")), /*#__PURE__*/ import_react$74.createElement("ul", { className: "grid horizontal ui-resources" }, /*#__PURE__*/ import_react$74.createElement(ResourceThumbnail_default, {
+				}, /*#__PURE__*/ import_react$75.createElement("div", { className: "ui-resources-header mbn" }, /*#__PURE__*/ import_react$75.createElement("h2", { className: "title-l ui-resource-title mtl mll" }, I18nTranslate(typeKebab + "_relations_current")), /*#__PURE__*/ import_react$75.createElement("p", { className: "mll mts" }, "\xA0")), /*#__PURE__*/ import_react$75.createElement("ul", { className: "grid horizontal ui-resources" }, /*#__PURE__*/ import_react$75.createElement(ResourceThumbnail_default, {
 					authToken,
 					elm: "li",
 					get,
 					style: { verticalAlign: "top" }
-				}))))), /*#__PURE__*/ import_react$74.createElement("div", { className: "midtone relationships-siblings ui-container" }, /*#__PURE__*/ import_react$74.createElement("div", {
+				}))))), /*#__PURE__*/ import_react$75.createElement("div", { className: "midtone relationships-siblings ui-container" }, /*#__PURE__*/ import_react$75.createElement("div", {
 					className: "ui-resources-holder",
 					id: "set-relations-siblings"
-				}, /*#__PURE__*/ import_react$74.createElement("div", { className: "ui-resources-header mbn" }, /*#__PURE__*/ import_react$74.createElement("h2", { className: "title-l ui-resource-title mtl mll" }, I18nTranslate("collection_relations_sibling_sets"), /*#__PURE__*/ import_react$74.createElement("span", { className: "ui-counter" }, `(${siblingCount})`), siblingCount > 0 ? /*#__PURE__*/ import_react$74.createElement("a", {
+				}, /*#__PURE__*/ import_react$75.createElement("div", { className: "ui-resources-header mbn" }, /*#__PURE__*/ import_react$75.createElement("h2", { className: "title-l ui-resource-title mtl mll" }, I18nTranslate("collection_relations_sibling_sets"), /*#__PURE__*/ import_react$75.createElement("span", { className: "ui-counter" }, `(${siblingCount})`), siblingCount > 0 ? /*#__PURE__*/ import_react$75.createElement("a", {
 					className: "strong",
 					href: get.relations_siblings_url
-				}, I18nTranslate("collection_relations_show_all")) : void 0), /*#__PURE__*/ import_react$74.createElement("p", { className: "mll mts" }, I18nTranslate(typeKebab + "_relations_siblings_hint"))), /*#__PURE__*/ import_react$74.createElement("ul", { className: "grid horizontal ui-resources" }, siblingCount === 0 ? /*#__PURE__*/ import_react$74.createElement("div", { className: "ui-container ptm pbh" }, /*#__PURE__*/ import_react$74.createElement("div", { className: "title-m by-center" }, I18nTranslate("collection_relations_no_sibling_sets"))) : void 0, map(get.relations.sibling_collections.resources, (resource) => /*#__PURE__*/ import_react$74.createElement(ResourceThumbnail_default, {
+				}, I18nTranslate("collection_relations_show_all")) : void 0), /*#__PURE__*/ import_react$75.createElement("p", { className: "mll mts" }, I18nTranslate(typeKebab + "_relations_siblings_hint"))), /*#__PURE__*/ import_react$75.createElement("ul", { className: "grid horizontal ui-resources" }, siblingCount === 0 ? /*#__PURE__*/ import_react$75.createElement("div", { className: "ui-container ptm pbh" }, /*#__PURE__*/ import_react$75.createElement("div", { className: "title-m by-center" }, I18nTranslate("collection_relations_no_sibling_sets"))) : void 0, map(get.relations.sibling_collections.resources, (resource) => /*#__PURE__*/ import_react$75.createElement(ResourceThumbnail_default, {
 					key: resource.uuid,
 					authToken,
 					elm: "li",
@@ -72409,13 +72432,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 						delete childUrl.search;
 						childUrl.query["type"] = "collections";
 						childUrl = (0, import_url$11.format)(childUrl);
-						return /*#__PURE__*/ import_react$74.createElement("div", { className: "ui-container midtone-darker relationships-wrapper bordered-top" }, /*#__PURE__*/ import_react$74.createElement("div", {
+						return /*#__PURE__*/ import_react$75.createElement("div", { className: "ui-container midtone-darker relationships-wrapper bordered-top" }, /*#__PURE__*/ import_react$75.createElement("div", {
 							className: "ui-resources-holder",
 							id: "set-relations-children"
-						}, /*#__PURE__*/ import_react$74.createElement("div", { className: "ui-resources-header mbn" }, /*#__PURE__*/ import_react$74.createElement("h2", { className: "title-l ui-resource-title mtl mll" }, I18nTranslate("collection_relations_child_sets"), /*#__PURE__*/ import_react$74.createElement("span", { className: "ui-counter" }, `(${childCount})`), childCount > 0 ? /*#__PURE__*/ import_react$74.createElement("a", {
+						}, /*#__PURE__*/ import_react$75.createElement("div", { className: "ui-resources-header mbn" }, /*#__PURE__*/ import_react$75.createElement("h2", { className: "title-l ui-resource-title mtl mll" }, I18nTranslate("collection_relations_child_sets"), /*#__PURE__*/ import_react$75.createElement("span", { className: "ui-counter" }, `(${childCount})`), childCount > 0 ? /*#__PURE__*/ import_react$75.createElement("a", {
 							className: "strong",
 							href: childUrl
-						}, I18nTranslate("collection_relations_show_all")) : void 0), /*#__PURE__*/ import_react$74.createElement("p", { className: "mll mts" }, I18nTranslate("collection_relations_children_hint"))), /*#__PURE__*/ import_react$74.createElement("ul", { className: "grid horizontal ui-resources" }, childCount === 0 ? /*#__PURE__*/ import_react$74.createElement("div", { className: "ui-container ptm pbh" }, /*#__PURE__*/ import_react$74.createElement("div", { className: "title-m by-center" }, I18nTranslate("collection_relations_no_child_sets"))) : void 0, map(get.relations.child_collections.resources, (resource) => /*#__PURE__*/ import_react$74.createElement(ResourceThumbnail_default, {
+						}, I18nTranslate("collection_relations_show_all")) : void 0), /*#__PURE__*/ import_react$75.createElement("p", { className: "mll mts" }, I18nTranslate("collection_relations_children_hint"))), /*#__PURE__*/ import_react$75.createElement("ul", { className: "grid horizontal ui-resources" }, childCount === 0 ? /*#__PURE__*/ import_react$75.createElement("div", { className: "ui-container ptm pbh" }, /*#__PURE__*/ import_react$75.createElement("div", { className: "title-m by-center" }, I18nTranslate("collection_relations_no_child_sets"))) : void 0, map(get.relations.child_collections.resources, (resource) => /*#__PURE__*/ import_react$75.createElement(ResourceThumbnail_default, {
 							key: resource.uuid,
 							authToken,
 							elm: "li",
@@ -72429,14 +72452,14 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/react/templates/ResourceShowOverview.jsx
-	var import_react$73, import_prop_types$13, import_dedupe, ResourceShowOverview;
+	var import_react$74, import_prop_types$13, import_dedupe, ResourceShowOverview;
 	var init_ResourceShowOverview = __esmMin((() => {
-		import_react$73 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$74 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$13 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_dedupe = /* @__PURE__ */ __toESM(require_dedupe());
 		init_ui();
 		ResourceShowOverview = ({ content, preview, previewLg, ...restProps }) => {
-			return /*#__PURE__*/ import_react$73.createElement("div", { className: (0, import_dedupe.default)("ui-resource-overview", parseMods(restProps)) }, preview, content, previewLg);
+			return /*#__PURE__*/ import_react$74.createElement("div", { className: (0, import_dedupe.default)("ui-resource-overview", parseMods(restProps)) }, preview, content, previewLg);
 		};
 		ResourceShowOverview.propTypes = {
 			content: import_prop_types$13.default.node.isRequired,
@@ -72447,27 +72470,27 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/MediaResourcesLine.jsx
 	var MediaResourcesLine_exports = /* @__PURE__ */ __exportAll({ default: () => MediaResourcesLine$1 });
-	var import_react$72, import_classnames$11, import_url$10, import_lib$2, import_ui_components$12, MediaResourcesLine$1, makeBrowseUrl;
+	var import_react$73, import_classnames$11, import_url$10, import_lib$2, import_ui_components$12, MediaResourcesLine$1, makeBrowseUrl;
 	var init_MediaResourcesLine = __esmMin((() => {
-		import_react$72 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$73 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		import_classnames$11 = /* @__PURE__ */ __toESM(require_classnames());
 		import_url$10 = /* @__PURE__ */ __toESM(require_url());
 		import_lib$2 = /* @__PURE__ */ __toESM(require_lib());
 		init_i18n_translate();
 		import_ui_components$12 = /* @__PURE__ */ __toESM(require_ui_components());
-		MediaResourcesLine$1 = ({ children, resources }) => /*#__PURE__*/ import_react$72.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$72.createElement("div", { className: "ui-container" }, children && /*#__PURE__*/ import_react$72.createElement("div", { className: "mbm" }, children), /*#__PURE__*/ import_react$72.createElement("div", { className: "ui-featured-entries small active" }, /*#__PURE__*/ import_react$72.createElement("ul", { className: "ui-featured-entries-list" }, map(resources, ({ uuid, url, title, image_url, media_type }) => /*#__PURE__*/ import_react$72.createElement("li", {
+		MediaResourcesLine$1 = ({ children, resources }) => /*#__PURE__*/ import_react$73.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$73.createElement("div", { className: "ui-container" }, children && /*#__PURE__*/ import_react$73.createElement("div", { className: "mbm" }, children), /*#__PURE__*/ import_react$73.createElement("div", { className: "ui-featured-entries small active" }, /*#__PURE__*/ import_react$73.createElement("ul", { className: "ui-featured-entries-list" }, map(resources, ({ uuid, url, title, image_url, media_type }) => /*#__PURE__*/ import_react$73.createElement("li", {
 			key: uuid,
 			className: "ui-featured-entries-item"
-		}, /*#__PURE__*/ import_react$72.createElement("a", {
+		}, /*#__PURE__*/ import_react$73.createElement("a", {
 			className: (0, import_classnames$11.default)("ui-featured-entry", { [`is-${media_type}`]: !!media_type }),
 			href: url,
 			title
-		}, image_url && /*#__PURE__*/ import_react$72.createElement("img", { src: image_url }), media_type === "audio" && /*#__PURE__*/ import_react$72.createElement("i", { className: "ui_media-type-icon fa fa-file-audio-o" })), /*#__PURE__*/ import_react$72.createElement("ul", { className: "ui-featured-entry-actions" }, /*#__PURE__*/ import_react$72.createElement("li", { className: "ui-featured-entry-action" }, /*#__PURE__*/ import_react$72.createElement("a", {
+		}, image_url && /*#__PURE__*/ import_react$73.createElement("img", { src: image_url }), media_type === "audio" && /*#__PURE__*/ import_react$73.createElement("i", { className: "ui_media-type-icon fa fa-file-audio-o" })), /*#__PURE__*/ import_react$73.createElement("ul", { className: "ui-featured-entry-actions" }, /*#__PURE__*/ import_react$73.createElement("li", { className: "ui-featured-entry-action" }, /*#__PURE__*/ import_react$73.createElement("a", {
 			className: "block",
 			href: makeBrowseUrl(url),
 			title: I18nTranslate("browse_entries_browse_link_title")
-		}, /*#__PURE__*/ import_react$72.createElement(import_ui_components$12.default.Icon, { i: "eye" }))))))))), /*#__PURE__*/ import_react$72.createElement("hr", { className: "separator" }));
+		}, /*#__PURE__*/ import_react$73.createElement(import_ui_components$12.default.Icon, { i: "eye" }))))))))), /*#__PURE__*/ import_react$73.createElement("hr", { className: "separator" }));
 		makeBrowseUrl = (url) => {
 			const parsedUrl = (0, import_url$10.parse)(url);
 			const params = import_lib$2.default.parse(parsedUrl.query);
@@ -72486,9 +72509,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 			return n;
 		}, _extends$9.apply(null, arguments);
 	}
-	var import_react$71, import_ui_components$11, entriesFilterPath, KeywordItem$2, BrowseEntriesList;
+	var import_react$72, import_ui_components$11, entriesFilterPath, KeywordItem$2, BrowseEntriesList;
 	var init_BrowseEntriesList = __esmMin((() => {
-		import_react$71 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$72 = /* @__PURE__ */ __toESM(require_react$1());
 		init_utils$2();
 		init_i18n_translate();
 		init_set_params_for_url();
@@ -72501,13 +72524,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 				key: kw.meta_key_id
 			})) })
 		} });
-		KeywordItem$2 = ({ label, url }) => /*#__PURE__*/ import_react$71.createElement("li", { className: "ui-tag-cloud-item" }, /*#__PURE__*/ import_react$71.createElement("a", {
+		KeywordItem$2 = ({ label, url }) => /*#__PURE__*/ import_react$72.createElement("li", { className: "ui-tag-cloud-item" }, /*#__PURE__*/ import_react$72.createElement("a", {
 			className: "ui-tag-button",
 			title: label,
 			href: url
 		}, label));
 		BrowseEntriesList = ({ browse, isLoading, header, authToken }) => {
-			if (isLoading || !browse) return /*#__PURE__*/ import_react$71.createElement("div", null, header, !isLoading && !browse ? { loadingError: /*#__PURE__*/ import_react$71.createElement(import_ui_components$11.default.Preloader, { mods: "mal" }) } : null);
+			if (isLoading || !browse) return /*#__PURE__*/ import_react$72.createElement("div", null, header, !isLoading && !browse ? { loadingError: /*#__PURE__*/ import_react$72.createElement(import_ui_components$11.default.Preloader, { mods: "mal" }) } : null);
 			const keyword_clusters = browse.entry_ids_by_shared_keywords.map(({ keyword_ids, entry_ids }) => {
 				const keywords = keyword_ids.map((id) => {
 					const kw = browse.keywords_by_id[id];
@@ -72535,17 +72558,17 @@ There are no contexts defined. Please configure them in the admin tool.\
 					keywordsByMetaKey: keywordsSorted
 				};
 			});
-			return /*#__PURE__*/ import_react$71.createElement("div", { "data-ui-entry-browse-list": true }, header, isEmpty(keyword_clusters) ? /*#__PURE__*/ import_react$71.createElement("div", { className: "by-center" }, I18nTranslate("no_content_fallback")) : /*#__PURE__*/ import_react$71.createElement("div", null, keyword_clusters.map(({ keywordsByMetaKey, entries }) => /*#__PURE__*/ import_react$71.createElement(MediaResourcesLine$1, {
+			return /*#__PURE__*/ import_react$72.createElement("div", { "data-ui-entry-browse-list": true }, header, isEmpty(keyword_clusters) ? /*#__PURE__*/ import_react$72.createElement("div", { className: "by-center" }, I18nTranslate("no_content_fallback")) : /*#__PURE__*/ import_react$72.createElement("div", null, keyword_clusters.map(({ keywordsByMetaKey, entries }) => /*#__PURE__*/ import_react$72.createElement(MediaResourcesLine$1, {
 				resources: entries,
 				authToken,
 				key: getPath(entries, "0.uuid")
 			}, keywordsByMetaKey.map((keywords) => {
 				const metaKey = getPath(keywords, "0.metaKey");
-				return /*#__PURE__*/ import_react$71.createElement("span", { key: keywords.map((kw) => kw.uuid).join("") }, /*#__PURE__*/ import_react$71.createElement("span", { className: "title-xs" }, metaKey.label, " "), /*#__PURE__*/ import_react$71.createElement("ul", {
+				return /*#__PURE__*/ import_react$72.createElement("span", { key: keywords.map((kw) => kw.uuid).join("") }, /*#__PURE__*/ import_react$72.createElement("span", { className: "title-xs" }, metaKey.label, " "), /*#__PURE__*/ import_react$72.createElement("ul", {
 					className: "ui-tag-cloud-small",
 					style: { display: "inline" }
-				}, keywords.map((kw) => /*#__PURE__*/ import_react$71.createElement(KeywordItem$2, _extends$9({ key: kw.uuid }, kw)))));
-			}), /*#__PURE__*/ import_react$71.createElement("a", {
+				}, keywords.map((kw) => /*#__PURE__*/ import_react$72.createElement(KeywordItem$2, _extends$9({ key: kw.uuid }, kw)))));
+			}), /*#__PURE__*/ import_react$72.createElement("a", {
 				className: "strong",
 				href: entriesFilterPath(browse.filter_search_path, keywordsByMetaKey.flat())
 			}, I18nTranslate("browse_entries_filter_link"))))));
@@ -72554,9 +72577,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/MediaEntrySiblings.jsx
 	var MediaEntrySiblings_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntrySiblings });
-	var import_react$70, import_prop_types$12, import_ui_components$10, MediaEntrySiblings;
+	var import_react$71, import_prop_types$12, import_ui_components$10, MediaEntrySiblings;
 	var init_MediaEntrySiblings = __esmMin((() => {
-		import_react$70 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$71 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$12 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_lodash();
 		init_i18n_translate();
@@ -72564,7 +72587,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_app_request();
 		init_MediaResourcesLine();
 		init_Preloader();
-		MediaEntrySiblings = class extends import_react$70.Component {
+		MediaEntrySiblings = class extends import_react$71.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -72606,12 +72629,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 			render() {
 				const { resourcesByCollection, isFetching, fetched } = this.state;
-				return /*#__PURE__*/ import_react$70.createElement("div", { className: "ui-container midtone bordered rounded mbh pam" }, /*#__PURE__*/ import_react$70.createElement("h3", { className: "title-l mbm" }, I18nTranslate("media_entry_siblings_section_title")), isFetching && /*#__PURE__*/ import_react$70.createElement(Preloader$1, null), fetched && isEmpty$1(resourcesByCollection) ? /*#__PURE__*/ import_react$70.createElement("div", { className: "by-center" }, I18nTranslate("no_content_fallback")) : map(resourcesByCollection, ({ collection, media_entries }) => {
+				return /*#__PURE__*/ import_react$71.createElement("div", { className: "ui-container midtone bordered rounded mbh pam" }, /*#__PURE__*/ import_react$71.createElement("h3", { className: "title-l mbm" }, I18nTranslate("media_entry_siblings_section_title")), isFetching && /*#__PURE__*/ import_react$71.createElement(Preloader$1, null), fetched && isEmpty$1(resourcesByCollection) ? /*#__PURE__*/ import_react$71.createElement("div", { className: "by-center" }, I18nTranslate("no_content_fallback")) : map(resourcesByCollection, ({ collection, media_entries }) => {
 					const { uuid, title, url } = collection;
-					return /*#__PURE__*/ import_react$70.createElement("div", {
+					return /*#__PURE__*/ import_react$71.createElement("div", {
 						key: uuid,
 						className: "ui-sibling-entries"
-					}, /*#__PURE__*/ import_react$70.createElement("h4", { className: "title-s mbs" }, I18nTranslate("media_entry_siblings_parent_set"), " ", /*#__PURE__*/ import_react$70.createElement(import_ui_components$10.Link, { href: url }, title)), /*#__PURE__*/ import_react$70.createElement(MediaResourcesLine$1, { resources: media_entries }));
+					}, /*#__PURE__*/ import_react$71.createElement("h4", { className: "title-s mbs" }, I18nTranslate("media_entry_siblings_parent_set"), " ", /*#__PURE__*/ import_react$71.createElement(import_ui_components$10.Link, { href: url }, title)), /*#__PURE__*/ import_react$71.createElement(MediaResourcesLine$1, { resources: media_entries }));
 				}));
 			}
 		};
@@ -72620,10 +72643,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntryShow.jsx
 	var MediaEntryShow_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryShow });
-	var import_react$69, import_prop_types$11, import_ui_components$9, MediaEntryShow;
+	var import_react$70, import_prop_types$11, import_ui_components$9, MediaEntryShow;
 	var init_MediaEntryShow = __esmMin((() => {
 		init_present();
-		import_react$69 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$70 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$11 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_i18n_translate();
 		init_app_request();
@@ -72635,7 +72658,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_ResourceShowOverview();
 		init_BrowseEntriesList();
 		init_MediaEntrySiblings();
-		MediaEntryShow = class extends import_react$69.Component {
+		MediaEntryShow = class extends import_react$70.Component {
 			static propTypes = { get: import_prop_types$11.default.shape({
 				title: import_prop_types$11.default.string.isRequired,
 				url: import_prop_types$11.default.string.isRequired,
@@ -72677,13 +72700,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 				const previewStyle = { width: "100%" };
 				if (get.media_type !== "video") previewStyle.maxHeight = "500px";
 				const overview = {
-					content: /*#__PURE__*/ import_react$69.createElement(MetaDataList, {
+					content: /*#__PURE__*/ import_react$70.createElement(MetaDataList, {
 						mods: "ui-media-overview-metadata",
 						tagMods: "small",
 						list: summaryContext,
 						showTitle: false
 					}),
-					previewLg: /*#__PURE__*/ import_react$69.createElement(MediaEntryPreview, {
+					previewLg: /*#__PURE__*/ import_react$70.createElement(MediaEntryPreview, {
 						get,
 						mediaProps: { style: previewStyle },
 						mods: "ui-media-overview-preview",
@@ -72692,16 +72715,16 @@ There are no contexts defined. Please configure them in the admin tool.\
 					})
 				};
 				const layout = {
-					overview: /*#__PURE__*/ import_react$69.createElement(ResourceShowOverview, Object.assign({ mods: "ui-media-overview" }, overview)),
-					moreInfo: present(listContexts) ? /*#__PURE__*/ import_react$69.createElement("div", { className: "ui-container midtone rounded-bottom pal well" }, /*#__PURE__*/ import_react$69.createElement(MetaDataByListing, { list: listContexts })) : void 0
+					overview: /*#__PURE__*/ import_react$70.createElement(ResourceShowOverview, Object.assign({ mods: "ui-media-overview" }, overview)),
+					moreInfo: present(listContexts) ? /*#__PURE__*/ import_react$70.createElement("div", { className: "ui-container midtone rounded-bottom pal well" }, /*#__PURE__*/ import_react$70.createElement(MetaDataByListing, { list: listContexts })) : void 0
 				};
-				return /*#__PURE__*/ import_react$69.createElement("div", null, /*#__PURE__*/ import_react$69.createElement("div", { className: "ui-container tab-content bordered rounded-right rounded-bottom mbh" }, /*#__PURE__*/ import_react$69.createElement("div", { className: "ui-container bright pal rounded-top-right" }, layout.overview), /*#__PURE__*/ import_react$69.createElement("div", { className: "ui-container.rounded-bottom" }, layout.moreInfo)), (() => {
+				return /*#__PURE__*/ import_react$70.createElement("div", null, /*#__PURE__*/ import_react$70.createElement("div", { className: "ui-container tab-content bordered rounded-right rounded-bottom mbh" }, /*#__PURE__*/ import_react$70.createElement("div", { className: "ui-container bright pal rounded-top-right" }, layout.overview), /*#__PURE__*/ import_react$70.createElement("div", { className: "ui-container.rounded-bottom" }, layout.moreInfo)), (() => {
 					if (get.browse_url) {
-						const browseHeader = /*#__PURE__*/ import_react$69.createElement("h3", { className: "title-l pbl" }, I18nTranslate("browse_entries_title"), " ", /*#__PURE__*/ import_react$69.createElement("a", {
+						const browseHeader = /*#__PURE__*/ import_react$70.createElement("h3", { className: "title-l pbl" }, I18nTranslate("browse_entries_title"), " ", /*#__PURE__*/ import_react$70.createElement("a", {
 							href: get.browse_url,
 							style: { textDecoration: "none" }
-						}, /*#__PURE__*/ import_react$69.createElement(import_ui_components$9.default.Icon, { i: "link" })));
-						return /*#__PURE__*/ import_react$69.createElement("div", null, /*#__PURE__*/ import_react$69.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$69.createElement("a", { href: get.browse_url }, /*#__PURE__*/ import_react$69.createElement(import_ui_components$9.default.Icon, { i: "eye" }), " ", I18nTranslate("browse_entries_title"))), /*#__PURE__*/ import_react$69.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$69.createElement(MediaEntrySiblings, { url: get.siblings_url }), /*#__PURE__*/ import_react$69.createElement("div", { className: "ui-container midtone bordered rounded mbh pam" }, /*#__PURE__*/ import_react$69.createElement(BrowseEntriesList, {
+						}, /*#__PURE__*/ import_react$70.createElement(import_ui_components$9.default.Icon, { i: "link" })));
+						return /*#__PURE__*/ import_react$70.createElement("div", null, /*#__PURE__*/ import_react$70.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$70.createElement("a", { href: get.browse_url }, /*#__PURE__*/ import_react$70.createElement(import_ui_components$9.default.Icon, { i: "eye" }), " ", I18nTranslate("browse_entries_title"))), /*#__PURE__*/ import_react$70.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$70.createElement(MediaEntrySiblings, { url: get.siblings_url }), /*#__PURE__*/ import_react$70.createElement("div", { className: "ui-container midtone bordered rounded mbh pam" }, /*#__PURE__*/ import_react$70.createElement(BrowseEntriesList, {
 							isLoading: !state.fetchedBrowseEntries,
 							browse: state.fetchedBrowseEntries,
 							header: browseHeader,
@@ -72715,9 +72738,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/BaseTmpReact.jsx
 	var BaseTmpReact_exports = /* @__PURE__ */ __exportAll({ default: () => BaseTmpReact });
-	var import_react$68, BaseTmpReact;
+	var import_react$69, BaseTmpReact;
 	var init_BaseTmpReact = __esmMin((() => {
-		import_react$68 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$69 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ui();
 		init_MediaEntryHeaderWithModal();
 		init_MediaEntryTabs();
@@ -72726,24 +72749,24 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_MediaEntryShow();
 		BaseTmpReact = ({ get, action_name, for_url, authToken }) => {
 			let main;
-			if (action_name === "relation_parents") main = /*#__PURE__*/ import_react$68.createElement(RelationResources, {
+			if (action_name === "relation_parents") main = /*#__PURE__*/ import_react$69.createElement(RelationResources, {
 				get,
 				for_url,
 				scope: "parents",
 				authToken
 			});
-			else if (action_name === "relation_siblings") main = /*#__PURE__*/ import_react$68.createElement(RelationResources, {
+			else if (action_name === "relation_siblings") main = /*#__PURE__*/ import_react$69.createElement(RelationResources, {
 				get,
 				for_url,
 				scope: "siblings",
 				authToken
 			});
-			else if (action_name === "relations") main = /*#__PURE__*/ import_react$68.createElement(Relations, {
+			else if (action_name === "relations") main = /*#__PURE__*/ import_react$69.createElement(Relations, {
 				get,
 				for_url,
 				authToken
 			});
-			else if (["show", "show_by_confidential_link"].includes(action_name)) main = /*#__PURE__*/ import_react$68.createElement(MediaEntryShow, {
+			else if (["show", "show_by_confidential_link"].includes(action_name)) main = /*#__PURE__*/ import_react$69.createElement(MediaEntryShow, {
 				get,
 				for_url,
 				authToken
@@ -72751,20 +72774,21 @@ There are no contexts defined. Please configure them in the admin tool.\
 			else if ([
 				"export",
 				"ask_delete",
-				"select_collection"
-			].includes(action_name)) main = /*#__PURE__*/ import_react$68.createElement(MediaEntryShow, {
+				"select_collection",
+				"xmp_import"
+			].includes(action_name)) main = /*#__PURE__*/ import_react$69.createElement(MediaEntryShow, {
 				get,
 				for_url,
 				authToken
 			});
-			return /*#__PURE__*/ import_react$68.createElement("div", { className: "app-body-ui-container" }, action_name === "show_by_confidential_link" && /*#__PURE__*/ import_react$68.createElement("div", {
+			return /*#__PURE__*/ import_react$69.createElement("div", { className: "app-body-ui-container" }, action_name === "show_by_confidential_link" && /*#__PURE__*/ import_react$69.createElement("div", {
 				className: "ui-alerts",
 				style: { marginBottom: "10px" }
-			}, /*#__PURE__*/ import_react$68.createElement("div", { className: "confirmation ui-alert" }, t$6("confidential_links_access_notice"))), /*#__PURE__*/ import_react$68.createElement(MediaEntryHeaderWithModal, {
+			}, /*#__PURE__*/ import_react$69.createElement("div", { className: "confirmation ui-alert" }, t$6("confidential_links_access_notice"))), /*#__PURE__*/ import_react$69.createElement(MediaEntryHeaderWithModal, {
 				get,
 				for_url,
 				authToken
-			}), action_name !== "show_by_confidential_link" && /*#__PURE__*/ import_react$68.createElement(MediaEntryTabs, {
+			}), action_name !== "show_by_confidential_link" && /*#__PURE__*/ import_react$69.createElement(MediaEntryTabs, {
 				get,
 				for_url,
 				authToken
@@ -72774,37 +72798,37 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/Collection/DetailOverview.jsx
 	var DetailOverview_exports = /* @__PURE__ */ __exportAll({ default: () => CollectionDetailOverview });
-	var import_react$67, CollectionDetailOverview;
+	var import_react$68, CollectionDetailOverview;
 	var init_DetailOverview = __esmMin((() => {
-		import_react$67 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$68 = /* @__PURE__ */ __toESM(require_react$1());
 		init_MetaDataList();
 		init_ResourceShowOverview();
 		init_SimpleResourceThumbnail();
 		CollectionDetailOverview = ({ get }) => {
 			const summary_context = get.active_tab && get.active_tab.startsWith("context_") ? get.context_meta_data : get.summary_meta_data;
 			const overview = {
-				content: /*#__PURE__*/ import_react$67.createElement(MetaDataList, {
+				content: /*#__PURE__*/ import_react$68.createElement(MetaDataList, {
 					list: summary_context,
 					type: "table",
 					showTitle: false,
 					showFallback: true
 				}),
-				preview: /*#__PURE__*/ import_react$67.createElement("div", { className: "ui-set-preview" }, /*#__PURE__*/ import_react$67.createElement(SimpleResourceThumbnail, {
+				preview: /*#__PURE__*/ import_react$68.createElement("div", { className: "ui-set-preview" }, /*#__PURE__*/ import_react$68.createElement(SimpleResourceThumbnail, {
 					type: get.type,
 					title: get.title,
 					authors_pretty: get.authors_pretty,
 					image_url: get.image_url
 				}))
 			};
-			return /*#__PURE__*/ import_react$67.createElement("div", { className: "bright  pal rounded-top-right ui-container" }, /*#__PURE__*/ import_react$67.createElement(ResourceShowOverview, overview));
+			return /*#__PURE__*/ import_react$68.createElement("div", { className: "bright  pal rounded-top-right ui-container" }, /*#__PURE__*/ import_react$68.createElement(ResourceShowOverview, overview));
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/Collection/DetailAdditional.jsx
 	var DetailAdditional_exports = /* @__PURE__ */ __exportAll({ default: () => CollectionDetailAdditional });
-	var import_react$66, CollectionDetailAdditional;
+	var import_react$67, CollectionDetailAdditional;
 	var init_DetailAdditional = __esmMin((() => {
-		import_react$66 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$67 = /* @__PURE__ */ __toESM(require_react$1());
 		init_MediaResourcesBox();
 		init_utils$2();
 		CollectionDetailAdditional = ({ get: get$2, authToken }) => {
@@ -72825,7 +72849,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				defaultTypeFilter: get$2.default_type_filter,
 				defaultResourceType: get$2.default_resource_type
 			};
-			return /*#__PURE__*/ import_react$66.createElement("div", { className: "ui-container rounded-bottom" }, /*#__PURE__*/ import_react$66.createElement(MediaResourcesBox, {
+			return /*#__PURE__*/ import_react$67.createElement("div", { className: "ui-container rounded-bottom" }, /*#__PURE__*/ import_react$67.createElement(MediaResourcesBox, {
 				get: get$2.child_media_resources,
 				authToken,
 				initial: { show_filter: true },
@@ -72843,23 +72867,23 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/Collection/HighlightedContents.jsx
 	var HighlightedContents_exports = /* @__PURE__ */ __exportAll({ default: () => HighlightedContents });
-	var import_react$65, import_classnames$10, HighlightedContents, HighlightedContent;
+	var import_react$66, import_classnames$10, HighlightedContents, HighlightedContent;
 	var init_HighlightedContents = __esmMin((() => {
 		init_lodash();
-		import_react$65 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$66 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		import_classnames$10 = /* @__PURE__ */ __toESM(require_classnames());
-		HighlightedContents = class extends import_react$65.Component {
+		HighlightedContents = class extends import_react$66.Component {
 			render() {
 				const { get } = this.props;
 				if (isEmpty$1(get.highlighted_media_resources != null ? get.highlighted_media_resources.resources : void 0)) return null;
-				return /*#__PURE__*/ import_react$65.createElement("div", { className: "ui-container midtone-darker bordered" }, /*#__PURE__*/ import_react$65.createElement("div", { className: "ui-container inverted ui-toolbar phs pvx" }, /*#__PURE__*/ import_react$65.createElement("h2", { className: "ui-toolbar-header" }, I18nTranslate("collection_highlighted_contents"))), /*#__PURE__*/ import_react$65.createElement("div", { className: "ui-featured-entries ptl phm" }, /*#__PURE__*/ import_react$65.createElement("ul", { className: "ui-featured-entries-list ui-resources tiles horizontal large" }, map(union(filter(get.highlighted_media_resources.resources, { type: "MediaEntry" }), filter(get.highlighted_media_resources.resources, { type: "Collection" })), (mediaResource, index) => /*#__PURE__*/ import_react$65.createElement(HighlightedContent, {
+				return /*#__PURE__*/ import_react$66.createElement("div", { className: "ui-container midtone-darker bordered" }, /*#__PURE__*/ import_react$66.createElement("div", { className: "ui-container inverted ui-toolbar phs pvx" }, /*#__PURE__*/ import_react$66.createElement("h2", { className: "ui-toolbar-header" }, I18nTranslate("collection_highlighted_contents"))), /*#__PURE__*/ import_react$66.createElement("div", { className: "ui-featured-entries ptl phm" }, /*#__PURE__*/ import_react$66.createElement("ul", { className: "ui-featured-entries-list ui-resources tiles horizontal large" }, map(union(filter(get.highlighted_media_resources.resources, { type: "MediaEntry" }), filter(get.highlighted_media_resources.resources, { type: "Collection" })), (mediaResource, index) => /*#__PURE__*/ import_react$66.createElement(HighlightedContent, {
 					key: `key_${index}`,
 					mediaResource
 				})))));
 			}
 		};
-		HighlightedContent = class extends import_react$65.Component {
+		HighlightedContent = class extends import_react$66.Component {
 			render() {
 				const { mediaResource } = this.props;
 				const iconName = `privacy-${{
@@ -72881,11 +72905,11 @@ There are no contexts defined. Please configure them in the admin tool.\
 					boxShadow: "0 0 150px #575757 inset",
 					width: !image ? "300px" : void 0
 				};
-				return /*#__PURE__*/ import_react$65.createElement("a", {
+				return /*#__PURE__*/ import_react$66.createElement("a", {
 					className: aClass,
 					href: mediaResource.url,
 					style: { marginLeft: "5px" }
-				}, /*#__PURE__*/ import_react$65.createElement("div", { className: "ui-tile__body" }, /*#__PURE__*/ import_react$65.createElement("div", { className: "ui-tile__thumbnail" }, /*#__PURE__*/ import_react$65.createElement("img", Object.assign({ className: "ui-tile__image" }, imgProps)))), /*#__PURE__*/ import_react$65.createElement("div", { className: "ui-tile__foot" }, /*#__PURE__*/ import_react$65.createElement("h3", { className: "ui-tile__title" }, mediaResource.title), /*#__PURE__*/ import_react$65.createElement("h4", { className: "ui-tile__meta" }, mediaResource.authors_pretty), /*#__PURE__*/ import_react$65.createElement("span", { className: "ui-tile__flags" }, /*#__PURE__*/ import_react$65.createElement("i", {
+				}, /*#__PURE__*/ import_react$66.createElement("div", { className: "ui-tile__body" }, /*#__PURE__*/ import_react$66.createElement("div", { className: "ui-tile__thumbnail" }, /*#__PURE__*/ import_react$66.createElement("img", Object.assign({ className: "ui-tile__image" }, imgProps)))), /*#__PURE__*/ import_react$66.createElement("div", { className: "ui-tile__foot" }, /*#__PURE__*/ import_react$66.createElement("h3", { className: "ui-tile__title" }, mediaResource.title), /*#__PURE__*/ import_react$66.createElement("h4", { className: "ui-tile__meta" }, mediaResource.authors_pretty), /*#__PURE__*/ import_react$66.createElement("span", { className: "ui-tile__flags" }, /*#__PURE__*/ import_react$66.createElement("i", {
 					className: `icon-${iconName}`,
 					title: mediaResource.privacy_status
 				}))));
@@ -72895,9 +72919,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/CollectionShow.jsx
 	var CollectionShow_exports = /* @__PURE__ */ __exportAll({ default: () => CollectionShow });
-	var import_react$64, import_url$9, parseUrlState$1, contentTestId, tabTestId, CollectionShow;
+	var import_react$65, import_url$9, parseUrlState$1, contentTestId, tabTestId, CollectionShow;
 	var init_CollectionShow = __esmMin((() => {
-		import_react$64 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$65 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		import_url$9 = /* @__PURE__ */ __toESM(require_url());
 		init_i18n_translate();
@@ -72930,7 +72954,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		};
 		contentTestId = (id) => `set_tab_content_${id}`;
 		tabTestId = (id) => `set_tab_${id}`;
-		CollectionShow = class extends import_react$64.Component {
+		CollectionShow = class extends import_react$65.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -72954,13 +72978,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 			render() {
 				const { authToken, get } = this.props;
 				const { isMounted, urlState } = this.state;
-				return /*#__PURE__*/ import_react$64.createElement(PageContent, null, (() => {
+				return /*#__PURE__*/ import_react$65.createElement(PageContent, null, (() => {
 					if (this.state.selectCollectionModal) {
 						const onClose = () => {
 							return this.setState({ selectCollectionModal: false });
 						};
 						const contentForGet = (get) => {
-							return /*#__PURE__*/ import_react$64.createElement(SelectCollection, {
+							return /*#__PURE__*/ import_react$65.createElement(SelectCollection, {
 								get,
 								async: true,
 								authToken: this.props.authToken,
@@ -72976,7 +73000,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 							parsedUrl.query["___sparse"] = "{collection_selection:{}}";
 							return (0, import_url$9.format)(parsedUrl);
 						};
-						return /*#__PURE__*/ import_react$64.createElement(AsyncModal, {
+						return /*#__PURE__*/ import_react$65.createElement(AsyncModal, {
 							get: get.collection_selection,
 							getUrl: getUrl(),
 							contentForGet,
@@ -72989,7 +73013,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 							return this.setState({ shareModal: false });
 						};
 						const contentForGet = (get) => {
-							return /*#__PURE__*/ import_react$64.createElement(Share, {
+							return /*#__PURE__*/ import_react$65.createElement(Share, {
 								fullPage: false,
 								get,
 								async: true,
@@ -73001,7 +73025,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 							return json;
 						};
 						const getUrl = get.header.share_url;
-						return /*#__PURE__*/ import_react$64.createElement(AsyncModal, {
+						return /*#__PURE__*/ import_react$65.createElement(AsyncModal, {
 							widthInPixel: 800,
 							get: null,
 							getUrl,
@@ -73009,12 +73033,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 							extractGet
 						});
 					}
-				})(), /*#__PURE__*/ import_react$64.createElement(MediaEntryHeader, {
+				})(), /*#__PURE__*/ import_react$65.createElement(MediaEntryHeader, {
 					authToken,
 					get: get.header,
 					async: isMounted,
 					onClick: this._onClick
-				}), /*#__PURE__*/ import_react$64.createElement(Tabs, null, map(get.tabs, (tab) => /*#__PURE__*/ import_react$64.createElement(Tab$2, {
+				}), /*#__PURE__*/ import_react$65.createElement(Tabs, null, map(get.tabs, (tab) => /*#__PURE__*/ import_react$65.createElement(Tab$2, {
 					key: tab.id,
 					href: tab.href,
 					testId: tabTestId(tab.id),
@@ -73026,24 +73050,24 @@ There are no contexts defined. Please configure them in the admin tool.\
 					switch (urlState.action) {
 						case "relations":
 							switch (get.action) {
-								case "relations": return /*#__PURE__*/ import_react$64.createElement(Relations, {
+								case "relations": return /*#__PURE__*/ import_react$65.createElement(Relations, {
 									get,
 									authToken,
 									testId: contentTestId("relations")
 								});
-								case "relation_parents": return /*#__PURE__*/ import_react$64.createElement(RelationResources, {
+								case "relation_parents": return /*#__PURE__*/ import_react$65.createElement(RelationResources, {
 									get,
 									authToken,
 									scope: "parents",
 									testId: contentTestId("relations_parents")
 								});
-								case "relation_children": return /*#__PURE__*/ import_react$64.createElement(RelationResources, {
+								case "relation_children": return /*#__PURE__*/ import_react$65.createElement(RelationResources, {
 									get,
 									authToken,
 									scope: "children",
 									testId: contentTestId("relations_children")
 								});
-								case "relation_siblings": return /*#__PURE__*/ import_react$64.createElement(RelationResources, {
+								case "relation_siblings": return /*#__PURE__*/ import_react$65.createElement(RelationResources, {
 									get,
 									authToken,
 									scope: "siblings",
@@ -73051,33 +73075,33 @@ There are no contexts defined. Please configure them in the admin tool.\
 								});
 							}
 							break;
-						case "usage_data": return /*#__PURE__*/ import_react$64.createElement(TabContent, { testId: contentTestId("usage_data") }, /*#__PURE__*/ import_react$64.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, get.logged_in ? /*#__PURE__*/ import_react$64.createElement(UsageData, { get }) : void 0));
-						case "more_data": return /*#__PURE__*/ import_react$64.createElement(TabContent, { testId: contentTestId("more_data") }, /*#__PURE__*/ import_react$64.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, /*#__PURE__*/ import_react$64.createElement("div", { className: "ui-container" }, /*#__PURE__*/ import_react$64.createElement("h3", { className: "title-l mbl" }, I18nTranslate("media_entry_all_metadata_title")), /*#__PURE__*/ import_react$64.createElement(MetaDataByListing, {
+						case "usage_data": return /*#__PURE__*/ import_react$65.createElement(TabContent, { testId: contentTestId("usage_data") }, /*#__PURE__*/ import_react$65.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, get.logged_in ? /*#__PURE__*/ import_react$65.createElement(UsageData, { get }) : void 0));
+						case "more_data": return /*#__PURE__*/ import_react$65.createElement(TabContent, { testId: contentTestId("more_data") }, /*#__PURE__*/ import_react$65.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, /*#__PURE__*/ import_react$65.createElement("div", { className: "ui-container" }, /*#__PURE__*/ import_react$65.createElement("h3", { className: "title-l mbl" }, I18nTranslate("media_entry_all_metadata_title")), /*#__PURE__*/ import_react$65.createElement(MetaDataByListing, {
 							list: get.all_meta_data,
 							vocabLinks: true,
 							hideSeparator: true
 						}))));
-						case "permissions": return /*#__PURE__*/ import_react$64.createElement(TabContent, { testId: contentTestId("permissions") }, /*#__PURE__*/ import_react$64.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, /*#__PURE__*/ import_react$64.createElement(ResourcePermissions, {
+						case "permissions": return /*#__PURE__*/ import_react$65.createElement(TabContent, { testId: contentTestId("permissions") }, /*#__PURE__*/ import_react$65.createElement("div", { className: "bright pal rounded-bottom rounded-top-right ui-container" }, /*#__PURE__*/ import_react$65.createElement(ResourcePermissions, {
 							authToken: this.props.authToken,
 							get: get.permissions
 						})));
-						case "context": return /*#__PURE__*/ import_react$64.createElement(TabContent, { testId: contentTestId(`context_${urlState.argument}`) }, /*#__PURE__*/ import_react$64.createElement(CollectionDetailOverview, {
+						case "context": return /*#__PURE__*/ import_react$65.createElement(TabContent, { testId: contentTestId(`context_${urlState.argument}`) }, /*#__PURE__*/ import_react$65.createElement(CollectionDetailOverview, {
 							get,
 							authToken
-						}), /*#__PURE__*/ import_react$64.createElement(HighlightedContents, {
+						}), /*#__PURE__*/ import_react$65.createElement(HighlightedContents, {
 							get,
 							authToken
-						}), /*#__PURE__*/ import_react$64.createElement(CollectionDetailAdditional, {
+						}), /*#__PURE__*/ import_react$65.createElement(CollectionDetailAdditional, {
 							get,
 							authToken
 						}));
-						default: return /*#__PURE__*/ import_react$64.createElement(TabContent, { testId: contentTestId("show") }, /*#__PURE__*/ import_react$64.createElement(CollectionDetailOverview, {
+						default: return /*#__PURE__*/ import_react$65.createElement(TabContent, { testId: contentTestId("show") }, /*#__PURE__*/ import_react$65.createElement(CollectionDetailOverview, {
 							get,
 							authToken
-						}), /*#__PURE__*/ import_react$64.createElement(HighlightedContents, {
+						}), /*#__PURE__*/ import_react$65.createElement(HighlightedContents, {
 							get,
 							authToken
-						}), /*#__PURE__*/ import_react$64.createElement(CollectionDetailAdditional, {
+						}), /*#__PURE__*/ import_react$65.createElement(CollectionDetailAdditional, {
 							get,
 							authToken
 						}));
@@ -73089,17 +73113,17 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/DashboardHeader.jsx
 	var DashboardHeader_exports = /* @__PURE__ */ __exportAll({ default: () => DashboardHeader });
-	var import_react$63, DashboardHeader;
+	var import_react$64, DashboardHeader;
 	var init_DashboardHeader = __esmMin((() => {
-		import_react$63 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$64 = /* @__PURE__ */ __toESM(require_react$1());
 		init_PageContentHeader();
 		init_HeaderPrimaryButton();
 		init_i18n_translate();
 		init_CreateCollectionModal();
 		DashboardHeader = ({ get, authToken }) => {
-			const [showModal, setShowModal] = (0, import_react$63.useState)(false);
-			const [mounted, setMounted] = (0, import_react$63.useState)(false);
-			(0, import_react$63.useEffect)(() => {
+			const [showModal, setShowModal] = (0, import_react$64.useState)(false);
+			const [mounted, setMounted] = (0, import_react$64.useState)(false);
+			(0, import_react$64.useEffect)(() => {
 				setMounted(true);
 			}, []);
 			const handleClose = () => {
@@ -73110,22 +73134,22 @@ There are no contexts defined. Please configure them in the admin tool.\
 				setShowModal(true);
 				return false;
 			};
-			return /*#__PURE__*/ import_react$63.createElement("div", { style: {
+			return /*#__PURE__*/ import_react$64.createElement("div", { style: {
 				margin: "0px",
 				padding: "0px"
-			} }, /*#__PURE__*/ import_react$63.createElement(PageContentHeader, {
+			} }, /*#__PURE__*/ import_react$64.createElement(PageContentHeader, {
 				icon: "home",
 				title: I18nTranslate("sitemap_my_archive")
-			}, /*#__PURE__*/ import_react$63.createElement(HeaderPrimaryButton, {
+			}, /*#__PURE__*/ import_react$64.createElement(HeaderPrimaryButton, {
 				icon: "upload",
 				text: I18nTranslate("dashboard_create_media_entry_btn"),
 				href: get.new_media_entry_url
-			}), /*#__PURE__*/ import_react$63.createElement(HeaderPrimaryButton, {
+			}), /*#__PURE__*/ import_react$64.createElement(HeaderPrimaryButton, {
 				icon: "plus",
 				text: I18nTranslate("dashboard_create_collection_btn"),
 				href: get.new_collection_url,
 				onClick: handleCreateSetClick
-			})), showModal && /*#__PURE__*/ import_react$63.createElement(CreateCollectionModal, {
+			})), showModal && /*#__PURE__*/ import_react$64.createElement(CreateCollectionModal, {
 				get: get.new_collection,
 				async: mounted,
 				authToken,
@@ -73137,9 +73161,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/Sidebar.jsx
 	var Sidebar_exports = /* @__PURE__ */ __exportAll({ default: () => Sidebar });
-	var import_react$62, import_classnames$9, import_url$8, Sidebar;
+	var import_react$63, import_classnames$9, import_url$8, Sidebar;
 	var init_Sidebar = __esmMin((() => {
-		import_react$62 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$63 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$9 = /* @__PURE__ */ __toESM(require_classnames());
 		import_url$8 = /* @__PURE__ */ __toESM(require_url());
 		Sidebar = ({ sections, for_url }) => {
@@ -73148,26 +73172,26 @@ There are no contexts defined. Please configure them in the admin tool.\
 				return string.indexOf(suffix, string.length - suffix.length) !== -1;
 			};
 			const sectionKeys = Object.keys(sections);
-			return /*#__PURE__*/ import_react$62.createElement("ul", { className: "ui-side-navigation" }, sectionKeys.map((section_id, index) => {
+			return /*#__PURE__*/ import_react$63.createElement("ul", { className: "ui-side-navigation" }, sectionKeys.map((section_id, index) => {
 				const section = sections[section_id];
 				const link = section.href;
 				if (!link) throw new Error(`Missing href attribute for '${section_id}' section!`);
 				const classes = (0, import_classnames$9.default)("ui-side-navigation-item", { active: endsWith(import_url$8.parse(for_url).pathname, section_id) });
 				const isLast = index === sectionKeys.length - 1;
-				return [/*#__PURE__*/ import_react$62.createElement("li", {
+				return [/*#__PURE__*/ import_react$63.createElement("li", {
 					className: classes,
 					key: section_id
-				}, /*#__PURE__*/ import_react$62.createElement("a", {
+				}, /*#__PURE__*/ import_react$63.createElement("a", {
 					className: "strong",
 					href: link
-				}, section.is_beta && show_beta, section.title, !!section.counter && /*#__PURE__*/ import_react$62.createElement("span", {
+				}, section.is_beta && show_beta, section.title, !!section.counter && /*#__PURE__*/ import_react$63.createElement("span", {
 					style: {
 						marginLeft: "4px",
 						color: "grey",
 						fontWeight: "normal"
 					},
 					id: `side-navigation-${section_id}-counter`
-				}, "(", section.counter, ")"))), !isLast && /*#__PURE__*/ import_react$62.createElement("li", {
+				}, "(", section.counter, ")"))), !isLast && /*#__PURE__*/ import_react$63.createElement("li", {
 					key: section_id + "key2",
 					className: "separator mini"
 				})].filter(Boolean);
@@ -73177,9 +73201,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/DashboardSectionKeywords.jsx
 	var DashboardSectionKeywords_exports = /* @__PURE__ */ __exportAll({ default: () => DashboardSectionKeywords });
-	var import_react$61, DashboardSectionKeywords;
+	var import_react$62, DashboardSectionKeywords;
 	var init_DashboardSectionKeywords = __esmMin((() => {
-		import_react$61 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$62 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_TagCloud();
 		init_utils$2();
@@ -73191,13 +73215,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 					count: keyword.usage_count
 				};
 			});
-			return /*#__PURE__*/ import_react$61.createElement("div", { id: section.id }, /*#__PURE__*/ import_react$61.createElement("div", { className: "ui-resources-header" }, /*#__PURE__*/ import_react$61.createElement("h2", { className: "title-l ui-resources-title" }, section.title), isEmpty(keywords) ? /*#__PURE__*/ import_react$61.createElement("span", { style: { marginLeft: "10px" } }, I18nTranslate("dashboard_none_exist")) : /*#__PURE__*/ import_react$61.createElement("a", {
+			return /*#__PURE__*/ import_react$62.createElement("div", { id: section.id }, /*#__PURE__*/ import_react$62.createElement("div", { className: "ui-resources-header" }, /*#__PURE__*/ import_react$62.createElement("h2", { className: "title-l ui-resources-title" }, section.title), isEmpty(keywords) ? /*#__PURE__*/ import_react$62.createElement("span", { style: { marginLeft: "10px" } }, I18nTranslate("dashboard_none_exist")) : /*#__PURE__*/ import_react$62.createElement("a", {
 				className: "strong",
 				href: section.href
-			}, I18nTranslate("dashboard_show_all"))), !isEmpty(keywords) && /*#__PURE__*/ import_react$61.createElement("div", {
+			}, I18nTranslate("dashboard_show_all"))), !isEmpty(keywords) && /*#__PURE__*/ import_react$62.createElement("div", {
 				className: "ui-container pbh",
 				style: { paddingTop: "15px" }
-			}, /*#__PURE__*/ import_react$61.createElement(TagCloud, {
+			}, /*#__PURE__*/ import_react$62.createElement(TagCloud, {
 				mod: "label",
 				list: keywords
 			})));
@@ -73206,9 +73230,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/DashboardSectionGroups.jsx
 	var DashboardSectionGroups_exports = /* @__PURE__ */ __exportAll({ default: () => DashboardSectionGroups });
-	var import_react$60, DashboardSectionGroups;
+	var import_react$61, DashboardSectionGroups;
 	var init_DashboardSectionGroups = __esmMin((() => {
-		import_react$60 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$61 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_TagCloud();
 		init_utils$2();
@@ -73229,17 +73253,17 @@ There are no contexts defined. Please configure them in the admin tool.\
 					})) : []
 				};
 			});
-			return /*#__PURE__*/ import_react$60.createElement("div", { id: section.id }, /*#__PURE__*/ import_react$60.createElement("div", { className: "ui-resources-header" }, /*#__PURE__*/ import_react$60.createElement("h2", { className: "title-l ui-resources-title" }, section.title), /*#__PURE__*/ import_react$60.createElement("a", {
+			return /*#__PURE__*/ import_react$61.createElement("div", { id: section.id }, /*#__PURE__*/ import_react$61.createElement("div", { className: "ui-resources-header" }, /*#__PURE__*/ import_react$61.createElement("h2", { className: "title-l ui-resources-title" }, section.title), /*#__PURE__*/ import_react$61.createElement("a", {
 				className: "strong",
 				href: section.href
-			}, I18nTranslate("dashboard_show_all"))), /*#__PURE__*/ import_react$60.createElement("div", { className: "ui-container pbl" }, groupTypes.map(({ type, label, list }) => {
-				if (list) return /*#__PURE__*/ import_react$60.createElement("label", {
+			}, I18nTranslate("dashboard_show_all"))), /*#__PURE__*/ import_react$61.createElement("div", { className: "ui-container pbl" }, groupTypes.map(({ type, label, list }) => {
+				if (list) return /*#__PURE__*/ import_react$61.createElement("label", {
 					className: "ui-form-group columned phn",
 					key: type
-				}, /*#__PURE__*/ import_react$60.createElement("div", { className: "form-label" }, label), isEmpty(list) ? /*#__PURE__*/ import_react$60.createElement("div", {
+				}, /*#__PURE__*/ import_react$61.createElement("div", { className: "form-label" }, label), isEmpty(list) ? /*#__PURE__*/ import_react$61.createElement("div", {
 					className: "form-item",
 					style: { paddingTop: "5px" }
-				}, I18nTranslate("dashboard_none_exist")) : /*#__PURE__*/ import_react$60.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$60.createElement(TagCloud, {
+				}, I18nTranslate("dashboard_none_exist")) : /*#__PURE__*/ import_react$61.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$61.createElement(TagCloud, {
 					mod: "label",
 					list
 				})));
@@ -73249,18 +73273,18 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/AsyncDashboardSection.jsx
-	var import_react$59, import_prop_types$10, import_rails_csrf_token$2, AsyncDashboardSection;
+	var import_react$60, import_prop_types$10, import_rails_csrf_token$2, AsyncDashboardSection;
 	var init_AsyncDashboardSection = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$59 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$60 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$10 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_app_request();
 		import_rails_csrf_token$2 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_SuperBoxDashboard();
 		init_Icon();
 		init_Preloader();
-		AsyncDashboardSection = class extends import_react$59.Component {
+		AsyncDashboardSection = class extends import_react$60.Component {
 			static propTypes = {
 				url: import_prop_types$10.default.string.isRequired,
 				json_path: import_prop_types$10.default.string,
@@ -73319,30 +73343,30 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 			render() {
 				const { fallback_url } = this.props;
-				if (this.props.renderEmpty) return /*#__PURE__*/ import_react$59.createElement("div", null);
-				return /*#__PURE__*/ import_react$59.createElement("div", { className: "ui_async-view" }, !this.state.isClient || this.state.fetching ? /*#__PURE__*/ import_react$59.createElement("div", { style: { height: "250px" } }, /*#__PURE__*/ import_react$59.createElement("div", { className: "pvh mtm" }, /*#__PURE__*/ import_react$59.createElement(Preloader$1, null))) : present(this.state.fetchedProps) ? /*#__PURE__*/ import_react$59.createElement(SuperBoxDashboard, {
+				if (this.props.renderEmpty) return /*#__PURE__*/ import_react$60.createElement("div", null);
+				return /*#__PURE__*/ import_react$60.createElement("div", { className: "ui_async-view" }, !this.state.isClient || this.state.fetching ? /*#__PURE__*/ import_react$60.createElement("div", { style: { height: "250px" } }, /*#__PURE__*/ import_react$60.createElement("div", { className: "pvh mtm" }, /*#__PURE__*/ import_react$60.createElement(Preloader$1, null))) : present(this.state.fetchedProps) ? /*#__PURE__*/ import_react$60.createElement(SuperBoxDashboard, {
 					authToken: this.state.fetchedProps.authToken,
 					resources: this.state.fetchedProps.get.resources
-				}) : /*#__PURE__*/ import_react$59.createElement("div", { style: { height: "250px" } }, /*#__PURE__*/ import_react$59.createElement("div", { className: "pvh mth mbl by-center" }, /*#__PURE__*/ import_react$59.createElement("a", {
+				}) : /*#__PURE__*/ import_react$60.createElement("div", { style: { height: "250px" } }, /*#__PURE__*/ import_react$60.createElement("div", { className: "pvh mth mbl by-center" }, /*#__PURE__*/ import_react$60.createElement("a", {
 					className: "title-l",
 					href: fallback_url,
 					onClick: this._retryFetchProps
-				}, /*#__PURE__*/ import_react$59.createElement(Icon$4, { i: "undo" })))));
+				}, /*#__PURE__*/ import_react$60.createElement(Icon$4, { i: "undo" })))));
 			}
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/DashboardSectionResources.jsx
 	var DashboardSectionResources_exports = /* @__PURE__ */ __exportAll({ default: () => DashboardSectionResources });
-	var import_react$58, import_url$7, DashboardSectionResources;
+	var import_react$59, import_url$7, DashboardSectionResources;
 	var init_DashboardSectionResources = __esmMin((() => {
-		import_react$58 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$59 = /* @__PURE__ */ __toESM(require_react$1());
 		import_url$7 = /* @__PURE__ */ __toESM(require_url());
 		init_i18n_translate();
 		init_AsyncDashboardSection();
 		init_Preloader();
 		DashboardSectionResources = ({ section, url }) => {
-			const [result, setResult] = (0, import_react$58.useState)(null);
+			const [result, setResult] = (0, import_react$59.useState)(null);
 			const is_clipboard = section.id === "clipboard";
 			const initial_props = {
 				mods: ["unpaginated"],
@@ -73360,7 +73384,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			const handleCallback = (callbackResult) => {
 				setResult(callbackResult);
 			};
-			return /*#__PURE__*/ import_react$58.createElement("div", { id: section.id }, /*#__PURE__*/ import_react$58.createElement("div", { className: "ui-resources-header" }, /*#__PURE__*/ import_react$58.createElement("h2", { className: "title-l ui-resources-title" }, section.title), result === null ? /*#__PURE__*/ import_react$58.createElement(Preloader$1, {
+			return /*#__PURE__*/ import_react$59.createElement("div", { id: section.id }, /*#__PURE__*/ import_react$59.createElement("div", { className: "ui-resources-header" }, /*#__PURE__*/ import_react$59.createElement("h2", { className: "title-l ui-resources-title" }, section.title), result === null ? /*#__PURE__*/ import_react$59.createElement(Preloader$1, {
 				mods: "small",
 				style: {
 					width: "100px",
@@ -73369,10 +73393,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 					marginLeft: "30px",
 					display: "inline-block"
 				}
-			}) : result === "empty" ? /*#__PURE__*/ import_react$58.createElement("span", { style: { marginLeft: "10px" } }, I18nTranslate("dashboard_none_exist")) : /*#__PURE__*/ import_react$58.createElement("a", {
+			}) : result === "empty" ? /*#__PURE__*/ import_react$59.createElement("span", { style: { marginLeft: "10px" } }, I18nTranslate("dashboard_none_exist")) : /*#__PURE__*/ import_react$59.createElement("a", {
 				className: "strong",
 				href: section.href
-			}, I18nTranslate("dashboard_show_all"))), /*#__PURE__*/ import_react$58.createElement(AsyncDashboardSection, {
+			}, I18nTranslate("dashboard_show_all"))), /*#__PURE__*/ import_react$59.createElement(AsyncDashboardSection, {
 				url: (0, import_url$7.format)(parsedUrl),
 				json_path: `user_dashboard.${section.id}`,
 				fallback_url: section.href,
@@ -73385,43 +73409,43 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/Dashboard.jsx
 	var Dashboard_exports = /* @__PURE__ */ __exportAll({ default: () => Dashboard });
-	var import_react$57, Dashboard;
+	var import_react$58, Dashboard;
 	var init_Dashboard = __esmMin((() => {
 		init_lodash();
-		import_react$57 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$58 = /* @__PURE__ */ __toESM(require_react$1());
 		init_PageContent();
 		init_DashboardHeader();
 		init_Sidebar();
 		init_DashboardSectionKeywords();
 		init_DashboardSectionGroups();
 		init_DashboardSectionResources();
-		Dashboard = class extends import_react$57.Component {
+		Dashboard = class extends import_react$58.Component {
 			render() {
 				const { get, for_url } = this.props;
 				const { user_dashboard } = get;
 				const { sections } = get;
 				const visible_sections = reject(sections, { hide_from_index: true });
-				return /*#__PURE__*/ import_react$57.createElement(PageContent, null, /*#__PURE__*/ import_react$57.createElement(DashboardHeader, { get: user_dashboard.dashboard_header }), /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-container midtone bordered rounded-right rounded-bottom table" }, /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-container app-body-sidebar table-cell bright bordered-right rounded-bottom-left table-side" }, /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-container rounded-bottom-left phm pvl" }, /*#__PURE__*/ import_react$57.createElement(Sidebar, {
+				return /*#__PURE__*/ import_react$58.createElement(PageContent, null, /*#__PURE__*/ import_react$58.createElement(DashboardHeader, { get: user_dashboard.dashboard_header }), /*#__PURE__*/ import_react$58.createElement("div", { className: "ui-container midtone bordered rounded-right rounded-bottom table" }, /*#__PURE__*/ import_react$58.createElement("div", { className: "ui-container app-body-sidebar table-cell bright bordered-right rounded-bottom-left table-side" }, /*#__PURE__*/ import_react$58.createElement("div", { className: "ui-container rounded-bottom-left phm pvl" }, /*#__PURE__*/ import_react$58.createElement(Sidebar, {
 					sections,
 					for_url
-				}))), /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-container app-body-content table-cell table-substance" }, /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-container pal" }, flatten(map(visible_sections, (section, index) => {
+				}))), /*#__PURE__*/ import_react$58.createElement("div", { className: "ui-container app-body-content table-cell table-substance" }, /*#__PURE__*/ import_react$58.createElement("div", { className: "ui-container pal" }, flatten(map(visible_sections, (section, index) => {
 					return compact([(() => {
-						if (section.partial === "media_resources") return /*#__PURE__*/ import_react$57.createElement(DashboardSectionResources, {
+						if (section.partial === "media_resources") return /*#__PURE__*/ import_react$58.createElement(DashboardSectionResources, {
 							section,
 							url: this.props.get.url,
 							key: index
 						});
-						else if (section.partial === "groups") return /*#__PURE__*/ import_react$57.createElement(DashboardSectionGroups, {
+						else if (section.partial === "groups") return /*#__PURE__*/ import_react$58.createElement(DashboardSectionGroups, {
 							section,
 							sectionResources: user_dashboard["groups_and_delegations"],
 							key: index
 						});
-						else if (section.partial === "keywords") return /*#__PURE__*/ import_react$57.createElement(DashboardSectionKeywords, {
+						else if (section.partial === "keywords") return /*#__PURE__*/ import_react$58.createElement(DashboardSectionKeywords, {
 							section,
 							sectionResources: user_dashboard[section.id],
 							key: index
 						});
-					})(), index < visible_sections.length - 1 ? /*#__PURE__*/ import_react$57.createElement("hr", {
+					})(), index < visible_sections.length - 1 ? /*#__PURE__*/ import_react$58.createElement("hr", {
 						className: "separator mbm",
 						key: `separator${index}`
 					}) : void 0]);
@@ -73432,15 +73456,15 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/GroupSearch.jsx
 	var GroupSearch_exports = /* @__PURE__ */ __exportAll({ default: () => GroupSearch });
-	var import_react$56, import_classnames$8, AutoComplete, GroupSearch, Link$1, MemberRow;
+	var import_react$57, import_classnames$8, AutoComplete, GroupSearch, Link$1, MemberRow;
 	var init_GroupSearch = __esmMin((() => {
-		import_react$56 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$57 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_i18n_translate();
 		init_rails_form();
 		import_classnames$8 = /* @__PURE__ */ __toESM(require_classnames());
 		AutoComplete = null;
-		GroupSearch = class extends import_react$56.Component {
+		GroupSearch = class extends import_react$57.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -73488,92 +73512,92 @@ There are no contexts defined. Please configure them in the admin tool.\
 			};
 			render() {
 				const { authToken, get } = this.props;
-				return /*#__PURE__*/ import_react$56.createElement("div", { className: "form-body bright" }, /*#__PURE__*/ import_react$56.createElement(RestForm, {
+				return /*#__PURE__*/ import_react$57.createElement("div", { className: "form-body bright" }, /*#__PURE__*/ import_react$57.createElement(RestForm, {
 					name: "group",
 					action: get.url,
 					method: "put",
 					authToken
-				}, /*#__PURE__*/ import_react$56.createElement("div", { className: "ui-form-group rowed" }, /*#__PURE__*/ import_react$56.createElement("label", {
+				}, /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-form-group rowed" }, /*#__PURE__*/ import_react$57.createElement("label", {
 					className: "form-label",
 					htmlFor: "group_name"
-				}, I18nTranslate("group_edit_name")), /*#__PURE__*/ import_react$56.createElement("input", {
+				}, I18nTranslate("group_edit_name")), /*#__PURE__*/ import_react$57.createElement("input", {
 					type: "text",
 					className: "form-item",
 					style: { width: "100%" },
 					name: "group[name]",
 					defaultValue: get.name,
 					placeholder: ""
-				})), /*#__PURE__*/ import_react$56.createElement("div", { className: "ui-form-group rowed" }, map(this.state.data.initialUserIdList, (userId) => /*#__PURE__*/ import_react$56.createElement("input", {
+				})), /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-form-group rowed" }, map(this.state.data.initialUserIdList, (userId) => /*#__PURE__*/ import_react$57.createElement("input", {
 					key: `hidden_false_${userId}`,
 					type: "hidden",
 					name: `group[users][${userId}]`,
 					value: false
-				})), map(this.state.data.userIdList, (userId) => /*#__PURE__*/ import_react$56.createElement("input", {
+				})), map(this.state.data.userIdList, (userId) => /*#__PURE__*/ import_react$57.createElement("input", {
 					key: `hidden_true_${userId}`,
 					type: "hidden",
 					name: `group[users][${userId}]`,
 					value: true
-				})), /*#__PURE__*/ import_react$56.createElement("h3", { className: "title-l mbs" }, I18nTranslate("group_edit_member")), /*#__PURE__*/ import_react$56.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$56.createElement("thead", null, /*#__PURE__*/ import_react$56.createElement("tr", null, /*#__PURE__*/ import_react$56.createElement("td", {
+				})), /*#__PURE__*/ import_react$57.createElement("h3", { className: "title-l mbs" }, I18nTranslate("group_edit_member")), /*#__PURE__*/ import_react$57.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$57.createElement("thead", null, /*#__PURE__*/ import_react$57.createElement("tr", null, /*#__PURE__*/ import_react$57.createElement("td", {
 					className: "ui-rights-user-title",
 					style: { borderColor: "#f3f3f3" }
-				}, I18nTranslate("group_edit_person")))), /*#__PURE__*/ import_react$56.createElement("tbody", null, map(this.state.data.userIdList, (userId) => {
+				}, I18nTranslate("group_edit_person")))), /*#__PURE__*/ import_react$57.createElement("tbody", null, map(this.state.data.userIdList, (userId) => {
 					const user = this.state.data.users[userId];
-					return /*#__PURE__*/ import_react$56.createElement(MemberRow, {
+					return /*#__PURE__*/ import_react$57.createElement(MemberRow, {
 						key: `row_${userId}`,
 						user,
 						onRemove: this._onRemove,
 						disabled: this.state.data.userIdList.length <= 1
 					});
-				}))), AutoComplete ? /*#__PURE__*/ import_react$56.createElement("div", {
+				}))), AutoComplete ? /*#__PURE__*/ import_react$57.createElement("div", {
 					className: "ui-add-subject ptx row",
 					style: { zIndex: "1000" }
-				}, /*#__PURE__*/ import_react$56.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$56.createElement(AutoComplete, {
+				}, /*#__PURE__*/ import_react$57.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$57.createElement(AutoComplete, {
 					className: "multi-select-input",
 					name: "group[user][login][]",
 					resourceType: "Users",
 					onSelect: this._onSelect
-				}))) : void 0), !includes(this.state.data.userIdList, get.current_user_id) ? /*#__PURE__*/ import_react$56.createElement("div", { className: "form-head" }, /*#__PURE__*/ import_react$56.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$56.createElement("div", { className: "ui-alert warning" }, I18nTranslate("group_edit_hint_remove_yourself")))) : void 0, /*#__PURE__*/ import_react$56.createElement("div", { className: "ui-actions phl pbl mtl" }, /*#__PURE__*/ import_react$56.createElement("a", {
+				}))) : void 0), !includes(this.state.data.userIdList, get.current_user_id) ? /*#__PURE__*/ import_react$57.createElement("div", { className: "form-head" }, /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-alert warning" }, I18nTranslate("group_edit_hint_remove_yourself")))) : void 0, /*#__PURE__*/ import_react$57.createElement("div", { className: "ui-actions phl pbl mtl" }, /*#__PURE__*/ import_react$57.createElement("a", {
 					href: get.cancel_url,
 					className: "link weak"
-				}, I18nTranslate("group_edit_cancel")), /*#__PURE__*/ import_react$56.createElement("button", {
+				}, I18nTranslate("group_edit_cancel")), /*#__PURE__*/ import_react$57.createElement("button", {
 					type: "submit",
 					className: "primary-button large"
 				}, I18nTranslate("group_edit_save")))));
 			}
 		};
-		Link$1 = class extends import_react$56.Component {
+		Link$1 = class extends import_react$57.Component {
 			render() {
 				const { onClick, disabled, enabledClasses } = this.props;
-				if (disabled === true) return /*#__PURE__*/ import_react$56.createElement("span", { className: (0, import_classnames$8.default)(enabledClasses, { disabled: true }) });
-				else return /*#__PURE__*/ import_react$56.createElement("a", {
+				if (disabled === true) return /*#__PURE__*/ import_react$57.createElement("span", { className: (0, import_classnames$8.default)(enabledClasses, { disabled: true }) });
+				else return /*#__PURE__*/ import_react$57.createElement("a", {
 					onClick,
 					className: enabledClasses
 				});
 			}
 		};
-		MemberRow = class extends import_react$56.Component {
+		MemberRow = class extends import_react$57.Component {
 			_onRemove = () => {
 				if (!this.props.disabled) return this.props.onRemove(this.props.user.id);
 			};
 			render() {
 				const { user } = this.props;
-				return /*#__PURE__*/ import_react$56.createElement("tr", null, /*#__PURE__*/ import_react$56.createElement("td", {
+				return /*#__PURE__*/ import_react$57.createElement("tr", null, /*#__PURE__*/ import_react$57.createElement("td", {
 					className: "ui-rights-user",
 					style: { borderColor: "#f3f3f3" }
-				}, /*#__PURE__*/ import_react$56.createElement(Link$1, {
+				}, /*#__PURE__*/ import_react$57.createElement(Link$1, {
 					disabled: this.props.disabled,
 					onClick: this._onRemove,
 					enabledClasses: "button small ui-rights-remove icon-close small"
-				}), /*#__PURE__*/ import_react$56.createElement("span", { className: "text" }, user.name)));
+				}), /*#__PURE__*/ import_react$57.createElement("span", { className: "text" }, user.name)));
 			}
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/GroupShow.jsx
 	var GroupShow_exports = /* @__PURE__ */ __exportAll({ default: () => GroupShow });
-	var import_react$55, infotable$2, GroupShow;
+	var import_react$56, infotable$2, GroupShow;
 	var init_GroupShow = __esmMin((() => {
-		import_react$55 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$56 = /* @__PURE__ */ __toESM(require_react$1());
 		init_utils$2();
 		init_i18n_translate();
 		init_PageHeader();
@@ -73590,24 +73614,24 @@ There are no contexts defined. Please configure them in the admin tool.\
 					else if (permissions.view) return I18nTranslate("group_show_permissions_view");
 					else if (permissions.user) return I18nTranslate("group_show_permissions_use");
 				})();
-				return /*#__PURE__*/ import_react$55.createElement("div", { key: url }, /*#__PURE__*/ import_react$55.createElement("a", { href: url }, label), ` ${rights}`);
+				return /*#__PURE__*/ import_react$56.createElement("div", { key: url }, /*#__PURE__*/ import_react$56.createElement("a", { href: url }, label), ` ${rights}`);
 			})] : void 0
 		].filter(Boolean);
 		GroupShow = ({ get, for_url, authToken }) => {
 			const { group } = get;
 			const title = group.name;
-			const headerActions = get.group.edit_url ? /*#__PURE__*/ import_react$55.createElement("a", {
+			const headerActions = get.group.edit_url ? /*#__PURE__*/ import_react$56.createElement("a", {
 				href: get.group.edit_url,
 				className: "primary-button"
 			}, I18nTranslate("group_show_edit_button")) : void 0;
-			return /*#__PURE__*/ import_react$55.createElement(PageContent, null, /*#__PURE__*/ import_react$55.createElement(PageHeader, {
+			return /*#__PURE__*/ import_react$56.createElement(PageContent, null, /*#__PURE__*/ import_react$56.createElement(PageHeader, {
 				title,
 				icon: "privacy-group",
 				actions: headerActions
-			}), /*#__PURE__*/ import_react$55.createElement("div", { className: "ui-container tab-content bordered bright rounded-right rounded-bottom" }, /*#__PURE__*/ import_react$55.createElement("div", { className: "ui-container pal" }, /*#__PURE__*/ import_react$55.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$55.createElement("tbody", null, infotable$2(group, get.members, get.vocabulary_permissions).map(([label, value], i) => {
+			}), /*#__PURE__*/ import_react$56.createElement("div", { className: "ui-container tab-content bordered bright rounded-right rounded-bottom" }, /*#__PURE__*/ import_react$56.createElement("div", { className: "ui-container pal" }, /*#__PURE__*/ import_react$56.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$56.createElement("tbody", null, infotable$2(group, get.members, get.vocabulary_permissions).map(([label, value], i) => {
 				if (isEmpty(value)) return null;
-				return /*#__PURE__*/ import_react$55.createElement("tr", { key: label + i }, /*#__PURE__*/ import_react$55.createElement("td", { className: "ui-summary-label" }, label), /*#__PURE__*/ import_react$55.createElement("td", { className: "ui-summary-content" }, value));
-			})))), /*#__PURE__*/ import_react$55.createElement(MediaResourcesBox, {
+				return /*#__PURE__*/ import_react$56.createElement("tr", { key: label + i }, /*#__PURE__*/ import_react$56.createElement("td", { className: "ui-summary-label" }, label), /*#__PURE__*/ import_react$56.createElement("td", { className: "ui-summary-content" }, value));
+			})))), /*#__PURE__*/ import_react$56.createElement(MediaResourcesBox, {
 				for_url,
 				get: get.resources,
 				authToken,
@@ -73716,9 +73740,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 		deco_external_uris: () => decoExternalUris$1,
 		default: () => PersonShow
 	});
-	var import_react$54, import_url$5, decoExternalUris$1, infotable$1, PersonShow;
+	var import_react$55, import_url$5, decoExternalUris$1, infotable$1, PersonShow;
 	var init_PersonShow = __esmMin((() => {
-		import_react$54 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$55 = /* @__PURE__ */ __toESM(require_react$1());
 		init_utils$2();
 		init_i18n_translate();
 		init_PageHeader();
@@ -73732,20 +73756,20 @@ There are no contexts defined. Please configure them in the admin tool.\
 				const bKind = getPath(b, "authority_control.kind") || "";
 				return aKind.localeCompare(bKind);
 			});
-			return /*#__PURE__*/ import_react$54.createElement("ul", { className: "list-unstyled" }, sortedUris.map((uri, i) => {
+			return /*#__PURE__*/ import_react$55.createElement("ul", { className: "list-unstyled" }, sortedUris.map((uri, i) => {
 				let label = uri.uri;
 				let badge = false;
 				if (getPath(uri, "authority_control.kind")) {
 					label = uri.authority_control.label;
 					const providerLabel = uri.authority_control.provider.label;
-					badge = /*#__PURE__*/ import_react$54.createElement("span", { className: "ui-authority-control-badge" }, /*#__PURE__*/ import_react$54.createElement("abbr", { title: uri.authority_control.provider.name }, providerLabel), ":", " ");
+					badge = /*#__PURE__*/ import_react$55.createElement("span", { className: "ui-authority-control-badge" }, /*#__PURE__*/ import_react$55.createElement("abbr", { title: uri.authority_control.provider.name }, providerLabel), ":", " ");
 				}
-				const content = !uri.is_web ? /*#__PURE__*/ import_react$54.createElement("span", null, label) : /*#__PURE__*/ import_react$54.createElement("a", {
+				const content = !uri.is_web ? /*#__PURE__*/ import_react$55.createElement("span", null, label) : /*#__PURE__*/ import_react$55.createElement("a", {
 					href: uri.uri,
 					target: "_blank",
 					rel: "noreferrer noopener"
 				}, label);
-				return /*#__PURE__*/ import_react$54.createElement("li", {
+				return /*#__PURE__*/ import_react$55.createElement("li", {
 					key: i,
 					"data-authority-control": JSON.stringify(uri.authority_control)
 				}, badge, content);
@@ -73765,18 +73789,18 @@ There are no contexts defined. Please configure them in the admin tool.\
 			const title = get.to_s;
 			const { resources } = get;
 			get.external_uris = get.external_uris.map((uri) => decorateExternalURI(uri));
-			const actions = get.actions.edit.url ? /*#__PURE__*/ import_react$54.createElement("a", {
+			const actions = get.actions.edit.url ? /*#__PURE__*/ import_react$55.createElement("a", {
 				href: get.actions.edit.url,
 				className: "primary-button"
 			}, I18nTranslate("person_show_edit_btn")) : void 0;
-			return /*#__PURE__*/ import_react$54.createElement(PageContent, null, /*#__PURE__*/ import_react$54.createElement(PageHeader, {
+			return /*#__PURE__*/ import_react$55.createElement(PageContent, null, /*#__PURE__*/ import_react$55.createElement(PageHeader, {
 				title,
 				icon: "tag",
 				actions
-			}), /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-container tab-content bordered bright rounded-right rounded-bottom" }, /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-container pal" }, /*#__PURE__*/ import_react$54.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$54.createElement("tbody", null, infotable$1(get).map(([label, value], i) => {
+			}), /*#__PURE__*/ import_react$55.createElement("div", { className: "ui-container tab-content bordered bright rounded-right rounded-bottom" }, /*#__PURE__*/ import_react$55.createElement("div", { className: "ui-container pal" }, /*#__PURE__*/ import_react$55.createElement("table", { className: "borderless" }, /*#__PURE__*/ import_react$55.createElement("tbody", null, infotable$1(get).map(([label, value], i) => {
 				if (isEmpty(value)) return null;
-				return /*#__PURE__*/ import_react$54.createElement("tr", { key: label + i }, /*#__PURE__*/ import_react$54.createElement("td", { className: "ui-summary-label" }, label), /*#__PURE__*/ import_react$54.createElement("td", { className: "ui-summary-content measure-double" }, value));
-			})))), /*#__PURE__*/ import_react$54.createElement(MediaResourcesBox, {
+				return /*#__PURE__*/ import_react$55.createElement("tr", { key: label + i }, /*#__PURE__*/ import_react$55.createElement("td", { className: "ui-summary-label" }, label), /*#__PURE__*/ import_react$55.createElement("td", { className: "ui-summary-content measure-double" }, value));
+			})))), /*#__PURE__*/ import_react$55.createElement(MediaResourcesBox, {
 				for_url: (0, import_url$5.format)(for_url),
 				get: resources,
 				authToken,
@@ -73790,10 +73814,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/PersonEdit.jsx
 	var PersonEdit_exports = /* @__PURE__ */ __exportAll({ default: () => PersonEdit });
-	var import_react$53, import_classnames$7, PersonEdit, ExternalUrisForm;
+	var import_react$54, import_classnames$7, PersonEdit, ExternalUrisForm;
 	var init_PersonEdit = __esmMin((() => {
 		init_lodash();
-		import_react$53 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$54 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		import_classnames$7 = /* @__PURE__ */ __toESM(require_classnames());
 		init_PageHeader();
@@ -73803,7 +73827,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_Icon();
 		init_PersonShow();
 		init_URIAuthorityControl();
-		PersonEdit = class extends import_react$53.Component {
+		PersonEdit = class extends import_react$54.Component {
 			constructor(props) {
 				super(props);
 				const { external_uris } = props.get;
@@ -73840,52 +73864,52 @@ There are no contexts defined. Please configure them in the admin tool.\
 				const { actions, to_s } = get;
 				const { isSaving, external_uris } = this.state;
 				const title = `${to_s} - ${I18nTranslate("person_edit_editing_header")}`;
-				return /*#__PURE__*/ import_react$53.createElement(PageContent, null, /*#__PURE__*/ import_react$53.createElement(PageHeader, {
+				return /*#__PURE__*/ import_react$54.createElement(PageContent, null, /*#__PURE__*/ import_react$54.createElement(PageHeader, {
 					title,
 					icon: "tag"
-				}), /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container tab-content bordered bright rounded-right rounded-bottom pal" }, /*#__PURE__*/ import_react$53.createElement(RestForm, {
+				}), /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-container tab-content bordered bright rounded-right rounded-bottom pal" }, /*#__PURE__*/ import_react$54.createElement(RestForm, {
 					name: "person",
 					method: actions.update.method,
 					action: actions.update.url,
 					authToken,
 					onSubmit: this.handleSubmit
-				}, /*#__PURE__*/ import_react$53.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-form-group rowed pan" }, /*#__PURE__*/ import_react$53.createElement("label", { className: "form-label" }, I18nTranslate("person_show_first_name"), /*#__PURE__*/ import_react$53.createElement("input", {
+				}, /*#__PURE__*/ import_react$54.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-form-group rowed pan" }, /*#__PURE__*/ import_react$54.createElement("label", { className: "form-label" }, I18nTranslate("person_show_first_name"), /*#__PURE__*/ import_react$54.createElement("input", {
 					type: "text",
 					className: "form-item block",
 					name: "person[first_name]",
 					disabled: true,
 					readOnly: true,
 					defaultValue: get.first_name
-				}))), /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-form-group rowed pan" }, /*#__PURE__*/ import_react$53.createElement("label", { className: "form-label pbn" }, I18nTranslate("person_show_last_name"), /*#__PURE__*/ import_react$53.createElement("input", {
+				}))), /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-form-group rowed pan" }, /*#__PURE__*/ import_react$54.createElement("label", { className: "form-label pbn" }, I18nTranslate("person_show_last_name"), /*#__PURE__*/ import_react$54.createElement("input", {
 					type: "text",
 					className: "form-item block",
 					name: "person[last_name]",
 					disabled: true,
 					readOnly: true,
 					defaultValue: get.last_name
-				})), /*#__PURE__*/ import_react$53.createElement("p", {
+				})), /*#__PURE__*/ import_react$54.createElement("p", {
 					className: "pbm",
 					style: { fontStyle: "italic" }
-				}, I18nTranslate("person_edit_name_readonly_hint"))), /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-form-group rowed pan" }, /*#__PURE__*/ import_react$53.createElement("label", { className: "form-label" }, I18nTranslate("person_show_pseudonym"), /*#__PURE__*/ import_react$53.createElement("input", {
+				}, I18nTranslate("person_edit_name_readonly_hint"))), /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-form-group rowed pan" }, /*#__PURE__*/ import_react$54.createElement("label", { className: "form-label" }, I18nTranslate("person_show_pseudonym"), /*#__PURE__*/ import_react$54.createElement("input", {
 					type: "text",
 					className: "form-item block",
 					name: "person[pseudonym]",
 					defaultValue: get.pseudonym
-				}))), /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-form-group rowed pan" }, /*#__PURE__*/ import_react$53.createElement("label", { className: "form-label" }, I18nTranslate("person_show_description"), /*#__PURE__*/ import_react$53.createElement("textarea", {
+				}))), /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-form-group rowed pan" }, /*#__PURE__*/ import_react$54.createElement("label", { className: "form-label" }, I18nTranslate("person_show_description"), /*#__PURE__*/ import_react$54.createElement("textarea", {
 					className: "form-item block",
 					name: "person[description]",
 					defaultValue: get.description
-				})))), /*#__PURE__*/ import_react$53.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$53.createElement(ExternalUrisForm, {
+				})))), /*#__PURE__*/ import_react$54.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$54.createElement(ExternalUrisForm, {
 					externalUris: external_uris,
 					handleUriChange: this.handleUriChange,
 					handleUriAdd: this.handleUriAdd,
 					handleUriRemove: this.handleUriRemove
-				}), /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-actions mtm" }, /*#__PURE__*/ import_react$53.createElement("input", {
+				}), /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-actions mtm" }, /*#__PURE__*/ import_react$54.createElement("input", {
 					type: "submit",
 					className: "primary-button",
 					disabled: isSaving,
 					value: I18nTranslate("person_edit_save_btn")
-				}), /*#__PURE__*/ import_react$53.createElement(Button$3, {
+				}), /*#__PURE__*/ import_react$54.createElement(Button$3, {
 					href: actions.cancel.url,
 					className: (0, import_classnames$7.default)("button"),
 					disabled: !!isSaving
@@ -73902,24 +73926,24 @@ There are no contexts defined. Please configure them in the admin tool.\
 				paddingTop: "4px",
 				fontWeight: 600
 			};
-			return /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container" }, /*#__PURE__*/ import_react$53.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$53.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$53.createElement("h3", { className: "title-m separated mbm ptm" }, I18nTranslate("person_show_external_uris"))), /*#__PURE__*/ import_react$53.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pll" }, /*#__PURE__*/ import_react$53.createElement("h3", { className: "title-m separated mbm ptm" }, I18nTranslate("person_edit_preview"))))), map(externalUris, (uri, index) => /*#__PURE__*/ import_react$53.createElement("div", {
+			return /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-container" }, /*#__PURE__*/ import_react$54.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$54.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$54.createElement("h3", { className: "title-m separated mbm ptm" }, I18nTranslate("person_show_external_uris"))), /*#__PURE__*/ import_react$54.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-container pll" }, /*#__PURE__*/ import_react$54.createElement("h3", { className: "title-m separated mbm ptm" }, I18nTranslate("person_edit_preview"))))), map(externalUris, (uri, index) => /*#__PURE__*/ import_react$54.createElement("div", {
 				className: "row",
 				key: index
-			}, /*#__PURE__*/ import_react$53.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$53.createElement("div", {
+			}, /*#__PURE__*/ import_react$54.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$54.createElement("div", {
 				className: "ui-form-group rowed pan",
 				style: divStyle
-			}, /*#__PURE__*/ import_react$53.createElement("button", {
+			}, /*#__PURE__*/ import_react$54.createElement("button", {
 				type: "button",
 				onClick: (e) => handleUriRemove(e, index),
 				className: "mrx button"
-			}, /*#__PURE__*/ import_react$53.createElement(Icon$4, { i: "trash" })), /*#__PURE__*/ import_react$53.createElement("input", {
+			}, /*#__PURE__*/ import_react$54.createElement(Icon$4, { i: "trash" })), /*#__PURE__*/ import_react$54.createElement("input", {
 				type: "text",
 				className: "form-item block",
 				name: "person[external_uris][]",
 				value: uri.uri,
 				onChange: (e) => handleUriChange(e, index),
 				style: { display: "inline-block" }
-			}))), /*#__PURE__*/ import_react$53.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pll preview" }, /*#__PURE__*/ import_react$53.createElement("div", { style: previewStyle }, decoExternalUris$1([uri])))))), /*#__PURE__*/ import_react$53.createElement("button", {
+			}))), /*#__PURE__*/ import_react$54.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$54.createElement("div", { className: "ui-container pll preview" }, /*#__PURE__*/ import_react$54.createElement("div", { style: previewStyle }, decoExternalUris$1([uri])))))), /*#__PURE__*/ import_react$54.createElement("button", {
 				type: "button",
 				onClick: handleUriAdd,
 				className: "primary-button"
@@ -73929,49 +73953,49 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/ReleaseShow.jsx
 	var ReleaseShow_exports = /* @__PURE__ */ __exportAll({ default: () => ReleaseShow });
-	var import_react$52, import_moment$8, DevelopmentInfo, DeploymentInfo, ReleasesInfo, MarkdownPrecompiled, ReleaseShow;
+	var import_react$53, import_moment$8, DevelopmentInfo, DeploymentInfo, ReleasesInfo, MarkdownPrecompiled, ReleaseShow;
 	var init_ReleaseShow = __esmMin((() => {
-		import_react$52 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$53 = /* @__PURE__ */ __toESM(require_react$1());
 		import_moment$8 = /* @__PURE__ */ __toESM(require_moment$1());
 		init_current_locale();
 		init_utils$2();
 		init_i18n_translate();
 		DevelopmentInfo = ({ git_hash, git_url }) => {
-			return /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$52.createElement("h2", { className: "title-s" }, I18nTranslate("release_local_git_version"), ": ", /*#__PURE__*/ import_react$52.createElement("a", { href: git_url }, git_hash)));
+			return /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, I18nTranslate("release_local_git_version"), ": ", /*#__PURE__*/ import_react$53.createElement("a", { href: git_url }, git_hash)));
 		};
 		DeploymentInfo = ({ tree_id, commit_id, deploy_time }) => {
 			import_moment$8.default.locale(currentLocale());
 			const buildUrl = `https://ci.zhdk.ch/cider-ci/ui/workspace/trees/${tree_id}`;
 			const commitUrl = `https://github.com/Madek/Madek/commits/${commit_id}`;
-			return /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$52.createElement("h2", { className: "title-s" }, deploy_time && /*#__PURE__*/ import_react$52.createElement("span", null, "Deployment: ", (0, import_moment$8.default)(deploy_time).format("LLLL"))), /*#__PURE__*/ import_react$52.createElement("div", { className: "mtm" }, /*#__PURE__*/ import_react$52.createElement("h2", { className: "title-s" }, /*#__PURE__*/ import_react$52.createElement("a", { href: commitUrl }, I18nTranslate("release_source_history")))), /*#__PURE__*/ import_react$52.createElement("div", { className: "mtm" }, /*#__PURE__*/ import_react$52.createElement("h2", { className: "title-s" }, /*#__PURE__*/ import_react$52.createElement("a", { href: buildUrl }, "Build"))));
+			return /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, deploy_time && /*#__PURE__*/ import_react$53.createElement("span", null, "Deployment: ", (0, import_moment$8.default)(deploy_time).format("LLLL"))), /*#__PURE__*/ import_react$53.createElement("div", { className: "mtm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, /*#__PURE__*/ import_react$53.createElement("a", { href: commitUrl }, I18nTranslate("release_source_history")))), /*#__PURE__*/ import_react$53.createElement("div", { className: "mtm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, /*#__PURE__*/ import_react$53.createElement("a", { href: buildUrl }, "Build"))));
 		};
 		ReleasesInfo = ({ releases }) => {
 			const current = releases[0];
 			const past = releases.slice(1);
 			const name = (r) => {
-				if (r.name && r.info_url) return /*#__PURE__*/ import_react$52.createElement("span", null, "Madek ", r.semver, " \"", /*#__PURE__*/ import_react$52.createElement("a", { href: r.info_url }, r.name), "\"");
-				else if (r.name) return /*#__PURE__*/ import_react$52.createElement("span", null, "Madek ", r.semver, " \"", r.name, "\"");
-				else return /*#__PURE__*/ import_react$52.createElement("span", null, "Madek ", r.semver);
+				if (r.name && r.info_url) return /*#__PURE__*/ import_react$53.createElement("span", null, "Madek ", r.semver, " \"", /*#__PURE__*/ import_react$53.createElement("a", { href: r.info_url }, r.name), "\"");
+				else if (r.name) return /*#__PURE__*/ import_react$53.createElement("span", null, "Madek ", r.semver, " \"", r.name, "\"");
+				else return /*#__PURE__*/ import_react$53.createElement("span", null, "Madek ", r.semver);
 			};
-			return /*#__PURE__*/ import_react$52.createElement("div", null, /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$52.createElement("a", {
+			return /*#__PURE__*/ import_react$53.createElement("div", null, /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$53.createElement("a", {
 				className: "header-anchor",
 				id: current.semver
-			}), /*#__PURE__*/ import_react$52.createElement("h3", { className: "title-xl separated mbs" }, name(current), " ", /*#__PURE__*/ import_react$52.createElement("a", { href: `#${current.semver}` }, /*#__PURE__*/ import_react$52.createElement("i", { className: "icon-link" }))), /*#__PURE__*/ import_react$52.createElement(MarkdownPrecompiled, { source: current.description })), /*#__PURE__*/ import_react$52.createElement("h2", { className: "title-s" }, "Vorherige Versionen"), past.map((r) => /*#__PURE__*/ import_react$52.createElement("div", { key: r.semver }, /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$52.createElement("a", { id: r.semver }), /*#__PURE__*/ import_react$52.createElement("h3", { className: "title-l separated mbs" }, name(r), " ", /*#__PURE__*/ import_react$52.createElement("a", { href: `#${r.semver}` }, /*#__PURE__*/ import_react$52.createElement("i", { className: "icon-link" }))), /*#__PURE__*/ import_react$52.createElement(MarkdownPrecompiled, { source: r.description })))));
+			}), /*#__PURE__*/ import_react$53.createElement("h3", { className: "title-xl separated mbs" }, name(current), " ", /*#__PURE__*/ import_react$53.createElement("a", { href: `#${current.semver}` }, /*#__PURE__*/ import_react$53.createElement("i", { className: "icon-link" }))), /*#__PURE__*/ import_react$53.createElement(MarkdownPrecompiled, { source: current.description })), /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, "Vorherige Versionen"), past.map((r) => /*#__PURE__*/ import_react$53.createElement("div", { key: r.semver }, /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$53.createElement("a", { id: r.semver }), /*#__PURE__*/ import_react$53.createElement("h3", { className: "title-l separated mbs" }, name(r), " ", /*#__PURE__*/ import_react$53.createElement("a", { href: `#${r.semver}` }, /*#__PURE__*/ import_react$53.createElement("i", { className: "icon-link" }))), /*#__PURE__*/ import_react$53.createElement(MarkdownPrecompiled, { source: r.description })))));
 		};
-		MarkdownPrecompiled = ({ source }) => /*#__PURE__*/ import_react$52.createElement("div", {
+		MarkdownPrecompiled = ({ source }) => /*#__PURE__*/ import_react$53.createElement("div", {
 			className: "ui-markdown",
 			dangerouslySetInnerHTML: { __html: source }
 		});
 		ReleaseShow = ({ get }) => {
-			return /*#__PURE__*/ import_react$52.createElement("div", { className: "app-body-ui-container" }, /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-body-title" }, /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-body-title-label" }, /*#__PURE__*/ import_react$52.createElement("h1", { className: "title-xl" }, /*#__PURE__*/ import_react$52.createElement("span", null, /*#__PURE__*/ import_react$52.createElement("i", { className: "icon-tag" })), " ", I18nTranslate("release_info")))), /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-container tab-content bordered rounded-top rounded-bottom mbh" }, /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-container bright pal rounded-top rounded-bottom" }, get.dev_info && /*#__PURE__*/ import_react$52.createElement(DevelopmentInfo, get.dev_info), get.deploy_info && !isEmpty(get.deploy_info) && /*#__PURE__*/ import_react$52.createElement(DeploymentInfo, get.deploy_info), get.releases && !isEmpty(get.releases) && /*#__PURE__*/ import_react$52.createElement(ReleasesInfo, { releases: get.releases }))));
+			return /*#__PURE__*/ import_react$53.createElement("div", { className: "app-body-ui-container" }, /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-body-title" }, /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-body-title-label" }, /*#__PURE__*/ import_react$53.createElement("h1", { className: "title-xl" }, /*#__PURE__*/ import_react$53.createElement("span", null, /*#__PURE__*/ import_react$53.createElement("i", { className: "icon-tag" })), " ", I18nTranslate("release_info")))), /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container tab-content bordered rounded-top rounded-bottom mbh" }, /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container bright pal rounded-top rounded-bottom" }, get.dev_info && /*#__PURE__*/ import_react$53.createElement(DevelopmentInfo, get.dev_info), get.deploy_info && !isEmpty(get.deploy_info) && /*#__PURE__*/ import_react$53.createElement(DeploymentInfo, get.deploy_info), get.releases && !isEmpty(get.releases) && /*#__PURE__*/ import_react$53.createElement(ReleasesInfo, { releases: get.releases }))));
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/Search.jsx
 	var Search_exports = /* @__PURE__ */ __exportAll({ default: () => Search });
-	var import_react$51, import_url$4, Search;
+	var import_react$52, import_url$4, Search;
 	var init_Search = __esmMin((() => {
-		import_react$51 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$52 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		import_url$4 = /* @__PURE__ */ __toESM(require_url());
 		init_PageContent();
@@ -73979,38 +74003,38 @@ There are no contexts defined. Please configure them in the admin tool.\
 		Search = ({ submit_url }) => {
 			const parsedQuery = (0, import_url$4.parse)(submit_url, true).query;
 			const hasLang = parsedQuery && parsedQuery.lang;
-			return /*#__PURE__*/ import_react$51.createElement(PageContent, null, /*#__PURE__*/ import_react$51.createElement(PageHeader, {
+			return /*#__PURE__*/ import_react$52.createElement(PageContent, null, /*#__PURE__*/ import_react$52.createElement(PageHeader, {
 				icon: "lens",
 				title: I18nTranslate("sitemap_search"),
 				actions: null
-			}), /*#__PURE__*/ import_react$51.createElement("div", { className: "bordered ui-container midtone rounded-right rounded-bottom table" }, /*#__PURE__*/ import_react$51.createElement("div", { className: "ui-search-form" }, /*#__PURE__*/ import_react$51.createElement("form", {
+			}), /*#__PURE__*/ import_react$52.createElement("div", { className: "bordered ui-container midtone rounded-right rounded-bottom table" }, /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-search-form" }, /*#__PURE__*/ import_react$52.createElement("form", {
 				action: submit_url,
 				acceptCharset: "UTF-8",
 				method: "get"
-			}, /*#__PURE__*/ import_react$51.createElement("input", {
+			}, /*#__PURE__*/ import_react$52.createElement("input", {
 				name: "utf8",
 				type: "hidden",
 				value: "✓"
-			}), hasLang && /*#__PURE__*/ import_react$51.createElement("input", {
+			}), hasLang && /*#__PURE__*/ import_react$52.createElement("input", {
 				type: "hidden",
 				name: "lang",
 				value: parsedQuery.lang
-			}), /*#__PURE__*/ import_react$51.createElement("div", { className: "ui-search large mts" }, /*#__PURE__*/ import_react$51.createElement("input", {
+			}), /*#__PURE__*/ import_react$52.createElement("div", { className: "ui-search large mts" }, /*#__PURE__*/ import_react$52.createElement("input", {
 				type: "text",
 				name: "search",
 				id: "search",
 				autoFocus: "autofocus",
 				className: "block ui-search-input"
-			}), /*#__PURE__*/ import_react$51.createElement("button", {
+			}), /*#__PURE__*/ import_react$52.createElement("button", {
 				name: "button",
 				type: "submit",
 				className: "primary-button ui-search-button"
-			}, I18nTranslate("search_btn_search")), /*#__PURE__*/ import_react$51.createElement("div", null, /*#__PURE__*/ import_react$51.createElement("input", {
+			}, I18nTranslate("search_btn_search")), /*#__PURE__*/ import_react$52.createElement("div", null, /*#__PURE__*/ import_react$52.createElement("input", {
 				type: "radio",
 				name: "search_type",
 				value: "fulltext",
 				defaultChecked: true
-			}), ` ${I18nTranslate("search_full_text")} `, /*#__PURE__*/ import_react$51.createElement("input", {
+			}), ` ${I18nTranslate("search_full_text")} `, /*#__PURE__*/ import_react$52.createElement("input", {
 				type: "radio",
 				name: "search_type",
 				value: "filename",
@@ -74021,13 +74045,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/SelectCollectionModal.jsx
 	var SelectCollectionModal_exports = /* @__PURE__ */ __exportAll({ default: () => SelectCollectionModal });
-	var import_react$50, SelectCollectionModal;
+	var import_react$51, SelectCollectionModal;
 	var init_SelectCollectionModal = __esmMin((() => {
-		import_react$50 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$51 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Modal();
 		init_SelectCollection();
 		SelectCollectionModal = ({ authToken, get }) => {
-			return /*#__PURE__*/ import_react$50.createElement(Modal, null, /*#__PURE__*/ import_react$50.createElement(SelectCollection, {
+			return /*#__PURE__*/ import_react$51.createElement(Modal, null, /*#__PURE__*/ import_react$51.createElement(SelectCollection, {
 				get,
 				authToken
 			}));
@@ -74035,10 +74059,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 	}));
 	//#endregion
 	//#region app/javascript/react/templates/ResourcesBoxWithSwitch.jsx
-	var import_react$49, import_prop_types$9, import_url$3, import_lib$1, TYPES, urlByType, ResourcesBoxWithSwitch;
+	var import_react$50, import_prop_types$9, import_url$3, import_lib$1, TYPES, urlByType, ResourcesBoxWithSwitch;
 	var init_ResourcesBoxWithSwitch = __esmMin((() => {
 		init_lodash();
-		import_react$49 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$50 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$9 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		import_url$3 = /* @__PURE__ */ __toESM(require_url());
@@ -74067,7 +74091,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 			return BoxSetUrlParams(currentUrl.pathname.replace(RegExp(`/${currentType}$`), `/${newType}`), newParams);
 		};
-		ResourcesBoxWithSwitch = class extends import_react$49.Component {
+		ResourcesBoxWithSwitch = class extends import_react$50.Component {
 			static propTypes = {
 				switches: import_prop_types$9.default.shape({
 					currentType: import_prop_types$9.default.oneOf(TYPES),
@@ -74091,10 +74115,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 						key: "sets",
 						name: t$6("sitemap_collections")
 					}]);
-					return /*#__PURE__*/ import_react$49.createElement(ButtonGroup, { "data-test-id": "resource-type-switcher" }, typeBbtns.map((btn) => {
+					return /*#__PURE__*/ import_react$50.createElement(ButtonGroup, { "data-test-id": "resource-type-switcher" }, typeBbtns.map((btn) => {
 						if (!includes(types, btn.key)) return null;
 						const isActive = btn.key === currentType;
-						return /*#__PURE__*/ import_react$49.createElement(Button$3, {
+						return /*#__PURE__*/ import_react$50.createElement(Button$3, {
 							href: urlByType(boxUrl, currentType, btn.key),
 							mods: isActive ? "active" : void 0,
 							key: btn.key,
@@ -74102,7 +74126,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 						}, btn.name);
 					}));
 				};
-				return /*#__PURE__*/ import_react$49.createElement(MediaResourcesBox, Object.assign({}, props, { resourceTypeSwitcherConfig: { customRenderer: renderSwitcher } }));
+				return /*#__PURE__*/ import_react$50.createElement(MediaResourcesBox, Object.assign({}, props, { resourceTypeSwitcherConfig: { customRenderer: renderSwitcher } }));
 			}
 		};
 	}));
@@ -74118,13 +74142,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 			return n;
 		}, _extends$8.apply(null, arguments);
 	}
-	var import_react$48, import_prop_types$8, CollectionIndex;
+	var import_react$49, import_prop_types$8, CollectionIndex;
 	var init_Index$1 = __esmMin((() => {
-		import_react$48 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$49 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$8 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ResourcesBoxWithSwitch();
 		CollectionIndex = (props) => {
-			return /*#__PURE__*/ import_react$48.createElement(ResourcesBoxWithSwitch, _extends$8({
+			return /*#__PURE__*/ import_react$49.createElement(ResourcesBoxWithSwitch, _extends$8({
 				saveable: true,
 				switches: {
 					currentType: "sets",
@@ -74143,16 +74167,16 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/Collection/ResourceSelection.jsx
 	var ResourceSelection_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceSelection });
-	var import_react$47, import_prop_types$7, ResourceSelection;
+	var import_react$48, import_prop_types$7, ResourceSelection;
 	var init_ResourceSelection = __esmMin((() => {
 		init_lodash();
-		import_react$47 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$48 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$7 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_i18n_translate();
 		init_rails_form();
 		init_FormButton();
 		init_Modal();
-		ResourceSelection = class extends import_react$47.Component {
+		ResourceSelection = class extends import_react$48.Component {
 			static propTypes = { type: import_prop_types$7.default.oneOf(["checkbox", "radio"]) };
 			constructor(props) {
 				super(props);
@@ -74160,12 +74184,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 			render() {
 				const { authToken, get, type } = this.props;
-				return /*#__PURE__*/ import_react$47.createElement(Modal, { widthInPixel: "800" }, /*#__PURE__*/ import_react$47.createElement(RestForm, {
+				return /*#__PURE__*/ import_react$48.createElement(Modal, { widthInPixel: "800" }, /*#__PURE__*/ import_react$48.createElement(RestForm, {
 					name: "resource_meta_data",
 					action: get.submit_url,
 					method: "put",
 					authToken
-				}, /*#__PURE__*/ import_react$47.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$47.createElement("a", {
+				}, /*#__PURE__*/ import_react$48.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$48.createElement("a", {
 					href: get.cancel_url,
 					"aria-hidden": "true",
 					className: "ui-modal-close",
@@ -74177,76 +74201,76 @@ There are no contexts defined. Please configure them in the admin tool.\
 						float: "right",
 						paddingTop: "5px"
 					}
-				}, /*#__PURE__*/ import_react$47.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$47.createElement("h3", { className: "title-l" }, get.i18n.title)), /*#__PURE__*/ import_react$47.createElement("div", {
+				}, /*#__PURE__*/ import_react$48.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$48.createElement("h3", { className: "title-l" }, get.i18n.title)), /*#__PURE__*/ import_react$48.createElement("div", {
 					className: "ui-modal-body",
 					style: { maxHeight: "none" }
-				}, /*#__PURE__*/ import_react$47.createElement("div", { className: "ui-resources-table" }, /*#__PURE__*/ import_react$47.createElement("div", { className: "ui-resources-table" }, isEmpty$1(get.child_presenters.resources) ? /*#__PURE__*/ import_react$47.createElement("h3", { className: "by-center title-m" }, I18nTranslate("collection_edit_highlights_empty")) : /*#__PURE__*/ import_react$47.createElement("table", { className: "block" }, /*#__PURE__*/ import_react$47.createElement("thead", null, /*#__PURE__*/ import_react$47.createElement("tr", null, /*#__PURE__*/ import_react$47.createElement("td", { className: "ui-resources-table-selection" }, get.i18n.h_selection), /*#__PURE__*/ import_react$47.createElement("td", { title: "Titel" }, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_title)), /*#__PURE__*/ import_react$47.createElement("td", { title: "Untertitel" }, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_subtitle)), /*#__PURE__*/ import_react$47.createElement("td", { title: "Autor/in" }, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_author)), /*#__PURE__*/ import_react$47.createElement("td", { title: "Datierung" }, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_date)), /*#__PURE__*/ import_react$47.createElement("td", { title: "Schlagworte" }, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_keywords)), /*#__PURE__*/ import_react$47.createElement("td", { title: "Rechteinhaber" }, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_responsible)))), /*#__PURE__*/ import_react$47.createElement("tbody", null, map(get.child_presenters.resources, function(resource) {
+				}, /*#__PURE__*/ import_react$48.createElement("div", { className: "ui-resources-table" }, /*#__PURE__*/ import_react$48.createElement("div", { className: "ui-resources-table" }, isEmpty$1(get.child_presenters.resources) ? /*#__PURE__*/ import_react$48.createElement("h3", { className: "by-center title-m" }, I18nTranslate("collection_edit_highlights_empty")) : /*#__PURE__*/ import_react$48.createElement("table", { className: "block" }, /*#__PURE__*/ import_react$48.createElement("thead", null, /*#__PURE__*/ import_react$48.createElement("tr", null, /*#__PURE__*/ import_react$48.createElement("td", { className: "ui-resources-table-selection" }, get.i18n.h_selection), /*#__PURE__*/ import_react$48.createElement("td", { title: "Titel" }, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_title)), /*#__PURE__*/ import_react$48.createElement("td", { title: "Untertitel" }, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_subtitle)), /*#__PURE__*/ import_react$48.createElement("td", { title: "Autor/in" }, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_author)), /*#__PURE__*/ import_react$48.createElement("td", { title: "Datierung" }, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_date)), /*#__PURE__*/ import_react$48.createElement("td", { title: "Schlagworte" }, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_keywords)), /*#__PURE__*/ import_react$48.createElement("td", { title: "Rechteinhaber" }, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, get.i18n.h_responsible)))), /*#__PURE__*/ import_react$48.createElement("tbody", null, map(get.child_presenters.resources, function(resource) {
 					const checked = get.uuid_to_checked_hash[resource.uuid];
-					return /*#__PURE__*/ import_react$47.createElement("tr", { key: resource.uuid }, /*#__PURE__*/ import_react$47.createElement("td", { className: "ui-resources-table-selection" }, type === "checkbox" ? /*#__PURE__*/ import_react$47.createElement("label", null, /*#__PURE__*/ import_react$47.createElement("input", {
+					return /*#__PURE__*/ import_react$48.createElement("tr", { key: resource.uuid }, /*#__PURE__*/ import_react$48.createElement("td", { className: "ui-resources-table-selection" }, type === "checkbox" ? /*#__PURE__*/ import_react$48.createElement("label", null, /*#__PURE__*/ import_react$48.createElement("input", {
 						type: "hidden",
 						name: "resource_selections[][id]",
 						value: resource.uuid
-					}), /*#__PURE__*/ import_react$47.createElement("input", {
+					}), /*#__PURE__*/ import_react$48.createElement("input", {
 						type: "hidden",
 						name: "resource_selections[][type]",
 						value: resource.type
-					}), /*#__PURE__*/ import_react$47.createElement("input", {
+					}), /*#__PURE__*/ import_react$48.createElement("input", {
 						className: "ui-set-list-input",
 						type: "checkbox",
 						name: "resource_selections[][selected]",
 						value: "true",
 						defaultChecked: checked
-					}), /*#__PURE__*/ import_react$47.createElement("img", {
+					}), /*#__PURE__*/ import_react$48.createElement("img", {
 						className: "ui-thumbnail micro",
 						src: resource.image_url
-					})) : type === "radio" ? /*#__PURE__*/ import_react$47.createElement("label", null, /*#__PURE__*/ import_react$47.createElement("input", {
+					})) : type === "radio" ? /*#__PURE__*/ import_react$48.createElement("label", null, /*#__PURE__*/ import_react$48.createElement("input", {
 						defaultChecked: checked,
 						name: "selected_resource",
 						type: "radio",
 						value: resource.uuid
-					}), /*#__PURE__*/ import_react$47.createElement("img", {
+					}), /*#__PURE__*/ import_react$48.createElement("img", {
 						className: "ui-thumbnail micro",
 						src: resource.image_url
-					})) : null), /*#__PURE__*/ import_react$47.createElement("td", {
+					})) : null), /*#__PURE__*/ import_react$48.createElement("td", {
 						"data-name": "title",
 						title: ""
-					}, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, resource.title)), /*#__PURE__*/ import_react$47.createElement("td", {
+					}, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, resource.title)), /*#__PURE__*/ import_react$48.createElement("td", {
 						"data-name": "subtitle",
 						title: ""
-					}, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, resource.subtitle)), /*#__PURE__*/ import_react$47.createElement("td", {
+					}, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, resource.subtitle)), /*#__PURE__*/ import_react$48.createElement("td", {
 						"data-name": "author",
 						title: ""
-					}, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, resource.authors_pretty)), /*#__PURE__*/ import_react$47.createElement("td", {
+					}, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, resource.authors_pretty)), /*#__PURE__*/ import_react$48.createElement("td", {
 						"data-name": "portrayed object dates",
 						title: "null"
-					}, resource.portrayed_object_date_pretty), /*#__PURE__*/ import_react$47.createElement("td", {
+					}, resource.portrayed_object_date_pretty), /*#__PURE__*/ import_react$48.createElement("td", {
 						"data-name": "keywords",
 						title: ""
-					}, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, resource.keywords_pretty)), /*#__PURE__*/ import_react$47.createElement("td", {
+					}, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, resource.keywords_pretty)), /*#__PURE__*/ import_react$48.createElement("td", {
 						"data-name": "copyright notice",
 						title: ""
-					}, /*#__PURE__*/ import_react$47.createElement("span", { className: "ui-resources-table-cell-content" }, resource.copyright_notice_pretty)));
-				})))))), /*#__PURE__*/ import_react$47.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$47.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$47.createElement("a", {
+					}, /*#__PURE__*/ import_react$48.createElement("span", { className: "ui-resources-table-cell-content" }, resource.copyright_notice_pretty)));
+				})))))), /*#__PURE__*/ import_react$48.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$48.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$48.createElement("a", {
 					href: get.cancel_url,
 					"aria-hidden": "true",
 					className: "link weak",
 					"data-dismiss": "modal"
-				}, get.i18n.cancel), !isEmpty$1(get.child_presenters.resources) ? /*#__PURE__*/ import_react$47.createElement(FormButton, { text: get.i18n.save }) : void 0))));
+				}, get.i18n.cancel), !isEmpty$1(get.child_presenters.resources) ? /*#__PURE__*/ import_react$48.createElement(FormButton, { text: get.i18n.save }) : void 0))));
 			}
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/Export.jsx
 	var Export_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryExport });
-	var import_react$46, import_moment$7, MediaEntryExport, forceDownload;
+	var import_react$47, import_moment$7, MediaEntryExport, forceDownload;
 	var init_Export = __esmMin((() => {
-		import_react$46 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$47 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_Modal();
 		init_set_params_for_url();
 		import_moment$7 = /* @__PURE__ */ __toESM(require_moment$1());
 		init_current_locale();
-		MediaEntryExport = class extends import_react$46.Component {
+		MediaEntryExport = class extends import_react$47.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -74330,48 +74354,48 @@ There are no contexts defined. Please configure them in the admin tool.\
 				const hasNeither = !hasPreviews && !hasOriginal;
 				(0, import_moment$7.default)().locale(currentLocale());
 				const sectionOriginalFile = hasOriginal && [
-					/*#__PURE__*/ import_react$46.createElement("div", {
+					/*#__PURE__*/ import_react$47.createElement("div", {
 						className: "col1of3",
 						key: "1"
-					}, /*#__PURE__*/ import_react$46.createElement("p", null, I18nTranslate("media_entry_export_original_hint"))),
-					/*#__PURE__*/ import_react$46.createElement("div", {
+					}, /*#__PURE__*/ import_react$47.createElement("p", null, I18nTranslate("media_entry_export_original_hint"))),
+					/*#__PURE__*/ import_react$47.createElement("div", {
 						className: "col1of3 by-center",
 						key: "2"
-					}, /*#__PURE__*/ import_react$46.createElement("p", null, get.media_file.extension)),
-					/*#__PURE__*/ import_react$46.createElement("div", {
+					}, /*#__PURE__*/ import_react$47.createElement("p", null, get.media_file.extension)),
+					/*#__PURE__*/ import_react$47.createElement("div", {
 						className: "col1of3 by-right",
 						key: "3"
-					}, /*#__PURE__*/ import_react$46.createElement("a", {
+					}, /*#__PURE__*/ import_react$47.createElement("a", {
 						href: forceDownload(get.media_file.original_file_url),
 						target: "_blank",
 						className: "primary-button",
 						rel: "noreferrer"
 					}, I18nTranslate("media_entry_export_download")))
 				];
-				const sectionRdfExport = /*#__PURE__*/ import_react$46.createElement("div", null, /*#__PURE__*/ import_react$46.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate("media_entry_export_rdf_title"), " ", /*#__PURE__*/ import_react$46.createElement("span", null, I18nTranslate("media_entry_export_rdf_title_hint"))), /*#__PURE__*/ import_react$46.createElement("p", { className: "font-italic mbs" }, I18nTranslate("media_entry_export_rdf_experiment_footnote")), /*#__PURE__*/ import_react$46.createElement("table", { className: "block" }, /*#__PURE__*/ import_react$46.createElement("thead", null, /*#__PURE__*/ import_react$46.createElement("tr", null, /*#__PURE__*/ import_react$46.createElement("td", null, "Typ"), /*#__PURE__*/ import_react$46.createElement("td", null))), /*#__PURE__*/ import_react$46.createElement("tbody", null, get.rdf_export_urls.map(({ key, label, url, plain_text_url }) => /*#__PURE__*/ import_react$46.createElement("tr", { key }, /*#__PURE__*/ import_react$46.createElement("td", null, /*#__PURE__*/ import_react$46.createElement("b", null, label)), /*#__PURE__*/ import_react$46.createElement("td", { style: { textAlign: "right" } }, !!plain_text_url && /*#__PURE__*/ import_react$46.createElement("a", {
+				const sectionRdfExport = /*#__PURE__*/ import_react$47.createElement("div", null, /*#__PURE__*/ import_react$47.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate("media_entry_export_rdf_title"), " ", /*#__PURE__*/ import_react$47.createElement("span", null, I18nTranslate("media_entry_export_rdf_title_hint"))), /*#__PURE__*/ import_react$47.createElement("p", { className: "font-italic mbs" }, I18nTranslate("media_entry_export_rdf_experiment_footnote")), /*#__PURE__*/ import_react$47.createElement("table", { className: "block" }, /*#__PURE__*/ import_react$47.createElement("thead", null, /*#__PURE__*/ import_react$47.createElement("tr", null, /*#__PURE__*/ import_react$47.createElement("td", null, "Typ"), /*#__PURE__*/ import_react$47.createElement("td", null))), /*#__PURE__*/ import_react$47.createElement("tbody", null, get.rdf_export_urls.map(({ key, label, url, plain_text_url }) => /*#__PURE__*/ import_react$47.createElement("tr", { key }, /*#__PURE__*/ import_react$47.createElement("td", null, /*#__PURE__*/ import_react$47.createElement("b", null, label)), /*#__PURE__*/ import_react$47.createElement("td", { style: { textAlign: "right" } }, !!plain_text_url && /*#__PURE__*/ import_react$47.createElement("a", {
 					href: plain_text_url,
 					target: "_blank",
 					className: "primary-button",
 					rel: "noreferrer"
-				}, /*#__PURE__*/ import_react$46.createElement("i", { className: "icon-eye" })), " ", /*#__PURE__*/ import_react$46.createElement("a", {
+				}, /*#__PURE__*/ import_react$47.createElement("i", { className: "icon-eye" })), " ", /*#__PURE__*/ import_react$47.createElement("a", {
 					href: url,
 					target: "_blank",
 					className: "primary-button",
 					rel: "noreferrer"
-				}, /*#__PURE__*/ import_react$46.createElement("i", { className: "icon-dload" }))))))));
+				}, /*#__PURE__*/ import_react$47.createElement("i", { className: "icon-dload" }))))))));
 				const { checksum, checksumGeneratedAt, checksumVerifiedAt, checksumMatch, isGenerating, isVerifying, error } = this.state;
-				const sectionChecksum = /*#__PURE__*/ import_react$46.createElement("div", { className: "ui-export-block" }, /*#__PURE__*/ import_react$46.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate("media_entry_export_checksum_title")), checksumMatch && /*#__PURE__*/ import_react$46.createElement("div", { className: "success ui-alert mbm" }, I18nTranslate("media_entry_export_checksum_match")), checksumMatch === false && /*#__PURE__*/ import_react$46.createElement("div", { className: "error ui-alert mbm" }, I18nTranslate("media_entry_export_checksum_mismatch")), error && /*#__PURE__*/ import_react$46.createElement("div", { className: "error ui-alert mbm" }, I18nTranslate("media_entry_export_checksum_error"), ": ", error), !checksum && /*#__PURE__*/ import_react$46.createElement("div", { className: "col1of5" }, I18nTranslate("media_entry_export_checksum_empty")), !checksum && /*#__PURE__*/ import_react$46.createElement("div", { className: "col3of5 by-center" }, "sha256"), checksum && /*#__PURE__*/ import_react$46.createElement("div", { className: "col4of5" }, /*#__PURE__*/ import_react$46.createElement("div", null, "sha256: ", checksum), checksumVerifiedAt && /*#__PURE__*/ import_react$46.createElement("div", null, I18nTranslate("media_entry_export_checksum_verified_at"), " ", (0, import_moment$7.default)(checksumVerifiedAt).format("L")), !checksumVerifiedAt && checksumGeneratedAt && /*#__PURE__*/ import_react$46.createElement("div", null, I18nTranslate("media_entry_export_checksum_generated_at"), " ", (0, import_moment$7.default)(checksumGeneratedAt).format("L"))), /*#__PURE__*/ import_react$46.createElement("div", { className: "col1of5 by-right" }, checksum && /*#__PURE__*/ import_react$46.createElement("button", {
+				const sectionChecksum = /*#__PURE__*/ import_react$47.createElement("div", { className: "ui-export-block" }, /*#__PURE__*/ import_react$47.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate("media_entry_export_checksum_title")), checksumMatch && /*#__PURE__*/ import_react$47.createElement("div", { className: "success ui-alert mbm" }, I18nTranslate("media_entry_export_checksum_match")), checksumMatch === false && /*#__PURE__*/ import_react$47.createElement("div", { className: "error ui-alert mbm" }, I18nTranslate("media_entry_export_checksum_mismatch")), error && /*#__PURE__*/ import_react$47.createElement("div", { className: "error ui-alert mbm" }, I18nTranslate("media_entry_export_checksum_error"), ": ", error), !checksum && /*#__PURE__*/ import_react$47.createElement("div", { className: "col1of5" }, I18nTranslate("media_entry_export_checksum_empty")), !checksum && /*#__PURE__*/ import_react$47.createElement("div", { className: "col3of5 by-center" }, "sha256"), checksum && /*#__PURE__*/ import_react$47.createElement("div", { className: "col4of5" }, /*#__PURE__*/ import_react$47.createElement("div", null, "sha256: ", checksum), checksumVerifiedAt && /*#__PURE__*/ import_react$47.createElement("div", null, I18nTranslate("media_entry_export_checksum_verified_at"), " ", (0, import_moment$7.default)(checksumVerifiedAt).format("L")), !checksumVerifiedAt && checksumGeneratedAt && /*#__PURE__*/ import_react$47.createElement("div", null, I18nTranslate("media_entry_export_checksum_generated_at"), " ", (0, import_moment$7.default)(checksumGeneratedAt).format("L"))), /*#__PURE__*/ import_react$47.createElement("div", { className: "col1of5 by-right" }, checksum && /*#__PURE__*/ import_react$47.createElement("button", {
 					onClick: this.handleVerifyChecksum,
 					disabled: isGenerating || isVerifying || !checksum,
 					className: "primary-button",
 					type: "button"
-				}, isVerifying ? I18nTranslate("media_entry_export_checksum_verifying") : I18nTranslate("media_entry_export_checksum_verify")), (!checksum || checksumMatch === false) && /*#__PURE__*/ import_react$46.createElement("button", {
+				}, isVerifying ? I18nTranslate("media_entry_export_checksum_verifying") : I18nTranslate("media_entry_export_checksum_verify")), (!checksum || checksumMatch === false) && /*#__PURE__*/ import_react$47.createElement("button", {
 					onClick: this.handleGenerateChecksum,
 					disabled: isGenerating || isVerifying,
 					className: "primary-button mls",
 					type: "button"
 				}, isGenerating ? I18nTranslate("media_entry_export_checksum_generating") : I18nTranslate("media_entry_export_checksum_generate"))));
-				return /*#__PURE__*/ import_react$46.createElement(Modal, { widthInPixel: "800" }, /*#__PURE__*/ import_react$46.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$46.createElement("a", {
+				return /*#__PURE__*/ import_react$47.createElement(Modal, { widthInPixel: "800" }, /*#__PURE__*/ import_react$47.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$47.createElement("a", {
 					href: get.url,
 					className: "ui-modal-close",
 					title: "Close",
@@ -74381,25 +74405,25 @@ There are no contexts defined. Please configure them in the admin tool.\
 						float: "right",
 						paddingTop: "5px"
 					}
-				}, /*#__PURE__*/ import_react$46.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$46.createElement("h3", { className: "title-l" }, I18nTranslate("media_entry_export_title"))), /*#__PURE__*/ import_react$46.createElement("div", {
+				}, /*#__PURE__*/ import_react$47.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$47.createElement("h3", { className: "title-l" }, I18nTranslate("media_entry_export_title"))), /*#__PURE__*/ import_react$47.createElement("div", {
 					className: "ui-modal-body",
 					style: { maxHeight: "none" }
-				}, hasNeither ? /*#__PURE__*/ import_react$46.createElement("div", {
+				}, hasNeither ? /*#__PURE__*/ import_react$47.createElement("div", {
 					className: "ui-export-block",
 					id: "original-meta-data"
-				}, I18nTranslate("media_entry_export_no_content")) : void 0, hasNeither === false ? /*#__PURE__*/ import_react$46.createElement("div", {
+				}, I18nTranslate("media_entry_export_no_content")) : void 0, hasNeither === false ? /*#__PURE__*/ import_react$47.createElement("div", {
 					className: "ui-export-block",
 					id: "original-meta-data"
-				}, /*#__PURE__*/ import_react$46.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate("media_entry_export_original")), hasOriginal ? sectionOriginalFile : /*#__PURE__*/ import_react$46.createElement("div", null, /*#__PURE__*/ import_react$46.createElement("p", null, I18nTranslate("media_entry_export_has_no_original")))) : void 0, hasOriginal && sectionChecksum, hasPreviews ? Object.entries(get.media_file.previews).map(([type, preview]) => /*#__PURE__*/ import_react$46.createElement("div", {
+				}, /*#__PURE__*/ import_react$47.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate("media_entry_export_original")), hasOriginal ? sectionOriginalFile : /*#__PURE__*/ import_react$47.createElement("div", null, /*#__PURE__*/ import_react$47.createElement("p", null, I18nTranslate("media_entry_export_has_no_original")))) : void 0, hasOriginal && sectionChecksum, hasPreviews ? Object.entries(get.media_file.previews).map(([type, preview]) => /*#__PURE__*/ import_react$47.createElement("div", {
 					key: type,
 					className: "align-left bg-light mbm pbs"
-				}, /*#__PURE__*/ import_react$46.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate(`media_entry_export_subtitle_${type}`)), /*#__PURE__*/ import_react$46.createElement("table", { className: "block" }, /*#__PURE__*/ import_react$46.createElement("thead", null, /*#__PURE__*/ import_react$46.createElement("tr", null, /*#__PURE__*/ import_react$46.createElement("td", null, "Auflösung"), /*#__PURE__*/ import_react$46.createElement("td", null, "Typ"), /*#__PURE__*/ import_react$46.createElement("td", null))), /*#__PURE__*/ import_react$46.createElement("tbody", null, Object.entries(preview).map(([key, image]) => /*#__PURE__*/ import_react$46.createElement("tr", { key }, image.width && image.height ? /*#__PURE__*/ import_react$46.createElement("td", null, image.width + "x" + image.height) : /*#__PURE__*/ import_react$46.createElement("td", null, "-"), /*#__PURE__*/ import_react$46.createElement("td", null, image.extension), /*#__PURE__*/ import_react$46.createElement("td", null, /*#__PURE__*/ import_react$46.createElement("a", {
+				}, /*#__PURE__*/ import_react$47.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate(`media_entry_export_subtitle_${type}`)), /*#__PURE__*/ import_react$47.createElement("table", { className: "block" }, /*#__PURE__*/ import_react$47.createElement("thead", null, /*#__PURE__*/ import_react$47.createElement("tr", null, /*#__PURE__*/ import_react$47.createElement("td", null, "Auflösung"), /*#__PURE__*/ import_react$47.createElement("td", null, "Typ"), /*#__PURE__*/ import_react$47.createElement("td", null))), /*#__PURE__*/ import_react$47.createElement("tbody", null, Object.entries(preview).map(([key, image]) => /*#__PURE__*/ import_react$47.createElement("tr", { key }, image.width && image.height ? /*#__PURE__*/ import_react$47.createElement("td", null, image.width + "x" + image.height) : /*#__PURE__*/ import_react$47.createElement("td", null, "-"), /*#__PURE__*/ import_react$47.createElement("td", null, image.extension), /*#__PURE__*/ import_react$47.createElement("td", null, /*#__PURE__*/ import_react$47.createElement("a", {
 					href: forceDownload(image.url),
 					target: "_blank",
 					className: "primary-button",
 					style: { float: "right" },
 					rel: "noreferrer"
-				}, /*#__PURE__*/ import_react$46.createElement("i", { className: "icon-dload" }))))))))) : void 0, sectionRdfExport), /*#__PURE__*/ import_react$46.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$46.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$46.createElement("a", {
+				}, /*#__PURE__*/ import_react$47.createElement("i", { className: "icon-dload" }))))))))) : void 0, sectionRdfExport), /*#__PURE__*/ import_react$47.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$47.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$47.createElement("a", {
 					href: get.url,
 					className: "primary-button"
 				}, I18nTranslate("media_entry_export_close")))));
@@ -74419,13 +74443,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 			return n;
 		}, _extends$7.apply(null, arguments);
 	}
-	var import_react$45, import_prop_types$6, MediaEntryIndex;
+	var import_react$46, import_prop_types$6, MediaEntryIndex;
 	var init_Index = __esmMin((() => {
-		import_react$45 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$46 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$6 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ResourcesBoxWithSwitch();
 		MediaEntryIndex = (props) => {
-			return /*#__PURE__*/ import_react$45.createElement(ResourcesBoxWithSwitch, _extends$7({
+			return /*#__PURE__*/ import_react$46.createElement(ResourcesBoxWithSwitch, _extends$7({
 				saveable: true,
 				switches: {
 					currentType: "entries",
@@ -74444,9 +74468,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/MediaEntryBrowse.jsx
 	var MediaEntryBrowse_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryBrowse });
-	var import_react$44, SideBarContent, MediaEntryBrowse;
+	var import_react$45, SideBarContent, MediaEntryBrowse;
 	var init_MediaEntryBrowse = __esmMin((() => {
-		import_react$44 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$45 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_PageHeader();
 		init_MetaDataList();
@@ -74455,11 +74479,11 @@ There are no contexts defined. Please configure them in the admin tool.\
 		SideBarContent = ({ get, authToken }) => {
 			const { entry } = get;
 			const summaryContext = get.entry_meta_data.entry_summary_context;
-			return /*#__PURE__*/ import_react$44.createElement("div", null, /*#__PURE__*/ import_react$44.createElement("div", { className: "mbm" }, /*#__PURE__*/ import_react$44.createElement(ResourceThumbnail_default, {
+			return /*#__PURE__*/ import_react$45.createElement("div", null, /*#__PURE__*/ import_react$45.createElement("div", { className: "mbm" }, /*#__PURE__*/ import_react$45.createElement(ResourceThumbnail_default, {
 				get: entry,
 				authToken,
 				isClient: false
-			})), /*#__PURE__*/ import_react$44.createElement(MetaDataList, {
+			})), /*#__PURE__*/ import_react$45.createElement(MetaDataList, {
 				mods: "ui-media-overview-metadata",
 				tagMods: "small",
 				list: summaryContext,
@@ -74467,16 +74491,16 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}));
 		};
 		MediaEntryBrowse = ({ get, authToken }) => {
-			return /*#__PURE__*/ import_react$44.createElement("div", null, /*#__PURE__*/ import_react$44.createElement(PageHeader, {
+			return /*#__PURE__*/ import_react$45.createElement("div", null, /*#__PURE__*/ import_react$45.createElement(PageHeader, {
 				icon: "eye",
 				title: I18nTranslate("browse_entries_title")
-			}), /*#__PURE__*/ import_react$44.createElement("div", { className: "bordered ui-container midtone rounded-right rounded-bottom table" }, /*#__PURE__*/ import_react$44.createElement("div", { className: "app-body-sidebar table-cell bright ui-container bordered-right rounded-bottom-left table-side" }, /*#__PURE__*/ import_react$44.createElement("div", { className: "ui-container rounded-left phm pvl" }, /*#__PURE__*/ import_react$44.createElement(SideBarContent, {
+			}), /*#__PURE__*/ import_react$45.createElement("div", { className: "bordered ui-container midtone rounded-right rounded-bottom table" }, /*#__PURE__*/ import_react$45.createElement("div", { className: "app-body-sidebar table-cell bright ui-container bordered-right rounded-bottom-left table-side" }, /*#__PURE__*/ import_react$45.createElement("div", { className: "ui-container rounded-left phm pvl" }, /*#__PURE__*/ import_react$45.createElement(SideBarContent, {
 				get,
 				authToken
-			}), /*#__PURE__*/ import_react$44.createElement("div", {
+			}), /*#__PURE__*/ import_react$45.createElement("div", {
 				className: "ui-fadeout-right",
 				role: "presentation"
-			}))), /*#__PURE__*/ import_react$44.createElement("div", { className: "app-body-content table-cell table-substance ui-container" }, /*#__PURE__*/ import_react$44.createElement("div", { className: "ui-container pal" }, /*#__PURE__*/ import_react$44.createElement(BrowseEntriesList, {
+			}))), /*#__PURE__*/ import_react$45.createElement("div", { className: "app-body-content table-cell table-substance ui-container" }, /*#__PURE__*/ import_react$45.createElement("div", { className: "ui-container pal" }, /*#__PURE__*/ import_react$45.createElement(BrowseEntriesList, {
 				browse: get.browse_resources,
 				authToken
 			})))));
@@ -74485,9 +74509,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/MediaEntryEmbedded.jsx
 	var MediaEntryEmbedded_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryEmbedded });
-	var import_react$43, import_prop_types$5, MediaEntryEmbedded;
+	var import_react$44, import_prop_types$5, MediaEntryEmbedded;
 	var init_MediaEntryEmbedded = __esmMin((() => {
-		import_react$43 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$44 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$5 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_MediaEntryPreview();
 		MediaEntryEmbedded = ({ get }) => {
@@ -74509,7 +74533,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 					ratio: embed_config.ratio || defaultSize.ratio
 				}
 			};
-			return /*#__PURE__*/ import_react$43.createElement(MediaEntryPreview, {
+			return /*#__PURE__*/ import_react$44.createElement(MediaEntryPreview, {
 				get,
 				mediaProps,
 				captionConf: caption_conf,
@@ -74522,9 +74546,9 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/MediaEntryEmbeddedImage.jsx
 	var MediaEntryEmbeddedImage_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryEmbeddedImage });
-	var import_react$42, import_prop_types$4, import_classnames$6, MediaEntryEmbeddedImage;
+	var import_react$43, import_prop_types$4, import_classnames$6, MediaEntryEmbeddedImage;
 	var init_MediaEntryEmbeddedImage = __esmMin((() => {
-		import_react$42 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$43 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$4 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$6 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
@@ -74539,25 +74563,25 @@ There are no contexts defined. Please configure them in the admin tool.\
 			const titleTxt = title || I18nTranslate("picture_alt_fallback");
 			const altTxt = `${I18nTranslate("picture_alt_prefix")} ${titleTxt}`;
 			const imageHref = previews.images["x_large"].url;
-			return /*#__PURE__*/ import_react$42.createElement("div", {
+			return /*#__PURE__*/ import_react$43.createElement("div", {
 				className: (0, import_classnames$6.default)("embed-box", !style.height ? "embed-box--responsive-height" : void 0),
 				style
-			}, /*#__PURE__*/ import_react$42.createElement("a", {
+			}, /*#__PURE__*/ import_react$43.createElement("a", {
 				className: "embed-box__img-container",
 				href: url,
 				target: "_blank",
 				rel: "noreferrer"
-			}, /*#__PURE__*/ import_react$42.createElement("img", {
+			}, /*#__PURE__*/ import_react$43.createElement("img", {
 				className: "embed-box__img",
 				src: imageHref,
 				title: titleTxt,
 				alt: altTxt
-			})), /*#__PURE__*/ import_react$42.createElement("a", {
+			})), /*#__PURE__*/ import_react$43.createElement("a", {
 				className: "embed-box__caption embed-box-caption",
 				href: url,
 				target: "_blank",
 				rel: "noreferrer"
-			}, /*#__PURE__*/ import_react$42.createElement("span", { className: "embed-box-caption__icon" }, /*#__PURE__*/ import_react$42.createElement("i", { className: "icon-link" })), /*#__PURE__*/ import_react$42.createElement("h3", { className: "embed-box-caption__title" }, caption_conf.title), /*#__PURE__*/ import_react$42.createElement("h4", { className: "embed-box-caption__subtitle" }, caption_conf.subtitle)));
+			}, /*#__PURE__*/ import_react$43.createElement("span", { className: "embed-box-caption__icon" }, /*#__PURE__*/ import_react$43.createElement("i", { className: "icon-link" })), /*#__PURE__*/ import_react$43.createElement("h3", { className: "embed-box-caption__title" }, caption_conf.title), /*#__PURE__*/ import_react$43.createElement("h4", { className: "embed-box-caption__subtitle" }, caption_conf.subtitle)));
 		};
 		MediaEntryEmbeddedImage.propTypes = { get: import_prop_types$4.default.shape({
 			title: import_prop_types$4.default.string,
@@ -74578,6 +74602,52 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}),
 			url: import_prop_types$4.default.string
 		}).isRequired };
+	}));
+	//#endregion
+	//#region app/javascript/react/views/MediaEntry/XmpImport.jsx
+	var XmpImport_exports = /* @__PURE__ */ __exportAll({ default: () => XmpImport });
+	var import_react$42, XmpImport;
+	var init_XmpImport = __esmMin((() => {
+		import_react$42 = /* @__PURE__ */ __toESM(require_react$1());
+		init_i18n_translate();
+		init_rails_form();
+		init_FormButton();
+		init_Modal();
+		XmpImport = ({ get, authToken }) => {
+			const [hasFile, setHasFile] = (0, import_react$42.useState)(false);
+			return /*#__PURE__*/ import_react$42.createElement(Modal, { widthInPixel: "500" }, /*#__PURE__*/ import_react$42.createElement(RestForm, {
+				name: "xmp_import",
+				action: get.header.xmp_import_url,
+				method: "post",
+				encType: "multipart/form-data",
+				authToken
+			}, /*#__PURE__*/ import_react$42.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$42.createElement("a", {
+				href: get.url,
+				"aria-hidden": "true",
+				className: "ui-modal-close",
+				title: "Close",
+				style: {
+					position: "static",
+					float: "right",
+					paddingTop: "5px"
+				}
+			}, /*#__PURE__*/ import_react$42.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$42.createElement("h3", { className: "title-l" }, I18nTranslate("media_entry_xmp_import_title"))), /*#__PURE__*/ import_react$42.createElement("div", {
+				className: "ui-modal-body",
+				style: { maxHeight: "none" }
+			}, /*#__PURE__*/ import_react$42.createElement("p", { className: "mbm" }, I18nTranslate("media_entry_xmp_import_hint")), /*#__PURE__*/ import_react$42.createElement("input", {
+				type: "file",
+				name: "xmp_file",
+				accept: ".xmp",
+				onChange: (e) => setHasFile(e.target.files.length > 0)
+			})), /*#__PURE__*/ import_react$42.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$42.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$42.createElement("a", {
+				href: get.url,
+				"aria-hidden": "true",
+				className: "link weak"
+			}, I18nTranslate("media_entry_xmp_import_cancel")), /*#__PURE__*/ import_react$42.createElement(FormButton, {
+				text: I18nTranslate("media_entry_xmp_import_submit"),
+				disabled: !hasFile
+			})))));
+		};
 	}));
 	//#endregion
 	//#region app/javascript/react/views/MediaResource/AskDelete.jsx
@@ -82225,9 +82295,15 @@ There are no contexts defined. Please configure them in the admin tool.\
 				"MediaEntrySiblings": function(m) {
 					return m && m.__esModule ? m.default : m;
 				}((init_MediaEntrySiblings(), __toCommonJS(MediaEntrySiblings_exports))),
+				"MediaEntryUsageData": function(m) {
+					return m && m.__esModule ? m.default : m;
+				}((init_MediaEntryUsageData(), __toCommonJS(MediaEntryUsageData_exports))),
 				"MediaResourcesLine": function(m) {
 					return m && m.__esModule ? m.default : m;
-				}((init_MediaResourcesLine(), __toCommonJS(MediaResourcesLine_exports)))
+				}((init_MediaResourcesLine(), __toCommonJS(MediaResourcesLine_exports))),
+				"XmpImport": function(m) {
+					return m && m.__esModule ? m.default : m;
+				}((init_XmpImport(), __toCommonJS(XmpImport_exports)))
 			},
 			"MediaResource": { "AskDelete": function(m) {
 				return m && m.__esModule ? m.default : m;
@@ -82782,9 +82858,15 @@ There are no contexts defined. Please configure them in the admin tool.\
 					"MediaEntrySiblings": function(m) {
 						return m && m.__esModule ? m.default : m;
 					}((init_MediaEntrySiblings(), __toCommonJS(MediaEntrySiblings_exports))),
+					"MediaEntryUsageData": function(m) {
+						return m && m.__esModule ? m.default : m;
+					}((init_MediaEntryUsageData(), __toCommonJS(MediaEntryUsageData_exports))),
 					"MediaResourcesLine": function(m) {
 						return m && m.__esModule ? m.default : m;
-					}((init_MediaResourcesLine(), __toCommonJS(MediaResourcesLine_exports)))
+					}((init_MediaResourcesLine(), __toCommonJS(MediaResourcesLine_exports))),
+					"XmpImport": function(m) {
+						return m && m.__esModule ? m.default : m;
+					}((init_XmpImport(), __toCommonJS(XmpImport_exports)))
 				},
 				"MediaResource": { "AskDelete": function(m) {
 					return m && m.__esModule ? m.default : m;
