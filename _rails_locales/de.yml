@@ -434,6 +434,8 @@ de:
   media_entry_export_subtitle_documents: Dokumente
   media_entry_export_subtitle_images: Bilder
   media_entry_export_subtitle_videos: Video-Dateien
+  media_entry_export_hls_package: HLS-Paket (.zip)
+  media_entry_export_hls_rendition: MP4
   media_entry_export_title: Medieneintrag exportieren
   media_entry_export_rdf_title: RDF-Export Metadaten
   media_entry_export_rdf_title_hint: (experimentell)
@@ -860,8 +862,6 @@ de:
   media_player_format_mp4: MP4
   media_player_format_hls: HLS
   media_player_download: Herunterladen
-  media_entry_export_hls_package: HLS-Paket (.zip)
-  media_entry_export_hls_rendition: MP4
   settings_save_changes: Einstellungen speichern
   settings_saved_changes: Einstellungen wurden gespeichert
   sitemap_activities: Aktivitäten

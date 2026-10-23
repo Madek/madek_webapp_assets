@@ -16157,37 +16157,21 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/ActionsBar.jsx
 	var ActionsBar_exports = /* @__PURE__ */ __exportAll({ default: () => ActionsBar$2 });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$201, ActionsBar$2;
+	var import_react$203, ActionsBar$2;
 	var init_ActionsBar = __esmMin((() => {
-		import_react$201 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$203 = /* @__PURE__ */ __toESM(require_react$1());
 		ActionsBar$2 = ({ children }) => {
-			return /*#__PURE__*/ import_react$201.createElement("div", { className: "ui-actions" }, children);
-========
-	var import_react$200, ActionsBar$2;
-	var init_ActionsBar = __esmMin((() => {
-		import_react$200 = /* @__PURE__ */ __toESM(require_react$1());
-		ActionsBar$2 = ({ children }) => {
-			return /*#__PURE__*/ import_react$200.createElement("div", { className: "ui-actions" }, children);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$203.createElement("div", { className: "ui-actions" }, children);
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/FormButton.jsx
 	var FormButton_exports = /* @__PURE__ */ __exportAll({ default: () => FormButton });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$200, FormButton;
+	var import_react$202, FormButton;
 	var init_FormButton = __esmMin((() => {
-		import_react$200 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$202 = /* @__PURE__ */ __toESM(require_react$1());
 		FormButton = ({ text, onClick, disabled }) => {
-			return /*#__PURE__*/ import_react$200.createElement("button", {
-========
-	var import_react$199, FormButton;
-	var init_FormButton = __esmMin((() => {
-		import_react$199 = /* @__PURE__ */ __toESM(require_react$1());
-		FormButton = ({ text, onClick, disabled }) => {
-			return /*#__PURE__*/ import_react$199.createElement("button", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$202.createElement("button", {
 				className: "primary-button",
 				type: "submit",
 				onClick,
@@ -16790,11 +16774,7 @@ var require = (function() {
 	var init_i18n_translate = __esmMin((() => {
 		init_lodash();
 		init_parse_translations_from_csv();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		translationsList = readTranslationsFromCSV("key,de,en,comment\najax_form_connection_error,Verbindungsfehler. Bitte versuchen Sie es noch einmal.,Connection error. Please try again.,\najax_form_no_longer_authorized,Sie sind für diese Aktion nicht mehr authorisiert.,You are no longer authorized to do this.,\najax_form_unexpected_error,Es gab einen unerwarteten Server-Fehler.,There was an unexpected server error.,\najax_form_validation_error_unparsable,Validation error with unparsable errors.,Validation error with unparsable errors.,\"Formular speichern, Edge case: Server gibt Fehlermeldung UND sie kann nicht gelesen werden.\"\najax_form_validation_error_without_any_data,Validation error without any data.,Validation error without any data.,\"Formular speichern, Edge case: Server gibt Fehlermeldungs-Code aber sonst keinen Inhalt\"\najax_form_validation_error_without_error_data,Validation error without error data.,Validation error without error data.,\"Formular speichern, Edge case: Server gibt Fehlermeldung, aber keine Details\"\napi_tokens_callback_description,Token wird für eine externe Applikation erstellt.,Token is being created for an external application.,\napi_tokens_create_cancel,Abbrechen,Cancel,\napi_tokens_create_description,Beschreibung,Description,\napi_tokens_create_submit,Token anlegen,Create token,\napi_tokens_create_title,Neuen Token hinzufügen,Add new token,\napi_tokens_created_back_btn,Zurück zu allen Tokens.,Back to all tokens.,\napi_tokens_created_callback_btn,Weiter zur Applikation,Continue to the application,\napi_tokens_created_callback_description,\"Falls die Weiterleitung nicht funktioniert, kann der Token auch manuell kopiert werden:\",\"If the redirect does not work, the token can also be copied manually:\",\napi_tokens_created_notice,Dieser Token wird nur einmal angezeigt. Bitte speichern Sie ihn jetzt.,This token is displayed only once. Please save it now.,\napi_tokens_created_title,Es wurde ein neuer Token erstellt.,A new token was created.,\napi_tokens_head_id,ID,ID,\napi_tokens_head_name,Name,Name,\napi_tokens_head_permissions,Berechtigungen,Permissions,\napi_tokens_head_valid_since,Gültig seit,Valid from,\napi_tokens_head_valid_until,Gültig bis,Valid to,\napi_tokens_list_created_hint_pre,Erstellt: ,Created: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_new_button,Neuen Token erstellen,Create new token,\napi_tokens_list_no_description,(Keine Beschreibung),No description),\"Platzhalter-Text, falls ein Token keine Beschreibung hat.\"\napi_tokens_list_revoke_btn_hint,Token zurückziehen.,Revoke token.,\napi_tokens_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Token zurückziehen wollen?\",Are you sure you want to revoke the token?,\napi_tokens_list_revoked_title,Abgelaufene und zurückgezogene Tokens,Expired and revoked tokens,\napi_tokens_list_scope_off,Nein,No,\napi_tokens_list_scope_on,Ja,Yes,\napi_tokens_list_scope_read,Lesen,Read,\napi_tokens_list_scope_write,Schreiben,Write,\napp_autocomplete_displayname_users,Nutzer/innen,Users,\napp_autocomplete_displayname_delegations,Verantwortungs-Gruppen,Responsibility groups,\napp_autocomplete_no_results,Keine Ergebnisse.,No results.,\napp_autocomplete_user_delegation_postfix, (Verantwortungs-Gruppe), (Responsibility group)\napp_autocomplete_enter_term,Suchbegriff eingeben für weitere Ergebnisse,Enter search term for further results,\napp_autocomplete_extend_term,Suchbegriff erweitern für weitere Ergebnisse,Extend search term for further results,\napp_confirm_form_leave_msg,\"Diese Seite bittet Sie zu bestätigen, dass Sie die Seite verlassen möchten. Daten, die Sie eingegeben haben, werden unter Umständen nicht gespeichert.\",Please confirm that you wish to leave this page – entered data might not be saved.,NOTE: German version copied from Firefox default message\napp_notice_admin_mode_on,Admin-Modus aktiviert!,Admin mode activated!,\napp_notice_admin_mode_off,Admin-Modus deaktiviert!,Admin mode deactivated!,\napp_notice_logged_in,Sie haben sich angemeldet.,You have logged in.,\napp_notice_logged_out,Sie haben sich abgemeldet.,You have logged out.,\napp_notice_wrong_credentials,Falscher Benutzername/Passwort.,Incorrect username/password.,\napp_notice_shibboleth_not_enabled,Die Anmeldung mittels Shibboleth ist nicht aktiviert!,Shibboleth sign in is not enabled!,\napp_notice_shibboleth_missing_fields,\"Die Authentifizierungsdaten von Shibboleth sind unvollständig. SURNAME, GIVENNAME und EMAIL sind Pflichtfelder!\",\"Shibboleth authentication data is incomplete. SURNAME, GIVENNAME and EMAIL are required fields!\",\napp_warning_jsonly,\"Diese Funktion erfordert JavaScript, aber es ist nicht aktiviert.\",\"This feature requires Javascript, but it is not activated.\",\nauthentication_groups,Systemgruppen,System groups,\nbatch_add_to_collection_hint,\"Nach Sets suchen, zu denen Sie die Medieneinträge hinzufügen möchten.\",Seach for sets to add media entries.,\nbatch_add_to_collection_post, Medieneinträge zu Set hinzufügen,Add media entries to set,(nach der Anzahl)\nbatch_add_to_collection_pre, ,,(vor der Anzahl)\nbatch_destroy_resources_ask_1,Möchten Sie folgende Inhalte löschen:,Do you want to delete the following items:,\nbatch_destroy_resources_ask_2, Medieneinträge, Media entries,\nbatch_destroy_resources_ask_3, Sets, Sets,\nbatch_destroy_resources_ask_4,(Die Inhalte von Sets werden nicht automatisch mit dem Set gelöscht.),\"(When a set is deleted, the items of this set are not deleted at the same time.)\",\nbatch_destroy_resources_cancel,Abbrechen,Cancel,\nbatch_destroy_resources_ok,OK,OK,\nbatch_destroy_resources_success,Inhalte wurden erfolgreich gelöscht.,Items are deleted successfully.,\nbatch_meta_data_edit,Metadaten für %{media_entry_count} Medieneinträge gleichzeitig editieren.,Edit metadata for %{media_entry_count} media entries at the same time.,\nbatch_remove_from_collection_cancel,Abbrechen,Cancel,\nbatch_remove_from_collection_question_part_1,Möchten Sie die ausgewählten ,Do you want to remove the selected ,\nbatch_remove_from_collection_question_part_2, Medieneinträge und , media entries and ,\nbatch_remove_from_collection_question_part_3, Sets aus dem Set entfernen?, sets from this set?,\nbatch_remove_from_collection_remove,Entfernen,Remove,\nbatch_remove_from_collection_title,Medieinträge/Sets aus Set entfernen,Remove media entries/sets from sets,\nbatch_warning_no_authorized_contents_collection,Sie haben für keines der Sets die nötige Berechtigung.,You have no permissions for these sets.,\nbatch_warning_no_authorized_contents_media_entry,Sie haben für keinen der Medieneinträge die nötige Berechtigung.,You have no permissions for these media entries.,\nbatch_warning_no_contents_collection,Sie haben keine Sets.,You have no sets.,\nbatch_warning_no_contents_media_entry,Sie haben keine Medieneinträge.,You have no media entries.,\nbatch_edit_title_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nbatch_edit_title_th_filename,Dateiname,File name,\nbatch_edit_title_th_title,Titel,Title,\nbatch_edit_title_save,Speichern,Save,\nbatch_edit_title_cancel,Abbrechen,Cancel,\nbrowse_entries_browse_link_title,In diese Richtung weiterstöbern,Browse further in this direction,\nbrowse_entries_filter_link,Weiter filtern →,Apply additional filter →,\nbrowse_entries_loading_error,Ladefehler,Loading error,\nbrowse_entries_title,Nach ähnlichen Inhalten stöbern,Browse similar items,\nbubble_batch_label,Stapel,Batch,Wo: Labels in der Stapelverarbeitung\nbubble_draft_label,Entwurf,Draft,Wo: Labels in der Stapelverarbeitung\nclipboard_add_hint,Zur Stapelverarbeitung hinzufügen,Add to batch processing,\nclipboard_adding_all_resources_cancelled,\"Das Hinzufügen zur Stapelverarbeitung wurde abgebrochen. Ein Teil der Inhalte wurde schon hinzugefügt. Wenn Sie alle hinzufügen möchten, versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.\",\"The process of adding items to batch processing was interrupted. Some items were successfully added to batch processing. If you wish to add all items, please try again.Those items already added will not be duplicated.\",\nclipboard_adding_all_resources_error,Es konnten nicht alle Inhalte zur Stapelverarbeitung hinzugefügt werden. Bitte versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.,It was not possible to add all items to batch processing. Please try again. Those items already added will not be duplicated.,\nclipboard_adding_all_resources_retry,Nochmals, Again,\nclipboard_adding_resources,Füge Inhalte zur Stapelverarbeitung hinzu …,Add items to batch processing …,\nclipboard_ask_add_all_1,Möchten sie alle ,Would you like to add all ,\nclipboard_ask_add_all_2, Inhalte zur Stapelverarbeitung hinzufügen?, items to batch processing?,\nclipboard_ask_add_all_cancel,Abbrechen,Cancel,\nclipboard_ask_add_all_ok,Ok,OK,\nclipboard_batch_add_success,Die Inhalte wurden der Stapelverarbeitung hinzugefügt.,Items were added to batch processing.,\nclipboard_batch_remove_success,Die Inhalte wurden aus der Stapelverarbeitung entfernt.,Items wer removed from batch processing.,\nclipboard_empty_message,Sie haben keine Inhalte für die Stapelverarbeitung ausgewählt.,Batch processing is empty,\nclipboard_fetching_resources,Lade Inhalte …,Items loading …,\"Wieso sind da Pünktchen? -> Ist eine Zustandsanzeige, Nutzer wartet.\"\nclipboard_removing_resources,Entferne Inhalte aus Stapelverarbeitung...,Remove items from batch processing ...,\ncollection_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgendes Set löschen möchten: \",Are you sure you want to delete the following set:,\ncollection_ask_delete_title,Set löschen,Delete set,\ncollection_deleted,Dieses Set wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This set has been deleted and is no longer visible to users.\ncollection_delete_success,Set wurde gelöscht.,Set deleted.,\ncollection_does_not_exist,Dieses Set existiert nicht.,This set does not exist.,\ncollection_edit_cover_submit_btn,Speichern,Submit,\ncollection_edit_cover_title,Titelbild für Set festlegen,Define set cover,\ncollection_edit_highlights_btn,Auswahl speichern,Submit selection,\ncollection_edit_highlights_empty,Dieses Set hat noch keine Inhalte.,This set has no items yet.,\ncollection_edit_highlights_title,Inhalte hervorheben,Highlight items,\ncollection_edit_permissions_btn,Speichern,Submit,\ncollection_highlighted_contents,Hervorgehobene Inhalte,Highlighted items,\ncollection_layout_save,Darstellung festlegen,Save type of display,\ncollection_layout_saved,Darstellung gespeichert,Type of display saved,\ncollection_meta_data_header_prefix,Set editieren: ,Edit set:,\ncollection_new_cancel,Abbrechen,Cancel,\ncollection_new_create_set,Set erstellen,Create set,\ncollection_new_dialog_title,Set erstellen,Create set,\ncollection_new_dialog_parent_warning,The new created set will be added as a child to:,The new created set will be added as a child to:,\ncollection_new_flash_successful,Set wurde erstellt.,Set was created.,\ncollection_new_flash_title_needed,Titel ist ein Pflichtfeld.,Title is a mandatory field.,\ncollection_new_header,Neues Set,New set,\ncollection_new_label_title,Titel,Title,\ncollection_permissions_btn,Zugriffsberechtigungen ändern,Change permissions,\ncollection_relations_child_sets,Untergeordnete Sets,Child sets,\ncollection_relations_children_hint,Diese Sets wurden dem ausgewählten Set hinzugefügt.,These sets are now related to the selected set.,\ncollection_relations_current,Aktuelles Set,Current set,\ncollection_relations_hint_text,\"Das ausgewählte Set ist mit anderen Sets verknüpft. Diese Zusammenhänge wurden aktiv durch Sie oder eine/n andere/n Nutzer/in festgelegt als übergeordnet, benachbart oder untergeordnet. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected set is related to other sets. The relationship between these sets was actively defined by you or another user. The type of relationship to the other sets could be described as parent, siblings or children relationship. The displayed sets are owned by yourself or shared by other users with you.\",\ncollection_relations_no_child_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_parent_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_sibling_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_parent_sets,Übergeordnete Sets,Parent sets,\ncollection_relations_parents_hint,Das ausgewählte Set wurde diesen Sets hinzugefügt.,The selected set is now related to this set.,\ncollection_relations_show_all,Alle anzeigen →,Show all →,\ncollection_relations_show_all_relations,Alle Zusammenhänge anzeigen,Show all relations,\ncollection_relations_sibling_sets,Benachbarte Sets,Sibling sets,\ncollection_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie das ausgewählte Set.,This set is related to the same sets as the selected set.,Wo: Zusammenhänge eines Sets\ncollection_resource_selection_cancel,Abbrechen,Cancel,\ncollection_resource_selection_h_author,Autor/in,Author,\ncollection_resource_selection_h_date,Datierung,Dating,\ncollection_resource_selection_h_keywords,Schlagworte,Keywords,\ncollection_resource_selection_h_responsible,Rechteinhaber,Holder of rights,\ncollection_resource_selection_h_selection,Auswahl,Selection,\ncollection_resource_selection_h_subtitle,Untertitel,Subtitle,\ncollection_resource_selection_h_title,Titel,Title,\ncollection_resource_selection_save,Auswahl speichern,Save selection,\ncollection_select_collection_flash_result,Set aus %{removed_count} Set(s) entfernt. Zu %{added_count} Set(s) hinzugefügt.,Removed set from %{removed_count} set(s). Added set to %{added_count} set(s).,\ncollection_sorting_created_at_asc,Sortieren nach Importierdatum aufsteigend,Sort by import date ascending,\ncollection_sorting_created_at_desc,Sortieren nach Importierdatum absteigend,Sort by import date descending,\ncollection_sorting_manual_asc,Sortieren manuell aufsteigend,Sort manually ascending,\ncollection_sorting_manual_desc,Sortieren manuell absteigend,Sort manually descending,\ncollection_sorting_last_change_desc,Sortieren nach letzter Änderung absteigend,Sort by date of update descending,\ncollection_sorting_last_change_asc,Sortieren nach letzter Änderung aufsteigend,Sort by date of update ascending,\ncollection_sorting_title_asc,Sortieren nach Titel alphabetisch,Sort by title alphabetically,\ncollection_sorting_title_desc,Sortieren nach Titel absteigend,\"Sort by title alphabetically, but descending\",\ncollection_tab_main,Set,Set,\ncollection_was_disfavored,Das Set wurde von den Favoriten entfernt.,Set was removed from favorites.,\ncollection_was_favored,Das Set wurde zu den Favoriten hinzugefügt.,Set was added to favorites.,\ncontents_privacy_private,Diese Inhalte sind nur für Sie zugänglich.,These items are only accessible to you.,\ncontents_privacy_public,Diese Inhalte sind öffentlich zugänglich.,These items are accessible to the public.,\ncustom_urls_canonical_hint,\"Jeder Inhalt hat eine automatisch erzeugte, kanonische Adresse bestehend aus Zahlen und Buchstaben, eine sog. UUID (Universally Unique Identifier). Diese Adresse kann nicht übertragen oder entfernt werden und ist deshalb immer an erster Stelle aufgelistet.\",\"Every item has a canonical address consisting of numbers und letters which is created automatically, a so- called UUID (Universally Unique Identifier). This address can not be transferred or deleted. For this reason it is always listed first.\",\ncustom_urls_canonical_title,Kanonische Adresse (UUID),Canonical address (UUID),\ncustom_urls_flash_create_successful_1,Adresse ,Address ,\ncustom_urls_flash_create_successful_2, wurde erstellt., was created.,\ncustom_urls_flash_empty,Adresse darf nicht leer sein.,Address is not allowed to be empty.,\ncustom_urls_flash_exists_on_itself_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_collection_2, existiert bereits für dieses Set., already exists for this set.,\ncustom_urls_flash_exists_on_itself_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_media_entry_2, existiert bereits für diesen Medieneintrag., already exists for this media entry.,\ncustom_urls_flash_not_allowed_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_collection_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung das Set zu verwalten, auf welches die Adresse \", can not be transferred. You do not have permission to manage the set to which the address ,\ncustom_urls_flash_not_allowed_collection_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_allowed_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_media_entry_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung den Medieneintrag zu verwalten, auf welchen die Adresse \", cannot be transferred. You do not have  permission to manage the media entry to which the address ,\ncustom_urls_flash_not_allowed_media_entry_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_same_type_collection_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_collection_2, kann nicht übertragen werden. Adressen von Medieneinträgen können nicht auf Sets übertragen werden., can not be transferred. Addresses from media entries can not be transferred to sets.,\ncustom_urls_flash_not_same_type_media_entry_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_media_entry_2, kann nicht übertragen werden. Adressen von Sets können nicht auf Medieneinträge übertragen werden., cannot be transferred. Addresses from sets cannot be transferred to media entries.,\ncustom_urls_flash_primary_url_set_1,,,\"Wo: Bestätigung CustomURL, vor der Adresse\"\ncustom_urls_flash_primary_url_set_2, wurde als primäre Adresse gesetzt., was set as primary address.,\"Wo: Bestätigung CustomURL, nach der Adresse\"\ncustom_urls_flash_transfer_confirmation_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_collection_2, ist gegenwärtig dem Set , is currently related to the set  ,\ncustom_urls_flash_transfer_confirmation_collection_3, zugewiesen. Wollen Sie diese Adresse auf das Set ,. Would you like to transfer this address to the set ,\ncustom_urls_flash_transfer_confirmation_collection_4, übertragen?,?,\ncustom_urls_flash_transfer_confirmation_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_media_entry_2, ist gegenwärtig dem Medieneintrag , is currently related to the media entry  ,\ncustom_urls_flash_transfer_confirmation_media_entry_3, zugewiesen. Wollen Sie diese Adresse auf den Medieneintrag ,. Would you like to transfer this address to the media entry ,\ncustom_urls_flash_transfer_confirmation_media_entry_4, übertragen?,?,\ncustom_urls_flash_transfer_successful_1,Adresse ,Address  ,\ncustom_urls_flash_transfer_successful_2, wurde von , was transferred from  ,\ncustom_urls_flash_transfer_successful_3, auf , to ,\ncustom_urls_flash_transfer_successful_4, übertragen.,0,\ncustom_urls_flash_wrong_format_1,Adresse ,Address ,\ncustom_urls_flash_wrong_format_2, erfüllt die Anforderungen nicht., does not meet the requirements.,\ncustom_urls_manage_address_title,Adressverwaltung,Address administration,\ncustom_urls_new,Adresse anlegen / übertragen,Create / transfer address,\ncustom_urls_no_addresses_defined,Noch keine Adressen definiert.,No address defined yet.,\ncustom_urls_primary_hint,\"Für jeden Inhalt (egal ob Medieneintrag oder Set) gibt es immer genau eine primäre Adresse. Diese ist in der Adressleiste des Browsers sichtbar, wenn der Inhalt angezeigt wird. Neben der primären Adresse können weitere gesetzt werden, die auf die primäre Adresse weiterleiten.\",Each item (media entry or set) has exactly one primary address. This address is displayed in the browsersaddress bar when the item is accessed.You have the option to create other addresses which are forwarded to the primary address.,\ncustom_urls_primary_title,Primäre Adresse,Primary address,\ncustom_urls_table_header_actions,Aktionen,Actions,\ncustom_urls_table_header_address,Adresse,Address ,\ncustom_urls_table_header_created_by,Erstellt durch,Created by,\ncustom_urls_table_header_date,Datum,Date,\ncustom_urls_table_header_type,Typ,Type,\ncustom_urls_title,Adressen für ,Addresses for ,\ndashboard_create_collection,Set erstellen,Create set,\ndashboard_create_collection_btn,Set erstellen,Create set,\ndashboard_create_media_entry_btn,Medien importieren,Upload media,\ndashboard_none_exist,Keine vorhanden.,There are none.,\ndashboard_show_all,Alle anzeigen,Show all,\ndashboard_title_head,Mein Archiv,My archive,\ndeleted,gelöscht,deleted,\ndynamic_filters_any_values_title,Jegliche Werte,Any values,\ndynamic_filters_authorization,Berechtigung,Authorization,\ndynamic_filters_visibility,Sichtbarkeit,Accessability,\ndynamic_filters_visibility_private,Nur für mich,Only for me,\ndynamic_filters_visibility_user_or_group,Geteilt mit Personen und Arbeitsgruppen,Shared with people and work groups,\ndynamic_filters_person_header,Personen,Persons,\ndynamic_filters_remove_all_title,Alle entfernen,Remove all,\ndynamic_filters_role_header,Funktionen,Functions,\ndynamic_filters_search_for_api_client_placeholder,Suche nach API-Applikation,Search for API client...,\ndynamic_filters_search_for_delegation_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_group_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_user_placeholder,Suche nach User...,Search for user...,\ndynamic_filters_search_for,Suche nach,Search for,\nedit_custom_urls_back_to_collection,Zurück zum Set,Back to the set,\nedit_custom_urls_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nedit_custom_urls_cancel,Abbrechen,Cancel,\nedit_custom_urls_confirmation,Bestätigung,Confirmation,\nedit_custom_urls_create_or_transfer,Adresse anlegen / übertragen,Create / transfer address,\nedit_custom_urls_preferred_address,Gewünschte Adresse:,Preferred address:,\nedit_custom_urls_requirements_hint,\"Eine Adresse darf nur genau einmal im System vorkommen – entweder für einen Medieneintrag oder für ein Set. Sie beginnt immer mit einem Kleinbuchstaben, gefolgt von (mindestens einem) weiteren Zeichen aus Kleinbuchstaben, Nummern, Bindestrichen ( - ) und Grundstrichen ( _ ) in beliebiger Reihenfolge.\",\"Each comprehensible address is unique in the system – either for a media entry or for a set. The address always begins with a lower case letter, followed by at least one other character. The following characters can bei lower case letters, numbers, hyphens ( - ) or low lines ( _ ) in any order.\",\nedit_custom_urls_requirements_title,Anforderungen,Requirements,\nedit_custom_urls_set_primary,Als primäre Adresse setzen,Set as primary address,\nedit_custom_urls_state_primary,Primäre Adresse,Primary address,\nedit_custom_urls_state_transfer,Weiterleitung,Forwarding,\nedit_custom_urls_title,Anforderungen,Requirements,\nedit_custom_urls_transfer,Übertragen,Transfer,\nedit_custom_urls_transfer_hint,\"Eine bereits bestehende Adresse kann von einem Medieneintrag auf einen anderen oder von einem Set auf ein anderes übertragen werden. Bestehende Adressen können nicht von einem Medieneintrag auf ein Set und umgekehrt übertragen werden. Wollen Sie eine Adresse übertragen, dann geben Sie diese hier ein. Sie müssen für beide Inhalte über die Zugriffsberechtigung 'Verwalten' verfügen.\",\"An existing address can be transferred from one media entry to another or from one set to another. Existing addresses cannfot be transferred from a media entry to a set or vice versa. If you want to transfer an address, please enter this address here. You have to have manage permissions for both items.\",\nedit_custom_urls_transfer_title,Übertragen,Transfer,\nembed_error_title,\"Fehler!\",\"Error!\",\nembed_error_context_pre,\"Angeforderte URL: \",\"Requested URL: \",\nembed_error_context_post,\"\",\"\",\nembed_error_help_pre,\"Hilfe: \",\"Help: \",\nembed_error_help_post,\"\",\"\",\nembed_error_msg,\"Dieser Inhalt kann nicht eingebettet werden.\",\"This content cannot be embedded.\",\nembed_error_msg_403,\"Dieser Inhalt kann nicht eingebettet werden, weil die nötigen Berechtigungen fehlen.\",\"This content cannot be embedded because the necessary permissions are missing.\",\nembed_error_msg_404,\"Der gewünschte Inhalt konnte nicht gefunden werden.\",\"The requested content could not be found.\",\nerror_401_title,\"Um Zugang zu diesem Bereich zu erhalten, melden Sie sich bitte an.\",To get access please login below with your user data.,\nerror_403_message,Bitte kontaktieren Sie die für die Ressource verantwortliche Person.,Please contact the responsible user for this resource.,\nerror_403_title,Sie haben keine Zugriffsrechte für diesen Inhalt.,You don’t have the necessary permissions to access this resource.,\nerror_404_title,Die gesuchte Seite kann nicht gefunden werden.,The requested page cannot be found.,\nerror_500_message,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (%{support_email}) mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\"If you require help in this matter, please contact the support (%{support_email}) with a description of your last working steps and a screen shot of this page.\",\nerror_500_message_pre,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (\",\"If you require help in this matter, please contact the support (\",\nerror_500_message_post,\") mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\") with a description of your last working steps and a screen shot of this page.\",\nerror_500_title,Es ist ein Server-Fehler aufgetreten.,A server error occurred.,\nexplore_keywords_section_title,Häufige Schlagworte,Frequent keywords,\nexplore_show_more,Weitere anzeigen,Show more,\nexplore_vocabulary_section_show_details,Details anzeigen,View details,\nexplore_vovabulary_section_title,Vokabulare,Vocabularies,\nexternal_groups,Abteilungsgruppen,Division groups,\nfooter_choose_language,Sprache wählen,Choose language,\ngroup_ask_delete_cancel,Abbrechen,Cancel,\ngroup_ask_delete_delete,Löschen,Delete,\ngroup_ask_delete_question_post, löschen?,?,\ngroup_ask_delete_question_pre,Möchten Sie die Arbeitsgruppe ,Would you like to delete work group ,\ngroup_ask_delete_title,Arbeitsgruppe löschen,Delete work group,\ngroup_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Arbeitsgruppe löschen wollen?\",Are you sure you want to delete this work group?,\ngroup_edit_at_least_one_member_delete,löschen,delete,VERB\ngroup_edit_at_least_one_member_post,0,0,NACH dem Verb und Namen der Gruppe\ngroup_edit_at_least_one_member_pre,Eine Arbeitsgruppe muss mindestens eine Person enthalten. Ganze Arbeitsgruppe ,A work group has at least one member. Whole work group,VOR dem Verb und Namen der Gruppe\ngroup_edit_btn,Bearbeiten,Edit,\ngroup_edit_cancel,Abbrechen,Cancel,\ngroup_edit_form_new_member_login_hint,Login des neuen Mitglieds dieser Arbeitsgruppe,New work group member login,\ngroup_edit_form_new_member_login_label,User hinzufügen,Add a member,\ngroup_edit_form_save_btn,Speichern,Save,\ngroup_edit_form_title_pre,Arbeitsgruppe bearbeiten: ,Edit work group: ,\ngroup_edit_hint_remove_yourself,Achtung: Sie entfernen sich selbst aus der Arbeitsgruppe!,Attention: You are about to remove yourself from the work group!,\ngroup_edit_member,Mitglieder,Members,\ngroup_edit_name,Name,Name,\ngroup_edit_person,Person,Person,\ngroup_edit_save,Speichern,Save,\ngroup_edit_username,Benutzername,Username,\ngroup_meta_data_institutional_name,Name der Abteilungsgruppe,Division group name,\ngroup_meta_data_name,Name,Name,\ngroup_new_form_title,Neue Arbeitsgruppe erstellen,Create group,\ngroup_new_group_btn,Neue Arbeitsgruppe,New work group,\ngroup_show_edit_button,Arbeitsgruppe bearbeiten,Edit work group,\ngroup_show_members,Mitglieder,Members,\ngroup_show_permissions_use,(anwenden),(execute),\ngroup_show_permissions_view,(betrachten),(view),\ngroup_show_permissions_view_use,(betrachten und anwenden),(view and execute),\ngroup_show_vocabulary_permissions,Berechtigungen Vokabulare,Permissions vocabularies,\ngroup_toolbar_header_entrusted_resources,Mir anvertraute Medieneinträge,Entrusted media entries,\ngroup_was_deleted,Arbeitsgruppe wurde gelöscht.,Work group has been deleted.,\nhome_page_new_contents,Neue Inhalte,New items,\ninternal_groups,Arbeitsgruppen,Work groups,\nlayout_mode_grid,Raster-Ansicht,Grid view,\nlayout_mode_list,Listen-Ansicht,List view,\nlayout_mode_miniature,Miniatur-Ansicht,Miniature view,\nlayout_mode_tiles,Kachel-Ansicht,Tile view,\nlogin_box_internal,Externe,External users,\nlogin_box_title,Anmelden,Log in,\nlogin_box_login_btn,Anmelden,Log in,\nlogin_box_email_or_login,E-Mail,Email,\nlogin_box_password,Passwort,Password,\nlogin_box_rememberme,Login merken,Remember me,\nlogin_box_username,Benutzername,User name,\nmedia_entry_all_metadata_title,Alle Metadaten nach Vokabularen,All metadata by vocabulary,\nmedia_entry_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgenden Medienintrag löschen möchten: \",Are you sure you want to delete the following media entry:,\nmedia_entry_ask_delete_title,Medieneintrag löschen,Delete media entry,\nmedia_entry_back_btn,Zurück,Back,\nmedia_entry_conversion_hint,\"Diese Datei wird gerade für eine Vorschau konvertiert. Sobald dies abgeschlossen ist, finden Sie hier eine abspielbare Version.\",\"Currently the system is converting this file to a preview. As soon as the conversion is finished, you will be able to play the file here.\",\nmedia_entry_conversion_progress_post,% abgeschlossen.,% completed.,\nmedia_entry_conversion_progress_pre,Konvertierung zu ,Conversion ,\nmedia_entry_conversion_reload,\"Laden Sie diese Seite neu, um den aktuellen Stand der Konvertierung zu erfahren.\",Reload this page to display the current state of conversion.,\nmedia_entry_conversion_status_failed,Die Konvertierung ist fehlgeschlagen. Bitte wenden Sie sich an den Support.,The file conversion has failed. Please contact support.,\nmedia_entry_conversion_status_initialized,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_conversion_status_submitted,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_deleted,Dieser Medieneintrag wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This media entry has been deleted and is no longer visible to users.\nmedia_entry_delete_success,Der Medieneintrag wurde gelöscht.,Media entry has been deleted.,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_post,erstellen,,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_pre,(Experte) Hinweis zu neuer Version inkl. Verlinkung zu,(Expert) Add annotation «new version of» and link to,\nmedia_entry_duplicator_configuration_copy_meta_data,Metadaten übertragen,Copy meta data,\nmedia_entry_duplicator_configuration_copy_permissions,Zugriffsberechtigungen übertragen,Copy permissions,\nmedia_entry_duplicator_configuration_copy_relations,Zusammenhänge übertragen (übergeordnete Sets und Favoriten),Copy relations (parent collections & favorites),\nmedia_entry_duplicator_configuration_move_custom_urls,(Experte) Sprechende Adresse (URL) übernehmen,(Expert) Move comprehensible Address (URL),\nmedia_entry_duplicator_configuration_instructions,Folgende Optionen können gewählt werden:,Choose options below:,\nmedia_entry_duplicator_custom_urls_already_moved,moved to the first successful upload!,moved to the first successful upload!,\nmedia_entry_duplicator_desc_post,zugewiesen.,by selected options.,\nmedia_entry_duplicator_desc_pre,\"Die unten importierten Mediendateien bekommen die den nachfolgend gewählten Optionen entsprechenden Metadaten, Zugriffsberechtigungen, Beziehungen und weitere Einstellungen des aktuellen Medieneintrags\",\"The media file to be imported below will get assigned meta data, permissions, relations and further settings from the actual media entry\",\nmedia_entry_duplicator_md_title_suffix,(updated),(updated),\nmedia_entry_duplicator_new_version_of_label,Updated file,Updated file,\nmedia_entry_export_close,Schliessen,Close,\nmedia_entry_export_download,Exportieren,Download,\nmedia_entry_export_has_no_original,Sie verfügen für den Export der Originaldatei nicht über die notwendige Berechtigung.,You are not allowed to download the original file.,\nmedia_entry_export_no_content,Sie haben keine Zugriffsberechtigung für die Originaldatei und es steht keine Vorschau zur Verfügung.,You do not have permission to access the original file and there is no preview available.,\nmedia_entry_export_original,Original,Original,\nmedia_entry_export_original_hint,Originaldatei herunterladen.,Download original file.,\nmedia_entry_export_subtitle_audios,Audio-Dateien,Audio files,\nmedia_entry_export_subtitle_documents,Dokumente,Documents,\nmedia_entry_export_subtitle_images,Bilder,Images,\nmedia_entry_export_subtitle_videos,Video-Dateien,Video files,\nmedia_entry_export_title,Medieneintrag exportieren,Download media entry,\nmedia_entry_export_rdf_title,RDF-Export Metadaten,RDF export metadata,\nmedia_entry_export_rdf_title_hint,(experimentell),(experimental),\nmedia_entry_export_rdf_experiment_footnote,\"Struktur und Format der Daten können sich ändern. Bitte geben sie eine Rückmeldung, falls Sie diese verwenden!\",\"Data structure and format is subject to change. Please send feedback if you are using this!\",\nmedia_entry_export_checksum_title,Prüfsumme,Checksum,\nmedia_entry_export_checksum_generate,Erzeugen,Generate,\nmedia_entry_export_checksum_verify,Prüfen,Verify,\nmedia_entry_export_checksum_empty,Prüfsumme erzeugen,Generate checksum,\nmedia_entry_export_checksum_generating,Wird erzeugt…,Generating…,\nmedia_entry_export_checksum_verifying,Wird verifiziert…,Verifying…,\nmedia_entry_export_checksum_generated_at,Erzeugt am,Generated at,\nmedia_entry_export_checksum_verified_at,Geprüft am,Verified at,\nmedia_entry_export_checksum_match,Prüfsumme stimmt überein,Checksum matches,\nmedia_entry_export_checksum_mismatch,Prüfsumme stimmt nicht überein,Checksum does not match,\nmedia_entry_export_checksum_error,Fehler bei der Prüfsummen-Operation,Error during checksum operation,\nmedia_entry_file_format_not_supported_1,\"Wahrscheinlich unterstützt Ihr Browser nicht die Darstellung dieses Dateiformats, aber Sie \",\"Your browser probably does not support the file format, but you can \",\nmedia_entry_file_format_not_supported_2,können die Datei ,download the file,\nmedia_entry_file_format_not_supported_3,exportieren.,0,\nmedia_entry_file_information_title,Datei,File information,\nmedia_entry_media_import_gotodrafts,Medieneinträge vervollständigen,Complete media entries,\nmedia_entry_media_import_gotomediaentries,Weiter zu Meine Medieneinträge,Continue to My media entries,\nmedia_entry_media_import_header,Medien importieren,Media upload,\nmedia_entry_media_import_box_header_a,,,\nmedia_entry_media_import_box_header_b, Upload(s), Upload(s),\nmedia_entry_media_import_box_upload_status_waiting,Warten…,Waiting…,\nmedia_entry_media_import_box_upload_status_error,Fehler!,Error!,\nmedia_entry_media_import_box_upload_status_progress_a,Hochladen… ,Uploading… ,\nmedia_entry_media_import_box_upload_status_progress_b,%,%,\nmedia_entry_media_import_box_upload_status_processing,Verarbeiten…,Processing…,\nmedia_entry_media_import_inside,Dateien auf dieses Feld ziehen oder ,Add files by drag and drop in this field or ,\nmedia_entry_media_import_inside_nojs,Dateien auswählen,Select files,\nmedia_entry_media_import_notes_msg,\"Bilder (TIFF, JPEG, PNG) sowie Audio- und Videofiles in den gängigsten Formaten werden direkt verarbeitet und dargestellt. Bilder im CMYK-Farbraum werden nicht korrekt dargestellt. Wandeln Sie diese vor dem Importieren in RGB um.\",\"Images (TIFF, JPEG, PNG) and audio/video files in the most common formats are processed and displayed directly. Images in the CMYK color model cannot be displayed correctly, please convert to RGB before uploading.\",\nmedia_entry_media_import_notes_title,Hinweise,Hints,\nmedia_entry_media_import_select_media,Medien auswählen,Select media files,\nmedia_entry_media_import_upload_error,überschreitet maximale Grösse von 16000 Pixel,exceeds size limit of 16000 pixel,\nmedia_entry_media_import_title,\"Bilder, Videos, Audio-Dateien oder Dokumente bereitstellen.\",\"Add images, video or audio files, or other documents.\",\nmedia_entry_meta_data_edit_by_context_btn,Metadaten nach Kontexten bearbeiten,Edit metadata by context,\nmedia_entry_meta_data_edit_by_vocab_btn,Metadaten nach Vokabularen bearbeiten,Edit metadata by vocabulary,\nmedia_entry_meta_data_header_prefix,Medieneintrag editieren: ,Edit media entry: ,\nmedia_entry_more_data_title,Verantwortlichkeit und Aktivität,Responsibility and activities,\nmedia_entry_not_published_warning_msg,Bei diesem Medieneintrag fehlen noch Pflichtangaben.,Media entry still needs mandatory data.,\nmedia_entry_relations_current,Aktueller Eintrag,Current entry,\nmedia_entry_relations_hint_text,\"Der ausgewählte Medieneintrag ist mit Sets verknüpft. Diese Zusammenhänge wurden aktiv festgelegt als übergeordnet oder benachbart. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected media entry is connected to sets. These relations are actively defined as a parent, a sibling or a child relationship. The sets displayed here are your own or are shared with you by other users.\",\nmedia_entry_relations_parents_hint,Der ausgewählte Medieneintrag wurde diesen Sets hinzugefügt.,The selected media entry was added to these sets.,\nmedia_entry_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie der ausgewählte Medieneintrag.,These sets were added to the same sets as the selected media entry.,\nmedia_entry_select_collection_flash_result,Der Medieneintrag wurde aus %{removed_count} Set(s) entfernt und zu %{added_count} Set(s) hinzugefügt.,Media entry removed from %{removed_count} set(s) and added to %{added_count} set(s).,\nmedia_entry_siblings_section_title,Weitere Medieneinträge im selben Set,Other media entries in the same set,\nmedia_entry_siblings_parent_set,Übergeordnetes Set:,Parent set:,\nmedia_entry_tab_main,Medieneintrag,Media entry,\nmedia_entry_tab_more_data,Alle Metadaten,All metadata,\nmedia_entry_tab_permissions,Berechtigungen,Permissions,\nmedia_entry_tab_relations,Zusammenhänge,Relations,\nmedia_entry_tab_usage_data,Nutzung,Usage,\nmedia_entry_upload_btn,Importieren,Upload,\nmedia_entry_was_disfavored,Der Medieneintrag wurde von den Favoriten entfernt.,Media entry was removed from favorites.,\nmedia_entry_was_favored,Der Medieneintrag wurde zu den Favoriten hinzugefügt.,Media entry was added to favorites.,\nmedia_entry_xmp_import_cancel,Abbrechen,Cancel,\nmedia_entry_xmp_import_flash_failed,\"Folgende Metadaten konnten nicht importiert werden: \",The following metadata could not be imported: ,\nmedia_entry_xmp_import_flash_invalid_file,Bitte eine XMP-Datei (.xmp) auswählen.,Please select an XMP file (.xmp).,\nmedia_entry_xmp_import_flash_nothing,Die XMP-Datei enthält keine importierbaren Metadaten.,The XMP file contains no importable metadata.,\nmedia_entry_xmp_import_flash_success,\"Metadaten aus XMP-Sidecar importiert: \",Metadata imported from XMP sidecar: ,\nmedia_entry_xmp_import_flash_unreadable,\"Die XMP-Datei konnte nicht gelesen werden: \",The XMP file could not be read: ,\nmedia_entry_xmp_import_hint,\"Metadaten aus einer XMP-Sidecar-Datei (.xmp) übernehmen. Nur Felder, die in der XMP-Datei einen Wert haben, werden überschrieben; alle anderen Metadaten bleiben unverändert.\",\"Import metadata from an XMP sidecar file (.xmp). Only fields that have a value in the XMP file will be overwritten; all other metadata remains unchanged.\",\nmedia_entry_xmp_import_submit,Importieren,Import,\nmedia_entry_xmp_import_title,XMP-Sidecar importieren,Import XMP sidecar,\nmedia_entry_xmp_sidecars_title,Importierte XMP-Sidecars,Imported XMP sidecars,\nmeta_data_action_delete_btn,Löschen,Delete,\nmeta_data_action_edit_btn,Bearbeiten,Edit,\nmeta_data_batch_action_remove_meta_data,Werte für alle Inhalte löschen,Delete data for all content,\nmeta_data_batch_failure,Metadaten konnten nicht aktualisiert werden.,Metadata could not be updated.,\nmeta_data_batch_hint_differences,Unterschiedliche Metadaten vorhanden,Different metadata in place.,\nmeta_data_batch_hint_differences_override,\"Achtung: Bestehende Werte werden durch Änderungen überschrieben! Wenn keine Änderungen vorgenommen werden, bleiben die verschiedenen Werte erhalten.\",\"Attention: Changes will replace exiting data. If not changes are made, data will be preserved.\",\nmeta_data_batch_hint_equal_data,Gleiche Metadaten vorhanden,Same metadata in place.,\nmeta_data_batch_hint_no_data,Noch keine Metadaten vorhanden,No metadata available yet.,\nmeta_data_batch_hint_value,Werte oder Text,Values or text,\nmeta_data_batch_item_selected,Medieneintrag selektiert,Media entry selected,\nmeta_data_batch_items_selected,Medieneinträge selektiert,Media entries selected,\nmeta_data_batch_more,weitere,More,\nmeta_data_batch_some_ignored_1,(,(,\nmeta_data_batch_some_ignored_2,\" Medieneinträge wurden ignoriert, da Sie nicht über die nötigen Berechtigungen verfügen)\",\"Media entries were ignored, because you do not have the required permissions.)\",\nmeta_data_batch_success,Metadaten wurden erfolgreich aktualisiert.,metadata have been updated successfully.,\nmeta_data_batch_summary_all_post, Medieneinträge wurden gespeichert., Media entries have been saved.,NACH der Anzahl\nmeta_data_batch_summary_all_pre,Alle ,All ,VOR der Anzahl\nmeta_data_batch_summary_missing, haben fehlende Pflichtangaben, have missing mandatory data,\nmeta_data_batch_summary_published, haben ausgefüllte Pflichtfelder, have mandatory data,\nmeta_data_batch_summary_were_published, hatten bereits ausgefüllte Pflichtfelder, already had mandatory data,\nmeta_data_batch_title_post_collections, Sets gleichzeitig editieren,Edit sets at the same time,\nmeta_data_batch_title_post_media_entries, Medieneinträge gleichzeitig bearbeiten, media entries at once,\nmeta_data_batch_title_pre,Metadaten für ,Edit metadata for ,\nmeta_data_blank_value_for_required_meta_key_post,0,0,\nmeta_data_blank_value_for_required_meta_key_pre,Kein Wert vorhanden für ,No value available for,\nmeta_data_collection_batch_summary_all_post, Sets wurden gespeichert., Sets were saved.,\nmeta_data_collection_batch_summary_all_pre,Alle ,All ,\nmeta_data_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Werte löschen wollen?\",Are you sure you want to delete these data?,\nmeta_data_edit_collection_saved,Set wurde gespeichert.,Set was saved.,\nmeta_data_edit_media_entry_published,Der Medieneintrag wurde gespeichert und alle Pflichtfelder sind ausgefüllt.,Media entry was saved and mandatory data have been entered.,\nmeta_data_edit_media_entry_saved,Der Medieneintrag wurde gespeichert.,Media entry was saved.,\nmeta_data_edit_media_entry_saved_missing,\"Der Medieneintrag wurde gespeichert, aber es wurden nicht alle Pflichtfelder ausgefüllt.\",Media entry was saved but there some mandatory data are missing.,\nmeta_data_edit_more_data,Weitere Angaben,More data,\nmeta_data_form_all_data,Alle Daten,All metadata,\nmeta_data_form_cancel,Abbrechen,Cancel,\nmeta_data_form_save,Speichern,Save,\nmeta_data_form_saving,Die Metadaten werden gerade gespeichert. Dies kann einige Zeit in Anspruch nehmen. Bitte gedulden Sie sich und schliessen Sie das Fenster nicht.,Meta data are currently being saved. This will take some time. Please be patient and do not close the browser.,\nmeta_data_form_submit_btn,Speichern,Save,\nmeta_data_header_text,Werte,Data,\nmeta_data_input_date_placeholder_duration_from,von,from,\nmeta_data_input_date_placeholder_duration_to,bis,to,\nmeta_data_input_date_placeholder_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_placeholder_timestamp,wird als Text gespeichert,on,\nmeta_data_input_date_type_duration,von/bis,from/to,\nmeta_data_input_date_type_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_type_timestamp,am,on,\nmeta_data_input_keywords_existing,Schlagwort ist bereits vergeben.,Keyword already assigned.,\nmeta_data_input_new_group_add,Arbeitsgruppe einfügen,Add work group,\nmeta_data_input_new_group_name,Name,Name,\nmeta_data_input_new_person_add,Person einfügen,Add person,\nmeta_data_input_new_person_first_name,Vorname,First name,\nmeta_data_input_new_person_last_name,Nachname,Last name,\nmeta_data_input_new_person_pseudonym,Pseudonym,Pseudonym,\nmeta_data_input_new_person_toggle,Neue Person oder Gruppe anlegen,Add new person or work group,\nmeta_data_input_person_save,Übernehmen,Apply,\nmeta_data_input_json_err_prefix,Eingabefehler: ,Input error: ,\nmeta_data_input_json_err_no_object,Wert ist nicht vom Typ 'Object'!,Value is not an 'Object'!,\nmeta_data_meta_key_documentation_url,> Online-Hilfe,click link for details,\nmeta_data_meta_key_label,Schlüssel,Key,\nmeta_data_role_add_another_btn,Weitere Funktion hinzufügen,Add another function,\nmeta_data_role_add_btn,Funktion hinzufügen,Add a function,\nmeta_data_role_add_heading,Funktion hinzufügen zu ,Add a function to,\nmeta_data_role_choose_label,Wählen Sie eine Funktion aus der Liste,Choose a function from the list,\nmeta_data_extensible_role_choose_label,Wählen Sie eine Funktion aus der Liste oder ergänzen Sie die Liste mit der gewünschten Funktion. Mit Enter die Eingabe abschliessen.,Choose a function from the list or enter the function and press Enter,\nmeta_data_role_edit_btn,Funktion bearbeiten,Edit function,\nmeta_data_role_edit_heading,Funktion bearbeiten,Edit the function of,\nmeta_data_role_remove_btn,Funktion entfernen,Remove function,\nmeta_data_type_label,Typ,Type,\nmeta_data_value_label,Wert,Data,\nmeta_datum_media_entry_label_id,Ressourcen-ID:,Resource ID:,\nmeta_datum_media_entry_label_string,Zusatztext:,additional text:,\nmeta_datum_media_entry_err_uuid_invalid,Ungültige UUID!,Invalid UUID!,\nmeta_datum_media_entry_value_unauthorized,Hinweis: Sie haben keinen Zugriff auf diese Ressource!,Notice: You do not have access to this resource!,\nmeta_datum_media_entry_value_not_found,Hinweis: Diese Ressource konnte nicht (mehr) gefunden werden!,Notice: This resource could not be found (anymore)!,\nmeta_key_order_alphabetical,a-z,a-z,\nmeta_key_order_alphabetical_hint,Die Schlagworte dieses Metadatenfeldes sind alphabetisch sortiert.,The keywords of this metakey are sorted alphabetically.,\nmeta_key_order_custom,redaktionell,editorial,\nmeta_key_order_custom_hint,Die Schlagworte dieses Metadatenfeldes sind redaktionell sortiert.,The keywords of this metakey are sorted editorially.,\nno_content_fallback,Keine Inhalte vorhanden.,No items available.,\nno_groups_fallback,Keine Arbeitsgruppen vorhanden.,No work groups available.,\nno_keywords_fallback,Keine Schlagworte vorhanden.,No keywords available.,\nno_relations_title,Es wurden keine Zusammenhänge gefunden.,No relations found.,\nnotifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nnotifications_message_transfer_responsibility,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to you.\",\nnotifications_message_transfer_responsibility_via_delegation,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to %{viaDelegation}.\",\nnotifications_message_transfer_responsibility_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to you.\",\nnotifications_message_transfer_responsibility_via_delegation_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to %{viaDelegation}.\",\nnotifications_media_entry,Medieneintrag,media entry,\nnotifications_collection,Set,set,\nnotifications_acknowledge_all,Alle Notifikationen löschen,Delete all notifications,\nnotifications_really_acknowledge_all,Wirklich alle löschen?,Really delete all?,\nnotifications_acknowledge,Löschen,Delete,\nnotifications_acknowledge_date_tooltip,Alle Notifikationen vom %{date} löschen,Delete all notifications of %{date},\nnotifications_no_notifications,Keine Einträge vorhanden,No entries present,\nnotifications_section_expand,Alle anzeigen,Show all,\nnotifications_section_collapse,Anzeige reduzieren,Reduce,\nnotifications_section_show_more,Weitere Einträge anzeigen,Show more,\npagination_nav_loadnext,Mehr laden,Load more,\npagination_nav_nextloading,Mehr Inhalte werden geladen.,More items are being loaded.,\npagination_nav_nextpage,Nächste Seite,Next page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_prevpage,Vorangehende Seite,Previous page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_thispage,Diese Seite,This page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_prefix,Seite ,Page ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_infix, von , of ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_postfix,,,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_selection_label,Seite auswählen,Select page,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npeople_toolbar_header,Ähnliche Inhalte,Related items,\npermission_entrusted_to_api_client,Sichtbar für API-Applikationen,Visible to API clients,\npermission_entrusted_to_group,Sichtbar für Arbeitsgruppen,Visible to work groups,\npermission_entrusted_to_user,Sichtbar für Nutzer/innen,Visible to users,\npermission_name_edit_metadata,Metadaten editieren,Edit metadata,\npermission_name_edit_metadata_and_relations,Metadaten editieren & Inhalte hinzufügen,Edit metadata and add items,\npermission_name_edit_permissions,Zugriffsberechtigungen ändern,Edit permissions,\npermission_name_get_full_size,Original exportieren & in PDF blättern,Download original & browse PDF,\npermission_name_get_metadata_and_previews,Betrachten,View,\npermission_name_use,Anwenden,Execute,bezieht sich auf Vokabulare!\npermission_name_view,Betrachten,View,bezieht sich auf Vokabulare!\npermission_overridden_by_public,(überschrieben durch die öffentlichen Berechtigungen),(overruled by public permissions),\npermission_subject_name_public,Internet,Internet,\npermission_subject_title_apiapps,API-Applikationen,API clients,\npermission_subject_title_groups,Gruppen,Groups,\npermission_subject_title_public,Öffentlichkeit,Public,\npermission_subject_title_users,Nutzer/innen,Users,\npermission_subject_title_users_or_delegations,Nutzer/innen / Verantwortungs-Gruppen,Users / Responsibility Groups,\npermissions_batch_success,Berechtigungen wurden erfolgreich aktualisiert.,Permissions have been updated succesfully.,\npermissions_batch_title_post, Inhalten., Items.,\npermissions_batch_title_pre,Berechtigungen ändern von ,Edit permissions of ,\npermissions_overview_yours_msg_end,\", haben gegenwärtig als Nutzer/in oder als Mitglied einer Verantwortungs-Gruppe oder Arbeitsgruppe folgende Berechtigungen:\",\", currently have the following permissions (either directly or as a member of a\nresponsibility group or as a member of a work group):\",\npermissions_overview_yours_msg_start,\"Sie, \",\"You, \",\npermissions_overview_yours_title,Ihre Berechtigungen,Your permissions,\npermissions_responsibility_title,Verantwortlichkeit,Responsibility,\npermissions_responsible_user_and_responsibility_group_title,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / Responsibility group,\npermissions_responsible_user_and_responsibility_group_msg,Der/die verantwortliche/r Nutzer/in hat alle Berechtigungen zu den ausgewählten Inhalten und kann diese auch löschen.,The responsible user / responsibility group has all permissions for the selected content and can also delete it.,\npermissions_responsible_delegation_title,Verantwortungs-Gruppe,Responsibility group,\npermissions_responsible_user_title,Verantwortliche Person,Responsible user,\npermissions_table_cancel_btn,Abbrechen,Cancel,\npermissions_table_edit_btn,Bearbeiten,Edit,\npermissions_table_remove_subject_btn,Berechtigung entfernen,Remove permission,\npermissions_table_save_btn,Speichern,Save,\npermissions_table_title,Zugriffsberechtigungen,Permissions,\npermissions_transfer_responsibility_link,Verantwortlichkeit übertragen,Transfer responsibility,\nperson_edit_add_uri_btn,URI hinzufügen,Add URL,\nperson_edit_cancel_btn,Abbrechen,Cancel,\nperson_edit_editing_header,Bearbeiten,editing,\nperson_show_external_uris,Links,Links,\nperson_edit_preview,Vorschau,Preview,\nperson_edit_save_btn,Speichern,Save,\nperson_edit_name_readonly_hint,\"Hinweis: Der eigene Name kann nicht geändert werden. Bitte wenden sie sich an den Support.\",\"Notice: Your own name can not be changed .Please contact the support.\"\nperson_show_description,Kurzbiographie,Short biography,\nperson_show_edit_btn,Seite bearbeiten,Edit Page,\nperson_show_external_uris,Links,Links,\nperson_show_external_uris_autority_control,Verzeichnis(se),Register,\nperson_show_first_name,Vorname,First name,\nperson_show_last_name,Nachname,Last name,\nperson_show_only_name,Name,Name,\nperson_show_pseudonym,Pseudonym,Pseudonym,\npicture_alt_fallback,(unbekannt),(unkown),\npicture_alt_prefix,Bild: ,Picture:,Prefix für Titel von Bildern (hover-titel/Screenreader)\nrelations_parents_title,Übergeordnete Sets,Parents,\nrelations_siblings_title,Benachbarte Sets,Siblings,\nrelations_title,Zusammenhänge,Relations,\nrelease_source_history,Source History,Source History,\nrelease_info,Release Info,Release info,\nrelease_local_git_version,Lokale Git Version,Local Git version,\nresource_action_collection_create,Set erstellen,Create set,\nresource_action_collection_destroy,Set löschen,Delete set,\nresource_action_collection_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_collection_edit_cover,Titelbild festlegen,Define set cover,\nresource_action_collection_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_collection_edit_highlight,Inhalte hervorheben,Highlight items,\nresource_action_collection_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_collection_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_collection_select_collection,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_action_collection_share,Set teilen,Share set,\nresource_action_media_entry_destroy,Medieneintrag löschen,Delete media entry,\nresource_action_media_entry_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_media_entry_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_media_entry_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_media_entry_export,Medieneintrag exportieren,Export media entry,\nresource_action_media_entry_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_media_entry_manage_confidential_links,Vertrauliche Links verwalten,Manage Confidential Links,\nresource_action_media_entry_select_collection,Zu Sets hinzufügen / Aus Sets entfernen,Add to/remove from set,\nresource_action_media_entry_share,Medieneintrag teilen,Share media entry,\nresource_action_media_entry_update_file,Medieneintrag ersetzen,Replace media entry,\nresource_action_media_entry_xmp_import,XMP-Sidecar importieren,Import XMP sidecar,\nresource_action_more_actions,Weitere Aktionen,Further actions,\nresource_action_show_in_admin,Zeige im Admin-Interface,Show in Admin Interface,\nresource_ask_delete_cancel,Abbrechen,Cancel,\nresource_ask_delete_ok,Löschen,Delete,\nresource_ask_delete_question_post,?,?,\nresource_meta_data_copyright_notice,Rechte am geistigen Eigentum,Copyright notice,\nresource_meta_data_date,Datierung,Date,\nresource_meta_data_description,Beschreibung,Description,\nresource_meta_data_document_type,Dokumenttyp,Type of document,\nresource_meta_data_fallback,Es sind keine Metadaten zu diesem Kontext bereitgestellt.,There are no metadata related to this context.,\nresource_meta_data_has_validation_errors,Es gibt fehlerhafte Eingabefelder.,There are erroneously entry fields.,\"Wo: Meldung wenn Metadaten fehlerhaft, z.B. fehlendes Pflichtfeld\"\nresource_meta_data_keywords,Schlagworte,Keywords,\nresource_meta_data_resource_type,Medientyp,Media type,\nresource_meta_data_responsible,Verantwortliche/r Nutzer/in,Responsible user,\nresource_meta_data_saved_filter,Gespeicherter Filter,Saved filter,\nresource_meta_data_title,Titel,Title,\nresource_select_collection_cancel,Abbrechen,Cancel,\nresource_select_collection_clear,Löschen,Clear,\nresource_select_collection_has_more,Es gibt noch weitere Resultate. Bitte Suche verfeinern.,There are more results. Please refine the search.,\nresource_select_collection_hint_more,Es wurden noch weitere Sets gefunden. Bitte verfeinern Sie Ihre Suche.,Additional sets were found. Please refine your search.,\nresource_select_collection_new,Neue,New,\nresource_select_collection_non_assigned,Inhalt ist noch keinem Set zugewiesen.,Item is not yet related to any set.,\nresource_select_collection_non_found,Zu dieser Suche wurde kein Set gefunden.,No set was found.,\nresource_select_collection_save,Speichern,Save,\nresource_select_collection_search,Suchen,Search,\nresource_select_collection_search_placeholder,Suche,Search,\nresource_select_collection_title,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_thumbnail_contents,Inhalte,Items,\nresource_thumbnail_sets,Sets,Sets,\nresources_box_batch_actions_addalltoclipboard_1,Alle ,Add all ,\nresources_box_batch_actions_addalltoclipboard_2, zur Stapelverarbeitung hinzufügen, to batch processing,\nresources_box_batch_actions_addselectedtoclipboard,Ausgewählte zur Stapelverarbeitung hinzufügen,Add selected to batch processing,\nresources_box_batch_actions_addtoset,Ausgewählte zu Set hinzufügen,Add selected to set,\nresources_box_batch_actions_clear_clipboard,Stapelverarbeitung leeren,Empty batch processing,\nresources_box_batch_actions_delete,Ausgewählte löschen,Delete selected,\nresources_box_batch_actions_edit,Metadaten von Medieneinträgen editieren,Edit metadata for media entries,\nresources_box_batch_actions_edit_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nresources_box_batch_actions_edit_all_collections,Metadaten von allen Sets editieren,Edit metadata of all sets at once,\nresources_box_batch_actions_edit_all_media_entries,Metadaten von allen Medieneinträgen editieren,Edit metadata of all media entries at once,\nresources_box_batch_actions_edit_sets,Metadaten von Sets editieren,Edit metadata of sets,\nresources_box_batch_actions_managepermissions,Berechtigungen von Medieneinträgen editieren,Edit permissions for media entries,\nresources_box_batch_actions_menu_title,Aktionen,Actions,\nresources_box_batch_actions_removefromclipboard,Ausgewählte aus der Stapelverarbeitung entfernen,Remove selected from batch processing,\nresources_box_batch_actions_removefromset,Aus Set entfernen,Remove from set,\nresources_box_batch_actions_sets_managepermissions,Berechtigungen von Sets editieren,Edit permissions for sets,\nresources_box_batch_actions_transfer_responsibility_entries,Verantwortlichkeit von Medieneinträgen übertragen,Transfer responsibility of media entries,\nresources_box_batch_actions_transfer_responsibility_sets,Verantwortlichkeit von Sets übertragen,Transfer responsibility of sets,\nresources_box_deselect_all,Alle abwählen,Deselect all,\nresources_box_filter,Filtern,Filter,\nresources_box_filters_note_post,\"aus, um weitere Filterkriterien anwenden zu können.\",\"in the Action bar to see more filter options.\",\nresources_box_filters_note_pre,Wählen Sie in der Aktionsleiste,Please select,\nresources_box_filters_note_or,oder,or,\nresources_box_new_search,Neue Suche,New search,\nresources_box_no_content,Keine Inhalte verfügbar,No items available.,\nresources_box_no_content_but_sets_1,Es gibt keine Medieneinträge für diese Suche. Es wurden aber ,There are no media entries related to this search process. But ,\nresources_box_no_content_but_sets_2,Sets,sets,\nresources_box_no_content_but_sets_3, gefunden., have been found.,\nresources_box_reset_filter,Filter zurücksetzen,Reset filter,\nresources_box_select_all,Alle auswählen,Select all,\nresources_box_selection_limit_ok,Ok,Ok,\nresources_box_selection_limit_page_1,\"Die Seite kann nicht selektiert werden, da sonst die maximale Anzahl von \",This page cannot be selected because otherwise the maximum number of,\nresources_box_selection_limit_page_2, ausgewählten Inhalten überstiegen würde., pages would be exceeded.,\nresources_box_selection_limit_single_1,\"Der Inhalt kann nicht selektiert werden, da sonst die maximale Anzahl von \",\"This item can not be selected, because otherwise the maximum number of\",\nresources_box_selection_limit_single_2, ausgewählten Inhalten überstiegen würde.,selected items would be exceeded.,\nresources_box_selection_remove_selection,Auswahl entfernen,Remove selection,\nresources_box_selection_select,Auswählen,Select,\nresources_box_title_count_post,Inhalte,Items,\nresources_box_info_header_no_system_groups,In dieser Auflistung werden %{system_groups_name} nicht berücksichtigt.,%{system_groups_name} are not taken into account.,\nresources_box_info_header_system_groups_name,Systemgruppen,System groups,\nresources_section_show_all,Alle anzeigen →,Show all →,\nresources_type_all,Alle,All,\nresponsibility_groups,Verantwortungs-Gruppen,Responsibility groups,\nsearch_btn_search,Suchen,Search,\nsearch_filename,Filename,File name,\nsearch_full_text,Volltext,Full text,\nsection_title_collections,Meine Sets,My sets,\nsection_title_groups,Meine Gruppen,My groups,\nsection_title_keywords,Meine Schlagworte,My keywords,\nsection_title_media_entries,Meine Medieneinträge,My media entries,\nsection_title_tokens,Meine Tokens,My tokens,\nsession_expiring_soon,Sie werden in weniger als %{minutes} Minuten ausgeloggt. Speichern Sie Ihre Eingaben und melden sich neu an.,You will be logged out in less than %{minutes} minutes. Save your input and log in again.\nshare_back_to_collection,Zurück zum Set,Back to the set,\nshare_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nshare_close,Schliessen,Close,\nshare_custom_url_hint_collection,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeiten), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-works-by-anna), use the following URL:\",\nshare_custom_url_hint_media_entry,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeit), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-work-by-anna), use the following URL:\",\nshare_custom_url_none_available,Es ist keine sprechende Adresse angelegt.,No comprehensible address has been defined.,\nshare_custom_url_subtitle,Sprechende Adresse teilen,Share comprehensible address,\nshare_embed_hint_iframe,\"Falls dies von Ihrem gewünschen System nicht unterstützt wird, kopieren Sie den nachfolgenden iFrame-Code und fügen diesen als HTML-Element in das gewünschte System ein.\",\"If your desired system does not support this, copy the following iFrame code and paste it into the desired system as an HTML element.\",\nshare_embed_hint_iframe_code,\"IFrame-Code\",\"IFrame Code\",\nshare_embed_hint_oembed,\"Viele Content Management Systeme lassen einfaches Einbetten von Inhalten via oEmbed zu. Dazu kopieren Sie die URL oben und fügen sie in ein Inhaltselement ein.\",\"Many content management systems allow easy embedding of content via oEmbed. To do so, copy the URL above and paste it into a content element.\",\nshare_embed_hint_subtitle,\"Medieneintrag einbetten\",\"Embed Media Entry\",\nshare_title_collection,Set teilen,Share set,\nshare_title_media_entry,Medieneintrag teilen,Share media entry,\nshare_uuid_url_hint_collection,\"Möchten Sie dieses Set teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this set? Use the following URL.\",\nshare_uuid_url_hint_exporter,Auch für den Export mit dem Madek-Exporter wird diese URL benötigt.,This URL is also required for exporting with the Madek exporter.,\nshare_uuid_url_hint_media_entry,\"Möchten Sie diesen Medieneintrag teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this media entry? Use the following URL.\",\nshare_uuid_url_subtitle,URL teilen,Share URL,\n\n\nsettings_notifications_title,Notifikationen,Notifications,\nsettings_notifications_info1,Notifikationen werden unter %{notifications} aufgeführt und optional per E-Mail verschickt.,Notifications are listed under %{notifications} and optionally sent via email.,\nsettings_notifications_info2,Notifikationen werden nach 6 Monaten gelöscht,Notifications will be removed after 6 months,\nsettings_notifications_info3,Die Einstellungen für die E-Mail-Notifikationen finden Sie nachstehend:,Choose your settings for e-mail notifications below:,\nsettings_notifications_email_label,An folgende E-Mail-Adresse bekommen Sie Notifikationen zugestellt:,Notifications will be sent to the following e-mail address:,\nsettings_notifications_locale_label,Die E-Mails werden in folgender Sprache verschickt:,You will receive emails in,\nsettings_notifications_locale_de,Deutsch,German,\nsettings_notifications_locale_en,Englisch,English,\nsettings_notifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nsettings_notifications_title_weather_report,Wetterbericht,Weather report,\nsettings_notifications_email_frequency_label,In welcher Häufigkeit möchten Sie E-Mails erhalten?,Frequency of email notification:,\nsettings_notifications_email_frequency_immediately,sofort,immediately,\nsettings_notifications_email_frequency_daily,täglich (Zusammenfassung),daily (digest),\nsettings_notifications_email_frequency_weekly,wöchentlich (Zusammenfassung),weekly (digest),\nsettings_notifications_email_frequency_never,keine,none,\nsettings_advanced_functions_title,Erweiterte Funktionen,Advanced functions,\nsettings_show_all_data_tab_in_edit_mode_label,Reiter «Alle Daten» im Bearbeitungsmodus einblenden,Show the «All metadata» Tab in edit mode,\nsettings_save_changes,Einstellungen speichern,Save settings,\nsettings_saved_changes,Einstellungen wurden gespeichert,Settings have been saved,\nsitemap_activities,Aktivitäten,Activities,\nsitemap_notifications,Notifikationen,Notifications,\nsitemap_api,API,API,\nsitemap_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_collections,Sets,Sets,\nsitemap_entries,Medieneinträge,Media entries,\nsitemap_explore,Erkunden,Explore,\nsitemap_filter_sets,Filtersets,Filter sets,\nsitemap_help,Hilfe,Support,\nsitemap_media_entries,Medieneinträge,Media entries,\nsitemap_metakey,Metakey,Metakey,\nsitemap_metakey_id,Metakey-ID,Metakey ID,\nsitemap_my_archive,Mein Archiv,My archive,\nsitemap_my_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_my_content_collections,Sets,Sets,\nsitemap_my_content_media_entries,Medieneinträge,Media entries,\nsitemap_my_delegated_collections,Sets in gemeinsamer Verantwortung,Sets with joint responsibility,\nsitemap_my_delegated_media_entries,Medieneinträge in gemeinsamer Verantwortung,Media entries with joint responsibility,\nsitemap_my_entrusted_collections,Mir anvertraute Sets,My entrusted sets,\nsitemap_my_entrusted_filter_sets,Mir anvertraute Filtersets,My entrusted filter sets,\nsitemap_my_entrusted_media_entries,Mir anvertraute Medieneinträge,My entrusted media entries,\nsitemap_my_favorite_collections,Favoriten-Sets,Favorite sets,\nsitemap_my_favorite_media_entries,Favoriten-Medieneinträge,Favorite media entries,\nsitemap_my_groups,Gruppen,Groups,\nsitemap_my_latest_imports,Letzte Importe,Last imports,\nsitemap_my_unpublished,Unvollständige Medieneinträge,Incomplete media entries,\nsitemap_my_used_keywords,Schlagworte,Keywords,\nsitemap_search,Suche,Search,\nsitemap_tokens,Tokens,Tokens,\nsitemap_settings,Einstellungen,Settings,\nsitemap_vocabularies,Vokabulare,Vocabularies,\nconfidential_links_help_title,Hinweise,Hints,\nsitemap_vocabulary,Vokabular,Vocabulary,\nconfidential_links_help_text,\"Vertrauliche Links ermöglichen den direkten Zugriff auf Medieneinträge, auch wenn sie nicht öffentlich sichtbar sind.\nDiese Links ermöglichen somit auch Benutzern ohne Login einen Zugang zum Medieneintrag. Binden Sie Vertrauliche Links nicht in öffentlich zugängliche Webseiten ein, sonst werden die regulären Zugriffsberechtigungen wirkungslos.\nVertrauliche Links können nur vom Verantwortlichen eines Medieneintrags erstellt und zurückgezogen werden. Die Links können mit einem Verfallsdatum erstellt oder zeitlich unbeschränkt erstellt werden.\",\"Confidential Links can be used to enable access to Entries without making them publicly visible.\nThese Links therefore also make it possible to share Entries with Users that don't have a login. Please do not share or embed Confidential Links onto publicly accessible websites, because it would render the regular permission settings useless.\nConfidential Links can only be created by the responsible user of an Entry. They can be manually revoked at any time, and optionally be set to expire automatically after a set day.\",\nconfidential_links_header,Vertrauliche Links,Confidential Links,\nconfidential_links_title_pre,Vertrauliche Links für ,Confidential Links for ,\nconfidential_links_title_post,Zurück zum Set,Back to the set,\nconfidential_links_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nconfidential_links_create_title,Neuen Vertraulichen Link erstellen,Create a new Confidential Link,\nconfidential_links_create_description,Beschreibung,Description,\nconfidential_links_create_submit,Vertraulichen Link erstellen,Create Confidential Link,\nconfidential_links_create_set_expiration_date,Ablaufdatum einstellen,Set expiration date,\nconfidential_links_create_cancel,Abbrechen,Cancel,\nconfidential_links_created_title,Neuer Vertraulicher Link erstellt,New Confidential Link created,\nconfidential_links_created_back_btn,Zurück zu allen Vertraulichen Links,Go back to all Confidential Links,\nconfidential_links_created_notice,Vertraulicher Link erstellt!,Confidential Link was created!,\nconfidential_links_show_link_for_copy,Link zum kopieren:,Link to copy:,\nconfidential_links_show_embedcode_for_copy,Embed-Code zum kopieren:,Embed-Code to copy:,\nconfidential_links_show_embed_link,Embed-Link:,Embed-link:,\nconfidential_links_show_embed_code_iframe,HTML-Code/iframe:,HTML-code/iframe:,\nconfidential_links_list_created_hint_pre,Erstellt: ,Created: ,\nconfidential_links_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\nconfidential_links_list_no_expiry,Nie,Never,\nconfidential_links_list_new_button,Neuen Vertraulichen Link erstellen,Add a new Confidential Link,\nconfidential_links_list_no_description,(Keine Beschreibung),(No description),\nconfidential_links_list_revoke_btn_hint,Zurückziehen,Revoke,\nconfidential_links_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Vertraulichen Link zurückziehen wollen?\",Are you sure you want to revoke this Confidential Link?,\nconfidential_links_list_revoked_title,Abgelaufene und zurückgezogene Vertrauliche Links,Expired and revoked Confidential Links,\nconfidential_links_list_show_url,Link anzeigen,Show Link,\nconfidential_links_list_copy_url,Vertraulichen Link kopieren,Copy Confidential Link,\nconfidential_links_head_id,ID,ID,\nconfidential_links_head_name,Name,Name,\nconfidential_links_head_token,Token,Token,\nconfidential_links_head_valid_since,Erstellt am,Created at,\nconfidential_links_head_valid_until,Läuft ab,Expires at,\nconfidential_links_show_title,Vertraulicher Link,Confidential Link,\nconfidential_links_access_notice,Dieser Medieneintrag wurde über einen Vertraulichen Link aufgerufen. Die URL dieser Seite darf nur einem eingeschränkten Personenkreis zugänglich sein.,This Entry was accessed via a Confidential Link. The URL of this page shall only be made accessible to a limited group of people.,\ntransfer_responsibility_batch_success_collection_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_collection_1a, Set , set ,\ntransfer_responsibility_batch_success_collection_1b, Sets , sets ,\ntransfer_responsibility_batch_success_collection_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_batch_success_media_entry_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_media_entry_1a, Medieneintrag , media entry,\ntransfer_responsibility_batch_success_media_entry_1b, Medieneinträge, media entries,\ntransfer_responsibility_batch_success_media_entry_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_cancel,Abbrechen,Cancel,\ntransfer_responsibility_currently_responsible,Bisher verantwortlich,Currently responsible,\ntransfer_responsibility_to,Verantwortlichkeit übertragen auf,Transfer responsibility to,\ntransfer_responsibility_for_1_media_entry,für 1 Medieneintrag,for 1 media entry,\ntransfer_responsibility_for_n_media_entries,für %{nofResources} Medieneinträge,for %{nofResources} media entries,\ntransfer_responsibility_for_1_collection,für 1 Set,for %{nofResources} set,\ntransfer_responsibility_for_n_collections,für %{nofResources} Sets,for %{nofResources} sets,\ntransfer_responsibility_multiple_will_receive,Die bisher Verantwortlichen behalten folgende Berechtigungen:,The ones currently responsible are retaining the following permissions:,\ntransfer_responsibility_single_will_receive,%{name} behält folgende Berechtigungen:,%{name} is retaining the following permissions:,\ntransfer_responsibility_submit,Übertragen,Transfer,\ntransfer_responsibility_success_collection,Sie haben die Verantwortlichkeit für das Set erfolgreich übertragen.,You have successfully transferred responsibility for the set.,\ntransfer_responsibility_success_media_entry,Sie haben die Verantwortlichkeit für den Medieneintrag erfolgreich übertragen.,You have successfully transferred responsibility for the media entry.,\ntransfer_responsibility_title_single,Verantwortlichkeit übertragen,Transfer responsibility,\ntransfer_responsibility_title_batch,Verantwortlichkeit %{forNResources} übertragen,Transfer responsibility %{forNResources},\ntransfer_responsibility_you_will_receive,\"Sie, %{name}, behalten folgende Berechtigungen:\",\"You, %{name}, are retaining the following permissions:\",\nusage_data_created_at,Erstellt am,Created on,\nusage_data_import_at,Importiert am,Imported on,\nusage_data_import_by,Importiert durch,Imported by,\nusage_data_last_changes_empty,Es wurden noch keine Änderungen festgehalten.,No changes have been recorded yet.,\nusage_data_last_changes_title,Letzte Änderungen der Metadaten,Last change of metadata,\nusage_data_relations_children,Set enthält,Set is related to,\nusage_data_relations_parents,Übergeordnete Sets,Parent sets,\nusage_data_relations_title,Zusammenhänge,Relations,\nusage_data_responsibility_title,Verantwortlichkeit und Aktivitäten,Responsibility and activities,\nusage_data_responsible,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / responsibility group,\nusage_terms_accept_btn,Nutzungsbedingungen akzeptieren,Accept usage terms,\nusage_terms_reject_btn,Ablehnen,Reject usage terms,\nuser_menu_admin_mode_toogle_off,Admin-Modus beenden,Stop admin mode,\nuser_menu_admin_mode_toogle_on,In Admin-Modus wechseln,Switch to admin mode,\nuser_menu_admin_ui,Admin-Interface öffnen,Open admin interface,\nuser_menu_login_btn,Anmelden,Log in,\nuser_menu_logout_btn,Abmelden,Log out,\nuser_menu_my_content_collections,Meine Sets,My sets,\nuser_menu_my_content_media_entries,Meine Medieneinträge,My media entries,\nuser_menu_my_favorite_collections,Favoriten - Sets,Favorites - sets,\nuser_menu_my_favorite_media_entries,Favoriten - Medieneinträge,Favorites - media entries,\nuser_menu_my_groups,Meine Gruppen,My groups,\nuser_menu_my_person,Meine Person,My person,\nuser_menu_upload,Medien importieren,Upload media,\nuser_name_deactivated,[Gelöschter User],[Deleted user],\nvocabularies_all,Alle Vokabulare,All vocabularies,\nvocabularies_contents_hint_1,Alle Inhalte mit Metadaten des Vokabulars ,All items with metadata related to the vocabulary,\nvocabularies_contents_hint_2,\". Sie sehen nur Inhalte, für die Sie berechtigt sind.\",. You can see only items you have permissions for.,\nvocabularies_keywords_hint_1,Alle im Vokabular ,All keywords contained in the vocabulary ,\nvocabularies_keywords_hint_2, enthaltenen Schlagworte und die dazugehörenden Metadatenfelder., and related meta data fields.,\nvocabularies_no_description,(Keine Beschreibung),(No description available),\nvocabularies_no_keywords,Keine Schlagworte vorhanden.,No keywords available.,\nvocabularies_no_people,Keine Personen vorhanden.,Keine Personen vorhanden.,\nvocabularies_people_hint_1,Alle im Vokabular ,Alle im Vokabular ,\nvocabularies_people_hint_2, enthaltenen Personen und die dazugehörenden Metadatenfelder., enthaltenen Personen und die dazugehörenden Metadatenfelder.,\nvocabularies_tabs_contents,Inhalte,Items,\nvocabularies_tabs_keywords,Schlagworte,Keywords,\nvocabularies_tabs_people,Personen,People,\nvocabularies_tabs_permissions,Berechtigungen,Permissions,\nvocabularies_tabs_vocabulary,Vokabular,Vocabulary,\nvocabulary_permissions_hint1,\"Für dieses Vokabular können die Berechtigungen \"\"Betrachten\"\" und \"\"Anwenden\"\" vergeben werden. Wenn Sie Mitglied einer berechtigten Arbeitsgruppe sind, können Sie weitere Personen zu dieser hinzufügen oder daraus entfernen. Bitte überlegen Sie Änderungen gut, da über Arbeitsgruppen auch weitere Berechtigungen gesteuert werden.\",\"This vocabulary can be managed with the permissions \"\"View\"\" and \"\"Execute\"\". If you are member of a work group which owns permissions, you are able to add or remove further users. Think carefully before you make changes to work groups as this may affect other permissions.\",\nvocabulary_permissions_hint2,\"Weitere Berechtigungen für Personen, Arbeitsgruppen, API-Applikationen oder die Öffentlichkeit werden durch den Administrator vergeben – bitte wenden Sie sich an den Support.\",\"Further permissions for persons, work groups, API clients or public usage are granted by the administrator. Please contact  support.\",\nvocabulary_term_info_contents,Inhalte,Items,\nvocabulary_term_info_description,Beschreibung,Description,\nvocabulary_term_info_rdfclass,Typ,Type,\nvocabulary_term_info_term,Begriff,Term,\nvocabulary_term_info_url,URL,URL,\nvocabulary_term_info_urls,URLs,URLs,\nworkgroup_link_to_contents_text,Inhalte,Items,\nworkgroup_link_to_contents_title,Inhalte dieser Arbeitsgruppe anzeigen,Show items of this work group,\nworkgroup_members_table_is_member,Mitglied?,Member?,\nworkgroup_members_table_login,Login,Login,\nworkgroup_members_table_title,Mitglieder,Members,\nmedia_entry_notice_new_versions,Für diesen Medieneintrag sind neuere Versionen vorhanden:,Newer versions are available for this media entry:,\nread_more_button,\"Mehr anzeigen\",\"Show more\",\nread_less_button,\"Weniger anzeigen\",\"Show less\",\n");
-========
-		translationsList = readTranslationsFromCSV("key,de,en,comment\najax_form_connection_error,Verbindungsfehler. Bitte versuchen Sie es noch einmal.,Connection error. Please try again.,\najax_form_no_longer_authorized,Sie sind für diese Aktion nicht mehr authorisiert.,You are no longer authorized to do this.,\najax_form_unexpected_error,Es gab einen unerwarteten Server-Fehler.,There was an unexpected server error.,\najax_form_validation_error_unparsable,Validation error with unparsable errors.,Validation error with unparsable errors.,\"Formular speichern, Edge case: Server gibt Fehlermeldung UND sie kann nicht gelesen werden.\"\najax_form_validation_error_without_any_data,Validation error without any data.,Validation error without any data.,\"Formular speichern, Edge case: Server gibt Fehlermeldungs-Code aber sonst keinen Inhalt\"\najax_form_validation_error_without_error_data,Validation error without error data.,Validation error without error data.,\"Formular speichern, Edge case: Server gibt Fehlermeldung, aber keine Details\"\napi_tokens_callback_description,Token wird für eine externe Applikation erstellt.,Token is being created for an external application.,\napi_tokens_create_cancel,Abbrechen,Cancel,\napi_tokens_create_description,Beschreibung,Description,\napi_tokens_create_submit,Token anlegen,Create token,\napi_tokens_create_title,Neuen Token hinzufügen,Add new token,\napi_tokens_created_back_btn,Zurück zu allen Tokens.,Back to all tokens.,\napi_tokens_created_callback_btn,Weiter zur Applikation,Continue to the application,\napi_tokens_created_callback_description,\"Falls die Weiterleitung nicht funktioniert, kann der Token auch manuell kopiert werden:\",\"If the redirect does not work, the token can also be copied manually:\",\napi_tokens_created_notice,Dieser Token wird nur einmal angezeigt. Bitte speichern Sie ihn jetzt.,This token is displayed only once. Please save it now.,\napi_tokens_created_title,Es wurde ein neuer Token erstellt.,A new token was created.,\napi_tokens_head_id,ID,ID,\napi_tokens_head_name,Name,Name,\napi_tokens_head_permissions,Berechtigungen,Permissions,\napi_tokens_head_valid_since,Gültig seit,Valid from,\napi_tokens_head_valid_until,Gültig bis,Valid to,\napi_tokens_list_created_hint_pre,Erstellt: ,Created: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_new_button,Neuen Token erstellen,Create new token,\napi_tokens_list_no_description,(Keine Beschreibung),No description),\"Platzhalter-Text, falls ein Token keine Beschreibung hat.\"\napi_tokens_list_revoke_btn_hint,Token zurückziehen.,Revoke token.,\napi_tokens_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Token zurückziehen wollen?\",Are you sure you want to revoke the token?,\napi_tokens_list_revoked_title,Abgelaufene und zurückgezogene Tokens,Expired and revoked tokens,\napi_tokens_list_scope_off,Nein,No,\napi_tokens_list_scope_on,Ja,Yes,\napi_tokens_list_scope_read,Lesen,Read,\napi_tokens_list_scope_write,Schreiben,Write,\napp_autocomplete_displayname_users,Nutzer/innen,Users,\napp_autocomplete_displayname_delegations,Verantwortungs-Gruppen,Responsibility groups,\napp_autocomplete_no_results,Keine Ergebnisse.,No results.,\napp_autocomplete_user_delegation_postfix, (Verantwortungs-Gruppe), (Responsibility group)\napp_autocomplete_enter_term,Suchbegriff eingeben für weitere Ergebnisse,Enter search term for further results,\napp_autocomplete_extend_term,Suchbegriff erweitern für weitere Ergebnisse,Extend search term for further results,\napp_confirm_form_leave_msg,\"Diese Seite bittet Sie zu bestätigen, dass Sie die Seite verlassen möchten. Daten, die Sie eingegeben haben, werden unter Umständen nicht gespeichert.\",Please confirm that you wish to leave this page – entered data might not be saved.,NOTE: German version copied from Firefox default message\napp_notice_admin_mode_on,Admin-Modus aktiviert!,Admin mode activated!,\napp_notice_admin_mode_off,Admin-Modus deaktiviert!,Admin mode deactivated!,\napp_notice_logged_in,Sie haben sich angemeldet.,You have logged in.,\napp_notice_logged_out,Sie haben sich abgemeldet.,You have logged out.,\napp_notice_wrong_credentials,Falscher Benutzername/Passwort.,Incorrect username/password.,\napp_notice_shibboleth_not_enabled,Die Anmeldung mittels Shibboleth ist nicht aktiviert!,Shibboleth sign in is not enabled!,\napp_notice_shibboleth_missing_fields,\"Die Authentifizierungsdaten von Shibboleth sind unvollständig. SURNAME, GIVENNAME und EMAIL sind Pflichtfelder!\",\"Shibboleth authentication data is incomplete. SURNAME, GIVENNAME and EMAIL are required fields!\",\napp_warning_jsonly,\"Diese Funktion erfordert JavaScript, aber es ist nicht aktiviert.\",\"This feature requires Javascript, but it is not activated.\",\nauthentication_groups,Systemgruppen,System groups,\nbatch_add_to_collection_hint,\"Nach Sets suchen, zu denen Sie die Medieneinträge hinzufügen möchten.\",Seach for sets to add media entries.,\nbatch_add_to_collection_post, Medieneinträge zu Set hinzufügen,Add media entries to set,(nach der Anzahl)\nbatch_add_to_collection_pre, ,,(vor der Anzahl)\nbatch_destroy_resources_ask_1,Möchten Sie folgende Inhalte löschen:,Do you want to delete the following items:,\nbatch_destroy_resources_ask_2, Medieneinträge, Media entries,\nbatch_destroy_resources_ask_3, Sets, Sets,\nbatch_destroy_resources_ask_4,(Die Inhalte von Sets werden nicht automatisch mit dem Set gelöscht.),\"(When a set is deleted, the items of this set are not deleted at the same time.)\",\nbatch_destroy_resources_cancel,Abbrechen,Cancel,\nbatch_destroy_resources_ok,OK,OK,\nbatch_destroy_resources_success,Inhalte wurden erfolgreich gelöscht.,Items are deleted successfully.,\nbatch_meta_data_edit,Metadaten für %{media_entry_count} Medieneinträge gleichzeitig editieren.,Edit metadata for %{media_entry_count} media entries at the same time.,\nbatch_remove_from_collection_cancel,Abbrechen,Cancel,\nbatch_remove_from_collection_question_part_1,Möchten Sie die ausgewählten ,Do you want to remove the selected ,\nbatch_remove_from_collection_question_part_2, Medieneinträge und , media entries and ,\nbatch_remove_from_collection_question_part_3, Sets aus dem Set entfernen?, sets from this set?,\nbatch_remove_from_collection_remove,Entfernen,Remove,\nbatch_remove_from_collection_title,Medieinträge/Sets aus Set entfernen,Remove media entries/sets from sets,\nbatch_warning_no_authorized_contents_collection,Sie haben für keines der Sets die nötige Berechtigung.,You have no permissions for these sets.,\nbatch_warning_no_authorized_contents_media_entry,Sie haben für keinen der Medieneinträge die nötige Berechtigung.,You have no permissions for these media entries.,\nbatch_warning_no_contents_collection,Sie haben keine Sets.,You have no sets.,\nbatch_warning_no_contents_media_entry,Sie haben keine Medieneinträge.,You have no media entries.,\nbatch_edit_title_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nbatch_edit_title_th_filename,Dateiname,File name,\nbatch_edit_title_th_title,Titel,Title,\nbatch_edit_title_save,Speichern,Save,\nbatch_edit_title_cancel,Abbrechen,Cancel,\nbrowse_entries_browse_link_title,In diese Richtung weiterstöbern,Browse further in this direction,\nbrowse_entries_filter_link,Weiter filtern →,Apply additional filter →,\nbrowse_entries_loading_error,Ladefehler,Loading error,\nbrowse_entries_title,Nach ähnlichen Inhalten stöbern,Browse similar items,\nbubble_batch_label,Stapel,Batch,Wo: Labels in der Stapelverarbeitung\nbubble_draft_label,Entwurf,Draft,Wo: Labels in der Stapelverarbeitung\nclipboard_add_hint,Zur Stapelverarbeitung hinzufügen,Add to batch processing,\nclipboard_adding_all_resources_cancelled,\"Das Hinzufügen zur Stapelverarbeitung wurde abgebrochen. Ein Teil der Inhalte wurde schon hinzugefügt. Wenn Sie alle hinzufügen möchten, versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.\",\"The process of adding items to batch processing was interrupted. Some items were successfully added to batch processing. If you wish to add all items, please try again.Those items already added will not be duplicated.\",\nclipboard_adding_all_resources_error,Es konnten nicht alle Inhalte zur Stapelverarbeitung hinzugefügt werden. Bitte versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.,It was not possible to add all items to batch processing. Please try again. Those items already added will not be duplicated.,\nclipboard_adding_all_resources_retry,Nochmals, Again,\nclipboard_adding_resources,Füge Inhalte zur Stapelverarbeitung hinzu …,Add items to batch processing …,\nclipboard_ask_add_all_1,Möchten sie alle ,Would you like to add all ,\nclipboard_ask_add_all_2, Inhalte zur Stapelverarbeitung hinzufügen?, items to batch processing?,\nclipboard_ask_add_all_cancel,Abbrechen,Cancel,\nclipboard_ask_add_all_ok,Ok,OK,\nclipboard_batch_add_success,Die Inhalte wurden der Stapelverarbeitung hinzugefügt.,Items were added to batch processing.,\nclipboard_batch_remove_success,Die Inhalte wurden aus der Stapelverarbeitung entfernt.,Items wer removed from batch processing.,\nclipboard_empty_message,Sie haben keine Inhalte für die Stapelverarbeitung ausgewählt.,Batch processing is empty,\nclipboard_fetching_resources,Lade Inhalte …,Items loading …,\"Wieso sind da Pünktchen? -> Ist eine Zustandsanzeige, Nutzer wartet.\"\nclipboard_removing_resources,Entferne Inhalte aus Stapelverarbeitung...,Remove items from batch processing ...,\ncollection_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgendes Set löschen möchten: \",Are you sure you want to delete the following set:,\ncollection_ask_delete_title,Set löschen,Delete set,\ncollection_deleted,Dieses Set wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This set has been deleted and is no longer visible to users.\ncollection_delete_success,Set wurde gelöscht.,Set deleted.,\ncollection_does_not_exist,Dieses Set existiert nicht.,This set does not exist.,\ncollection_edit_cover_submit_btn,Speichern,Submit,\ncollection_edit_cover_title,Titelbild für Set festlegen,Define set cover,\ncollection_edit_highlights_btn,Auswahl speichern,Submit selection,\ncollection_edit_highlights_empty,Dieses Set hat noch keine Inhalte.,This set has no items yet.,\ncollection_edit_highlights_title,Inhalte hervorheben,Highlight items,\ncollection_edit_permissions_btn,Speichern,Submit,\ncollection_highlighted_contents,Hervorgehobene Inhalte,Highlighted items,\ncollection_layout_save,Darstellung festlegen,Save type of display,\ncollection_layout_saved,Darstellung gespeichert,Type of display saved,\ncollection_meta_data_header_prefix,Set editieren: ,Edit set:,\ncollection_new_cancel,Abbrechen,Cancel,\ncollection_new_create_set,Set erstellen,Create set,\ncollection_new_dialog_title,Set erstellen,Create set,\ncollection_new_dialog_parent_warning,The new created set will be added as a child to:,The new created set will be added as a child to:,\ncollection_new_flash_successful,Set wurde erstellt.,Set was created.,\ncollection_new_flash_title_needed,Titel ist ein Pflichtfeld.,Title is a mandatory field.,\ncollection_new_header,Neues Set,New set,\ncollection_new_label_title,Titel,Title,\ncollection_permissions_btn,Zugriffsberechtigungen ändern,Change permissions,\ncollection_relations_child_sets,Untergeordnete Sets,Child sets,\ncollection_relations_children_hint,Diese Sets wurden dem ausgewählten Set hinzugefügt.,These sets are now related to the selected set.,\ncollection_relations_current,Aktuelles Set,Current set,\ncollection_relations_hint_text,\"Das ausgewählte Set ist mit anderen Sets verknüpft. Diese Zusammenhänge wurden aktiv durch Sie oder eine/n andere/n Nutzer/in festgelegt als übergeordnet, benachbart oder untergeordnet. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected set is related to other sets. The relationship between these sets was actively defined by you or another user. The type of relationship to the other sets could be described as parent, siblings or children relationship. The displayed sets are owned by yourself or shared by other users with you.\",\ncollection_relations_no_child_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_parent_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_sibling_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_parent_sets,Übergeordnete Sets,Parent sets,\ncollection_relations_parents_hint,Das ausgewählte Set wurde diesen Sets hinzugefügt.,The selected set is now related to this set.,\ncollection_relations_show_all,Alle anzeigen →,Show all →,\ncollection_relations_show_all_relations,Alle Zusammenhänge anzeigen,Show all relations,\ncollection_relations_sibling_sets,Benachbarte Sets,Sibling sets,\ncollection_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie das ausgewählte Set.,This set is related to the same sets as the selected set.,Wo: Zusammenhänge eines Sets\ncollection_resource_selection_cancel,Abbrechen,Cancel,\ncollection_resource_selection_h_author,Autor/in,Author,\ncollection_resource_selection_h_date,Datierung,Dating,\ncollection_resource_selection_h_keywords,Schlagworte,Keywords,\ncollection_resource_selection_h_responsible,Rechteinhaber,Holder of rights,\ncollection_resource_selection_h_selection,Auswahl,Selection,\ncollection_resource_selection_h_subtitle,Untertitel,Subtitle,\ncollection_resource_selection_h_title,Titel,Title,\ncollection_resource_selection_save,Auswahl speichern,Save selection,\ncollection_select_collection_flash_result,Set aus %{removed_count} Set(s) entfernt. Zu %{added_count} Set(s) hinzugefügt.,Removed set from %{removed_count} set(s). Added set to %{added_count} set(s).,\ncollection_sorting_created_at_asc,Sortieren nach Importierdatum aufsteigend,Sort by import date ascending,\ncollection_sorting_created_at_desc,Sortieren nach Importierdatum absteigend,Sort by import date descending,\ncollection_sorting_manual_asc,Sortieren manuell aufsteigend,Sort manually ascending,\ncollection_sorting_manual_desc,Sortieren manuell absteigend,Sort manually descending,\ncollection_sorting_last_change_desc,Sortieren nach letzter Änderung absteigend,Sort by date of update descending,\ncollection_sorting_last_change_asc,Sortieren nach letzter Änderung aufsteigend,Sort by date of update ascending,\ncollection_sorting_title_asc,Sortieren nach Titel alphabetisch,Sort by title alphabetically,\ncollection_sorting_title_desc,Sortieren nach Titel absteigend,\"Sort by title alphabetically, but descending\",\ncollection_tab_main,Set,Set,\ncollection_was_disfavored,Das Set wurde von den Favoriten entfernt.,Set was removed from favorites.,\ncollection_was_favored,Das Set wurde zu den Favoriten hinzugefügt.,Set was added to favorites.,\ncontents_privacy_private,Diese Inhalte sind nur für Sie zugänglich.,These items are only accessible to you.,\ncontents_privacy_public,Diese Inhalte sind öffentlich zugänglich.,These items are accessible to the public.,\ncustom_urls_canonical_hint,\"Jeder Inhalt hat eine automatisch erzeugte, kanonische Adresse bestehend aus Zahlen und Buchstaben, eine sog. UUID (Universally Unique Identifier). Diese Adresse kann nicht übertragen oder entfernt werden und ist deshalb immer an erster Stelle aufgelistet.\",\"Every item has a canonical address consisting of numbers und letters which is created automatically, a so- called UUID (Universally Unique Identifier). This address can not be transferred or deleted. For this reason it is always listed first.\",\ncustom_urls_canonical_title,Kanonische Adresse (UUID),Canonical address (UUID),\ncustom_urls_flash_create_successful_1,Adresse ,Address ,\ncustom_urls_flash_create_successful_2, wurde erstellt., was created.,\ncustom_urls_flash_empty,Adresse darf nicht leer sein.,Address is not allowed to be empty.,\ncustom_urls_flash_exists_on_itself_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_collection_2, existiert bereits für dieses Set., already exists for this set.,\ncustom_urls_flash_exists_on_itself_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_media_entry_2, existiert bereits für diesen Medieneintrag., already exists for this media entry.,\ncustom_urls_flash_not_allowed_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_collection_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung das Set zu verwalten, auf welches die Adresse \", can not be transferred. You do not have permission to manage the set to which the address ,\ncustom_urls_flash_not_allowed_collection_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_allowed_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_media_entry_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung den Medieneintrag zu verwalten, auf welchen die Adresse \", cannot be transferred. You do not have  permission to manage the media entry to which the address ,\ncustom_urls_flash_not_allowed_media_entry_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_same_type_collection_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_collection_2, kann nicht übertragen werden. Adressen von Medieneinträgen können nicht auf Sets übertragen werden., can not be transferred. Addresses from media entries can not be transferred to sets.,\ncustom_urls_flash_not_same_type_media_entry_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_media_entry_2, kann nicht übertragen werden. Adressen von Sets können nicht auf Medieneinträge übertragen werden., cannot be transferred. Addresses from sets cannot be transferred to media entries.,\ncustom_urls_flash_primary_url_set_1,,,\"Wo: Bestätigung CustomURL, vor der Adresse\"\ncustom_urls_flash_primary_url_set_2, wurde als primäre Adresse gesetzt., was set as primary address.,\"Wo: Bestätigung CustomURL, nach der Adresse\"\ncustom_urls_flash_transfer_confirmation_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_collection_2, ist gegenwärtig dem Set , is currently related to the set  ,\ncustom_urls_flash_transfer_confirmation_collection_3, zugewiesen. Wollen Sie diese Adresse auf das Set ,. Would you like to transfer this address to the set ,\ncustom_urls_flash_transfer_confirmation_collection_4, übertragen?,?,\ncustom_urls_flash_transfer_confirmation_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_media_entry_2, ist gegenwärtig dem Medieneintrag , is currently related to the media entry  ,\ncustom_urls_flash_transfer_confirmation_media_entry_3, zugewiesen. Wollen Sie diese Adresse auf den Medieneintrag ,. Would you like to transfer this address to the media entry ,\ncustom_urls_flash_transfer_confirmation_media_entry_4, übertragen?,?,\ncustom_urls_flash_transfer_successful_1,Adresse ,Address  ,\ncustom_urls_flash_transfer_successful_2, wurde von , was transferred from  ,\ncustom_urls_flash_transfer_successful_3, auf , to ,\ncustom_urls_flash_transfer_successful_4, übertragen.,0,\ncustom_urls_flash_wrong_format_1,Adresse ,Address ,\ncustom_urls_flash_wrong_format_2, erfüllt die Anforderungen nicht., does not meet the requirements.,\ncustom_urls_manage_address_title,Adressverwaltung,Address administration,\ncustom_urls_new,Adresse anlegen / übertragen,Create / transfer address,\ncustom_urls_no_addresses_defined,Noch keine Adressen definiert.,No address defined yet.,\ncustom_urls_primary_hint,\"Für jeden Inhalt (egal ob Medieneintrag oder Set) gibt es immer genau eine primäre Adresse. Diese ist in der Adressleiste des Browsers sichtbar, wenn der Inhalt angezeigt wird. Neben der primären Adresse können weitere gesetzt werden, die auf die primäre Adresse weiterleiten.\",Each item (media entry or set) has exactly one primary address. This address is displayed in the browsersaddress bar when the item is accessed.You have the option to create other addresses which are forwarded to the primary address.,\ncustom_urls_primary_title,Primäre Adresse,Primary address,\ncustom_urls_table_header_actions,Aktionen,Actions,\ncustom_urls_table_header_address,Adresse,Address ,\ncustom_urls_table_header_created_by,Erstellt durch,Created by,\ncustom_urls_table_header_date,Datum,Date,\ncustom_urls_table_header_type,Typ,Type,\ncustom_urls_title,Adressen für ,Addresses for ,\ndashboard_create_collection,Set erstellen,Create set,\ndashboard_create_collection_btn,Set erstellen,Create set,\ndashboard_create_media_entry_btn,Medien importieren,Upload media,\ndashboard_none_exist,Keine vorhanden.,There are none.,\ndashboard_show_all,Alle anzeigen,Show all,\ndashboard_title_head,Mein Archiv,My archive,\ndeleted,gelöscht,deleted,\ndynamic_filters_any_values_title,Jegliche Werte,Any values,\ndynamic_filters_authorization,Berechtigung,Authorization,\ndynamic_filters_visibility,Sichtbarkeit,Accessability,\ndynamic_filters_visibility_private,Nur für mich,Only for me,\ndynamic_filters_visibility_user_or_group,Geteilt mit Personen und Arbeitsgruppen,Shared with people and work groups,\ndynamic_filters_person_header,Personen,Persons,\ndynamic_filters_remove_all_title,Alle entfernen,Remove all,\ndynamic_filters_role_header,Funktionen,Functions,\ndynamic_filters_search_for_api_client_placeholder,Suche nach API-Applikation,Search for API client...,\ndynamic_filters_search_for_delegation_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_group_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_user_placeholder,Suche nach User...,Search for user...,\ndynamic_filters_search_for,Suche nach,Search for,\nedit_custom_urls_back_to_collection,Zurück zum Set,Back to the set,\nedit_custom_urls_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nedit_custom_urls_cancel,Abbrechen,Cancel,\nedit_custom_urls_confirmation,Bestätigung,Confirmation,\nedit_custom_urls_create_or_transfer,Adresse anlegen / übertragen,Create / transfer address,\nedit_custom_urls_preferred_address,Gewünschte Adresse:,Preferred address:,\nedit_custom_urls_requirements_hint,\"Eine Adresse darf nur genau einmal im System vorkommen – entweder für einen Medieneintrag oder für ein Set. Sie beginnt immer mit einem Kleinbuchstaben, gefolgt von (mindestens einem) weiteren Zeichen aus Kleinbuchstaben, Nummern, Bindestrichen ( - ) und Grundstrichen ( _ ) in beliebiger Reihenfolge.\",\"Each comprehensible address is unique in the system – either for a media entry or for a set. The address always begins with a lower case letter, followed by at least one other character. The following characters can bei lower case letters, numbers, hyphens ( - ) or low lines ( _ ) in any order.\",\nedit_custom_urls_requirements_title,Anforderungen,Requirements,\nedit_custom_urls_set_primary,Als primäre Adresse setzen,Set as primary address,\nedit_custom_urls_state_primary,Primäre Adresse,Primary address,\nedit_custom_urls_state_transfer,Weiterleitung,Forwarding,\nedit_custom_urls_title,Anforderungen,Requirements,\nedit_custom_urls_transfer,Übertragen,Transfer,\nedit_custom_urls_transfer_hint,\"Eine bereits bestehende Adresse kann von einem Medieneintrag auf einen anderen oder von einem Set auf ein anderes übertragen werden. Bestehende Adressen können nicht von einem Medieneintrag auf ein Set und umgekehrt übertragen werden. Wollen Sie eine Adresse übertragen, dann geben Sie diese hier ein. Sie müssen für beide Inhalte über die Zugriffsberechtigung 'Verwalten' verfügen.\",\"An existing address can be transferred from one media entry to another or from one set to another. Existing addresses cannfot be transferred from a media entry to a set or vice versa. If you want to transfer an address, please enter this address here. You have to have manage permissions for both items.\",\nedit_custom_urls_transfer_title,Übertragen,Transfer,\nembed_error_title,\"Fehler!\",\"Error!\",\nembed_error_context_pre,\"Angeforderte URL: \",\"Requested URL: \",\nembed_error_context_post,\"\",\"\",\nembed_error_help_pre,\"Hilfe: \",\"Help: \",\nembed_error_help_post,\"\",\"\",\nembed_error_msg,\"Dieser Inhalt kann nicht eingebettet werden.\",\"This content cannot be embedded.\",\nembed_error_msg_403,\"Dieser Inhalt kann nicht eingebettet werden, weil die nötigen Berechtigungen fehlen.\",\"This content cannot be embedded because the necessary permissions are missing.\",\nembed_error_msg_404,\"Der gewünschte Inhalt konnte nicht gefunden werden.\",\"The requested content could not be found.\",\nerror_401_title,\"Um Zugang zu diesem Bereich zu erhalten, melden Sie sich bitte an.\",To get access please login below with your user data.,\nerror_403_message,Bitte kontaktieren Sie die für die Ressource verantwortliche Person.,Please contact the responsible user for this resource.,\nerror_403_title,Sie haben keine Zugriffsrechte für diesen Inhalt.,You don’t have the necessary permissions to access this resource.,\nerror_404_title,Die gesuchte Seite kann nicht gefunden werden.,The requested page cannot be found.,\nerror_500_message,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (%{support_email}) mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\"If you require help in this matter, please contact the support (%{support_email}) with a description of your last working steps and a screen shot of this page.\",\nerror_500_message_pre,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (\",\"If you require help in this matter, please contact the support (\",\nerror_500_message_post,\") mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\") with a description of your last working steps and a screen shot of this page.\",\nerror_500_title,Es ist ein Server-Fehler aufgetreten.,A server error occurred.,\nexplore_keywords_section_title,Häufige Schlagworte,Frequent keywords,\nexplore_show_more,Weitere anzeigen,Show more,\nexplore_vocabulary_section_show_details,Details anzeigen,View details,\nexplore_vovabulary_section_title,Vokabulare,Vocabularies,\nexternal_groups,Abteilungsgruppen,Division groups,\nfooter_choose_language,Sprache wählen,Choose language,\ngroup_ask_delete_cancel,Abbrechen,Cancel,\ngroup_ask_delete_delete,Löschen,Delete,\ngroup_ask_delete_question_post, löschen?,?,\ngroup_ask_delete_question_pre,Möchten Sie die Arbeitsgruppe ,Would you like to delete work group ,\ngroup_ask_delete_title,Arbeitsgruppe löschen,Delete work group,\ngroup_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Arbeitsgruppe löschen wollen?\",Are you sure you want to delete this work group?,\ngroup_edit_at_least_one_member_delete,löschen,delete,VERB\ngroup_edit_at_least_one_member_post,0,0,NACH dem Verb und Namen der Gruppe\ngroup_edit_at_least_one_member_pre,Eine Arbeitsgruppe muss mindestens eine Person enthalten. Ganze Arbeitsgruppe ,A work group has at least one member. Whole work group,VOR dem Verb und Namen der Gruppe\ngroup_edit_btn,Bearbeiten,Edit,\ngroup_edit_cancel,Abbrechen,Cancel,\ngroup_edit_form_new_member_login_hint,Login des neuen Mitglieds dieser Arbeitsgruppe,New work group member login,\ngroup_edit_form_new_member_login_label,User hinzufügen,Add a member,\ngroup_edit_form_save_btn,Speichern,Save,\ngroup_edit_form_title_pre,Arbeitsgruppe bearbeiten: ,Edit work group: ,\ngroup_edit_hint_remove_yourself,Achtung: Sie entfernen sich selbst aus der Arbeitsgruppe!,Attention: You are about to remove yourself from the work group!,\ngroup_edit_member,Mitglieder,Members,\ngroup_edit_name,Name,Name,\ngroup_edit_person,Person,Person,\ngroup_edit_save,Speichern,Save,\ngroup_edit_username,Benutzername,Username,\ngroup_meta_data_institutional_name,Name der Abteilungsgruppe,Division group name,\ngroup_meta_data_name,Name,Name,\ngroup_new_form_title,Neue Arbeitsgruppe erstellen,Create group,\ngroup_new_group_btn,Neue Arbeitsgruppe,New work group,\ngroup_show_edit_button,Arbeitsgruppe bearbeiten,Edit work group,\ngroup_show_members,Mitglieder,Members,\ngroup_show_permissions_use,(anwenden),(execute),\ngroup_show_permissions_view,(betrachten),(view),\ngroup_show_permissions_view_use,(betrachten und anwenden),(view and execute),\ngroup_show_vocabulary_permissions,Berechtigungen Vokabulare,Permissions vocabularies,\ngroup_toolbar_header_entrusted_resources,Mir anvertraute Medieneinträge,Entrusted media entries,\ngroup_was_deleted,Arbeitsgruppe wurde gelöscht.,Work group has been deleted.,\nhome_page_new_contents,Neue Inhalte,New items,\ninternal_groups,Arbeitsgruppen,Work groups,\nlayout_mode_grid,Raster-Ansicht,Grid view,\nlayout_mode_list,Listen-Ansicht,List view,\nlayout_mode_miniature,Miniatur-Ansicht,Miniature view,\nlayout_mode_tiles,Kachel-Ansicht,Tile view,\nlogin_box_internal,Externe,External users,\nlogin_box_title,Anmelden,Log in,\nlogin_box_login_btn,Anmelden,Log in,\nlogin_box_email_or_login,E-Mail,Email,\nlogin_box_password,Passwort,Password,\nlogin_box_rememberme,Login merken,Remember me,\nlogin_box_username,Benutzername,User name,\nmedia_entry_all_metadata_title,Alle Metadaten nach Vokabularen,All metadata by vocabulary,\nmedia_entry_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgenden Medienintrag löschen möchten: \",Are you sure you want to delete the following media entry:,\nmedia_entry_ask_delete_title,Medieneintrag löschen,Delete media entry,\nmedia_entry_back_btn,Zurück,Back,\nmedia_entry_conversion_hint,\"Diese Datei wird gerade für eine Vorschau konvertiert. Sobald dies abgeschlossen ist, finden Sie hier eine abspielbare Version.\",\"Currently the system is converting this file to a preview. As soon as the conversion is finished, you will be able to play the file here.\",\nmedia_entry_conversion_progress_post,% abgeschlossen.,% completed.,\nmedia_entry_conversion_progress_pre,Konvertierung zu ,Conversion ,\nmedia_entry_conversion_reload,\"Laden Sie diese Seite neu, um den aktuellen Stand der Konvertierung zu erfahren.\",Reload this page to display the current state of conversion.,\nmedia_entry_conversion_status_failed,Die Konvertierung ist fehlgeschlagen. Bitte wenden Sie sich an den Support.,The file conversion has failed. Please contact support.,\nmedia_entry_conversion_status_initialized,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_conversion_status_submitted,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_deleted,Dieser Medieneintrag wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This media entry has been deleted and is no longer visible to users.\nmedia_entry_delete_success,Der Medieneintrag wurde gelöscht.,Media entry has been deleted.,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_post,erstellen,,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_pre,(Experte) Hinweis zu neuer Version inkl. Verlinkung zu,(Expert) Add annotation «new version of» and link to,\nmedia_entry_duplicator_configuration_copy_meta_data,Metadaten übertragen,Copy meta data,\nmedia_entry_duplicator_configuration_copy_permissions,Zugriffsberechtigungen übertragen,Copy permissions,\nmedia_entry_duplicator_configuration_copy_relations,Zusammenhänge übertragen (übergeordnete Sets und Favoriten),Copy relations (parent collections & favorites),\nmedia_entry_duplicator_configuration_move_custom_urls,(Experte) Sprechende Adresse (URL) übernehmen,(Expert) Move comprehensible Address (URL),\nmedia_entry_duplicator_configuration_instructions,Folgende Optionen können gewählt werden:,Choose options below:,\nmedia_entry_duplicator_custom_urls_already_moved,moved to the first successful upload!,moved to the first successful upload!,\nmedia_entry_duplicator_desc_post,zugewiesen.,by selected options.,\nmedia_entry_duplicator_desc_pre,\"Die unten importierten Mediendateien bekommen die den nachfolgend gewählten Optionen entsprechenden Metadaten, Zugriffsberechtigungen, Beziehungen und weitere Einstellungen des aktuellen Medieneintrags\",\"The media file to be imported below will get assigned meta data, permissions, relations and further settings from the actual media entry\",\nmedia_entry_duplicator_md_title_suffix,(updated),(updated),\nmedia_entry_duplicator_new_version_of_label,Updated file,Updated file,\nmedia_entry_export_close,Schliessen,Close,\nmedia_entry_export_download,Exportieren,Download,\nmedia_entry_export_has_no_original,Sie verfügen für den Export der Originaldatei nicht über die notwendige Berechtigung.,You are not allowed to download the original file.,\nmedia_entry_export_no_content,Sie haben keine Zugriffsberechtigung für die Originaldatei und es steht keine Vorschau zur Verfügung.,You do not have permission to access the original file and there is no preview available.,\nmedia_entry_export_original,Original,Original,\nmedia_entry_export_original_hint,Originaldatei herunterladen.,Download original file.,\nmedia_entry_export_subtitle_audios,Audio-Dateien,Audio files,\nmedia_entry_export_subtitle_documents,Dokumente,Documents,\nmedia_entry_export_subtitle_images,Bilder,Images,\nmedia_entry_export_subtitle_videos,Video-Dateien,Video files,\nmedia_entry_export_title,Medieneintrag exportieren,Download media entry,\nmedia_entry_export_rdf_title,RDF-Export Metadaten,RDF export metadata,\nmedia_entry_export_rdf_title_hint,(experimentell),(experimental),\nmedia_entry_export_rdf_experiment_footnote,\"Struktur und Format der Daten können sich ändern. Bitte geben sie eine Rückmeldung, falls Sie diese verwenden!\",\"Data structure and format is subject to change. Please send feedback if you are using this!\",\nmedia_entry_export_checksum_title,Prüfsumme,Checksum,\nmedia_entry_export_checksum_generate,Erzeugen,Generate,\nmedia_entry_export_checksum_verify,Prüfen,Verify,\nmedia_entry_export_checksum_empty,Prüfsumme erzeugen,Generate checksum,\nmedia_entry_export_checksum_generating,Wird erzeugt…,Generating…,\nmedia_entry_export_checksum_verifying,Wird verifiziert…,Verifying…,\nmedia_entry_export_checksum_generated_at,Erzeugt am,Generated at,\nmedia_entry_export_checksum_verified_at,Geprüft am,Verified at,\nmedia_entry_export_checksum_match,Prüfsumme stimmt überein,Checksum matches,\nmedia_entry_export_checksum_mismatch,Prüfsumme stimmt nicht überein,Checksum does not match,\nmedia_entry_export_checksum_error,Fehler bei der Prüfsummen-Operation,Error during checksum operation,\nmedia_entry_file_format_not_supported_1,\"Wahrscheinlich unterstützt Ihr Browser nicht die Darstellung dieses Dateiformats, aber Sie \",\"Your browser probably does not support the file format, but you can \",\nmedia_entry_file_format_not_supported_2,können die Datei ,download the file,\nmedia_entry_file_format_not_supported_3,exportieren.,0,\nmedia_entry_file_information_title,Datei,File information,\nmedia_entry_media_import_gotodrafts,Medieneinträge vervollständigen,Complete media entries,\nmedia_entry_media_import_gotomediaentries,Weiter zu Meine Medieneinträge,Continue to My media entries,\nmedia_entry_media_import_header,Medien importieren,Media upload,\nmedia_entry_media_import_box_header_a,,,\nmedia_entry_media_import_box_header_b, Upload(s), Upload(s),\nmedia_entry_media_import_box_upload_status_waiting,Warten…,Waiting…,\nmedia_entry_media_import_box_upload_status_error,Fehler!,Error!,\nmedia_entry_media_import_box_upload_status_progress_a,Hochladen… ,Uploading… ,\nmedia_entry_media_import_box_upload_status_progress_b,%,%,\nmedia_entry_media_import_box_upload_status_processing,Verarbeiten…,Processing…,\nmedia_entry_media_import_inside,Dateien auf dieses Feld ziehen oder ,Add files by drag and drop in this field or ,\nmedia_entry_media_import_inside_nojs,Dateien auswählen,Select files,\nmedia_entry_media_import_notes_msg,\"Bilder (TIFF, JPEG, PNG) sowie Audio- und Videofiles in den gängigsten Formaten werden direkt verarbeitet und dargestellt. Bilder im CMYK-Farbraum werden nicht korrekt dargestellt. Wandeln Sie diese vor dem Importieren in RGB um.\",\"Images (TIFF, JPEG, PNG) and audio/video files in the most common formats are processed and displayed directly. Images in the CMYK color model cannot be displayed correctly, please convert to RGB before uploading.\",\nmedia_entry_media_import_notes_title,Hinweise,Hints,\nmedia_entry_media_import_select_media,Medien auswählen,Select media files,\nmedia_entry_media_import_upload_error,überschreitet maximale Grösse von 16000 Pixel,exceeds size limit of 16000 pixel,\nmedia_entry_media_import_title,\"Bilder, Videos, Audio-Dateien oder Dokumente bereitstellen.\",\"Add images, video or audio files, or other documents.\",\nmedia_entry_meta_data_edit_by_context_btn,Metadaten nach Kontexten bearbeiten,Edit metadata by context,\nmedia_entry_meta_data_edit_by_vocab_btn,Metadaten nach Vokabularen bearbeiten,Edit metadata by vocabulary,\nmedia_entry_meta_data_header_prefix,Medieneintrag editieren: ,Edit media entry: ,\nmedia_entry_more_data_title,Verantwortlichkeit und Aktivität,Responsibility and activities,\nmedia_entry_not_published_warning_msg,Bei diesem Medieneintrag fehlen noch Pflichtangaben.,Media entry still needs mandatory data.,\nmedia_entry_relations_current,Aktueller Eintrag,Current entry,\nmedia_entry_relations_hint_text,\"Der ausgewählte Medieneintrag ist mit Sets verknüpft. Diese Zusammenhänge wurden aktiv festgelegt als übergeordnet oder benachbart. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected media entry is connected to sets. These relations are actively defined as a parent, a sibling or a child relationship. The sets displayed here are your own or are shared with you by other users.\",\nmedia_entry_relations_parents_hint,Der ausgewählte Medieneintrag wurde diesen Sets hinzugefügt.,The selected media entry was added to these sets.,\nmedia_entry_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie der ausgewählte Medieneintrag.,These sets were added to the same sets as the selected media entry.,\nmedia_entry_select_collection_flash_result,Der Medieneintrag wurde aus %{removed_count} Set(s) entfernt und zu %{added_count} Set(s) hinzugefügt.,Media entry removed from %{removed_count} set(s) and added to %{added_count} set(s).,\nmedia_entry_siblings_section_title,Weitere Medieneinträge im selben Set,Other media entries in the same set,\nmedia_entry_siblings_parent_set,Übergeordnetes Set:,Parent set:,\nmedia_entry_tab_main,Medieneintrag,Media entry,\nmedia_entry_tab_more_data,Alle Metadaten,All metadata,\nmedia_entry_tab_permissions,Berechtigungen,Permissions,\nmedia_entry_tab_relations,Zusammenhänge,Relations,\nmedia_entry_tab_usage_data,Nutzung,Usage,\nmedia_entry_upload_btn,Importieren,Upload,\nmedia_entry_was_disfavored,Der Medieneintrag wurde von den Favoriten entfernt.,Media entry was removed from favorites.,\nmedia_entry_was_favored,Der Medieneintrag wurde zu den Favoriten hinzugefügt.,Media entry was added to favorites.,\nmeta_data_action_delete_btn,Löschen,Delete,\nmeta_data_action_edit_btn,Bearbeiten,Edit,\nmeta_data_batch_action_remove_meta_data,Werte für alle Inhalte löschen,Delete data for all content,\nmeta_data_batch_failure,Metadaten konnten nicht aktualisiert werden.,Metadata could not be updated.,\nmeta_data_batch_hint_differences,Unterschiedliche Metadaten vorhanden,Different metadata in place.,\nmeta_data_batch_hint_differences_override,\"Achtung: Bestehende Werte werden durch Änderungen überschrieben! Wenn keine Änderungen vorgenommen werden, bleiben die verschiedenen Werte erhalten.\",\"Attention: Changes will replace exiting data. If not changes are made, data will be preserved.\",\nmeta_data_batch_hint_equal_data,Gleiche Metadaten vorhanden,Same metadata in place.,\nmeta_data_batch_hint_no_data,Noch keine Metadaten vorhanden,No metadata available yet.,\nmeta_data_batch_hint_value,Werte oder Text,Values or text,\nmeta_data_batch_item_selected,Medieneintrag selektiert,Media entry selected,\nmeta_data_batch_items_selected,Medieneinträge selektiert,Media entries selected,\nmeta_data_batch_more,weitere,More,\nmeta_data_batch_some_ignored_1,(,(,\nmeta_data_batch_some_ignored_2,\" Medieneinträge wurden ignoriert, da Sie nicht über die nötigen Berechtigungen verfügen)\",\"Media entries were ignored, because you do not have the required permissions.)\",\nmeta_data_batch_success,Metadaten wurden erfolgreich aktualisiert.,metadata have been updated successfully.,\nmeta_data_batch_summary_all_post, Medieneinträge wurden gespeichert., Media entries have been saved.,NACH der Anzahl\nmeta_data_batch_summary_all_pre,Alle ,All ,VOR der Anzahl\nmeta_data_batch_summary_missing, haben fehlende Pflichtangaben, have missing mandatory data,\nmeta_data_batch_summary_published, haben ausgefüllte Pflichtfelder, have mandatory data,\nmeta_data_batch_summary_were_published, hatten bereits ausgefüllte Pflichtfelder, already had mandatory data,\nmeta_data_batch_title_post_collections, Sets gleichzeitig editieren,Edit sets at the same time,\nmeta_data_batch_title_post_media_entries, Medieneinträge gleichzeitig bearbeiten, media entries at once,\nmeta_data_batch_title_pre,Metadaten für ,Edit metadata for ,\nmeta_data_blank_value_for_required_meta_key_post,0,0,\nmeta_data_blank_value_for_required_meta_key_pre,Kein Wert vorhanden für ,No value available for,\nmeta_data_collection_batch_summary_all_post, Sets wurden gespeichert., Sets were saved.,\nmeta_data_collection_batch_summary_all_pre,Alle ,All ,\nmeta_data_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Werte löschen wollen?\",Are you sure you want to delete these data?,\nmeta_data_edit_collection_saved,Set wurde gespeichert.,Set was saved.,\nmeta_data_edit_media_entry_published,Der Medieneintrag wurde gespeichert und alle Pflichtfelder sind ausgefüllt.,Media entry was saved and mandatory data have been entered.,\nmeta_data_edit_media_entry_saved,Der Medieneintrag wurde gespeichert.,Media entry was saved.,\nmeta_data_edit_media_entry_saved_missing,\"Der Medieneintrag wurde gespeichert, aber es wurden nicht alle Pflichtfelder ausgefüllt.\",Media entry was saved but there some mandatory data are missing.,\nmeta_data_edit_more_data,Weitere Angaben,More data,\nmeta_data_form_all_data,Alle Daten,All metadata,\nmeta_data_form_cancel,Abbrechen,Cancel,\nmeta_data_form_save,Speichern,Save,\nmeta_data_form_saving,Die Metadaten werden gerade gespeichert. Dies kann einige Zeit in Anspruch nehmen. Bitte gedulden Sie sich und schliessen Sie das Fenster nicht.,Meta data are currently being saved. This will take some time. Please be patient and do not close the browser.,\nmeta_data_form_submit_btn,Speichern,Save,\nmeta_data_header_text,Werte,Data,\nmeta_data_input_date_placeholder_duration_from,von,from,\nmeta_data_input_date_placeholder_duration_to,bis,to,\nmeta_data_input_date_placeholder_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_placeholder_timestamp,wird als Text gespeichert,on,\nmeta_data_input_date_type_duration,von/bis,from/to,\nmeta_data_input_date_type_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_type_timestamp,am,on,\nmeta_data_input_keywords_existing,Schlagwort ist bereits vergeben.,Keyword already assigned.,\nmeta_data_input_new_group_add,Arbeitsgruppe einfügen,Add work group,\nmeta_data_input_new_group_name,Name,Name,\nmeta_data_input_new_person_add,Person einfügen,Add person,\nmeta_data_input_new_person_first_name,Vorname,First name,\nmeta_data_input_new_person_last_name,Nachname,Last name,\nmeta_data_input_new_person_pseudonym,Pseudonym,Pseudonym,\nmeta_data_input_new_person_toggle,Neue Person oder Gruppe anlegen,Add new person or work group,\nmeta_data_input_person_save,Übernehmen,Apply,\nmeta_data_input_json_err_prefix,Eingabefehler: ,Input error: ,\nmeta_data_input_json_err_no_object,Wert ist nicht vom Typ 'Object'!,Value is not an 'Object'!,\nmeta_data_meta_key_documentation_url,> Online-Hilfe,click link for details,\nmeta_data_meta_key_label,Schlüssel,Key,\nmeta_data_role_add_another_btn,Weitere Funktion hinzufügen,Add another function,\nmeta_data_role_add_btn,Funktion hinzufügen,Add a function,\nmeta_data_role_add_heading,Funktion hinzufügen zu ,Add a function to,\nmeta_data_role_choose_label,Wählen Sie eine Funktion aus der Liste,Choose a function from the list,\nmeta_data_extensible_role_choose_label,Wählen Sie eine Funktion aus der Liste oder ergänzen Sie die Liste mit der gewünschten Funktion. Mit Enter die Eingabe abschliessen.,Choose a function from the list or enter the function and press Enter,\nmeta_data_role_edit_btn,Funktion bearbeiten,Edit function,\nmeta_data_role_edit_heading,Funktion bearbeiten,Edit the function of,\nmeta_data_role_remove_btn,Funktion entfernen,Remove function,\nmeta_data_type_label,Typ,Type,\nmeta_data_value_label,Wert,Data,\nmeta_datum_media_entry_label_id,Ressourcen-ID:,Resource ID:,\nmeta_datum_media_entry_label_string,Zusatztext:,additional text:,\nmeta_datum_media_entry_err_uuid_invalid,Ungültige UUID!,Invalid UUID!,\nmeta_datum_media_entry_value_unauthorized,Hinweis: Sie haben keinen Zugriff auf diese Ressource!,Notice: You do not have access to this resource!,\nmeta_datum_media_entry_value_not_found,Hinweis: Diese Ressource konnte nicht (mehr) gefunden werden!,Notice: This resource could not be found (anymore)!,\nmeta_key_order_alphabetical,a-z,a-z,\nmeta_key_order_alphabetical_hint,Die Schlagworte dieses Metadatenfeldes sind alphabetisch sortiert.,The keywords of this metakey are sorted alphabetically.,\nmeta_key_order_custom,redaktionell,editorial,\nmeta_key_order_custom_hint,Die Schlagworte dieses Metadatenfeldes sind redaktionell sortiert.,The keywords of this metakey are sorted editorially.,\nno_content_fallback,Keine Inhalte vorhanden.,No items available.,\nno_groups_fallback,Keine Arbeitsgruppen vorhanden.,No work groups available.,\nno_keywords_fallback,Keine Schlagworte vorhanden.,No keywords available.,\nno_relations_title,Es wurden keine Zusammenhänge gefunden.,No relations found.,\nnotifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nnotifications_message_transfer_responsibility,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to you.\",\nnotifications_message_transfer_responsibility_via_delegation,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to %{viaDelegation}.\",\nnotifications_message_transfer_responsibility_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to you.\",\nnotifications_message_transfer_responsibility_via_delegation_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to %{viaDelegation}.\",\nnotifications_media_entry,Medieneintrag,media entry,\nnotifications_collection,Set,set,\nnotifications_acknowledge_all,Alle Notifikationen löschen,Delete all notifications,\nnotifications_really_acknowledge_all,Wirklich alle löschen?,Really delete all?,\nnotifications_acknowledge,Löschen,Delete,\nnotifications_acknowledge_date_tooltip,Alle Notifikationen vom %{date} löschen,Delete all notifications of %{date},\nnotifications_no_notifications,Keine Einträge vorhanden,No entries present,\nnotifications_section_expand,Alle anzeigen,Show all,\nnotifications_section_collapse,Anzeige reduzieren,Reduce,\nnotifications_section_show_more,Weitere Einträge anzeigen,Show more,\npagination_nav_loadnext,Mehr laden,Load more,\npagination_nav_nextloading,Mehr Inhalte werden geladen.,More items are being loaded.,\npagination_nav_nextpage,Nächste Seite,Next page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_prevpage,Vorangehende Seite,Previous page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_thispage,Diese Seite,This page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_prefix,Seite ,Page ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_infix, von , of ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_postfix,,,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_selection_label,Seite auswählen,Select page,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npeople_toolbar_header,Ähnliche Inhalte,Related items,\npermission_entrusted_to_api_client,Sichtbar für API-Applikationen,Visible to API clients,\npermission_entrusted_to_group,Sichtbar für Arbeitsgruppen,Visible to work groups,\npermission_entrusted_to_user,Sichtbar für Nutzer/innen,Visible to users,\npermission_name_edit_metadata,Metadaten editieren,Edit metadata,\npermission_name_edit_metadata_and_relations,Metadaten editieren & Inhalte hinzufügen,Edit metadata and add items,\npermission_name_edit_permissions,Zugriffsberechtigungen ändern,Edit permissions,\npermission_name_get_full_size,Original exportieren & in PDF blättern,Download original & browse PDF,\npermission_name_get_metadata_and_previews,Betrachten,View,\npermission_name_use,Anwenden,Execute,bezieht sich auf Vokabulare!\npermission_name_view,Betrachten,View,bezieht sich auf Vokabulare!\npermission_overridden_by_public,(überschrieben durch die öffentlichen Berechtigungen),(overruled by public permissions),\npermission_subject_name_public,Internet,Internet,\npermission_subject_title_apiapps,API-Applikationen,API clients,\npermission_subject_title_groups,Gruppen,Groups,\npermission_subject_title_public,Öffentlichkeit,Public,\npermission_subject_title_users,Nutzer/innen,Users,\npermission_subject_title_users_or_delegations,Nutzer/innen / Verantwortungs-Gruppen,Users / Responsibility Groups,\npermissions_batch_success,Berechtigungen wurden erfolgreich aktualisiert.,Permissions have been updated succesfully.,\npermissions_batch_title_post, Inhalten., Items.,\npermissions_batch_title_pre,Berechtigungen ändern von ,Edit permissions of ,\npermissions_overview_yours_msg_end,\", haben gegenwärtig als Nutzer/in oder als Mitglied einer Verantwortungs-Gruppe oder Arbeitsgruppe folgende Berechtigungen:\",\", currently have the following permissions (either directly or as a member of a\nresponsibility group or as a member of a work group):\",\npermissions_overview_yours_msg_start,\"Sie, \",\"You, \",\npermissions_overview_yours_title,Ihre Berechtigungen,Your permissions,\npermissions_responsibility_title,Verantwortlichkeit,Responsibility,\npermissions_responsible_user_and_responsibility_group_title,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / Responsibility group,\npermissions_responsible_user_and_responsibility_group_msg,Der/die verantwortliche/r Nutzer/in hat alle Berechtigungen zu den ausgewählten Inhalten und kann diese auch löschen.,The responsible user / responsibility group has all permissions for the selected content and can also delete it.,\npermissions_responsible_delegation_title,Verantwortungs-Gruppe,Responsibility group,\npermissions_responsible_user_title,Verantwortliche Person,Responsible user,\npermissions_table_cancel_btn,Abbrechen,Cancel,\npermissions_table_edit_btn,Bearbeiten,Edit,\npermissions_table_remove_subject_btn,Berechtigung entfernen,Remove permission,\npermissions_table_save_btn,Speichern,Save,\npermissions_table_title,Zugriffsberechtigungen,Permissions,\npermissions_transfer_responsibility_link,Verantwortlichkeit übertragen,Transfer responsibility,\nperson_edit_add_uri_btn,URI hinzufügen,Add URL,\nperson_edit_cancel_btn,Abbrechen,Cancel,\nperson_edit_editing_header,Bearbeiten,editing,\nperson_show_external_uris,Links,Links,\nperson_edit_preview,Vorschau,Preview,\nperson_edit_save_btn,Speichern,Save,\nperson_edit_name_readonly_hint,\"Hinweis: Der eigene Name kann nicht geändert werden. Bitte wenden sie sich an den Support.\",\"Notice: Your own name can not be changed .Please contact the support.\"\nperson_show_description,Kurzbiographie,Short biography,\nperson_show_edit_btn,Seite bearbeiten,Edit Page,\nperson_show_external_uris,Links,Links,\nperson_show_external_uris_autority_control,Verzeichnis(se),Register,\nperson_show_first_name,Vorname,First name,\nperson_show_last_name,Nachname,Last name,\nperson_show_only_name,Name,Name,\nperson_show_pseudonym,Pseudonym,Pseudonym,\npicture_alt_fallback,(unbekannt),(unkown),\npicture_alt_prefix,Bild: ,Picture:,Prefix für Titel von Bildern (hover-titel/Screenreader)\nrelations_parents_title,Übergeordnete Sets,Parents,\nrelations_siblings_title,Benachbarte Sets,Siblings,\nrelations_title,Zusammenhänge,Relations,\nrelease_source_history,Source History,Source History,\nrelease_info,Release Info,Release info,\nrelease_local_git_version,Lokale Git Version,Local Git version,\nresource_action_collection_create,Set erstellen,Create set,\nresource_action_collection_destroy,Set löschen,Delete set,\nresource_action_collection_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_collection_edit_cover,Titelbild festlegen,Define set cover,\nresource_action_collection_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_collection_edit_highlight,Inhalte hervorheben,Highlight items,\nresource_action_collection_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_collection_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_collection_select_collection,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_action_collection_share,Set teilen,Share set,\nresource_action_media_entry_destroy,Medieneintrag löschen,Delete media entry,\nresource_action_media_entry_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_media_entry_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_media_entry_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_media_entry_export,Medieneintrag exportieren,Export media entry,\nresource_action_media_entry_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_media_entry_manage_confidential_links,Vertrauliche Links verwalten,Manage Confidential Links,\nresource_action_media_entry_select_collection,Zu Sets hinzufügen / Aus Sets entfernen,Add to/remove from set,\nresource_action_media_entry_share,Medieneintrag teilen,Share media entry,\nresource_action_media_entry_update_file,Medieneintrag ersetzen,Replace media entry,\nresource_action_more_actions,Weitere Aktionen,Further actions,\nresource_action_show_in_admin,Zeige im Admin-Interface,Show in Admin Interface,\nresource_ask_delete_cancel,Abbrechen,Cancel,\nresource_ask_delete_ok,Löschen,Delete,\nresource_ask_delete_question_post,?,?,\nresource_meta_data_copyright_notice,Rechte am geistigen Eigentum,Copyright notice,\nresource_meta_data_date,Datierung,Date,\nresource_meta_data_description,Beschreibung,Description,\nresource_meta_data_document_type,Dokumenttyp,Type of document,\nresource_meta_data_fallback,Es sind keine Metadaten zu diesem Kontext bereitgestellt.,There are no metadata related to this context.,\nresource_meta_data_has_validation_errors,Es gibt fehlerhafte Eingabefelder.,There are erroneously entry fields.,\"Wo: Meldung wenn Metadaten fehlerhaft, z.B. fehlendes Pflichtfeld\"\nresource_meta_data_keywords,Schlagworte,Keywords,\nresource_meta_data_resource_type,Medientyp,Media type,\nresource_meta_data_responsible,Verantwortliche/r Nutzer/in,Responsible user,\nresource_meta_data_saved_filter,Gespeicherter Filter,Saved filter,\nresource_meta_data_title,Titel,Title,\nresource_select_collection_cancel,Abbrechen,Cancel,\nresource_select_collection_clear,Löschen,Clear,\nresource_select_collection_has_more,Es gibt noch weitere Resultate. Bitte Suche verfeinern.,There are more results. Please refine the search.,\nresource_select_collection_hint_more,Es wurden noch weitere Sets gefunden. Bitte verfeinern Sie Ihre Suche.,Additional sets were found. Please refine your search.,\nresource_select_collection_new,Neue,New,\nresource_select_collection_non_assigned,Inhalt ist noch keinem Set zugewiesen.,Item is not yet related to any set.,\nresource_select_collection_non_found,Zu dieser Suche wurde kein Set gefunden.,No set was found.,\nresource_select_collection_save,Speichern,Save,\nresource_select_collection_search,Suchen,Search,\nresource_select_collection_search_placeholder,Suche,Search,\nresource_select_collection_title,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_thumbnail_contents,Inhalte,Items,\nresource_thumbnail_sets,Sets,Sets,\nresources_box_batch_actions_addalltoclipboard_1,Alle ,Add all ,\nresources_box_batch_actions_addalltoclipboard_2, zur Stapelverarbeitung hinzufügen, to batch processing,\nresources_box_batch_actions_addselectedtoclipboard,Ausgewählte zur Stapelverarbeitung hinzufügen,Add selected to batch processing,\nresources_box_batch_actions_addtoset,Ausgewählte zu Set hinzufügen,Add selected to set,\nresources_box_batch_actions_clear_clipboard,Stapelverarbeitung leeren,Empty batch processing,\nresources_box_batch_actions_delete,Ausgewählte löschen,Delete selected,\nresources_box_batch_actions_edit,Metadaten von Medieneinträgen editieren,Edit metadata for media entries,\nresources_box_batch_actions_edit_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nresources_box_batch_actions_edit_all_collections,Metadaten von allen Sets editieren,Edit metadata of all sets at once,\nresources_box_batch_actions_edit_all_media_entries,Metadaten von allen Medieneinträgen editieren,Edit metadata of all media entries at once,\nresources_box_batch_actions_edit_sets,Metadaten von Sets editieren,Edit metadata of sets,\nresources_box_batch_actions_managepermissions,Berechtigungen von Medieneinträgen editieren,Edit permissions for media entries,\nresources_box_batch_actions_menu_title,Aktionen,Actions,\nresources_box_batch_actions_removefromclipboard,Ausgewählte aus der Stapelverarbeitung entfernen,Remove selected from batch processing,\nresources_box_batch_actions_removefromset,Aus Set entfernen,Remove from set,\nresources_box_batch_actions_sets_managepermissions,Berechtigungen von Sets editieren,Edit permissions for sets,\nresources_box_batch_actions_transfer_responsibility_entries,Verantwortlichkeit von Medieneinträgen übertragen,Transfer responsibility of media entries,\nresources_box_batch_actions_transfer_responsibility_sets,Verantwortlichkeit von Sets übertragen,Transfer responsibility of sets,\nresources_box_deselect_all,Alle abwählen,Deselect all,\nresources_box_filter,Filtern,Filter,\nresources_box_filters_note_post,\"aus, um weitere Filterkriterien anwenden zu können.\",\"in the Action bar to see more filter options.\",\nresources_box_filters_note_pre,Wählen Sie in der Aktionsleiste,Please select,\nresources_box_filters_note_or,oder,or,\nresources_box_new_search,Neue Suche,New search,\nresources_box_no_content,Keine Inhalte verfügbar,No items available.,\nresources_box_no_content_but_sets_1,Es gibt keine Medieneinträge für diese Suche. Es wurden aber ,There are no media entries related to this search process. But ,\nresources_box_no_content_but_sets_2,Sets,sets,\nresources_box_no_content_but_sets_3, gefunden., have been found.,\nresources_box_reset_filter,Filter zurücksetzen,Reset filter,\nresources_box_select_all,Alle auswählen,Select all,\nresources_box_selection_limit_ok,Ok,Ok,\nresources_box_selection_limit_page_1,\"Die Seite kann nicht selektiert werden, da sonst die maximale Anzahl von \",This page cannot be selected because otherwise the maximum number of,\nresources_box_selection_limit_page_2, ausgewählten Inhalten überstiegen würde., pages would be exceeded.,\nresources_box_selection_limit_single_1,\"Der Inhalt kann nicht selektiert werden, da sonst die maximale Anzahl von \",\"This item can not be selected, because otherwise the maximum number of\",\nresources_box_selection_limit_single_2, ausgewählten Inhalten überstiegen würde.,selected items would be exceeded.,\nresources_box_selection_remove_selection,Auswahl entfernen,Remove selection,\nresources_box_selection_select,Auswählen,Select,\nresources_box_title_count_post,Inhalte,Items,\nresources_box_info_header_no_system_groups,In dieser Auflistung werden %{system_groups_name} nicht berücksichtigt.,%{system_groups_name} are not taken into account.,\nresources_box_info_header_system_groups_name,Systemgruppen,System groups,\nresources_section_show_all,Alle anzeigen →,Show all →,\nresources_type_all,Alle,All,\nresponsibility_groups,Verantwortungs-Gruppen,Responsibility groups,\nsearch_btn_search,Suchen,Search,\nsearch_filename,Filename,File name,\nsearch_full_text,Volltext,Full text,\nsection_title_collections,Meine Sets,My sets,\nsection_title_groups,Meine Gruppen,My groups,\nsection_title_keywords,Meine Schlagworte,My keywords,\nsection_title_media_entries,Meine Medieneinträge,My media entries,\nsection_title_tokens,Meine Tokens,My tokens,\nsession_expiring_soon,Sie werden in weniger als %{minutes} Minuten ausgeloggt. Speichern Sie Ihre Eingaben und melden sich neu an.,You will be logged out in less than %{minutes} minutes. Save your input and log in again.\nshare_back_to_collection,Zurück zum Set,Back to the set,\nshare_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nshare_close,Schliessen,Close,\nshare_custom_url_hint_collection,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeiten), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-works-by-anna), use the following URL:\",\nshare_custom_url_hint_media_entry,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeit), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-work-by-anna), use the following URL:\",\nshare_custom_url_none_available,Es ist keine sprechende Adresse angelegt.,No comprehensible address has been defined.,\nshare_custom_url_subtitle,Sprechende Adresse teilen,Share comprehensible address,\nshare_embed_hint_iframe,\"Falls dies von Ihrem gewünschen System nicht unterstützt wird, kopieren Sie den nachfolgenden iFrame-Code und fügen diesen als HTML-Element in das gewünschte System ein.\",\"If your desired system does not support this, copy the following iFrame code and paste it into the desired system as an HTML element.\",\nshare_embed_hint_iframe_code,\"IFrame-Code\",\"IFrame Code\",\nshare_embed_hint_oembed,\"Viele Content Management Systeme lassen einfaches Einbetten von Inhalten via oEmbed zu. Dazu kopieren Sie die URL oben und fügen sie in ein Inhaltselement ein.\",\"Many content management systems allow easy embedding of content via oEmbed. To do so, copy the URL above and paste it into a content element.\",\nshare_embed_hint_subtitle,\"Medieneintrag einbetten\",\"Embed Media Entry\",\nshare_title_collection,Set teilen,Share set,\nshare_title_media_entry,Medieneintrag teilen,Share media entry,\nshare_uuid_url_hint_collection,\"Möchten Sie dieses Set teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this set? Use the following URL.\",\nshare_uuid_url_hint_exporter,Auch für den Export mit dem Madek-Exporter wird diese URL benötigt.,This URL is also required for exporting with the Madek exporter.,\nshare_uuid_url_hint_media_entry,\"Möchten Sie diesen Medieneintrag teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this media entry? Use the following URL.\",\nshare_uuid_url_subtitle,URL teilen,Share URL,\n\n\nsettings_notifications_title,Notifikationen,Notifications,\nsettings_notifications_info1,Notifikationen werden unter %{notifications} aufgeführt und optional per E-Mail verschickt.,Notifications are listed under %{notifications} and optionally sent via email.,\nsettings_notifications_info2,Notifikationen werden nach 6 Monaten gelöscht,Notifications will be removed after 6 months,\nsettings_notifications_info3,Die Einstellungen für die E-Mail-Notifikationen finden Sie nachstehend:,Choose your settings for e-mail notifications below:,\nsettings_notifications_email_label,An folgende E-Mail-Adresse bekommen Sie Notifikationen zugestellt:,Notifications will be sent to the following e-mail address:,\nsettings_notifications_locale_label,Die E-Mails werden in folgender Sprache verschickt:,You will receive emails in,\nsettings_notifications_locale_de,Deutsch,German,\nsettings_notifications_locale_en,Englisch,English,\nsettings_notifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nsettings_notifications_title_weather_report,Wetterbericht,Weather report,\nsettings_notifications_email_frequency_label,In welcher Häufigkeit möchten Sie E-Mails erhalten?,Frequency of email notification:,\nsettings_notifications_email_frequency_immediately,sofort,immediately,\nsettings_notifications_email_frequency_daily,täglich (Zusammenfassung),daily (digest),\nsettings_notifications_email_frequency_weekly,wöchentlich (Zusammenfassung),weekly (digest),\nsettings_notifications_email_frequency_never,keine,none,\nsettings_advanced_functions_title,Erweiterte Funktionen,Advanced functions,\nsettings_show_all_data_tab_in_edit_mode_label,Reiter «Alle Daten» im Bearbeitungsmodus einblenden,Show the «All metadata» Tab in edit mode,\nsettings_save_changes,Einstellungen speichern,Save settings,\nsettings_saved_changes,Einstellungen wurden gespeichert,Settings have been saved,\nsitemap_activities,Aktivitäten,Activities,\nsitemap_notifications,Notifikationen,Notifications,\nsitemap_api,API,API,\nsitemap_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_collections,Sets,Sets,\nsitemap_entries,Medieneinträge,Media entries,\nsitemap_explore,Erkunden,Explore,\nsitemap_filter_sets,Filtersets,Filter sets,\nsitemap_help,Hilfe,Support,\nsitemap_media_entries,Medieneinträge,Media entries,\nsitemap_metakey,Metakey,Metakey,\nsitemap_metakey_id,Metakey-ID,Metakey ID,\nsitemap_my_archive,Mein Archiv,My archive,\nsitemap_my_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_my_content_collections,Sets,Sets,\nsitemap_my_content_media_entries,Medieneinträge,Media entries,\nsitemap_my_delegated_collections,Sets in gemeinsamer Verantwortung,Sets with joint responsibility,\nsitemap_my_delegated_media_entries,Medieneinträge in gemeinsamer Verantwortung,Media entries with joint responsibility,\nsitemap_my_entrusted_collections,Mir anvertraute Sets,My entrusted sets,\nsitemap_my_entrusted_filter_sets,Mir anvertraute Filtersets,My entrusted filter sets,\nsitemap_my_entrusted_media_entries,Mir anvertraute Medieneinträge,My entrusted media entries,\nsitemap_my_favorite_collections,Favoriten-Sets,Favorite sets,\nsitemap_my_favorite_media_entries,Favoriten-Medieneinträge,Favorite media entries,\nsitemap_my_groups,Gruppen,Groups,\nsitemap_my_latest_imports,Letzte Importe,Last imports,\nsitemap_my_unpublished,Unvollständige Medieneinträge,Incomplete media entries,\nsitemap_my_used_keywords,Schlagworte,Keywords,\nsitemap_search,Suche,Search,\nsitemap_tokens,Tokens,Tokens,\nsitemap_settings,Einstellungen,Settings,\nsitemap_vocabularies,Vokabulare,Vocabularies,\nconfidential_links_help_title,Hinweise,Hints,\nsitemap_vocabulary,Vokabular,Vocabulary,\nconfidential_links_help_text,\"Vertrauliche Links ermöglichen den direkten Zugriff auf Medieneinträge, auch wenn sie nicht öffentlich sichtbar sind.\nDiese Links ermöglichen somit auch Benutzern ohne Login einen Zugang zum Medieneintrag. Binden Sie Vertrauliche Links nicht in öffentlich zugängliche Webseiten ein, sonst werden die regulären Zugriffsberechtigungen wirkungslos.\nVertrauliche Links können nur vom Verantwortlichen eines Medieneintrags erstellt und zurückgezogen werden. Die Links können mit einem Verfallsdatum erstellt oder zeitlich unbeschränkt erstellt werden.\",\"Confidential Links can be used to enable access to Entries without making them publicly visible.\nThese Links therefore also make it possible to share Entries with Users that don't have a login. Please do not share or embed Confidential Links onto publicly accessible websites, because it would render the regular permission settings useless.\nConfidential Links can only be created by the responsible user of an Entry. They can be manually revoked at any time, and optionally be set to expire automatically after a set day.\",\nconfidential_links_header,Vertrauliche Links,Confidential Links,\nconfidential_links_title_pre,Vertrauliche Links für ,Confidential Links for ,\nconfidential_links_title_post,Zurück zum Set,Back to the set,\nconfidential_links_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nconfidential_links_create_title,Neuen Vertraulichen Link erstellen,Create a new Confidential Link,\nconfidential_links_create_description,Beschreibung,Description,\nconfidential_links_create_submit,Vertraulichen Link erstellen,Create Confidential Link,\nconfidential_links_create_set_expiration_date,Ablaufdatum einstellen,Set expiration date,\nconfidential_links_create_cancel,Abbrechen,Cancel,\nconfidential_links_created_title,Neuer Vertraulicher Link erstellt,New Confidential Link created,\nconfidential_links_created_back_btn,Zurück zu allen Vertraulichen Links,Go back to all Confidential Links,\nconfidential_links_created_notice,Vertraulicher Link erstellt!,Confidential Link was created!,\nconfidential_links_show_link_for_copy,Link zum kopieren:,Link to copy:,\nconfidential_links_show_embedcode_for_copy,Embed-Code zum kopieren:,Embed-Code to copy:,\nconfidential_links_show_embed_link,Embed-Link:,Embed-link:,\nconfidential_links_show_embed_code_iframe,HTML-Code/iframe:,HTML-code/iframe:,\nconfidential_links_list_created_hint_pre,Erstellt: ,Created: ,\nconfidential_links_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\nconfidential_links_list_no_expiry,Nie,Never,\nconfidential_links_list_new_button,Neuen Vertraulichen Link erstellen,Add a new Confidential Link,\nconfidential_links_list_no_description,(Keine Beschreibung),(No description),\nconfidential_links_list_revoke_btn_hint,Zurückziehen,Revoke,\nconfidential_links_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Vertraulichen Link zurückziehen wollen?\",Are you sure you want to revoke this Confidential Link?,\nconfidential_links_list_revoked_title,Abgelaufene und zurückgezogene Vertrauliche Links,Expired and revoked Confidential Links,\nconfidential_links_list_show_url,Link anzeigen,Show Link,\nconfidential_links_list_copy_url,Vertraulichen Link kopieren,Copy Confidential Link,\nconfidential_links_head_id,ID,ID,\nconfidential_links_head_name,Name,Name,\nconfidential_links_head_token,Token,Token,\nconfidential_links_head_valid_since,Erstellt am,Created at,\nconfidential_links_head_valid_until,Läuft ab,Expires at,\nconfidential_links_show_title,Vertraulicher Link,Confidential Link,\nconfidential_links_access_notice,Dieser Medieneintrag wurde über einen Vertraulichen Link aufgerufen. Die URL dieser Seite darf nur einem eingeschränkten Personenkreis zugänglich sein.,This Entry was accessed via a Confidential Link. The URL of this page shall only be made accessible to a limited group of people.,\ntransfer_responsibility_batch_success_collection_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_collection_1a, Set , set ,\ntransfer_responsibility_batch_success_collection_1b, Sets , sets ,\ntransfer_responsibility_batch_success_collection_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_batch_success_media_entry_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_media_entry_1a, Medieneintrag , media entry,\ntransfer_responsibility_batch_success_media_entry_1b, Medieneinträge, media entries,\ntransfer_responsibility_batch_success_media_entry_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_cancel,Abbrechen,Cancel,\ntransfer_responsibility_currently_responsible,Bisher verantwortlich,Currently responsible,\ntransfer_responsibility_to,Verantwortlichkeit übertragen auf,Transfer responsibility to,\ntransfer_responsibility_for_1_media_entry,für 1 Medieneintrag,for 1 media entry,\ntransfer_responsibility_for_n_media_entries,für %{nofResources} Medieneinträge,for %{nofResources} media entries,\ntransfer_responsibility_for_1_collection,für 1 Set,for %{nofResources} set,\ntransfer_responsibility_for_n_collections,für %{nofResources} Sets,for %{nofResources} sets,\ntransfer_responsibility_multiple_will_receive,Die bisher Verantwortlichen behalten folgende Berechtigungen:,The ones currently responsible are retaining the following permissions:,\ntransfer_responsibility_single_will_receive,%{name} behält folgende Berechtigungen:,%{name} is retaining the following permissions:,\ntransfer_responsibility_submit,Übertragen,Transfer,\ntransfer_responsibility_success_collection,Sie haben die Verantwortlichkeit für das Set erfolgreich übertragen.,You have successfully transferred responsibility for the set.,\ntransfer_responsibility_success_media_entry,Sie haben die Verantwortlichkeit für den Medieneintrag erfolgreich übertragen.,You have successfully transferred responsibility for the media entry.,\ntransfer_responsibility_title_single,Verantwortlichkeit übertragen,Transfer responsibility,\ntransfer_responsibility_title_batch,Verantwortlichkeit %{forNResources} übertragen,Transfer responsibility %{forNResources},\ntransfer_responsibility_you_will_receive,\"Sie, %{name}, behalten folgende Berechtigungen:\",\"You, %{name}, are retaining the following permissions:\",\nusage_data_created_at,Erstellt am,Created on,\nusage_data_import_at,Importiert am,Imported on,\nusage_data_import_by,Importiert durch,Imported by,\nusage_data_last_changes_empty,Es wurden noch keine Änderungen festgehalten.,No changes have been recorded yet.,\nusage_data_last_changes_title,Letzte Änderungen der Metadaten,Last change of metadata,\nusage_data_relations_children,Set enthält,Set is related to,\nusage_data_relations_parents,Übergeordnete Sets,Parent sets,\nusage_data_relations_title,Zusammenhänge,Relations,\nusage_data_responsibility_title,Verantwortlichkeit und Aktivitäten,Responsibility and activities,\nusage_data_responsible,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / responsibility group,\nusage_terms_accept_btn,Nutzungsbedingungen akzeptieren,Accept usage terms,\nusage_terms_reject_btn,Ablehnen,Reject usage terms,\nuser_menu_admin_mode_toogle_off,Admin-Modus beenden,Stop admin mode,\nuser_menu_admin_mode_toogle_on,In Admin-Modus wechseln,Switch to admin mode,\nuser_menu_admin_ui,Admin-Interface öffnen,Open admin interface,\nuser_menu_login_btn,Anmelden,Log in,\nuser_menu_logout_btn,Abmelden,Log out,\nuser_menu_my_content_collections,Meine Sets,My sets,\nuser_menu_my_content_media_entries,Meine Medieneinträge,My media entries,\nuser_menu_my_favorite_collections,Favoriten - Sets,Favorites - sets,\nuser_menu_my_favorite_media_entries,Favoriten - Medieneinträge,Favorites - media entries,\nuser_menu_my_groups,Meine Gruppen,My groups,\nuser_menu_my_person,Meine Person,My person,\nuser_menu_upload,Medien importieren,Upload media,\nuser_name_deactivated,[Gelöschter User],[Deleted user],\nvocabularies_all,Alle Vokabulare,All vocabularies,\nvocabularies_contents_hint_1,Alle Inhalte mit Metadaten des Vokabulars ,All items with metadata related to the vocabulary,\nvocabularies_contents_hint_2,\". Sie sehen nur Inhalte, für die Sie berechtigt sind.\",. You can see only items you have permissions for.,\nvocabularies_keywords_hint_1,Alle im Vokabular ,All keywords contained in the vocabulary ,\nvocabularies_keywords_hint_2, enthaltenen Schlagworte und die dazugehörenden Metadatenfelder., and related meta data fields.,\nvocabularies_no_description,(Keine Beschreibung),(No description available),\nvocabularies_no_keywords,Keine Schlagworte vorhanden.,No keywords available.,\nvocabularies_no_people,Keine Personen vorhanden.,Keine Personen vorhanden.,\nvocabularies_people_hint_1,Alle im Vokabular ,Alle im Vokabular ,\nvocabularies_people_hint_2, enthaltenen Personen und die dazugehörenden Metadatenfelder., enthaltenen Personen und die dazugehörenden Metadatenfelder.,\nvocabularies_tabs_contents,Inhalte,Items,\nvocabularies_tabs_keywords,Schlagworte,Keywords,\nvocabularies_tabs_people,Personen,People,\nvocabularies_tabs_permissions,Berechtigungen,Permissions,\nvocabularies_tabs_vocabulary,Vokabular,Vocabulary,\nvocabulary_permissions_hint1,\"Für dieses Vokabular können die Berechtigungen \"\"Betrachten\"\" und \"\"Anwenden\"\" vergeben werden. Wenn Sie Mitglied einer berechtigten Arbeitsgruppe sind, können Sie weitere Personen zu dieser hinzufügen oder daraus entfernen. Bitte überlegen Sie Änderungen gut, da über Arbeitsgruppen auch weitere Berechtigungen gesteuert werden.\",\"This vocabulary can be managed with the permissions \"\"View\"\" and \"\"Execute\"\". If you are member of a work group which owns permissions, you are able to add or remove further users. Think carefully before you make changes to work groups as this may affect other permissions.\",\nvocabulary_permissions_hint2,\"Weitere Berechtigungen für Personen, Arbeitsgruppen, API-Applikationen oder die Öffentlichkeit werden durch den Administrator vergeben – bitte wenden Sie sich an den Support.\",\"Further permissions for persons, work groups, API clients or public usage are granted by the administrator. Please contact  support.\",\nvocabulary_term_info_contents,Inhalte,Items,\nvocabulary_term_info_description,Beschreibung,Description,\nvocabulary_term_info_rdfclass,Typ,Type,\nvocabulary_term_info_term,Begriff,Term,\nvocabulary_term_info_url,URL,URL,\nvocabulary_term_info_urls,URLs,URLs,\nworkgroup_link_to_contents_text,Inhalte,Items,\nworkgroup_link_to_contents_title,Inhalte dieser Arbeitsgruppe anzeigen,Show items of this work group,\nworkgroup_members_table_is_member,Mitglied?,Member?,\nworkgroup_members_table_login,Login,Login,\nworkgroup_members_table_title,Mitglieder,Members,\nmedia_entry_notice_new_versions,Für diesen Medieneintrag sind neuere Versionen vorhanden:,Newer versions are available for this media entry:,\nread_more_button,\"Mehr anzeigen\",\"Show more\",\nread_less_button,\"Weniger anzeigen\",\"Show less\",\nmedia_player_settings_title,Wiedergabe,Playback,\nmedia_player_media_config,Player-Konfiguration (JSON) / DEV-MODE,Player config (JSON) / DEV-MODE,\nmedia_player_media_config_hint_pre,\"JSON-Konfiguration für \",JSON configuration for ,\nmedia_player_media_config_hint_post,\": headers, overlays (stop_media_during_overlay true pausiert die Wiedergabe, solange das Overlay sichtbar ist) VTT-Dateien für Untertitel/Kapitel werden unten hochgeladen.\",\": headers, overlays (stop_media_during_overlay true pauses playback while the overlay is visible) VTT files for subtitles and chapters are uploaded below.\",\nmedia_player_save_config,Konfiguration speichern,Save config,\nmedia_player_config_invalid,Die Konfiguration ist kein gültiges JSON-Objekt.,Config is not a valid JSON object.,\nmedia_player_subtitles,Untertitel und Kapitel,Subtitles and chapters,\nmedia_player_no_subtitles,Keine VTT-Dateien.,No VTT files.,\nmedia_player_uploaded_subtitles,Hochgeladene Untertitel,Uploaded subtitles,\nmedia_player_language,Sprache,Language,\nmedia_player_label,Bezeichnung,Label,\nmedia_player_kind,Art,Kind,\nmedia_player_kind_hint,\"Untertitel sind der gesprochene Text. Kapitel sind Abschnitte auf der Zeitleiste.\",\"Subtitles are the spoken text. Chapters are sections on the timeline.\",\nmedia_player_kind_subtitles,Untertitel,Subtitles,\nmedia_player_kind_chapters,Kapitel,Chapters,\nmedia_player_default,Standard,Default,\nmedia_player_default_hint,\"Die Datei in der aktuellen Sprache der Oberfläche (Deutsch oder Englisch) wird vorausgewählt.\",\"The file in the current interface language (German or English) is selected.\",\nmedia_player_file,VTT-Datei,VTT file,\nmedia_player_choose_file,Datei auswählen,Choose file,\nmedia_player_no_file,Keine ausgewählt,No file chosen,\nmedia_player_upload,Hochladen,Upload,\nmedia_player_delete,Löschen,Delete,\nmedia_player_delete_confirm,Diese VTT-Datei löschen?,Delete this VTT file?,\n");
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		translationsList = readTranslationsFromCSV("key,de,en,comment\najax_form_connection_error,Verbindungsfehler. Bitte versuchen Sie es noch einmal.,Connection error. Please try again.,\najax_form_no_longer_authorized,Sie sind für diese Aktion nicht mehr authorisiert.,You are no longer authorized to do this.,\najax_form_unexpected_error,Es gab einen unerwarteten Server-Fehler.,There was an unexpected server error.,\najax_form_validation_error_unparsable,Validation error with unparsable errors.,Validation error with unparsable errors.,\"Formular speichern, Edge case: Server gibt Fehlermeldung UND sie kann nicht gelesen werden.\"\najax_form_validation_error_without_any_data,Validation error without any data.,Validation error without any data.,\"Formular speichern, Edge case: Server gibt Fehlermeldungs-Code aber sonst keinen Inhalt\"\najax_form_validation_error_without_error_data,Validation error without error data.,Validation error without error data.,\"Formular speichern, Edge case: Server gibt Fehlermeldung, aber keine Details\"\napi_tokens_callback_description,Token wird für eine externe Applikation erstellt.,Token is being created for an external application.,\napi_tokens_create_cancel,Abbrechen,Cancel,\napi_tokens_create_description,Beschreibung,Description,\napi_tokens_create_submit,Token anlegen,Create token,\napi_tokens_create_title,Neuen Token hinzufügen,Add new token,\napi_tokens_created_back_btn,Zurück zu allen Tokens.,Back to all tokens.,\napi_tokens_created_callback_btn,Weiter zur Applikation,Continue to the application,\napi_tokens_created_callback_description,\"Falls die Weiterleitung nicht funktioniert, kann der Token auch manuell kopiert werden:\",\"If the redirect does not work, the token can also be copied manually:\",\napi_tokens_created_notice,Dieser Token wird nur einmal angezeigt. Bitte speichern Sie ihn jetzt.,This token is displayed only once. Please save it now.,\napi_tokens_created_title,Es wurde ein neuer Token erstellt.,A new token was created.,\napi_tokens_head_id,ID,ID,\napi_tokens_head_name,Name,Name,\napi_tokens_head_permissions,Berechtigungen,Permissions,\napi_tokens_head_valid_since,Gültig seit,Valid from,\napi_tokens_head_valid_until,Gültig bis,Valid to,\napi_tokens_list_created_hint_pre,Erstellt: ,Created: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\"Tooltip auf dem Datum in der Tokens-Tabelle, wird vor einem Zeitstempel angezeigt\"\napi_tokens_list_new_button,Neuen Token erstellen,Create new token,\napi_tokens_list_no_description,(Keine Beschreibung),No description),\"Platzhalter-Text, falls ein Token keine Beschreibung hat.\"\napi_tokens_list_revoke_btn_hint,Token zurückziehen.,Revoke token.,\napi_tokens_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Token zurückziehen wollen?\",Are you sure you want to revoke the token?,\napi_tokens_list_revoked_title,Abgelaufene und zurückgezogene Tokens,Expired and revoked tokens,\napi_tokens_list_scope_off,Nein,No,\napi_tokens_list_scope_on,Ja,Yes,\napi_tokens_list_scope_read,Lesen,Read,\napi_tokens_list_scope_write,Schreiben,Write,\napp_autocomplete_displayname_users,Nutzer/innen,Users,\napp_autocomplete_displayname_delegations,Verantwortungs-Gruppen,Responsibility groups,\napp_autocomplete_no_results,Keine Ergebnisse.,No results.,\napp_autocomplete_user_delegation_postfix, (Verantwortungs-Gruppe), (Responsibility group)\napp_autocomplete_enter_term,Suchbegriff eingeben für weitere Ergebnisse,Enter search term for further results,\napp_autocomplete_extend_term,Suchbegriff erweitern für weitere Ergebnisse,Extend search term for further results,\napp_confirm_form_leave_msg,\"Diese Seite bittet Sie zu bestätigen, dass Sie die Seite verlassen möchten. Daten, die Sie eingegeben haben, werden unter Umständen nicht gespeichert.\",Please confirm that you wish to leave this page – entered data might not be saved.,NOTE: German version copied from Firefox default message\napp_notice_admin_mode_on,Admin-Modus aktiviert!,Admin mode activated!,\napp_notice_admin_mode_off,Admin-Modus deaktiviert!,Admin mode deactivated!,\napp_notice_logged_in,Sie haben sich angemeldet.,You have logged in.,\napp_notice_logged_out,Sie haben sich abgemeldet.,You have logged out.,\napp_notice_wrong_credentials,Falscher Benutzername/Passwort.,Incorrect username/password.,\napp_notice_shibboleth_not_enabled,Die Anmeldung mittels Shibboleth ist nicht aktiviert!,Shibboleth sign in is not enabled!,\napp_notice_shibboleth_missing_fields,\"Die Authentifizierungsdaten von Shibboleth sind unvollständig. SURNAME, GIVENNAME und EMAIL sind Pflichtfelder!\",\"Shibboleth authentication data is incomplete. SURNAME, GIVENNAME and EMAIL are required fields!\",\napp_warning_jsonly,\"Diese Funktion erfordert JavaScript, aber es ist nicht aktiviert.\",\"This feature requires Javascript, but it is not activated.\",\nauthentication_groups,Systemgruppen,System groups,\nbatch_add_to_collection_hint,\"Nach Sets suchen, zu denen Sie die Medieneinträge hinzufügen möchten.\",Seach for sets to add media entries.,\nbatch_add_to_collection_post, Medieneinträge zu Set hinzufügen,Add media entries to set,(nach der Anzahl)\nbatch_add_to_collection_pre, ,,(vor der Anzahl)\nbatch_destroy_resources_ask_1,Möchten Sie folgende Inhalte löschen:,Do you want to delete the following items:,\nbatch_destroy_resources_ask_2, Medieneinträge, Media entries,\nbatch_destroy_resources_ask_3, Sets, Sets,\nbatch_destroy_resources_ask_4,(Die Inhalte von Sets werden nicht automatisch mit dem Set gelöscht.),\"(When a set is deleted, the items of this set are not deleted at the same time.)\",\nbatch_destroy_resources_cancel,Abbrechen,Cancel,\nbatch_destroy_resources_ok,OK,OK,\nbatch_destroy_resources_success,Inhalte wurden erfolgreich gelöscht.,Items are deleted successfully.,\nbatch_meta_data_edit,Metadaten für %{media_entry_count} Medieneinträge gleichzeitig editieren.,Edit metadata for %{media_entry_count} media entries at the same time.,\nbatch_remove_from_collection_cancel,Abbrechen,Cancel,\nbatch_remove_from_collection_question_part_1,Möchten Sie die ausgewählten ,Do you want to remove the selected ,\nbatch_remove_from_collection_question_part_2, Medieneinträge und , media entries and ,\nbatch_remove_from_collection_question_part_3, Sets aus dem Set entfernen?, sets from this set?,\nbatch_remove_from_collection_remove,Entfernen,Remove,\nbatch_remove_from_collection_title,Medieinträge/Sets aus Set entfernen,Remove media entries/sets from sets,\nbatch_warning_no_authorized_contents_collection,Sie haben für keines der Sets die nötige Berechtigung.,You have no permissions for these sets.,\nbatch_warning_no_authorized_contents_media_entry,Sie haben für keinen der Medieneinträge die nötige Berechtigung.,You have no permissions for these media entries.,\nbatch_warning_no_contents_collection,Sie haben keine Sets.,You have no sets.,\nbatch_warning_no_contents_media_entry,Sie haben keine Medieneinträge.,You have no media entries.,\nbatch_edit_title_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nbatch_edit_title_th_filename,Dateiname,File name,\nbatch_edit_title_th_title,Titel,Title,\nbatch_edit_title_save,Speichern,Save,\nbatch_edit_title_cancel,Abbrechen,Cancel,\nbrowse_entries_browse_link_title,In diese Richtung weiterstöbern,Browse further in this direction,\nbrowse_entries_filter_link,Weiter filtern →,Apply additional filter →,\nbrowse_entries_loading_error,Ladefehler,Loading error,\nbrowse_entries_title,Nach ähnlichen Inhalten stöbern,Browse similar items,\nbubble_batch_label,Stapel,Batch,Wo: Labels in der Stapelverarbeitung\nbubble_draft_label,Entwurf,Draft,Wo: Labels in der Stapelverarbeitung\nclipboard_add_hint,Zur Stapelverarbeitung hinzufügen,Add to batch processing,\nclipboard_adding_all_resources_cancelled,\"Das Hinzufügen zur Stapelverarbeitung wurde abgebrochen. Ein Teil der Inhalte wurde schon hinzugefügt. Wenn Sie alle hinzufügen möchten, versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.\",\"The process of adding items to batch processing was interrupted. Some items were successfully added to batch processing. If you wish to add all items, please try again.Those items already added will not be duplicated.\",\nclipboard_adding_all_resources_error,Es konnten nicht alle Inhalte zur Stapelverarbeitung hinzugefügt werden. Bitte versuchen Sie es noch einmal. Schon hinzugefügte Inhalte werden nicht dupliziert.,It was not possible to add all items to batch processing. Please try again. Those items already added will not be duplicated.,\nclipboard_adding_all_resources_retry,Nochmals, Again,\nclipboard_adding_resources,Füge Inhalte zur Stapelverarbeitung hinzu …,Add items to batch processing …,\nclipboard_ask_add_all_1,Möchten sie alle ,Would you like to add all ,\nclipboard_ask_add_all_2, Inhalte zur Stapelverarbeitung hinzufügen?, items to batch processing?,\nclipboard_ask_add_all_cancel,Abbrechen,Cancel,\nclipboard_ask_add_all_ok,Ok,OK,\nclipboard_batch_add_success,Die Inhalte wurden der Stapelverarbeitung hinzugefügt.,Items were added to batch processing.,\nclipboard_batch_remove_success,Die Inhalte wurden aus der Stapelverarbeitung entfernt.,Items wer removed from batch processing.,\nclipboard_empty_message,Sie haben keine Inhalte für die Stapelverarbeitung ausgewählt.,Batch processing is empty,\nclipboard_fetching_resources,Lade Inhalte …,Items loading …,\"Wieso sind da Pünktchen? -> Ist eine Zustandsanzeige, Nutzer wartet.\"\nclipboard_removing_resources,Entferne Inhalte aus Stapelverarbeitung...,Remove items from batch processing ...,\ncollection_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgendes Set löschen möchten: \",Are you sure you want to delete the following set:,\ncollection_ask_delete_title,Set löschen,Delete set,\ncollection_deleted,Dieses Set wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This set has been deleted and is no longer visible to users.\ncollection_delete_success,Set wurde gelöscht.,Set deleted.,\ncollection_does_not_exist,Dieses Set existiert nicht.,This set does not exist.,\ncollection_edit_cover_submit_btn,Speichern,Submit,\ncollection_edit_cover_title,Titelbild für Set festlegen,Define set cover,\ncollection_edit_highlights_btn,Auswahl speichern,Submit selection,\ncollection_edit_highlights_empty,Dieses Set hat noch keine Inhalte.,This set has no items yet.,\ncollection_edit_highlights_title,Inhalte hervorheben,Highlight items,\ncollection_edit_permissions_btn,Speichern,Submit,\ncollection_highlighted_contents,Hervorgehobene Inhalte,Highlighted items,\ncollection_layout_save,Darstellung festlegen,Save type of display,\ncollection_layout_saved,Darstellung gespeichert,Type of display saved,\ncollection_meta_data_header_prefix,Set editieren: ,Edit set:,\ncollection_new_cancel,Abbrechen,Cancel,\ncollection_new_create_set,Set erstellen,Create set,\ncollection_new_dialog_title,Set erstellen,Create set,\ncollection_new_dialog_parent_warning,The new created set will be added as a child to:,The new created set will be added as a child to:,\ncollection_new_flash_successful,Set wurde erstellt.,Set was created.,\ncollection_new_flash_title_needed,Titel ist ein Pflichtfeld.,Title is a mandatory field.,\ncollection_new_header,Neues Set,New set,\ncollection_new_label_title,Titel,Title,\ncollection_permissions_btn,Zugriffsberechtigungen ändern,Change permissions,\ncollection_relations_child_sets,Untergeordnete Sets,Child sets,\ncollection_relations_children_hint,Diese Sets wurden dem ausgewählten Set hinzugefügt.,These sets are now related to the selected set.,\ncollection_relations_current,Aktuelles Set,Current set,\ncollection_relations_hint_text,\"Das ausgewählte Set ist mit anderen Sets verknüpft. Diese Zusammenhänge wurden aktiv durch Sie oder eine/n andere/n Nutzer/in festgelegt als übergeordnet, benachbart oder untergeordnet. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected set is related to other sets. The relationship between these sets was actively defined by you or another user. The type of relationship to the other sets could be described as parent, siblings or children relationship. The displayed sets are owned by yourself or shared by other users with you.\",\ncollection_relations_no_child_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_parent_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_no_sibling_sets, , ,\"Optionaler Hinweis, falls Zusammenhänge leer\"\ncollection_relations_parent_sets,Übergeordnete Sets,Parent sets,\ncollection_relations_parents_hint,Das ausgewählte Set wurde diesen Sets hinzugefügt.,The selected set is now related to this set.,\ncollection_relations_show_all,Alle anzeigen →,Show all →,\ncollection_relations_show_all_relations,Alle Zusammenhänge anzeigen,Show all relations,\ncollection_relations_sibling_sets,Benachbarte Sets,Sibling sets,\ncollection_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie das ausgewählte Set.,This set is related to the same sets as the selected set.,Wo: Zusammenhänge eines Sets\ncollection_resource_selection_cancel,Abbrechen,Cancel,\ncollection_resource_selection_h_author,Autor/in,Author,\ncollection_resource_selection_h_date,Datierung,Dating,\ncollection_resource_selection_h_keywords,Schlagworte,Keywords,\ncollection_resource_selection_h_responsible,Rechteinhaber,Holder of rights,\ncollection_resource_selection_h_selection,Auswahl,Selection,\ncollection_resource_selection_h_subtitle,Untertitel,Subtitle,\ncollection_resource_selection_h_title,Titel,Title,\ncollection_resource_selection_save,Auswahl speichern,Save selection,\ncollection_select_collection_flash_result,Set aus %{removed_count} Set(s) entfernt. Zu %{added_count} Set(s) hinzugefügt.,Removed set from %{removed_count} set(s). Added set to %{added_count} set(s).,\ncollection_sorting_created_at_asc,Sortieren nach Importierdatum aufsteigend,Sort by import date ascending,\ncollection_sorting_created_at_desc,Sortieren nach Importierdatum absteigend,Sort by import date descending,\ncollection_sorting_manual_asc,Sortieren manuell aufsteigend,Sort manually ascending,\ncollection_sorting_manual_desc,Sortieren manuell absteigend,Sort manually descending,\ncollection_sorting_last_change_desc,Sortieren nach letzter Änderung absteigend,Sort by date of update descending,\ncollection_sorting_last_change_asc,Sortieren nach letzter Änderung aufsteigend,Sort by date of update ascending,\ncollection_sorting_title_asc,Sortieren nach Titel alphabetisch,Sort by title alphabetically,\ncollection_sorting_title_desc,Sortieren nach Titel absteigend,\"Sort by title alphabetically, but descending\",\ncollection_tab_main,Set,Set,\ncollection_was_disfavored,Das Set wurde von den Favoriten entfernt.,Set was removed from favorites.,\ncollection_was_favored,Das Set wurde zu den Favoriten hinzugefügt.,Set was added to favorites.,\ncontents_privacy_private,Diese Inhalte sind nur für Sie zugänglich.,These items are only accessible to you.,\ncontents_privacy_public,Diese Inhalte sind öffentlich zugänglich.,These items are accessible to the public.,\ncustom_urls_canonical_hint,\"Jeder Inhalt hat eine automatisch erzeugte, kanonische Adresse bestehend aus Zahlen und Buchstaben, eine sog. UUID (Universally Unique Identifier). Diese Adresse kann nicht übertragen oder entfernt werden und ist deshalb immer an erster Stelle aufgelistet.\",\"Every item has a canonical address consisting of numbers und letters which is created automatically, a so- called UUID (Universally Unique Identifier). This address can not be transferred or deleted. For this reason it is always listed first.\",\ncustom_urls_canonical_title,Kanonische Adresse (UUID),Canonical address (UUID),\ncustom_urls_flash_create_successful_1,Adresse ,Address ,\ncustom_urls_flash_create_successful_2, wurde erstellt., was created.,\ncustom_urls_flash_empty,Adresse darf nicht leer sein.,Address is not allowed to be empty.,\ncustom_urls_flash_exists_on_itself_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_collection_2, existiert bereits für dieses Set., already exists for this set.,\ncustom_urls_flash_exists_on_itself_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_exists_on_itself_media_entry_2, existiert bereits für diesen Medieneintrag., already exists for this media entry.,\ncustom_urls_flash_not_allowed_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_collection_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung das Set zu verwalten, auf welches die Adresse \", can not be transferred. You do not have permission to manage the set to which the address ,\ncustom_urls_flash_not_allowed_collection_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_allowed_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_not_allowed_media_entry_2,\" kann nicht übertragen werden. Sie haben nicht die Berechtigung den Medieneintrag zu verwalten, auf welchen die Adresse \", cannot be transferred. You do not have  permission to manage the media entry to which the address ,\ncustom_urls_flash_not_allowed_media_entry_3, im Moment verweist., is related to.,\ncustom_urls_flash_not_same_type_collection_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_collection_2, kann nicht übertragen werden. Adressen von Medieneinträgen können nicht auf Sets übertragen werden., can not be transferred. Addresses from media entries can not be transferred to sets.,\ncustom_urls_flash_not_same_type_media_entry_1,Adresse ,The address ,\ncustom_urls_flash_not_same_type_media_entry_2, kann nicht übertragen werden. Adressen von Sets können nicht auf Medieneinträge übertragen werden., cannot be transferred. Addresses from sets cannot be transferred to media entries.,\ncustom_urls_flash_primary_url_set_1,,,\"Wo: Bestätigung CustomURL, vor der Adresse\"\ncustom_urls_flash_primary_url_set_2, wurde als primäre Adresse gesetzt., was set as primary address.,\"Wo: Bestätigung CustomURL, nach der Adresse\"\ncustom_urls_flash_transfer_confirmation_collection_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_collection_2, ist gegenwärtig dem Set , is currently related to the set  ,\ncustom_urls_flash_transfer_confirmation_collection_3, zugewiesen. Wollen Sie diese Adresse auf das Set ,. Would you like to transfer this address to the set ,\ncustom_urls_flash_transfer_confirmation_collection_4, übertragen?,?,\ncustom_urls_flash_transfer_confirmation_media_entry_1,Die Adresse ,The address ,\ncustom_urls_flash_transfer_confirmation_media_entry_2, ist gegenwärtig dem Medieneintrag , is currently related to the media entry  ,\ncustom_urls_flash_transfer_confirmation_media_entry_3, zugewiesen. Wollen Sie diese Adresse auf den Medieneintrag ,. Would you like to transfer this address to the media entry ,\ncustom_urls_flash_transfer_confirmation_media_entry_4, übertragen?,?,\ncustom_urls_flash_transfer_successful_1,Adresse ,Address  ,\ncustom_urls_flash_transfer_successful_2, wurde von , was transferred from  ,\ncustom_urls_flash_transfer_successful_3, auf , to ,\ncustom_urls_flash_transfer_successful_4, übertragen.,0,\ncustom_urls_flash_wrong_format_1,Adresse ,Address ,\ncustom_urls_flash_wrong_format_2, erfüllt die Anforderungen nicht., does not meet the requirements.,\ncustom_urls_manage_address_title,Adressverwaltung,Address administration,\ncustom_urls_new,Adresse anlegen / übertragen,Create / transfer address,\ncustom_urls_no_addresses_defined,Noch keine Adressen definiert.,No address defined yet.,\ncustom_urls_primary_hint,\"Für jeden Inhalt (egal ob Medieneintrag oder Set) gibt es immer genau eine primäre Adresse. Diese ist in der Adressleiste des Browsers sichtbar, wenn der Inhalt angezeigt wird. Neben der primären Adresse können weitere gesetzt werden, die auf die primäre Adresse weiterleiten.\",Each item (media entry or set) has exactly one primary address. This address is displayed in the browsersaddress bar when the item is accessed.You have the option to create other addresses which are forwarded to the primary address.,\ncustom_urls_primary_title,Primäre Adresse,Primary address,\ncustom_urls_table_header_actions,Aktionen,Actions,\ncustom_urls_table_header_address,Adresse,Address ,\ncustom_urls_table_header_created_by,Erstellt durch,Created by,\ncustom_urls_table_header_date,Datum,Date,\ncustom_urls_table_header_type,Typ,Type,\ncustom_urls_title,Adressen für ,Addresses for ,\ndashboard_create_collection,Set erstellen,Create set,\ndashboard_create_collection_btn,Set erstellen,Create set,\ndashboard_create_media_entry_btn,Medien importieren,Upload media,\ndashboard_none_exist,Keine vorhanden.,There are none.,\ndashboard_show_all,Alle anzeigen,Show all,\ndashboard_title_head,Mein Archiv,My archive,\ndeleted,gelöscht,deleted,\ndynamic_filters_any_values_title,Jegliche Werte,Any values,\ndynamic_filters_authorization,Berechtigung,Authorization,\ndynamic_filters_visibility,Sichtbarkeit,Accessability,\ndynamic_filters_visibility_private,Nur für mich,Only for me,\ndynamic_filters_visibility_user_or_group,Geteilt mit Personen und Arbeitsgruppen,Shared with people and work groups,\ndynamic_filters_person_header,Personen,Persons,\ndynamic_filters_remove_all_title,Alle entfernen,Remove all,\ndynamic_filters_role_header,Funktionen,Functions,\ndynamic_filters_search_for_api_client_placeholder,Suche nach API-Applikation,Search for API client...,\ndynamic_filters_search_for_delegation_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_group_placeholder,Suche nach Gruppe...,Search for group...,\ndynamic_filters_search_for_user_placeholder,Suche nach User...,Search for user...,\ndynamic_filters_search_for,Suche nach,Search for,\nedit_custom_urls_back_to_collection,Zurück zum Set,Back to the set,\nedit_custom_urls_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nedit_custom_urls_cancel,Abbrechen,Cancel,\nedit_custom_urls_confirmation,Bestätigung,Confirmation,\nedit_custom_urls_create_or_transfer,Adresse anlegen / übertragen,Create / transfer address,\nedit_custom_urls_preferred_address,Gewünschte Adresse:,Preferred address:,\nedit_custom_urls_requirements_hint,\"Eine Adresse darf nur genau einmal im System vorkommen – entweder für einen Medieneintrag oder für ein Set. Sie beginnt immer mit einem Kleinbuchstaben, gefolgt von (mindestens einem) weiteren Zeichen aus Kleinbuchstaben, Nummern, Bindestrichen ( - ) und Grundstrichen ( _ ) in beliebiger Reihenfolge.\",\"Each comprehensible address is unique in the system – either for a media entry or for a set. The address always begins with a lower case letter, followed by at least one other character. The following characters can bei lower case letters, numbers, hyphens ( - ) or low lines ( _ ) in any order.\",\nedit_custom_urls_requirements_title,Anforderungen,Requirements,\nedit_custom_urls_set_primary,Als primäre Adresse setzen,Set as primary address,\nedit_custom_urls_state_primary,Primäre Adresse,Primary address,\nedit_custom_urls_state_transfer,Weiterleitung,Forwarding,\nedit_custom_urls_title,Anforderungen,Requirements,\nedit_custom_urls_transfer,Übertragen,Transfer,\nedit_custom_urls_transfer_hint,\"Eine bereits bestehende Adresse kann von einem Medieneintrag auf einen anderen oder von einem Set auf ein anderes übertragen werden. Bestehende Adressen können nicht von einem Medieneintrag auf ein Set und umgekehrt übertragen werden. Wollen Sie eine Adresse übertragen, dann geben Sie diese hier ein. Sie müssen für beide Inhalte über die Zugriffsberechtigung 'Verwalten' verfügen.\",\"An existing address can be transferred from one media entry to another or from one set to another. Existing addresses cannfot be transferred from a media entry to a set or vice versa. If you want to transfer an address, please enter this address here. You have to have manage permissions for both items.\",\nedit_custom_urls_transfer_title,Übertragen,Transfer,\nembed_error_title,\"Fehler!\",\"Error!\",\nembed_error_context_pre,\"Angeforderte URL: \",\"Requested URL: \",\nembed_error_context_post,\"\",\"\",\nembed_error_help_pre,\"Hilfe: \",\"Help: \",\nembed_error_help_post,\"\",\"\",\nembed_error_msg,\"Dieser Inhalt kann nicht eingebettet werden.\",\"This content cannot be embedded.\",\nembed_error_msg_403,\"Dieser Inhalt kann nicht eingebettet werden, weil die nötigen Berechtigungen fehlen.\",\"This content cannot be embedded because the necessary permissions are missing.\",\nembed_error_msg_404,\"Der gewünschte Inhalt konnte nicht gefunden werden.\",\"The requested content could not be found.\",\nerror_401_title,\"Um Zugang zu diesem Bereich zu erhalten, melden Sie sich bitte an.\",To get access please login below with your user data.,\nerror_403_message,Bitte kontaktieren Sie die für die Ressource verantwortliche Person.,Please contact the responsible user for this resource.,\nerror_403_title,Sie haben keine Zugriffsrechte für diesen Inhalt.,You don’t have the necessary permissions to access this resource.,\nerror_404_title,Die gesuchte Seite kann nicht gefunden werden.,The requested page cannot be found.,\nerror_500_message,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (%{support_email}) mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\"If you require help in this matter, please contact the support (%{support_email}) with a description of your last working steps and a screen shot of this page.\",\nerror_500_message_pre,\"Benötigen Sie diesbezüglich Hilfe, dann kontaktieren Sie bitte den Support (\",\"If you require help in this matter, please contact the support (\",\nerror_500_message_post,\") mit einer Beschreibung Ihrer letzten Arbeitsschritte sowie einem Screenshot dieser Seite.\",\") with a description of your last working steps and a screen shot of this page.\",\nerror_500_title,Es ist ein Server-Fehler aufgetreten.,A server error occurred.,\nexplore_keywords_section_title,Häufige Schlagworte,Frequent keywords,\nexplore_show_more,Weitere anzeigen,Show more,\nexplore_vocabulary_section_show_details,Details anzeigen,View details,\nexplore_vovabulary_section_title,Vokabulare,Vocabularies,\nexternal_groups,Abteilungsgruppen,Division groups,\nfooter_choose_language,Sprache wählen,Choose language,\ngroup_ask_delete_cancel,Abbrechen,Cancel,\ngroup_ask_delete_delete,Löschen,Delete,\ngroup_ask_delete_question_post, löschen?,?,\ngroup_ask_delete_question_pre,Möchten Sie die Arbeitsgruppe ,Would you like to delete work group ,\ngroup_ask_delete_title,Arbeitsgruppe löschen,Delete work group,\ngroup_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Arbeitsgruppe löschen wollen?\",Are you sure you want to delete this work group?,\ngroup_edit_at_least_one_member_delete,löschen,delete,VERB\ngroup_edit_at_least_one_member_post,0,0,NACH dem Verb und Namen der Gruppe\ngroup_edit_at_least_one_member_pre,Eine Arbeitsgruppe muss mindestens eine Person enthalten. Ganze Arbeitsgruppe ,A work group has at least one member. Whole work group,VOR dem Verb und Namen der Gruppe\ngroup_edit_btn,Bearbeiten,Edit,\ngroup_edit_cancel,Abbrechen,Cancel,\ngroup_edit_form_new_member_login_hint,Login des neuen Mitglieds dieser Arbeitsgruppe,New work group member login,\ngroup_edit_form_new_member_login_label,User hinzufügen,Add a member,\ngroup_edit_form_save_btn,Speichern,Save,\ngroup_edit_form_title_pre,Arbeitsgruppe bearbeiten: ,Edit work group: ,\ngroup_edit_hint_remove_yourself,Achtung: Sie entfernen sich selbst aus der Arbeitsgruppe!,Attention: You are about to remove yourself from the work group!,\ngroup_edit_member,Mitglieder,Members,\ngroup_edit_name,Name,Name,\ngroup_edit_person,Person,Person,\ngroup_edit_save,Speichern,Save,\ngroup_edit_username,Benutzername,Username,\ngroup_meta_data_institutional_name,Name der Abteilungsgruppe,Division group name,\ngroup_meta_data_name,Name,Name,\ngroup_new_form_title,Neue Arbeitsgruppe erstellen,Create group,\ngroup_new_group_btn,Neue Arbeitsgruppe,New work group,\ngroup_show_edit_button,Arbeitsgruppe bearbeiten,Edit work group,\ngroup_show_members,Mitglieder,Members,\ngroup_show_permissions_use,(anwenden),(execute),\ngroup_show_permissions_view,(betrachten),(view),\ngroup_show_permissions_view_use,(betrachten und anwenden),(view and execute),\ngroup_show_vocabulary_permissions,Berechtigungen Vokabulare,Permissions vocabularies,\ngroup_toolbar_header_entrusted_resources,Mir anvertraute Medieneinträge,Entrusted media entries,\ngroup_was_deleted,Arbeitsgruppe wurde gelöscht.,Work group has been deleted.,\nhome_page_new_contents,Neue Inhalte,New items,\ninternal_groups,Arbeitsgruppen,Work groups,\nlayout_mode_grid,Raster-Ansicht,Grid view,\nlayout_mode_list,Listen-Ansicht,List view,\nlayout_mode_miniature,Miniatur-Ansicht,Miniature view,\nlayout_mode_tiles,Kachel-Ansicht,Tile view,\nlogin_box_internal,Externe,External users,\nlogin_box_title,Anmelden,Log in,\nlogin_box_login_btn,Anmelden,Log in,\nlogin_box_email_or_login,E-Mail,Email,\nlogin_box_password,Passwort,Password,\nlogin_box_rememberme,Login merken,Remember me,\nlogin_box_username,Benutzername,User name,\nmedia_entry_all_metadata_title,Alle Metadaten nach Vokabularen,All metadata by vocabulary,\nmedia_entry_ask_delete_question_pre,\"Sind Sie sicher, dass Sie folgenden Medienintrag löschen möchten: \",Are you sure you want to delete the following media entry:,\nmedia_entry_ask_delete_title,Medieneintrag löschen,Delete media entry,\nmedia_entry_back_btn,Zurück,Back,\nmedia_entry_conversion_hint,\"Diese Datei wird gerade für eine Vorschau konvertiert. Sobald dies abgeschlossen ist, finden Sie hier eine abspielbare Version.\",\"Currently the system is converting this file to a preview. As soon as the conversion is finished, you will be able to play the file here.\",\nmedia_entry_conversion_progress_post,% abgeschlossen.,% completed.,\nmedia_entry_conversion_progress_pre,Konvertierung zu ,Conversion ,\nmedia_entry_conversion_reload,\"Laden Sie diese Seite neu, um den aktuellen Stand der Konvertierung zu erfahren.\",Reload this page to display the current state of conversion.,\nmedia_entry_conversion_status_failed,Die Konvertierung ist fehlgeschlagen. Bitte wenden Sie sich an den Support.,The file conversion has failed. Please contact support.,\nmedia_entry_conversion_status_initialized,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_conversion_status_submitted,Die Konvertierung läuft. Bitte versuchen Sie es später noch einmal.,The media file is converting. Please try later.,\nmedia_entry_deleted,Dieser Medieneintrag wurde gelöscht und ist für Benutzer nicht mehr sichtbar.,This media entry has been deleted and is no longer visible to users.\nmedia_entry_delete_success,Der Medieneintrag wurde gelöscht.,Media entry has been deleted.,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_post,erstellen,,\nmedia_entry_duplicator_configuration_annotate_as_new_version_of_pre,(Experte) Hinweis zu neuer Version inkl. Verlinkung zu,(Expert) Add annotation «new version of» and link to,\nmedia_entry_duplicator_configuration_copy_meta_data,Metadaten übertragen,Copy meta data,\nmedia_entry_duplicator_configuration_copy_permissions,Zugriffsberechtigungen übertragen,Copy permissions,\nmedia_entry_duplicator_configuration_copy_relations,Zusammenhänge übertragen (übergeordnete Sets und Favoriten),Copy relations (parent collections & favorites),\nmedia_entry_duplicator_configuration_move_custom_urls,(Experte) Sprechende Adresse (URL) übernehmen,(Expert) Move comprehensible Address (URL),\nmedia_entry_duplicator_configuration_instructions,Folgende Optionen können gewählt werden:,Choose options below:,\nmedia_entry_duplicator_custom_urls_already_moved,moved to the first successful upload!,moved to the first successful upload!,\nmedia_entry_duplicator_desc_post,zugewiesen.,by selected options.,\nmedia_entry_duplicator_desc_pre,\"Die unten importierten Mediendateien bekommen die den nachfolgend gewählten Optionen entsprechenden Metadaten, Zugriffsberechtigungen, Beziehungen und weitere Einstellungen des aktuellen Medieneintrags\",\"The media file to be imported below will get assigned meta data, permissions, relations and further settings from the actual media entry\",\nmedia_entry_duplicator_md_title_suffix,(updated),(updated),\nmedia_entry_duplicator_new_version_of_label,Updated file,Updated file,\nmedia_entry_export_close,Schliessen,Close,\nmedia_entry_export_download,Exportieren,Download,\nmedia_entry_export_has_no_original,Sie verfügen für den Export der Originaldatei nicht über die notwendige Berechtigung.,You are not allowed to download the original file.,\nmedia_entry_export_no_content,Sie haben keine Zugriffsberechtigung für die Originaldatei und es steht keine Vorschau zur Verfügung.,You do not have permission to access the original file and there is no preview available.,\nmedia_entry_export_original,Original,Original,\nmedia_entry_export_original_hint,Originaldatei herunterladen.,Download original file.,\nmedia_entry_export_subtitle_audios,Audio-Dateien,Audio files,\nmedia_entry_export_subtitle_documents,Dokumente,Documents,\nmedia_entry_export_subtitle_images,Bilder,Images,\nmedia_entry_export_subtitle_videos,Video-Dateien,Video files,\nmedia_entry_export_hls_package,HLS-Paket (.zip),HLS package (.zip),\nmedia_entry_export_hls_rendition,MP4,MP4,\nmedia_entry_export_title,Medieneintrag exportieren,Download media entry,\nmedia_entry_export_rdf_title,RDF-Export Metadaten,RDF export metadata,\nmedia_entry_export_rdf_title_hint,(experimentell),(experimental),\nmedia_entry_export_rdf_experiment_footnote,\"Struktur und Format der Daten können sich ändern. Bitte geben sie eine Rückmeldung, falls Sie diese verwenden!\",\"Data structure and format is subject to change. Please send feedback if you are using this!\",\nmedia_entry_export_checksum_title,Prüfsumme,Checksum,\nmedia_entry_export_checksum_generate,Erzeugen,Generate,\nmedia_entry_export_checksum_verify,Prüfen,Verify,\nmedia_entry_export_checksum_empty,Prüfsumme erzeugen,Generate checksum,\nmedia_entry_export_checksum_generating,Wird erzeugt…,Generating…,\nmedia_entry_export_checksum_verifying,Wird verifiziert…,Verifying…,\nmedia_entry_export_checksum_generated_at,Erzeugt am,Generated at,\nmedia_entry_export_checksum_verified_at,Geprüft am,Verified at,\nmedia_entry_export_checksum_match,Prüfsumme stimmt überein,Checksum matches,\nmedia_entry_export_checksum_mismatch,Prüfsumme stimmt nicht überein,Checksum does not match,\nmedia_entry_export_checksum_error,Fehler bei der Prüfsummen-Operation,Error during checksum operation,\nmedia_entry_file_format_not_supported_1,\"Wahrscheinlich unterstützt Ihr Browser nicht die Darstellung dieses Dateiformats, aber Sie \",\"Your browser probably does not support the file format, but you can \",\nmedia_entry_file_format_not_supported_2,können die Datei ,download the file,\nmedia_entry_file_format_not_supported_3,exportieren.,0,\nmedia_entry_file_information_title,Datei,File information,\nmedia_entry_media_import_gotodrafts,Medieneinträge vervollständigen,Complete media entries,\nmedia_entry_media_import_gotomediaentries,Weiter zu Meine Medieneinträge,Continue to My media entries,\nmedia_entry_media_import_header,Medien importieren,Media upload,\nmedia_entry_media_import_box_header_a,,,\nmedia_entry_media_import_box_header_b, Upload(s), Upload(s),\nmedia_entry_media_import_box_upload_status_waiting,Warten…,Waiting…,\nmedia_entry_media_import_box_upload_status_error,Fehler!,Error!,\nmedia_entry_media_import_box_upload_status_progress_a,Hochladen… ,Uploading… ,\nmedia_entry_media_import_box_upload_status_progress_b,%,%,\nmedia_entry_media_import_box_upload_status_processing,Verarbeiten…,Processing…,\nmedia_entry_media_import_inside,Dateien auf dieses Feld ziehen oder ,Add files by drag and drop in this field or ,\nmedia_entry_media_import_inside_nojs,Dateien auswählen,Select files,\nmedia_entry_media_import_notes_msg,\"Bilder (TIFF, JPEG, PNG) sowie Audio- und Videofiles in den gängigsten Formaten werden direkt verarbeitet und dargestellt. Bilder im CMYK-Farbraum werden nicht korrekt dargestellt. Wandeln Sie diese vor dem Importieren in RGB um.\",\"Images (TIFF, JPEG, PNG) and audio/video files in the most common formats are processed and displayed directly. Images in the CMYK color model cannot be displayed correctly, please convert to RGB before uploading.\",\nmedia_entry_media_import_notes_title,Hinweise,Hints,\nmedia_entry_media_import_select_media,Medien auswählen,Select media files,\nmedia_entry_media_import_upload_error,überschreitet maximale Grösse von 16000 Pixel,exceeds size limit of 16000 pixel,\nmedia_entry_media_import_title,\"Bilder, Videos, Audio-Dateien oder Dokumente bereitstellen.\",\"Add images, video or audio files, or other documents.\",\nmedia_entry_meta_data_edit_by_context_btn,Metadaten nach Kontexten bearbeiten,Edit metadata by context,\nmedia_entry_meta_data_edit_by_vocab_btn,Metadaten nach Vokabularen bearbeiten,Edit metadata by vocabulary,\nmedia_entry_meta_data_header_prefix,Medieneintrag editieren: ,Edit media entry: ,\nmedia_entry_more_data_title,Verantwortlichkeit und Aktivität,Responsibility and activities,\nmedia_entry_not_published_warning_msg,Bei diesem Medieneintrag fehlen noch Pflichtangaben.,Media entry still needs mandatory data.,\nmedia_entry_relations_current,Aktueller Eintrag,Current entry,\nmedia_entry_relations_hint_text,\"Der ausgewählte Medieneintrag ist mit Sets verknüpft. Diese Zusammenhänge wurden aktiv festgelegt als übergeordnet oder benachbart. Sie sehen hier sowohl eigene Sets, als auch solche, die andere Nutzer/innen mit Ihnen teilen.\",\"The selected media entry is connected to sets. These relations are actively defined as a parent, a sibling or a child relationship. The sets displayed here are your own or are shared with you by other users.\",\nmedia_entry_relations_parents_hint,Der ausgewählte Medieneintrag wurde diesen Sets hinzugefügt.,The selected media entry was added to these sets.,\nmedia_entry_relations_siblings_hint,Diese Sets wurden den gleichen Sets hinzugefügt wie der ausgewählte Medieneintrag.,These sets were added to the same sets as the selected media entry.,\nmedia_entry_select_collection_flash_result,Der Medieneintrag wurde aus %{removed_count} Set(s) entfernt und zu %{added_count} Set(s) hinzugefügt.,Media entry removed from %{removed_count} set(s) and added to %{added_count} set(s).,\nmedia_entry_siblings_section_title,Weitere Medieneinträge im selben Set,Other media entries in the same set,\nmedia_entry_siblings_parent_set,Übergeordnetes Set:,Parent set:,\nmedia_entry_tab_main,Medieneintrag,Media entry,\nmedia_entry_tab_more_data,Alle Metadaten,All metadata,\nmedia_entry_tab_permissions,Berechtigungen,Permissions,\nmedia_entry_tab_relations,Zusammenhänge,Relations,\nmedia_entry_tab_usage_data,Nutzung,Usage,\nmedia_entry_upload_btn,Importieren,Upload,\nmedia_entry_was_disfavored,Der Medieneintrag wurde von den Favoriten entfernt.,Media entry was removed from favorites.,\nmedia_entry_was_favored,Der Medieneintrag wurde zu den Favoriten hinzugefügt.,Media entry was added to favorites.,\nmedia_entry_xmp_import_cancel,Abbrechen,Cancel,\nmedia_entry_xmp_import_flash_failed,\"Folgende Metadaten konnten nicht importiert werden: \",The following metadata could not be imported: ,\nmedia_entry_xmp_import_flash_invalid_file,Bitte eine XMP-Datei (.xmp) auswählen.,Please select an XMP file (.xmp).,\nmedia_entry_xmp_import_flash_nothing,Die XMP-Datei enthält keine importierbaren Metadaten.,The XMP file contains no importable metadata.,\nmedia_entry_xmp_import_flash_success,\"Metadaten aus XMP-Sidecar importiert: \",Metadata imported from XMP sidecar: ,\nmedia_entry_xmp_import_flash_unreadable,\"Die XMP-Datei konnte nicht gelesen werden: \",The XMP file could not be read: ,\nmedia_entry_xmp_import_hint,\"Metadaten aus einer XMP-Sidecar-Datei (.xmp) übernehmen. Nur Felder, die in der XMP-Datei einen Wert haben, werden überschrieben; alle anderen Metadaten bleiben unverändert.\",\"Import metadata from an XMP sidecar file (.xmp). Only fields that have a value in the XMP file will be overwritten; all other metadata remains unchanged.\",\nmedia_entry_xmp_import_submit,Importieren,Import,\nmedia_entry_xmp_import_title,XMP-Sidecar importieren,Import XMP sidecar,\nmedia_entry_xmp_sidecars_title,Importierte XMP-Sidecars,Imported XMP sidecars,\nmeta_data_action_delete_btn,Löschen,Delete,\nmeta_data_action_edit_btn,Bearbeiten,Edit,\nmeta_data_batch_action_remove_meta_data,Werte für alle Inhalte löschen,Delete data for all content,\nmeta_data_batch_failure,Metadaten konnten nicht aktualisiert werden.,Metadata could not be updated.,\nmeta_data_batch_hint_differences,Unterschiedliche Metadaten vorhanden,Different metadata in place.,\nmeta_data_batch_hint_differences_override,\"Achtung: Bestehende Werte werden durch Änderungen überschrieben! Wenn keine Änderungen vorgenommen werden, bleiben die verschiedenen Werte erhalten.\",\"Attention: Changes will replace exiting data. If not changes are made, data will be preserved.\",\nmeta_data_batch_hint_equal_data,Gleiche Metadaten vorhanden,Same metadata in place.,\nmeta_data_batch_hint_no_data,Noch keine Metadaten vorhanden,No metadata available yet.,\nmeta_data_batch_hint_value,Werte oder Text,Values or text,\nmeta_data_batch_item_selected,Medieneintrag selektiert,Media entry selected,\nmeta_data_batch_items_selected,Medieneinträge selektiert,Media entries selected,\nmeta_data_batch_more,weitere,More,\nmeta_data_batch_some_ignored_1,(,(,\nmeta_data_batch_some_ignored_2,\" Medieneinträge wurden ignoriert, da Sie nicht über die nötigen Berechtigungen verfügen)\",\"Media entries were ignored, because you do not have the required permissions.)\",\nmeta_data_batch_success,Metadaten wurden erfolgreich aktualisiert.,metadata have been updated successfully.,\nmeta_data_batch_summary_all_post, Medieneinträge wurden gespeichert., Media entries have been saved.,NACH der Anzahl\nmeta_data_batch_summary_all_pre,Alle ,All ,VOR der Anzahl\nmeta_data_batch_summary_missing, haben fehlende Pflichtangaben, have missing mandatory data,\nmeta_data_batch_summary_published, haben ausgefüllte Pflichtfelder, have mandatory data,\nmeta_data_batch_summary_were_published, hatten bereits ausgefüllte Pflichtfelder, already had mandatory data,\nmeta_data_batch_title_post_collections, Sets gleichzeitig editieren,Edit sets at the same time,\nmeta_data_batch_title_post_media_entries, Medieneinträge gleichzeitig bearbeiten, media entries at once,\nmeta_data_batch_title_pre,Metadaten für ,Edit metadata for ,\nmeta_data_blank_value_for_required_meta_key_post,0,0,\nmeta_data_blank_value_for_required_meta_key_pre,Kein Wert vorhanden für ,No value available for,\nmeta_data_collection_batch_summary_all_post, Sets wurden gespeichert., Sets were saved.,\nmeta_data_collection_batch_summary_all_pre,Alle ,All ,\nmeta_data_delete_confirm_msg,\"Sind Sie sicher, dass Sie diese Werte löschen wollen?\",Are you sure you want to delete these data?,\nmeta_data_edit_collection_saved,Set wurde gespeichert.,Set was saved.,\nmeta_data_edit_media_entry_published,Der Medieneintrag wurde gespeichert und alle Pflichtfelder sind ausgefüllt.,Media entry was saved and mandatory data have been entered.,\nmeta_data_edit_media_entry_saved,Der Medieneintrag wurde gespeichert.,Media entry was saved.,\nmeta_data_edit_media_entry_saved_missing,\"Der Medieneintrag wurde gespeichert, aber es wurden nicht alle Pflichtfelder ausgefüllt.\",Media entry was saved but there some mandatory data are missing.,\nmeta_data_edit_more_data,Weitere Angaben,More data,\nmeta_data_form_all_data,Alle Daten,All metadata,\nmeta_data_form_cancel,Abbrechen,Cancel,\nmeta_data_form_save,Speichern,Save,\nmeta_data_form_saving,Die Metadaten werden gerade gespeichert. Dies kann einige Zeit in Anspruch nehmen. Bitte gedulden Sie sich und schliessen Sie das Fenster nicht.,Meta data are currently being saved. This will take some time. Please be patient and do not close the browser.,\nmeta_data_form_submit_btn,Speichern,Save,\nmeta_data_header_text,Werte,Data,\nmeta_data_input_date_placeholder_duration_from,von,from,\nmeta_data_input_date_placeholder_duration_to,bis,to,\nmeta_data_input_date_placeholder_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_placeholder_timestamp,wird als Text gespeichert,on,\nmeta_data_input_date_type_duration,von/bis,from/to,\nmeta_data_input_date_type_text,Freie Eingabe,Free text entry,\nmeta_data_input_date_type_timestamp,am,on,\nmeta_data_input_keywords_existing,Schlagwort ist bereits vergeben.,Keyword already assigned.,\nmeta_data_input_new_group_add,Arbeitsgruppe einfügen,Add work group,\nmeta_data_input_new_group_name,Name,Name,\nmeta_data_input_new_person_add,Person einfügen,Add person,\nmeta_data_input_new_person_first_name,Vorname,First name,\nmeta_data_input_new_person_last_name,Nachname,Last name,\nmeta_data_input_new_person_pseudonym,Pseudonym,Pseudonym,\nmeta_data_input_new_person_toggle,Neue Person oder Gruppe anlegen,Add new person or work group,\nmeta_data_input_person_save,Übernehmen,Apply,\nmeta_data_input_json_err_prefix,Eingabefehler: ,Input error: ,\nmeta_data_input_json_err_no_object,Wert ist nicht vom Typ 'Object'!,Value is not an 'Object'!,\nmeta_data_meta_key_documentation_url,> Online-Hilfe,click link for details,\nmeta_data_meta_key_label,Schlüssel,Key,\nmeta_data_role_add_another_btn,Weitere Funktion hinzufügen,Add another function,\nmeta_data_role_add_btn,Funktion hinzufügen,Add a function,\nmeta_data_role_add_heading,Funktion hinzufügen zu ,Add a function to,\nmeta_data_role_choose_label,Wählen Sie eine Funktion aus der Liste,Choose a function from the list,\nmeta_data_extensible_role_choose_label,Wählen Sie eine Funktion aus der Liste oder ergänzen Sie die Liste mit der gewünschten Funktion. Mit Enter die Eingabe abschliessen.,Choose a function from the list or enter the function and press Enter,\nmeta_data_role_edit_btn,Funktion bearbeiten,Edit function,\nmeta_data_role_edit_heading,Funktion bearbeiten,Edit the function of,\nmeta_data_role_remove_btn,Funktion entfernen,Remove function,\nmeta_data_type_label,Typ,Type,\nmeta_data_value_label,Wert,Data,\nmeta_datum_media_entry_label_id,Ressourcen-ID:,Resource ID:,\nmeta_datum_media_entry_label_string,Zusatztext:,additional text:,\nmeta_datum_media_entry_err_uuid_invalid,Ungültige UUID!,Invalid UUID!,\nmeta_datum_media_entry_value_unauthorized,Hinweis: Sie haben keinen Zugriff auf diese Ressource!,Notice: You do not have access to this resource!,\nmeta_datum_media_entry_value_not_found,Hinweis: Diese Ressource konnte nicht (mehr) gefunden werden!,Notice: This resource could not be found (anymore)!,\nmeta_key_order_alphabetical,a-z,a-z,\nmeta_key_order_alphabetical_hint,Die Schlagworte dieses Metadatenfeldes sind alphabetisch sortiert.,The keywords of this metakey are sorted alphabetically.,\nmeta_key_order_custom,redaktionell,editorial,\nmeta_key_order_custom_hint,Die Schlagworte dieses Metadatenfeldes sind redaktionell sortiert.,The keywords of this metakey are sorted editorially.,\nno_content_fallback,Keine Inhalte vorhanden.,No items available.,\nno_groups_fallback,Keine Arbeitsgruppen vorhanden.,No work groups available.,\nno_keywords_fallback,Keine Schlagworte vorhanden.,No keywords available.,\nno_relations_title,Es wurden keine Zusammenhänge gefunden.,No relations found.,\nnotifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nnotifications_message_transfer_responsibility,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to you.\",\nnotifications_message_transfer_responsibility_via_delegation,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{user} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{user} to %{viaDelegation}.\",\nnotifications_message_transfer_responsibility_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an Sie übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to you.\",\nnotifications_message_transfer_responsibility_via_delegation_by_user,\"Verantwortlichkeit für %{resourceType} %{resource} wurde von %{sourceDelegation} durch %{actingUser} an %{viaDelegation} übertragen.\",\"The responsibility for %{resourceType} %{resource} was transferred from %{sourceDelegation} by %{actingUser} to %{viaDelegation}.\",\nnotifications_media_entry,Medieneintrag,media entry,\nnotifications_collection,Set,set,\nnotifications_acknowledge_all,Alle Notifikationen löschen,Delete all notifications,\nnotifications_really_acknowledge_all,Wirklich alle löschen?,Really delete all?,\nnotifications_acknowledge,Löschen,Delete,\nnotifications_acknowledge_date_tooltip,Alle Notifikationen vom %{date} löschen,Delete all notifications of %{date},\nnotifications_no_notifications,Keine Einträge vorhanden,No entries present,\nnotifications_section_expand,Alle anzeigen,Show all,\nnotifications_section_collapse,Anzeige reduzieren,Reduce,\nnotifications_section_show_more,Weitere Einträge anzeigen,Show more,\npagination_nav_loadnext,Mehr laden,Load more,\npagination_nav_nextloading,Mehr Inhalte werden geladen.,More items are being loaded.,\npagination_nav_nextpage,Nächste Seite,Next page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_prevpage,Vorangehende Seite,Previous page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_nav_thispage,Diese Seite,This page,Wo: Manuelle Paginierung (ohne Javascript-Auto-Nachladen)\npagination_prefix,Seite ,Page ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_infix, von , of ,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_postfix,,,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npagination_selection_label,Seite auswählen,Select page,Wo: Paginierung - Seitenanzeige (Zwischenbalken)\npeople_toolbar_header,Ähnliche Inhalte,Related items,\npermission_entrusted_to_api_client,Sichtbar für API-Applikationen,Visible to API clients,\npermission_entrusted_to_group,Sichtbar für Arbeitsgruppen,Visible to work groups,\npermission_entrusted_to_user,Sichtbar für Nutzer/innen,Visible to users,\npermission_name_edit_metadata,Metadaten editieren,Edit metadata,\npermission_name_edit_metadata_and_relations,Metadaten editieren & Inhalte hinzufügen,Edit metadata and add items,\npermission_name_edit_permissions,Zugriffsberechtigungen ändern,Edit permissions,\npermission_name_get_full_size,Original exportieren & in PDF blättern,Download original & browse PDF,\npermission_name_get_metadata_and_previews,Betrachten,View,\npermission_name_use,Anwenden,Execute,bezieht sich auf Vokabulare!\npermission_name_view,Betrachten,View,bezieht sich auf Vokabulare!\npermission_overridden_by_public,(überschrieben durch die öffentlichen Berechtigungen),(overruled by public permissions),\npermission_subject_name_public,Internet,Internet,\npermission_subject_title_apiapps,API-Applikationen,API clients,\npermission_subject_title_groups,Gruppen,Groups,\npermission_subject_title_public,Öffentlichkeit,Public,\npermission_subject_title_users,Nutzer/innen,Users,\npermission_subject_title_users_or_delegations,Nutzer/innen / Verantwortungs-Gruppen,Users / Responsibility Groups,\npermissions_batch_success,Berechtigungen wurden erfolgreich aktualisiert.,Permissions have been updated succesfully.,\npermissions_batch_title_post, Inhalten., Items.,\npermissions_batch_title_pre,Berechtigungen ändern von ,Edit permissions of ,\npermissions_overview_yours_msg_end,\", haben gegenwärtig als Nutzer/in oder als Mitglied einer Verantwortungs-Gruppe oder Arbeitsgruppe folgende Berechtigungen:\",\", currently have the following permissions (either directly or as a member of a\nresponsibility group or as a member of a work group):\",\npermissions_overview_yours_msg_start,\"Sie, \",\"You, \",\npermissions_overview_yours_title,Ihre Berechtigungen,Your permissions,\npermissions_responsibility_title,Verantwortlichkeit,Responsibility,\npermissions_responsible_user_and_responsibility_group_title,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / Responsibility group,\npermissions_responsible_user_and_responsibility_group_msg,Der/die verantwortliche/r Nutzer/in hat alle Berechtigungen zu den ausgewählten Inhalten und kann diese auch löschen.,The responsible user / responsibility group has all permissions for the selected content and can also delete it.,\npermissions_responsible_delegation_title,Verantwortungs-Gruppe,Responsibility group,\npermissions_responsible_user_title,Verantwortliche Person,Responsible user,\npermissions_table_cancel_btn,Abbrechen,Cancel,\npermissions_table_edit_btn,Bearbeiten,Edit,\npermissions_table_remove_subject_btn,Berechtigung entfernen,Remove permission,\npermissions_table_save_btn,Speichern,Save,\npermissions_table_title,Zugriffsberechtigungen,Permissions,\npermissions_transfer_responsibility_link,Verantwortlichkeit übertragen,Transfer responsibility,\nperson_edit_add_uri_btn,URI hinzufügen,Add URL,\nperson_edit_cancel_btn,Abbrechen,Cancel,\nperson_edit_editing_header,Bearbeiten,editing,\nperson_show_external_uris,Links,Links,\nperson_edit_preview,Vorschau,Preview,\nperson_edit_save_btn,Speichern,Save,\nperson_edit_name_readonly_hint,\"Hinweis: Der eigene Name kann nicht geändert werden. Bitte wenden sie sich an den Support.\",\"Notice: Your own name can not be changed .Please contact the support.\"\nperson_show_description,Kurzbiographie,Short biography,\nperson_show_edit_btn,Seite bearbeiten,Edit Page,\nperson_show_external_uris,Links,Links,\nperson_show_external_uris_autority_control,Verzeichnis(se),Register,\nperson_show_first_name,Vorname,First name,\nperson_show_last_name,Nachname,Last name,\nperson_show_only_name,Name,Name,\nperson_show_pseudonym,Pseudonym,Pseudonym,\npicture_alt_fallback,(unbekannt),(unkown),\npicture_alt_prefix,Bild: ,Picture:,Prefix für Titel von Bildern (hover-titel/Screenreader)\nrelations_parents_title,Übergeordnete Sets,Parents,\nrelations_siblings_title,Benachbarte Sets,Siblings,\nrelations_title,Zusammenhänge,Relations,\nrelease_source_history,Source History,Source History,\nrelease_info,Release Info,Release info,\nrelease_local_git_version,Lokale Git Version,Local Git version,\nresource_action_collection_create,Set erstellen,Create set,\nresource_action_collection_destroy,Set löschen,Delete set,\nresource_action_collection_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_collection_edit_cover,Titelbild festlegen,Define set cover,\nresource_action_collection_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_collection_edit_highlight,Inhalte hervorheben,Highlight items,\nresource_action_collection_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_collection_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_collection_select_collection,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_action_collection_share,Set teilen,Share set,\nresource_action_media_entry_destroy,Medieneintrag löschen,Delete media entry,\nresource_action_media_entry_disfavor,Aus Favoriten entfernen,Remove from favorites,\nresource_action_media_entry_edit_custom_urls,Sprechende Adressen verwalten,Manage comprehensible address,\nresource_action_media_entry_edit_metadata,Metadaten editieren,Edit metadata,\nresource_action_media_entry_export,Medieneintrag exportieren,Export media entry,\nresource_action_media_entry_favor,Zu Favoriten hinzufügen,Add to favorites,\nresource_action_media_entry_manage_confidential_links,Vertrauliche Links verwalten,Manage Confidential Links,\nresource_action_media_entry_select_collection,Zu Sets hinzufügen / Aus Sets entfernen,Add to/remove from set,\nresource_action_media_entry_share,Medieneintrag teilen,Share media entry,\nresource_action_media_entry_update_file,Medieneintrag ersetzen,Replace media entry,\nresource_action_media_entry_xmp_import,XMP-Sidecar importieren,Import XMP sidecar,\nresource_action_more_actions,Weitere Aktionen,Further actions,\nresource_action_show_in_admin,Zeige im Admin-Interface,Show in Admin Interface,\nresource_ask_delete_cancel,Abbrechen,Cancel,\nresource_ask_delete_ok,Löschen,Delete,\nresource_ask_delete_question_post,?,?,\nresource_meta_data_copyright_notice,Rechte am geistigen Eigentum,Copyright notice,\nresource_meta_data_date,Datierung,Date,\nresource_meta_data_description,Beschreibung,Description,\nresource_meta_data_document_type,Dokumenttyp,Type of document,\nresource_meta_data_fallback,Es sind keine Metadaten zu diesem Kontext bereitgestellt.,There are no metadata related to this context.,\nresource_meta_data_has_validation_errors,Es gibt fehlerhafte Eingabefelder.,There are erroneously entry fields.,\"Wo: Meldung wenn Metadaten fehlerhaft, z.B. fehlendes Pflichtfeld\"\nresource_meta_data_keywords,Schlagworte,Keywords,\nresource_meta_data_resource_type,Medientyp,Media type,\nresource_meta_data_responsible,Verantwortliche/r Nutzer/in,Responsible user,\nresource_meta_data_saved_filter,Gespeicherter Filter,Saved filter,\nresource_meta_data_title,Titel,Title,\nresource_select_collection_cancel,Abbrechen,Cancel,\nresource_select_collection_clear,Löschen,Clear,\nresource_select_collection_has_more,Es gibt noch weitere Resultate. Bitte Suche verfeinern.,There are more results. Please refine the search.,\nresource_select_collection_hint_more,Es wurden noch weitere Sets gefunden. Bitte verfeinern Sie Ihre Suche.,Additional sets were found. Please refine your search.,\nresource_select_collection_new,Neue,New,\nresource_select_collection_non_assigned,Inhalt ist noch keinem Set zugewiesen.,Item is not yet related to any set.,\nresource_select_collection_non_found,Zu dieser Suche wurde kein Set gefunden.,No set was found.,\nresource_select_collection_save,Speichern,Save,\nresource_select_collection_search,Suchen,Search,\nresource_select_collection_search_placeholder,Suche,Search,\nresource_select_collection_title,Zu Set hinzufügen/entfernen,Add to/remove from set,\nresource_thumbnail_contents,Inhalte,Items,\nresource_thumbnail_sets,Sets,Sets,\nresources_box_batch_actions_addalltoclipboard_1,Alle ,Add all ,\nresources_box_batch_actions_addalltoclipboard_2, zur Stapelverarbeitung hinzufügen, to batch processing,\nresources_box_batch_actions_addselectedtoclipboard,Ausgewählte zur Stapelverarbeitung hinzufügen,Add selected to batch processing,\nresources_box_batch_actions_addtoset,Ausgewählte zu Set hinzufügen,Add selected to set,\nresources_box_batch_actions_clear_clipboard,Stapelverarbeitung leeren,Empty batch processing,\nresources_box_batch_actions_delete,Ausgewählte löschen,Delete selected,\nresources_box_batch_actions_edit,Metadaten von Medieneinträgen editieren,Edit metadata for media entries,\nresources_box_batch_actions_edit_title,Titel von Medieneinträgen editieren,Edit titles of media entries,\nresources_box_batch_actions_edit_all_collections,Metadaten von allen Sets editieren,Edit metadata of all sets at once,\nresources_box_batch_actions_edit_all_media_entries,Metadaten von allen Medieneinträgen editieren,Edit metadata of all media entries at once,\nresources_box_batch_actions_edit_sets,Metadaten von Sets editieren,Edit metadata of sets,\nresources_box_batch_actions_managepermissions,Berechtigungen von Medieneinträgen editieren,Edit permissions for media entries,\nresources_box_batch_actions_menu_title,Aktionen,Actions,\nresources_box_batch_actions_removefromclipboard,Ausgewählte aus der Stapelverarbeitung entfernen,Remove selected from batch processing,\nresources_box_batch_actions_removefromset,Aus Set entfernen,Remove from set,\nresources_box_batch_actions_sets_managepermissions,Berechtigungen von Sets editieren,Edit permissions for sets,\nresources_box_batch_actions_transfer_responsibility_entries,Verantwortlichkeit von Medieneinträgen übertragen,Transfer responsibility of media entries,\nresources_box_batch_actions_transfer_responsibility_sets,Verantwortlichkeit von Sets übertragen,Transfer responsibility of sets,\nresources_box_deselect_all,Alle abwählen,Deselect all,\nresources_box_filter,Filtern,Filter,\nresources_box_filters_note_post,\"aus, um weitere Filterkriterien anwenden zu können.\",\"in the Action bar to see more filter options.\",\nresources_box_filters_note_pre,Wählen Sie in der Aktionsleiste,Please select,\nresources_box_filters_note_or,oder,or,\nresources_box_new_search,Neue Suche,New search,\nresources_box_no_content,Keine Inhalte verfügbar,No items available.,\nresources_box_no_content_but_sets_1,Es gibt keine Medieneinträge für diese Suche. Es wurden aber ,There are no media entries related to this search process. But ,\nresources_box_no_content_but_sets_2,Sets,sets,\nresources_box_no_content_but_sets_3, gefunden., have been found.,\nresources_box_reset_filter,Filter zurücksetzen,Reset filter,\nresources_box_select_all,Alle auswählen,Select all,\nresources_box_selection_limit_ok,Ok,Ok,\nresources_box_selection_limit_page_1,\"Die Seite kann nicht selektiert werden, da sonst die maximale Anzahl von \",This page cannot be selected because otherwise the maximum number of,\nresources_box_selection_limit_page_2, ausgewählten Inhalten überstiegen würde., pages would be exceeded.,\nresources_box_selection_limit_single_1,\"Der Inhalt kann nicht selektiert werden, da sonst die maximale Anzahl von \",\"This item can not be selected, because otherwise the maximum number of\",\nresources_box_selection_limit_single_2, ausgewählten Inhalten überstiegen würde.,selected items would be exceeded.,\nresources_box_selection_remove_selection,Auswahl entfernen,Remove selection,\nresources_box_selection_select,Auswählen,Select,\nresources_box_title_count_post,Inhalte,Items,\nresources_box_info_header_no_system_groups,In dieser Auflistung werden %{system_groups_name} nicht berücksichtigt.,%{system_groups_name} are not taken into account.,\nresources_box_info_header_system_groups_name,Systemgruppen,System groups,\nresources_section_show_all,Alle anzeigen →,Show all →,\nresources_type_all,Alle,All,\nresponsibility_groups,Verantwortungs-Gruppen,Responsibility groups,\nsearch_btn_search,Suchen,Search,\nsearch_filename,Filename,File name,\nsearch_full_text,Volltext,Full text,\nsection_title_collections,Meine Sets,My sets,\nsection_title_groups,Meine Gruppen,My groups,\nsection_title_keywords,Meine Schlagworte,My keywords,\nsection_title_media_entries,Meine Medieneinträge,My media entries,\nsection_title_tokens,Meine Tokens,My tokens,\nsession_expiring_soon,Sie werden in weniger als %{minutes} Minuten ausgeloggt. Speichern Sie Ihre Eingaben und melden sich neu an.,You will be logged out in less than %{minutes} minutes. Save your input and log in again.\nshare_back_to_collection,Zurück zum Set,Back to the set,\nshare_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nshare_close,Schliessen,Close,\nshare_custom_url_hint_collection,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeiten), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-works-by-anna), use the following URL:\",\nshare_custom_url_hint_media_entry,\"Falls eine «sprechende Adresse» definiert wurde und Sie diese nutzen möchten (z.B. …/annas-neueste-arbeit), dann verwenden Sie folgende URL:\",\"If a \"comprehensible address\" has been defined and you would like to use it (e.g., …/latest-work-by-anna), use the following URL:\",\nshare_custom_url_none_available,Es ist keine sprechende Adresse angelegt.,No comprehensible address has been defined.,\nshare_custom_url_subtitle,Sprechende Adresse teilen,Share comprehensible address,\nshare_embed_hint_iframe,\"Falls dies von Ihrem gewünschen System nicht unterstützt wird, kopieren Sie den nachfolgenden iFrame-Code und fügen diesen als HTML-Element in das gewünschte System ein.\",\"If your desired system does not support this, copy the following iFrame code and paste it into the desired system as an HTML element.\",\nshare_embed_hint_iframe_code,\"IFrame-Code\",\"IFrame Code\",\nshare_embed_hint_oembed,\"Viele Content Management Systeme lassen einfaches Einbetten von Inhalten via oEmbed zu. Dazu kopieren Sie die URL oben und fügen sie in ein Inhaltselement ein.\",\"Many content management systems allow easy embedding of content via oEmbed. To do so, copy the URL above and paste it into a content element.\",\nshare_embed_hint_subtitle,\"Medieneintrag einbetten\",\"Embed Media Entry\",\nshare_title_collection,Set teilen,Share set,\nshare_title_media_entry,Medieneintrag teilen,Share media entry,\nshare_uuid_url_hint_collection,\"Möchten Sie dieses Set teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this set? Use the following URL.\",\nshare_uuid_url_hint_exporter,Auch für den Export mit dem Madek-Exporter wird diese URL benötigt.,This URL is also required for exporting with the Madek exporter.,\nshare_uuid_url_hint_media_entry,\"Möchten Sie diesen Medieneintrag teilen? Verwenden Sie dazu folgende URL.\",\"Would you like to share this media entry? Use the following URL.\",\nshare_uuid_url_subtitle,URL teilen,Share URL,\n\n\nsettings_notifications_title,Notifikationen,Notifications,\nsettings_notifications_info1,Notifikationen werden unter %{notifications} aufgeführt und optional per E-Mail verschickt.,Notifications are listed under %{notifications} and optionally sent via email.,\nsettings_notifications_info2,Notifikationen werden nach 6 Monaten gelöscht,Notifications will be removed after 6 months,\nsettings_notifications_info3,Die Einstellungen für die E-Mail-Notifikationen finden Sie nachstehend:,Choose your settings for e-mail notifications below:,\nsettings_notifications_email_label,An folgende E-Mail-Adresse bekommen Sie Notifikationen zugestellt:,Notifications will be sent to the following e-mail address:,\nsettings_notifications_locale_label,Die E-Mails werden in folgender Sprache verschickt:,You will receive emails in,\nsettings_notifications_locale_de,Deutsch,German,\nsettings_notifications_locale_en,Englisch,English,\nsettings_notifications_title_transfer_responsibility,Verantwortlichkeit übertragen,Transfer responsibility,\nsettings_notifications_title_weather_report,Wetterbericht,Weather report,\nsettings_notifications_email_frequency_label,In welcher Häufigkeit möchten Sie E-Mails erhalten?,Frequency of email notification:,\nsettings_notifications_email_frequency_immediately,sofort,immediately,\nsettings_notifications_email_frequency_daily,täglich (Zusammenfassung),daily (digest),\nsettings_notifications_email_frequency_weekly,wöchentlich (Zusammenfassung),weekly (digest),\nsettings_notifications_email_frequency_never,keine,none,\nsettings_advanced_functions_title,Erweiterte Funktionen,Advanced functions,\nsettings_show_all_data_tab_in_edit_mode_label,Reiter «Alle Daten» im Bearbeitungsmodus einblenden,Show the «All metadata» Tab in edit mode,\nsettings_video_playback_title,Video-Wiedergabe,Video playback,\nsettings_video_playback_mp4,MP4 (Standard),MP4 (default),\nsettings_video_playback_hls,HLS,HLS,\nmedia_player_format_mp4,MP4,MP4,\nmedia_player_format_hls,HLS,HLS,\nmedia_player_download,Herunterladen,Download,\nsettings_save_changes,Einstellungen speichern,Save settings,\nsettings_saved_changes,Einstellungen wurden gespeichert,Settings have been saved,\nsitemap_activities,Aktivitäten,Activities,\nsitemap_notifications,Notifikationen,Notifications,\nsitemap_api,API,API,\nsitemap_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_collections,Sets,Sets,\nsitemap_entries,Medieneinträge,Media entries,\nsitemap_explore,Erkunden,Explore,\nsitemap_filter_sets,Filtersets,Filter sets,\nsitemap_help,Hilfe,Support,\nsitemap_media_entries,Medieneinträge,Media entries,\nsitemap_metakey,Metakey,Metakey,\nsitemap_metakey_id,Metakey-ID,Metakey ID,\nsitemap_my_archive,Mein Archiv,My archive,\nsitemap_my_clipboard,Stapelverarbeitung,Batch processing,\nsitemap_my_content_collections,Sets,Sets,\nsitemap_my_content_media_entries,Medieneinträge,Media entries,\nsitemap_my_delegated_collections,Sets in gemeinsamer Verantwortung,Sets with joint responsibility,\nsitemap_my_delegated_media_entries,Medieneinträge in gemeinsamer Verantwortung,Media entries with joint responsibility,\nsitemap_my_entrusted_collections,Mir anvertraute Sets,My entrusted sets,\nsitemap_my_entrusted_filter_sets,Mir anvertraute Filtersets,My entrusted filter sets,\nsitemap_my_entrusted_media_entries,Mir anvertraute Medieneinträge,My entrusted media entries,\nsitemap_my_favorite_collections,Favoriten-Sets,Favorite sets,\nsitemap_my_favorite_media_entries,Favoriten-Medieneinträge,Favorite media entries,\nsitemap_my_groups,Gruppen,Groups,\nsitemap_my_latest_imports,Letzte Importe,Last imports,\nsitemap_my_unpublished,Unvollständige Medieneinträge,Incomplete media entries,\nsitemap_my_used_keywords,Schlagworte,Keywords,\nsitemap_search,Suche,Search,\nsitemap_tokens,Tokens,Tokens,\nsitemap_settings,Einstellungen,Settings,\nsitemap_vocabularies,Vokabulare,Vocabularies,\nconfidential_links_help_title,Hinweise,Hints,\nsitemap_vocabulary,Vokabular,Vocabulary,\nconfidential_links_help_text,\"Vertrauliche Links ermöglichen den direkten Zugriff auf Medieneinträge, auch wenn sie nicht öffentlich sichtbar sind.\nDiese Links ermöglichen somit auch Benutzern ohne Login einen Zugang zum Medieneintrag. Binden Sie Vertrauliche Links nicht in öffentlich zugängliche Webseiten ein, sonst werden die regulären Zugriffsberechtigungen wirkungslos.\nVertrauliche Links können nur vom Verantwortlichen eines Medieneintrags erstellt und zurückgezogen werden. Die Links können mit einem Verfallsdatum erstellt oder zeitlich unbeschränkt erstellt werden.\",\"Confidential Links can be used to enable access to Entries without making them publicly visible.\nThese Links therefore also make it possible to share Entries with Users that don't have a login. Please do not share or embed Confidential Links onto publicly accessible websites, because it would render the regular permission settings useless.\nConfidential Links can only be created by the responsible user of an Entry. They can be manually revoked at any time, and optionally be set to expire automatically after a set day.\",\nconfidential_links_header,Vertrauliche Links,Confidential Links,\nconfidential_links_title_pre,Vertrauliche Links für ,Confidential Links for ,\nconfidential_links_title_post,Zurück zum Set,Back to the set,\nconfidential_links_back_to_media_entry,Zurück zum Medieneintrag,Back to the media entry,\nconfidential_links_create_title,Neuen Vertraulichen Link erstellen,Create a new Confidential Link,\nconfidential_links_create_description,Beschreibung,Description,\nconfidential_links_create_submit,Vertraulichen Link erstellen,Create Confidential Link,\nconfidential_links_create_set_expiration_date,Ablaufdatum einstellen,Set expiration date,\nconfidential_links_create_cancel,Abbrechen,Cancel,\nconfidential_links_created_title,Neuer Vertraulicher Link erstellt,New Confidential Link created,\nconfidential_links_created_back_btn,Zurück zu allen Vertraulichen Links,Go back to all Confidential Links,\nconfidential_links_created_notice,Vertraulicher Link erstellt!,Confidential Link was created!,\nconfidential_links_show_link_for_copy,Link zum kopieren:,Link to copy:,\nconfidential_links_show_embedcode_for_copy,Embed-Code zum kopieren:,Embed-Code to copy:,\nconfidential_links_show_embed_link,Embed-Link:,Embed-link:,\nconfidential_links_show_embed_code_iframe,HTML-Code/iframe:,HTML-code/iframe:,\nconfidential_links_list_created_hint_pre,Erstellt: ,Created: ,\nconfidential_links_list_expires_hint_pre,Ablaufdatum: ,Expiration date: ,\nconfidential_links_list_no_expiry,Nie,Never,\nconfidential_links_list_new_button,Neuen Vertraulichen Link erstellen,Add a new Confidential Link,\nconfidential_links_list_no_description,(Keine Beschreibung),(No description),\nconfidential_links_list_revoke_btn_hint,Zurückziehen,Revoke,\nconfidential_links_list_revoke_confirm,\"Sind Sie sicher, dass Sie diesen Vertraulichen Link zurückziehen wollen?\",Are you sure you want to revoke this Confidential Link?,\nconfidential_links_list_revoked_title,Abgelaufene und zurückgezogene Vertrauliche Links,Expired and revoked Confidential Links,\nconfidential_links_list_show_url,Link anzeigen,Show Link,\nconfidential_links_list_copy_url,Vertraulichen Link kopieren,Copy Confidential Link,\nconfidential_links_head_id,ID,ID,\nconfidential_links_head_name,Name,Name,\nconfidential_links_head_token,Token,Token,\nconfidential_links_head_valid_since,Erstellt am,Created at,\nconfidential_links_head_valid_until,Läuft ab,Expires at,\nconfidential_links_show_title,Vertraulicher Link,Confidential Link,\nconfidential_links_access_notice,Dieser Medieneintrag wurde über einen Vertraulichen Link aufgerufen. Die URL dieser Seite darf nur einem eingeschränkten Personenkreis zugänglich sein.,This Entry was accessed via a Confidential Link. The URL of this page shall only be made accessible to a limited group of people.,\ntransfer_responsibility_batch_success_collection_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_collection_1a, Set , set ,\ntransfer_responsibility_batch_success_collection_1b, Sets , sets ,\ntransfer_responsibility_batch_success_collection_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_batch_success_media_entry_1,Sie haben für ,You have successfully transferred responsibility for ,\ntransfer_responsibility_batch_success_media_entry_1a, Medieneintrag , media entry,\ntransfer_responsibility_batch_success_media_entry_1b, Medieneinträge, media entries,\ntransfer_responsibility_batch_success_media_entry_2, die Verantwortlichkeit erfolgreich übertragen.,0,\ntransfer_responsibility_cancel,Abbrechen,Cancel,\ntransfer_responsibility_currently_responsible,Bisher verantwortlich,Currently responsible,\ntransfer_responsibility_to,Verantwortlichkeit übertragen auf,Transfer responsibility to,\ntransfer_responsibility_for_1_media_entry,für 1 Medieneintrag,for 1 media entry,\ntransfer_responsibility_for_n_media_entries,für %{nofResources} Medieneinträge,for %{nofResources} media entries,\ntransfer_responsibility_for_1_collection,für 1 Set,for %{nofResources} set,\ntransfer_responsibility_for_n_collections,für %{nofResources} Sets,for %{nofResources} sets,\ntransfer_responsibility_multiple_will_receive,Die bisher Verantwortlichen behalten folgende Berechtigungen:,The ones currently responsible are retaining the following permissions:,\ntransfer_responsibility_single_will_receive,%{name} behält folgende Berechtigungen:,%{name} is retaining the following permissions:,\ntransfer_responsibility_submit,Übertragen,Transfer,\ntransfer_responsibility_success_collection,Sie haben die Verantwortlichkeit für das Set erfolgreich übertragen.,You have successfully transferred responsibility for the set.,\ntransfer_responsibility_success_media_entry,Sie haben die Verantwortlichkeit für den Medieneintrag erfolgreich übertragen.,You have successfully transferred responsibility for the media entry.,\ntransfer_responsibility_title_single,Verantwortlichkeit übertragen,Transfer responsibility,\ntransfer_responsibility_title_batch,Verantwortlichkeit %{forNResources} übertragen,Transfer responsibility %{forNResources},\ntransfer_responsibility_you_will_receive,\"Sie, %{name}, behalten folgende Berechtigungen:\",\"You, %{name}, are retaining the following permissions:\",\nusage_data_created_at,Erstellt am,Created on,\nusage_data_import_at,Importiert am,Imported on,\nusage_data_import_by,Importiert durch,Imported by,\nusage_data_last_changes_empty,Es wurden noch keine Änderungen festgehalten.,No changes have been recorded yet.,\nusage_data_last_changes_title,Letzte Änderungen der Metadaten,Last change of metadata,\nusage_data_relations_children,Set enthält,Set is related to,\nusage_data_relations_parents,Übergeordnete Sets,Parent sets,\nusage_data_relations_title,Zusammenhänge,Relations,\nusage_data_responsibility_title,Verantwortlichkeit und Aktivitäten,Responsibility and activities,\nusage_data_responsible,Verantwortliche/r Nutzer/in / Verantwortungs-Gruppe,Responsible user / responsibility group,\nusage_terms_accept_btn,Nutzungsbedingungen akzeptieren,Accept usage terms,\nusage_terms_reject_btn,Ablehnen,Reject usage terms,\nuser_menu_admin_mode_toogle_off,Admin-Modus beenden,Stop admin mode,\nuser_menu_admin_mode_toogle_on,In Admin-Modus wechseln,Switch to admin mode,\nuser_menu_admin_ui,Admin-Interface öffnen,Open admin interface,\nuser_menu_login_btn,Anmelden,Log in,\nuser_menu_logout_btn,Abmelden,Log out,\nuser_menu_my_content_collections,Meine Sets,My sets,\nuser_menu_my_content_media_entries,Meine Medieneinträge,My media entries,\nuser_menu_my_favorite_collections,Favoriten - Sets,Favorites - sets,\nuser_menu_my_favorite_media_entries,Favoriten - Medieneinträge,Favorites - media entries,\nuser_menu_my_groups,Meine Gruppen,My groups,\nuser_menu_my_person,Meine Person,My person,\nuser_menu_upload,Medien importieren,Upload media,\nuser_name_deactivated,[Gelöschter User],[Deleted user],\nvocabularies_all,Alle Vokabulare,All vocabularies,\nvocabularies_contents_hint_1,Alle Inhalte mit Metadaten des Vokabulars ,All items with metadata related to the vocabulary,\nvocabularies_contents_hint_2,\". Sie sehen nur Inhalte, für die Sie berechtigt sind.\",. You can see only items you have permissions for.,\nvocabularies_keywords_hint_1,Alle im Vokabular ,All keywords contained in the vocabulary ,\nvocabularies_keywords_hint_2, enthaltenen Schlagworte und die dazugehörenden Metadatenfelder., and related meta data fields.,\nvocabularies_no_description,(Keine Beschreibung),(No description available),\nvocabularies_no_keywords,Keine Schlagworte vorhanden.,No keywords available.,\nvocabularies_no_people,Keine Personen vorhanden.,Keine Personen vorhanden.,\nvocabularies_people_hint_1,Alle im Vokabular ,Alle im Vokabular ,\nvocabularies_people_hint_2, enthaltenen Personen und die dazugehörenden Metadatenfelder., enthaltenen Personen und die dazugehörenden Metadatenfelder.,\nvocabularies_tabs_contents,Inhalte,Items,\nvocabularies_tabs_keywords,Schlagworte,Keywords,\nvocabularies_tabs_people,Personen,People,\nvocabularies_tabs_permissions,Berechtigungen,Permissions,\nvocabularies_tabs_vocabulary,Vokabular,Vocabulary,\nvocabulary_permissions_hint1,\"Für dieses Vokabular können die Berechtigungen \"\"Betrachten\"\" und \"\"Anwenden\"\" vergeben werden. Wenn Sie Mitglied einer berechtigten Arbeitsgruppe sind, können Sie weitere Personen zu dieser hinzufügen oder daraus entfernen. Bitte überlegen Sie Änderungen gut, da über Arbeitsgruppen auch weitere Berechtigungen gesteuert werden.\",\"This vocabulary can be managed with the permissions \"\"View\"\" and \"\"Execute\"\". If you are member of a work group which owns permissions, you are able to add or remove further users. Think carefully before you make changes to work groups as this may affect other permissions.\",\nvocabulary_permissions_hint2,\"Weitere Berechtigungen für Personen, Arbeitsgruppen, API-Applikationen oder die Öffentlichkeit werden durch den Administrator vergeben – bitte wenden Sie sich an den Support.\",\"Further permissions for persons, work groups, API clients or public usage are granted by the administrator. Please contact  support.\",\nvocabulary_term_info_contents,Inhalte,Items,\nvocabulary_term_info_description,Beschreibung,Description,\nvocabulary_term_info_rdfclass,Typ,Type,\nvocabulary_term_info_term,Begriff,Term,\nvocabulary_term_info_url,URL,URL,\nvocabulary_term_info_urls,URLs,URLs,\nworkgroup_link_to_contents_text,Inhalte,Items,\nworkgroup_link_to_contents_title,Inhalte dieser Arbeitsgruppe anzeigen,Show items of this work group,\nworkgroup_members_table_is_member,Mitglied?,Member?,\nworkgroup_members_table_login,Login,Login,\nworkgroup_members_table_title,Mitglieder,Members,\nmedia_entry_notice_new_versions,Für diesen Medieneintrag sind neuere Versionen vorhanden:,Newer versions are available for this media entry:,\nread_more_button,\"Mehr anzeigen\",\"Show more\",\nread_less_button,\"Weniger anzeigen\",\"Show less\",\nmedia_player_settings_title,Wiedergabe,Playback,\nmedia_player_media_config,Player-Konfiguration (JSON) / DEV-MODE,Player config (JSON) / DEV-MODE,\nmedia_player_media_config_hint_pre,\"JSON-Konfiguration für \",JSON configuration for ,\nmedia_player_media_config_hint_post,\": headers, overlays (stop_media_during_overlay true pausiert die Wiedergabe, solange das Overlay sichtbar ist) VTT-Dateien für Untertitel/Kapitel werden unten hochgeladen.\",\": headers, overlays (stop_media_during_overlay true pauses playback while the overlay is visible) VTT files for subtitles and chapters are uploaded below.\",\nmedia_player_save_config,Konfiguration speichern,Save config,\nmedia_player_config_invalid,Die Konfiguration ist kein gültiges JSON-Objekt.,Config is not a valid JSON object.,\nmedia_player_subtitles,Untertitel und Kapitel,Subtitles and chapters,\nmedia_player_no_subtitles,Keine VTT-Dateien.,No VTT files.,\nmedia_player_uploaded_subtitles,Hochgeladene Untertitel,Uploaded subtitles,\nmedia_player_language,Sprache,Language,\nmedia_player_label,Bezeichnung,Label,\nmedia_player_kind,Art,Kind,\nmedia_player_kind_hint,\"Untertitel sind der gesprochene Text. Kapitel sind Abschnitte auf der Zeitleiste.\",\"Subtitles are the spoken text. Chapters are sections on the timeline.\",\nmedia_player_kind_subtitles,Untertitel,Subtitles,\nmedia_player_kind_chapters,Kapitel,Chapters,\nmedia_player_default,Standard,Default,\nmedia_player_default_hint,\"Die Datei in der aktuellen Sprache der Oberfläche (Deutsch oder Englisch) wird vorausgewählt.\",\"The file in the current interface language (German or English) is selected.\",\nmedia_player_file,VTT-Datei,VTT file,\nmedia_player_choose_file,Datei auswählen,Choose file,\nmedia_player_no_file,Keine ausgewählt,No file chosen,\nmedia_player_upload,Hochladen,Upload,\nmedia_player_delete,Löschen,Delete,\nmedia_player_delete_confirm,Diese VTT-Datei löschen?,Delete this VTT file?,\n");
 		translations = Object.fromEntries(translationsList.map(function(item) {
 			return [item.lang, item.mapping];
 		}));
@@ -16888,55 +16868,35 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/Preloader.jsx
 	var Preloader_exports = /* @__PURE__ */ __exportAll({ default: () => Preloader$1 });
-	function _extends$30() {
-		return _extends$30 = Object.assign ? Object.assign.bind() : function(n) {
+	function _extends$31() {
+		return _extends$31 = Object.assign ? Object.assign.bind() : function(n) {
 			for (var e = 1; e < arguments.length; e++) {
 				var t = arguments[e];
 				for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
 			}
 			return n;
-		}, _extends$30.apply(null, arguments);
+		}, _extends$31.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$199, Preloader$1;
+	var import_react$201, Preloader$1;
 	var init_Preloader = __esmMin((() => {
-		import_react$199 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$198, Preloader$1;
-	var init_Preloader = __esmMin((() => {
-		import_react$198 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$201 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ui();
 		init_utils$2();
 		Preloader$1 = (props) => {
 			const restProps = omit(props, ["mods"]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$199.createElement("div", _extends$31({}, restProps, { className: ui_default.cx(ui_default.parseMods(props), "ui-preloader") }));
-========
-			return /*#__PURE__*/ import_react$198.createElement("div", _extends$30({}, restProps, { className: ui_default.cx(ui_default.parseMods(props), "ui-preloader") }));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$201.createElement("div", _extends$31({}, restProps, { className: ui_default.cx(ui_default.parseMods(props), "ui-preloader") }));
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/Modal.jsx
 	var Modal_exports = /* @__PURE__ */ __exportAll({ default: () => Modal });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$198, Modal;
+	var import_react$200, Modal;
 	var init_Modal = __esmMin((() => {
-		import_react$198 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$200 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Preloader();
 		Modal = ({ widthInPixel, loading, children }) => {
-			const [active, setActive] = (0, import_react$198.useState)(false);
-			(0, import_react$198.useEffect)(() => {
-========
-	var import_react$197, Modal;
-	var init_Modal = __esmMin((() => {
-		import_react$197 = /* @__PURE__ */ __toESM(require_react$1());
-		init_Preloader();
-		Modal = ({ widthInPixel, loading, children }) => {
-			const [active, setActive] = (0, import_react$197.useState)(false);
-			(0, import_react$197.useEffect)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const [active, setActive] = (0, import_react$200.useState)(false);
+			(0, import_react$200.useEffect)(() => {
 				setActive(true);
 				document.body.style.overflow = "hidden";
 				return () => {
@@ -16979,22 +16939,14 @@ var require = (function() {
 				modalStyle.width = widthInPixel + "px";
 				modalStyle.marginLeft = `-${widthInPixel / 2}px`;
 			} else modalStyle.width = widthInPixel + "px";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$198.createElement("div", { style: {
-========
-			return /*#__PURE__*/ import_react$197.createElement("div", { style: {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$200.createElement("div", { style: {
 				position: "absolute",
 				top: "0px",
 				bottom: "0px",
 				left: "0px",
 				right: "0px",
 				zIndex: "100000"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			} }, /*#__PURE__*/ import_react$198.createElement("div", { className: "modal-backdrop" }), loading ? /*#__PURE__*/ import_react$198.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$198.createElement("div", { style: fixedStyle }, /*#__PURE__*/ import_react$198.createElement("div", { style: staticStyle }, /*#__PURE__*/ import_react$198.createElement("div", {
-========
-			} }, /*#__PURE__*/ import_react$197.createElement("div", { className: "modal-backdrop" }), loading ? /*#__PURE__*/ import_react$197.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$197.createElement("div", { style: fixedStyle }, /*#__PURE__*/ import_react$197.createElement("div", { style: staticStyle }, /*#__PURE__*/ import_react$197.createElement("div", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			} }, /*#__PURE__*/ import_react$200.createElement("div", { className: "modal-backdrop" }), loading ? /*#__PURE__*/ import_react$200.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$200.createElement("div", { style: fixedStyle }, /*#__PURE__*/ import_react$200.createElement("div", { style: staticStyle }, /*#__PURE__*/ import_react$200.createElement("div", {
 				className: "modal",
 				style: modalStyle
 			}, children))));
@@ -17003,24 +16955,14 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/AskModal.jsx
 	var AskModal_exports = /* @__PURE__ */ __exportAll({ default: () => AskModal });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$197, AskModal;
+	var import_react$199, AskModal;
 	var init_AskModal = __esmMin((() => {
-		import_react$197 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$196, AskModal;
-	var init_AskModal = __esmMin((() => {
-		import_react$196 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$199 = /* @__PURE__ */ __toESM(require_react$1());
 		init_FormButton();
 		init_Modal();
 		init_Preloader();
 		AskModal = ({ title, error, onOk, onCancel, okText, cancelText, loading, children }) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$197.createElement(Modal, { widthInPixel: "400" }, /*#__PURE__*/ import_react$197.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$197.createElement("a", {
-========
-			return /*#__PURE__*/ import_react$196.createElement(Modal, { widthInPixel: "400" }, /*#__PURE__*/ import_react$196.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$196.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$199.createElement(Modal, { widthInPixel: "400" }, /*#__PURE__*/ import_react$199.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$199.createElement("a", {
 				onClick: onCancel,
 				"aria-hidden": "true",
 				className: "ui-modal-close",
@@ -17032,26 +16974,15 @@ var require = (function() {
 					float: "right",
 					paddingTop: "5px"
 				}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, /*#__PURE__*/ import_react$197.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$197.createElement("h3", { className: "title-l" }, title)), /*#__PURE__*/ import_react$197.createElement("div", {
+			}, /*#__PURE__*/ import_react$199.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$199.createElement("h3", { className: "title-l" }, title)), /*#__PURE__*/ import_react$199.createElement("div", {
 				className: "ui-modal-body",
 				style: { maxHeight: "none" }
-			}, loading && /*#__PURE__*/ import_react$197.createElement(Preloader$1, null), error && !loading && /*#__PURE__*/ import_react$197.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$197.createElement("div", { className: "error ui-alert" }, error)), !loading && children), /*#__PURE__*/ import_react$197.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$197.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$197.createElement("a", {
-========
-			}, /*#__PURE__*/ import_react$196.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$196.createElement("h3", { className: "title-l" }, title)), /*#__PURE__*/ import_react$196.createElement("div", {
-				className: "ui-modal-body",
-				style: { maxHeight: "none" }
-			}, loading && /*#__PURE__*/ import_react$196.createElement(Preloader$1, null), error && !loading && /*#__PURE__*/ import_react$196.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$196.createElement("div", { className: "error ui-alert" }, error)), !loading && children), /*#__PURE__*/ import_react$196.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$196.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$196.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, loading && /*#__PURE__*/ import_react$199.createElement(Preloader$1, null), error && !loading && /*#__PURE__*/ import_react$199.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$199.createElement("div", { className: "error ui-alert" }, error)), !loading && children), /*#__PURE__*/ import_react$199.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$199.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$199.createElement("a", {
 				onClick: onCancel,
 				"aria-hidden": "true",
 				className: "link weak",
 				"data-dismiss": "modal"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, cancelText), /*#__PURE__*/ import_react$197.createElement(FormButton, {
-========
-			}, cancelText), /*#__PURE__*/ import_react$196.createElement(FormButton, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, cancelText), /*#__PURE__*/ import_react$199.createElement(FormButton, {
 				onClick: onOk,
 				text: okText
 			}))));
@@ -17165,12 +17096,6 @@ var require = (function() {
 		if (parts.length !== 2 || !parts[0] || !parts[1]) return "16 / 9";
 		return `${parts[0]} / ${parts[1]}`;
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$196, import_prop_types$56, import_classnames$34, videojs, defaultProps$5, propTypes$8, VideoJS;
-	var init_VideoJs = __esmMin((() => {
-		import_react$196 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$56 = /* @__PURE__ */ __toESM(require_prop_types());
-========
 	function uniqueQualityOptions(sources) {
 		const byLabel = /* @__PURE__ */ new Map();
 		sources.forEach((source) => {
@@ -17198,11 +17123,10 @@ var require = (function() {
 		const rank = (type) => type === "audio/mpeg" ? 0 : 1;
 		return sources.filter((source) => source && source.src).slice().sort((a, b) => rank(a.type) - rank(b.type));
 	}
-	var import_react$195, import_prop_types$57, import_classnames$34, defaultProps$5, propTypes$8, CAST_CHROME_STYLE, AUDIO_CHROME_STYLE, VOLUME_POPOVER_STYLE, AUDIO_VOLUME_ALWAYS_STYLE, TitleOverlay, VideoJS;
+	var import_react$198, import_prop_types$58, import_classnames$34, defaultProps$5, propTypes$8, CAST_CHROME_STYLE, AUDIO_CHROME_STYLE, VOLUME_POPOVER_STYLE, AUDIO_VOLUME_ALWAYS_STYLE, TitleOverlay, VideoJS;
 	var init_VideoJs = __esmMin((() => {
-		import_react$195 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$57 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$198 = /* @__PURE__ */ __toESM(require_react$1());
+		import_prop_types$58 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$34 = /* @__PURE__ */ __toESM(require_classnames());
 		defaultProps$5 = {
 			mode: "video",
@@ -17211,43 +17135,38 @@ var require = (function() {
 			onReady: () => ({})
 		};
 		propTypes$8 = {
-			options: import_prop_types$57.default.shape({
-				fluid: import_prop_types$57.default.bool,
-				fill: import_prop_types$57.default.bool,
-				width: import_prop_types$57.default.number,
-				height: import_prop_types$57.default.number,
-				ratio: import_prop_types$57.default.string,
-				controlBar: import_prop_types$57.default.shape({ children: import_prop_types$57.default.arrayOf(import_prop_types$57.default.string) })
+			options: import_prop_types$58.default.shape({
+				fluid: import_prop_types$58.default.bool,
+				fill: import_prop_types$58.default.bool,
+				width: import_prop_types$58.default.number,
+				height: import_prop_types$58.default.number,
+				ratio: import_prop_types$58.default.string,
+				controlBar: import_prop_types$58.default.shape({ children: import_prop_types$58.default.arrayOf(import_prop_types$58.default.string) })
 			}),
-			captionConf: import_prop_types$57.default.any,
-			isInternal: import_prop_types$57.default.bool,
-			mode: import_prop_types$57.default.oneOf(["audio", "video"]),
-			onReady: import_prop_types$57.default.func,
-			onMount: import_prop_types$57.default.func,
-			sources: import_prop_types$57.default.arrayOf(import_prop_types$57.default.shape({
-				key: import_prop_types$57.default.string,
-				src: import_prop_types$57.default.string,
-				type: import_prop_types$57.default.string,
-				label: import_prop_types$57.default.string,
-				res: import_prop_types$57.default.oneOfType([import_prop_types$57.default.string, import_prop_types$57.default.number])
+			captionConf: import_prop_types$58.default.any,
+			isInternal: import_prop_types$58.default.bool,
+			mode: import_prop_types$58.default.oneOf(["audio", "video"]),
+			onReady: import_prop_types$58.default.func,
+			onMount: import_prop_types$58.default.func,
+			format: import_prop_types$58.default.oneOf(["mp4", "hls"]),
+			onQualityLabel: import_prop_types$58.default.func,
+			sources: import_prop_types$58.default.arrayOf(import_prop_types$58.default.shape({
+				key: import_prop_types$58.default.string,
+				src: import_prop_types$58.default.string,
+				type: import_prop_types$58.default.string,
+				label: import_prop_types$58.default.string,
+				res: import_prop_types$58.default.oneOfType([import_prop_types$58.default.string, import_prop_types$58.default.number])
 			})),
-			type: import_prop_types$57.default.oneOf(["audio", "video"]),
+			type: import_prop_types$58.default.oneOf(["audio", "video"]),
 			/** e.g. "500px" */
-			width: import_prop_types$57.default.string,
+			width: import_prop_types$58.default.string,
 			/** e.g. "200px" */
-			height: import_prop_types$57.default.string,
+			height: import_prop_types$58.default.string,
 			/** URL of a poster image */
-			poster: import_prop_types$57.default.string,
-			preload: import_prop_types$57.default.string,
-			className: import_prop_types$57.default.string
+			poster: import_prop_types$58.default.string,
+			preload: import_prop_types$58.default.string,
+			className: import_prop_types$58.default.string
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		VideoJS = class extends import_react$196.Component {
-			constructor() {
-				super();
-				this.state = { active: typeof window !== "undefined" && !!(window && window.document) };
-				this.toCallOnUnmount = [];
-========
 		CAST_CHROME_STYLE = `
   media-cast-button {
     display: none !important;
@@ -17312,33 +17231,35 @@ var require = (function() {
     pointer-events: auto !important;
   }
 `;
-		TitleOverlay = class extends import_react$195.Component {
+		TitleOverlay = class extends import_react$198.Component {
 			render() {
 				const { title, logoTitle, subtitle, link, hidden, logo } = this.props;
-				return /*#__PURE__*/ import_react$195.createElement("a", {
+				return /*#__PURE__*/ import_react$198.createElement("a", {
 					className: (0, import_classnames$34.default)("madek-titlebar", { "is-hidden": hidden }),
 					href: link,
 					target: "_blank",
 					rel: "noreferrer noopener"
-				}, /*#__PURE__*/ import_react$195.createElement("span", { className: "madek-titlebar-caption" }, /*#__PURE__*/ import_react$195.createElement("span", { className: "madek-titlebar-title" }, title), /*#__PURE__*/ import_react$195.createElement("span", { className: "madek-titlebar-subtitle" }, subtitle)), logo ? /*#__PURE__*/ import_react$195.createElement("span", {
+				}, /*#__PURE__*/ import_react$198.createElement("span", { className: "madek-titlebar-caption" }, /*#__PURE__*/ import_react$198.createElement("span", { className: "madek-titlebar-title" }, title), /*#__PURE__*/ import_react$198.createElement("span", { className: "madek-titlebar-subtitle" }, subtitle)), logo ? /*#__PURE__*/ import_react$198.createElement("span", {
 					className: "madek-titlebar-logo",
 					title: logoTitle
 				}) : null);
 			}
 		};
 		TitleOverlay.propTypes = {
-			title: import_prop_types$57.default.string,
-			logoTitle: import_prop_types$57.default.string,
-			subtitle: import_prop_types$57.default.string,
-			link: import_prop_types$57.default.string,
-			hidden: import_prop_types$57.default.bool,
-			logo: import_prop_types$57.default.bool
+			title: import_prop_types$58.default.string,
+			logoTitle: import_prop_types$58.default.string,
+			subtitle: import_prop_types$58.default.string,
+			link: import_prop_types$58.default.string,
+			hidden: import_prop_types$58.default.bool,
+			logo: import_prop_types$58.default.bool
 		};
-		VideoJS = class extends import_react$195.Component {
+		VideoJS = class extends import_react$198.Component {
 			constructor(props) {
 				super(props);
-				this.mediaRef = /*#__PURE__*/ (0, import_react$195.createRef)();
+				this.mediaRef = /*#__PURE__*/ (0, import_react$198.createRef)();
 				this.pendingRestore = null;
+				this._hls = null;
+				this._hlsGeneration = 0;
 				this.state = {
 					selectedLabel: pickInitialLabel(props.sources || []),
 					titleHidden: false
@@ -17347,8 +17268,8 @@ var require = (function() {
 				this.audioLayoutAttempts = 0;
 				this.volumePopoverAttempts = 0;
 				this.playbackCleanups = [];
-				this.layersRef = /*#__PURE__*/ (0, import_react$195.createRef)();
-				this.lyricsRef = /*#__PURE__*/ (0, import_react$195.createRef)();
+				this.layersRef = /*#__PURE__*/ (0, import_react$198.createRef)();
+				this.lyricsRef = /*#__PURE__*/ (0, import_react$198.createRef)();
 				this.onPlay = this.onPlay.bind(this);
 				this.onPause = this.onPause.bind(this);
 				this.onQualityChange = this.onQualityChange.bind(this);
@@ -17378,7 +17299,6 @@ var require = (function() {
 					const playPromise = media.play();
 					if (playPromise && typeof playPromise.catch === "function") playPromise.catch(() => {});
 				} else media.pause();
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 			}
 			componentDidMount() {
 				const { onMount, onReady } = this.props;
@@ -17386,6 +17306,8 @@ var require = (function() {
 				this.bindMediaEvents();
 				const media = this.mediaRef.current;
 				if (media && onReady) onReady(media);
+				if (this.props.onQualityLabel) this.props.onQualityLabel(this.state.selectedLabel);
+				if (this.props.format === "hls") this.attachHls();
 				this.scheduleQualityMenuSync();
 				this.scheduleAudioLayout();
 				this.scheduleVolumePopover();
@@ -17396,15 +17318,28 @@ var require = (function() {
 					const nextLabel = pickInitialLabel(this.props.sources || []);
 					if (nextLabel !== this.state.selectedLabel) this.setState({ selectedLabel: nextLabel });
 				}
-				if (prevState.selectedLabel !== this.state.selectedLabel && this.pendingRestore) this.restorePlaybackAfterSourceChange();
+				if (prevProps.format !== this.props.format) {
+					const media = this.mediaRef.current;
+					this.pendingRestore = media ? {
+						currentTime: media.currentTime || 0,
+						wasPlaying: !media.paused && !media.ended
+					} : this.pendingRestore;
+					this.destroyHls();
+					if (this.props.format === "hls") {
+						if (media) media.removeAttribute("src");
+						this.attachHls();
+					} else if (this.pendingRestore) this.restorePlaybackAfterSourceChange();
+				}
+				if (prevState.selectedLabel !== this.state.selectedLabel && this.pendingRestore && this.props.format !== "hls") this.restorePlaybackAfterSourceChange();
 				if (prevProps.mode !== this.props.mode) {
 					this.bindMediaEvents();
 					this.scheduleAudioLayout();
 					this.scheduleVolumePopover();
 				}
-				if (prevProps.sources !== this.props.sources || prevState.selectedLabel !== this.state.selectedLabel || prevProps.mode !== this.props.mode) this.scheduleQualityMenuSync();
+				if (prevProps.sources !== this.props.sources || prevState.selectedLabel !== this.state.selectedLabel || prevProps.mode !== this.props.mode || prevProps.format !== this.props.format) this.scheduleQualityMenuSync();
 			}
 			componentWillUnmount() {
+				this.destroyHls();
 				this.unbindMediaEvents();
 				if (this.qualityMenuTimer) clearTimeout(this.qualityMenuTimer);
 				if (this.audioLayoutTimer) clearTimeout(this.audioLayoutTimer);
@@ -17750,8 +17685,58 @@ var require = (function() {
 					button.remove();
 				});
 			}
+			destroyHls() {
+				this._hlsGeneration += 1;
+				if (this._hls) {
+					this._hls.destroy();
+					this._hls = null;
+				}
+			}
+			attachHls() {
+				if (typeof window === "undefined") return;
+				const media = this.mediaRef.current;
+				const source = (this.props.sources || [])[0];
+				if (!media || !source) return;
+				const restore = this.pendingRestore;
+				this.pendingRestore = null;
+				const generation = this._hlsGeneration;
+				const resume = () => {
+					if (!restore || generation !== this._hlsGeneration) return;
+					try {
+						media.currentTime = restore.currentTime;
+					} catch {}
+					if (restore.wasPlaying) {
+						const playPromise = media.play();
+						if (playPromise && typeof playPromise.catch === "function") playPromise.catch(() => {});
+					}
+				};
+				import("hls.js").then((mod) => {
+					if (generation !== this._hlsGeneration || this.props.format !== "hls") return;
+					const Hls = mod.default;
+					if (Hls.isSupported()) {
+						const hls = new Hls();
+						this._hls = hls;
+						hls.loadSource(source.src);
+						hls.attachMedia(media);
+						media.addEventListener("loadedmetadata", resume, { once: true });
+					} else if (media.canPlayType("application/vnd.apple.mpegurl")) {
+						media.src = source.src;
+						media.addEventListener("loadedmetadata", resume, { once: true });
+					}
+				}).catch(() => {});
+			}
 			syncQualityMenu() {
 				if (this.props.mode !== "video") return true;
+				if (this.props.format === "hls") {
+					const media = this.mediaRef.current;
+					const skin = media && media.closest("video-neutral-skin");
+					const shadow = skin && skin.shadowRoot;
+					if (!shadow) return false;
+					shadow.querySelectorAll("media-menu-radio-group.madek-quality-group").forEach((group) => {
+						group.remove();
+					});
+					return true;
+				}
 				const media = this.mediaRef.current;
 				const skin = media && media.closest("video-neutral-skin");
 				const shadow = skin && skin.shadowRoot;
@@ -17804,6 +17789,7 @@ var require = (function() {
 					wasPlaying: !media.paused && !media.ended
 				} : null;
 				this.setState({ selectedLabel: nextLabel });
+				if (this.props.onQualityLabel) this.props.onQualityLabel(nextLabel);
 			}
 			restorePlaybackAfterSourceChange() {
 				const media = this.mediaRef.current;
@@ -17830,7 +17816,7 @@ var require = (function() {
 				media.load();
 			}
 			renderTracks() {
-				return this.playbackTracks().map((track) => /*#__PURE__*/ import_react$195.createElement("track", {
+				return this.playbackTracks().map((track) => /*#__PURE__*/ import_react$198.createElement("track", {
 					key: `${track.kind}-${track.srclang}`,
 					kind: track.kind === "chapters" ? "chapters" : "subtitles",
 					src: track.src,
@@ -17847,15 +17833,15 @@ var require = (function() {
 				const showLyrics = this.props.mode === "audio" && this.playbackTracks("subtitles").length > 0;
 				if (!headers.length && !overlays.length && !showLyrics) return null;
 				const fallback = (this.playbackTracks("subtitles").find((track) => track.default) || {}).srclang || "";
-				return /*#__PURE__*/ import_react$195.createElement("div", {
+				return /*#__PURE__*/ import_react$198.createElement("div", {
 					className: "madek-player-layers",
 					ref: this.layersRef
 				}, headers.map((header) => {
-					const image = /*#__PURE__*/ import_react$195.createElement("img", {
+					const image = /*#__PURE__*/ import_react$198.createElement("img", {
 						src: header.src,
 						alt: header.alt || ""
 					});
-					return header.href ? /*#__PURE__*/ import_react$195.createElement("a", {
+					return header.href ? /*#__PURE__*/ import_react$198.createElement("a", {
 						key: `${header.src}-${header.start}`,
 						className: "madek-player-header",
 						href: header.href,
@@ -17864,25 +17850,25 @@ var require = (function() {
 						"data-start": header.start,
 						"data-end": header.end,
 						hidden: header.start > 0
-					}, image) : /*#__PURE__*/ import_react$195.createElement("span", {
+					}, image) : /*#__PURE__*/ import_react$198.createElement("span", {
 						key: `${header.src}-${header.start}`,
 						className: "madek-player-header",
 						"data-start": header.start,
 						"data-end": header.end,
 						hidden: header.start > 0
 					}, image);
-				}), overlays.map((overlay) => /*#__PURE__*/ import_react$195.createElement("div", {
+				}), overlays.map((overlay) => /*#__PURE__*/ import_react$198.createElement("div", {
 					key: `${overlay.start}-${overlay.end}`,
 					className: "madek-player-overlay",
 					"data-start": overlay.start,
 					"data-end": overlay.end,
 					"data-stop-media-during-overlay": overlay.stop_media_during_overlay ? "true" : "false",
 					hidden: true
-				}, Object.entries(overlay.text || {}).map(([code, text]) => /*#__PURE__*/ import_react$195.createElement("span", {
+				}, Object.entries(overlay.text || {}).map(([code, text]) => /*#__PURE__*/ import_react$198.createElement("span", {
 					key: code,
 					"data-lang": code,
 					hidden: code !== fallback
-				}, text)))), showLyrics ? /*#__PURE__*/ import_react$195.createElement("div", {
+				}, text)))), showLyrics ? /*#__PURE__*/ import_react$198.createElement("div", {
 					className: "madek-player-lyrics",
 					ref: this.lyricsRef,
 					hidden: true
@@ -17892,7 +17878,7 @@ var require = (function() {
 				const { captionConf, isInternal, mode } = this.props;
 				if (isInternal || !captionConf || mode !== "video") return null;
 				const { title, logoTitle, subtitle, link } = captionConf;
-				return /*#__PURE__*/ import_react$195.createElement(TitleOverlay, {
+				return /*#__PURE__*/ import_react$198.createElement(TitleOverlay, {
 					title,
 					logoTitle,
 					subtitle,
@@ -17904,7 +17890,7 @@ var require = (function() {
 			render() {
 				const { sources, mode, options = {}, poster, preload, className } = this.props;
 				if (!sources) throw new TypeError();
-				const selected = sourceForLabel(sources, this.state.selectedLabel);
+				const selected = (this.props.format || "mp4") === "hls" ? null : sourceForLabel(sources, this.state.selectedLabel);
 				const skinStyle = {
 					display: "block",
 					width: "100%",
@@ -17914,15 +17900,6 @@ var require = (function() {
 					"--media-font-family": "'Open Sans', sans-serif",
 					"--media-scale-unit": "12px"
 				};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const classes = (0, import_classnames$34.default)(className, "videojs", "video-js", "video-fluid", "vjs-default-skin");
-				const playerContent = /*#__PURE__*/ import_react$196.createElement(MediaTag, _extends$30({ ref: "videojs" }, mediaProps, {
-					height: options.height,
-					width: options.width,
-					className: classes
-				}), sources.map((src) => /*#__PURE__*/ import_react$196.createElement("source", _extends$30({ key: src.key }, omit$1(src, "res"), { "data-resolution": src.res }))));
-				return /*#__PURE__*/ import_react$196.createElement("div", { "data-vjs-player": true }, playerContent);
-========
 				if (options.fill) {
 					skinStyle.width = "100%";
 					skinStyle.height = "100%";
@@ -17972,18 +17949,17 @@ var require = (function() {
 					const audioSources = orderedAudioSources(sources);
 					const audioProps = { ...mediaProps };
 					delete audioProps.src;
-					return /*#__PURE__*/ import_react$195.createElement("div", {
+					return /*#__PURE__*/ import_react$198.createElement("div", {
 						className: wrapperClass,
 						style: { cursor: "pointer" },
 						onClick: this.onAudioAreaClick
-					}, /*#__PURE__*/ import_react$195.createElement("audio-player", null, /*#__PURE__*/ import_react$195.createElement("audio-neutral-skin", { style: skinStyle }, /*#__PURE__*/ import_react$195.createElement("audio", audioProps, audioSources.map((source) => /*#__PURE__*/ import_react$195.createElement("source", {
+					}, /*#__PURE__*/ import_react$198.createElement("audio-player", null, /*#__PURE__*/ import_react$198.createElement("audio-neutral-skin", { style: skinStyle }, /*#__PURE__*/ import_react$198.createElement("audio", audioProps, audioSources.map((source) => /*#__PURE__*/ import_react$198.createElement("source", {
 						key: source.key || source.src,
 						src: source.src,
 						type: source.type
 					})), this.renderTracks()))), this.renderPlaybackLayers());
 				}
-				return /*#__PURE__*/ import_react$195.createElement("div", { className: wrapperClass }, /*#__PURE__*/ import_react$195.createElement("video-player", { poster: poster || void 0 }, /*#__PURE__*/ import_react$195.createElement("video-neutral-skin", { style: skinStyle }, /*#__PURE__*/ import_react$195.createElement("video", mediaProps, this.renderTracks()))), this.renderPlaybackLayers(), this.renderTitleOverlay());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$198.createElement("div", { className: wrapperClass }, /*#__PURE__*/ import_react$198.createElement("video-player", { poster: poster || void 0 }, /*#__PURE__*/ import_react$198.createElement("video-neutral-skin", { style: skinStyle }, /*#__PURE__*/ import_react$198.createElement("video", mediaProps, this.renderTracks()))), this.renderPlaybackLayers(), this.renderTitleOverlay());
 			}
 		};
 		VideoJS.propTypes = propTypes$8;
@@ -17992,47 +17968,36 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/AudioPlayer.jsx
 	var AudioPlayer_exports = /* @__PURE__ */ __exportAll({ default: () => AudioPlayer });
-	function _extends$29() {
-		return _extends$29 = Object.assign ? Object.assign.bind() : function(n) {
+	function _extends$30() {
+		return _extends$30 = Object.assign ? Object.assign.bind() : function(n) {
 			for (var e = 1; e < arguments.length; e++) {
 				var t = arguments[e];
 				for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
 			}
 			return n;
-		}, _extends$29.apply(null, arguments);
+		}, _extends$30.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$195, import_prop_types$55, VIDEOJS_OPTIONS$1, propTypes$7, AudioPlayer;
+	var import_react$197, import_prop_types$57, propTypes$7, AudioPlayer;
 	var init_AudioPlayer = __esmMin((() => {
-		import_react$195 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$55 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$194, import_prop_types$56, propTypes$7, AudioPlayer;
-	var init_AudioPlayer = __esmMin((() => {
-		import_react$194 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$56 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$197 = /* @__PURE__ */ __toESM(require_react$1());
+		import_prop_types$57 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_VideoJs();
 		propTypes$7 = {
 			/** Soures of different type and quality (e.g. ogg, mp3) */
-			sources: import_prop_types$56.default.arrayOf(import_prop_types$56.default.shape({
-				url: import_prop_types$56.default.string,
-				content_type: import_prop_types$56.default.string,
-				profile: import_prop_types$56.default.string
+			sources: import_prop_types$57.default.arrayOf(import_prop_types$57.default.shape({
+				url: import_prop_types$57.default.string,
+				content_type: import_prop_types$57.default.string,
+				profile: import_prop_types$57.default.string
 			})),
 			/** Options (geometry) */
-			options: import_prop_types$56.default.shape({
-				fluid: import_prop_types$56.default.bool,
-				width: import_prop_types$56.default.number,
-				height: import_prop_types$56.default.number,
-				ratio: import_prop_types$56.default.string
+			options: import_prop_types$57.default.shape({
+				fluid: import_prop_types$57.default.bool,
+				width: import_prop_types$57.default.number,
+				height: import_prop_types$57.default.number,
+				ratio: import_prop_types$57.default.string
 			})
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		AudioPlayer = class extends import_react$195.Component {
-========
-		AudioPlayer = class extends import_react$194.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		AudioPlayer = class extends import_react$197.Component {
 			constructor() {
 				super();
 			}
@@ -18042,17 +18007,10 @@ var require = (function() {
 					type: source.content_type,
 					key: `${source.url}${source.content_type}`
 				}));
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$195.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$197.createElement("div", { style: {
 					margin: "0px",
 					padding: "0px"
-				} }, /*#__PURE__*/ import_react$195.createElement(VideoJS, _extends$29({}, props, {
-========
-				return /*#__PURE__*/ import_react$194.createElement("div", { style: {
-					margin: "0px",
-					padding: "0px"
-				} }, /*#__PURE__*/ import_react$194.createElement(VideoJS, _extends$29({}, props, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				} }, /*#__PURE__*/ import_react$197.createElement(VideoJS, _extends$30({}, props, {
 					mode: "audio",
 					className: "ui-audio-player",
 					sources: videoSources,
@@ -18065,26 +18023,19 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/Button.jsx
 	var Button_exports = /* @__PURE__ */ __exportAll({ default: () => Button$3 });
-	function _extends$28() {
-		return _extends$28 = Object.assign ? Object.assign.bind() : function(n) {
+	function _extends$29() {
+		return _extends$29 = Object.assign ? Object.assign.bind() : function(n) {
 			for (var e = 1; e < arguments.length; e++) {
 				var t = arguments[e];
 				for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
 			}
 			return n;
-		}, _extends$28.apply(null, arguments);
+		}, _extends$29.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$194, import_prop_types$54, Button$3;
+	var import_react$196, import_prop_types$56, Button$3;
 	var init_Button = __esmMin((() => {
-		import_react$194 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$54 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$193, import_prop_types$55, Button$3;
-	var init_Button = __esmMin((() => {
-		import_react$193 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$55 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$196 = /* @__PURE__ */ __toESM(require_react$1());
+		import_prop_types$56 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_utils$2();
 		Button$3 = (props) => {
@@ -18093,94 +18044,71 @@ var require = (function() {
 			const baseClass = className ? className : mod ? `${mod}-button` : "button";
 			const isDisabled = disabled || !(href || onClick || type);
 			const classes = ui_default.cx({ disabled: isDisabled }, ui_default.parseMods(props), baseClass);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (href || onClick) return /*#__PURE__*/ import_react$194.createElement("a", _extends$28({}, cleanProps, {
-========
-			if (href || onClick) return /*#__PURE__*/ import_react$193.createElement("a", _extends$28({}, cleanProps, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			if (href || onClick) return /*#__PURE__*/ import_react$196.createElement("a", _extends$29({}, cleanProps, {
 				href,
 				onClick,
 				className: classes
 			}), children);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else if (type) return /*#__PURE__*/ import_react$194.createElement("button", _extends$28({}, cleanProps, {
-========
-			else if (type) return /*#__PURE__*/ import_react$193.createElement("button", _extends$28({}, cleanProps, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			else if (type) return /*#__PURE__*/ import_react$196.createElement("button", _extends$29({}, cleanProps, {
 				type,
 				onClick,
 				className: classes
 			}), children);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else return /*#__PURE__*/ import_react$194.createElement("span", _extends$28({}, cleanProps, { className: classes }), children);
-========
-			else return /*#__PURE__*/ import_react$193.createElement("span", _extends$28({}, cleanProps, { className: classes }), children);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			else return /*#__PURE__*/ import_react$196.createElement("span", _extends$29({}, cleanProps, { className: classes }), children);
 		};
 		Button$3.propTypes = {
-			href: import_prop_types$55.default.string,
-			type: import_prop_types$55.default.string,
-			className: import_prop_types$55.default.string,
-			style: import_prop_types$55.default.object,
-			onClick: import_prop_types$55.default.func,
-			mod: import_prop_types$55.default.oneOf(["primary", "tertiary"]),
-			disabled: import_prop_types$55.default.bool,
-			children: import_prop_types$55.default.node.isRequired
+			href: import_prop_types$56.default.string,
+			type: import_prop_types$56.default.string,
+			className: import_prop_types$56.default.string,
+			style: import_prop_types$56.default.object,
+			onClick: import_prop_types$56.default.func,
+			mod: import_prop_types$56.default.oneOf(["primary", "tertiary"]),
+			disabled: import_prop_types$56.default.bool,
+			children: import_prop_types$56.default.node.isRequired
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/propTypes.js
 	var propTypes_exports = /* @__PURE__ */ __exportAll({ default: () => propTypes_default });
-	var import_prop_types$54, propTypes_default;
+	var import_prop_types$55, propTypes_default;
 	var init_propTypes = __esmMin((() => {
-		import_prop_types$54 = /* @__PURE__ */ __toESM(require_prop_types());
+		import_prop_types$55 = /* @__PURE__ */ __toESM(require_prop_types());
 		propTypes_default = {
-			Clickable: import_prop_types$54.default.shape({
-				name: import_prop_types$54.default.node.isRequired,
-				isActive: import_prop_types$54.default.bool,
-				href: import_prop_types$54.default.string,
-				onClick: import_prop_types$54.default.func
+			Clickable: import_prop_types$55.default.shape({
+				name: import_prop_types$55.default.node.isRequired,
+				isActive: import_prop_types$55.default.bool,
+				href: import_prop_types$55.default.string,
+				onClick: import_prop_types$55.default.func
 			}),
-			Toggleable: import_prop_types$54.default.shape({
-				isActive: import_prop_types$54.default.bool.isRequired,
-				isDirty: import_prop_types$54.default.bool,
-				active: import_prop_types$54.default.string,
-				inactive: import_prop_types$54.default.string,
-				href: import_prop_types$54.default.string,
-				onClick: import_prop_types$54.default.func
+			Toggleable: import_prop_types$55.default.shape({
+				isActive: import_prop_types$55.default.bool.isRequired,
+				isDirty: import_prop_types$55.default.bool,
+				active: import_prop_types$55.default.string,
+				inactive: import_prop_types$55.default.string,
+				href: import_prop_types$55.default.string,
+				onClick: import_prop_types$55.default.func
 			})
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/ButtonGroup.jsx
 	var ButtonGroup_exports = /* @__PURE__ */ __exportAll({ default: () => ButtonGroup });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$193, import_prop_types$52, ButtonGroup;
+	var import_react$195, import_prop_types$54, ButtonGroup;
 	var init_ButtonGroup = __esmMin((() => {
-		import_react$193 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$52 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$192, import_prop_types$53, ButtonGroup;
-	var init_ButtonGroup = __esmMin((() => {
-		import_react$192 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$53 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$195 = /* @__PURE__ */ __toESM(require_react$1());
+		import_prop_types$54 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_propTypes();
 		ButtonGroup = (props) => {
 			const { children } = props;
 			const classes = ui_default.cx(ui_default.parseMods(props), "button-group");
 			if (!children) return null;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$193.createElement("div", {
-========
-			return /*#__PURE__*/ import_react$192.createElement("div", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$195.createElement("div", {
 				className: classes,
 				"data-test-id": props["data-test-id"]
 			}, children);
 		};
-		ButtonGroup.proptypes = { list: import_prop_types$53.default.arrayOf(propTypes_default.Clickable) };
+		ButtonGroup.proptypes = { list: import_prop_types$54.default.arrayOf(propTypes_default.Clickable) };
 	}));
 	//#endregion
 	//#region node_modules/babel-runtime/helpers/objectWithoutProperties.js
@@ -26423,26 +26351,19 @@ var require = (function() {
 		default: () => DatePicker,
 		parseDate: () => parseDate
 	});
-	function _extends$27() {
-		return _extends$27 = Object.assign ? Object.assign.bind() : function(n) {
+	function _extends$28() {
+		return _extends$28 = Object.assign ? Object.assign.bind() : function(n) {
 			for (var e = 1; e < arguments.length; e++) {
 				var t = arguments[e];
 				for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
 			}
 			return n;
-		}, _extends$27.apply(null, arguments);
+		}, _extends$28.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$192, import_prop_types$51, import_Overlay$1, import_moment$11, import_DayPicker$1, import_moment$12, LOCALE, lazyDate, propTypeLazyDate, DatePicker, parseDate;
+	var import_react$194, import_prop_types$53, import_Overlay$1, import_moment$11, import_DayPicker$1, import_moment$12, LOCALE, lazyDate, propTypeLazyDate, DatePicker, parseDate;
 	var init_DatePicker = __esmMin((() => {
-		import_react$192 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$51 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$191, import_prop_types$52, import_Overlay$1, import_moment$11, import_DayPicker$1, import_moment$12, LOCALE, lazyDate, propTypeLazyDate, DatePicker, parseDate;
-	var init_DatePicker = __esmMin((() => {
-		import_react$191 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$52 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$194 = /* @__PURE__ */ __toESM(require_react$1());
+		import_prop_types$53 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_Overlay$1 = /* @__PURE__ */ __toESM(require_Overlay());
 		import_moment$11 = /* @__PURE__ */ __toESM(require_moment$1());
 		require_de();
@@ -26455,13 +26376,8 @@ var require = (function() {
 			const d = isDate(strOrDate) ? strOrDate : (0, import_moment$11.default)(strOrDate, "L", true).toDate();
 			if (!isNaN(d)) return d;
 		});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		propTypeLazyDate = import_prop_types$51.default.oneOfType([import_prop_types$51.default.string, import_prop_types$51.default.instanceOf(Date)]);
-		DatePicker = class extends import_react$192.Component {
-========
-		propTypeLazyDate = import_prop_types$52.default.oneOfType([import_prop_types$52.default.string, import_prop_types$52.default.instanceOf(Date)]);
-		DatePicker = class extends import_react$191.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		propTypeLazyDate = import_prop_types$53.default.oneOfType([import_prop_types$53.default.string, import_prop_types$53.default.instanceOf(Date)]);
+		DatePicker = class extends import_react$194.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -26541,17 +26457,10 @@ var require = (function() {
 			}
 			render({ props, state } = this) {
 				const { id, className, placeholder, laterThan, initialDate, ...restProps } = props;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$192.createElement("div", {
+				return /*#__PURE__*/ import_react$194.createElement("div", {
 					id: `${id}.DatePicker`,
 					className: "ui-datepicker"
-				}, /*#__PURE__*/ import_react$192.createElement("input", {
-========
-				return /*#__PURE__*/ import_react$191.createElement("div", {
-					id: `${id}.DatePicker`,
-					className: "ui-datepicker"
-				}, /*#__PURE__*/ import_react$191.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$194.createElement("input", {
 					type: "text",
 					className,
 					placeholder,
@@ -26562,26 +26471,15 @@ var require = (function() {
 					ref: (el) => {
 						this.inputEl = el;
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), /*#__PURE__*/ import_react$192.createElement(import_Overlay$1.default, {
-========
-				}), /*#__PURE__*/ import_react$191.createElement(import_Overlay$1.default, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$194.createElement(import_Overlay$1.default, {
 					placement: "bottom",
 					show: this.inputEl && this.state.isFocused,
 					container: this,
 					target: () => this.inputEl
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$192.createElement("div", {
+				}, /*#__PURE__*/ import_react$194.createElement("div", {
 					className: "ui-datepicker--overlay",
 					onMouseDown: this._onPickerClick
-				}, /*#__PURE__*/ import_react$192.createElement(import_DayPicker$1.default, _extends$27({}, restProps, {
-========
-				}, /*#__PURE__*/ import_react$191.createElement("div", {
-					className: "ui-datepicker--overlay",
-					onMouseDown: this._onPickerClick
-				}, /*#__PURE__*/ import_react$191.createElement(import_DayPicker$1.default, _extends$27({}, restProps, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$194.createElement(import_DayPicker$1.default, _extends$28({}, restProps, {
 					locale: LOCALE,
 					localeUtils: import_moment$12.default,
 					onDayClick: this._onDaySelect,
@@ -26599,11 +26497,11 @@ var require = (function() {
 			}
 		};
 		DatePicker.propTypes = {
-			value: import_prop_types$52.default.string,
-			onChange: import_prop_types$52.default.func.isRequired,
-			onSelect: import_prop_types$52.default.func,
-			className: import_prop_types$52.default.string,
-			placeholder: import_prop_types$52.default.string,
+			value: import_prop_types$53.default.string,
+			onChange: import_prop_types$53.default.func.isRequired,
+			onSelect: import_prop_types$53.default.func,
+			className: import_prop_types$53.default.string,
+			placeholder: import_prop_types$53.default.string,
 			initialDate: propTypeLazyDate,
 			laterThan: propTypeLazyDate
 		};
@@ -26613,26 +26511,19 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/Icon.jsx
 	var Icon_exports = /* @__PURE__ */ __exportAll({ default: () => Icon$4 });
-	function _extends$26() {
-		return _extends$26 = Object.assign ? Object.assign.bind() : function(n) {
+	function _extends$27() {
+		return _extends$27 = Object.assign ? Object.assign.bind() : function(n) {
 			for (var e = 1; e < arguments.length; e++) {
 				var t = arguments[e];
 				for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
 			}
 			return n;
-		}, _extends$26.apply(null, arguments);
+		}, _extends$27.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$191, import_prop_types$50, FONT_AWESOME_ICONS, Icon$4;
+	var import_react$193, import_prop_types$52, FONT_AWESOME_ICONS, Icon$4;
 	var init_Icon = __esmMin((() => {
-		import_react$191 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$50 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$190, import_prop_types$51, FONT_AWESOME_ICONS, Icon$4;
-	var init_Icon = __esmMin((() => {
-		import_react$190 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$51 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$193 = /* @__PURE__ */ __toESM(require_react$1());
+		import_prop_types$52 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_utils$2();
 		FONT_AWESOME_ICONS = [
@@ -26644,37 +26535,26 @@ var require = (function() {
 			const { i, ...restProps } = omit(props, ["mods"]);
 			const iconClass = FONT_AWESOME_ICONS.includes(i) ? `fa fa-${i}` : `icon-${i}`;
 			const classes = ui_default.cx(ui_default.parseMods(props), iconClass);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$191.createElement("i", _extends$26({}, restProps, { className: classes }));
-========
-			return /*#__PURE__*/ import_react$190.createElement("i", _extends$26({}, restProps, { className: classes }));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$193.createElement("i", _extends$27({}, restProps, { className: classes }));
 		};
-		Icon$4.propTypes = { i: import_prop_types$51.default.string.isRequired };
+		Icon$4.propTypes = { i: import_prop_types$52.default.string.isRequired };
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/Link.jsx
 	var Link_exports = /* @__PURE__ */ __exportAll({ default: () => Link$5 });
-	function _extends$25() {
-		return _extends$25 = Object.assign ? Object.assign.bind() : function(n) {
+	function _extends$26() {
+		return _extends$26 = Object.assign ? Object.assign.bind() : function(n) {
 			for (var e = 1; e < arguments.length; e++) {
 				var t = arguments[e];
 				for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
 			}
 			return n;
-		}, _extends$25.apply(null, arguments);
+		}, _extends$26.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$190, import_prop_types$49, Link$5;
+	var import_react$192, import_prop_types$51, Link$5;
 	var init_Link = __esmMin((() => {
-		import_react$190 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$49 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$189, import_prop_types$50, Link$5;
-	var init_Link = __esmMin((() => {
-		import_react$189 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$50 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$192 = /* @__PURE__ */ __toESM(require_react$1());
+		import_prop_types$51 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_utils$2();
 		Link$5 = (props) => {
@@ -26683,20 +26563,16 @@ var require = (function() {
 			const isLink = !!(href || onClick);
 			const className = ui_default.cx({ link: isLink }, ui_default.parseMods(props), "ui-link");
 			const isDisabled = !isLink ? true : disabled;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$190.createElement("a", _extends$25({}, restProps, {
-========
-			return /*#__PURE__*/ import_react$189.createElement("a", _extends$25({}, restProps, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$192.createElement("a", _extends$26({}, restProps, {
 				className,
 				disabled: isDisabled
 			}), children);
 		};
 		Link$5.propTypes = {
-			href: import_prop_types$50.default.string,
-			onClick: import_prop_types$50.default.func,
-			children: import_prop_types$50.default.node,
-			disabled: import_prop_types$50.default.bool
+			href: import_prop_types$51.default.string,
+			onClick: import_prop_types$51.default.func,
+			children: import_prop_types$51.default.node,
+			disabled: import_prop_types$51.default.bool
 		};
 	}));
 	//#endregion
@@ -28548,89 +28424,58 @@ var require = (function() {
 		MenuItem: () => UIMenuItem,
 		default: () => UIDropdown
 	});
-	function _extends$24() {
-		return _extends$24 = Object.assign ? Object.assign.bind() : function(n) {
+	function _extends$25() {
+		return _extends$25 = Object.assign ? Object.assign.bind() : function(n) {
 			for (var e = 1; e < arguments.length; e++) {
 				var t = arguments[e];
 				for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
 			}
 			return n;
-		}, _extends$24.apply(null, arguments);
+		}, _extends$25.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$189, import_prop_types$48, import_Dropdown, import_MenuItem, UIDropdown, Menu, UIMenuItem;
+	var import_react$191, import_prop_types$50, import_Dropdown, import_MenuItem, UIDropdown, Menu, UIMenuItem;
 	var init_Dropdown = __esmMin((() => {
-		import_react$189 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$48 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$188, import_prop_types$49, import_Dropdown, import_MenuItem, UIDropdown, Menu, UIMenuItem;
-	var init_Dropdown = __esmMin((() => {
-		import_react$188 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$49 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$191 = /* @__PURE__ */ __toESM(require_react$1());
+		import_prop_types$50 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_ui();
 		init_Icon();
 		init_Link();
 		import_Dropdown = /* @__PURE__ */ __toESM(require_Dropdown());
 		import_MenuItem = /* @__PURE__ */ __toESM(require_MenuItem());
 		UIDropdown = ({ toggle, toggleProps, children, id, mods, testId }) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const [isClient, setIsClient] = (0, import_react$189.useState)(false);
-			(0, import_react$189.useEffect)(() => {
+			const [isClient, setIsClient] = (0, import_react$191.useState)(false);
+			(0, import_react$191.useEffect)(() => {
 				setIsClient(true);
 			}, []);
 			const fallbackStyles = () => {
-				return /*#__PURE__*/ import_react$189.createElement("style", { type: "text/css" }, `\
-========
-			const [isClient, setIsClient] = (0, import_react$188.useState)(false);
-			(0, import_react$188.useEffect)(() => {
-				setIsClient(true);
-			}, []);
-			const fallbackStyles = () => {
-				return /*#__PURE__*/ import_react$188.createElement("style", { type: "text/css" }, `\
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$191.createElement("style", { type: "text/css" }, `\
 .ui-dropdown .dropdown-toggle { padding-bottom: 7px }
 .dropdown:hover .dropdown-menu { display: block }\
 `);
 			};
 			if (children.props.bsRole !== "menu") throw new Error("Missing or invalid Menu!");
 			const dropdownId = id || `${toggle}_menu`;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$189.createElement(import_Dropdown.default, {
+			return /*#__PURE__*/ import_react$191.createElement(import_Dropdown.default, {
 				id: dropdownId,
 				className: ui_default.cx(mods, "ui-dropdown"),
 				"data-test-id": testId
-			}, !isClient && fallbackStyles(), /*#__PURE__*/ import_react$189.createElement(import_Dropdown.default.Toggle, _extends$24({
+			}, !isClient && fallbackStyles(), /*#__PURE__*/ import_react$191.createElement(import_Dropdown.default.Toggle, _extends$25({
 				componentClass: Link$5,
 				bsClass: "dropdown-toggle ui-drop-toggle"
-			}, toggleProps), toggle, /*#__PURE__*/ import_react$189.createElement(Icon$4, { i: "arrow-down stand-alone small" })), children);
-========
-			return /*#__PURE__*/ import_react$188.createElement(import_Dropdown.default, {
-				id: dropdownId,
-				className: ui_default.cx(mods, "ui-dropdown"),
-				"data-test-id": testId
-			}, !isClient && fallbackStyles(), /*#__PURE__*/ import_react$188.createElement(import_Dropdown.default.Toggle, _extends$24({
-				componentClass: Link$5,
-				bsClass: "dropdown-toggle ui-drop-toggle"
-			}, toggleProps), toggle, /*#__PURE__*/ import_react$188.createElement(Icon$4, { i: "arrow-down stand-alone small" })), children);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, toggleProps), toggle, /*#__PURE__*/ import_react$191.createElement(Icon$4, { i: "arrow-down stand-alone small" })), children);
 		};
 		UIDropdown.propTypes = {
-			toggle: import_prop_types$49.default.string.isRequired,
-			toggleProps: import_prop_types$49.default.object,
-			children: import_prop_types$49.default.node,
-			disabled: import_prop_types$49.default.bool,
-			startOpen: import_prop_types$49.default.bool
+			toggle: import_prop_types$50.default.string.isRequired,
+			toggleProps: import_prop_types$50.default.object,
+			children: import_prop_types$50.default.node,
+			disabled: import_prop_types$50.default.bool,
+			startOpen: import_prop_types$50.default.bool
 		};
 		UIDropdown.Menu = import_Dropdown.default.Menu;
 		UIDropdown.MenuItem = (props) => {
 			const hasLink = props.href || props.onClick;
 			const isDisabled = props.disabled !== void 0 ? props.disabled : !hasLink;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$189.createElement(import_MenuItem.default, _extends$24({
-========
-			return /*#__PURE__*/ import_react$188.createElement(import_MenuItem.default, _extends$24({
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$191.createElement(import_MenuItem.default, _extends$25({
 				componentClass: Link$5,
 				className: "ui-drop-item",
 				disabled: isDisabled
@@ -28643,52 +28488,62 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/Keyword.jsx
 	var Keyword_exports = /* @__PURE__ */ __exportAll({ default: () => Keyword });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$188, Keyword;
+	var import_react$190, Keyword;
 	var init_Keyword = __esmMin((() => {
-		import_react$188 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$190 = /* @__PURE__ */ __toESM(require_react$1());
 		Keyword = ({ label, count, hrefUrl }) => {
-			return /*#__PURE__*/ import_react$188.createElement("li", { className: "ui-tag-cloud-item" }, /*#__PURE__*/ import_react$188.createElement("a", {
+			return /*#__PURE__*/ import_react$190.createElement("li", { className: "ui-tag-cloud-item" }, /*#__PURE__*/ import_react$190.createElement("a", {
 				className: "ui-tag-button",
 				href: hrefUrl,
 				title: label
-			}, /*#__PURE__*/ import_react$188.createElement("i", { className: "icon-tag-mini ui-tag-icon" }), label, /*#__PURE__*/ import_react$188.createElement("small", { className: "ui-tag-counter" }, count)));
-========
-	var import_react$187, Keyword;
-	var init_Keyword = __esmMin((() => {
-		import_react$187 = /* @__PURE__ */ __toESM(require_react$1());
-		Keyword = ({ label, count, hrefUrl }) => {
-			return /*#__PURE__*/ import_react$187.createElement("li", { className: "ui-tag-cloud-item" }, /*#__PURE__*/ import_react$187.createElement("a", {
-				className: "ui-tag-button",
-				href: hrefUrl,
-				title: label
-			}, /*#__PURE__*/ import_react$187.createElement("i", { className: "icon-tag-mini ui-tag-icon" }), label, /*#__PURE__*/ import_react$187.createElement("small", { className: "ui-tag-counter" }, count)));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$190.createElement("i", { className: "icon-tag-mini ui-tag-icon" }), label, /*#__PURE__*/ import_react$190.createElement("small", { className: "ui-tag-counter" }, count)));
+		};
+	}));
+	//#endregion
+	//#region app/javascript/react/ui-components/MediaFormatBar.jsx
+	var MediaFormatBar_exports = /* @__PURE__ */ __exportAll({ default: () => MediaFormatBar });
+	var import_react$189, import_prop_types$49, LABELS, MediaFormatBar;
+	var init_MediaFormatBar = __esmMin((() => {
+		import_react$189 = /* @__PURE__ */ __toESM(require_react$1());
+		import_prop_types$49 = /* @__PURE__ */ __toESM(require_prop_types());
+		init_i18n_translate();
+		LABELS = {
+			mp4: "media_player_format_mp4",
+			hls: "media_player_format_hls"
+		};
+		MediaFormatBar = ({ formats, format, onChange, downloadUrl }) => /*#__PURE__*/ import_react$189.createElement("div", { className: "madek-format-bar" }, formats.map((item) => /*#__PURE__*/ import_react$189.createElement("button", {
+			key: item,
+			type: "button",
+			className: "primary-button",
+			"aria-pressed": format === item,
+			onClick: () => onChange(item)
+		}, I18nTranslate(LABELS[item]))), /*#__PURE__*/ import_react$189.createElement("span", { className: "madek-format-bar__spacer" }), downloadUrl ? /*#__PURE__*/ import_react$189.createElement("a", {
+			className: "primary-button",
+			href: downloadUrl
+		}, I18nTranslate("media_player_download")) : null);
+		MediaFormatBar.propTypes = {
+			formats: import_prop_types$49.default.arrayOf(import_prop_types$49.default.oneOf(["mp4", "hls"])).isRequired,
+			format: import_prop_types$49.default.oneOf(["mp4", "hls"]).isRequired,
+			onChange: import_prop_types$49.default.func.isRequired,
+			downloadUrl: import_prop_types$49.default.string
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/VideoPlayer.jsx
 	var VideoPlayer_exports = /* @__PURE__ */ __exportAll({ default: () => VideoPlayer });
-	function _extends$23() {
-		return _extends$23 = Object.assign ? Object.assign.bind() : function(n) {
+	function _extends$24() {
+		return _extends$24 = Object.assign ? Object.assign.bind() : function(n) {
 			for (var e = 1; e < arguments.length; e++) {
 				var t = arguments[e];
 				for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
 			}
 			return n;
-		}, _extends$23.apply(null, arguments);
+		}, _extends$24.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$187, import_prop_types$47, propTypes$6, VIDEOJS_OPTIONS, sourceLabel, VideoPlayer;
+	var import_react$188, import_prop_types$48, propTypes$6, sourceLabel, HLS_TYPE$1, VideoPlayer;
 	var init_VideoPlayer = __esmMin((() => {
-		import_react$187 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$47 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$186, import_prop_types$48, propTypes$6, sourceLabel, VideoPlayer;
-	var init_VideoPlayer = __esmMin((() => {
-		import_react$186 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$188 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$48 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_lodash();
 		init_VideoJs();
 		propTypes$6 = {
@@ -28706,13 +28561,23 @@ var require = (function() {
 			})
 		};
 		sourceLabel = ({ profile }) => endsWith(profile, "_HD") ? "HD" : "SD";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		VideoPlayer = class extends import_react$187.Component {
-========
-		VideoPlayer = class extends import_react$186.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
-			render({ sources, options, ...props } = this.props) {
-				const videoSources = sources.map((source) => ({
+		HLS_TYPE$1 = "application/vnd.apple.mpegurl";
+		VideoPlayer = class extends import_react$188.Component {
+			render({ sources, options, format, ...props } = this.props) {
+				if (format === "hls") {
+					const hlsSources = sources.filter((source) => source.content_type === HLS_TYPE$1 || source.profile === "hls").map((source) => ({
+						src: source.url,
+						type: source.content_type,
+						label: "HLS",
+						key: source.url
+					}));
+					return /*#__PURE__*/ import_react$188.createElement(VideoJS, _extends$24({}, props, {
+						format: "hls",
+						sources: hlsSources,
+						options: options || {}
+					}));
+				}
+				const videoSources = sources.filter((source) => source.content_type === "video/mp4" || source.content_type === "video/webm").map((source) => ({
 					src: source.url,
 					type: source.content_type,
 					label: sourceLabel(source),
@@ -28730,11 +28595,8 @@ var require = (function() {
 					return 0;
 				});
 				const sortedSources = mp4s.concat(webms);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$187.createElement(VideoJS, _extends$23({}, props, {
-========
-				return /*#__PURE__*/ import_react$186.createElement(VideoJS, _extends$23({}, props, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$188.createElement(VideoJS, _extends$24({}, props, {
+					format: "mp4",
 					sources: sortedSources,
 					options: options || {}
 				}));
@@ -28745,31 +28607,47 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/MediaPlayer.jsx
 	var MediaPlayer_exports = /* @__PURE__ */ __exportAll({ default: () => MediaPlayer });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$186, import_prop_types$46, MediaPlayer;
+	function _extends$23() {
+		return _extends$23 = Object.assign ? Object.assign.bind() : function(n) {
+			for (var e = 1; e < arguments.length; e++) {
+				var t = arguments[e];
+				for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
+			}
+			return n;
+		}, _extends$23.apply(null, arguments);
+	}
+	function downloadUrlFor(sources, format, selectedLabel) {
+		if (format === "hls") {
+			const hls = sources.find(isHlsSource);
+			return hls && hls.download_url;
+		}
+		const mp4s = sources.filter((source) => source.content_type === "video/mp4");
+		const match = mp4s.find((source) => isHd(source) ? selectedLabel === "HD" : selectedLabel !== "HD") || mp4s[0];
+		return match && match.download_url;
+	}
+	var import_react$187, import_prop_types$47, HLS_TYPE, isHlsSource, isHd, MediaPlayer;
 	var init_MediaPlayer = __esmMin((() => {
-		import_react$186 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$46 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$185, import_prop_types$47, MediaPlayer;
-	var init_MediaPlayer = __esmMin((() => {
-		import_react$185 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$187 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$47 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_utils$2();
 		init_i18n_translate();
 		init_AudioPlayer();
 		init_VideoPlayer();
-		MediaPlayer = ({ type, poster, sources, getUrl, ...props }) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const [active, setActive] = (0, import_react$186.useState)(false);
-			const [showHint] = (0, import_react$186.useState)(false);
-			(0, import_react$186.useEffect)(() => {
-========
-			const [active, setActive] = (0, import_react$185.useState)(false);
-			const [showHint] = (0, import_react$185.useState)(false);
-			(0, import_react$185.useEffect)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		init_MediaFormatBar();
+		HLS_TYPE = "application/vnd.apple.mpegurl";
+		isHlsSource = (source) => source.content_type === HLS_TYPE || source.profile === "hls";
+		isHd = (source) => typeof source.profile === "string" && source.profile.endsWith("_HD");
+		MediaPlayer = ({ type, poster, sources, getUrl, preferredFormat, isInternal, ...props }) => {
+			const [active, setActive] = (0, import_react$187.useState)(false);
+			const [showHint] = (0, import_react$187.useState)(false);
+			const hasMp4 = sources.some((source) => source.content_type === "video/mp4");
+			const hasHls = sources.some(isHlsSource);
+			let initialFormat = "mp4";
+			if (hasHls && !hasMp4) initialFormat = "hls";
+			if (hasMp4 && hasHls && preferredFormat === "hls") initialFormat = "hls";
+			const [format, setFormat] = (0, import_react$187.useState)(initialFormat);
+			const [selectedLabel, setSelectedLabel] = (0, import_react$187.useState)("SD");
+			(0, import_react$187.useEffect)(() => {
 				setActive(true);
 			}, []);
 			const mediaProps = omit({
@@ -28777,60 +28655,56 @@ var require = (function() {
 				poster,
 				sources,
 				getUrl,
+				isInternal,
 				...props
 			}, ["originalUrl"]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (type === "audio") return /*#__PURE__*/ import_react$186.createElement("div", { style: {
+			const showBar = type === "video" && isInternal && hasMp4 && hasHls;
+			if (type === "audio") return /*#__PURE__*/ import_react$187.createElement("div", { style: {
 				margin: "0px",
 				padding: "0px"
-			} }, /*#__PURE__*/ import_react$186.createElement(AudioPlayer, mediaProps), showHint && /*#__PURE__*/ import_react$186.createElement("p", { style: { marginTop: "40px" } }, I18nTranslate("media_entry_file_format_not_supported_1"), /*#__PURE__*/ import_react$186.createElement("a", { href: getUrl + "/export" }, I18nTranslate("media_entry_file_format_not_supported_2")), I18nTranslate("media_entry_file_format_not_supported_3")));
-			else if (!active) return /*#__PURE__*/ import_react$186.createElement("div", null, /*#__PURE__*/ import_react$186.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$186.createElement(VideoPlayer, mediaProps)), /*#__PURE__*/ import_react$186.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$186.createElement("img", {
-========
-			if (type === "audio") return /*#__PURE__*/ import_react$185.createElement("div", { style: {
-				margin: "0px",
-				padding: "0px"
-			} }, /*#__PURE__*/ import_react$185.createElement(AudioPlayer, mediaProps), showHint && /*#__PURE__*/ import_react$185.createElement("p", { style: { marginTop: "40px" } }, I18nTranslate("media_entry_file_format_not_supported_1"), /*#__PURE__*/ import_react$185.createElement("a", { href: getUrl + "/export" }, I18nTranslate("media_entry_file_format_not_supported_2")), I18nTranslate("media_entry_file_format_not_supported_3")));
-			else if (!active) return /*#__PURE__*/ import_react$185.createElement("div", null, /*#__PURE__*/ import_react$185.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$185.createElement(VideoPlayer, mediaProps)), /*#__PURE__*/ import_react$185.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$185.createElement("img", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			} }, /*#__PURE__*/ import_react$187.createElement(AudioPlayer, mediaProps), showHint && /*#__PURE__*/ import_react$187.createElement("p", { style: { marginTop: "40px" } }, I18nTranslate("media_entry_file_format_not_supported_1"), /*#__PURE__*/ import_react$187.createElement("a", { href: getUrl + "/export" }, I18nTranslate("media_entry_file_format_not_supported_2")), I18nTranslate("media_entry_file_format_not_supported_3")));
+			const player = /*#__PURE__*/ import_react$187.createElement(VideoPlayer, _extends$23({}, mediaProps, {
+				format,
+				onQualityLabel: setSelectedLabel
+			}));
+			if (!active) return /*#__PURE__*/ import_react$187.createElement("div", null, /*#__PURE__*/ import_react$187.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$187.createElement(VideoPlayer, mediaProps)), /*#__PURE__*/ import_react$187.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$187.createElement("img", {
 				src: poster,
 				style: {
 					height: "100%",
 					width: "100%"
 				}
 			})));
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else return /*#__PURE__*/ import_react$186.createElement(VideoPlayer, mediaProps);
-========
-			else return /*#__PURE__*/ import_react$185.createElement(VideoPlayer, mediaProps);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			if (!showBar) return player;
+			return /*#__PURE__*/ import_react$187.createElement("div", { className: "madek-format-player" }, /*#__PURE__*/ import_react$187.createElement(MediaFormatBar, {
+				formats: ["mp4", "hls"],
+				format,
+				onChange: setFormat,
+				downloadUrl: downloadUrlFor(sources, format, selectedLabel)
+			}), /*#__PURE__*/ import_react$187.createElement("div", { className: "madek-format-player__stage" }, player));
 		};
 		MediaPlayer.propTypes = {
 			type: import_prop_types$47.default.oneOf(["audio", "video"]).isRequired,
 			sources: import_prop_types$47.default.arrayOf(import_prop_types$47.default.shape({
 				url: import_prop_types$47.default.string.isRequired,
-				content_type: import_prop_types$47.default.string.isRequired
+				content_type: import_prop_types$47.default.string.isRequired,
+				profile: import_prop_types$47.default.string,
+				download_url: import_prop_types$47.default.string
 			}).isRequired).isRequired,
-			poster: import_prop_types$47.default.string
+			poster: import_prop_types$47.default.string,
+			preferredFormat: import_prop_types$47.default.oneOf(["mp4", "hls"]),
+			isInternal: import_prop_types$47.default.bool
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/SectionLabels.jsx
 	var SectionLabels_exports = /* @__PURE__ */ __exportAll({ default: () => SectionLabels });
 	function SectionLabels({ items = [] }) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		return /*#__PURE__*/ import_react$185.createElement("div", {
-========
-		return /*#__PURE__*/ import_react$184.createElement("div", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		return /*#__PURE__*/ import_react$186.createElement("div", {
 			className: "section-labels",
 			"data-test-id": "section-labels"
 		}, items.map((item, index) => {
 			const El = item.href ? "a" : "div";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$185.createElement(El, {
-========
-			return /*#__PURE__*/ import_react$184.createElement(El, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$186.createElement(El, {
 				key: index,
 				href: item.href,
 				className: "section-labels__item",
@@ -28841,38 +28715,21 @@ var require = (function() {
 			}, item.label);
 		}));
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$185;
+	var import_react$186;
 	var init_SectionLabels = __esmMin((() => {
-		import_react$185 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$184;
-	var init_SectionLabels = __esmMin((() => {
-		import_react$184 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$186 = /* @__PURE__ */ __toESM(require_react$1());
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/PageHeader.jsx
 	var PageHeader_exports = /* @__PURE__ */ __exportAll({ default: () => PageHeader });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$184, import_prop_types$45, import_classnames$33, PageHeader;
+	var import_react$185, import_prop_types$46, import_classnames$33, PageHeader;
 	var init_PageHeader = __esmMin((() => {
-		import_react$184 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$45 = /* @__PURE__ */ __toESM(require_prop_types());
-		import_classnames$33 = /* @__PURE__ */ __toESM(require_classnames());
-		init_SectionLabels();
-		PageHeader = ({ icon, fa, title, actions, banner, sectionLabels }) => {
-			return /*#__PURE__*/ import_react$184.createElement("div", null, sectionLabels && /*#__PURE__*/ import_react$184.createElement(SectionLabels, { items: sectionLabels }), banner, /*#__PURE__*/ import_react$184.createElement("div", { className: "ui-body-title" }, /*#__PURE__*/ import_react$184.createElement("div", { className: "ui-body-title-label" }, /*#__PURE__*/ import_react$184.createElement("h1", { className: "title-xl" }, !!icon && /*#__PURE__*/ import_react$184.createElement("span", null, /*#__PURE__*/ import_react$184.createElement("i", { className: "icon-" + icon }), " "), !!fa && /*#__PURE__*/ import_react$184.createElement("span", null, /*#__PURE__*/ import_react$184.createElement("span", { className: (0, import_classnames$33.default)("fa fa-share", "title-xl") }), " "), title)), !!actions && /*#__PURE__*/ import_react$184.createElement("div", { className: "ui-body-title-actions" }, /*#__PURE__*/ import_react$184.createElement("span", { data: "spacer-gif" }, "\xA0"), actions)));
-========
-	var import_react$183, import_prop_types$46, import_classnames$33, PageHeader;
-	var init_PageHeader = __esmMin((() => {
-		import_react$183 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$185 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$46 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$33 = /* @__PURE__ */ __toESM(require_classnames());
 		init_SectionLabels();
 		PageHeader = ({ icon, fa, title, actions, banner, sectionLabels }) => {
-			return /*#__PURE__*/ import_react$183.createElement("div", null, sectionLabels && /*#__PURE__*/ import_react$183.createElement(SectionLabels, { items: sectionLabels }), banner, /*#__PURE__*/ import_react$183.createElement("div", { className: "ui-body-title" }, /*#__PURE__*/ import_react$183.createElement("div", { className: "ui-body-title-label" }, /*#__PURE__*/ import_react$183.createElement("h1", { className: "title-xl" }, !!icon && /*#__PURE__*/ import_react$183.createElement("span", null, /*#__PURE__*/ import_react$183.createElement("i", { className: "icon-" + icon }), " "), !!fa && /*#__PURE__*/ import_react$183.createElement("span", null, /*#__PURE__*/ import_react$183.createElement("span", { className: (0, import_classnames$33.default)("fa fa-share", "title-xl") }), " "), title)), !!actions && /*#__PURE__*/ import_react$183.createElement("div", { className: "ui-body-title-actions" }, /*#__PURE__*/ import_react$183.createElement("span", { data: "spacer-gif" }, "\xA0"), actions)));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$185.createElement("div", null, sectionLabels && /*#__PURE__*/ import_react$185.createElement(SectionLabels, { items: sectionLabels }), banner, /*#__PURE__*/ import_react$185.createElement("div", { className: "ui-body-title" }, /*#__PURE__*/ import_react$185.createElement("div", { className: "ui-body-title-label" }, /*#__PURE__*/ import_react$185.createElement("h1", { className: "title-xl" }, !!icon && /*#__PURE__*/ import_react$185.createElement("span", null, /*#__PURE__*/ import_react$185.createElement("i", { className: "icon-" + icon }), " "), !!fa && /*#__PURE__*/ import_react$185.createElement("span", null, /*#__PURE__*/ import_react$185.createElement("span", { className: (0, import_classnames$33.default)("fa fa-share", "title-xl") }), " "), title)), !!actions && /*#__PURE__*/ import_react$185.createElement("div", { className: "ui-body-title-actions" }, /*#__PURE__*/ import_react$185.createElement("span", { data: "spacer-gif" }, "\xA0"), actions)));
 		};
 		PageHeader.propTypes = {
 			title: import_prop_types$46.default.string.isRequired,
@@ -28892,17 +28749,10 @@ var require = (function() {
 			return n;
 		}, _extends$22.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$183, import_prop_types$44, Picture;
+	var import_react$184, import_prop_types$45, Picture;
 	var init_Picture = __esmMin((() => {
-		import_react$183 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$44 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$182, import_prop_types$45, Picture;
-	var init_Picture = __esmMin((() => {
-		import_react$182 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$184 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$45 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_ui();
 		init_i18n_translate();
 		init_utils$2();
@@ -28912,11 +28762,7 @@ var require = (function() {
 			const classes = ui_default.cx(className, mods, "ui_picture");
 			const titleTxt = title || alt || I18nTranslate("picture_alt_fallback");
 			const altTxt = `${I18nTranslate("picture_alt_prefix")} ${titleTxt}`;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$183.createElement("img", _extends$22({}, restProps, {
-========
-			return /*#__PURE__*/ import_react$182.createElement("img", _extends$22({}, restProps, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$184.createElement("img", _extends$22({}, restProps, {
 				className: classes,
 				title: titleTxt,
 				alt: altTxt
@@ -28931,17 +28777,10 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/ResourceIcon.jsx
 	var ResourceIcon_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceIcon });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$182, import_prop_types$43, import_classnames$32, ResourceIcon;
+	var import_react$183, import_prop_types$44, import_classnames$32, ResourceIcon;
 	var init_ResourceIcon = __esmMin((() => {
-		import_react$182 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$43 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$181, import_prop_types$44, import_classnames$32, ResourceIcon;
-	var init_ResourceIcon = __esmMin((() => {
-		import_react$181 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$183 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$44 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_Icon();
 		import_classnames$32 = /* @__PURE__ */ __toESM(require_classnames());
 		ResourceIcon = ({ type, mediaType, thumbnail, tiles, flyout, overrideClasses }) => {
@@ -28977,28 +28816,16 @@ var require = (function() {
 			};
 			if (type === "MediaEntry") {
 				const mediaTypeIcon = mediaTypeIconMapping(mediaType);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$182.createElement("i", {
+				return /*#__PURE__*/ import_react$183.createElement("i", {
 					className: (0, import_classnames$32.default)("ui_media-type-icon", mediaTypeIcon, overrideClasses),
 					style
 				});
-			} else if (type === "Collection") return /*#__PURE__*/ import_react$182.createElement(Icon$4, {
-========
-				return /*#__PURE__*/ import_react$181.createElement("i", {
-					className: (0, import_classnames$32.default)("ui_media-type-icon", mediaTypeIcon, overrideClasses),
-					style
-				});
-			} else if (type === "Collection") return /*#__PURE__*/ import_react$181.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			} else if (type === "Collection") return /*#__PURE__*/ import_react$183.createElement(Icon$4, {
 				i: "set",
 				mods: (0, import_classnames$32.default)("ui_media-type-icon", overrideClasses),
 				style
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else return /*#__PURE__*/ import_react$182.createElement(Icon$4, {
-========
-			else return /*#__PURE__*/ import_react$181.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			else return /*#__PURE__*/ import_react$183.createElement(Icon$4, {
 				i: "bang",
 				mods: (0, import_classnames$32.default)("ui_media-type-icon", overrideClasses),
 				style
@@ -29022,11 +28849,7 @@ var require = (function() {
 		}, _extends$21.apply(null, arguments);
 	}
 	function splitTitleFromContent(children) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		const { titles, content } = import_react$181.Children.toArray(children).reduce((res, child) => {
-========
-		const { titles, content } = import_react$180.Children.toArray(children).reduce((res, child) => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		const { titles, content } = import_react$182.Children.toArray(children).reduce((res, child) => {
 			if (child.type === SubSection.Title) res.titles.push(child);
 			else res.content.push(child);
 			return res;
@@ -29040,17 +28863,10 @@ var require = (function() {
 			content
 		};
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$181, SubSection, SubSectionTitle;
+	var import_react$182, SubSection, SubSectionTitle;
 	var init_SubSection = __esmMin((() => {
-		import_react$181 = /* @__PURE__ */ __toESM(require_react$1());
-		SubSection = class extends import_react$181.Component {
-========
-	var import_react$180, SubSection, SubSectionTitle;
-	var init_SubSection = __esmMin((() => {
-		import_react$180 = /* @__PURE__ */ __toESM(require_react$1());
-		SubSection = class extends import_react$180.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$182 = /* @__PURE__ */ __toESM(require_react$1());
+		SubSection = class extends import_react$182.Component {
 			constructor(props) {
 				super(props);
 				this.toggleOpen = this.toggleOpen.bind(this);
@@ -29060,11 +28876,7 @@ var require = (function() {
 			}
 			render({ children, startOpen } = this.props) {
 				const { title, content } = splitTitleFromContent(children);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$181.createElement("details", {
-========
-				return /*#__PURE__*/ import_react$180.createElement("details", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$182.createElement("details", {
 					className: "ui-subsection",
 					open: startOpen,
 					onClick: this.toggleOpen
@@ -29077,11 +28889,7 @@ var require = (function() {
 		};
 		SubSectionTitle = ({ tag, ...props }) => {
 			const Tag = tag;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$181.createElement("summary", null, /*#__PURE__*/ import_react$181.createElement(Tag, _extends$21({}, props, { style: {
-========
-			return /*#__PURE__*/ import_react$180.createElement("summary", null, /*#__PURE__*/ import_react$180.createElement(Tag, _extends$21({}, props, { style: {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$182.createElement("summary", null, /*#__PURE__*/ import_react$182.createElement(Tag, _extends$21({}, props, { style: {
 				display: "inline-block",
 				...props.style
 			} })));
@@ -29092,17 +28900,10 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/TagCloud.jsx
 	var TagCloud_exports = /* @__PURE__ */ __exportAll({ default: () => TagCloud });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$180, import_prop_types$42, import_classnames$31, TagCloud;
+	var import_react$181, import_prop_types$43, import_classnames$31, TagCloud;
 	var init_TagCloud = __esmMin((() => {
-		import_react$180 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$42 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$179, import_prop_types$43, import_classnames$31, TagCloud;
-	var init_TagCloud = __esmMin((() => {
-		import_react$179 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$181 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$43 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		import_classnames$31 = /* @__PURE__ */ __toESM(require_classnames());
 		init_ui();
 		init_utils$2();
@@ -29112,11 +28913,7 @@ var require = (function() {
 			const { list, mod, mods } = props;
 			const baseClass = (0, import_classnames$31.default)(parseMods(props), "ui-tag-cloud");
 			const itemClass = (0, import_classnames$31.default)("ui-tag-cloud-item", { block: mod === "role" });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$180.createElement("ul", {
-========
-			return /*#__PURE__*/ import_react$179.createElement("ul", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$181.createElement("ul", {
 				className: baseClass,
 				style: mods && mods.includes("inline") ? { display: "inline-block" } : {}
 			}, list.map((listItem) => {
@@ -29149,23 +28946,13 @@ var require = (function() {
 				}
 				if (tagIcon && !(mods && mods.includes("large"))) tagIcon = `${tagIcon}-mini`;
 				const TagElm = tag || Link$5;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$180.createElement("li", {
+				return /*#__PURE__*/ import_react$181.createElement("li", {
 					key,
 					className: itemClass
-				}, /*#__PURE__*/ import_react$180.createElement(TagElm, linkProps, tagIcon && /*#__PURE__*/ import_react$180.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$181.createElement(TagElm, linkProps, tagIcon && /*#__PURE__*/ import_react$181.createElement(Icon$4, {
 					i: tagIcon,
 					mods: "ui-tag-icon"
-				}), children, count && /*#__PURE__*/ import_react$180.createElement("span", { className: "ui-tag-counter" }, count)));
-========
-				return /*#__PURE__*/ import_react$179.createElement("li", {
-					key,
-					className: itemClass
-				}, /*#__PURE__*/ import_react$179.createElement(TagElm, linkProps, tagIcon && /*#__PURE__*/ import_react$179.createElement(Icon$4, {
-					i: tagIcon,
-					mods: "ui-tag-icon"
-				}), children, count && /*#__PURE__*/ import_react$179.createElement("span", { className: "ui-tag-counter" }, count)));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), children, count && /*#__PURE__*/ import_react$181.createElement("span", { className: "ui-tag-counter" }, count)));
 			}));
 		};
 		TagCloud.propTypes = {
@@ -29188,17 +28975,10 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/Thumbnail.jsx
 	var Thumbnail_exports = /* @__PURE__ */ __exportAll({ default: () => Thumbnail$1 });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$179, import_prop_types$41, flyoutProps, Thumbnail$1;
+	var import_react$180, import_prop_types$42, flyoutProps, Thumbnail$1;
 	var init_Thumbnail = __esmMin((() => {
-		import_react$179 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$41 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$178, import_prop_types$42, flyoutProps, Thumbnail$1;
-	var init_Thumbnail = __esmMin((() => {
-		import_react$178 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$180 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$42 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_utils$2();
 		init_ui();
 		init_Link();
@@ -29212,32 +28992,18 @@ var require = (function() {
 		});
 		Thumbnail$1 = ({ type, src, alt, meta, badgeRight: badgeRightProp, badgeLeft: badgeLeftProp, actionsLeft, actionsRight, flyoutTop: flyoutTopProp, flyoutBottom: flyoutBottomProp, mediaType, mods, className, draft, editMetaDataByContextUrl, onClipboard, clipboardUrl, disableLink, pictureLinkStyle, href, onPictureClick }) => {
 			const classes = ui_default.cx(kebabCase(type.replace(/Collection/, "MediaSet")), [mods, className], "ui-thumbnail");
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const innerImage = src ? /*#__PURE__*/ import_react$179.createElement(Picture, {
+			const innerImage = src ? /*#__PURE__*/ import_react$180.createElement(Picture, {
 				mods: "ui-thumbnail-image",
 				src,
 				alt
-			}) : /*#__PURE__*/ import_react$179.createElement(ResourceIcon, {
-========
-			const innerImage = src ? /*#__PURE__*/ import_react$178.createElement(Picture, {
-				mods: "ui-thumbnail-image",
-				src,
-				alt
-			}) : /*#__PURE__*/ import_react$178.createElement(ResourceIcon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}) : /*#__PURE__*/ import_react$180.createElement(ResourceIcon, {
 				mediaType,
 				thumbnail: true,
 				type
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const flyoutTop = present(flyoutTopProp) ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-level-up-items" }, /*#__PURE__*/ import_react$179.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.title), /*#__PURE__*/ import_react$179.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutTopProp.children), /*#__PURE__*/ import_react$179.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.caption)) : void 0;
-			const flyoutBottom = present(flyoutBottomProp) ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-level-down-items" }, /*#__PURE__*/ import_react$179.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.title), /*#__PURE__*/ import_react$179.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutBottomProp.children), /*#__PURE__*/ import_react$179.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.caption)) : void 0;
-			const badgeLeft = badgeLeftProp ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-privacy" }, badgeLeftProp) : void 0;
-========
-			const flyoutTop = present(flyoutTopProp) ? /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-level-up-items" }, /*#__PURE__*/ import_react$178.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.title), /*#__PURE__*/ import_react$178.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutTopProp.children), /*#__PURE__*/ import_react$178.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.caption)) : void 0;
-			const flyoutBottom = present(flyoutBottomProp) ? /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-level-down-items" }, /*#__PURE__*/ import_react$178.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.title), /*#__PURE__*/ import_react$178.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutBottomProp.children), /*#__PURE__*/ import_react$178.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.caption)) : void 0;
-			const badgeLeft = badgeLeftProp ? /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-privacy" }, badgeLeftProp) : void 0;
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const flyoutTop = present(flyoutTopProp) ? /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-level-up-items" }, /*#__PURE__*/ import_react$180.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.title), /*#__PURE__*/ import_react$180.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutTopProp.children), /*#__PURE__*/ import_react$180.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutTopProp.caption)) : void 0;
+			const flyoutBottom = present(flyoutBottomProp) ? /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-level-down-items" }, /*#__PURE__*/ import_react$180.createElement("h3", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.title), /*#__PURE__*/ import_react$180.createElement("ul", { className: "ui-thumbnail-level-items" }, flyoutBottomProp.children), /*#__PURE__*/ import_react$180.createElement("span", { className: "ui-thumbnail-level-notes" }, flyoutBottomProp.caption)) : void 0;
+			const badgeLeft = badgeLeftProp ? /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-privacy" }, badgeLeftProp) : void 0;
 			const bubbles = [];
 			if (draft) bubbles.push({
 				key: "draft",
@@ -29253,34 +29019,19 @@ var require = (function() {
 			});
 			bubbles.map((bubble, index) => {
 				const style = { backgroundColor: bubble.color };
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$179.createElement("a", {
+				return /*#__PURE__*/ import_react$180.createElement("a", {
 					href: bubble.href,
 					key: index
-				}, /*#__PURE__*/ import_react$179.createElement("div", {
-========
-				return /*#__PURE__*/ import_react$178.createElement("a", {
-					href: bubble.href,
-					key: index
-				}, /*#__PURE__*/ import_react$178.createElement("div", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$180.createElement("div", {
 					className: "ui-bubble",
 					style
 				}, bubble.label));
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const badgeRight = badgeRightProp ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-filterset-flag" }, badgeRightProp) : void 0;
-			const metaElement = meta ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$179.createElement("h3", { className: "ui-thumbnail-meta-title" }, meta.title), /*#__PURE__*/ import_react$179.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, meta.subtitle)) : void 0;
-			const actions = /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-actions" }, /*#__PURE__*/ import_react$179.createElement("ul", { className: "left by-left" }, actionsLeft), /*#__PURE__*/ import_react$179.createElement("ul", { className: "right by-right" }, actionsRight));
-			const innerPart = /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage))));
-			return /*#__PURE__*/ import_react$179.createElement("div", { className: classes }, flyoutTop, badgeLeft, badgeRight, void 0, disableLink ? /*#__PURE__*/ import_react$179.createElement("div", { className: "ui-thumbnail-image-wrapper" }, innerPart) : /*#__PURE__*/ import_react$179.createElement(Link$5, {
-========
-			const badgeRight = badgeRightProp ? /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-filterset-flag" }, badgeRightProp) : void 0;
-			const metaElement = meta ? /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$178.createElement("h3", { className: "ui-thumbnail-meta-title" }, meta.title), /*#__PURE__*/ import_react$178.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, meta.subtitle)) : void 0;
-			const actions = /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-actions" }, /*#__PURE__*/ import_react$178.createElement("ul", { className: "left by-left" }, actionsLeft), /*#__PURE__*/ import_react$178.createElement("ul", { className: "right by-right" }, actionsRight));
-			const innerPart = /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage))));
-			return /*#__PURE__*/ import_react$178.createElement("div", { className: classes }, flyoutTop, badgeLeft, badgeRight, void 0, disableLink ? /*#__PURE__*/ import_react$178.createElement("div", { className: "ui-thumbnail-image-wrapper" }, innerPart) : /*#__PURE__*/ import_react$178.createElement(Link$5, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const badgeRight = badgeRightProp ? /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-filterset-flag" }, badgeRightProp) : void 0;
+			const metaElement = meta ? /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$180.createElement("h3", { className: "ui-thumbnail-meta-title" }, meta.title), /*#__PURE__*/ import_react$180.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, meta.subtitle)) : void 0;
+			const actions = /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-actions" }, /*#__PURE__*/ import_react$180.createElement("ul", { className: "left by-left" }, actionsLeft), /*#__PURE__*/ import_react$180.createElement("ul", { className: "right by-right" }, actionsRight));
+			const innerPart = /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage))));
+			return /*#__PURE__*/ import_react$180.createElement("div", { className: classes }, flyoutTop, badgeLeft, badgeRight, void 0, disableLink ? /*#__PURE__*/ import_react$180.createElement("div", { className: "ui-thumbnail-image-wrapper" }, innerPart) : /*#__PURE__*/ import_react$180.createElement(Link$5, {
 				className: "ui-thumbnail-image-wrapper",
 				style: pictureLinkStyle,
 				href,
@@ -29318,15 +29069,9 @@ var require = (function() {
 			return n;
 		}, _extends$20.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$178, ToggableLink;
+	var import_react$179, ToggableLink;
 	var init_ToggableLink = __esmMin((() => {
-		import_react$178 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$177, ToggableLink;
-	var init_ToggableLink = __esmMin((() => {
-		import_react$177 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$179 = /* @__PURE__ */ __toESM(require_react$1());
 		init_utils$2();
 		ToggableLink = (props) => {
 			const { active, children, style: propStyle, onClick: propOnClick } = props;
@@ -29340,11 +29085,7 @@ var require = (function() {
 				...propStyle,
 				...inactiveStyle
 			};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$178.createElement("a", _extends$20({}, restProps, {
-========
-			return /*#__PURE__*/ import_react$177.createElement("a", _extends$20({}, restProps, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$179.createElement("a", _extends$20({}, restProps, {
 				onClick,
 				style
 			}), children);
@@ -29448,29 +29189,16 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/Tooltipped.jsx
 	var Tooltipped_exports = /* @__PURE__ */ __exportAll({ default: () => Tooltipped });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$177, import_prop_types$40, import_Tooltip, import_Overlay, Tooltipped;
+	var import_react$178, import_prop_types$41, import_Tooltip, import_Overlay, Tooltipped;
 	var init_Tooltipped = __esmMin((() => {
-		import_react$177 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$40 = /* @__PURE__ */ __toESM(require_prop_types());
-		import_Tooltip = /* @__PURE__ */ __toESM(require_Tooltip());
-		import_Overlay = /* @__PURE__ */ __toESM(require_Overlay());
-		Tooltipped = ({ text, link, id, children }) => {
-			const [showTooltip, setShowTooltip] = (0, import_react$177.useState)(false);
-			const targetRef = (0, import_react$177.useRef)(null);
-			const timerRef = (0, import_react$177.useRef)(null);
-========
-	var import_react$176, import_prop_types$41, import_Tooltip, import_Overlay, Tooltipped;
-	var init_Tooltipped = __esmMin((() => {
-		import_react$176 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$178 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$41 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_Tooltip = /* @__PURE__ */ __toESM(require_Tooltip());
 		import_Overlay = /* @__PURE__ */ __toESM(require_Overlay());
 		Tooltipped = ({ text, link, id, children }) => {
-			const [showTooltip, setShowTooltip] = (0, import_react$176.useState)(false);
-			const targetRef = (0, import_react$176.useRef)(null);
-			const timerRef = (0, import_react$176.useRef)(null);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const [showTooltip, setShowTooltip] = (0, import_react$178.useState)(false);
+			const targetRef = (0, import_react$178.useRef)(null);
+			const timerRef = (0, import_react$178.useRef)(null);
 			const handleShowTooltip = () => {
 				if (timerRef.current) clearTimeout(timerRef.current);
 				setShowTooltip(true);
@@ -29478,23 +29206,14 @@ var require = (function() {
 			const handleHideTooltip = () => {
 				timerRef.current = setTimeout(() => setShowTooltip(false), 30);
 			};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			(0, import_react$177.useEffect)(() => {
-========
-			(0, import_react$176.useEffect)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			(0, import_react$178.useEffect)(() => {
 				return () => {
 					if (timerRef.current) clearTimeout(timerRef.current);
 				};
 			}, []);
 			const getTriggerEl = (children) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const child = import_react$177.Children.toArray(children)[0];
-				return /*#__PURE__*/ import_react$177.cloneElement(child, {
-========
-				const child = import_react$176.Children.toArray(children)[0];
-				return /*#__PURE__*/ import_react$176.cloneElement(child, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				const child = import_react$178.Children.toArray(children)[0];
+				return /*#__PURE__*/ import_react$178.cloneElement(child, {
 					onMouseEnter: handleShowTooltip,
 					onMouseLeave: handleHideTooltip,
 					ref: (el) => {
@@ -29502,27 +29221,15 @@ var require = (function() {
 					}
 				});
 			};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$177.createElement("span", null, getTriggerEl(children), /*#__PURE__*/ import_react$177.createElement(import_Overlay.default, {
+			return /*#__PURE__*/ import_react$178.createElement("span", null, getTriggerEl(children), /*#__PURE__*/ import_react$178.createElement(import_Overlay.default, {
 				show: showTooltip,
 				target: targetRef.current,
 				placement: "top"
-			}, /*#__PURE__*/ import_react$177.createElement(import_Tooltip.default, {
+			}, /*#__PURE__*/ import_react$178.createElement(import_Tooltip.default, {
 				id,
 				onMouseEnter: handleShowTooltip,
 				onMouseLeave: handleHideTooltip
-			}, text, link && /*#__PURE__*/ import_react$177.createElement("div", null, "(", link, ")"))));
-========
-			return /*#__PURE__*/ import_react$176.createElement("span", null, getTriggerEl(children), /*#__PURE__*/ import_react$176.createElement(import_Overlay.default, {
-				show: showTooltip,
-				target: targetRef.current,
-				placement: "top"
-			}, /*#__PURE__*/ import_react$176.createElement(import_Tooltip.default, {
-				id,
-				onMouseEnter: handleShowTooltip,
-				onMouseLeave: handleHideTooltip
-			}, text, link && /*#__PURE__*/ import_react$176.createElement("div", null, "(", link, ")"))));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, text, link && /*#__PURE__*/ import_react$178.createElement("div", null, "(", link, ")"))));
 		};
 		Tooltipped.propTypes = {
 			text: import_prop_types$41.default.string.isRequired,
@@ -29534,15 +29241,9 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/ui-components/VocabTitleLink.jsx
 	var VocabTitleLink_exports = /* @__PURE__ */ __exportAll({ default: () => VocabTitleLink });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$176, import_classnames$30, VocabTitleLink;
+	var import_react$177, import_classnames$30, VocabTitleLink;
 	var init_VocabTitleLink = __esmMin((() => {
-		import_react$176 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$175, import_classnames$30, VocabTitleLink;
-	var init_VocabTitleLink = __esmMin((() => {
-		import_react$175 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$177 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Icon();
 		import_classnames$30 = /* @__PURE__ */ __toESM(require_classnames());
 		VocabTitleLink = ({ id, hi, text, href, separated, className }) => {
@@ -29552,23 +29253,13 @@ var require = (function() {
 				mbm: separated
 			});
 			const classes = className || defaultClasses;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$176.createElement(H, {
+			return /*#__PURE__*/ import_react$177.createElement(H, {
 				className: classes,
 				id
-			}, text, href && " ", href && /*#__PURE__*/ import_react$176.createElement("a", {
+			}, text, href && " ", href && /*#__PURE__*/ import_react$177.createElement("a", {
 				href,
 				style: { textDecoration: "none" }
-			}, /*#__PURE__*/ import_react$176.createElement(Icon$4, { i: "link" })));
-========
-			return /*#__PURE__*/ import_react$175.createElement(H, {
-				className: classes,
-				id
-			}, text, href && " ", href && /*#__PURE__*/ import_react$175.createElement("a", {
-				href,
-				style: { textDecoration: "none" }
-			}, /*#__PURE__*/ import_react$175.createElement(Icon$4, { i: "link" })));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$177.createElement(Icon$4, { i: "link" })));
 		};
 	}));
 	//#endregion
@@ -29609,6 +29300,9 @@ var require = (function() {
 			"Link": function(m) {
 				return m && m.__esModule ? m.default : m;
 			}((init_Link(), __toCommonJS(Link_exports))),
+			"MediaFormatBar": function(m) {
+				return m && m.__esModule ? m.default : m;
+			}((init_MediaFormatBar(), __toCommonJS(MediaFormatBar_exports))),
 			"MediaPlayer": function(m) {
 				return m && m.__esModule ? m.default : m;
 			}((init_MediaPlayer(), __toCommonJS(MediaPlayer_exports))),
@@ -32513,21 +32207,12 @@ var require = (function() {
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/rails-form.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$175, import_prop_types$39, import_react_dom$1, import_url$25, checkForAuthToken, RestForm;
+	var import_react$176, import_prop_types$40, import_react_dom$1, import_url$25, checkForAuthToken, RestForm;
 	var init_rails_form = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$175 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$39 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$174, import_prop_types$40, import_react_dom$1, import_url$25, checkForAuthToken, RestForm;
-	var init_rails_form = __esmMin((() => {
-		init_present();
-		init_lodash();
-		import_react$174 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$176 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$40 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		import_react_dom$1 = /* @__PURE__ */ __toESM(require_react_dom());
 		init_ui();
 		import_url$25 = /* @__PURE__ */ __toESM(require_url());
@@ -32536,11 +32221,7 @@ var require = (function() {
 			if (!present(authToken)) return /* @__PURE__ */ new Error("No `authToken` given!");
 			return authToken;
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		RestForm = class extends import_react$175.Component {
-========
-		RestForm = class extends import_react$174.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		RestForm = class extends import_react$176.Component {
 			static propTypes = {
 				name: import_prop_types$40.default.string.isRequired,
 				action: import_prop_types$40.default.string,
@@ -32580,45 +32261,25 @@ var require = (function() {
 					method,
 					authToken
 				});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$175.createElement("form", Object.assign({}, restProps, {
-========
-				return /*#__PURE__*/ import_react$174.createElement("form", Object.assign({}, restProps, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$176.createElement("form", Object.assign({}, restProps, {
 					ref: "form",
 					name,
 					method: formMethod,
 					className: ui_default.cx(ui_default.parseMods(this.props)),
 					acceptCharset: "UTF-8"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), /*#__PURE__*/ import_react$175.createElement("input", {
+				}), /*#__PURE__*/ import_react$176.createElement("input", {
 					name: "utf8",
 					type: "hidden",
 					value: "✓"
-				}), has(queryParams, "lang") ? /*#__PURE__*/ import_react$175.createElement("input", {
+				}), has(queryParams, "lang") ? /*#__PURE__*/ import_react$176.createElement("input", {
 					name: "lang",
 					type: "hidden",
 					value: queryParams["lang"]
-				}) : void 0, emulateHTTP ? /*#__PURE__*/ import_react$175.createElement("input", {
+				}) : void 0, emulateHTTP ? /*#__PURE__*/ import_react$176.createElement("input", {
 					name: "_method",
 					type: "hidden",
 					value: restMethod
-				}) : void 0, maybeAuthToken ? /*#__PURE__*/ import_react$175.createElement("input", {
-========
-				}), /*#__PURE__*/ import_react$174.createElement("input", {
-					name: "utf8",
-					type: "hidden",
-					value: "✓"
-				}), has(queryParams, "lang") ? /*#__PURE__*/ import_react$174.createElement("input", {
-					name: "lang",
-					type: "hidden",
-					value: queryParams["lang"]
-				}) : void 0, emulateHTTP ? /*#__PURE__*/ import_react$174.createElement("input", {
-					name: "_method",
-					type: "hidden",
-					value: restMethod
-				}) : void 0, maybeAuthToken ? /*#__PURE__*/ import_react$174.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}) : void 0, maybeAuthToken ? /*#__PURE__*/ import_react$176.createElement("input", {
 					name: authTokenParam,
 					type: "hidden",
 					value: maybeAuthToken
@@ -32629,23 +32290,13 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/views/Collection/SelectCollectionDialog.jsx
 	var SelectCollectionDialog_exports = /* @__PURE__ */ __exportAll({ default: () => SelectCollectionDialog });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$174, SelectCollectionDialog, SelectCollectionHeader, SelectCollectionFooter, SelectCollectionBody, SelectCollectionForm, SelectCollectionToolbar;
+	var import_react$175, SelectCollectionDialog, SelectCollectionHeader, SelectCollectionFooter, SelectCollectionBody, SelectCollectionForm, SelectCollectionToolbar;
 	var init_SelectCollectionDialog = __esmMin((() => {
-		import_react$174 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$175 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_rails_form();
 		init_Button();
-		SelectCollectionDialog = class extends import_react$174.Component {
-========
-	var import_react$173, SelectCollectionDialog, SelectCollectionHeader, SelectCollectionFooter, SelectCollectionBody, SelectCollectionForm, SelectCollectionToolbar;
-	var init_SelectCollectionDialog = __esmMin((() => {
-		import_react$173 = /* @__PURE__ */ __toESM(require_react$1());
-		init_i18n_translate();
-		init_rails_form();
-		init_Button();
-		SelectCollectionDialog = class extends import_react$173.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		SelectCollectionDialog = class extends import_react$175.Component {
 			_onCancel = (event) => {
 				if (this.props.onCancel) {
 					event.preventDefault();
@@ -32655,19 +32306,11 @@ var require = (function() {
 			};
 			render() {
 				const { cancelUrl, title, toolbar, action, authToken, content, method, showSave } = this.props;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$174.createElement("div", null, /*#__PURE__*/ import_react$174.createElement(SelectCollectionHeader, {
+				return /*#__PURE__*/ import_react$175.createElement("div", null, /*#__PURE__*/ import_react$175.createElement(SelectCollectionHeader, {
 					onCancel: this._onCancel,
 					cancelUrl,
 					title
-				}), /*#__PURE__*/ import_react$174.createElement(SelectCollectionToolbar, null, toolbar), /*#__PURE__*/ import_react$174.createElement(SelectCollectionForm, {
-========
-				return /*#__PURE__*/ import_react$173.createElement("div", null, /*#__PURE__*/ import_react$173.createElement(SelectCollectionHeader, {
-					onCancel: this._onCancel,
-					cancelUrl,
-					title
-				}), /*#__PURE__*/ import_react$173.createElement(SelectCollectionToolbar, null, toolbar), /*#__PURE__*/ import_react$173.createElement(SelectCollectionForm, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$175.createElement(SelectCollectionToolbar, null, toolbar), /*#__PURE__*/ import_react$175.createElement(SelectCollectionForm, {
 					showAddToClipboard: this.props.showAddToClipboard,
 					action,
 					authToken,
@@ -32675,23 +32318,13 @@ var require = (function() {
 					onCancel: this._onCancel,
 					method,
 					showSave
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$174.createElement(SelectCollectionBody, null, content)));
+				}, /*#__PURE__*/ import_react$175.createElement(SelectCollectionBody, null, content)));
 			}
 		};
-		SelectCollectionHeader = class extends import_react$174.Component {
+		SelectCollectionHeader = class extends import_react$175.Component {
 			render() {
 				const { cancelUrl, title, onCancel } = this.props;
-				return /*#__PURE__*/ import_react$174.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$174.createElement("a", {
-========
-				}, /*#__PURE__*/ import_react$173.createElement(SelectCollectionBody, null, content)));
-			}
-		};
-		SelectCollectionHeader = class extends import_react$173.Component {
-			render() {
-				const { cancelUrl, title, onCancel } = this.props;
-				return /*#__PURE__*/ import_react$173.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$173.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$175.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$175.createElement("a", {
 					href: cancelUrl,
 					"aria-hidden": "true",
 					className: "ui-modal-close",
@@ -32704,95 +32337,52 @@ var require = (function() {
 						paddingTop: "5px"
 					},
 					onClick: onCancel
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$174.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$174.createElement("h3", { className: "title-l" }, title));
+				}, /*#__PURE__*/ import_react$175.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$175.createElement("h3", { className: "title-l" }, title));
 			}
 		};
-		SelectCollectionFooter = class extends import_react$174.Component {
+		SelectCollectionFooter = class extends import_react$175.Component {
 			render() {
 				const { cancelUrl, onCancel, showSave } = this.props;
 				const className = showSave ? "line weak" : "primary-button";
-				return /*#__PURE__*/ import_react$174.createElement("div", { className: "ui-modal-footer body-lower-limit" }, this.props.showAddToClipboard ? /*#__PURE__*/ import_react$174.createElement("div", null, /*#__PURE__*/ import_react$174.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$175.createElement("div", { className: "ui-modal-footer body-lower-limit" }, this.props.showAddToClipboard ? /*#__PURE__*/ import_react$175.createElement("div", null, /*#__PURE__*/ import_react$175.createElement("div", { style: {
 					textAlign: "center",
 					paddingTop: "0px",
 					paddingBottom: "10px"
-				} }, /*#__PURE__*/ import_react$174.createElement("input", {
+				} }, /*#__PURE__*/ import_react$175.createElement("input", {
 					type: "checkbox",
 					name: "add_to_clipboard"
-				}), I18nTranslate("clipboard_add_hint")), /*#__PURE__*/ import_react$174.createElement("hr", {
+				}), I18nTranslate("clipboard_add_hint")), /*#__PURE__*/ import_react$175.createElement("hr", {
 					className: "separator",
 					style: { marginBottom: "20px" }
-				})) : void 0, /*#__PURE__*/ import_react$174.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$174.createElement("a", {
+				})) : void 0, /*#__PURE__*/ import_react$175.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$175.createElement("a", {
 					href: cancelUrl,
 					className,
 					onClick: onCancel
-				}, I18nTranslate("resource_select_collection_cancel")), showSave ? /*#__PURE__*/ import_react$174.createElement(Button$3, {
-========
-				}, /*#__PURE__*/ import_react$173.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$173.createElement("h3", { className: "title-l" }, title));
-			}
-		};
-		SelectCollectionFooter = class extends import_react$173.Component {
-			render() {
-				const { cancelUrl, onCancel, showSave } = this.props;
-				const className = showSave ? "line weak" : "primary-button";
-				return /*#__PURE__*/ import_react$173.createElement("div", { className: "ui-modal-footer body-lower-limit" }, this.props.showAddToClipboard ? /*#__PURE__*/ import_react$173.createElement("div", null, /*#__PURE__*/ import_react$173.createElement("div", { style: {
-					textAlign: "center",
-					paddingTop: "0px",
-					paddingBottom: "10px"
-				} }, /*#__PURE__*/ import_react$173.createElement("input", {
-					type: "checkbox",
-					name: "add_to_clipboard"
-				}), I18nTranslate("clipboard_add_hint")), /*#__PURE__*/ import_react$173.createElement("hr", {
-					className: "separator",
-					style: { marginBottom: "20px" }
-				})) : void 0, /*#__PURE__*/ import_react$173.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$173.createElement("a", {
-					href: cancelUrl,
-					className,
-					onClick: onCancel
-				}, I18nTranslate("resource_select_collection_cancel")), showSave ? /*#__PURE__*/ import_react$173.createElement(Button$3, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, I18nTranslate("resource_select_collection_cancel")), showSave ? /*#__PURE__*/ import_react$175.createElement(Button$3, {
 					className: "primary-button",
 					type: "submit"
 				}, I18nTranslate("resource_select_collection_save")) : void 0));
 			}
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		SelectCollectionBody = class extends import_react$174.Component {
+		SelectCollectionBody = class extends import_react$175.Component {
 			render() {
 				const { children } = this.props;
-				return /*#__PURE__*/ import_react$174.createElement("div", {
-========
-		SelectCollectionBody = class extends import_react$173.Component {
-			render() {
-				const { children } = this.props;
-				return /*#__PURE__*/ import_react$173.createElement("div", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$175.createElement("div", {
 					className: "ui-modal-body",
 					style: { maxHeight: "none" }
 				}, children);
 			}
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		SelectCollectionForm = class extends import_react$174.Component {
+		SelectCollectionForm = class extends import_react$175.Component {
 			render() {
 				const { children, action, authToken, cancelUrl, onCancel, method, showSave } = this.props;
-				return /*#__PURE__*/ import_react$174.createElement(RestForm, {
-========
-		SelectCollectionForm = class extends import_react$173.Component {
-			render() {
-				const { children, action, authToken, cancelUrl, onCancel, method, showSave } = this.props;
-				return /*#__PURE__*/ import_react$173.createElement(RestForm, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$175.createElement(RestForm, {
 					name: "select_collections",
 					action,
 					method,
 					authToken,
 					className: "save-arcs"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, children, /*#__PURE__*/ import_react$174.createElement(SelectCollectionFooter, {
-========
-				}, children, /*#__PURE__*/ import_react$173.createElement(SelectCollectionFooter, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, children, /*#__PURE__*/ import_react$175.createElement(SelectCollectionFooter, {
 					showAddToClipboard: this.props.showAddToClipboard,
 					cancelUrl,
 					onCancel,
@@ -32800,17 +32390,10 @@ var require = (function() {
 				}));
 			}
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		SelectCollectionToolbar = class extends import_react$174.Component {
+		SelectCollectionToolbar = class extends import_react$175.Component {
 			render() {
 				const { children } = this.props;
-				return /*#__PURE__*/ import_react$174.createElement("div", { className: "ui-modal-toolbar top" }, children);
-========
-		SelectCollectionToolbar = class extends import_react$173.Component {
-			render() {
-				const { children } = this.props;
-				return /*#__PURE__*/ import_react$173.createElement("div", { className: "ui-modal-toolbar top" }, children);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$175.createElement("div", { className: "ui-modal-toolbar top" }, children);
 			}
 		};
 	}));
@@ -33036,19 +32619,11 @@ var require = (function() {
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSet.jsx
 	var BatchAddToSet_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSet });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$173, import_lib$13, import_rails_csrf_token$16, import_xhr$15, BatchAddToSet;
+	var import_react$174, import_lib$13, import_rails_csrf_token$16, import_xhr$15, BatchAddToSet;
 	var init_BatchAddToSet = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$173 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$172, import_lib$13, import_rails_csrf_token$16, import_xhr$15, BatchAddToSet;
-	var init_BatchAddToSet = __esmMin((() => {
-		init_present();
-		init_lodash();
-		import_react$172 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$174 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_SelectCollectionDialog();
 		init_Button();
@@ -33057,11 +32632,7 @@ var require = (function() {
 		import_lib$13 = /* @__PURE__ */ __toESM(require_lib());
 		import_rails_csrf_token$16 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		import_xhr$15 = /* @__PURE__ */ __toESM(require_xhr());
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		BatchAddToSet = class extends import_react$173.Component {
-========
-		BatchAddToSet = class extends import_react$172.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BatchAddToSet = class extends import_react$174.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -33132,30 +32703,18 @@ var require = (function() {
 				};
 				const hasNew = this.state.newSets.length > 0;
 				const hasResultEntries = get.search_results.collections.length > 0;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const _search = /*#__PURE__*/ import_react$173.createElement("div", { className: "ui-search" }, /*#__PURE__*/ import_react$173.createElement(RestForm, {
-========
-				const _search = /*#__PURE__*/ import_react$172.createElement("div", { className: "ui-search" }, /*#__PURE__*/ import_react$172.createElement(RestForm, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				const _search = /*#__PURE__*/ import_react$174.createElement("div", { className: "ui-search" }, /*#__PURE__*/ import_react$174.createElement(RestForm, {
 					ref: "form",
 					name: "search_collections",
 					action: this.props.get.batch_select_add_to_set_url,
 					method: "post",
 					authToken,
 					className: "dummy"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$173.createElement("input", {
+				}, /*#__PURE__*/ import_react$174.createElement("input", {
 					type: "hidden",
 					name: "return_to",
 					value: this.state.get.return_to
-				}), /*#__PURE__*/ import_react$173.createElement("input", {
-========
-				}, /*#__PURE__*/ import_react$172.createElement("input", {
-					type: "hidden",
-					name: "return_to",
-					value: this.state.get.return_to
-				}), /*#__PURE__*/ import_react$172.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$174.createElement("input", {
 					type: "text",
 					autoCorrect: "off",
 					autoComplete: "off",
@@ -33165,103 +32724,59 @@ var require = (function() {
 					name: "search_term",
 					value: this.state.searchTerm,
 					onChange: this._onChange
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$173.createElement("input", {
-========
-				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$172.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$174.createElement("input", {
 					key: `resource_id_${resource_id.uuid}`,
 					type: "hidden",
 					name: "resource_id[][uuid]",
 					value: resource_id.uuid
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), /*#__PURE__*/ import_react$173.createElement("input", {
-========
-				}), /*#__PURE__*/ import_react$172.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$174.createElement("input", {
 					key: `resource_id_${resource_id.type}`,
 					type: "hidden",
 					name: "resource_id[][type]",
 					value: resource_id.type
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})]), !this.state.isClient ? [/*#__PURE__*/ import_react$173.createElement(Button$3, {
-========
-				})]), !this.state.isClient ? [/*#__PURE__*/ import_react$172.createElement(Button$3, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				})]), !this.state.isClient ? [/*#__PURE__*/ import_react$174.createElement(Button$3, {
 					key: "search_button",
 					style: buttonMargins,
 					className: "button",
 					type: "submit",
 					name: "search"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, I18nTranslate("resource_select_collection_search")), /*#__PURE__*/ import_react$173.createElement(Button$3, {
-========
-				}, I18nTranslate("resource_select_collection_search")), /*#__PURE__*/ import_react$172.createElement(Button$3, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, I18nTranslate("resource_select_collection_search")), /*#__PURE__*/ import_react$174.createElement(Button$3, {
 					key: "clear_button",
 					style: buttonMargins,
 					className: "button",
 					type: "submit",
 					name: "clear"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, I18nTranslate("resource_select_collection_clear"))] : /*#__PURE__*/ import_react$173.createElement("button", {
-========
-				}, I18nTranslate("resource_select_collection_clear"))] : /*#__PURE__*/ import_react$172.createElement("button", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, I18nTranslate("resource_select_collection_clear"))] : /*#__PURE__*/ import_react$174.createElement("button", {
 					onClick: this._onClickNew,
 					className: "button ui-search-button"
 				}, "Neues Set erstellen")));
 				const _content = [];
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				if (this.state.searching && !(hasNew || hasResultEntries)) _content.push(/*#__PURE__*/ import_react$173.createElement(Preloader$1, { key: "content1" }));
-				if (hasNew || hasResultEntries) _content.push(/*#__PURE__*/ import_react$173.createElement("ol", {
+				if (this.state.searching && !(hasNew || hasResultEntries)) _content.push(/*#__PURE__*/ import_react$174.createElement(Preloader$1, { key: "content1" }));
+				if (hasNew || hasResultEntries) _content.push(/*#__PURE__*/ import_react$174.createElement("ol", {
 					key: "content2",
 					className: "ui-set-list pbs"
-				}, /*#__PURE__*/ import_react$173.createElement("input", {
+				}, /*#__PURE__*/ import_react$174.createElement("input", {
 					type: "hidden",
 					name: "return_to",
 					value: this.state.get.return_to
-				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$173.createElement("input", {
-========
-				if (this.state.searching && !(hasNew || hasResultEntries)) _content.push(/*#__PURE__*/ import_react$172.createElement(Preloader$1, { key: "content1" }));
-				if (hasNew || hasResultEntries) _content.push(/*#__PURE__*/ import_react$172.createElement("ol", {
-					key: "content2",
-					className: "ui-set-list pbs"
-				}, /*#__PURE__*/ import_react$172.createElement("input", {
-					type: "hidden",
-					name: "return_to",
-					value: this.state.get.return_to
-				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$172.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), map(this.props.get.resource_ids, (resource_id) => [/*#__PURE__*/ import_react$174.createElement("input", {
 					key: `resource_id_${resource_id.uuid}`,
 					type: "hidden",
 					name: "resource_id[][uuid]",
 					value: resource_id.uuid
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), /*#__PURE__*/ import_react$173.createElement("input", {
-========
-				}), /*#__PURE__*/ import_react$172.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$174.createElement("input", {
 					key: `resource_id_${resource_id.type}`,
 					type: "hidden",
 					name: "resource_id[][type]",
 					value: resource_id.type
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})]), hasNew ? map(this.state.newSets, (row, index) => /*#__PURE__*/ import_react$173.createElement("li", {
-========
-				})]), hasNew ? map(this.state.newSets, (row, index) => /*#__PURE__*/ import_react$172.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				})]), hasNew ? map(this.state.newSets, (row, index) => /*#__PURE__*/ import_react$174.createElement("li", {
 					style: {
 						paddingLeft: "60px",
 						paddingRight: "200px"
 					},
 					key: `new_${index}`,
 					className: "ui-set-list-item"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$173.createElement("img", {
-========
-				}, /*#__PURE__*/ import_react$172.createElement("img", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$174.createElement("img", {
 					style: {
 						margin: "0px",
 						position: "absolute",
@@ -33270,11 +32785,7 @@ var require = (function() {
 					},
 					className: "ui-thumbnail micro",
 					src: null
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), /*#__PURE__*/ import_react$173.createElement("span", { className: "title" }, row), /*#__PURE__*/ import_react$173.createElement("span", { className: "owner" }, "New"), /*#__PURE__*/ import_react$173.createElement(Button$3, {
-========
-				}), /*#__PURE__*/ import_react$172.createElement("span", { className: "title" }, row), /*#__PURE__*/ import_react$172.createElement("span", { className: "owner" }, "New"), /*#__PURE__*/ import_react$172.createElement(Button$3, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$174.createElement("span", { className: "title" }, row), /*#__PURE__*/ import_react$174.createElement("span", { className: "owner" }, "New"), /*#__PURE__*/ import_react$174.createElement(Button$3, {
 					style: {
 						position: "absolute",
 						right: "0px",
@@ -33287,24 +32798,15 @@ var require = (function() {
 				}, `\
 Neues Set erstellen und Einträge hinzufügen\
 `))) : void 0, (() => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					if (this.state.searching) return /*#__PURE__*/ import_react$173.createElement(Preloader$1, { style: { marginTop: "20px" } });
-					else if (hasResultEntries) return map(get.search_results.collections, (collection) => /*#__PURE__*/ import_react$173.createElement("li", {
-========
-					if (this.state.searching) return /*#__PURE__*/ import_react$172.createElement(Preloader$1, { style: { marginTop: "20px" } });
-					else if (hasResultEntries) return map(get.search_results.collections, (collection) => /*#__PURE__*/ import_react$172.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					if (this.state.searching) return /*#__PURE__*/ import_react$174.createElement(Preloader$1, { style: { marginTop: "20px" } });
+					else if (hasResultEntries) return map(get.search_results.collections, (collection) => /*#__PURE__*/ import_react$174.createElement("li", {
 						style: {
 							paddingLeft: "60px",
 							paddingRight: "200px"
 						},
 						key: collection.uuid,
 						className: "ui-set-list-item"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					}, /*#__PURE__*/ import_react$173.createElement("img", {
-========
-					}, /*#__PURE__*/ import_react$172.createElement("img", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}, /*#__PURE__*/ import_react$174.createElement("img", {
 						style: {
 							margin: "0px",
 							position: "absolute",
@@ -33313,11 +32815,7 @@ Neues Set erstellen und Einträge hinzufügen\
 						},
 						className: "ui-thumbnail micro",
 						src: collection.image_url
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					}), /*#__PURE__*/ import_react$173.createElement("span", { className: "title" }, collection.title), /*#__PURE__*/ import_react$173.createElement("span", { className: "owner" }, collection.responsible.name), /*#__PURE__*/ import_react$173.createElement("span", { className: "created-at" }, collection.created_at_pretty), /*#__PURE__*/ import_react$173.createElement(Button$3, {
-========
-					}), /*#__PURE__*/ import_react$172.createElement("span", { className: "title" }, collection.title), /*#__PURE__*/ import_react$172.createElement("span", { className: "owner" }, collection.responsible.name), /*#__PURE__*/ import_react$172.createElement("span", { className: "created-at" }, collection.created_at_pretty), /*#__PURE__*/ import_react$172.createElement(Button$3, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}), /*#__PURE__*/ import_react$174.createElement("span", { className: "title" }, collection.title), /*#__PURE__*/ import_react$174.createElement("span", { className: "owner" }, collection.responsible.name), /*#__PURE__*/ import_react$174.createElement("span", { className: "created-at" }, collection.created_at_pretty), /*#__PURE__*/ import_react$174.createElement(Button$3, {
 						style: {
 							position: "absolute",
 							right: "0px",
@@ -33331,35 +32829,19 @@ Neues Set erstellen und Einträge hinzufügen\
 Zu diesem hinzufügen\
 `)));
 				})()));
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				if (!this.state.searching && hasResultEntries && get.search_results.has_more) _content.push(/*#__PURE__*/ import_react$173.createElement("h3", {
+				if (!this.state.searching && hasResultEntries && get.search_results.has_more) _content.push(/*#__PURE__*/ import_react$174.createElement("h3", {
 					key: "content3",
 					className: "by-center title-m"
 				}, I18nTranslate("resource_select_collection_has_more")));
-				if (!hasResultEntries && presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$173.createElement("h3", {
+				if (!hasResultEntries && presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$174.createElement("h3", {
 					key: "content3",
 					className: "by-center title-m"
 				}, I18nTranslate("resource_select_collection_non_found")));
-				if (!hasResultEntries && !presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$173.createElement("h3", {
+				if (!hasResultEntries && !presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$174.createElement("h3", {
 					key: "content4",
 					className: "by-center title-m"
 				}, I18nTranslate("batch_add_to_collection_hint")));
-				return /*#__PURE__*/ import_react$173.createElement(SelectCollectionDialog, {
-========
-				if (!this.state.searching && hasResultEntries && get.search_results.has_more) _content.push(/*#__PURE__*/ import_react$172.createElement("h3", {
-					key: "content3",
-					className: "by-center title-m"
-				}, I18nTranslate("resource_select_collection_has_more")));
-				if (!hasResultEntries && presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$172.createElement("h3", {
-					key: "content3",
-					className: "by-center title-m"
-				}, I18nTranslate("resource_select_collection_non_found")));
-				if (!hasResultEntries && !presence(get.search_term) && !this.state.searching) _content.push(/*#__PURE__*/ import_react$172.createElement("h3", {
-					key: "content4",
-					className: "by-center title-m"
-				}, I18nTranslate("batch_add_to_collection_hint")));
-				return /*#__PURE__*/ import_react$172.createElement(SelectCollectionDialog, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$174.createElement(SelectCollectionDialog, {
 					onCancel: this.props.onClose,
 					cancelUrl: this.state.get.return_to,
 					title: I18nTranslate("batch_add_to_collection_pre") + this.props.get.batch_count + I18nTranslate("batch_add_to_collection_post"),
@@ -33377,30 +32859,18 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchAddToSetModal.jsx
 	var BatchAddToSetModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchAddToSetModal });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$172, import_lib$12, import_xhr$14, import_rails_csrf_token$15, BatchAddToSetModal;
+	var import_react$173, import_lib$12, import_xhr$14, import_rails_csrf_token$15, BatchAddToSetModal;
 	var init_BatchAddToSetModal = __esmMin((() => {
-		import_react$172 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$171, import_lib$12, import_xhr$14, import_rails_csrf_token$15, BatchAddToSetModal;
-	var init_BatchAddToSetModal = __esmMin((() => {
-		import_react$171 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$173 = /* @__PURE__ */ __toESM(require_react$1());
 		init_BatchAddToSet();
 		import_lib$12 = /* @__PURE__ */ __toESM(require_lib());
 		import_xhr$14 = /* @__PURE__ */ __toESM(require_xhr());
 		init_Modal();
 		import_rails_csrf_token$15 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		BatchAddToSetModal = ({ resourceIds, returnTo, authToken, onClose }) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const [loading, setLoading] = (0, import_react$172.useState)(true);
-			const [get, setGet] = (0, import_react$172.useState)(null);
-			(0, import_react$172.useEffect)(() => {
-========
-			const [loading, setLoading] = (0, import_react$171.useState)(true);
-			const [get, setGet] = (0, import_react$171.useState)(null);
-			(0, import_react$171.useEffect)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const [loading, setLoading] = (0, import_react$173.useState)(true);
+			const [get, setGet] = (0, import_react$173.useState)(null);
+			(0, import_react$173.useEffect)(() => {
 				const data = {
 					search_term: "",
 					resource_id: resourceIds,
@@ -33423,13 +32893,8 @@ Zu diesem hinzufügen\
 					}
 				});
 			}, [resourceIds, returnTo]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (loading) return /*#__PURE__*/ import_react$172.createElement(Modal, { loading: true });
-			return /*#__PURE__*/ import_react$172.createElement(Modal, { loading: false }, /*#__PURE__*/ import_react$172.createElement(BatchAddToSet, {
-========
-			if (loading) return /*#__PURE__*/ import_react$171.createElement(Modal, { loading: true });
-			return /*#__PURE__*/ import_react$171.createElement(Modal, { loading: false }, /*#__PURE__*/ import_react$171.createElement(BatchAddToSet, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			if (loading) return /*#__PURE__*/ import_react$173.createElement(Modal, { loading: true });
+			return /*#__PURE__*/ import_react$173.createElement(Modal, { loading: false }, /*#__PURE__*/ import_react$173.createElement(BatchAddToSet, {
 				returnTo,
 				get,
 				async: true,
@@ -33441,15 +32906,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchEditTitleModal.jsx
 	var BatchEditTitleModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchEditTitleModal });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$171, import_xhr$13, import_lib$11, import_rails_csrf_token$14, endPointUrl, BatchEditTitleModal;
+	var import_react$172, import_xhr$13, import_lib$11, import_rails_csrf_token$14, endPointUrl, BatchEditTitleModal;
 	var init_BatchEditTitleModal = __esmMin((() => {
-		import_react$171 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$170, import_xhr$13, import_lib$11, import_rails_csrf_token$14, endPointUrl, BatchEditTitleModal;
-	var init_BatchEditTitleModal = __esmMin((() => {
-		import_react$170 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$172 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Modal();
 		init_rails_form();
 		init_FormButton();
@@ -33458,11 +32917,7 @@ Zu diesem hinzufügen\
 		import_rails_csrf_token$14 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_i18n_translate();
 		endPointUrl = "/batch_edit_title";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		BatchEditTitleModal = class extends import_react$171.Component {
-========
-		BatchEditTitleModal = class extends import_react$170.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BatchEditTitleModal = class extends import_react$172.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -33526,20 +32981,12 @@ Zu diesem hinzufügen\
 				const { authToken, returnTo, resourceIds } = this.props;
 				const { loading, errorMessage, mediaEntries } = this.state;
 				const submitUrl = endPointUrl;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$171.createElement(Modal, { widthInPixel: "800" }, /*#__PURE__*/ import_react$171.createElement(RestForm, {
-========
-				return /*#__PURE__*/ import_react$170.createElement(Modal, { widthInPixel: "800" }, /*#__PURE__*/ import_react$170.createElement(RestForm, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$172.createElement(Modal, { widthInPixel: "800" }, /*#__PURE__*/ import_react$172.createElement(RestForm, {
 					name: "batch_edit_title",
 					action: submitUrl,
 					method: "put",
 					authToken
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$171.createElement("a", {
-========
-				}, /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$170.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$172.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$172.createElement("a", {
 					href: returnTo,
 					onClick: (e) => this._onCancel(e),
 					className: "ui-modal-close",
@@ -33551,67 +32998,37 @@ Zu diesem hinzufügen\
 						float: "right",
 						paddingTop: "5px"
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$171.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$171.createElement("h3", { className: "title-l" }, I18nTranslate("batch_edit_title_title"))), /*#__PURE__*/ import_react$171.createElement("div", {
+				}, /*#__PURE__*/ import_react$172.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$172.createElement("h3", { className: "title-l" }, I18nTranslate("batch_edit_title_title"))), /*#__PURE__*/ import_react$172.createElement("div", {
 					className: "ui-modal-body",
 					style: { maxHeight: "none" }
-				}, /*#__PURE__*/ import_react$171.createElement("input", {
+				}, /*#__PURE__*/ import_react$172.createElement("input", {
 					type: "hidden",
 					name: "return_to",
 					value: returnTo
-				}), resourceIds.map((resource_id) => [/*#__PURE__*/ import_react$171.createElement("input", {
-========
-				}, /*#__PURE__*/ import_react$170.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$170.createElement("h3", { className: "title-l" }, I18nTranslate("batch_edit_title_title"))), /*#__PURE__*/ import_react$170.createElement("div", {
-					className: "ui-modal-body",
-					style: { maxHeight: "none" }
-				}, /*#__PURE__*/ import_react$170.createElement("input", {
-					type: "hidden",
-					name: "return_to",
-					value: returnTo
-				}), resourceIds.map((resource_id) => [/*#__PURE__*/ import_react$170.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), resourceIds.map((resource_id) => [/*#__PURE__*/ import_react$172.createElement("input", {
 					key: "resource_id_" + resource_id.uuid,
 					type: "hidden",
 					name: "resource_id[][uuid]",
 					value: resource_id.uuid
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), /*#__PURE__*/ import_react$171.createElement("input", {
-========
-				}), /*#__PURE__*/ import_react$170.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$172.createElement("input", {
 					key: "resource_id_" + resource_id.type,
 					type: "hidden",
 					name: "resource_id[][type]",
 					value: resource_id.type
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})]), errorMessage && /*#__PURE__*/ import_react$171.createElement("div", { className: "error ui-alert" }, errorMessage), loading && /*#__PURE__*/ import_react$171.createElement("div", null, "Loading..."), !loading && !errorMessage && /*#__PURE__*/ import_react$171.createElement("table", {
+				})]), errorMessage && /*#__PURE__*/ import_react$172.createElement("div", { className: "error ui-alert" }, errorMessage), loading && /*#__PURE__*/ import_react$172.createElement("div", null, "Loading..."), !loading && !errorMessage && /*#__PURE__*/ import_react$172.createElement("table", {
 					className: "ui-table",
 					style: { width: "100%" }
-				}, /*#__PURE__*/ import_react$171.createElement("thead", null, /*#__PURE__*/ import_react$171.createElement("tr", null, /*#__PURE__*/ import_react$171.createElement("th", null), /*#__PURE__*/ import_react$171.createElement("th", { className: "phs" }, I18nTranslate("batch_edit_title_th_filename")), /*#__PURE__*/ import_react$171.createElement("th", null, I18nTranslate("batch_edit_title_th_title")))), /*#__PURE__*/ import_react$171.createElement("tbody", null, mediaEntries.map((entry) => /*#__PURE__*/ import_react$171.createElement("tr", { key: entry.id }, /*#__PURE__*/ import_react$171.createElement("td", { style: { width: "40px" } }, /*#__PURE__*/ import_react$171.createElement("img", {
+				}, /*#__PURE__*/ import_react$172.createElement("thead", null, /*#__PURE__*/ import_react$172.createElement("tr", null, /*#__PURE__*/ import_react$172.createElement("th", null), /*#__PURE__*/ import_react$172.createElement("th", { className: "phs" }, I18nTranslate("batch_edit_title_th_filename")), /*#__PURE__*/ import_react$172.createElement("th", null, I18nTranslate("batch_edit_title_th_title")))), /*#__PURE__*/ import_react$172.createElement("tbody", null, mediaEntries.map((entry) => /*#__PURE__*/ import_react$172.createElement("tr", { key: entry.id }, /*#__PURE__*/ import_react$172.createElement("td", { style: { width: "40px" } }, /*#__PURE__*/ import_react$172.createElement("img", {
 					className: "ui-thumbnail micro",
 					style: { margin: 0 },
 					src: entry.image_url
-				})), /*#__PURE__*/ import_react$171.createElement("td", {
-========
-				})]), errorMessage && /*#__PURE__*/ import_react$170.createElement("div", { className: "error ui-alert" }, errorMessage), loading && /*#__PURE__*/ import_react$170.createElement("div", null, "Loading..."), !loading && !errorMessage && /*#__PURE__*/ import_react$170.createElement("table", {
-					className: "ui-table",
-					style: { width: "100%" }
-				}, /*#__PURE__*/ import_react$170.createElement("thead", null, /*#__PURE__*/ import_react$170.createElement("tr", null, /*#__PURE__*/ import_react$170.createElement("th", null), /*#__PURE__*/ import_react$170.createElement("th", { className: "phs" }, I18nTranslate("batch_edit_title_th_filename")), /*#__PURE__*/ import_react$170.createElement("th", null, I18nTranslate("batch_edit_title_th_title")))), /*#__PURE__*/ import_react$170.createElement("tbody", null, mediaEntries.map((entry) => /*#__PURE__*/ import_react$170.createElement("tr", { key: entry.id }, /*#__PURE__*/ import_react$170.createElement("td", { style: { width: "40px" } }, /*#__PURE__*/ import_react$170.createElement("img", {
-					className: "ui-thumbnail micro",
-					style: { margin: 0 },
-					src: entry.image_url
-				})), /*#__PURE__*/ import_react$170.createElement("td", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				})), /*#__PURE__*/ import_react$172.createElement("td", {
 					className: "phs",
 					style: {
 						width: "40%",
 						maxWidth: "250px"
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$171.createElement("div", { style: { wordWrap: "break-word" } }, entry.file_name)), /*#__PURE__*/ import_react$171.createElement("td", { style: { width: "60%" } }, /*#__PURE__*/ import_react$171.createElement("input", {
-========
-				}, /*#__PURE__*/ import_react$170.createElement("div", { style: { wordWrap: "break-word" } }, entry.file_name)), /*#__PURE__*/ import_react$170.createElement("td", { style: { width: "60%" } }, /*#__PURE__*/ import_react$170.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$172.createElement("div", { style: { wordWrap: "break-word" } }, entry.file_name)), /*#__PURE__*/ import_react$172.createElement("td", { style: { width: "60%" } }, /*#__PURE__*/ import_react$172.createElement("input", {
 					type: "text",
 					className: "block",
 					style: { margin: 0 },
@@ -33619,57 +33036,32 @@ Zu diesem hinzufügen\
 					value: entry.title,
 					required: true,
 					onChange: (e) => this._onChangeTitle(e.target.value, entry.id)
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}))))))), /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$171.createElement("a", {
-========
-				}))))))), /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$170.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}))))))), /*#__PURE__*/ import_react$172.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$172.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$172.createElement("a", {
 					href: returnTo,
 					onClick: (e) => this._onCancel(e),
 					className: "link weak",
 					"data-dismiss": "modal"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, I18nTranslate("batch_edit_title_cancel")), !loading && !errorMessage && /*#__PURE__*/ import_react$171.createElement(FormButton, { text: I18nTranslate("batch_edit_title_save") })))));
-========
-				}, I18nTranslate("batch_edit_title_cancel")), !loading && !errorMessage && /*#__PURE__*/ import_react$170.createElement(FormButton, { text: I18nTranslate("batch_edit_title_save") })))));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, I18nTranslate("batch_edit_title_cancel")), !loading && !errorMessage && /*#__PURE__*/ import_react$172.createElement(FormButton, { text: I18nTranslate("batch_edit_title_save") })))));
 			}
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/BatchHintBox.jsx
 	var BatchHintBox_exports = /* @__PURE__ */ __exportAll({ default: () => BatchHintBox });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$170, BatchHintBox;
+	var import_react$171, BatchHintBox;
 	var init_BatchHintBox = __esmMin((() => {
-		import_react$170 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$171 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		BatchHintBox = () => {
-			return /*#__PURE__*/ import_react$170.createElement("div", { className: "app-body-sidebar table-cell ui-container table-side pll" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-container bordered rounded" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-form-group rowed separated" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_no_data")), /*#__PURE__*/ import_react$170.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$170.createElement("input", {
+			return /*#__PURE__*/ import_react$171.createElement("div", { className: "app-body-sidebar table-cell ui-container table-side pll" }, /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-container bordered rounded" }, /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-form-group rowed separated" }, /*#__PURE__*/ import_react$171.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_no_data")), /*#__PURE__*/ import_react$171.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$171.createElement("input", {
 				className: "block",
 				type: "text",
 				readOnly: "true"
-			}))), /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-form-group rowed highlight separated" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_differences"), /*#__PURE__*/ import_react$170.createElement("small", null, I18nTranslate("meta_data_batch_hint_differences_override"))), /*#__PURE__*/ import_react$170.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$170.createElement("input", {
+			}))), /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-form-group rowed highlight separated" }, /*#__PURE__*/ import_react$171.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_differences"), /*#__PURE__*/ import_react$171.createElement("small", null, I18nTranslate("meta_data_batch_hint_differences_override"))), /*#__PURE__*/ import_react$171.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$171.createElement("input", {
 				className: "block",
 				type: "text",
 				readOnly: "true"
-			}))), /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-form-group rowed" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_equal_data")), /*#__PURE__*/ import_react$170.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$170.createElement("input", {
-========
-	var import_react$169, BatchHintBox;
-	var init_BatchHintBox = __esmMin((() => {
-		import_react$169 = /* @__PURE__ */ __toESM(require_react$1());
-		init_i18n_translate();
-		BatchHintBox = () => {
-			return /*#__PURE__*/ import_react$169.createElement("div", { className: "app-body-sidebar table-cell ui-container table-side pll" }, /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-container bordered rounded" }, /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-form-group rowed separated" }, /*#__PURE__*/ import_react$169.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_no_data")), /*#__PURE__*/ import_react$169.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$169.createElement("input", {
-				className: "block",
-				type: "text",
-				readOnly: "true"
-			}))), /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-form-group rowed highlight separated" }, /*#__PURE__*/ import_react$169.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_differences"), /*#__PURE__*/ import_react$169.createElement("small", null, I18nTranslate("meta_data_batch_hint_differences_override"))), /*#__PURE__*/ import_react$169.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$169.createElement("input", {
-				className: "block",
-				type: "text",
-				readOnly: "true"
-			}))), /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-form-group rowed" }, /*#__PURE__*/ import_react$169.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_equal_data")), /*#__PURE__*/ import_react$169.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$169.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}))), /*#__PURE__*/ import_react$171.createElement("div", { className: "ui-form-group rowed" }, /*#__PURE__*/ import_react$171.createElement("div", { className: "form-label" }, I18nTranslate("meta_data_batch_hint_equal_data")), /*#__PURE__*/ import_react$171.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$171.createElement("input", {
 				className: "block",
 				type: "text",
 				value: I18nTranslate("meta_data_batch_hint_value"),
@@ -33709,15 +33101,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchRemoveFromSet.jsx
 	var BatchRemoveFromSet_exports = /* @__PURE__ */ __exportAll({ default: () => BatchRemoveFromSet });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$169, BatchRemoveFromSet;
+	var import_react$170, BatchRemoveFromSet;
 	var init_BatchRemoveFromSet = __esmMin((() => {
-		import_react$169 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$168, BatchRemoveFromSet;
-	var init_BatchRemoveFromSet = __esmMin((() => {
-		import_react$168 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$170 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_rails_form();
 		init_set_params_for_url();
@@ -33728,36 +33114,20 @@ Zu diesem hinzufügen\
 				return_to: get.return_to,
 				parent_collection_id: get.parent_collection_id
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$169.createElement(RestForm, {
-========
-			return /*#__PURE__*/ import_react$168.createElement(RestForm, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$170.createElement(RestForm, {
 				name: "resource_meta_data",
 				action: requestUrl,
 				method: "patch",
 				authToken
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, /*#__PURE__*/ import_react$169.createElement("input", {
+			}, /*#__PURE__*/ import_react$170.createElement("input", {
 				type: "hidden",
 				name: "return_to",
 				value: get.return_to
-			}), /*#__PURE__*/ import_react$169.createElement("input", {
+			}), /*#__PURE__*/ import_react$170.createElement("input", {
 				type: "hidden",
 				name: "parent_collection_id",
 				value: get.parent_collection_id
-			}), /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$169.createElement("a", {
-========
-			}, /*#__PURE__*/ import_react$168.createElement("input", {
-				type: "hidden",
-				name: "return_to",
-				value: get.return_to
-			}), /*#__PURE__*/ import_react$168.createElement("input", {
-				type: "hidden",
-				name: "parent_collection_id",
-				value: get.parent_collection_id
-			}), /*#__PURE__*/ import_react$168.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$168.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}), /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-modal-head" }, /*#__PURE__*/ import_react$170.createElement("a", {
 				href: get.return_to,
 				"aria-hidden": "true",
 				className: "ui-modal-close",
@@ -33769,26 +33139,15 @@ Zu diesem hinzufügen\
 					float: "right",
 					paddingTop: "5px"
 				}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, /*#__PURE__*/ import_react$169.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$169.createElement("h3", { className: "title-l" }, I18nTranslate("batch_remove_from_collection_title"))), /*#__PURE__*/ import_react$169.createElement("div", {
+			}, /*#__PURE__*/ import_react$170.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$170.createElement("h3", { className: "title-l" }, I18nTranslate("batch_remove_from_collection_title"))), /*#__PURE__*/ import_react$170.createElement("div", {
 				className: "ui-modal-body",
 				style: { maxHeight: "none" }
-			}, /*#__PURE__*/ import_react$169.createElement("p", { className: "pam by-center" }, I18nTranslate("batch_remove_from_collection_question_part_1"), /*#__PURE__*/ import_react$169.createElement("strong", null, get.media_entries_count), I18nTranslate("batch_remove_from_collection_question_part_2"), /*#__PURE__*/ import_react$169.createElement("strong", null, get.collections_count), I18nTranslate("batch_remove_from_collection_question_part_3"))), /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$169.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$169.createElement("a", {
-========
-			}, /*#__PURE__*/ import_react$168.createElement("i", { className: "icon-close" })), /*#__PURE__*/ import_react$168.createElement("h3", { className: "title-l" }, I18nTranslate("batch_remove_from_collection_title"))), /*#__PURE__*/ import_react$168.createElement("div", {
-				className: "ui-modal-body",
-				style: { maxHeight: "none" }
-			}, /*#__PURE__*/ import_react$168.createElement("p", { className: "pam by-center" }, I18nTranslate("batch_remove_from_collection_question_part_1"), /*#__PURE__*/ import_react$168.createElement("strong", null, get.media_entries_count), I18nTranslate("batch_remove_from_collection_question_part_2"), /*#__PURE__*/ import_react$168.createElement("strong", null, get.collections_count), I18nTranslate("batch_remove_from_collection_question_part_3"))), /*#__PURE__*/ import_react$168.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$168.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$168.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$170.createElement("p", { className: "pam by-center" }, I18nTranslate("batch_remove_from_collection_question_part_1"), /*#__PURE__*/ import_react$170.createElement("strong", null, get.media_entries_count), I18nTranslate("batch_remove_from_collection_question_part_2"), /*#__PURE__*/ import_react$170.createElement("strong", null, get.collections_count), I18nTranslate("batch_remove_from_collection_question_part_3"))), /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-modal-footer" }, /*#__PURE__*/ import_react$170.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$170.createElement("a", {
 				href: get.return_to,
 				"aria-hidden": "true",
 				className: "link weak",
 				"data-dismiss": "modal"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, I18nTranslate("batch_remove_from_collection_cancel")), /*#__PURE__*/ import_react$169.createElement(FormButton, { text: I18nTranslate("batch_remove_from_collection_remove") }))));
-========
-			}, I18nTranslate("batch_remove_from_collection_cancel")), /*#__PURE__*/ import_react$168.createElement(FormButton, { text: I18nTranslate("batch_remove_from_collection_remove") }))));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, I18nTranslate("batch_remove_from_collection_cancel")), /*#__PURE__*/ import_react$170.createElement(FormButton, { text: I18nTranslate("batch_remove_from_collection_remove") }))));
 		};
 	}));
 	//#endregion
@@ -33842,21 +33201,12 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/views/Collection/AsyncModal.jsx
 	var AsyncModal_exports = /* @__PURE__ */ __exportAll({ default: () => AsyncModal });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$168, AsyncModal;
+	var import_react$169, AsyncModal;
 	var init_AsyncModal = __esmMin((() => {
-		import_react$168 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$169 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Modal();
 		init_load_xhr();
-		AsyncModal = class extends import_react$168.Component {
-========
-	var import_react$167, AsyncModal;
-	var init_AsyncModal = __esmMin((() => {
-		import_react$167 = /* @__PURE__ */ __toESM(require_react$1());
-		init_Modal();
-		init_load_xhr();
-		AsyncModal = class extends import_react$167.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		AsyncModal = class extends import_react$169.Component {
 			constructor(props) {
 				super(props);
 				const initialGet = props.get;
@@ -33902,19 +33252,11 @@ Zu diesem hinzufügen\
 				this._isMounted = false;
 			}
 			render() {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				if (!this.state.get) return /*#__PURE__*/ import_react$168.createElement(Modal, {
+				if (!this.state.get) return /*#__PURE__*/ import_react$169.createElement(Modal, {
 					loading: true,
 					widthInPixel: this.props.widthInPixel
 				});
-				else return /*#__PURE__*/ import_react$168.createElement(Modal, {
-========
-				if (!this.state.get) return /*#__PURE__*/ import_react$167.createElement(Modal, {
-					loading: true,
-					widthInPixel: this.props.widthInPixel
-				});
-				else return /*#__PURE__*/ import_react$167.createElement(Modal, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				else return /*#__PURE__*/ import_react$169.createElement(Modal, {
 					loading: false,
 					widthInPixel: this.props.widthInPixel
 				}, this.state.children);
@@ -33924,25 +33266,15 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BatchRemoveFromSetModal.jsx
 	var BatchRemoveFromSetModal_exports = /* @__PURE__ */ __exportAll({ default: () => BatchRemoveFromSetModal });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$167, BatchRemoveFromSetModal;
+	var import_react$168, BatchRemoveFromSetModal;
 	var init_BatchRemoveFromSetModal = __esmMin((() => {
-		import_react$167 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$166, BatchRemoveFromSetModal;
-	var init_BatchRemoveFromSetModal = __esmMin((() => {
-		import_react$166 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$168 = /* @__PURE__ */ __toESM(require_react$1());
 		init_BatchRemoveFromSet();
 		init_AsyncModal();
 		init_set_params_for_url();
 		BatchRemoveFromSetModal = ({ get, collectionUuid, resourceIds, returnTo, authToken, onClose }) => {
 			const contentForGet = (get) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$167.createElement(BatchRemoveFromSet, {
-========
-				return /*#__PURE__*/ import_react$166.createElement(BatchRemoveFromSet, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$168.createElement(BatchRemoveFromSet, {
 					returnTo,
 					get,
 					async: true,
@@ -33958,11 +33290,7 @@ Zu diesem hinzufügen\
 				resource_id: resourceIds,
 				return_to: returnTo
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$167.createElement(AsyncModal, {
-========
-			return /*#__PURE__*/ import_react$166.createElement(AsyncModal, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$168.createElement(AsyncModal, {
 				get,
 				getUrl,
 				contentForGet,
@@ -33993,72 +33321,40 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxDestroy.jsx
 	var BoxDestroy_exports = /* @__PURE__ */ __exportAll({ default: () => BoxDestroy });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$166, BoxDestroy;
+	var import_react$167, BoxDestroy;
 	var init_BoxDestroy = __esmMin((() => {
-		import_react$166 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$165, BoxDestroy;
-	var init_BoxDestroy = __esmMin((() => {
-		import_react$165 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$167 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_i18n_translate();
 		init_Modal();
 		init_Preloader();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		BoxDestroy = class extends import_react$166.Component {
-========
-		BoxDestroy = class extends import_react$165.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxDestroy = class extends import_react$167.Component {
 			constructor(props) {
 				super(props);
 			}
 			renderLoading() {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$166.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$167.createElement("div", { style: {
 					margin: "20px",
 					marginBottom: "20px",
 					textAlign: "center"
-				} }, /*#__PURE__*/ import_react$166.createElement(Preloader$1, null));
-========
-				return /*#__PURE__*/ import_react$165.createElement("div", { style: {
-					margin: "20px",
-					marginBottom: "20px",
-					textAlign: "center"
-				} }, /*#__PURE__*/ import_react$165.createElement(Preloader$1, null));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				} }, /*#__PURE__*/ import_react$167.createElement(Preloader$1, null));
 			}
 			renderContent() {
 				if (this.props.loading) return this.renderLoading();
 				else return this.renderReady();
 			}
 			renderReady() {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$166.createElement("div", { style: {
+				return /*#__PURE__*/ import_react$167.createElement("div", { style: {
 					margin: "20px",
 					marginBottom: "20px",
 					textAlign: "center"
-				} }, this.renderError(), /*#__PURE__*/ import_react$166.createElement("div", { style: { marginBottom: "20px" } }, /*#__PURE__*/ import_react$166.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_1")), /*#__PURE__*/ import_react$166.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "MediaEntry" })), I18nTranslate("batch_destroy_resources_ask_2")), /*#__PURE__*/ import_react$166.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "Collection" })), I18nTranslate("batch_destroy_resources_ask_3")), /*#__PURE__*/ import_react$166.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_4"))), /*#__PURE__*/ import_react$166.createElement("div", {
+				} }, this.renderError(), /*#__PURE__*/ import_react$167.createElement("div", { style: { marginBottom: "20px" } }, /*#__PURE__*/ import_react$167.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_1")), /*#__PURE__*/ import_react$167.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "MediaEntry" })), I18nTranslate("batch_destroy_resources_ask_2")), /*#__PURE__*/ import_react$167.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "Collection" })), I18nTranslate("batch_destroy_resources_ask_3")), /*#__PURE__*/ import_react$167.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_4"))), /*#__PURE__*/ import_react$167.createElement("div", {
 					className: "ui-actions",
 					style: { padding: "10px" }
-				}, /*#__PURE__*/ import_react$166.createElement("a", {
+				}, /*#__PURE__*/ import_react$167.createElement("a", {
 					onClick: this.props.onClose,
 					className: "link weak"
-				}, I18nTranslate("batch_destroy_resources_cancel")), /*#__PURE__*/ import_react$166.createElement("button", {
-========
-				return /*#__PURE__*/ import_react$165.createElement("div", { style: {
-					margin: "20px",
-					marginBottom: "20px",
-					textAlign: "center"
-				} }, this.renderError(), /*#__PURE__*/ import_react$165.createElement("div", { style: { marginBottom: "20px" } }, /*#__PURE__*/ import_react$165.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_1")), /*#__PURE__*/ import_react$165.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "MediaEntry" })), I18nTranslate("batch_destroy_resources_ask_2")), /*#__PURE__*/ import_react$165.createElement("div", { style: { fontWeight: "bold" } }, size(filter(this.props.idsWithTypes, { type: "Collection" })), I18nTranslate("batch_destroy_resources_ask_3")), /*#__PURE__*/ import_react$165.createElement("div", null, I18nTranslate("batch_destroy_resources_ask_4"))), /*#__PURE__*/ import_react$165.createElement("div", {
-					className: "ui-actions",
-					style: { padding: "10px" }
-				}, /*#__PURE__*/ import_react$165.createElement("a", {
-					onClick: this.props.onClose,
-					className: "link weak"
-				}, I18nTranslate("batch_destroy_resources_cancel")), /*#__PURE__*/ import_react$165.createElement("button", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, I18nTranslate("batch_destroy_resources_cancel")), /*#__PURE__*/ import_react$167.createElement("button", {
 					className: "primary-button",
 					type: "submit",
 					onClick: this.props.onOk
@@ -34066,23 +33362,13 @@ Zu diesem hinzufügen\
 			}
 			renderError() {
 				if (!this.props.error) return null;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$166.createElement("div", {
+				return /*#__PURE__*/ import_react$167.createElement("div", {
 					className: "ui-alerts",
 					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$166.createElement("div", { className: "error ui-alert" }, this.props.error));
+				}, /*#__PURE__*/ import_react$167.createElement("div", { className: "error ui-alert" }, this.props.error));
 			}
 			render() {
-				return /*#__PURE__*/ import_react$166.createElement(Modal, { widthInPixel: 400 }, this.renderContent());
-========
-				return /*#__PURE__*/ import_react$165.createElement("div", {
-					className: "ui-alerts",
-					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$165.createElement("div", { className: "error ui-alert" }, this.props.error));
-			}
-			render() {
-				return /*#__PURE__*/ import_react$165.createElement(Modal, { widthInPixel: 400 }, this.renderContent());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$167.createElement(Modal, { widthInPixel: 400 }, this.renderContent());
 			}
 		};
 	}));
@@ -34221,15 +33507,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxFilterButton.jsx
 	var BoxFilterButton_exports = /* @__PURE__ */ __exportAll({ default: () => BoxFilterButton_default });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$165, BoxFilterButton, BoxFilterButton_default;
+	var import_react$166, BoxFilterButton, BoxFilterButton_default;
 	var init_BoxFilterButton = __esmMin((() => {
-		import_react$165 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$164, BoxFilterButton, BoxFilterButton_default;
-	var init_BoxFilterButton = __esmMin((() => {
-		import_react$164 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$166 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_Icon();
 		init_Button();
@@ -34239,43 +33519,25 @@ Zu diesem hinzufügen\
 			const renderResetFilterLink = () => {
 				return resetFilterLink || null;
 			};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$165.createElement("div", null, /*#__PURE__*/ import_react$165.createElement(Button$3, {
-========
-			return /*#__PURE__*/ import_react$164.createElement("div", null, /*#__PURE__*/ import_react$164.createElement(Button$3, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$166.createElement("div", null, /*#__PURE__*/ import_react$166.createElement(Button$3, {
 				"data-test-id": "filter-button",
 				name,
 				mods: { active: config.show_filter },
 				href: filterToggleLink,
 				onClick: (e) => _onFilterToggle(e, !config.show_filter)
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, /*#__PURE__*/ import_react$165.createElement(Icon$4, {
-========
-			}, /*#__PURE__*/ import_react$164.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$166.createElement(Icon$4, {
 				i: "filter",
 				mods: "small"
 			}), " ", name), renderResetFilterLink());
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		BoxFilterButton_default = /*#__PURE__*/ (0, import_react$165.memo)(BoxFilterButton);
-========
-		BoxFilterButton_default = /*#__PURE__*/ (0, import_react$164.memo)(BoxFilterButton);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxFilterButton_default = /*#__PURE__*/ (0, import_react$166.memo)(BoxFilterButton);
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/BoxLayoutButton.jsx
 	var BoxLayoutButton_exports = /* @__PURE__ */ __exportAll({ default: () => BoxLayoutButton });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$164, import_dedupe$6, BoxLayoutButton;
+	var import_react$165, import_dedupe$6, BoxLayoutButton;
 	var init_BoxLayoutButton = __esmMin((() => {
-		import_react$164 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$163, import_dedupe$6, BoxLayoutButton;
-	var init_BoxLayoutButton = __esmMin((() => {
-		import_react$163 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$165 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Button();
 		import_dedupe$6 = /* @__PURE__ */ __toESM(require_dedupe());
 		init_Icon();
@@ -34284,11 +33546,7 @@ Zu diesem hinzufügen\
 				onLayoutClick(event, layout);
 			};
 			const mods = (0, import_dedupe$6.default)("small", "ui-toolbar-vis-button", layout.mods);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$164.createElement(Button$3, {
-========
-			return /*#__PURE__*/ import_react$163.createElement(Button$3, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$165.createElement(Button$3, {
 				mode: layout.mode,
 				title: layout.title,
 				icon: layout.icon,
@@ -34296,11 +33554,7 @@ Zu diesem hinzufügen\
 				onClick: handleClick,
 				mods,
 				key: layout.mode
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, /*#__PURE__*/ import_react$164.createElement(Icon$4, {
-========
-			}, /*#__PURE__*/ import_react$163.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$165.createElement(Icon$4, {
 				i: layout.icon,
 				title: layout.title
 			}));
@@ -34309,23 +33563,13 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxPageCounter.jsx
 	var BoxPageCounter_exports = /* @__PURE__ */ __exportAll({ default: () => BoxPageCounter });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$163, BoxPageCounter;
+	var import_react$164, BoxPageCounter;
 	var init_BoxPageCounter = __esmMin((() => {
-		import_react$163 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$164 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_i18n_translate();
 		init_Icon();
-		BoxPageCounter = class extends import_react$163.Component {
-========
-	var import_react$162, BoxPageCounter;
-	var init_BoxPageCounter = __esmMin((() => {
-		import_react$162 = /* @__PURE__ */ __toESM(require_react$1());
-		init_lodash();
-		init_i18n_translate();
-		init_Icon();
-		BoxPageCounter = class extends import_react$162.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxPageCounter = class extends import_react$164.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -34362,52 +33606,30 @@ Zu diesem hinzufügen\
 					top: "0px"
 				};
 				var determineIcon = () => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					if (checkState == "checked") return /*#__PURE__*/ import_react$163.createElement(Icon$4, {
+					if (checkState == "checked") return /*#__PURE__*/ import_react$164.createElement(Icon$4, {
 						style: checkBoxStyle,
 						i: "checkbox-active"
 					});
-					else if (checkState == "partial") return /*#__PURE__*/ import_react$163.createElement(Icon$4, {
+					else if (checkState == "partial") return /*#__PURE__*/ import_react$164.createElement(Icon$4, {
 						style: checkBoxStyle,
 						i: "checkbox-mixed"
 					});
-					else return /*#__PURE__*/ import_react$163.createElement(Icon$4, {
-========
-					if (checkState == "checked") return /*#__PURE__*/ import_react$162.createElement(Icon$4, {
-						style: checkBoxStyle,
-						i: "checkbox-active"
-					});
-					else if (checkState == "partial") return /*#__PURE__*/ import_react$162.createElement(Icon$4, {
-						style: checkBoxStyle,
-						i: "checkbox-mixed"
-					});
-					else return /*#__PURE__*/ import_react$162.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					else return /*#__PURE__*/ import_react$164.createElement(Icon$4, {
 						style: checkBoxStyle,
 						i: "checkbox"
 					});
 				};
 				var showSelectPage = () => {
 					if (!onSelectPage) return;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$163.createElement("div", {
-========
-					return /*#__PURE__*/ import_react$162.createElement("div", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					return /*#__PURE__*/ import_react$164.createElement("div", {
 						style: {
 							float: "right",
 							position: "relative"
 						},
 						onClick: onSelectPage
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					}, /*#__PURE__*/ import_react$163.createElement("span", { style: { marginRight: "20px" } }, I18nTranslate("pagination_selection_label")), determineIcon());
+					}, /*#__PURE__*/ import_react$164.createElement("span", { style: { marginRight: "20px" } }, I18nTranslate("pagination_selection_label")), determineIcon());
 				};
-				return /*#__PURE__*/ import_react$163.createElement("div", { className: "ui-resources-page-counter ui-pager small" }, /*#__PURE__*/ import_react$163.createElement("div", { style: { display: "inline-block" } }, I18nTranslate("pagination_prefix"), page, I18nTranslate("pagination_infix"), totalPages, I18nTranslate("pagination_postfix")), showSelectPage());
-========
-					}, /*#__PURE__*/ import_react$162.createElement("span", { style: { marginRight: "20px" } }, I18nTranslate("pagination_selection_label")), determineIcon());
-				};
-				return /*#__PURE__*/ import_react$162.createElement("div", { className: "ui-resources-page-counter ui-pager small" }, /*#__PURE__*/ import_react$162.createElement("div", { style: { display: "inline-block" } }, I18nTranslate("pagination_prefix"), page, I18nTranslate("pagination_infix"), totalPages, I18nTranslate("pagination_postfix")), showSelectPage());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$164.createElement("div", { className: "ui-resources-page-counter ui-pager small" }, /*#__PURE__*/ import_react$164.createElement("div", { style: { display: "inline-block" } }, I18nTranslate("pagination_prefix"), page, I18nTranslate("pagination_infix"), totalPages, I18nTranslate("pagination_postfix")), showSelectPage());
 			}
 		};
 	}));
@@ -34594,11 +33816,7 @@ Zu diesem hinzufügen\
 	*/
 	function ensureChildrenIsValid(children) {
 		if (children) try {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			import_react$162.Children.only(children);
-========
-			import_react$161.Children.only(children);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			import_react$163.Children.only(children);
 		} catch (e) {
 			throw new Error(errorMessage);
 		}
@@ -34683,15 +33901,9 @@ Zu diesem hinzufügen\
 		} });
 		if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$162, import_prop_types$38, import_react_is$1, constants, errorMessage, errorMessage$1, timeout, timeoutQueue, _createClass, defaultProps$4, Waypoint;
+	var import_react$163, import_prop_types$39, import_react_is$1, constants, errorMessage, errorMessage$1, timeout, timeoutQueue, _createClass, defaultProps$4, Waypoint;
 	var init_es = __esmMin((() => {
-		import_react$162 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$161, import_prop_types$39, import_react_is$1, constants, errorMessage, errorMessage$1, timeout, timeoutQueue, _createClass, defaultProps$4, Waypoint;
-	var init_es = __esmMin((() => {
-		import_react$161 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$163 = /* @__PURE__ */ __toESM(require_react$1());
 		init_index_esm();
 		import_prop_types$39 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_react_is$1 = require_react_is$1();
@@ -34919,11 +34131,7 @@ Zu diesem hinzufügen\
 						function render() {
 							var _this4 = this;
 							var children = this.props.children;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-							if (!children) return import_react$162.createElement("span", {
-========
-							if (!children) return import_react$161.createElement("span", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+							if (!children) return import_react$163.createElement("span", {
 								ref: this.refElement,
 								style: { fontSize: 0 }
 							});
@@ -34936,26 +34144,16 @@ Zu diesem hinzufügen\
 									}
 									return ref;
 								}();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-								return import_react$162.cloneElement(children, { ref });
+								return import_react$163.cloneElement(children, { ref });
 							}
-							return import_react$162.cloneElement(children, { innerRef: this.refElement });
-========
-								return import_react$161.cloneElement(children, { ref });
-							}
-							return import_react$161.cloneElement(children, { innerRef: this.refElement });
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+							return import_react$163.cloneElement(children, { innerRef: this.refElement });
 						}
 						return render;
 					}()
 				}
 			]);
 			return Waypoint;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		}(typeof import_react$162.PureComponent !== "undefined" ? import_react$162.PureComponent : import_react$162.Component);
-========
-		}(typeof import_react$161.PureComponent !== "undefined" ? import_react$161.PureComponent : import_react$161.Component);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		}(typeof import_react$163.PureComponent !== "undefined" ? import_react$163.PureComponent : import_react$163.Component);
 		Waypoint.propTypes = {
 			children: import_prop_types$39.default.node,
 			debug: import_prop_types$39.default.bool,
@@ -34990,15 +34188,9 @@ Zu diesem hinzufügen\
 			return n;
 		}, _extends$19.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$161, BoxPaginationNav;
+	var import_react$162, BoxPaginationNav;
 	var init_BoxPaginationNav = __esmMin((() => {
-		import_react$161 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$160, BoxPaginationNav;
-	var init_BoxPaginationNav = __esmMin((() => {
-		import_react$160 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$162 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_BoxSetUrlParams();
 		init_ActionsBar();
@@ -35006,11 +34198,7 @@ Zu diesem hinzufügen\
 		init_ButtonGroup();
 		init_es();
 		init_Preloader();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		BoxPaginationNav = class extends import_react$161.Component {
-========
-		BoxPaginationNav = class extends import_react$160.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxPaginationNav = class extends import_react$162.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -35018,21 +34206,13 @@ Zu diesem hinzufügen\
 				var isLoading = this.props.loadingNextPage;
 				var renderWaypoint = () => {
 					if (isLoading) return null;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$161.createElement(Waypoint, {
-========
-					return /*#__PURE__*/ import_react$160.createElement(Waypoint, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					return /*#__PURE__*/ import_react$162.createElement(Waypoint, {
 						onEnter: this.props.onFetchNextPage,
 						bottomOffset: "-500%",
 						key: (/* @__PURE__ */ new Date()).getTime()
 					});
 				};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$161.createElement("div", { className: "ui-actions" }, renderWaypoint(), isLoading ? /*#__PURE__*/ import_react$161.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$161.createElement(Button$3, { onClick: this.props.onFetchNextPage }, I18nTranslate("pagination_nav_loadnext")));
-========
-				return /*#__PURE__*/ import_react$160.createElement("div", { className: "ui-actions" }, renderWaypoint(), isLoading ? /*#__PURE__*/ import_react$160.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$160.createElement(Button$3, { onClick: this.props.onFetchNextPage }, I18nTranslate("pagination_nav_loadnext")));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$162.createElement("div", { className: "ui-actions" }, renderWaypoint(), isLoading ? /*#__PURE__*/ import_react$162.createElement(Preloader$1, null) : /*#__PURE__*/ import_react$162.createElement(Button$3, { onClick: this.props.onFetchNextPage }, I18nTranslate("pagination_nav_loadnext")));
 			}
 			renderFallback() {
 				var pagination = this.props.staticPagination;
@@ -35041,17 +34221,10 @@ Zu diesem hinzufügen\
 					prev: pagination.prev ? { href: BoxSetUrlParams(this.props.currentUrl, { list: pagination.prev }) } : null,
 					next: pagination.next ? { href: BoxSetUrlParams(this.props.currentUrl, { list: pagination.next }) } : null
 				};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$161.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$161.createElement(ActionsBar$2, null, /*#__PURE__*/ import_react$161.createElement(ButtonGroup, { mods: "mbm" }, /*#__PURE__*/ import_react$161.createElement(Button$3, _extends$19({}, navLinks.prev, {
+				return /*#__PURE__*/ import_react$162.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$162.createElement(ActionsBar$2, null, /*#__PURE__*/ import_react$162.createElement(ButtonGroup, { mods: "mbm" }, /*#__PURE__*/ import_react$162.createElement(Button$3, _extends$19({}, navLinks.prev, {
 					mods: "mhn",
 					disabled: !navLinks.prev
-				}), I18nTranslate("pagination_nav_prevpage")), /*#__PURE__*/ import_react$161.createElement(Button$3, _extends$19({}, navLinks.current, { mods: "mhn" }), I18nTranslate("pagination_nav_thispage")), /*#__PURE__*/ import_react$161.createElement(Button$3, _extends$19({}, navLinks.next, {
-========
-				return /*#__PURE__*/ import_react$160.createElement("div", { className: "no-js" }, /*#__PURE__*/ import_react$160.createElement(ActionsBar$2, null, /*#__PURE__*/ import_react$160.createElement(ButtonGroup, { mods: "mbm" }, /*#__PURE__*/ import_react$160.createElement(Button$3, _extends$19({}, navLinks.prev, {
-					mods: "mhn",
-					disabled: !navLinks.prev
-				}), I18nTranslate("pagination_nav_prevpage")), /*#__PURE__*/ import_react$160.createElement(Button$3, _extends$19({}, navLinks.current, { mods: "mhn" }), I18nTranslate("pagination_nav_thispage")), /*#__PURE__*/ import_react$160.createElement(Button$3, _extends$19({}, navLinks.next, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), I18nTranslate("pagination_nav_prevpage")), /*#__PURE__*/ import_react$162.createElement(Button$3, _extends$19({}, navLinks.current, { mods: "mhn" }), I18nTranslate("pagination_nav_thispage")), /*#__PURE__*/ import_react$162.createElement(Button$3, _extends$19({}, navLinks.next, {
 					mods: "mhn",
 					disabled: !navLinks.next
 				}), I18nTranslate("pagination_nav_nextpage")))));
@@ -35320,15 +34493,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/thumbnail/StatusIcon.jsx
 	var StatusIcon_exports = /* @__PURE__ */ __exportAll({ default: () => StatusIcon });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$160, StatusIcon;
+	var import_react$161, StatusIcon;
 	var init_StatusIcon = __esmMin((() => {
-		import_react$160 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$159, StatusIcon;
-	var init_StatusIcon = __esmMin((() => {
-		import_react$159 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$161 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Icon();
 		StatusIcon = ({ privacyStatus, iconClass }) => {
 			const iconName = `privacy-${{
@@ -35336,11 +34503,7 @@ Zu diesem hinzufügen\
 				private: "private",
 				shared: "group"
 			}[privacyStatus]}`;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$160.createElement(Icon$4, {
-========
-			return /*#__PURE__*/ import_react$159.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$161.createElement(Icon$4, {
 				i: iconName,
 				title: privacyStatus,
 				className: iconClass
@@ -35350,46 +34513,26 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/thumbnail/FavoriteButton.jsx
 	var FavoriteButton_exports = /* @__PURE__ */ __exportAll({ default: () => FavoriteButton });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$159, FavoriteButton;
+	var import_react$160, FavoriteButton;
 	var init_FavoriteButton = __esmMin((() => {
-		import_react$159 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$158, FavoriteButton;
-	var init_FavoriteButton = __esmMin((() => {
-		import_react$158 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$160 = /* @__PURE__ */ __toESM(require_react$1());
 		init_rails_form();
 		init_Button();
 		FavoriteButton = ({ authToken, modelFavored, favorUrl, disfavorUrl, favorOnClick, pendingFavorite, stateIsClient, buttonClass }) => {
 			const actionUrl = modelFavored ? disfavorUrl : favorUrl;
 			const starClass = modelFavored ? "icon-star" : "icon-star-empty";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const favoriteIcon = /*#__PURE__*/ import_react$159.createElement("i", { className: starClass });
+			const favoriteIcon = /*#__PURE__*/ import_react$160.createElement("i", { className: starClass });
 			const handleClick = pendingFavorite ? void 0 : favorOnClick;
-			return stateIsClient ? /*#__PURE__*/ import_react$159.createElement(Button$3, {
+			return stateIsClient ? /*#__PURE__*/ import_react$160.createElement(Button$3, {
 				className: buttonClass,
 				onClick: handleClick,
 				"data-pending": pendingFavorite
-			}, favoriteIcon) : /*#__PURE__*/ import_react$159.createElement(RestForm, {
-========
-			const favoriteIcon = /*#__PURE__*/ import_react$158.createElement("i", { className: starClass });
-			const handleClick = pendingFavorite ? void 0 : favorOnClick;
-			return stateIsClient ? /*#__PURE__*/ import_react$158.createElement(Button$3, {
-				className: buttonClass,
-				onClick: handleClick,
-				"data-pending": pendingFavorite
-			}, favoriteIcon) : /*#__PURE__*/ import_react$158.createElement(RestForm, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, favoriteIcon) : /*#__PURE__*/ import_react$160.createElement(RestForm, {
 				name: "resource_meta_data",
 				action: actionUrl,
 				method: "patch",
 				authToken
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, /*#__PURE__*/ import_react$159.createElement("button", {
-========
-			}, /*#__PURE__*/ import_react$158.createElement("button", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$160.createElement("button", {
 				className: buttonClass,
 				type: "submit"
 			}, favoriteIcon));
@@ -35398,49 +34541,29 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/thumbnail/DeleteModal.jsx
 	var DeleteModal_exports = /* @__PURE__ */ __exportAll({ default: () => DeleteModal });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$158, DeleteModal;
+	var import_react$159, DeleteModal;
 	var init_DeleteModal = __esmMin((() => {
-		import_react$158 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$157, DeleteModal;
-	var init_DeleteModal = __esmMin((() => {
-		import_react$157 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$159 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_AskModal();
 		init_utils$2();
 		DeleteModal = ({ resourceType, onModalOk, onModalCancel, modalTitle }) => {
 			const type = snakeCase(resourceType);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$158.createElement(AskModal, {
-========
-			return /*#__PURE__*/ import_react$157.createElement(AskModal, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$159.createElement(AskModal, {
 				title: I18nTranslate(type + "_ask_delete_title"),
 				onCancel: onModalCancel,
 				onOk: onModalOk,
 				okText: I18nTranslate("resource_ask_delete_ok"),
 				cancelText: I18nTranslate("resource_ask_delete_cancel")
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, /*#__PURE__*/ import_react$158.createElement("p", { className: "pam by-center" }, I18nTranslate(type + "_ask_delete_question_pre"), /*#__PURE__*/ import_react$158.createElement("strong", null, modalTitle), I18nTranslate("resource_ask_delete_question_post")));
-========
-			}, /*#__PURE__*/ import_react$157.createElement("p", { className: "pam by-center" }, I18nTranslate(type + "_ask_delete_question_pre"), /*#__PURE__*/ import_react$157.createElement("strong", null, modalTitle), I18nTranslate("resource_ask_delete_question_post")));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$159.createElement("p", { className: "pam by-center" }, I18nTranslate(type + "_ask_delete_question_pre"), /*#__PURE__*/ import_react$159.createElement("strong", null, modalTitle), I18nTranslate("resource_ask_delete_question_post")));
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/ResourceThumbnailRenderer.jsx
 	var ResourceThumbnailRenderer_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceThumbnailRenderer_default });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$157, import_classnames$29, import_ui_components$18, ResourceThumbnailRenderer, ResourceThumbnailRenderer_default;
+	var import_react$158, import_classnames$29, import_ui_components$18, ResourceThumbnailRenderer, ResourceThumbnailRenderer_default;
 	var init_ResourceThumbnailRenderer = __esmMin((() => {
-		import_react$157 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$156, import_classnames$29, import_ui_components$18, ResourceThumbnailRenderer, ResourceThumbnailRenderer_default;
-	var init_ResourceThumbnailRenderer = __esmMin((() => {
-		import_react$156 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$158 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$29 = /* @__PURE__ */ __toESM(require_classnames());
 		import_ui_components$18 = /* @__PURE__ */ __toESM(require_ui_components());
 		init_StatusIcon();
@@ -35449,11 +34572,7 @@ Zu diesem hinzufügen\
 		init_utils$2();
 		ResourceThumbnailRenderer = ({ resourceType, mediaType, get: get$4, onPictureClick, relationsProps, favoriteProps, deleteProps, statusProps, selectProps, textProps, positionProps, pictureLinkStyle }) => {
 			let statusIcon;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (statusProps) statusIcon = /*#__PURE__*/ import_react$157.createElement(StatusIcon, {
-========
-			if (statusProps) statusIcon = /*#__PURE__*/ import_react$156.createElement(StatusIcon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			if (statusProps) statusIcon = /*#__PURE__*/ import_react$158.createElement(StatusIcon, {
 				privacyStatus: statusProps.privacyStatus,
 				resourceType,
 				modelPublished: statusProps.modelPublished
@@ -35461,37 +34580,22 @@ Zu diesem hinzufügen\
 			const actionsLeft = [];
 			const actionsRight = [];
 			if (selectProps && selectProps.onSelect) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const selectAction = /*#__PURE__*/ import_react$157.createElement("li", {
+				const selectAction = /*#__PURE__*/ import_react$158.createElement("li", {
 					className: "ui-thumbnail-action",
 					key: "selector"
-				}, /*#__PURE__*/ import_react$157.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Link, {
-========
-				const selectAction = /*#__PURE__*/ import_react$156.createElement("li", {
-					className: "ui-thumbnail-action",
-					key: "selector"
-				}, /*#__PURE__*/ import_react$156.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Link, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$158.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Link, {
 					onClick: selectProps.onSelect,
 					style: selectProps.selectStyle,
 					className: "ui-thumbnail-action-checkbox",
 					title: selectProps.isSelected ? "Auswahl entfernen" : "auswählen"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
-========
-				}, /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Icon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Icon, {
 					i: "checkbox",
 					mods: selectProps.isSelected ? "active" : void 0
 				}))));
 				actionsLeft.push(selectAction);
 			}
 			if (favoriteProps && favoriteProps.favoritePolicy) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const favorButton = /*#__PURE__*/ import_react$157.createElement(FavoriteButton, {
-========
-				const favorButton = /*#__PURE__*/ import_react$156.createElement(FavoriteButton, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				const favorButton = /*#__PURE__*/ import_react$158.createElement(FavoriteButton, {
 					modelFavored: favoriteProps.modelFavored,
 					favorUrl: favoriteProps.favorUrl,
 					disfavorUrl: favoriteProps.disfavorUrl,
@@ -35501,11 +34605,7 @@ Zu diesem hinzufügen\
 					authToken: favoriteProps.authToken,
 					buttonClass: "ui-thumbnail-action-favorite"
 				});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
-========
-				actionsLeft.push(/*#__PURE__*/ import_react$156.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionsLeft.push(/*#__PURE__*/ import_react$158.createElement("li", {
 					key: "favorite",
 					className: "ui-thumbnail-action"
 				}, favorButton));
@@ -35514,11 +34614,7 @@ Zu diesem hinzufügen\
 				const { handlePositionChange } = positionProps;
 				const commonCss = { cursor: positionProps.disabled ? "not-allowed" : "pointer" };
 				const iconCssClass = (0, import_classnames$29.default)({ mid: positionProps.disabled });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
-========
-				actionsLeft.push(/*#__PURE__*/ import_react$156.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionsLeft.push(/*#__PURE__*/ import_react$158.createElement("li", {
 					key: "action01",
 					className: "ui-thumbnail-action mrn",
 					style: commonCss,
@@ -35526,19 +34622,11 @@ Zu diesem hinzufügen\
 					onClick: function(e) {
 						return handlePositionChange(get$4.uuid, -2, e);
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
+				}, /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Icon, {
 					i: "move-left-first",
 					className: iconCssClass
 				})));
-				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
-========
-				}, /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Icon, {
-					i: "move-left-first",
-					className: iconCssClass
-				})));
-				actionsLeft.push(/*#__PURE__*/ import_react$156.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionsLeft.push(/*#__PURE__*/ import_react$158.createElement("li", {
 					key: "action02",
 					className: "ui-thumbnail-action mhn",
 					style: commonCss,
@@ -35546,19 +34634,11 @@ Zu diesem hinzufügen\
 					onClick: function(e) {
 						return handlePositionChange(get$4.uuid, -1, e);
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
+				}, /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Icon, {
 					i: "move-left",
 					className: iconCssClass
 				})));
-				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
-========
-				}, /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Icon, {
-					i: "move-left",
-					className: iconCssClass
-				})));
-				actionsLeft.push(/*#__PURE__*/ import_react$156.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionsLeft.push(/*#__PURE__*/ import_react$158.createElement("li", {
 					key: "action03",
 					className: "ui-thumbnail-action mhn",
 					style: commonCss,
@@ -35566,19 +34646,11 @@ Zu diesem hinzufügen\
 					onClick: function(e) {
 						return handlePositionChange(get$4.uuid, 1, e);
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
+				}, /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Icon, {
 					i: "move-right",
 					className: iconCssClass
 				})));
-				actionsLeft.push(/*#__PURE__*/ import_react$157.createElement("li", {
-========
-				}, /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Icon, {
-					i: "move-right",
-					className: iconCssClass
-				})));
-				actionsLeft.push(/*#__PURE__*/ import_react$156.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionsLeft.push(/*#__PURE__*/ import_react$158.createElement("li", {
 					key: "action04",
 					className: "ui-thumbnail-action mln",
 					style: commonCss,
@@ -35586,46 +34658,25 @@ Zu diesem hinzufügen\
 					onClick: function(e) {
 						return handlePositionChange(get$4.uuid, 2, e);
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
-========
-				}, /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Icon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Icon, {
 					i: "move-right-last",
 					className: iconCssClass
 				})));
 			}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (get$4.editable) actionsRight.push(/*#__PURE__*/ import_react$157.createElement("li", {
+			if (get$4.editable) actionsRight.push(/*#__PURE__*/ import_react$158.createElement("li", {
 				key: "edit",
 				className: "ui-thumbnail-action"
-			}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Button, {
+			}, /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Button, {
 				className: "ui-thumbnail-action-favorite",
 				href: get$4.edit_meta_data_by_context_url
-			}, /*#__PURE__*/ import_react$157.createElement("i", { className: "icon-pen" }))));
-			if (deleteProps && get$4.destroyable) actionsRight.push(/*#__PURE__*/ import_react$157.createElement("li", {
+			}, /*#__PURE__*/ import_react$158.createElement("i", { className: "icon-pen" }))));
+			if (deleteProps && get$4.destroyable) actionsRight.push(/*#__PURE__*/ import_react$158.createElement("li", {
 				key: "destroy",
 				className: "ui-thumbnail-action"
-			}, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Button, {
+			}, /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Button, {
 				className: "ui-thumbnail-action-favorite",
 				onClick: deleteProps.showModal
-			}, /*#__PURE__*/ import_react$157.createElement("i", { className: "icon-trash" }))));
-========
-			if (get$4.editable) actionsRight.push(/*#__PURE__*/ import_react$156.createElement("li", {
-				key: "edit",
-				className: "ui-thumbnail-action"
-			}, /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Button, {
-				className: "ui-thumbnail-action-favorite",
-				href: get$4.edit_meta_data_by_context_url
-			}, /*#__PURE__*/ import_react$156.createElement("i", { className: "icon-pen" }))));
-			if (deleteProps && get$4.destroyable) actionsRight.push(/*#__PURE__*/ import_react$156.createElement("li", {
-				key: "destroy",
-				className: "ui-thumbnail-action"
-			}, /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Button, {
-				className: "ui-thumbnail-action-favorite",
-				onClick: deleteProps.showModal
-			}, /*#__PURE__*/ import_react$156.createElement("i", { className: "icon-trash" }))));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$158.createElement("i", { className: "icon-trash" }))));
 			const thumbProps = {
 				draft: statusProps.modelPublished === false,
 				onClipboard: statusProps.onClipboard,
@@ -35640,11 +34691,7 @@ Zu diesem hinzufügen\
 				pictureLinkStyle,
 				meta: textProps,
 				badgeLeft: statusIcon,
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				badgeRight: get$4.type === "FilterSet" ? /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Icon, {
-========
-				badgeRight: get$4.type === "FilterSet" ? /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Icon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				badgeRight: get$4.type === "FilterSet" ? /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Icon, {
 					i: "filter",
 					title: "This is a Filterset"
 				}) : void 0,
@@ -35652,54 +34699,32 @@ Zu diesem hinzufügen\
 				actionsRight,
 				flyoutTop: relationsProps && relationsProps.parent && ["MediaEntry", "Collection"].includes(resourceType) ? {
 					title: "Übergeordnete Sets",
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					children: relationsProps.parent.ready ? relationsProps.parent.thumbs : /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Preloader, { mods: "small" }),
-========
-					children: relationsProps.parent.ready ? relationsProps.parent.thumbs : /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Preloader, { mods: "small" }),
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					children: relationsProps.parent.ready ? relationsProps.parent.thumbs : /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Preloader, { mods: "small" }),
 					caption: relationsProps.parent.ready ? relationsProps.parent.count + " Sets" : ""
 				} : void 0,
 				flyoutBottom: relationsProps && relationsProps.child && resourceType === "Collection" ? {
 					title: "Set enthält",
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					children: relationsProps.child.ready ? relationsProps.child.thumbs : /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Preloader, { mods: "small" }),
-========
-					children: relationsProps.child.ready ? relationsProps.child.thumbs : /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Preloader, { mods: "small" }),
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					children: relationsProps.child.ready ? relationsProps.child.thumbs : /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Preloader, { mods: "small" }),
 					caption: relationsProps.child.ready ? relationsProps.child.count + " Inhalte" : ""
 				} : void 0,
 				disableLink: get$4.disableLink,
 				editMetaDataByContextUrl: get$4.edit_meta_data_by_context_url
 			};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$157.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$157.createElement(import_ui_components$18.Thumbnail, thumbProps), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$157.createElement(DeleteModal, {
-========
-			return /*#__PURE__*/ import_react$156.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$156.createElement(import_ui_components$18.Thumbnail, thumbProps), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$156.createElement(DeleteModal, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$158.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$158.createElement(import_ui_components$18.Thumbnail, thumbProps), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$158.createElement(DeleteModal, {
 				resourceType: get$4.type,
 				onModalOk: deleteProps.onModalOk,
 				onModalCancel: deleteProps.onModalCancel,
 				modalTitle: deleteProps.modalTitle
 			}) : null);
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		ResourceThumbnailRenderer_default = /*#__PURE__*/ (0, import_react$157.memo)(ResourceThumbnailRenderer);
-========
-		ResourceThumbnailRenderer_default = /*#__PURE__*/ (0, import_react$156.memo)(ResourceThumbnailRenderer);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		ResourceThumbnailRenderer_default = /*#__PURE__*/ (0, import_react$158.memo)(ResourceThumbnailRenderer);
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/PinThumbnail.jsx
 	var PinThumbnail_exports = /* @__PURE__ */ __exportAll({ default: () => PinThumbnail });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$156, import_classnames$28, PinThumbnail;
+	var import_react$157, import_classnames$28, PinThumbnail;
 	var init_PinThumbnail = __esmMin((() => {
-		import_react$156 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$155, import_classnames$28, PinThumbnail;
-	var init_PinThumbnail = __esmMin((() => {
-		import_react$155 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$157 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$28 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
 		init_Picture();
@@ -35708,25 +34733,14 @@ Zu diesem hinzufügen\
 		init_FavoriteButton();
 		init_DeleteModal();
 		init_StatusIcon();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		PinThumbnail = /*#__PURE__*/ (0, import_react$156.memo)((props) => {
+		PinThumbnail = /*#__PURE__*/ (0, import_react$157.memo)((props) => {
 			const { resourceType, imageUrl, mediaType, title, subtitle, mediaUrl, selectProps, favoriteProps, editable, editUrl, destroyable, deleteProps, statusProps, pictureLinkStyle, onPictureClick } = props;
 			const isCollection = resourceType === "Collection";
-			const innerImage = imageUrl ? /*#__PURE__*/ import_react$156.createElement(Picture, {
+			const innerImage = imageUrl ? /*#__PURE__*/ import_react$157.createElement(Picture, {
 				mods: "ui-tile__image",
 				src: imageUrl,
 				alt: title
-			}) : /*#__PURE__*/ import_react$156.createElement(ResourceIcon, {
-========
-		PinThumbnail = /*#__PURE__*/ (0, import_react$155.memo)((props) => {
-			const { resourceType, imageUrl, mediaType, title, subtitle, mediaUrl, selectProps, favoriteProps, editable, editUrl, destroyable, deleteProps, statusProps, pictureLinkStyle, onPictureClick } = props;
-			const isCollection = resourceType === "Collection";
-			const innerImage = imageUrl ? /*#__PURE__*/ import_react$155.createElement(Picture, {
-				mods: "ui-tile__image",
-				src: imageUrl,
-				alt: title
-			}) : /*#__PURE__*/ import_react$155.createElement(ResourceIcon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}) : /*#__PURE__*/ import_react$157.createElement(ResourceIcon, {
 				mediaType,
 				thumbnail: false,
 				tiles: true,
@@ -35736,11 +34750,7 @@ Zu diesem hinzufügen\
 			const actionsLeft = [];
 			const actionsRight = [];
 			if (favoriteProps && favoriteProps.favoritePolicy) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const favorButton = /*#__PURE__*/ import_react$156.createElement(FavoriteButton, {
-========
-				const favorButton = /*#__PURE__*/ import_react$155.createElement(FavoriteButton, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				const favorButton = /*#__PURE__*/ import_react$157.createElement(FavoriteButton, {
 					modelFavored: favoriteProps.modelFavored,
 					favorUrl: favoriteProps.favorUrl,
 					disfavorUrl: favoriteProps.disfavorUrl,
@@ -35753,103 +34763,57 @@ Zu diesem hinzufügen\
 				actionsLeft.push(favorButton);
 			}
 			if (selectProps && selectProps.onSelect) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const selectAction = /*#__PURE__*/ import_react$156.createElement("a", {
+				const selectAction = /*#__PURE__*/ import_react$157.createElement("a", {
 					onClick: selectProps.onSelect,
 					className: "ui-tile__action-link",
 					title: selectProps.isSelected ? I18nTranslate("resources_box_selection_remove_selection") : I18nTranslate("resources_box_selection_select")
-				}, /*#__PURE__*/ import_react$156.createElement("i", { className: (0, import_classnames$28.default)("icon-checkbox", { active: selectProps.isSelected }) }));
+				}, /*#__PURE__*/ import_react$157.createElement("i", { className: (0, import_classnames$28.default)("icon-checkbox", { active: selectProps.isSelected }) }));
 				actionsLeft.push(selectAction);
 			}
-			if (editable) actionsRight.push(/*#__PURE__*/ import_react$156.createElement(Button$3, {
+			if (editable) actionsRight.push(/*#__PURE__*/ import_react$157.createElement(Button$3, {
 				className: "ui-tile__action-link",
 				href: editUrl
-			}, /*#__PURE__*/ import_react$156.createElement("i", { className: "icon-pen" })));
-			if (deleteProps && destroyable) actionsRight.push(/*#__PURE__*/ import_react$156.createElement(Button$3, {
+			}, /*#__PURE__*/ import_react$157.createElement("i", { className: "icon-pen" })));
+			if (deleteProps && destroyable) actionsRight.push(/*#__PURE__*/ import_react$157.createElement(Button$3, {
 				className: "ui-tile__action-link",
 				onClick: deleteProps.showModal
-			}, /*#__PURE__*/ import_react$156.createElement("i", { className: "icon-trash" })));
+			}, /*#__PURE__*/ import_react$157.createElement("i", { className: "icon-trash" })));
 			let badgeLeft, badgeRight;
-			if (statusProps) badgeLeft = /*#__PURE__*/ import_react$156.createElement(StatusIcon, {
-========
-				const selectAction = /*#__PURE__*/ import_react$155.createElement("a", {
-					onClick: selectProps.onSelect,
-					className: "ui-tile__action-link",
-					title: selectProps.isSelected ? I18nTranslate("resources_box_selection_remove_selection") : I18nTranslate("resources_box_selection_select")
-				}, /*#__PURE__*/ import_react$155.createElement("i", { className: (0, import_classnames$28.default)("icon-checkbox", { active: selectProps.isSelected }) }));
-				actionsLeft.push(selectAction);
-			}
-			if (editable) actionsRight.push(/*#__PURE__*/ import_react$155.createElement(Button$3, {
-				className: "ui-tile__action-link",
-				href: editUrl
-			}, /*#__PURE__*/ import_react$155.createElement("i", { className: "icon-pen" })));
-			if (deleteProps && destroyable) actionsRight.push(/*#__PURE__*/ import_react$155.createElement(Button$3, {
-				className: "ui-tile__action-link",
-				onClick: deleteProps.showModal
-			}, /*#__PURE__*/ import_react$155.createElement("i", { className: "icon-trash" })));
-			let badgeLeft, badgeRight;
-			if (statusProps) badgeLeft = /*#__PURE__*/ import_react$155.createElement(StatusIcon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			if (statusProps) badgeLeft = /*#__PURE__*/ import_react$157.createElement(StatusIcon, {
 				privacyStatus: statusProps.privacyStatus,
 				resourceType,
 				modelPublished: statusProps.modelPublished,
 				iconClass: "ui-tile__flag ui-tile__flag--privac"
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (resourceType === "FilterSet") badgeRight = /*#__PURE__*/ import_react$156.createElement("i", { className: "ui-tile__flag ui-tile__flag--typ icon-filter" });
-========
-			if (resourceType === "FilterSet") badgeRight = /*#__PURE__*/ import_react$155.createElement("i", { className: "ui-tile__flag ui-tile__flag--typ icon-filter" });
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			if (resourceType === "FilterSet") badgeRight = /*#__PURE__*/ import_react$157.createElement("i", { className: "ui-tile__flag ui-tile__flag--typ icon-filter" });
 			let starShadow = "1px 0px 1px rgba(255, 255, 255, 0.5)";
 			starShadow += ", 0px 1px 1px rgba(255, 255, 255, 0.5)";
 			starShadow += ", -1px 0px 1px rgba(255, 255, 255, 0.5)";
 			starShadow += ", 0px -1px 1px rgba(255, 255, 255, 0.5)";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$156.createElement("div", null, deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$156.createElement(DeleteModal, {
-========
-			return /*#__PURE__*/ import_react$155.createElement("div", null, deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$155.createElement(DeleteModal, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$157.createElement("div", null, deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$157.createElement(DeleteModal, {
 				resourceType,
 				onModalOk: deleteProps.onModalOk,
 				onModalCancel: deleteProps.onModalCancel,
 				modalTitle: deleteProps.modalTitle
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}) : null, /*#__PURE__*/ import_react$156.createElement("div", { className: (0, import_classnames$28.default)("ui-tile", { "ui-tile--set": isCollection }) }, /*#__PURE__*/ import_react$156.createElement("div", { className: "ui-tile__head" }, favoriteProps && favoriteProps.favoritePolicy && favoriteProps.modelFavored && /*#__PURE__*/ import_react$156.createElement("i", {
-========
-			}) : null, /*#__PURE__*/ import_react$155.createElement("div", { className: (0, import_classnames$28.default)("ui-tile", { "ui-tile--set": isCollection }) }, /*#__PURE__*/ import_react$155.createElement("div", { className: "ui-tile__head" }, favoriteProps && favoriteProps.favoritePolicy && favoriteProps.modelFavored && /*#__PURE__*/ import_react$155.createElement("i", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}) : null, /*#__PURE__*/ import_react$157.createElement("div", { className: (0, import_classnames$28.default)("ui-tile", { "ui-tile--set": isCollection }) }, /*#__PURE__*/ import_react$157.createElement("div", { className: "ui-tile__head" }, favoriteProps && favoriteProps.favoritePolicy && favoriteProps.modelFavored && /*#__PURE__*/ import_react$157.createElement("i", {
 				className: "icon-star",
 				style: {
 					position: "absolute",
 					padding: "7px",
 					textShadow: starShadow
 				}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}), /*#__PURE__*/ import_react$156.createElement("ul", { className: "ui-tile__actions left by-left" }, actionsLeft.map((action, index) => /*#__PURE__*/ import_react$156.createElement("li", {
+			}), /*#__PURE__*/ import_react$157.createElement("ul", { className: "ui-tile__actions left by-left" }, actionsLeft.map((action, index) => /*#__PURE__*/ import_react$157.createElement("li", {
 				className: "ui-tile__action",
 				key: `action_left_${index}`
-			}, action))), /*#__PURE__*/ import_react$156.createElement("ul", { className: "ui-tile__actions right by-right" }, actionsRight.map((action, index) => /*#__PURE__*/ import_react$156.createElement("li", {
+			}, action))), /*#__PURE__*/ import_react$157.createElement("ul", { className: "ui-tile__actions right by-right" }, actionsRight.map((action, index) => /*#__PURE__*/ import_react$157.createElement("li", {
 				className: "ui-tile__action",
 				key: `action_right_${index}`
-			}, action)))), /*#__PURE__*/ import_react$156.createElement("div", { className: "ui-tile__body" }, /*#__PURE__*/ import_react$156.createElement("a", {
-========
-			}), /*#__PURE__*/ import_react$155.createElement("ul", { className: "ui-tile__actions left by-left" }, actionsLeft.map((action, index) => /*#__PURE__*/ import_react$155.createElement("li", {
-				className: "ui-tile__action",
-				key: `action_left_${index}`
-			}, action))), /*#__PURE__*/ import_react$155.createElement("ul", { className: "ui-tile__actions right by-right" }, actionsRight.map((action, index) => /*#__PURE__*/ import_react$155.createElement("li", {
-				className: "ui-tile__action",
-				key: `action_right_${index}`
-			}, action)))), /*#__PURE__*/ import_react$155.createElement("div", { className: "ui-tile__body" }, /*#__PURE__*/ import_react$155.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, action)))), /*#__PURE__*/ import_react$157.createElement("div", { className: "ui-tile__body" }, /*#__PURE__*/ import_react$157.createElement("a", {
 				className: "ui-tile__thumbnail",
 				style: pictureLinkStyle,
 				onClick: onPictureClick,
 				href: mediaUrl
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, innerImage)), /*#__PURE__*/ import_react$156.createElement("a", { href: mediaUrl }, /*#__PURE__*/ import_react$156.createElement("div", { className: "ui-tile__foot" }, /*#__PURE__*/ import_react$156.createElement("h3", { className: "ui-tile__title" }, title), /*#__PURE__*/ import_react$156.createElement("h4", { className: "ui-tile__meta" }, subtitle), /*#__PURE__*/ import_react$156.createElement("span", { className: "ui-tile__flags" }, badgeLeft, badgeRight)))));
-========
-			}, innerImage)), /*#__PURE__*/ import_react$155.createElement("a", { href: mediaUrl }, /*#__PURE__*/ import_react$155.createElement("div", { className: "ui-tile__foot" }, /*#__PURE__*/ import_react$155.createElement("h3", { className: "ui-tile__title" }, title), /*#__PURE__*/ import_react$155.createElement("h4", { className: "ui-tile__meta" }, subtitle), /*#__PURE__*/ import_react$155.createElement("span", { className: "ui-tile__flags" }, badgeLeft, badgeRight)))));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, innerImage)), /*#__PURE__*/ import_react$157.createElement("a", { href: mediaUrl }, /*#__PURE__*/ import_react$157.createElement("div", { className: "ui-tile__foot" }, /*#__PURE__*/ import_react$157.createElement("h3", { className: "ui-tile__title" }, title), /*#__PURE__*/ import_react$157.createElement("h4", { className: "ui-tile__meta" }, subtitle), /*#__PURE__*/ import_react$157.createElement("span", { className: "ui-tile__flags" }, badgeLeft, badgeRight)))));
 		});
 		PinThumbnail.displayName = "PinThumbnail";
 	}));
@@ -36043,31 +35007,17 @@ Zu diesem hinzufügen\
 	function MetaDatumRolesCloud({ personRoleTuples, metaKeyId }) {
 		const persons = groupContiguous(personRoleTuples);
 		const anyRolePresent = persons.some((p) => p.roles.length > 0);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		return /*#__PURE__*/ import_react$155.createElement("div", { className: "small ui-tag-cloud" }, persons.map(({ label, url, roles }, i) => {
-			return /*#__PURE__*/ import_react$155.createElement("div", {
+		return /*#__PURE__*/ import_react$156.createElement("div", { className: "small ui-tag-cloud" }, persons.map(({ label, url, roles }, i) => {
+			return /*#__PURE__*/ import_react$156.createElement("div", {
 				key: i,
 				className: (0, import_classnames$27.default)("ui-tag-cloud-item", { "ui-tag-cloud-person-roles-item block clearfix": anyRolePresent })
-			}, /*#__PURE__*/ import_react$155.createElement("a", {
+			}, /*#__PURE__*/ import_react$156.createElement("a", {
 				href: url,
 				className: "link ui-tag-button ui-link"
-			}, /*#__PURE__*/ import_react$155.createElement(Icon$4, {
+			}, /*#__PURE__*/ import_react$156.createElement(Icon$4, {
 				i: "user-mini",
 				mods: "ui-tag-icon"
-			}), label), roles.length > 0 && /*#__PURE__*/ import_react$155.createElement("div", { className: "ui-role-tags" }, /*#__PURE__*/ import_react$155.createElement("span", null, ":"), roles.map(({ label: roleLabel, id }, i) => {
-========
-		return /*#__PURE__*/ import_react$154.createElement("div", { className: "small ui-tag-cloud" }, persons.map(({ label, url, roles }, i) => {
-			return /*#__PURE__*/ import_react$154.createElement("div", {
-				key: i,
-				className: (0, import_classnames$27.default)("ui-tag-cloud-item", { "ui-tag-cloud-person-roles-item block clearfix": anyRolePresent })
-			}, /*#__PURE__*/ import_react$154.createElement("a", {
-				href: url,
-				className: "link ui-tag-button ui-link"
-			}, /*#__PURE__*/ import_react$154.createElement(Icon$4, {
-				i: "user-mini",
-				mods: "ui-tag-icon"
-			}), label), roles.length > 0 && /*#__PURE__*/ import_react$154.createElement("div", { className: "ui-role-tags" }, /*#__PURE__*/ import_react$154.createElement("span", null, ":"), roles.map(({ label: roleLabel, id }, i) => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}), label), roles.length > 0 && /*#__PURE__*/ import_react$156.createElement("div", { className: "ui-role-tags" }, /*#__PURE__*/ import_react$156.createElement("span", null, ":"), roles.map(({ label: roleLabel, id }, i) => {
 				var rolesUrl = set_params_for_url_default(url, { list: {
 					show_filter: true,
 					filter: JSON.stringify({ meta_data: [{
@@ -36075,11 +35025,7 @@ Zu diesem hinzufügen\
 						value: id
 					}] })
 				} });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$155.createElement("a", {
-========
-				return /*#__PURE__*/ import_react$154.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$156.createElement("a", {
 					key: i,
 					href: rolesUrl,
 					className: "link ui-tag-button ui-link",
@@ -36088,17 +35034,10 @@ Zu diesem hinzufügen\
 			})));
 		}));
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$155, import_prop_types$35, import_classnames$27;
+	var import_react$156, import_prop_types$36, import_classnames$27;
 	var init_MetaDatumRolesCloud = __esmMin((() => {
-		import_react$155 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$35 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$154, import_prop_types$36, import_classnames$27;
-	var init_MetaDatumRolesCloud = __esmMin((() => {
-		import_react$154 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$156 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$36 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_set_params_for_url();
 		import_classnames$27 = /* @__PURE__ */ __toESM(require_classnames());
 		init_Icon();
@@ -37404,23 +36343,13 @@ Zu diesem hinzufügen\
 		const estimatedLineLength = 110;
 		return (values.join(", ") || [""]).split(/\r\n|\r|\n/g).map((paragraph) => Math.ceil(paragraph.length / estimatedLineLength)).reduce((a, b) => a + b);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$154, import_classnames$26, MetaDatumText;
+	var import_react$155, import_classnames$26, MetaDatumText;
 	var init_MetaDatumText = __esmMin((() => {
-		import_react$154 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$155 = /* @__PURE__ */ __toESM(require_react$1());
 		init_linkify_inner_html();
 		import_classnames$26 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
-		MetaDatumText = class extends import_react$154.Component {
-========
-	var import_react$153, import_classnames$26, MetaDatumText;
-	var init_MetaDatumText = __esmMin((() => {
-		import_react$153 = /* @__PURE__ */ __toESM(require_react$1());
-		init_linkify_inner_html();
-		import_classnames$26 = /* @__PURE__ */ __toESM(require_classnames());
-		init_i18n_translate();
-		MetaDatumText = class extends import_react$153.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		MetaDatumText = class extends import_react$155.Component {
 			constructor(props) {
 				super(props);
 				this.state = { isOpen: false };
@@ -37429,11 +36358,7 @@ Zu diesem hinzufügen\
 				this.setState((s) => ({ isOpen: !s.isOpen }));
 			}
 			renderContent({ values, className }) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$154.createElement("ul", { className: (0, import_classnames$26.default)("inline measure-double", className) }, values.map((value) => /*#__PURE__*/ import_react$154.createElement("li", {
-========
-				return /*#__PURE__*/ import_react$153.createElement("ul", { className: (0, import_classnames$26.default)("inline measure-double", className) }, values.map((value) => /*#__PURE__*/ import_react$153.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$155.createElement("ul", { className: (0, import_classnames$26.default)("inline measure-double", className) }, values.map((value) => /*#__PURE__*/ import_react$155.createElement("li", {
 					key: value,
 					dangerouslySetInnerHTML: linkify_inner_html_default(value)
 				})));
@@ -37441,23 +36366,13 @@ Zu diesem hinzufügen\
 			render({ props, state } = this) {
 				const { values = [], allowReadMore } = props;
 				const { isOpen } = state;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				if (allowReadMore && estimateNumberOfLines(values) > 10) return /*#__PURE__*/ import_react$154.createElement("div", { className: (0, import_classnames$26.default)("read-more__container", { "read-more__container--open": isOpen }) }, this.renderContent({
+				if (allowReadMore && estimateNumberOfLines(values) > 10) return /*#__PURE__*/ import_react$155.createElement("div", { className: (0, import_classnames$26.default)("read-more__container", { "read-more__container--open": isOpen }) }, this.renderContent({
 					values,
 					className: "read-more__content"
-				}), /*#__PURE__*/ import_react$154.createElement("div", {
+				}), /*#__PURE__*/ import_react$155.createElement("div", {
 					className: (0, import_classnames$26.default)("read-more__toggler"),
 					"aria-hidden": "true"
-				}, /*#__PURE__*/ import_react$154.createElement("a", { onClick: () => this.toggleOpen() }, /*#__PURE__*/ import_react$154.createElement("div", { className: (0, import_classnames$26.default)("read-more__dust") }), isOpen ? I18nTranslate("read_less_button") : I18nTranslate("read_more_button"))));
-========
-				if (allowReadMore && estimateNumberOfLines(values) > 10) return /*#__PURE__*/ import_react$153.createElement("div", { className: (0, import_classnames$26.default)("read-more__container", { "read-more__container--open": isOpen }) }, this.renderContent({
-					values,
-					className: "read-more__content"
-				}), /*#__PURE__*/ import_react$153.createElement("div", {
-					className: (0, import_classnames$26.default)("read-more__toggler"),
-					"aria-hidden": "true"
-				}, /*#__PURE__*/ import_react$153.createElement("a", { onClick: () => this.toggleOpen() }, /*#__PURE__*/ import_react$153.createElement("div", { className: (0, import_classnames$26.default)("read-more__dust") }), isOpen ? I18nTranslate("read_less_button") : I18nTranslate("read_more_button"))));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$155.createElement("a", { onClick: () => this.toggleOpen() }, /*#__PURE__*/ import_react$155.createElement("div", { className: (0, import_classnames$26.default)("read-more__dust") }), isOpen ? I18nTranslate("read_less_button") : I18nTranslate("read_more_button"))));
 				else return this.renderContent({ values });
 			}
 		};
@@ -37465,17 +36380,10 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/MetaDatumValues.jsx
 	var MetaDatumValues_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDatumValues });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$153, import_prop_types$34, import_ui_components$17, prettifyJson, DecoratorsByType, MetaDatumValues;
+	var import_react$154, import_prop_types$35, import_ui_components$17, prettifyJson, DecoratorsByType, MetaDatumValues;
 	var init_MetaDatumValues = __esmMin((() => {
-		import_react$153 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$34 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$152, import_prop_types$35, import_ui_components$17, prettifyJson, DecoratorsByType, MetaDatumValues;
-	var init_MetaDatumValues = __esmMin((() => {
-		import_react$152 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$154 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$35 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_utils$2();
 		init_madek_prop_types();
 		init_i18n_translate();
@@ -37492,27 +36400,16 @@ Zu diesem hinzufügen\
 		};
 		DecoratorsByType = {
 			Text: function({ values, metaKeyId }) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$153.createElement(MetaDatumText, {
-========
-				return /*#__PURE__*/ import_react$152.createElement(MetaDatumText, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$154.createElement(MetaDatumText, {
 					values,
 					allowReadMore: metaKeyId === "madek_core:description"
 				});
 			},
 			TextDate: function({ values }) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$153.createElement("ul", { className: "inline" }, values.map((string) => /*#__PURE__*/ import_react$153.createElement("li", { key: string }, string)));
+				return /*#__PURE__*/ import_react$154.createElement("ul", { className: "inline" }, values.map((string) => /*#__PURE__*/ import_react$154.createElement("li", { key: string }, string)));
 			},
 			JSON: function({ values }) {
-				return /*#__PURE__*/ import_react$153.createElement("ul", { className: "inline ui-md-json" }, values.map((obj, i) => /*#__PURE__*/ import_react$153.createElement("li", {
-========
-				return /*#__PURE__*/ import_react$152.createElement("ul", { className: "inline" }, values.map((string) => /*#__PURE__*/ import_react$152.createElement("li", { key: string }, string)));
-			},
-			JSON: function({ values }) {
-				return /*#__PURE__*/ import_react$152.createElement("ul", { className: "inline ui-md-json" }, values.map((obj, i) => /*#__PURE__*/ import_react$152.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$154.createElement("ul", { className: "inline ui-md-json" }, values.map((obj, i) => /*#__PURE__*/ import_react$154.createElement("li", {
 					className: "wrapped-textarea",
 					style: {
 						display: "block",
@@ -37520,11 +36417,7 @@ Zu diesem hinzufügen\
 						overflow: "hidden"
 					},
 					key: i
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$153.createElement("textarea", {
-========
-				}, /*#__PURE__*/ import_react$152.createElement("textarea", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$154.createElement("textarea", {
 					readOnly: true,
 					className: "code block",
 					rows: 10,
@@ -37540,39 +36433,24 @@ Zu diesem hinzufügen\
 				}))));
 			},
 			People: function({ values, metaKeyId, withRoles }) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return withRoles ? /*#__PURE__*/ import_react$153.createElement(MetaDatumRolesCloud, {
+				return withRoles ? /*#__PURE__*/ import_react$154.createElement(MetaDatumRolesCloud, {
 					personRoleTuples: values,
 					metaKeyId
-				}) : /*#__PURE__*/ import_react$153.createElement(import_ui_components$17.default.TagCloud, {
-========
-				return withRoles ? /*#__PURE__*/ import_react$152.createElement(MetaDatumRolesCloud, {
-					personRoleTuples: values,
-					metaKeyId
-				}) : /*#__PURE__*/ import_react$152.createElement(import_ui_components$17.default.TagCloud, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}) : /*#__PURE__*/ import_react$154.createElement(import_ui_components$17.default.TagCloud, {
 					mod: "person",
 					mods: "small",
 					list: (0, import_ui_components$17.labelize)(values)
 				});
 			},
 			Groups: function({ values }) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$153.createElement(import_ui_components$17.default.TagCloud, {
-========
-				return /*#__PURE__*/ import_react$152.createElement(import_ui_components$17.default.TagCloud, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$154.createElement(import_ui_components$17.default.TagCloud, {
 					mod: "group",
 					mods: "small",
 					list: (0, import_ui_components$17.labelize)(values)
 				});
 			},
 			Keywords: function({ values }) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$153.createElement(import_ui_components$17.default.TagCloud, {
-========
-				return /*#__PURE__*/ import_react$152.createElement(import_ui_components$17.default.TagCloud, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$154.createElement(import_ui_components$17.default.TagCloud, {
 					mod: "label",
 					mods: "small",
 					list: (0, import_ui_components$17.labelize)(values)
@@ -37581,27 +36459,16 @@ Zu diesem hinzufügen\
 			MediaEntry: function({ values }) {
 				const [resource, description] = getPath(values, "0") || [];
 				const { url, title, unAuthorized, notFound } = resource || {};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$153.createElement("div", null, /*#__PURE__*/ import_react$153.createElement(import_ui_components$17.default.Link, {
+				return /*#__PURE__*/ import_react$154.createElement("div", null, /*#__PURE__*/ import_react$154.createElement(import_ui_components$17.default.Link, {
 					href: url,
 					className: "link"
-				}, title), " ", present(description) && /*#__PURE__*/ import_react$153.createElement("p", null, "(", description, ")"), !!unAuthorized && /*#__PURE__*/ import_react$153.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_unauthorized")), !!notFound && /*#__PURE__*/ import_react$153.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_not_found")));
-========
-				return /*#__PURE__*/ import_react$152.createElement("div", null, /*#__PURE__*/ import_react$152.createElement(import_ui_components$17.default.Link, {
-					href: url,
-					className: "link"
-				}, title), " ", present(description) && /*#__PURE__*/ import_react$152.createElement("p", null, "(", description, ")"), !!unAuthorized && /*#__PURE__*/ import_react$152.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_unauthorized")), !!notFound && /*#__PURE__*/ import_react$152.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_not_found")));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, title), " ", present(description) && /*#__PURE__*/ import_react$154.createElement("p", null, "(", description, ")"), !!unAuthorized && /*#__PURE__*/ import_react$154.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_unauthorized")), !!notFound && /*#__PURE__*/ import_react$154.createElement("p", { style: { fontStyle: "italic" } }, I18nTranslate("meta_datum_media_entry_value_not_found")));
 			}
 		};
 		MetaDatumValues = ({ metaDatum, tagMods }) => {
 			const { type, values, meta_key_id } = metaDatum;
 			const DecoratorByType = DecoratorsByType[type.split("::").pop()];
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$153.createElement(DecoratorByType, {
-========
-			return /*#__PURE__*/ import_react$152.createElement(DecoratorByType, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$154.createElement(DecoratorByType, {
 				values,
 				tagMods,
 				metaKeyId: meta_key_id,
@@ -37615,23 +36482,13 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/MetaDataTable.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
 	var MetaDataTable_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDataTable$1 });
-	var import_react$152, MetaDataTable$1;
+	var import_react$153, MetaDataTable$1;
 	var init_MetaDataTable = __esmMin((() => {
-		import_react$152 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$153 = /* @__PURE__ */ __toESM(require_react$1());
 		init_MetaDatumValues();
 		MetaDataTable$1 = ({ labelValuePairs, fallbackMsg, tagMods, listClasses = "borderless", keyClasses = "ui-summary-label", valueClasses = "ui-summary-content" }) => {
-			return /*#__PURE__*/ import_react$152.createElement("table", { className: listClasses }, /*#__PURE__*/ import_react$152.createElement("tbody", null, fallbackMsg ? /*#__PURE__*/ import_react$152.createElement("tr", null, /*#__PURE__*/ import_react$152.createElement("td", { className: keyClasses }, fallbackMsg)) : labelValuePairs.map((item) => /*#__PURE__*/ import_react$152.createElement("tr", { key: item.key }, /*#__PURE__*/ import_react$152.createElement("td", { className: keyClasses }, item.label), /*#__PURE__*/ import_react$152.createElement("td", { className: valueClasses }, item.type === "datum" ? /*#__PURE__*/ import_react$152.createElement(MetaDatumValues, {
-========
-	var MetaDataTable_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDataTable });
-	var import_react$151, MetaDataTable;
-	var init_MetaDataTable = __esmMin((() => {
-		import_react$151 = /* @__PURE__ */ __toESM(require_react$1());
-		init_MetaDatumValues();
-		MetaDataTable = ({ labelValuePairs, fallbackMsg, tagMods, listClasses = "borderless", keyClasses = "ui-summary-label", valueClasses = "ui-summary-content" }) => {
-			return /*#__PURE__*/ import_react$151.createElement("table", { className: listClasses }, /*#__PURE__*/ import_react$151.createElement("tbody", null, fallbackMsg ? /*#__PURE__*/ import_react$151.createElement("tr", null, /*#__PURE__*/ import_react$151.createElement("td", { className: keyClasses }, fallbackMsg)) : labelValuePairs.map((item) => /*#__PURE__*/ import_react$151.createElement("tr", { key: item.key }, /*#__PURE__*/ import_react$151.createElement("td", { className: keyClasses }, item.label), /*#__PURE__*/ import_react$151.createElement("td", { className: valueClasses }, item.type === "datum" ? /*#__PURE__*/ import_react$151.createElement(MetaDatumValues, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$153.createElement("table", { className: listClasses }, /*#__PURE__*/ import_react$153.createElement("tbody", null, fallbackMsg ? /*#__PURE__*/ import_react$153.createElement("tr", null, /*#__PURE__*/ import_react$153.createElement("td", { className: keyClasses }, fallbackMsg)) : labelValuePairs.map((item) => /*#__PURE__*/ import_react$153.createElement("tr", { key: item.key }, /*#__PURE__*/ import_react$153.createElement("td", { className: keyClasses }, item.label), /*#__PURE__*/ import_react$153.createElement("td", { className: valueClasses }, item.type === "datum" ? /*#__PURE__*/ import_react$153.createElement(MetaDatumValues, {
 				metaDatum: item.value,
 				tagMods
 			}) : item.value)))));
@@ -37640,37 +36497,21 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/MetaDataDefinitionList.jsx
 	var MetaDataDefinitionList_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDataDefinitionList });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$151, MetaDataDefinitionList;
+	var import_react$152, MetaDataDefinitionList;
 	var init_MetaDataDefinitionList = __esmMin((() => {
-		import_react$151 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$150, MetaDataDefinitionList;
-	var init_MetaDataDefinitionList = __esmMin((() => {
-		import_react$150 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$152 = /* @__PURE__ */ __toESM(require_react$1());
 		init_MetaDatumValues();
 		MetaDataDefinitionList = ({ labelValuePairs, fallbackMsg, tagMods }) => {
 			const listClasses = "media-data";
 			const keyClass = "media-data-title title-xs-alt";
 			const valClass = "media-data-content";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$151.createElement("dl", { className: listClasses }, fallbackMsg ? /*#__PURE__*/ import_react$151.createElement("dt", { className: keyClass }, fallbackMsg) : labelValuePairs.map((item) => [/*#__PURE__*/ import_react$151.createElement("dt", {
+			return /*#__PURE__*/ import_react$152.createElement("dl", { className: listClasses }, fallbackMsg ? /*#__PURE__*/ import_react$152.createElement("dt", { className: keyClass }, fallbackMsg) : labelValuePairs.map((item) => [/*#__PURE__*/ import_react$152.createElement("dt", {
 				key: `dt_${item.key}`,
 				className: keyClass
-			}, item.label), /*#__PURE__*/ import_react$151.createElement("dd", {
+			}, item.label), /*#__PURE__*/ import_react$152.createElement("dd", {
 				key: `dd_${item.key}`,
 				className: valClass
-			}, item.type === "datum" ? /*#__PURE__*/ import_react$151.createElement(MetaDatumValues, {
-========
-			return /*#__PURE__*/ import_react$150.createElement("dl", { className: listClasses }, fallbackMsg ? /*#__PURE__*/ import_react$150.createElement("dt", { className: keyClass }, fallbackMsg) : labelValuePairs.map((item) => [/*#__PURE__*/ import_react$150.createElement("dt", {
-				key: `dt_${item.key}`,
-				className: keyClass
-			}, item.label), /*#__PURE__*/ import_react$150.createElement("dd", {
-				key: `dd_${item.key}`,
-				className: valClass
-			}, item.type === "datum" ? /*#__PURE__*/ import_react$150.createElement(MetaDatumValues, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, item.type === "datum" ? /*#__PURE__*/ import_react$152.createElement(MetaDatumValues, {
 				metaDatum: item.value,
 				tagMods
 			}) : item.value)]));
@@ -37679,17 +36520,10 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/MetaDataList.jsx
 	var MetaDataList_exports = /* @__PURE__ */ __exportAll({ default: () => MetaDataList });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$150, import_prop_types$33, import_dedupe$5, getListingDataWithFallback, MetaDataList;
+	var import_react$151, import_prop_types$34, import_dedupe$5, getListingDataWithFallback, MetaDataList;
 	var init_MetaDataList = __esmMin((() => {
-		import_react$150 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$33 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$149, import_prop_types$34, import_dedupe$5, getListingDataWithFallback, MetaDataList;
-	var init_MetaDataList = __esmMin((() => {
-		import_react$149 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$151 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$34 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_utils$2();
 		import_dedupe$5 = /* @__PURE__ */ __toESM(require_dedupe());
 		init_ui();
@@ -37731,27 +36565,15 @@ Zu diesem hinzufügen\
 			const { title, listingData, fallbackMsg } = getListingDataWithFallback(list, type, showTitle, showFallback);
 			if (renderer) return renderer(listingData, fallbackMsg, tagMods);
 			const wrapperClass = (0, import_dedupe$5.default)(parseMods(restProps), "ui-metadata-box");
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$150.createElement("div", { className: wrapperClass }, showTitle ? vocabUrl ? /*#__PURE__*/ import_react$150.createElement(VocabTitleLink, {
+			return /*#__PURE__*/ import_react$151.createElement("div", { className: wrapperClass }, showTitle ? vocabUrl ? /*#__PURE__*/ import_react$151.createElement(VocabTitleLink, {
 				text: title,
 				href: vocabUrl,
 				separated: true
-			}) : /*#__PURE__*/ import_react$150.createElement("h3", { className: "title-l separated mbm" }, title) : void 0, type === "list" ? /*#__PURE__*/ import_react$150.createElement(MetaDataDefinitionList, {
+			}) : /*#__PURE__*/ import_react$151.createElement("h3", { className: "title-l separated mbm" }, title) : void 0, type === "list" ? /*#__PURE__*/ import_react$151.createElement(MetaDataDefinitionList, {
 				labelValuePairs: listingData,
 				fallbackMsg,
 				tagMods
-			}) : /*#__PURE__*/ import_react$150.createElement(MetaDataTable$1, {
-========
-			return /*#__PURE__*/ import_react$149.createElement("div", { className: wrapperClass }, showTitle ? vocabUrl ? /*#__PURE__*/ import_react$149.createElement(VocabTitleLink, {
-				text: title,
-				href: vocabUrl,
-				separated: true
-			}) : /*#__PURE__*/ import_react$149.createElement("h3", { className: "title-l separated mbm" }, title) : void 0, type === "list" ? /*#__PURE__*/ import_react$149.createElement(MetaDataDefinitionList, {
-				labelValuePairs: listingData,
-				fallbackMsg,
-				tagMods
-			}) : /*#__PURE__*/ import_react$149.createElement(MetaDataTable, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}) : /*#__PURE__*/ import_react$151.createElement(MetaDataTable$1, {
 				labelValuePairs: listingData,
 				fallbackMsg,
 				tagMods,
@@ -37772,15 +36594,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/ListThumbnail.jsx
 	var ListThumbnail_exports = /* @__PURE__ */ __exportAll({ default: () => ListThumbnail_default });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$149, import_classnames$25, ListThumbnail, Image$1, Titles, ListThumbnail_default;
+	var import_react$150, import_classnames$25, ListThumbnail, Image$1, Titles, ListThumbnail_default;
 	var init_ListThumbnail = __esmMin((() => {
-		import_react$149 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$148, import_classnames$25, ListThumbnail, Image$1, Titles, ListThumbnail_default;
-	var init_ListThumbnail = __esmMin((() => {
-		import_react$148 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$150 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$25 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
 		init_Picture();
@@ -37829,11 +36645,7 @@ Zu diesem hinzufügen\
 					key: "parents",
 					type: "text",
 					label: I18nTranslate("usage_data_relations_parents"),
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					value: /*#__PURE__*/ import_react$149.createElement("span", null, relation_counts.parent_collections_count, " ", /*#__PURE__*/ import_react$149.createElement(Icon$4, {
-========
-					value: /*#__PURE__*/ import_react$148.createElement("span", null, relation_counts.parent_collections_count, " ", /*#__PURE__*/ import_react$148.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					value: /*#__PURE__*/ import_react$150.createElement("span", null, relation_counts.parent_collections_count, " ", /*#__PURE__*/ import_react$150.createElement(Icon$4, {
 						i: "set",
 						style: iconStyle
 					}))
@@ -37842,35 +36654,20 @@ Zu diesem hinzufügen\
 					key: "children",
 					type: "text",
 					label: I18nTranslate("usage_data_relations_children"),
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					value: /*#__PURE__*/ import_react$149.createElement("span", null, /*#__PURE__*/ import_react$149.createElement("span", null, relation_counts.child_collections_count, " ", /*#__PURE__*/ import_react$149.createElement(Icon$4, {
+					value: /*#__PURE__*/ import_react$150.createElement("span", null, /*#__PURE__*/ import_react$150.createElement("span", null, relation_counts.child_collections_count, " ", /*#__PURE__*/ import_react$150.createElement(Icon$4, {
 						i: "set",
 						style: iconStyle
-					})), /*#__PURE__*/ import_react$149.createElement("span", { style: { marginLeft: "15px" } }, relation_counts.child_media_entries_count, " ", /*#__PURE__*/ import_react$149.createElement(Icon$4, {
-========
-					value: /*#__PURE__*/ import_react$148.createElement("span", null, /*#__PURE__*/ import_react$148.createElement("span", null, relation_counts.child_collections_count, " ", /*#__PURE__*/ import_react$148.createElement(Icon$4, {
-						i: "set",
-						style: iconStyle
-					})), /*#__PURE__*/ import_react$148.createElement("span", { style: { marginLeft: "15px" } }, relation_counts.child_media_entries_count, " ", /*#__PURE__*/ import_react$148.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					})), /*#__PURE__*/ import_react$150.createElement("span", { style: { marginLeft: "15px" } }, relation_counts.child_media_entries_count, " ", /*#__PURE__*/ import_react$150.createElement(Icon$4, {
 						i: "media-entry",
 						style: iconStyle
 					})))
 				});
 			}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const innerImage = imageUrl ? /*#__PURE__*/ import_react$149.createElement(Picture, {
+			const innerImage = imageUrl ? /*#__PURE__*/ import_react$150.createElement(Picture, {
 				mods: "ui-thumbnail-image",
 				src: imageUrl,
 				alt: title
-			}) : /*#__PURE__*/ import_react$149.createElement(ResourceIcon, {
-========
-			const innerImage = imageUrl ? /*#__PURE__*/ import_react$148.createElement(Picture, {
-				mods: "ui-thumbnail-image",
-				src: imageUrl,
-				alt: title
-			}) : /*#__PURE__*/ import_react$148.createElement(ResourceIcon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}) : /*#__PURE__*/ import_react$150.createElement(ResourceIcon, {
 				mediaType,
 				thumbnail: true,
 				tiles: false,
@@ -37884,39 +36681,23 @@ Zu diesem hinzufügen\
 				padding: "2px"
 			};
 			if (selectProps && selectProps.onSelect) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const selectAction = /*#__PURE__*/ import_react$149.createElement("li", {
+				const selectAction = /*#__PURE__*/ import_react$150.createElement("li", {
 					className: "ui-thumbnail-action",
 					key: "selector",
 					style: liStyle
-				}, /*#__PURE__*/ import_react$149.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$149.createElement(Link$5, {
-========
-				const selectAction = /*#__PURE__*/ import_react$148.createElement("li", {
-					className: "ui-thumbnail-action",
-					key: "selector",
-					style: liStyle
-				}, /*#__PURE__*/ import_react$148.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$148.createElement(Link$5, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$150.createElement("span", { className: "js-only" }, /*#__PURE__*/ import_react$150.createElement(Link$5, {
 					onClick: selectProps.onSelect,
 					style: selectProps.selectStyle,
 					className: "ui-thumbnail-action-checkbox",
 					title: selectProps.isSelected ? I18nTranslate("resources_box_selection_remove_selection") : I18nTranslate("resources_box_selection_select")
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
-========
-				}, /*#__PURE__*/ import_react$148.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$150.createElement(Icon$4, {
 					i: "checkbox",
 					mods: selectProps.isSelected ? "active" : void 0
 				}))));
 				actionList.push(selectAction);
 			}
 			if (favoriteProps && favoriteProps.favoritePolicy) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const favorButton = /*#__PURE__*/ import_react$149.createElement(FavoriteButton, {
-========
-				const favorButton = /*#__PURE__*/ import_react$148.createElement(FavoriteButton, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				const favorButton = /*#__PURE__*/ import_react$150.createElement(FavoriteButton, {
 					modelFavored: favoriteProps.modelFavored,
 					favorUrl: favoriteProps.favorUrl,
 					disfavorUrl: favoriteProps.disfavorUrl,
@@ -37926,11 +36707,7 @@ Zu diesem hinzufügen\
 					authToken: favoriteProps.authToken,
 					buttonClass: "ui-thumbnail-action-favorite"
 				});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
-========
-				actionList.push(/*#__PURE__*/ import_react$148.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionList.push(/*#__PURE__*/ import_react$150.createElement("li", {
 					key: "favorite",
 					className: "ui-thumbnail-action",
 					style: liStyle
@@ -37942,118 +36719,67 @@ Zu diesem hinzufügen\
 					cursor: positionProps.disabled ? "not-allowed" : "pointer"
 				};
 				const iconCssClass = (0, import_classnames$25.default)({ mid: positionProps.disabled });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
-========
-				actionList.push(/*#__PURE__*/ import_react$148.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionList.push(/*#__PURE__*/ import_react$150.createElement("li", {
 					className: "ui-thumbnail-action",
 					style: commonCss,
 					title: "Move to the beginning",
 					onClick: function(e) {
 						return handlePositionChange(get.uuid, -2, e);
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$150.createElement(Icon$4, {
 					i: "move-up-first",
 					className: iconCssClass
 				})));
-				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
-========
-				}, /*#__PURE__*/ import_react$148.createElement(Icon$4, {
-					i: "move-up-first",
-					className: iconCssClass
-				})));
-				actionList.push(/*#__PURE__*/ import_react$148.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionList.push(/*#__PURE__*/ import_react$150.createElement("li", {
 					className: "ui-thumbnail-action",
 					style: commonCss,
 					title: "Move up",
 					onClick: function(e) {
 						return handlePositionChange(get.uuid, -1, e);
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$150.createElement(Icon$4, {
 					i: "move-up",
 					className: iconCssClass
 				})));
-				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
-========
-				}, /*#__PURE__*/ import_react$148.createElement(Icon$4, {
-					i: "move-up",
-					className: iconCssClass
-				})));
-				actionList.push(/*#__PURE__*/ import_react$148.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionList.push(/*#__PURE__*/ import_react$150.createElement("li", {
 					className: "ui-thumbnail-action",
 					style: commonCss,
 					title: "Move down",
 					onClick: function(e) {
 						return handlePositionChange(get.uuid, 1, e);
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$150.createElement(Icon$4, {
 					i: "move-down",
 					className: iconCssClass
 				})));
-				actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
-========
-				}, /*#__PURE__*/ import_react$148.createElement(Icon$4, {
-					i: "move-down",
-					className: iconCssClass
-				})));
-				actionList.push(/*#__PURE__*/ import_react$148.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				actionList.push(/*#__PURE__*/ import_react$150.createElement("li", {
 					className: "ui-thumbnail-action",
 					style: commonCss,
 					title: "Move to the end",
 					onClick: function(e) {
 						return handlePositionChange(get.uuid, 2, e);
 					}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$149.createElement(Icon$4, {
-========
-				}, /*#__PURE__*/ import_react$148.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$150.createElement(Icon$4, {
 					i: "move-down-last",
 					className: iconCssClass
 				})));
 			}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (get.editable) actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
+			if (get.editable) actionList.push(/*#__PURE__*/ import_react$150.createElement("li", {
 				key: "edit",
 				className: "ui-thumbnail-action",
 				style: liStyle
-			}, /*#__PURE__*/ import_react$149.createElement(Button$3, {
+			}, /*#__PURE__*/ import_react$150.createElement(Button$3, {
 				className: "ui-thumbnail-action-favorite",
 				href: get.edit_meta_data_by_context_url
-			}, /*#__PURE__*/ import_react$149.createElement("i", { className: "icon-pen" }))));
-			if (deleteProps && get.destroyable) actionList.push(/*#__PURE__*/ import_react$149.createElement("li", {
+			}, /*#__PURE__*/ import_react$150.createElement("i", { className: "icon-pen" }))));
+			if (deleteProps && get.destroyable) actionList.push(/*#__PURE__*/ import_react$150.createElement("li", {
 				key: "destroy",
 				className: "ui-thumbnail-action",
 				style: liStyle
-			}, /*#__PURE__*/ import_react$149.createElement(Button$3, {
+			}, /*#__PURE__*/ import_react$150.createElement(Button$3, {
 				className: "ui-thumbnail-action-favorite",
 				onClick: deleteProps.showModal
-			}, /*#__PURE__*/ import_react$149.createElement("i", { className: "icon-trash" }))));
-========
-			if (get.editable) actionList.push(/*#__PURE__*/ import_react$148.createElement("li", {
-				key: "edit",
-				className: "ui-thumbnail-action",
-				style: liStyle
-			}, /*#__PURE__*/ import_react$148.createElement(Button$3, {
-				className: "ui-thumbnail-action-favorite",
-				href: get.edit_meta_data_by_context_url
-			}, /*#__PURE__*/ import_react$148.createElement("i", { className: "icon-pen" }))));
-			if (deleteProps && get.destroyable) actionList.push(/*#__PURE__*/ import_react$148.createElement("li", {
-				key: "destroy",
-				className: "ui-thumbnail-action",
-				style: liStyle
-			}, /*#__PURE__*/ import_react$148.createElement(Button$3, {
-				className: "ui-thumbnail-action-favorite",
-				onClick: deleteProps.showModal
-			}, /*#__PURE__*/ import_react$148.createElement("i", { className: "icon-trash" }))));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$150.createElement("i", { className: "icon-trash" }))));
 			const actionsStyle = {
 				left: "0px",
 				top: "0px",
@@ -38064,50 +36790,28 @@ Zu diesem hinzufügen\
 				position: "static",
 				float: "left"
 			};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const actions = /*#__PURE__*/ import_react$149.createElement("div", {
+			const actions = /*#__PURE__*/ import_react$150.createElement("div", {
 				className: "ui-thumbnail-actions",
 				style: actionsStyle
-			}, /*#__PURE__*/ import_react$149.createElement("ul", { className: "left by-left" }, actionList));
-			return /*#__PURE__*/ import_react$149.createElement("div", null, /*#__PURE__*/ import_react$149.createElement("div", {
+			}, /*#__PURE__*/ import_react$150.createElement("ul", { className: "left by-left" }, actionList));
+			return /*#__PURE__*/ import_react$150.createElement("div", null, /*#__PURE__*/ import_react$150.createElement("div", {
 				className: "ui-resource-head",
 				style: { marginLeft: "168px" }
-			}, actions, /*#__PURE__*/ import_react$149.createElement("h3", { className: "ui-resource-title" }, title)), /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-resource-thumbnail" }, /*#__PURE__*/ import_react$149.createElement("div", { className: (0, import_classnames$25.default)("ui-thumbnail", thumbnailClass) }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-privacy" }, /*#__PURE__*/ import_react$149.createElement("i", { className: "icon-privacy-group" })), /*#__PURE__*/ import_react$149.createElement(Image$1, {
-========
-			const actions = /*#__PURE__*/ import_react$148.createElement("div", {
-				className: "ui-thumbnail-actions",
-				style: actionsStyle
-			}, /*#__PURE__*/ import_react$148.createElement("ul", { className: "left by-left" }, actionList));
-			return /*#__PURE__*/ import_react$148.createElement("div", null, /*#__PURE__*/ import_react$148.createElement("div", {
-				className: "ui-resource-head",
-				style: { marginLeft: "168px" }
-			}, actions, /*#__PURE__*/ import_react$148.createElement("h3", { className: "ui-resource-title" }, title)), /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-resource-thumbnail" }, /*#__PURE__*/ import_react$148.createElement("div", { className: (0, import_classnames$25.default)("ui-thumbnail", thumbnailClass) }, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-privacy" }, /*#__PURE__*/ import_react$148.createElement("i", { className: "icon-privacy-group" })), /*#__PURE__*/ import_react$148.createElement(Image$1, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, actions, /*#__PURE__*/ import_react$150.createElement("h3", { className: "ui-resource-title" }, title)), /*#__PURE__*/ import_react$150.createElement("div", { className: "ui-resource-body" }, /*#__PURE__*/ import_react$150.createElement("div", { className: "ui-resource-thumbnail" }, /*#__PURE__*/ import_react$150.createElement("div", { className: (0, import_classnames$25.default)("ui-thumbnail", thumbnailClass) }, /*#__PURE__*/ import_react$150.createElement("div", { className: "ui-thumbnail-privacy" }, /*#__PURE__*/ import_react$150.createElement("i", { className: "icon-privacy-group" })), /*#__PURE__*/ import_react$150.createElement(Image$1, {
 				onPictureClick,
 				pictureLinkStyle,
 				innerImage,
 				mediaUrl
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}), /*#__PURE__*/ import_react$149.createElement(Titles, null))), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$149.createElement(DeleteModal, {
-========
-			}), /*#__PURE__*/ import_react$148.createElement(Titles, null))), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$148.createElement(DeleteModal, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}), /*#__PURE__*/ import_react$150.createElement(Titles, null))), deleteProps && deleteProps.stateDeleteModal === true ? /*#__PURE__*/ import_react$150.createElement(DeleteModal, {
 				resourceType: get.type,
 				onModalOk: deleteProps.onModalOk,
 				onModalCancel: deleteProps.onModalCancel,
 				modalTitle: deleteProps.modalTitle
 			}) : null, metaData ? listsWithClasses.map((item) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$149.createElement("div", {
+				return /*#__PURE__*/ import_react$150.createElement("div", {
 					className: item.className,
 					key: item.key
-				}, /*#__PURE__*/ import_react$149.createElement(MetaDataList, {
-========
-				return /*#__PURE__*/ import_react$148.createElement("div", {
-					className: item.className,
-					key: item.key
-				}, /*#__PURE__*/ import_react$148.createElement(MetaDataList, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$150.createElement(MetaDataList, {
 					showTitle: false,
 					mods: "ui-resource-meta",
 					listMods: "block",
@@ -38117,50 +36821,27 @@ Zu diesem hinzufügen\
 					keyClasses: "ui-resource-meta-label",
 					valueClasses: "ui-resource-meta-content"
 				}));
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}).concat(/*#__PURE__*/ import_react$149.createElement("div", {
+			}).concat(/*#__PURE__*/ import_react$150.createElement("div", {
 				className: usageData.className,
 				key: usageData.key
-			}, /*#__PURE__*/ import_react$149.createElement(MetaDataDefinitionList, {
+			}, /*#__PURE__*/ import_react$150.createElement(MetaDataDefinitionList, {
 				labelValuePairs: usageData.list,
 				fallbackMsg: null,
 				tagMods: null
-			}))) : /*#__PURE__*/ import_react$149.createElement(Preloader$1, null)));
+			}))) : /*#__PURE__*/ import_react$150.createElement(Preloader$1, null)));
 		};
 		Image$1 = ({ innerImage, mediaUrl, onPictureClick, pictureLinkStyle }) => {
-			return /*#__PURE__*/ import_react$149.createElement("a", {
-========
-			}).concat(/*#__PURE__*/ import_react$148.createElement("div", {
-				className: usageData.className,
-				key: usageData.key
-			}, /*#__PURE__*/ import_react$148.createElement(MetaDataDefinitionList, {
-				labelValuePairs: usageData.list,
-				fallbackMsg: null,
-				tagMods: null
-			}))) : /*#__PURE__*/ import_react$148.createElement(Preloader$1, null)));
-		};
-		Image$1 = ({ innerImage, mediaUrl, onPictureClick, pictureLinkStyle }) => {
-			return /*#__PURE__*/ import_react$148.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$150.createElement("a", {
 				className: "ui-thumbnail-image-wrapper",
 				onClick: onPictureClick,
 				style: pictureLinkStyle,
 				href: mediaUrl
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage)))));
+			}, /*#__PURE__*/ import_react$150.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$150.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$150.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$150.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage)))));
 		};
 		Titles = () => {
-			return /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$149.createElement("h3", { className: "ui-thumbnail-meta-title" }, "Name that can easily go onto 2 lines"), /*#__PURE__*/ import_react$149.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, "Author that can easily go onto 2 lines as well"));
+			return /*#__PURE__*/ import_react$150.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$150.createElement("h3", { className: "ui-thumbnail-meta-title" }, "Name that can easily go onto 2 lines"), /*#__PURE__*/ import_react$150.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, "Author that can easily go onto 2 lines as well"));
 		};
-		ListThumbnail_default = /*#__PURE__*/ (0, import_react$149.memo)(ListThumbnail);
-========
-			}, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-image-holder" }, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-table-image-holder" }, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-cell-image-holder" }, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-inner-image-holder" }, innerImage)))));
-		};
-		Titles = () => {
-			return /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-meta" }, /*#__PURE__*/ import_react$148.createElement("h3", { className: "ui-thumbnail-meta-title" }, "Name that can easily go onto 2 lines"), /*#__PURE__*/ import_react$148.createElement("h4", { className: "ui-thumbnail-meta-subtitle" }, "Author that can easily go onto 2 lines as well"));
-		};
-		ListThumbnail_default = /*#__PURE__*/ (0, import_react$148.memo)(ListThumbnail);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		ListThumbnail_default = /*#__PURE__*/ (0, import_react$150.memo)(ListThumbnail);
 	}));
 	//#endregion
 	//#region app/javascript/models/shared/get-media-type.js
@@ -38177,17 +36858,10 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/ResourceThumbnail.jsx
 	var ResourceThumbnail_exports = /* @__PURE__ */ __exportAll({ default: () => ResourceThumbnail_default });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$148, import_prop_types$32, import_classnames$24, import_get_media_type, CURSOR_SELECT_STYLE, ResourceThumbnail, FlyoutImage, ResourceThumbnail_default;
+	var import_react$149, import_prop_types$33, import_classnames$24, import_get_media_type, CURSOR_SELECT_STYLE, ResourceThumbnail, FlyoutImage, ResourceThumbnail_default;
 	var init_ResourceThumbnail = __esmMin((() => {
-		import_react$148 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$32 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$147, import_prop_types$33, import_classnames$24, import_get_media_type, CURSOR_SELECT_STYLE, ResourceThumbnail, FlyoutImage, ResourceThumbnail_default;
-	var init_ResourceThumbnail = __esmMin((() => {
-		import_react$147 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$149 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$33 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		import_classnames$24 = /* @__PURE__ */ __toESM(require_classnames());
 		init_ResourceThumbnailRenderer();
 		init_PinThumbnail();
@@ -38201,28 +36875,16 @@ Zu diesem hinzufügen\
 		init_utils$2();
 		CURSOR_SELECT_STYLE = { cursor: "cell" };
 		ResourceThumbnail = ({ authToken, onSelect, fetchRelations, elm, get: get$3, isClient: isClientProp, onPictureClick, pictureLinkStyle, isSelected, pinThumb, listThumb, list_meta_data, uploadMediaType, style, positionProps }) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const [isClient, setIsClient] = (0, import_react$148.useState)(isClientProp || false);
-			const [deleteModal, setDeleteModal] = (0, import_react$148.useState)(false);
-			const relationsTransitionRef = (0, import_react$148.useRef)(null);
-			const favoriteTransitionRef = (0, import_react$148.useRef)(null);
-			const [relationsState, setRelationsState] = (0, import_react$148.useState)(() => {
-========
-			const [isClient, setIsClient] = (0, import_react$147.useState)(isClientProp || false);
-			const [deleteModal, setDeleteModal] = (0, import_react$147.useState)(false);
-			const relationsTransitionRef = (0, import_react$147.useRef)(null);
-			const favoriteTransitionRef = (0, import_react$147.useRef)(null);
-			const [relationsState, setRelationsState] = (0, import_react$147.useState)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const [isClient, setIsClient] = (0, import_react$149.useState)(isClientProp || false);
+			const [deleteModal, setDeleteModal] = (0, import_react$149.useState)(false);
+			const relationsTransitionRef = (0, import_react$149.useRef)(null);
+			const favoriteTransitionRef = (0, import_react$149.useRef)(null);
+			const [relationsState, setRelationsState] = (0, import_react$149.useState)(() => {
 				return BoxFetchRelations_default(null, { type: get$3.type }, (ps) => {
 					if (relationsTransitionRef.current) relationsTransitionRef.current(ps);
 				});
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const [favoriteState, setFavoriteState] = (0, import_react$148.useState)(() => {
-========
-			const [favoriteState, setFavoriteState] = (0, import_react$147.useState)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const [favoriteState, setFavoriteState] = (0, import_react$149.useState)(() => {
 				return BoxFavorite_default(null, { resource: get$3 }, (ps) => {
 					if (favoriteTransitionRef.current) favoriteTransitionRef.current(ps);
 				});
@@ -38235,71 +36897,41 @@ Zu diesem hinzufügen\
 				const next = BoxFavorite_default(cloneDeep(favoriteState), props, (ps) => favoriteTransitionRef.current(ps));
 				setFavoriteState(next);
 			};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			(0, import_react$148.useEffect)(() => {
+			(0, import_react$149.useEffect)(() => {
 				setIsClient(true);
 			}, []);
-			const [, forceUpdate] = (0, import_react$148.useState)({});
-			(0, import_react$148.useEffect)(() => {
-========
-			(0, import_react$147.useEffect)(() => {
-				setIsClient(true);
-			}, []);
-			const [, forceUpdate] = (0, import_react$147.useState)({});
-			(0, import_react$147.useEffect)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const [, forceUpdate] = (0, import_react$149.useState)({});
+			(0, import_react$149.useEffect)(() => {
 				const handleChange = () => forceUpdate({});
 				if (get$3 && get$3.on) {
 					get$3.on("change", handleChange);
 					return () => get$3.off("change", handleChange);
 				}
 			}, [get$3]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const _fetchRelations = (0, import_react$148.useCallback)(() => {
-========
-			const _fetchRelations = (0, import_react$147.useCallback)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const _fetchRelations = (0, import_react$149.useCallback)(() => {
 				if (relationsTransitionRef.current) relationsTransitionRef.current({
 					event: "try-fetch",
 					resource: get$3
 				});
 			}, [get$3]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const _onHover = (0, import_react$148.useCallback)(() => {
+			const _onHover = (0, import_react$149.useCallback)(() => {
 				if (fetchRelations) _fetchRelations();
 			}, [fetchRelations, _fetchRelations]);
-			const _favorOnClick = (0, import_react$148.useCallback)(() => {
-========
-			const _onHover = (0, import_react$147.useCallback)(() => {
-				if (fetchRelations) _fetchRelations();
-			}, [fetchRelations, _fetchRelations]);
-			const _favorOnClick = (0, import_react$147.useCallback)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const _favorOnClick = (0, import_react$149.useCallback)(() => {
 				if (favoriteTransitionRef.current) favoriteTransitionRef.current({
 					event: "toggle",
 					resource: get$3
 				});
 			}, [get$3]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const _showModal = (0, import_react$148.useCallback)(() => {
+			const _showModal = (0, import_react$149.useCallback)(() => {
 				setDeleteModal(true);
 			}, []);
-			const _onModalOk = (0, import_react$148.useCallback)(() => {
-========
-			const _showModal = (0, import_react$147.useCallback)(() => {
-				setDeleteModal(true);
-			}, []);
-			const _onModalOk = (0, import_react$147.useCallback)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const _onModalOk = (0, import_react$149.useCallback)(() => {
 				BoxDelete_default(get$3, () => {
 					location.reload();
 				});
 			}, [get$3]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const _onModalCancel = (0, import_react$148.useCallback)(() => {
-========
-			const _onModalCancel = (0, import_react$147.useCallback)(() => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const _onModalCancel = (0, import_react$149.useCallback)(() => {
 				setDeleteModal(false);
 			}, []);
 			const renderContent = () => {
@@ -38309,23 +36941,13 @@ Zu diesem hinzufügen\
 					childRelations = relationsState.relations.children;
 					if (parentRelations) {
 						parentsCount = parentRelations.pagination.total_count;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						if (parentsCount > 0) parentThumbs = get(parentRelations, "resources", []).map((item) => /*#__PURE__*/ import_react$148.createElement("li", {
+						if (parentsCount > 0) parentThumbs = get(parentRelations, "resources", []).map((item) => /*#__PURE__*/ import_react$149.createElement("li", {
 							className: "ui-thumbnail-level-item media_set set odd",
 							key: item.uuid
-						}, /*#__PURE__*/ import_react$148.createElement("a", {
+						}, /*#__PURE__*/ import_react$149.createElement("a", {
 							className: "ui-level-image-wrapper",
 							href: item.url
-						}, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$148.createElement(FlyoutImage, {
-========
-						if (parentsCount > 0) parentThumbs = get(parentRelations, "resources", []).map((item) => /*#__PURE__*/ import_react$147.createElement("li", {
-							className: "ui-thumbnail-level-item media_set set odd",
-							key: item.uuid
-						}, /*#__PURE__*/ import_react$147.createElement("a", {
-							className: "ui-level-image-wrapper",
-							href: item.url
-						}, /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$147.createElement(FlyoutImage, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						}, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$149.createElement(FlyoutImage, {
 							resourceType: item.type,
 							title: item.title,
 							imageUrl: item.image_url,
@@ -38337,23 +36959,13 @@ Zu diesem hinzufügen\
 						if (childrenCount > 0) childThumbs = get(childRelations, "resources", []).map(function(item) {
 							let classes = "ui-thumbnail-level-item media_set set odd";
 							if (item.type === "MediaEntry") classes = "ui-thumbnail-level-item media_entry image odd";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-							return /*#__PURE__*/ import_react$148.createElement("li", {
+							return /*#__PURE__*/ import_react$149.createElement("li", {
 								className: classes,
 								key: item.uuid
-							}, /*#__PURE__*/ import_react$148.createElement("a", {
+							}, /*#__PURE__*/ import_react$149.createElement("a", {
 								className: "ui-level-image-wrapper",
 								href: item.url
-							}, /*#__PURE__*/ import_react$148.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$148.createElement(FlyoutImage, {
-========
-							return /*#__PURE__*/ import_react$147.createElement("li", {
-								className: classes,
-								key: item.uuid
-							}, /*#__PURE__*/ import_react$147.createElement("a", {
-								className: "ui-level-image-wrapper",
-								href: item.url
-							}, /*#__PURE__*/ import_react$147.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$147.createElement(FlyoutImage, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+							}, /*#__PURE__*/ import_react$149.createElement("div", { className: "ui-thumbnail-level-image-holder" }, /*#__PURE__*/ import_react$149.createElement(FlyoutImage, {
 								resourceType: item.type,
 								title: item.title,
 								imageUrl: item.image_url,
@@ -38415,21 +37027,13 @@ Zu diesem hinzufügen\
 				};
 				const textProps = getTextProps();
 				const resourceMediaType = uploadMediaType ? uploadMediaType : (0, import_get_media_type.default)(get(get$3, "media_file.content_type"));
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				if (pinThumb) return /*#__PURE__*/ import_react$148.createElement("li", {
-========
-				if (pinThumb) return /*#__PURE__*/ import_react$147.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				if (pinThumb) return /*#__PURE__*/ import_react$149.createElement("li", {
 					style,
 					className: (0, import_classnames$24.default)("ui-resource", {
 						"is-video": get$3.media_type === "video",
 						"ui-selected": selectProps && selectProps.isSelected
 					})
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$148.createElement(PinThumbnail, {
-========
-				}, /*#__PURE__*/ import_react$147.createElement(PinThumbnail, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$149.createElement(PinThumbnail, {
 					resourceType: get$3.type,
 					imageUrl: get(get$3, "media_file.previews.images.large.url", get$3.image_url),
 					mediaType: resourceMediaType,
@@ -38452,17 +37056,10 @@ Zu diesem hinzufügen\
 						"ui-resource": true,
 						"ui-selected": selectProps && selectProps.isSelected ? true : void 0
 					};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$148.createElement("li", {
+					return /*#__PURE__*/ import_react$149.createElement("li", {
 						className: (0, import_classnames$24.default)(classes),
 						style
-					}, /*#__PURE__*/ import_react$148.createElement(ListThumbnail_default, {
-========
-					return /*#__PURE__*/ import_react$147.createElement("li", {
-						className: (0, import_classnames$24.default)(classes),
-						style
-					}, /*#__PURE__*/ import_react$147.createElement(ListThumbnail_default, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}, /*#__PURE__*/ import_react$149.createElement(ListThumbnail_default, {
 						resourceType: get$3.type,
 						imageUrl: get$3.image_url,
 						mediaType: resourceMediaType,
@@ -38485,19 +37082,11 @@ Zu diesem hinzufügen\
 						"ui-resource": true,
 						"ui-selected": selectProps && selectProps.isSelected ? true : void 0
 					};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$148.createElement(Element, {
+					return /*#__PURE__*/ import_react$149.createElement(Element, {
 						style,
 						className: (0, import_classnames$24.default)(classes),
 						onMouseOver: relationsProps ? relationsProps.onHover : void 0
-					}, /*#__PURE__*/ import_react$148.createElement(ResourceThumbnailRenderer_default, {
-========
-					return /*#__PURE__*/ import_react$147.createElement(Element, {
-						style,
-						className: (0, import_classnames$24.default)(classes),
-						onMouseOver: relationsProps ? relationsProps.onHover : void 0
-					}, /*#__PURE__*/ import_react$147.createElement(ResourceThumbnailRenderer_default, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}, /*#__PURE__*/ import_react$149.createElement(ResourceThumbnailRenderer_default, {
 						resourceType: get$3.type,
 						mediaType: resourceMediaType,
 						elm,
@@ -38526,52 +37115,30 @@ Zu diesem hinzufügen\
 			resource: import_prop_types$33.default.shape({ type: import_prop_types$33.default.oneOf(["MediaEntry"]) })
 		};
 		FlyoutImage = ({ imageUrl, title, mediaType, resourceType }) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (imageUrl) return /*#__PURE__*/ import_react$148.createElement(Picture, {
-========
-			if (imageUrl) return /*#__PURE__*/ import_react$147.createElement(Picture, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			if (imageUrl) return /*#__PURE__*/ import_react$149.createElement(Picture, {
 				mods: "ui-thumbnail-level-image",
 				src: imageUrl,
 				alt: title
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else return /*#__PURE__*/ import_react$148.createElement(ResourceIcon, {
-========
-			else return /*#__PURE__*/ import_react$147.createElement(ResourceIcon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			else return /*#__PURE__*/ import_react$149.createElement(ResourceIcon, {
 				mediaType,
 				flyout: true,
 				type: resourceType,
 				overrideClasses: "ui-thumbnail-level-image"
 			});
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		ResourceThumbnail_default = /*#__PURE__*/ (0, import_react$148.memo)(ResourceThumbnail);
-========
-		ResourceThumbnail_default = /*#__PURE__*/ (0, import_react$147.memo)(ResourceThumbnail);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		ResourceThumbnail_default = /*#__PURE__*/ (0, import_react$149.memo)(ResourceThumbnail);
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/BoxRenderResource.jsx
 	var BoxRenderResource_exports = /* @__PURE__ */ __exportAll({ default: () => BoxRenderResource });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$147, BoxRenderResource;
+	var import_react$148, BoxRenderResource;
 	var init_BoxRenderResource = __esmMin((() => {
 		init_lodash();
-		import_react$147 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$148 = /* @__PURE__ */ __toESM(require_react$1());
 		init_ActionsDropdownHelper();
 		init_ResourceThumbnail();
-		BoxRenderResource = class extends import_react$147.Component {
-========
-	var import_react$146, BoxRenderResource;
-	var init_BoxRenderResource = __esmMin((() => {
-		init_lodash();
-		import_react$146 = /* @__PURE__ */ __toESM(require_react$1());
-		init_ActionsDropdownHelper();
-		init_ResourceThumbnail();
-		BoxRenderResource = class extends import_react$146.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxRenderResource = class extends import_react$148.Component {
 			constructor(props) {
 				super(props);
 				this.boundOnSelect = this.onSelect.bind(this);
@@ -38606,11 +37173,7 @@ Zu diesem hinzufügen\
 					}
 					if (ActionsDropdownHelper.isResourceNotInScope(item, isSelected, hoverMenuId)) style = { opacity: .35 };
 				}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$147.createElement(ResourceThumbnail_default, {
-========
-				return /*#__PURE__*/ import_react$146.createElement(ResourceThumbnail_default, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$148.createElement(ResourceThumbnail_default, {
 					elm: "div",
 					style,
 					get: item,
@@ -38633,26 +37196,15 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxRenderResources.jsx
 	var BoxRenderResources_exports = /* @__PURE__ */ __exportAll({ default: () => BoxRenderResources });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$146, import_dedupe$4, BoxRenderResources;
+	var import_react$147, import_dedupe$4, BoxRenderResources;
 	var init_BoxRenderResources = __esmMin((() => {
 		init_lodash();
-		import_react$146 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$145, import_dedupe$4, BoxRenderResources;
-	var init_BoxRenderResources = __esmMin((() => {
-		init_lodash();
-		import_react$145 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$147 = /* @__PURE__ */ __toESM(require_react$1());
 		import_dedupe$4 = /* @__PURE__ */ __toESM(require_dedupe());
 		init_ActionsDropdownHelper();
 		init_BoxRenderResource();
 		init_BoxPageCounter();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		BoxRenderResources = class extends import_react$146.Component {
-========
-		BoxRenderResources = class extends import_react$145.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxRenderResources = class extends import_react$147.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -38675,11 +37227,7 @@ Zu diesem hinzufügen\
 				var fetchRelations = isClient && withActions && includes(["grid", "list"], config.layout);
 				var renderPage = (page, i) => {
 					var renderItem = (itemState) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						return /*#__PURE__*/ import_react$146.createElement(BoxRenderResource, {
-========
-						return /*#__PURE__*/ import_react$145.createElement(BoxRenderResource, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						return /*#__PURE__*/ import_react$147.createElement(BoxRenderResource, {
 							resourceState: itemState,
 							isClient,
 							onSelectResource,
@@ -38699,11 +37247,7 @@ Zu diesem hinzufügen\
 					};
 					var renderCounter = () => {
 						var pagination = this.props.pagination;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						return /*#__PURE__*/ import_react$146.createElement(BoxPageCounter, {
-========
-						return /*#__PURE__*/ import_react$145.createElement(BoxPageCounter, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						return /*#__PURE__*/ import_react$147.createElement(BoxPageCounter, {
 							showActions: ActionsDropdownHelper.showActionsConfig(actionsDropdownParameters),
 							selectedResources,
 							isClient,
@@ -38718,17 +37262,10 @@ Zu diesem hinzufügen\
 							selectResources: this.props.selectResources
 						});
 					};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$146.createElement("li", {
+					return /*#__PURE__*/ import_react$147.createElement("li", {
 						className: "ui-resources-page",
 						key: i
-					}, renderCounter(), /*#__PURE__*/ import_react$146.createElement("ul", { className: "ui-resources-page-items" }, renderItems(page)));
-========
-					return /*#__PURE__*/ import_react$145.createElement("li", {
-						className: "ui-resources-page",
-						key: i
-					}, renderCounter(), /*#__PURE__*/ import_react$145.createElement("ul", { className: "ui-resources-page-items" }, renderItems(page)));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}, renderCounter(), /*#__PURE__*/ import_react$147.createElement("ul", { className: "ui-resources-page-items" }, renderItems(page)));
 				};
 				var renderPages = () => {
 					var pageSize = this.props.perPage;
@@ -38742,26 +37279,16 @@ Zu diesem hinzufügen\
 						active: withActions
 					}, listMods, "ui-resources");
 				};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$146.createElement("ul", { className: getListClasses() }, renderPages());
-========
-				return /*#__PURE__*/ import_react$145.createElement("ul", { className: getListClasses() }, renderPages());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$147.createElement("ul", { className: getListClasses() }, renderPages());
 			}
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/BoxSelectionLimit.jsx
 	var BoxSelectionLimit_exports = /* @__PURE__ */ __exportAll({ default: () => BoxSelectionLimit });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$145, BoxSelectionLimit;
+	var import_react$146, BoxSelectionLimit;
 	var init_BoxSelectionLimit = __esmMin((() => {
-		import_react$145 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$144, BoxSelectionLimit;
-	var init_BoxSelectionLimit = __esmMin((() => {
-		import_react$144 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$146 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_Modal();
 		BoxSelectionLimit = ({ showSelectionLimit, selectionLimit, onClose }) => {
@@ -38770,27 +37297,15 @@ Zu diesem hinzufügen\
 				else if (showSelectionLimit === "single-selection") return I18nTranslate("resources_box_selection_limit_single_1") + selectionLimit + I18nTranslate("resources_box_selection_limit_single_2");
 				else throw new Error("Unexpected show selection limit: " + showSelectionLimit);
 			};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$145.createElement(Modal, { widthInPixel: 400 }, /*#__PURE__*/ import_react$145.createElement("div", { style: {
+			return /*#__PURE__*/ import_react$146.createElement(Modal, { widthInPixel: 400 }, /*#__PURE__*/ import_react$146.createElement("div", { style: {
 				margin: "20px",
 				marginBottom: "20px",
 				textAlign: "center"
-			} }, renderText()), /*#__PURE__*/ import_react$145.createElement("div", { style: {
+			} }, renderText()), /*#__PURE__*/ import_react$146.createElement("div", { style: {
 				margin: "20px",
 				marginBottom: "20px",
 				textAlign: "center"
-			} }, /*#__PURE__*/ import_react$145.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$145.createElement("a", {
-========
-			return /*#__PURE__*/ import_react$144.createElement(Modal, { widthInPixel: 400 }, /*#__PURE__*/ import_react$144.createElement("div", { style: {
-				margin: "20px",
-				marginBottom: "20px",
-				textAlign: "center"
-			} }, renderText()), /*#__PURE__*/ import_react$144.createElement("div", { style: {
-				margin: "20px",
-				marginBottom: "20px",
-				textAlign: "center"
-			} }, /*#__PURE__*/ import_react$144.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$144.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			} }, /*#__PURE__*/ import_react$146.createElement("div", { className: "ui-actions" }, /*#__PURE__*/ import_react$146.createElement("a", {
 				onClick: onClose,
 				className: "primary-button"
 			}, I18nTranslate("resources_box_selection_limit_ok")))));
@@ -38827,23 +37342,13 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxSetFallback.jsx
 	var BoxSetFallback_exports = /* @__PURE__ */ __exportAll({ default: () => BoxSetFallback });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$144, BoxSetFallback;
+	var import_react$145, BoxSetFallback;
 	var init_BoxSetFallback = __esmMin((() => {
-		import_react$144 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$145 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_i18n_translate();
 		init_sets_fallback_url();
-		BoxSetFallback = class extends import_react$144.Component {
-========
-	var import_react$143, BoxSetFallback;
-	var init_BoxSetFallback = __esmMin((() => {
-		import_react$143 = /* @__PURE__ */ __toESM(require_react$1());
-		init_lodash();
-		init_i18n_translate();
-		init_sets_fallback_url();
-		BoxSetFallback = class extends import_react$143.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxSetFallback = class extends import_react$145.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -38858,25 +37363,14 @@ Zu diesem hinzufügen\
 				else {
 					var renderMessage = () => {
 						var setsUrl = sets_fallback_url_default(currentUrl, usePathUrlReplacement);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						if (try_collections && setsUrl) return /*#__PURE__*/ import_react$144.createElement("div", null, I18nTranslate("resources_box_no_content_but_sets_1"), /*#__PURE__*/ import_react$144.createElement("a", { href: setsUrl }, I18nTranslate("resources_box_no_content_but_sets_2")), I18nTranslate("resources_box_no_content_but_sets_3"));
+						if (try_collections && setsUrl) return /*#__PURE__*/ import_react$145.createElement("div", null, I18nTranslate("resources_box_no_content_but_sets_1"), /*#__PURE__*/ import_react$145.createElement("a", { href: setsUrl }, I18nTranslate("resources_box_no_content_but_sets_2")), I18nTranslate("resources_box_no_content_but_sets_3"));
 						else return I18nTranslate("resources_box_no_content");
 					};
 					var renderBr = () => {
-						if (resetFilterLink) return /*#__PURE__*/ import_react$144.createElement("br", null);
+						if (resetFilterLink) return /*#__PURE__*/ import_react$145.createElement("br", null);
 						else return null;
 					};
-					return /*#__PURE__*/ import_react$144.createElement("div", { className: "pvh mth mbl" }, /*#__PURE__*/ import_react$144.createElement("div", { className: "title-l by-center" }, renderMessage(), renderBr(), resetFilterLink));
-========
-						if (try_collections && setsUrl) return /*#__PURE__*/ import_react$143.createElement("div", null, I18nTranslate("resources_box_no_content_but_sets_1"), /*#__PURE__*/ import_react$143.createElement("a", { href: setsUrl }, I18nTranslate("resources_box_no_content_but_sets_2")), I18nTranslate("resources_box_no_content_but_sets_3"));
-						else return I18nTranslate("resources_box_no_content");
-					};
-					var renderBr = () => {
-						if (resetFilterLink) return /*#__PURE__*/ import_react$143.createElement("br", null);
-						else return null;
-					};
-					return /*#__PURE__*/ import_react$143.createElement("div", { className: "pvh mth mbl" }, /*#__PURE__*/ import_react$143.createElement("div", { className: "title-l by-center" }, renderMessage(), renderBr(), resetFilterLink));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					return /*#__PURE__*/ import_react$145.createElement("div", { className: "pvh mth mbl" }, /*#__PURE__*/ import_react$145.createElement("div", { className: "title-l by-center" }, renderMessage(), renderBr(), resetFilterLink));
 				}
 			}
 		};
@@ -39063,11 +37557,7 @@ Zu diesem hinzufügen\
 		return String(idCounter++);
 	}
 	function useLatestRef(val) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var ref = import_react$142.useRef(val);
-========
-		var ref = import_react$141.useRef(val);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var ref = import_react$143.useRef(val);
 		ref.current = val;
 		return ref;
 	}
@@ -39460,32 +37950,19 @@ Zu diesem hinzufügen\
 	* @returns {Array} An array with the state and an action dispatcher.
 	*/
 	function useEnhancedReducer(reducer, props, createInitialState, isStateEqual) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var prevStateRef = import_react$142.useRef(null);
-		var actionRef = import_react$142.useRef(void 0);
+		var prevStateRef = import_react$143.useRef(null);
+		var actionRef = import_react$143.useRef(void 0);
 		var propsRef = useLatestRef(props);
-		var enhancedReducer = import_react$142.useCallback(function(state, action) {
-========
-		var prevStateRef = import_react$141.useRef(null);
-		var actionRef = import_react$141.useRef(void 0);
-		var propsRef = useLatestRef(props);
-		var enhancedReducer = import_react$141.useCallback(function(state, action) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var enhancedReducer = import_react$143.useCallback(function(state, action) {
 			actionRef.current = action;
 			state = getState(state, propsRef.current);
 			var changes = reducer(state, propsRef.current, action);
 			var newState = propsRef.current.stateReducer(state, _extends$18({}, action, { changes }));
 			return _extends$18({}, state, newState);
 		}, [propsRef, reducer]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var _React$useReducer = import_react$142.useReducer(enhancedReducer, props, createInitialState), state = _React$useReducer[0], dispatch = _React$useReducer[1];
+		var _React$useReducer = import_react$143.useReducer(enhancedReducer, props, createInitialState), state = _React$useReducer[0], dispatch = _React$useReducer[1];
 		var action = actionRef.current;
-		import_react$142.useEffect(function() {
-========
-		var _React$useReducer = import_react$141.useReducer(enhancedReducer, props, createInitialState), state = _React$useReducer[0], dispatch = _React$useReducer[1];
-		var action = actionRef.current;
-		import_react$141.useEffect(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$143.useEffect(function() {
 			var _prevStateRef$current;
 			var prevState = getState((_prevStateRef$current = prevStateRef.current) != null ? _prevStateRef$current : {}, propsRef.current);
 			if (action && prevStateRef.current && !isStateEqual(prevState, state)) callOnChangeProps(action, propsRef.current, prevState, state);
@@ -39538,13 +38015,8 @@ Zu diesem hinzufügen\
 	* Tracks if it's the first render.
 	*/
 	function useIsInitialMount() {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var isInitialMountRef = import_react$142.useRef(true);
-		import_react$142.useEffect(function() {
-========
-		var isInitialMountRef = import_react$141.useRef(true);
-		import_react$141.useEffect(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var isInitialMountRef = import_react$143.useRef(true);
+		import_react$143.useEffect(function() {
 			isInitialMountRef.current = false;
 			return function() {
 				isInitialMountRef.current = true;
@@ -39581,19 +38053,11 @@ Zu diesem hinzufügen\
 	function useA11yMessageStatus(getA11yStatusMessage, options, dependencyArray, environment) {
 		var document = environment == null ? void 0 : environment.document;
 		var isInitialMount = useIsInitialMount();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		import_react$142.useEffect(function() {
+		import_react$143.useEffect(function() {
 			if (!getA11yStatusMessage || isInitialMount || !document) return;
 			updateA11yStatus(getA11yStatusMessage(options), document);
 		}, dependencyArray);
-		import_react$142.useEffect(function() {
-========
-		import_react$141.useEffect(function() {
-			if (!getA11yStatusMessage || isInitialMount || !document) return;
-			updateA11yStatus(getA11yStatusMessage(options), document);
-		}, dependencyArray);
-		import_react$141.useEffect(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$143.useEffect(function() {
 			return function() {
 				updateA11yStatus.cancel();
 				cleanupStatusDiv(document);
@@ -39639,29 +38103,17 @@ Zu diesem hinzufügen\
 	* @returns {{isMouseDown: boolean, isTouchMove: boolean, isTouchEnd: boolean}} The mouse and touch events information, if any of are happening.
 	*/
 	function useMouseAndTouchTracker(environment, handleBlur, downshiftRefs) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var mouseAndTouchTrackersRef = import_react$142.useRef({
-========
-		var mouseAndTouchTrackersRef = import_react$141.useRef({
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var mouseAndTouchTrackersRef = import_react$143.useRef({
 			isMouseDown: false,
 			isTouchMove: false,
 			isTouchEnd: false
 		});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getDownshiftElements = import_react$142.useCallback(function() {
-========
-		var getDownshiftElements = import_react$141.useCallback(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getDownshiftElements = import_react$143.useCallback(function() {
 			return downshiftRefs.map(function(ref) {
 				return ref.current;
 			});
 		}, [downshiftRefs]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		import_react$142.useEffect(function() {
-========
-		import_react$141.useEffect(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$143.useEffect(function() {
 			if (!environment) return noop$2;
 			function onMouseDown() {
 				mouseAndTouchTrackersRef.current.isTouchEnd = false;
@@ -39703,11 +38155,7 @@ Zu diesem hinzufügen\
 	}
 	function useScrollIntoView(_ref) {
 		var highlightedIndex = _ref.highlightedIndex, isOpen = _ref.isOpen, itemRefs = _ref.itemRefs, getItemNodeFromIndex = _ref.getItemNodeFromIndex, menuElement = _ref.menuElement, scrollIntoViewProp = _ref.scrollIntoView;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var shouldScrollRef = import_react$142.useRef(true);
-========
-		var shouldScrollRef = import_react$141.useRef(true);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var shouldScrollRef = import_react$143.useRef(true);
 		useIsomorphicLayoutEffect(function() {
 			if (highlightedIndex < 0 || !isOpen || !Object.keys(itemRefs.current).length) return;
 			if (shouldScrollRef.current === false) shouldScrollRef.current = true;
@@ -39909,11 +38357,7 @@ Zu diesem hinzufügen\
 		var id = _ref.id, labelId = _ref.labelId, menuId = _ref.menuId, getItemId = _ref.getItemId, toggleButtonId = _ref.toggleButtonId, inputId = _ref.inputId;
 		var reactId = "downshift-" + reactUseId$1();
 		if (!id) id = reactId;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		return import_react$142.useMemo(function() {
-========
-		return import_react$141.useMemo(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		return import_react$143.useMemo(function() {
 			return {
 				labelId: labelId != null ? labelId : id + "-label",
 				menuId: menuId != null ? menuId : id + "-menu",
@@ -39934,13 +38378,8 @@ Zu diesem hinzufügen\
 	}
 	function useElementIdsLegacy$1(_ref2) {
 		var id = _ref2.id, labelId = _ref2.labelId, menuId = _ref2.menuId, getItemId = _ref2.getItemId, toggleButtonId = _ref2.toggleButtonId, inputId = _ref2.inputId;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var baseId = import_react$142.useRef(id != null ? id : "downshift-" + generateId()).current;
-		return import_react$142.useMemo(function() {
-========
-		var baseId = import_react$141.useRef(id != null ? id : "downshift-" + generateId()).current;
-		return import_react$141.useMemo(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var baseId = import_react$143.useRef(id != null ? id : "downshift-" + generateId()).current;
+		return import_react$143.useMemo(function() {
 			return {
 				labelId: labelId != null ? labelId : baseId + "-label",
 				menuId: menuId != null ? menuId : baseId + "-menu",
@@ -39966,27 +38405,16 @@ Zu diesem hinzufügen\
 		var scrollIntoView = props.scrollIntoView, environment = props.environment, getA11yStatusMessage = props.getA11yStatusMessage;
 		var _useControlledReducer = useControlledReducer$1(downshiftSelectReducer, props, getInitialState$3, isDropdownsStateEqual), state = _useControlledReducer[0], dispatch = _useControlledReducer[1];
 		var isOpen = state.isOpen, highlightedIndex = state.highlightedIndex, selectedItem = state.selectedItem, inputValue = state.inputValue;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var toggleButtonRef = (0, import_react$143.useRef)(null);
-		var menuRef = (0, import_react$143.useRef)(null);
-		var itemRefs = (0, import_react$143.useRef)({});
-		var clearTimeoutRef = (0, import_react$143.useRef)(null);
-========
-		var toggleButtonRef = (0, import_react$142.useRef)(null);
-		var menuRef = (0, import_react$142.useRef)(null);
-		var itemRefs = (0, import_react$142.useRef)({});
-		var clearTimeoutRef = (0, import_react$142.useRef)(null);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var toggleButtonRef = (0, import_react$144.useRef)(null);
+		var menuRef = (0, import_react$144.useRef)(null);
+		var itemRefs = (0, import_react$144.useRef)({});
+		var clearTimeoutRef = (0, import_react$144.useRef)(null);
 		var elementIds = useElementIds$1(props);
 		var latest = useLatestRef({
 			state,
 			props
 		});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getItemNodeFromIndex = (0, import_react$143.useCallback)(function(index) {
-========
-		var getItemNodeFromIndex = (0, import_react$142.useCallback)(function(index) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getItemNodeFromIndex = (0, import_react$144.useCallback)(function(index) {
 			return itemRefs.current[elementIds.getItemId(index)];
 		}, [elementIds]);
 		useA11yMessageStatus(getA11yStatusMessage, state, [
@@ -40003,11 +38431,7 @@ Zu diesem hinzufügen\
 			scrollIntoView,
 			getItemNodeFromIndex
 		});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		(0, import_react$143.useEffect)(function() {
-========
-		(0, import_react$142.useEffect)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		(0, import_react$144.useEffect)(function() {
 			clearTimeoutRef.current = debounce(function(outerDispatch) {
 				outerDispatch({
 					type: FunctionSetInputValue$1,
@@ -40018,11 +38442,7 @@ Zu diesem hinzufügen\
 				clearTimeoutRef.current.cancel();
 			};
 		}, []);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		(0, import_react$143.useEffect)(function() {
-========
-		(0, import_react$142.useEffect)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		(0, import_react$144.useEffect)(function() {
 			if (!inputValue) return;
 			clearTimeoutRef.current(dispatch);
 		}, [dispatch, inputValue]);
@@ -40030,35 +38450,19 @@ Zu diesem hinzufügen\
 			props,
 			state
 		});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		(0, import_react$143.useEffect)(function() {
+		(0, import_react$144.useEffect)(function() {
 			if (getInitialValue$1(props, "isOpen", defaultStateValues$1) && toggleButtonRef.current) toggleButtonRef.current.focus();
 		}, []);
-		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$143.useCallback)(function handleBlur() {
+		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$144.useCallback)(function handleBlur() {
 			if (latest.current.state.isOpen) dispatch({ type: ToggleButtonBlur });
-		}, [dispatch, latest]), (0, import_react$143.useMemo)(function() {
+		}, [dispatch, latest]), (0, import_react$144.useMemo)(function() {
 			return [menuRef, toggleButtonRef];
 		}, []));
 		var setGetterPropCallInfo = useGetterPropsCalledChecker("getMenuProps", "getToggleButtonProps");
-		(0, import_react$143.useEffect)(function() {
+		(0, import_react$144.useEffect)(function() {
 			if (!isOpen) itemRefs.current = {};
 		}, [isOpen]);
-		var toggleButtonKeyDownHandlers = (0, import_react$143.useMemo)(function() {
-========
-		(0, import_react$142.useEffect)(function() {
-			if (getInitialValue$1(props, "isOpen", defaultStateValues$1) && toggleButtonRef.current) toggleButtonRef.current.focus();
-		}, []);
-		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$142.useCallback)(function handleBlur() {
-			if (latest.current.state.isOpen) dispatch({ type: ToggleButtonBlur });
-		}, [dispatch, latest]), (0, import_react$142.useMemo)(function() {
-			return [menuRef, toggleButtonRef];
-		}, []));
-		var setGetterPropCallInfo = useGetterPropsCalledChecker("getMenuProps", "getToggleButtonProps");
-		(0, import_react$142.useEffect)(function() {
-			if (!isOpen) itemRefs.current = {};
-		}, [isOpen]);
-		var toggleButtonKeyDownHandlers = (0, import_react$142.useMemo)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var toggleButtonKeyDownHandlers = (0, import_react$144.useMemo)(function() {
 			return {
 				ArrowDown: function ArrowDown(event) {
 					event.preventDefault();
@@ -40116,65 +38520,37 @@ Zu diesem hinzufügen\
 				}
 			};
 		}, [dispatch, latest]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var toggleMenu = (0, import_react$143.useCallback)(function() {
+		var toggleMenu = (0, import_react$144.useCallback)(function() {
 			dispatch({ type: FunctionToggleMenu$1 });
 		}, [dispatch]);
-		var closeMenu = (0, import_react$143.useCallback)(function() {
+		var closeMenu = (0, import_react$144.useCallback)(function() {
 			dispatch({ type: FunctionCloseMenu$1 });
 		}, [dispatch]);
-		var openMenu = (0, import_react$143.useCallback)(function() {
+		var openMenu = (0, import_react$144.useCallback)(function() {
 			dispatch({ type: FunctionOpenMenu$1 });
 		}, [dispatch]);
-		var setHighlightedIndex = (0, import_react$143.useCallback)(function(newHighlightedIndex) {
-========
-		var toggleMenu = (0, import_react$142.useCallback)(function() {
-			dispatch({ type: FunctionToggleMenu$1 });
-		}, [dispatch]);
-		var closeMenu = (0, import_react$142.useCallback)(function() {
-			dispatch({ type: FunctionCloseMenu$1 });
-		}, [dispatch]);
-		var openMenu = (0, import_react$142.useCallback)(function() {
-			dispatch({ type: FunctionOpenMenu$1 });
-		}, [dispatch]);
-		var setHighlightedIndex = (0, import_react$142.useCallback)(function(newHighlightedIndex) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var setHighlightedIndex = (0, import_react$144.useCallback)(function(newHighlightedIndex) {
 			dispatch({
 				type: FunctionSetHighlightedIndex$1,
 				highlightedIndex: newHighlightedIndex
 			});
 		}, [dispatch]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var selectItem = (0, import_react$143.useCallback)(function(newSelectedItem) {
-========
-		var selectItem = (0, import_react$142.useCallback)(function(newSelectedItem) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var selectItem = (0, import_react$144.useCallback)(function(newSelectedItem) {
 			dispatch({
 				type: FunctionSelectItem$1,
 				selectedItem: newSelectedItem
 			});
 		}, [dispatch]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var reset = (0, import_react$143.useCallback)(function() {
+		var reset = (0, import_react$144.useCallback)(function() {
 			dispatch({ type: FunctionReset$2 });
 		}, [dispatch]);
-		var setInputValue = (0, import_react$143.useCallback)(function(newInputValue) {
-========
-		var reset = (0, import_react$142.useCallback)(function() {
-			dispatch({ type: FunctionReset$2 });
-		}, [dispatch]);
-		var setInputValue = (0, import_react$142.useCallback)(function(newInputValue) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var setInputValue = (0, import_react$144.useCallback)(function(newInputValue) {
 			dispatch({
 				type: FunctionSetInputValue$1,
 				inputValue: newInputValue
 			});
 		}, [dispatch]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getLabelProps = (0, import_react$143.useCallback)(function(_temp) {
-========
-		var getLabelProps = (0, import_react$142.useCallback)(function(_temp) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getLabelProps = (0, import_react$144.useCallback)(function(_temp) {
 			var _ref = _temp === void 0 ? {} : _temp, onClick = _ref.onClick, labelProps = _objectWithoutPropertiesLoose(_ref, _excluded$3);
 			return _extends$18({
 				id: elementIds.labelId,
@@ -40185,11 +38561,7 @@ Zu diesem hinzufügen\
 				})
 			}, labelProps);
 		}, [elementIds]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getMenuProps = (0, import_react$143.useCallback)(function(_temp2, _temp3) {
-========
-		var getMenuProps = (0, import_react$142.useCallback)(function(_temp2, _temp3) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getMenuProps = (0, import_react$144.useCallback)(function(_temp2, _temp3) {
 			var _extends2;
 			var _ref2 = _temp2 === void 0 ? {} : _temp2, onMouseLeave = _ref2.onMouseLeave, _ref2$refKey = _ref2.refKey, refKey = _ref2$refKey === void 0 ? "ref" : _ref2$refKey, ref = _ref2.ref, rest = _objectWithoutPropertiesLoose(_ref2, _excluded2$3);
 			var _ref3$suppressRefErro = (_temp3 === void 0 ? {} : _temp3).suppressRefError, suppressRefError = _ref3$suppressRefErro === void 0 ? false : _ref3$suppressRefErro;
@@ -40206,11 +38578,7 @@ Zu diesem hinzufügen\
 			elementIds
 		]);
 		return {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			getToggleButtonProps: (0, import_react$143.useCallback)(function(_temp4, _temp5) {
-========
-			getToggleButtonProps: (0, import_react$142.useCallback)(function(_temp4, _temp5) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			getToggleButtonProps: (0, import_react$144.useCallback)(function(_temp4, _temp5) {
 				var _extends3;
 				var _ref4 = _temp4 === void 0 ? {} : _temp4, onBlur = _ref4.onBlur, onClick = _ref4.onClick;
 				_ref4.onPress;
@@ -40250,11 +38618,7 @@ Zu diesem hinzufügen\
 			]),
 			getLabelProps,
 			getMenuProps,
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			getItemProps: (0, import_react$143.useCallback)(function(_temp6) {
-========
-			getItemProps: (0, import_react$142.useCallback)(function(_temp6) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			getItemProps: (0, import_react$144.useCallback)(function(_temp6) {
 				var _extends4;
 				var _ref6 = _temp6 === void 0 ? {} : _temp6, itemProp = _ref6.item, indexProp = _ref6.index, onMouseMove = _ref6.onMouseMove, onClick = _ref6.onClick, onMouseDown = _ref6.onMouseDown;
 				_ref6.onPress;
@@ -40329,17 +38693,10 @@ Zu diesem hinzufügen\
 	* @returns {Array} An array with the state and an action dispatcher.
 	*/
 	function useControlledReducer(reducer, props, createInitialState, isStateEqual) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var previousSelectedItemRef = (0, import_react$143.useRef)();
+		var previousSelectedItemRef = (0, import_react$144.useRef)();
 		var _useEnhancedReducer = useEnhancedReducer(reducer, props, createInitialState, isStateEqual), state = _useEnhancedReducer[0], dispatch = _useEnhancedReducer[1];
 		var isInitialMount = useIsInitialMount();
-		(0, import_react$143.useEffect)(function() {
-========
-		var previousSelectedItemRef = (0, import_react$142.useRef)();
-		var _useEnhancedReducer = useEnhancedReducer(reducer, props, createInitialState, isStateEqual), state = _useEnhancedReducer[0], dispatch = _useEnhancedReducer[1];
-		var isInitialMount = useIsInitialMount();
-		(0, import_react$142.useEffect)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		(0, import_react$144.useEffect)(function() {
 			if (!isControlledProp(props, "selectedItem")) return;
 			if (!isInitialMount) {
 				if (props.itemToKey(props.selectedItem) !== props.itemToKey(previousSelectedItemRef.current)) dispatch({
@@ -40445,32 +38802,18 @@ Zu diesem hinzufügen\
 		var items = props.items, scrollIntoView = props.scrollIntoView, environment = props.environment, getA11yStatusMessage = props.getA11yStatusMessage;
 		var _useControlledReducer = useControlledReducer(downshiftUseComboboxReducer, props, getInitialState$2, isDropdownsStateEqual), state = _useControlledReducer[0], dispatch = _useControlledReducer[1];
 		var isOpen = state.isOpen, highlightedIndex = state.highlightedIndex, selectedItem = state.selectedItem, inputValue = state.inputValue;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var menuRef = (0, import_react$143.useRef)(null);
-		var itemRefs = (0, import_react$143.useRef)({});
-		var inputRef = (0, import_react$143.useRef)(null);
-		var toggleButtonRef = (0, import_react$143.useRef)(null);
+		var menuRef = (0, import_react$144.useRef)(null);
+		var itemRefs = (0, import_react$144.useRef)({});
+		var inputRef = (0, import_react$144.useRef)(null);
+		var toggleButtonRef = (0, import_react$144.useRef)(null);
 		var isInitialMount = useIsInitialMount();
 		var elementIds = useElementIds$1(props);
-		var previousResultCountRef = (0, import_react$143.useRef)();
-========
-		var menuRef = (0, import_react$142.useRef)(null);
-		var itemRefs = (0, import_react$142.useRef)({});
-		var inputRef = (0, import_react$142.useRef)(null);
-		var toggleButtonRef = (0, import_react$142.useRef)(null);
-		var isInitialMount = useIsInitialMount();
-		var elementIds = useElementIds$1(props);
-		var previousResultCountRef = (0, import_react$142.useRef)();
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var previousResultCountRef = (0, import_react$144.useRef)();
 		var latest = useLatestRef({
 			state,
 			props
 		});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getItemNodeFromIndex = (0, import_react$143.useCallback)(function(index) {
-========
-		var getItemNodeFromIndex = (0, import_react$142.useCallback)(function(index) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getItemNodeFromIndex = (0, import_react$144.useCallback)(function(index) {
 			return itemRefs.current[elementIds.getItemId(index)];
 		}, [elementIds]);
 		useA11yMessageStatus(getA11yStatusMessage, state, [
@@ -40491,27 +38834,15 @@ Zu diesem hinzufügen\
 			props,
 			state
 		});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		(0, import_react$143.useEffect)(function() {
+		(0, import_react$144.useEffect)(function() {
 			if (getInitialValue$1(props, "isOpen", defaultStateValues$1) && inputRef.current) inputRef.current.focus();
 		}, []);
-		(0, import_react$143.useEffect)(function() {
+		(0, import_react$144.useEffect)(function() {
 			if (!isInitialMount) previousResultCountRef.current = items.length;
 		});
-		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$143.useCallback)(function handleBlur() {
+		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$144.useCallback)(function handleBlur() {
 			if (latest.current.state.isOpen) dispatch({ type: InputBlur });
-		}, [dispatch, latest]), (0, import_react$143.useMemo)(function() {
-========
-		(0, import_react$142.useEffect)(function() {
-			if (getInitialValue$1(props, "isOpen", defaultStateValues$1) && inputRef.current) inputRef.current.focus();
-		}, []);
-		(0, import_react$142.useEffect)(function() {
-			if (!isInitialMount) previousResultCountRef.current = items.length;
-		});
-		var mouseAndTouchTrackers = useMouseAndTouchTracker(environment, (0, import_react$142.useCallback)(function handleBlur() {
-			if (latest.current.state.isOpen) dispatch({ type: InputBlur });
-		}, [dispatch, latest]), (0, import_react$142.useMemo)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		}, [dispatch, latest]), (0, import_react$144.useMemo)(function() {
 			return [
 				menuRef,
 				toggleButtonRef,
@@ -40519,26 +38850,15 @@ Zu diesem hinzufügen\
 			];
 		}, []));
 		var setGetterPropCallInfo = useGetterPropsCalledChecker("getInputProps", "getMenuProps");
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		(0, import_react$143.useEffect)(function() {
+		(0, import_react$144.useEffect)(function() {
 			if (!isOpen) itemRefs.current = {};
 		}, [isOpen]);
-		(0, import_react$143.useEffect)(function() {
-========
-		(0, import_react$142.useEffect)(function() {
-			if (!isOpen) itemRefs.current = {};
-		}, [isOpen]);
-		(0, import_react$142.useEffect)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		(0, import_react$144.useEffect)(function() {
 			var _inputRef$current;
 			if (!isOpen || !(environment != null && environment.document) || !(inputRef != null && (_inputRef$current = inputRef.current) != null && _inputRef$current.focus)) return;
 			if (environment.document.activeElement !== inputRef.current) inputRef.current.focus();
 		}, [isOpen, environment]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var inputKeyDownHandlers = (0, import_react$143.useMemo)(function() {
-========
-		var inputKeyDownHandlers = (0, import_react$142.useMemo)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var inputKeyDownHandlers = (0, import_react$144.useMemo)(function() {
 			return {
 				ArrowDown: function ArrowDown(event) {
 					event.preventDefault();
@@ -40590,21 +38910,13 @@ Zu diesem hinzufügen\
 				}
 			};
 		}, [dispatch, latest]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getLabelProps = (0, import_react$143.useCallback)(function(labelProps) {
-========
-		var getLabelProps = (0, import_react$142.useCallback)(function(labelProps) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getLabelProps = (0, import_react$144.useCallback)(function(labelProps) {
 			return _extends$18({
 				id: elementIds.labelId,
 				htmlFor: elementIds.inputId
 			}, labelProps);
 		}, [elementIds]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getMenuProps = (0, import_react$143.useCallback)(function(_temp, _temp2) {
-========
-		var getMenuProps = (0, import_react$142.useCallback)(function(_temp, _temp2) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getMenuProps = (0, import_react$144.useCallback)(function(_temp, _temp2) {
 			var _extends2;
 			var _ref = _temp === void 0 ? {} : _temp, onMouseLeave = _ref.onMouseLeave, _ref$refKey = _ref.refKey, refKey = _ref$refKey === void 0 ? "ref" : _ref$refKey, ref = _ref.ref, rest = _objectWithoutPropertiesLoose(_ref, _excluded$2);
 			var _ref2$suppressRefErro = (_temp2 === void 0 ? {} : _temp2).suppressRefError;
@@ -40619,11 +38931,7 @@ Zu diesem hinzufügen\
 			setGetterPropCallInfo,
 			elementIds
 		]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getItemProps = (0, import_react$143.useCallback)(function(_temp3) {
-========
-		var getItemProps = (0, import_react$142.useCallback)(function(_temp3) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getItemProps = (0, import_react$144.useCallback)(function(_temp3) {
 			var _extends3, _ref4;
 			var _ref3 = _temp3 === void 0 ? {} : _temp3, itemProp = _ref3.item, indexProp = _ref3.index, _ref3$refKey = _ref3.refKey, refKey = _ref3$refKey === void 0 ? "ref" : _ref3$refKey, ref = _ref3.ref, onMouseMove = _ref3.onMouseMove, onMouseDown = _ref3.onMouseDown, onClick = _ref3.onClick;
 			_ref3.onPress;
@@ -40662,11 +38970,7 @@ Zu diesem hinzufügen\
 			mouseAndTouchTrackers,
 			shouldScrollRef
 		]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getToggleButtonProps = (0, import_react$143.useCallback)(function(_temp4) {
-========
-		var getToggleButtonProps = (0, import_react$142.useCallback)(function(_temp4) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getToggleButtonProps = (0, import_react$144.useCallback)(function(_temp4) {
 			var _extends4;
 			var _ref5 = _temp4 === void 0 ? {} : _temp4, onClick = _ref5.onClick;
 			_ref5.onPress;
@@ -40682,11 +38986,7 @@ Zu diesem hinzufügen\
 			latest,
 			elementIds
 		]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var getInputProps = (0, import_react$143.useCallback)(function(_temp5, _temp6) {
-========
-		var getInputProps = (0, import_react$142.useCallback)(function(_temp5, _temp6) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var getInputProps = (0, import_react$144.useCallback)(function(_temp5, _temp6) {
 			var _extends5;
 			var _ref6 = _temp5 === void 0 ? {} : _temp5, onKeyDown = _ref6.onKeyDown, onChange = _ref6.onChange, onInput = _ref6.onInput, onBlur = _ref6.onBlur;
 			_ref6.onChangeText;
@@ -40733,39 +39033,22 @@ Zu diesem hinzufügen\
 			mouseAndTouchTrackers,
 			setGetterPropCallInfo
 		]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var toggleMenu = (0, import_react$143.useCallback)(function() {
+		var toggleMenu = (0, import_react$144.useCallback)(function() {
 			dispatch({ type: FunctionToggleMenu });
 		}, [dispatch]);
-		var closeMenu = (0, import_react$143.useCallback)(function() {
+		var closeMenu = (0, import_react$144.useCallback)(function() {
 			dispatch({ type: FunctionCloseMenu });
 		}, [dispatch]);
-		var openMenu = (0, import_react$143.useCallback)(function() {
+		var openMenu = (0, import_react$144.useCallback)(function() {
 			dispatch({ type: FunctionOpenMenu });
 		}, [dispatch]);
-		var setHighlightedIndex = (0, import_react$143.useCallback)(function(newHighlightedIndex) {
-========
-		var toggleMenu = (0, import_react$142.useCallback)(function() {
-			dispatch({ type: FunctionToggleMenu });
-		}, [dispatch]);
-		var closeMenu = (0, import_react$142.useCallback)(function() {
-			dispatch({ type: FunctionCloseMenu });
-		}, [dispatch]);
-		var openMenu = (0, import_react$142.useCallback)(function() {
-			dispatch({ type: FunctionOpenMenu });
-		}, [dispatch]);
-		var setHighlightedIndex = (0, import_react$142.useCallback)(function(newHighlightedIndex) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var setHighlightedIndex = (0, import_react$144.useCallback)(function(newHighlightedIndex) {
 			dispatch({
 				type: FunctionSetHighlightedIndex,
 				highlightedIndex: newHighlightedIndex
 			});
 		}, [dispatch]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var selectItem = (0, import_react$143.useCallback)(function(newSelectedItem) {
-========
-		var selectItem = (0, import_react$142.useCallback)(function(newSelectedItem) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var selectItem = (0, import_react$144.useCallback)(function(newSelectedItem) {
 			dispatch({
 				type: FunctionSelectItem,
 				selectedItem: newSelectedItem
@@ -40781,22 +39064,14 @@ Zu diesem hinzufügen\
 			openMenu,
 			closeMenu,
 			setHighlightedIndex,
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			setInputValue: (0, import_react$143.useCallback)(function(newInputValue) {
-========
-			setInputValue: (0, import_react$142.useCallback)(function(newInputValue) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			setInputValue: (0, import_react$144.useCallback)(function(newInputValue) {
 				dispatch({
 					type: FunctionSetInputValue,
 					inputValue: newInputValue
 				});
 			}, [dispatch]),
 			selectItem,
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			reset: (0, import_react$143.useCallback)(function() {
-========
-			reset: (0, import_react$142.useCallback)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			reset: (0, import_react$144.useCallback)(function() {
 				dispatch({ type: FunctionReset$1 });
 			}, [dispatch]),
 			highlightedIndex,
@@ -40938,24 +39213,15 @@ Zu diesem hinzufügen\
 		var _useControlledReducer = useControlledReducer$1(downshiftMultipleSelectionReducer, props, getInitialState$1, isStateEqual$1), state = _useControlledReducer[0], dispatch = _useControlledReducer[1];
 		var activeIndex = state.activeIndex, selectedItems = state.selectedItems;
 		var isInitialMount = useIsInitialMount();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var dropdownRef = (0, import_react$143.useRef)(null);
-		var selectedItemRefs = (0, import_react$143.useRef)();
-========
-		var dropdownRef = (0, import_react$142.useRef)(null);
-		var selectedItemRefs = (0, import_react$142.useRef)();
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var dropdownRef = (0, import_react$144.useRef)(null);
+		var selectedItemRefs = (0, import_react$144.useRef)();
 		selectedItemRefs.current = [];
 		var latest = useLatestRef({
 			state,
 			props
 		});
 		useA11yMessageStatus(getA11yStatusMessage, state, [activeIndex, selectedItems], environment);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		(0, import_react$143.useEffect)(function() {
-========
-		(0, import_react$142.useEffect)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		(0, import_react$144.useEffect)(function() {
 			if (isInitialMount) return;
 			if (activeIndex === -1 && dropdownRef.current) dropdownRef.current.focus();
 			else if (selectedItemRefs.current[activeIndex]) selectedItemRefs.current[activeIndex].focus();
@@ -40965,11 +39231,7 @@ Zu diesem hinzufügen\
 			state
 		});
 		var setGetterPropCallInfo = useGetterPropsCalledChecker("getDropdownProps");
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var selectedItemKeyDownHandlers = (0, import_react$143.useMemo)(function() {
-========
-		var selectedItemKeyDownHandlers = (0, import_react$142.useMemo)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var selectedItemKeyDownHandlers = (0, import_react$144.useMemo)(function() {
 			var _ref;
 			return _ref = {}, _ref[keyNavigationPrevious] = function() {
 				dispatch({ type: SelectedItemKeyDownNavigationPrevious });
@@ -40985,11 +39247,7 @@ Zu diesem hinzufügen\
 			keyNavigationNext,
 			keyNavigationPrevious
 		]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var dropdownKeyDownHandlers = (0, import_react$143.useMemo)(function() {
-========
-		var dropdownKeyDownHandlers = (0, import_react$142.useMemo)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var dropdownKeyDownHandlers = (0, import_react$144.useMemo)(function() {
 			var _ref2;
 			return _ref2 = {}, _ref2[keyNavigationPrevious] = function(event) {
 				if (isKeyDownOperationPermitted(event)) dispatch({ type: DropdownKeyDownNavigationPrevious });
@@ -40998,11 +39256,7 @@ Zu diesem hinzufügen\
 			}, _ref2;
 		}, [dispatch, keyNavigationPrevious]);
 		return {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			getSelectedItemProps: (0, import_react$143.useCallback)(function(_temp) {
-========
-			getSelectedItemProps: (0, import_react$142.useCallback)(function(_temp) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			getSelectedItemProps: (0, import_react$144.useCallback)(function(_temp) {
 				var _extends2;
 				var _ref3 = _temp === void 0 ? {} : _temp, _ref3$refKey = _ref3.refKey, refKey = _ref3$refKey === void 0 ? "ref" : _ref3$refKey, ref = _ref3.ref, onClick = _ref3.onClick, onKeyDown = _ref3.onKeyDown, selectedItemProp = _ref3.selectedItem, indexProp = _ref3.index, rest = _objectWithoutPropertiesLoose(_ref3, _excluded$1);
 				var latestState = latest.current.state;
@@ -41024,11 +39278,7 @@ Zu diesem hinzufügen\
 				latest,
 				selectedItemKeyDownHandlers
 			]),
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			getDropdownProps: (0, import_react$143.useCallback)(function(_temp2, _temp3) {
-========
-			getDropdownProps: (0, import_react$142.useCallback)(function(_temp2, _temp3) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			getDropdownProps: (0, import_react$144.useCallback)(function(_temp2, _temp3) {
 				var _extends3;
 				var _ref4 = _temp2 === void 0 ? {} : _temp2, _ref4$refKey = _ref4.refKey, refKey = _ref4$refKey === void 0 ? "ref" : _ref4$refKey, ref = _ref4.ref, onKeyDown = _ref4.onKeyDown, onClick = _ref4.onClick, _ref4$preventKeyActio = _ref4.preventKeyAction, preventKeyAction = _ref4$preventKeyActio === void 0 ? false : _ref4$preventKeyActio, rest = _objectWithoutPropertiesLoose(_ref4, _excluded2$1);
 				var _ref5$suppressRefErro = (_temp3 === void 0 ? {} : _temp3).suppressRefError;
@@ -41049,51 +39299,31 @@ Zu diesem hinzufügen\
 				dropdownKeyDownHandlers,
 				setGetterPropCallInfo
 			]),
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			addSelectedItem: (0, import_react$143.useCallback)(function(selectedItem) {
-========
-			addSelectedItem: (0, import_react$142.useCallback)(function(selectedItem) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			addSelectedItem: (0, import_react$144.useCallback)(function(selectedItem) {
 				dispatch({
 					type: FunctionAddSelectedItem,
 					selectedItem
 				});
 			}, [dispatch]),
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			removeSelectedItem: (0, import_react$143.useCallback)(function(selectedItem) {
-========
-			removeSelectedItem: (0, import_react$142.useCallback)(function(selectedItem) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			removeSelectedItem: (0, import_react$144.useCallback)(function(selectedItem) {
 				dispatch({
 					type: FunctionRemoveSelectedItem,
 					selectedItem
 				});
 			}, [dispatch]),
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			setSelectedItems: (0, import_react$143.useCallback)(function(newSelectedItems) {
-========
-			setSelectedItems: (0, import_react$142.useCallback)(function(newSelectedItems) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			setSelectedItems: (0, import_react$144.useCallback)(function(newSelectedItems) {
 				dispatch({
 					type: FunctionSetSelectedItems,
 					selectedItems: newSelectedItems
 				});
 			}, [dispatch]),
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			setActiveIndex: (0, import_react$143.useCallback)(function(newActiveIndex) {
-========
-			setActiveIndex: (0, import_react$142.useCallback)(function(newActiveIndex) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			setActiveIndex: (0, import_react$144.useCallback)(function(newActiveIndex) {
 				dispatch({
 					type: FunctionSetActiveIndex,
 					activeIndex: newActiveIndex
 				});
 			}, [dispatch]),
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			reset: (0, import_react$143.useCallback)(function() {
-========
-			reset: (0, import_react$142.useCallback)(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			reset: (0, import_react$144.useCallback)(function() {
 				dispatch({ type: FunctionReset });
 			}, [dispatch]),
 			selectedItems,
@@ -41147,11 +39377,7 @@ Zu diesem hinzufügen\
 		var id = _ref.id, tagGroupId = _ref.tagGroupId, getTagId = _ref.getTagId;
 		var reactId = "downshift-" + reactUseId();
 		if (!id) id = reactId;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		return import_react$142.useMemo(function() {
-========
-		return import_react$141.useMemo(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		return import_react$143.useMemo(function() {
 			return {
 				tagGroupId: tagGroupId != null ? tagGroupId : id + "-tag-group",
 				getTagId: getTagId != null ? getTagId : function(index) {
@@ -41166,13 +39392,8 @@ Zu diesem hinzufügen\
 	}
 	function useElementIdsLegacy(_ref2) {
 		var id = _ref2.id, getTagId = _ref2.getTagId, tagGroupId = _ref2.tagGroupId;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var baseId = import_react$142.useRef(id != null ? id : "downshift-" + generateId()).current;
-		return import_react$142.useMemo(function() {
-========
-		var baseId = import_react$141.useRef(id != null ? id : "downshift-" + generateId()).current;
-		return import_react$141.useMemo(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var baseId = import_react$143.useRef(id != null ? id : "downshift-" + generateId()).current;
+		return import_react$143.useMemo(function() {
 			return {
 				tagGroupId: tagGroupId != null ? tagGroupId : baseId + "-tag-group",
 				getTagId: getTagId != null ? getTagId : function(index) {
@@ -41197,11 +39418,7 @@ Zu diesem hinzufügen\
 		return oldState.activeIndex === newState.activeIndex && oldState.items === newState.items;
 	}
 	function useAccessibleDescription(document, description) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		import_react$142.useEffect(function() {
-========
-		import_react$141.useEffect(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$143.useEffect(function() {
 			if (!document) return;
 			var accessibleDescriptionElement = document.createElement("div");
 			accessibleDescriptionElement.setAttribute("id", A11Y_DESCRIPTION_ELEMENT_ID);
@@ -41226,17 +39443,10 @@ Zu diesem hinzufügen\
 	* Focuses the tag at activeIndex when it changes or when an item is removed.
 	*/
 	function useRovingTagFocus(activeIndex, itemsLength, getTagId) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		var itemRefs = import_react$142.useRef({});
-		var previousActiveIndexRef = import_react$142.useRef(activeIndex);
-		var previousItemsLengthRef = import_react$142.useRef(itemsLength);
-		import_react$142.useEffect(function() {
-========
-		var itemRefs = import_react$141.useRef({});
-		var previousActiveIndexRef = import_react$141.useRef(activeIndex);
-		var previousItemsLengthRef = import_react$141.useRef(itemsLength);
-		import_react$141.useEffect(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		var itemRefs = import_react$143.useRef({});
+		var previousActiveIndexRef = import_react$143.useRef(activeIndex);
+		var previousItemsLengthRef = import_react$143.useRef(itemsLength);
+		import_react$143.useEffect(function() {
 			if (activeIndex !== -1 && previousActiveIndexRef.current !== -1 && activeIndex !== previousActiveIndexRef.current || previousItemsLengthRef.current === itemsLength + 1) {
 				var _itemRefs$current$get;
 				(_itemRefs$current$get = itemRefs.current[getTagId(activeIndex)]) == null || _itemRefs$current$get.focus();
@@ -41250,24 +39460,14 @@ Zu diesem hinzufügen\
 		]);
 		return itemRefs;
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_prop_types$31, import_react$142, import_react$143, import_react_is, unknown, mouseUp, itemMouseEnter, keyDownArrowUp, keyDownArrowDown, keyDownEscape, keyDownEnter, keyDownHome, keyDownEnd, clickItem, blurInput, changeInput, keyDownSpaceButton, clickButton, blurButton, controlledPropUpdatedSelectedItem, touchEnd, stateChangeTypes$4, idCounter, cleanupStatus, validatePropTypes$1, stateKeys, validateControlledUnchanged, _excluded$4, _excluded2$4, _excluded3$3, _excluded4$2, _excluded5, Downshift, propTypes$5, updateA11yStatus, propTypes$4, defaultProps$3, defaultStateValues$1, useIsomorphicLayoutEffect, useGetterPropsCalledChecker, useControlPropsValidator, propTypes$3, defaultProps$2, ToggleButtonClick$1, ToggleButtonKeyDownArrowDown, ToggleButtonKeyDownArrowUp, ToggleButtonKeyDownCharacter, ToggleButtonKeyDownEscape, ToggleButtonKeyDownHome, ToggleButtonKeyDownEnd, ToggleButtonKeyDownEnter, ToggleButtonKeyDownSpaceButton, ToggleButtonKeyDownPageUp, ToggleButtonKeyDownPageDown, ToggleButtonBlur, MenuMouseLeave$1, ItemMouseMove$1, ItemClick$1, FunctionToggleMenu$1, FunctionOpenMenu$1, FunctionCloseMenu$1, FunctionSetHighlightedIndex$1, FunctionSelectItem$1, FunctionSetInputValue$1, FunctionReset$2, stateChangeTypes$3, reactUseId$1, useElementIds$1, _excluded$3, _excluded2$3, _excluded3$2, _excluded4$1, InputKeyDownArrowDown, InputKeyDownArrowUp, InputKeyDownEscape, InputKeyDownHome, InputKeyDownEnd, InputKeyDownPageUp, InputKeyDownPageDown, InputKeyDownEnter, InputChange, InputBlur, InputClick, MenuMouseLeave, ItemMouseMove, ItemClick, ToggleButtonClick, FunctionToggleMenu, FunctionOpenMenu, FunctionCloseMenu, FunctionSetHighlightedIndex, FunctionSelectItem, FunctionSetInputValue, FunctionReset$1, ControlledPropUpdatedSelectedItem, stateChangeTypes$2, propTypes$2, defaultProps$1, _excluded$2, _excluded2$2, _excluded3$1, _excluded4, defaultStateValues, propTypes$1, defaultProps, validatePropTypes, SelectedItemClick, SelectedItemKeyDownDelete, SelectedItemKeyDownBackspace, SelectedItemKeyDownNavigationNext, SelectedItemKeyDownNavigationPrevious, DropdownKeyDownNavigationPrevious, DropdownKeyDownBackspace, DropdownClick, FunctionAddSelectedItem, FunctionRemoveSelectedItem, FunctionSetSelectedItems, FunctionSetActiveIndex, FunctionReset, stateChangeTypes$1, _excluded$1, _excluded2$1, TagClick, TagGroupKeyDownArrowLeft, TagGroupKeyDownArrowRight, TagGroupKeyDownDelete, TagGroupKeyDownBackspace, TagRemoveClick, FunctionAddItem, stateChangeTypes, reactUseId, useElementIds, A11Y_DESCRIPTION_ELEMENT_ID, propTypes, _excluded, _excluded2, _excluded3, _useTagGroup;
-========
-	var import_prop_types$32, import_react$141, import_react$142, import_react_is, unknown, mouseUp, itemMouseEnter, keyDownArrowUp, keyDownArrowDown, keyDownEscape, keyDownEnter, keyDownHome, keyDownEnd, clickItem, blurInput, changeInput, keyDownSpaceButton, clickButton, blurButton, controlledPropUpdatedSelectedItem, touchEnd, stateChangeTypes$4, idCounter, cleanupStatus, validatePropTypes$1, stateKeys, validateControlledUnchanged, _excluded$4, _excluded2$4, _excluded3$3, _excluded4$2, _excluded5, Downshift, propTypes$5, updateA11yStatus, propTypes$4, defaultProps$3, defaultStateValues$1, useIsomorphicLayoutEffect, useGetterPropsCalledChecker, useControlPropsValidator, propTypes$3, defaultProps$2, ToggleButtonClick$1, ToggleButtonKeyDownArrowDown, ToggleButtonKeyDownArrowUp, ToggleButtonKeyDownCharacter, ToggleButtonKeyDownEscape, ToggleButtonKeyDownHome, ToggleButtonKeyDownEnd, ToggleButtonKeyDownEnter, ToggleButtonKeyDownSpaceButton, ToggleButtonKeyDownPageUp, ToggleButtonKeyDownPageDown, ToggleButtonBlur, MenuMouseLeave$1, ItemMouseMove$1, ItemClick$1, FunctionToggleMenu$1, FunctionOpenMenu$1, FunctionCloseMenu$1, FunctionSetHighlightedIndex$1, FunctionSelectItem$1, FunctionSetInputValue$1, FunctionReset$2, stateChangeTypes$3, reactUseId$1, useElementIds$1, _excluded$3, _excluded2$3, _excluded3$2, _excluded4$1, InputKeyDownArrowDown, InputKeyDownArrowUp, InputKeyDownEscape, InputKeyDownHome, InputKeyDownEnd, InputKeyDownPageUp, InputKeyDownPageDown, InputKeyDownEnter, InputChange, InputBlur, InputClick, MenuMouseLeave, ItemMouseMove, ItemClick, ToggleButtonClick, FunctionToggleMenu, FunctionOpenMenu, FunctionCloseMenu, FunctionSetHighlightedIndex, FunctionSelectItem, FunctionSetInputValue, FunctionReset$1, ControlledPropUpdatedSelectedItem, stateChangeTypes$2, propTypes$2, defaultProps$1, _excluded$2, _excluded2$2, _excluded3$1, _excluded4, defaultStateValues, propTypes$1, defaultProps, validatePropTypes, SelectedItemClick, SelectedItemKeyDownDelete, SelectedItemKeyDownBackspace, SelectedItemKeyDownNavigationNext, SelectedItemKeyDownNavigationPrevious, DropdownKeyDownNavigationPrevious, DropdownKeyDownBackspace, DropdownClick, FunctionAddSelectedItem, FunctionRemoveSelectedItem, FunctionSetSelectedItems, FunctionSetActiveIndex, FunctionReset, stateChangeTypes$1, _excluded$1, _excluded2$1, TagClick, TagGroupKeyDownArrowLeft, TagGroupKeyDownArrowRight, TagGroupKeyDownDelete, TagGroupKeyDownBackspace, TagRemoveClick, FunctionAddItem, stateChangeTypes, reactUseId, useElementIds, A11Y_DESCRIPTION_ELEMENT_ID, propTypes, _excluded, _excluded2, _excluded3, _useTagGroup;
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+	var import_prop_types$32, import_react$143, import_react$144, import_react_is, unknown, mouseUp, itemMouseEnter, keyDownArrowUp, keyDownArrowDown, keyDownEscape, keyDownEnter, keyDownHome, keyDownEnd, clickItem, blurInput, changeInput, keyDownSpaceButton, clickButton, blurButton, controlledPropUpdatedSelectedItem, touchEnd, stateChangeTypes$4, idCounter, cleanupStatus, validatePropTypes$1, stateKeys, validateControlledUnchanged, _excluded$4, _excluded2$4, _excluded3$3, _excluded4$2, _excluded5, Downshift, propTypes$5, updateA11yStatus, propTypes$4, defaultProps$3, defaultStateValues$1, useIsomorphicLayoutEffect, useGetterPropsCalledChecker, useControlPropsValidator, propTypes$3, defaultProps$2, ToggleButtonClick$1, ToggleButtonKeyDownArrowDown, ToggleButtonKeyDownArrowUp, ToggleButtonKeyDownCharacter, ToggleButtonKeyDownEscape, ToggleButtonKeyDownHome, ToggleButtonKeyDownEnd, ToggleButtonKeyDownEnter, ToggleButtonKeyDownSpaceButton, ToggleButtonKeyDownPageUp, ToggleButtonKeyDownPageDown, ToggleButtonBlur, MenuMouseLeave$1, ItemMouseMove$1, ItemClick$1, FunctionToggleMenu$1, FunctionOpenMenu$1, FunctionCloseMenu$1, FunctionSetHighlightedIndex$1, FunctionSelectItem$1, FunctionSetInputValue$1, FunctionReset$2, stateChangeTypes$3, reactUseId$1, useElementIds$1, _excluded$3, _excluded2$3, _excluded3$2, _excluded4$1, InputKeyDownArrowDown, InputKeyDownArrowUp, InputKeyDownEscape, InputKeyDownHome, InputKeyDownEnd, InputKeyDownPageUp, InputKeyDownPageDown, InputKeyDownEnter, InputChange, InputBlur, InputClick, MenuMouseLeave, ItemMouseMove, ItemClick, ToggleButtonClick, FunctionToggleMenu, FunctionOpenMenu, FunctionCloseMenu, FunctionSetHighlightedIndex, FunctionSelectItem, FunctionSetInputValue, FunctionReset$1, ControlledPropUpdatedSelectedItem, stateChangeTypes$2, propTypes$2, defaultProps$1, _excluded$2, _excluded2$2, _excluded3$1, _excluded4, defaultStateValues, propTypes$1, defaultProps, validatePropTypes, SelectedItemClick, SelectedItemKeyDownDelete, SelectedItemKeyDownBackspace, SelectedItemKeyDownNavigationNext, SelectedItemKeyDownNavigationPrevious, DropdownKeyDownNavigationPrevious, DropdownKeyDownBackspace, DropdownClick, FunctionAddSelectedItem, FunctionRemoveSelectedItem, FunctionSetSelectedItems, FunctionSetActiveIndex, FunctionReset, stateChangeTypes$1, _excluded$1, _excluded2$1, TagClick, TagGroupKeyDownArrowLeft, TagGroupKeyDownArrowRight, TagGroupKeyDownDelete, TagGroupKeyDownBackspace, TagRemoveClick, FunctionAddItem, stateChangeTypes, reactUseId, useElementIds, A11Y_DESCRIPTION_ELEMENT_ID, propTypes, _excluded, _excluded2, _excluded3, _useTagGroup;
 	var init_downshift_esm = __esmMin((() => {
 		init_objectWithoutPropertiesLoose();
 		init_extends();
 		init_inheritsLoose();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		import_prop_types$31 = /* @__PURE__ */ __toESM(require_prop_types(), 1);
-		import_react$142 = /* @__PURE__ */ __toESM(require_react$1(), 1);
-		import_react$143 = /* @__PURE__ */ __toESM(require_react$1(), 1);
-========
 		import_prop_types$32 = /* @__PURE__ */ __toESM(require_prop_types(), 1);
-		import_react$141 = /* @__PURE__ */ __toESM(require_react$1(), 1);
-		import_react$142 = /* @__PURE__ */ __toESM(require_react$1(), 1);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$143 = /* @__PURE__ */ __toESM(require_react$1(), 1);
+		import_react$144 = /* @__PURE__ */ __toESM(require_react$1(), 1);
 		import_react_is = require_react_is();
 		init_dist();
 		unknown = "__autocomplete_unknown__";
@@ -41896,19 +40096,11 @@ Zu diesem hinzufügen\
 					if (this.getRootProps.called || this.props.suppressRefError) {
 						if (!this.getRootProps.suppressRefError && !this.props.suppressRefError) validateGetRootPropsCalledCorrectly(element, this.getRootProps);
 						return element;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					} else if (isDOMElement(element)) return /*#__PURE__*/ (0, import_react$143.cloneElement)(element, this.getRootProps(getElementProps(element)));
+					} else if (isDOMElement(element)) return /*#__PURE__*/ (0, import_react$144.cloneElement)(element, this.getRootProps(getElementProps(element)));
 					throw new Error("downshift: If you return a non-DOM element, you must apply the getRootProps function");
 				};
 				return Downshift;
-			}(import_react$143.Component);
-========
-					} else if (isDOMElement(element)) return /*#__PURE__*/ (0, import_react$142.cloneElement)(element, this.getRootProps(getElementProps(element)));
-					throw new Error("downshift: If you return a non-DOM element, you must apply the getRootProps function");
-				};
-				return Downshift;
-			}(import_react$142.Component);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}(import_react$144.Component);
 			Downshift.defaultProps = {
 				defaultHighlightedIndex: null,
 				defaultIsOpen: false,
@@ -42036,29 +40228,17 @@ Zu diesem hinzufügen\
 			selectedItem: null,
 			inputValue: ""
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		useIsomorphicLayoutEffect = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? import_react$142.useLayoutEffect : import_react$142.useEffect;
-========
-		useIsomorphicLayoutEffect = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? import_react$141.useLayoutEffect : import_react$141.useEffect;
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		useIsomorphicLayoutEffect = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? import_react$143.useLayoutEffect : import_react$143.useEffect;
 		useGetterPropsCalledChecker = function useGetterPropsCalledChecker() {
 			return noop$2;
 		};
 		useGetterPropsCalledChecker = function useGetterPropsCalledChecker() {
 			for (var _len = arguments.length, propKeys = new Array(_len), _key = 0; _key < _len; _key++) propKeys[_key] = arguments[_key];
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			var getterPropsCalledRef = import_react$142.useRef(propKeys.reduce(function(acc, propKey) {
+			var getterPropsCalledRef = import_react$143.useRef(propKeys.reduce(function(acc, propKey) {
 				acc[propKey] = {};
 				return acc;
 			}, {}));
-			import_react$142.useEffect(function() {
-========
-			var getterPropsCalledRef = import_react$141.useRef(propKeys.reduce(function(acc, propKey) {
-				acc[propKey] = {};
-				return acc;
-			}, {}));
-			import_react$141.useEffect(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			import_react$143.useEffect(function() {
 				Object.keys(getterPropsCalledRef.current).forEach(function(propKey) {
 					var propCallInfo = getterPropsCalledRef.current[propKey];
 					if (!Object.keys(propCallInfo).length) {
@@ -42070,11 +40250,7 @@ Zu diesem hinzufügen\
 					if (!(elementRef != null && elementRef.current)) console.error("downshift: The ref prop \"" + refKey + "\" from " + propKey + " was not applied correctly on your element.");
 				});
 			}, []);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return import_react$142.useCallback(function(propKey, suppressRefError, refKey, elementRef) {
-========
-			return import_react$141.useCallback(function(propKey, suppressRefError, refKey, elementRef) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return import_react$143.useCallback(function(propKey, suppressRefError, refKey, elementRef) {
 				getterPropsCalledRef.current[propKey] = {
 					suppressRefError,
 					refKey,
@@ -42085,15 +40261,9 @@ Zu diesem hinzufügen\
 		useControlPropsValidator = noop$2;
 		useControlPropsValidator = function useControlPropsValidator(_ref2) {
 			var props = _ref2.props, state = _ref2.state;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			var prevPropsRef = import_react$142.useRef(props);
+			var prevPropsRef = import_react$143.useRef(props);
 			var isInitialMount = useIsInitialMount();
-			import_react$142.useEffect(function() {
-========
-			var prevPropsRef = import_react$141.useRef(props);
-			var isInitialMount = useIsInitialMount();
-			import_react$141.useEffect(function() {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			import_react$143.useEffect(function() {
 				if (isInitialMount) return;
 				validateControlledUnchanged(state, prevPropsRef.current, props);
 				prevPropsRef.current = props;
@@ -42157,11 +40327,7 @@ Zu diesem hinzufügen\
 			ToggleButtonKeyDownPageUp,
 			ToggleButtonKeyDownSpaceButton
 		});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		reactUseId$1 = _extends$18({}, import_react$142).useId;
-========
-		reactUseId$1 = _extends$18({}, import_react$141).useId;
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		reactUseId$1 = _extends$18({}, import_react$143).useId;
 		useElementIds$1 = typeof reactUseId$1 === "function" ? useElementIdsR18$1 : useElementIdsLegacy$1;
 		_excluded$3 = ["onClick"];
 		_excluded2$3 = [
@@ -42376,11 +40542,7 @@ Zu diesem hinzufügen\
 			TagGroupKeyDownDelete,
 			TagRemoveClick
 		});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		reactUseId = _extends$18({}, import_react$142).useId;
-========
-		reactUseId = _extends$18({}, import_react$141).useId;
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		reactUseId = _extends$18({}, import_react$143).useId;
 		useElementIds = typeof reactUseId === "function" ? useElementIdsR18 : useElementIdsLegacy;
 		A11Y_DESCRIPTION_ELEMENT_ID = "tag-group-a11y-description";
 		propTypes = { isItemDisabled: import_prop_types$32.default.func };
@@ -42410,11 +40572,7 @@ Zu diesem hinzufügen\
 			});
 			useAccessibleDescription((_props$environment = props.environment) == null ? void 0 : _props$environment.document, props.removeElementDescription);
 			var itemRefs = useRovingTagFocus(activeIndex, items.length, elementIds.getTagId);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			var getTagGroupProps = (0, import_react$143.useCallback)(function(options) {
-========
-			var getTagGroupProps = (0, import_react$142.useCallback)(function(options) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			var getTagGroupProps = (0, import_react$144.useCallback)(function(options) {
 				var _ref = options != null ? options : {}, onKeyDown = _ref.onKeyDown, rest = _objectWithoutPropertiesLoose(_ref, _excluded);
 				return _extends$18({
 					id: elementIds.tagGroupId,
@@ -42440,11 +40598,7 @@ Zu diesem hinzufügen\
 					})
 				}, rest);
 			}, [dispatch, elementIds.tagGroupId]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			var getTagProps = (0, import_react$143.useCallback)(function(options) {
-========
-			var getTagProps = (0, import_react$142.useCallback)(function(options) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			var getTagProps = (0, import_react$144.useCallback)(function(options) {
 				var _extends2;
 				var index = options.index, _options$refKey = options.refKey, refKey = _options$refKey === void 0 ? "ref" : _options$refKey, ref = options.ref, onClick = options.onClick, rest = _objectWithoutPropertiesLoose(options, _excluded2);
 				if (!Number.isInteger(index) || index < 0) throw new Error("Pass correct item index to getTagProps!");
@@ -42465,11 +40619,7 @@ Zu diesem hinzufügen\
 				latest,
 				itemRefs
 			]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			var getTagRemoveProps = (0, import_react$143.useCallback)(function(options) {
-========
-			var getTagRemoveProps = (0, import_react$142.useCallback)(function(options) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			var getTagRemoveProps = (0, import_react$144.useCallback)(function(options) {
 				var index = options.index, onClick = options.onClick, rest = _objectWithoutPropertiesLoose(options, _excluded3);
 				if (!Number.isInteger(index) || index < 0) throw new Error("Pass correct item index to getTagRemoveProps!");
 				var handleClick = function handleClick(event) {
@@ -42490,11 +40640,7 @@ Zu diesem hinzufügen\
 			}, [elementIds, dispatch]);
 			return {
 				activeIndex,
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				addItem: (0, import_react$143.useCallback)(function(item, index) {
-========
-				addItem: (0, import_react$142.useCallback)(function(item, index) {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				addItem: (0, import_react$144.useCallback)(function(item, index) {
 					dispatch({
 						type: FunctionAddItem,
 						item,
@@ -42516,24 +40662,14 @@ Zu diesem hinzufügen\
 		const escapedInput = inputValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 		const parts = itemLabel.split(new RegExp(`(${escapedInput})`, "gi"));
 		if (parts.length === 1) return itemLabel;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		return /*#__PURE__*/ import_react$141.createElement(import_react$141.Fragment, null, parts.map((part, i) => part.toLowerCase() === inputValue.toLowerCase() ? /*#__PURE__*/ import_react$141.createElement("b", {
-========
-		return /*#__PURE__*/ import_react$140.createElement(import_react$140.Fragment, null, parts.map((part, i) => part.toLowerCase() === inputValue.toLowerCase() ? /*#__PURE__*/ import_react$140.createElement("b", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		return /*#__PURE__*/ import_react$142.createElement(import_react$142.Fragment, null, parts.map((part, i) => part.toLowerCase() === inputValue.toLowerCase() ? /*#__PURE__*/ import_react$142.createElement("b", {
 			key: i,
 			className: "ui-autocomplete__matching-fragment"
 		}, part) : part));
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$141;
+	var import_react$142;
 	var init_typeahead_utils = __esmMin((() => {
-		import_react$141 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$140;
-	var init_typeahead_utils = __esmMin((() => {
-		import_react$140 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$142 = /* @__PURE__ */ __toESM(require_react$1());
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/typeahead-input.jsx
@@ -42551,41 +40687,22 @@ Zu diesem hinzufügen\
 			...DEFAULT_CLASS_NAMES,
 			...classNameOverrides
 		};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		const [items, setItems] = (0, import_react$140.useState)([]);
-		const [loading, setLoading] = (0, import_react$140.useState)(false);
-		const updateItems = (0, import_react$140.useCallback)((results) => {
+		const [items, setItems] = (0, import_react$141.useState)([]);
+		const [loading, setLoading] = (0, import_react$141.useState)(false);
+		const updateItems = (0, import_react$141.useCallback)((results) => {
 			setLoading(false);
 			setItems(results || []);
 		}, []);
-		const triggerSource = (0, import_react$140.useCallback)((q) => {
+		const triggerSource = (0, import_react$141.useCallback)((q) => {
 			setLoading(true);
 			source(q, updateItems);
 		});
-		(0, import_react$140.useEffect)(() => {
+		(0, import_react$141.useEffect)(() => {
 			triggerSource(defaultValue || "");
 		}, []);
-		const internalRef = (0, import_react$140.useRef)(null);
+		const internalRef = (0, import_react$141.useRef)(null);
 		const inputElement = externalRef || internalRef;
-		const getItemString = (0, import_react$140.useCallback)((item) => {
-========
-		const [items, setItems] = (0, import_react$139.useState)([]);
-		const [loading, setLoading] = (0, import_react$139.useState)(false);
-		const updateItems = (0, import_react$139.useCallback)((results) => {
-			setLoading(false);
-			setItems(results || []);
-		}, []);
-		const triggerSource = (0, import_react$139.useCallback)((q) => {
-			setLoading(true);
-			source(q, updateItems);
-		});
-		(0, import_react$139.useEffect)(() => {
-			triggerSource(defaultValue || "");
-		}, []);
-		const internalRef = (0, import_react$139.useRef)(null);
-		const inputElement = externalRef || internalRef;
-		const getItemString = (0, import_react$139.useCallback)((item) => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		const getItemString = (0, import_react$141.useCallback)((item) => {
 			if (!item) return "[non-item]";
 			if (typeof item === "string") return item;
 			return item.label || item.name || item.autocomplete_label || "";
@@ -42618,17 +40735,10 @@ Zu diesem hinzufügen\
 		const showNoResultsMessage = inputValue && items.length === 0;
 		const hasContent = comboHead || comboFoot || items.length > 0 || showNoResultsMessage;
 		const showMenu = isOpen && hasContent;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		return /*#__PURE__*/ import_react$140.createElement("div", {
+		return /*#__PURE__*/ import_react$141.createElement("div", {
 			className: wrapperClass,
 			style: { position: "relative" }
-		}, /*#__PURE__*/ import_react$140.createElement("input", _extends$17({ ref: inputElement }, getInputProps({
-========
-		return /*#__PURE__*/ import_react$139.createElement("div", {
-			className: wrapperClass,
-			style: { position: "relative" }
-		}, /*#__PURE__*/ import_react$139.createElement("input", _extends$17({ ref: inputElement }, getInputProps({
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		}, /*#__PURE__*/ import_react$141.createElement("input", _extends$17({ ref: inputElement }, getInputProps({
 			type: "text",
 			name,
 			placeholder,
@@ -42636,23 +40746,13 @@ Zu diesem hinzufügen\
 			onKeyDown: handleKeyDown,
 			"aria-label": placeholder || name || "search",
 			...dataAttributes
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		}))), /*#__PURE__*/ import_react$140.createElement("ul", _extends$17({}, getMenuProps(), { className: (0, import_classnames$23.default)(classes.menu, {
+		}))), /*#__PURE__*/ import_react$141.createElement("ul", _extends$17({}, getMenuProps(), { className: (0, import_classnames$23.default)(classes.menu, {
 			hidden: !showMenu,
 			"tt-open": showMenu
-		}) }), loading && /*#__PURE__*/ import_react$140.createElement("div", {
+		}) }), loading && /*#__PURE__*/ import_react$141.createElement("div", {
 			className: "ui-preloader small",
 			style: { height: "1.5em" }
-		}, "xxxxxx"), !loading && showMenu && /*#__PURE__*/ import_react$140.createElement(import_react$140.Fragment, null, comboHead && /*#__PURE__*/ import_react$140.createElement("li", { key: "head" }, comboHead), showNoResultsMessage && /*#__PURE__*/ import_react$140.createElement("li", { className: "ui-autocomplete-empty" }, I18nTranslate("app_autocomplete_no_results")), items.map((item, index) => {
-========
-		}))), /*#__PURE__*/ import_react$139.createElement("ul", _extends$17({}, getMenuProps(), { className: (0, import_classnames$23.default)(classes.menu, {
-			hidden: !showMenu,
-			"tt-open": showMenu
-		}) }), loading && /*#__PURE__*/ import_react$139.createElement("div", {
-			className: "ui-preloader small",
-			style: { height: "1.5em" }
-		}, "xxxxxx"), !loading && showMenu && /*#__PURE__*/ import_react$139.createElement(import_react$139.Fragment, null, comboHead && /*#__PURE__*/ import_react$139.createElement("li", { key: "head" }, comboHead), showNoResultsMessage && /*#__PURE__*/ import_react$139.createElement("li", { className: "ui-autocomplete-empty" }, I18nTranslate("app_autocomplete_no_results")), items.map((item, index) => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		}, "xxxxxx"), !loading && showMenu && /*#__PURE__*/ import_react$141.createElement(import_react$141.Fragment, null, comboHead && /*#__PURE__*/ import_react$141.createElement("li", { key: "head" }, comboHead), showNoResultsMessage && /*#__PURE__*/ import_react$141.createElement("li", { className: "ui-autocomplete-empty" }, I18nTranslate("app_autocomplete_no_results")), items.map((item, index) => {
 			const isHighlighted = highlightedIndex === index;
 			let content;
 			if (renderSuggestion) content = renderSuggestion(item, {
@@ -42660,29 +40760,16 @@ Zu diesem hinzufügen\
 				inputValue
 			});
 			else content = markMatchingFragment(getItemString(item), inputValue);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$140.createElement("li", _extends$17({ key: index }, getItemProps({
+			return /*#__PURE__*/ import_react$141.createElement("li", _extends$17({ key: index }, getItemProps({
 				item,
 				index
 			}), { className: (0, import_classnames$23.default)(classes.suggestion, { [classes.cursor]: isHighlighted }, "tt-selectable") }), content);
-		}), comboFoot && /*#__PURE__*/ import_react$140.createElement("li", { key: "foot" }, comboFoot))));
+		}), comboFoot && /*#__PURE__*/ import_react$141.createElement("li", { key: "foot" }, comboFoot))));
 	}
-	var import_react$140, import_prop_types$30, import_classnames$23, DEFAULT_CLASS_NAMES;
+	var import_react$141, import_prop_types$31, import_classnames$23, DEFAULT_CLASS_NAMES;
 	var init_typeahead_input = __esmMin((() => {
-		import_react$140 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$30 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-			return /*#__PURE__*/ import_react$139.createElement("li", _extends$17({ key: index }, getItemProps({
-				item,
-				index
-			}), { className: (0, import_classnames$23.default)(classes.suggestion, { [classes.cursor]: isHighlighted }, "tt-selectable") }), content);
-		}), comboFoot && /*#__PURE__*/ import_react$139.createElement("li", { key: "foot" }, comboFoot))));
-	}
-	var import_react$139, import_prop_types$31, import_classnames$23, DEFAULT_CLASS_NAMES;
-	var init_typeahead_input = __esmMin((() => {
-		import_react$139 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$141 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$31 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_downshift_esm();
 		import_classnames$23 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
@@ -42714,23 +40801,13 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/ui-components/ResourcesBox/UserFilter.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$139, import_classnames$22, UserFilter;
+	var import_react$140, import_classnames$22, UserFilter;
 	var init_UserFilter = __esmMin((() => {
 		init_lodash();
-		import_react$139 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$140 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$22 = /* @__PURE__ */ __toESM(require_classnames());
 		init_typeahead_input();
-		UserFilter = class extends import_react$139.Component {
-========
-	var import_react$138, import_classnames$22, UserFilter;
-	var init_UserFilter = __esmMin((() => {
-		init_lodash();
-		import_react$138 = /* @__PURE__ */ __toESM(require_react$1());
-		import_classnames$22 = /* @__PURE__ */ __toESM(require_classnames());
-		init_typeahead_input();
-		UserFilter = class extends import_react$138.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		UserFilter = class extends import_react$140.Component {
 			_source = (term, callback) => {
 				const children = this.props.node.children;
 				if (term.length > 0) {
@@ -42746,29 +40823,16 @@ Zu diesem hinzufügen\
 					event.preventDefault();
 					this.props.userChanged(selected, "remove");
 				};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$139.createElement("ul", { className: this.props.togglebodyClass }, map(selection, (selected) => /*#__PURE__*/ import_react$139.createElement("li", {
+				return /*#__PURE__*/ import_react$140.createElement("ul", { className: this.props.togglebodyClass }, map(selection, (selected) => /*#__PURE__*/ import_react$140.createElement("li", {
 					key: `uuid_${selected.uuid}`,
 					className: (0, import_classnames$22.default)("ui-side-filter-lvl3-item", { active: true })
-				}, /*#__PURE__*/ import_react$139.createElement("a", {
+				}, /*#__PURE__*/ import_react$140.createElement("a", {
 					className: "link weak ui-link",
 					onClick: (event) => clear(selected, event)
-				}, selected.label, selected.label && /*#__PURE__*/ import_react$139.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), hasMore && /*#__PURE__*/ import_react$139.createElement("li", {
+				}, selected.label, selected.label && /*#__PURE__*/ import_react$140.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), hasMore && /*#__PURE__*/ import_react$140.createElement("li", {
 					key: "input",
 					className: (0, import_classnames$22.default)("ui-side-filter-lvl3-item", { mtx: selection.length > 0 })
-				}, /*#__PURE__*/ import_react$139.createElement(TypeaheadInput, {
-========
-				return /*#__PURE__*/ import_react$138.createElement("ul", { className: this.props.togglebodyClass }, map(selection, (selected) => /*#__PURE__*/ import_react$138.createElement("li", {
-					key: `uuid_${selected.uuid}`,
-					className: (0, import_classnames$22.default)("ui-side-filter-lvl3-item", { active: true })
-				}, /*#__PURE__*/ import_react$138.createElement("a", {
-					className: "link weak ui-link",
-					onClick: (event) => clear(selected, event)
-				}, selected.label, selected.label && /*#__PURE__*/ import_react$138.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), hasMore && /*#__PURE__*/ import_react$138.createElement("li", {
-					key: "input",
-					className: (0, import_classnames$22.default)("ui-side-filter-lvl3-item", { mtx: selection.length > 0 })
-				}, /*#__PURE__*/ import_react$138.createElement(TypeaheadInput, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$140.createElement(TypeaheadInput, {
 					source: this._source,
 					onSelect: (item) => this.props.userChanged(item, "add"),
 					placeholder,
@@ -42889,27 +40953,16 @@ Zu diesem hinzufügen\
 			else _remoteSource(query, callback);
 		};
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$138, import_classnames$21, PersonFilter, maxHits;
+	var import_react$139, import_classnames$21, PersonFilter, maxHits;
 	var init_PersonFilter = __esmMin((() => {
 		init_lodash();
-		import_react$138 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$137, import_classnames$21, PersonFilter, maxHits;
-	var init_PersonFilter = __esmMin((() => {
-		init_lodash();
-		import_react$137 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$139 = /* @__PURE__ */ __toESM(require_react$1());
 		import_classnames$21 = /* @__PURE__ */ __toESM(require_classnames());
 		init_i18n_translate();
 		init_typeahead_input();
 		init_typeahead_utils();
 		init_remote_search();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		PersonFilter = class extends import_react$138.Component {
-========
-		PersonFilter = class extends import_react$137.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		PersonFilter = class extends import_react$139.Component {
 			constructor(props) {
 				super(props);
 				this.state = {};
@@ -42922,37 +40975,20 @@ Zu diesem hinzufügen\
 					onClear(selected);
 				};
 				const source = tooManyHits ? getRemoteSource(staticItems, contextKeyId, jsonPath) : getStaticSource(staticItems);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$138.createElement("ul", { className }, withTitle && /*#__PURE__*/ import_react$138.createElement("li", {
+				return /*#__PURE__*/ import_react$139.createElement("ul", { className }, withTitle && /*#__PURE__*/ import_react$139.createElement("li", {
 					key: "title",
 					className: "ui-side-filter-lvl3-item ptx plm",
 					style: { fontSize: "12px" }
-				}, /*#__PURE__*/ import_react$138.createElement("strong", null, I18nTranslate("dynamic_filters_person_header"))), map(selection, (selected) => /*#__PURE__*/ import_react$138.createElement("li", {
+				}, /*#__PURE__*/ import_react$139.createElement("strong", null, I18nTranslate("dynamic_filters_person_header"))), map(selection, (selected) => /*#__PURE__*/ import_react$139.createElement("li", {
 					key: "uuid_" + selected.uuid,
 					className: (0, import_classnames$21.default)("ui-side-filter-lvl3-item", { active: true })
-				}, /*#__PURE__*/ import_react$138.createElement("a", {
+				}, /*#__PURE__*/ import_react$139.createElement("a", {
 					className: "link weak ui-link",
 					onClick: (event) => clear(selected, event)
-				}, selected.label, selected.label && /*#__PURE__*/ import_react$138.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), /*#__PURE__*/ import_react$138.createElement("li", {
+				}, selected.label, selected.label && /*#__PURE__*/ import_react$139.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), /*#__PURE__*/ import_react$139.createElement("li", {
 					key: "input",
 					className: (0, import_classnames$21.default)("ui-side-filter-lvl3-item", { mtx: selection.length > 0 })
-				}, /*#__PURE__*/ import_react$138.createElement(TypeaheadInput, {
-========
-				return /*#__PURE__*/ import_react$137.createElement("ul", { className }, withTitle && /*#__PURE__*/ import_react$137.createElement("li", {
-					key: "title",
-					className: "ui-side-filter-lvl3-item ptx plm",
-					style: { fontSize: "12px" }
-				}, /*#__PURE__*/ import_react$137.createElement("strong", null, I18nTranslate("dynamic_filters_person_header"))), map(selection, (selected) => /*#__PURE__*/ import_react$137.createElement("li", {
-					key: "uuid_" + selected.uuid,
-					className: (0, import_classnames$21.default)("ui-side-filter-lvl3-item", { active: true })
-				}, /*#__PURE__*/ import_react$137.createElement("a", {
-					className: "link weak ui-link",
-					onClick: (event) => clear(selected, event)
-				}, selected.label, selected.label && /*#__PURE__*/ import_react$137.createElement("span", { className: "ui-lvl3-item-count" }, selected.count)))), /*#__PURE__*/ import_react$137.createElement("li", {
-					key: "input",
-					className: (0, import_classnames$21.default)("ui-side-filter-lvl3-item", { mtx: selection.length > 0 })
-				}, /*#__PURE__*/ import_react$137.createElement(TypeaheadInput, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$139.createElement(TypeaheadInput, {
 					source,
 					onSelect: (item) => {
 						onSelect(item);
@@ -42966,13 +41002,8 @@ Zu diesem hinzufügen\
 						cursor: "ui-autocomplete-cursor",
 						suggestion: ""
 					},
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					renderSuggestion: (value, { inputValue }) => /*#__PURE__*/ import_react$138.createElement("div", { className: (0, import_classnames$21.default)("ui-autocomplete-override-sidebar ui-autocomplete-override-sidebar--with-number", { "ui-autocomplete-disabled": value.disabled }) }, /*#__PURE__*/ import_react$138.createElement("div", { className: "ui-autocomplete-override-sidebar__label" }, markMatchingFragment(value.label, inputValue)), /*#__PURE__*/ import_react$138.createElement("div", { className: "ui-autocomplete-override-sidebar__number" }, value.count === void 0 ? "" : value.count)),
-					comboFoot: tooManyHits && /*#__PURE__*/ import_react$138.createElement("div", { className: "ui-autocomplete-footer" }, I18nTranslate("app_autocomplete_enter_term"))
-========
-					renderSuggestion: (value, { inputValue }) => /*#__PURE__*/ import_react$137.createElement("div", { className: (0, import_classnames$21.default)("ui-autocomplete-override-sidebar ui-autocomplete-override-sidebar--with-number", { "ui-autocomplete-disabled": value.disabled }) }, /*#__PURE__*/ import_react$137.createElement("div", { className: "ui-autocomplete-override-sidebar__label" }, markMatchingFragment(value.label, inputValue)), /*#__PURE__*/ import_react$137.createElement("div", { className: "ui-autocomplete-override-sidebar__number" }, value.count === void 0 ? "" : value.count)),
-					comboFoot: tooManyHits && /*#__PURE__*/ import_react$137.createElement("div", { className: "ui-autocomplete-footer" }, I18nTranslate("app_autocomplete_enter_term"))
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					renderSuggestion: (value, { inputValue }) => /*#__PURE__*/ import_react$139.createElement("div", { className: (0, import_classnames$21.default)("ui-autocomplete-override-sidebar ui-autocomplete-override-sidebar--with-number", { "ui-autocomplete-disabled": value.disabled }) }, /*#__PURE__*/ import_react$139.createElement("div", { className: "ui-autocomplete-override-sidebar__label" }, markMatchingFragment(value.label, inputValue)), /*#__PURE__*/ import_react$139.createElement("div", { className: "ui-autocomplete-override-sidebar__number" }, value.count === void 0 ? "" : value.count)),
+					comboFoot: tooManyHits && /*#__PURE__*/ import_react$139.createElement("div", { className: "ui-autocomplete-footer" }, I18nTranslate("app_autocomplete_enter_term"))
 				})));
 			}
 		};
@@ -43058,21 +41089,12 @@ Zu diesem hinzufügen\
 		jsonPath += `dynamic_filters.${key}`;
 		return jsonPath;
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$137, import_prop_types$29, import_classnames$20, import_lib$8, SideFilter;
+	var import_react$138, import_prop_types$30, import_classnames$20, import_lib$8, SideFilter;
 	var init_SideFilter = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$137 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$29 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$136, import_prop_types$30, import_classnames$20, import_lib$8, SideFilter;
-	var init_SideFilter = __esmMin((() => {
-		init_present();
-		init_lodash();
-		import_react$136 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$138 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$30 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_i18n_translate();
 		import_classnames$20 = /* @__PURE__ */ __toESM(require_classnames());
 		init_ui();
@@ -43085,11 +41107,7 @@ Zu diesem hinzufügen\
 		import_lib$8 = /* @__PURE__ */ __toESM(require_lib());
 		init_set_params_for_url();
 		init_load_xhr();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		SideFilter = class extends import_react$137.Component {
-========
-		SideFilter = class extends import_react$136.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		SideFilter = class extends import_react$138.Component {
 			static propTypes = {
 				forUrl: import_prop_types$30.default.object,
 				jsonPath: import_prop_types$30.default.string,
@@ -43256,23 +41274,13 @@ Zu diesem hinzufügen\
 			}
 			render() {
 				let { current } = this.props;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				if (flatten(compact(map(this.state.sectionGroups, (sectionGroup) => sectionGroup.data))).length === 0) if (this.state.sectionGroups.find((x) => x.status === "initial")) return /*#__PURE__*/ import_react$137.createElement("ul", { "data-test-id": "side-filter" }, /*#__PURE__*/ import_react$137.createElement(Preloader$1, { mods: "small" }));
+				if (flatten(compact(map(this.state.sectionGroups, (sectionGroup) => sectionGroup.data))).length === 0) if (this.state.sectionGroups.find((x) => x.status === "initial")) return /*#__PURE__*/ import_react$138.createElement("ul", { "data-test-id": "side-filter" }, /*#__PURE__*/ import_react$138.createElement(Preloader$1, { mods: "small" }));
 				else return null;
-				return /*#__PURE__*/ import_react$137.createElement("ul", {
+				return /*#__PURE__*/ import_react$138.createElement("ul", {
 					className: ui_default.cx(ui_default.parseMods(this.props), "ui-side-filter-list"),
 					"data-test-id": "side-filter"
 				}, flatten(compact(map(this.state.sectionGroups, (sectionGroup) => {
-					if (sectionGroup.status == "initial") return /*#__PURE__*/ import_react$137.createElement(Preloader$1, {
-========
-				if (flatten(compact(map(this.state.sectionGroups, (sectionGroup) => sectionGroup.data))).length === 0) if (this.state.sectionGroups.find((x) => x.status === "initial")) return /*#__PURE__*/ import_react$136.createElement("ul", { "data-test-id": "side-filter" }, /*#__PURE__*/ import_react$136.createElement(Preloader$1, { mods: "small" }));
-				else return null;
-				return /*#__PURE__*/ import_react$136.createElement("ul", {
-					className: ui_default.cx(ui_default.parseMods(this.props), "ui-side-filter-list"),
-					"data-test-id": "side-filter"
-				}, flatten(compact(map(this.state.sectionGroups, (sectionGroup) => {
-					if (sectionGroup.status == "initial") return /*#__PURE__*/ import_react$136.createElement(Preloader$1, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					if (sectionGroup.status == "initial") return /*#__PURE__*/ import_react$138.createElement(Preloader$1, {
 						key: `preloader_${sectionGroup.key}`,
 						mods: "small"
 					});
@@ -43292,25 +41300,14 @@ Zu diesem hinzufügen\
 				const sectionUuid = filterType + "-" + uuid;
 				const { isOpen } = this.getAccordionSection(sectionUuid);
 				const toggleOnClick = () => this.toggleSection(sectionUuid, section);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$137.createElement("li", {
+				return /*#__PURE__*/ import_react$138.createElement("li", {
 					className: itemClass,
 					key: sectionUuid
-				}, /*#__PURE__*/ import_react$137.createElement("a", {
+				}, /*#__PURE__*/ import_react$138.createElement("a", {
 					className: (0, import_classnames$20.default)("ui-accordion-toggle", "strong", { open: isOpen }),
 					href: null,
 					onClick: toggleOnClick
-				}, label, " ", /*#__PURE__*/ import_react$137.createElement("i", { className: "ui-side-filter-lvl1-marker" })), /*#__PURE__*/ import_react$137.createElement("ul", { className: (0, import_classnames$20.default)("ui-accordion-body", "ui-side-filter-lvl2", { open: isOpen }) }, isOpen && (triggersLoadForGroup && children.length === 0 ? /*#__PURE__*/ import_react$137.createElement("li", null, /*#__PURE__*/ import_react$137.createElement(Preloader$1, { mods: "small" })) : map(children, (child) => {
-========
-				return /*#__PURE__*/ import_react$136.createElement("li", {
-					className: itemClass,
-					key: sectionUuid
-				}, /*#__PURE__*/ import_react$136.createElement("a", {
-					className: (0, import_classnames$20.default)("ui-accordion-toggle", "strong", { open: isOpen }),
-					href: null,
-					onClick: toggleOnClick
-				}, label, " ", /*#__PURE__*/ import_react$136.createElement("i", { className: "ui-side-filter-lvl1-marker" })), /*#__PURE__*/ import_react$136.createElement("ul", { className: (0, import_classnames$20.default)("ui-accordion-body", "ui-side-filter-lvl2", { open: isOpen }) }, isOpen && (triggersLoadForGroup && children.length === 0 ? /*#__PURE__*/ import_react$136.createElement("li", null, /*#__PURE__*/ import_react$136.createElement(Preloader$1, { mods: "small" })) : map(children, (child) => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, label, " ", /*#__PURE__*/ import_react$138.createElement("i", { className: "ui-side-filter-lvl1-marker" })), /*#__PURE__*/ import_react$138.createElement("ul", { className: (0, import_classnames$20.default)("ui-accordion-body", "ui-side-filter-lvl2", { open: isOpen }) }, isOpen && (triggersLoadForGroup && children.length === 0 ? /*#__PURE__*/ import_react$138.createElement("li", null, /*#__PURE__*/ import_react$138.createElement(Preloader$1, { mods: "small" })) : map(children, (child) => {
 					return this.renderSubSection(current, filterType, section, child);
 				}))));
 			}
@@ -43325,51 +41322,29 @@ Zu diesem hinzufügen\
 				], child.uuid);
 				const keyClass = "ui-side-filter-lvl2-item";
 				const togglebodyClass = (0, import_classnames$20.default)("ui-accordion-body", "ui-side-filter-lvl3", { open: isOpen });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$137.createElement("li", {
-========
-				return /*#__PURE__*/ import_react$136.createElement("li", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$138.createElement("li", {
 					className: keyClass,
 					key: child.uuid
 				}, this.createToggleSubSection(filterType, parent, child, isOpen), this.createMultiSelectBox(child, current, filterType, !(parent.uuid === "permissions")), (() => {
 					if (parent.uuid === "permissions" && showSearchField) if (isOpen) return this.renderResponsibleUser(child, parent.uuid, current, child, filterType, togglebodyClass);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					else return /*#__PURE__*/ import_react$137.createElement("ul", { className: togglebodyClass });
-========
-					else return /*#__PURE__*/ import_react$136.createElement("ul", { className: togglebodyClass });
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					else return /*#__PURE__*/ import_react$138.createElement("ul", { className: togglebodyClass });
 					else if (isOpen) switch (child.metaDatumObjectType) {
 						case "MetaDatum::People": return this.renderPersonSelect(current, child, child.children, filterType, togglebodyClass, false);
 						case "MetaDatum::Roles": return map(["person", "role"], (type) => {
 							const items = child.children.filter((x) => x.type === type);
 							if (items.length === 0) return false;
 							if (type === "person") return this.renderPersonSelect(current, child, items, filterType, togglebodyClass, true);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-							else return /*#__PURE__*/ import_react$137.createElement("ul", {
+							else return /*#__PURE__*/ import_react$138.createElement("ul", {
 								className: togglebodyClass,
 								key: "role"
-							}, /*#__PURE__*/ import_react$137.createElement("li", {
+							}, /*#__PURE__*/ import_react$138.createElement("li", {
 								className: "ui-side-filter-lvl3-item ptx plm",
 								style: { fontSize: "12px" }
-							}, /*#__PURE__*/ import_react$137.createElement("strong", null, I18nTranslate("dynamic_filters_role_header"))), map(items, (item) => {
+							}, /*#__PURE__*/ import_react$138.createElement("strong", null, I18nTranslate("dynamic_filters_role_header"))), map(items, (item) => {
 								return this.renderItem(current, child, item, filterType);
 							}));
 						});
-						default: return /*#__PURE__*/ import_react$137.createElement("ul", { className: togglebodyClass }, map(child.children, (item) => {
-========
-							else return /*#__PURE__*/ import_react$136.createElement("ul", {
-								className: togglebodyClass,
-								key: "role"
-							}, /*#__PURE__*/ import_react$136.createElement("li", {
-								className: "ui-side-filter-lvl3-item ptx plm",
-								style: { fontSize: "12px" }
-							}, /*#__PURE__*/ import_react$136.createElement("strong", null, I18nTranslate("dynamic_filters_role_header"))), map(items, (item) => {
-								return this.renderItem(current, child, item, filterType);
-							}));
-						});
-						default: return /*#__PURE__*/ import_react$136.createElement("ul", { className: togglebodyClass }, map(child.children, (item) => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						default: return /*#__PURE__*/ import_react$138.createElement("ul", { className: togglebodyClass }, map(child.children, (item) => {
 							return this.renderItem(current, child, item, filterType);
 						}));
 					}
@@ -43379,11 +41354,7 @@ Zu diesem hinzufügen\
 				const onSelect = (person) => this.addItemFilter(this.props.onChange, current, child, person, filterType);
 				const onClear = (person) => this.removeItemFilter(this.props.onChange, current, person, filterType);
 				const jsonPath = getJsonPath(this.props.jsonPath, "section_group_meta_data");
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$137.createElement(PersonFilter, {
-========
-				return /*#__PURE__*/ import_react$136.createElement(PersonFilter, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$138.createElement(PersonFilter, {
 					key: "person",
 					label: child.label,
 					contextKeyId: child.contextKeyId,
@@ -43409,11 +41380,7 @@ Zu diesem hinzufügen\
 					entrusted_to_group: I18nTranslate("dynamic_filters_search_for_group_placeholder"),
 					entrusted_to_api_client: I18nTranslate("dynamic_filters_search_for_api_client_placeholder")
 				}[parent.uuid];
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$137.createElement(UserFilter, {
-========
-				return /*#__PURE__*/ import_react$136.createElement(UserFilter, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$138.createElement(UserFilter, {
 					node,
 					userChanged,
 					placeholder,
@@ -43426,23 +41393,13 @@ Zu diesem hinzufügen\
 					if (item.selected) return this.removeItemFilter(onChange, current, item, filterType);
 					else return this.addItemFilter(onChange, current, parent, item, filterType);
 				};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$137.createElement("li", {
+				return /*#__PURE__*/ import_react$138.createElement("li", {
 					key: item.uuid,
 					className: (0, import_classnames$20.default)("ui-side-filter-lvl3-item", { active: item.selected })
-				}, /*#__PURE__*/ import_react$137.createElement(Link$5, {
+				}, /*#__PURE__*/ import_react$138.createElement(Link$5, {
 					mods: "weak",
 					onClick: onItemClick
-				}, item.label || item.uuid || "(empty)", " ", /*#__PURE__*/ import_react$137.createElement("span", { className: "ui-lvl3-item-count" }, item.count)));
-========
-				return /*#__PURE__*/ import_react$136.createElement("li", {
-					key: item.uuid,
-					className: (0, import_classnames$20.default)("ui-side-filter-lvl3-item", { active: item.selected })
-				}, /*#__PURE__*/ import_react$136.createElement(Link$5, {
-					mods: "weak",
-					onClick: onItemClick
-				}, item.label || item.uuid || "(empty)", " ", /*#__PURE__*/ import_react$136.createElement("span", { className: "ui-lvl3-item-count" }, item.count)));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, item.label || item.uuid || "(empty)", " ", /*#__PURE__*/ import_react$138.createElement("span", { className: "ui-lvl3-item-count" }, item.count)));
 			}
 			createToggleSubSection(filterType, parent, child, isOpen) {
 				const href = null;
@@ -43451,19 +41408,11 @@ Zu diesem hinzufügen\
 				};
 				const togglerClass = (0, import_classnames$20.default)("ui-accordion-toggle", "weak", { open: isOpen });
 				const toggleMarkerClass = (0, import_classnames$20.default)("ui-side-filter-lvl2-marker");
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$137.createElement("a", {
+				return /*#__PURE__*/ import_react$138.createElement("a", {
 					className: togglerClass,
 					href,
 					onClick: toggleOnClick
-				}, /*#__PURE__*/ import_react$137.createElement("span", { className: toggleMarkerClass }), child.label);
-========
-				return /*#__PURE__*/ import_react$136.createElement("a", {
-					className: togglerClass,
-					href,
-					onClick: toggleOnClick
-				}, /*#__PURE__*/ import_react$136.createElement("span", { className: toggleMarkerClass }), child.label);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$138.createElement("span", { className: toggleMarkerClass }), child.label);
 			}
 			createMultiSelectBox(child, current, filterType, allowSelectAll) {
 				let icon, onChange, title;
@@ -43483,20 +41432,12 @@ Zu diesem hinzufügen\
 						return this.removeSubSectionFilter(onChange, current, child, filterType);
 					};
 					icon = "close";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					multiSelectBox = /*#__PURE__*/ import_react$137.createElement(Link$5, {
-========
-					multiSelectBox = /*#__PURE__*/ import_react$136.createElement(Link$5, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					multiSelectBox = /*#__PURE__*/ import_react$138.createElement(Link$5, {
 						style,
 						className: keyBtnClass,
 						title,
 						onClick: removeClick
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					}, /*#__PURE__*/ import_react$137.createElement(Icon$4, { i: icon }));
-========
-					}, /*#__PURE__*/ import_react$136.createElement(Icon$4, { i: icon }));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}, /*#__PURE__*/ import_react$138.createElement(Icon$4, { i: icon }));
 				}
 				if (showSelectAll && allowSelectAll) {
 					let iclass;
@@ -43508,20 +41449,12 @@ Zu diesem hinzufügen\
 						if (child.selected) return this.removeSubSectionFilter(onChange, current, child, filterType);
 						else return this.addSubSectionFilter(onChange, current, child, filterType);
 					};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					multiSelectBox = /*#__PURE__*/ import_react$137.createElement(Link$5, {
-========
-					multiSelectBox = /*#__PURE__*/ import_react$136.createElement(Link$5, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					multiSelectBox = /*#__PURE__*/ import_react$138.createElement(Link$5, {
 						style,
 						className: keyBtnClass,
 						title,
 						onClick: addClick
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					}, /*#__PURE__*/ import_react$137.createElement(Icon$4, {
-========
-					}, /*#__PURE__*/ import_react$136.createElement(Icon$4, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}, /*#__PURE__*/ import_react$138.createElement(Icon$4, {
 						i: icon,
 						className: iclass
 					}));
@@ -43581,17 +41514,10 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/resource-type-switcher.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$136, import_url$20, import_url$21, import_lib$6, import_lib$7, resourceTypeSwitcher, urlByType$1;
+	var import_react$137, import_url$20, import_url$21, import_lib$6, import_lib$7, resourceTypeSwitcher, urlByType$1;
 	var init_resource_type_switcher = __esmMin((() => {
 		init_lodash();
-		import_react$136 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$135, import_url$20, import_url$21, import_lib$6, import_lib$7, resourceTypeSwitcher, urlByType$1;
-	var init_resource_type_switcher = __esmMin((() => {
-		init_lodash();
-		import_react$135 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$137 = /* @__PURE__ */ __toESM(require_react$1());
 		import_url$20 = /* @__PURE__ */ __toESM(require_url());
 		import_url$21 = /* @__PURE__ */ __toESM(require_url());
 		import_lib$6 = /* @__PURE__ */ __toESM(require_lib());
@@ -43616,20 +41542,12 @@ Zu diesem hinzufügen\
 					name: I18nTranslate("sitemap_collections")
 				}
 			]);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$136.createElement(ButtonGroup, { "data-test-id": "resource-type-switcher" }, typeBbtns.map((btn) => {
-========
-			return /*#__PURE__*/ import_react$135.createElement(ButtonGroup, { "data-test-id": "resource-type-switcher" }, typeBbtns.map((btn) => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$137.createElement(ButtonGroup, { "data-test-id": "resource-type-switcher" }, typeBbtns.map((btn) => {
 				const isCurrent = currentType === btn.key;
 				const isDefault = !currentType ? showAll ? btn.key === "all" : btn.key === "entries" : void 0;
 				const isActive = isCurrent || isDefault;
 				const btnUrl = urlByType$1(forUrl, currentType, btn.key);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$136.createElement(Button$3, {
-========
-				return /*#__PURE__*/ import_react$135.createElement(Button$3, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$137.createElement(Button$3, {
 					onClick,
 					href: btnUrl,
 					mods: isActive ? "active" : void 0,
@@ -43661,15 +41579,9 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxSidebar.jsx
 	var BoxSidebar_exports = /* @__PURE__ */ __exportAll({ default: () => BoxSidebar });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$135, BoxSidebar;
+	var import_react$136, BoxSidebar;
 	var init_BoxSidebar = __esmMin((() => {
-		import_react$135 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$134, BoxSidebar;
-	var init_BoxSidebar = __esmMin((() => {
-		import_react$134 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$136 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_Preloader();
 		init_Button();
@@ -43679,11 +41591,7 @@ Zu diesem hinzufügen\
 		init_set_params_for_url();
 		init_i18n_translate();
 		init_resource_type_switcher();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		BoxSidebar = class extends import_react$135.Component {
-========
-		BoxSidebar = class extends import_react$134.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxSidebar = class extends import_react$136.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -43745,31 +41653,19 @@ Zu diesem hinzufügen\
 				};
 			}
 			renderFilterPreloader() {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$135.createElement("div", { className: "ui-slide-filter-item" }, /*#__PURE__*/ import_react$135.createElement("div", { className: "title-xs by-center" }, "Filter werden geladen"), /*#__PURE__*/ import_react$135.createElement(Preloader$1, { mods: "small" }));
-========
-				return /*#__PURE__*/ import_react$134.createElement("div", { className: "ui-slide-filter-item" }, /*#__PURE__*/ import_react$134.createElement("div", { className: "title-xs by-center" }, "Filter werden geladen"), /*#__PURE__*/ import_react$134.createElement(Preloader$1, { mods: "small" }));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$136.createElement("div", { className: "ui-slide-filter-item" }, /*#__PURE__*/ import_react$136.createElement("div", { className: "title-xs by-center" }, "Filter werden geladen"), /*#__PURE__*/ import_react$136.createElement(Preloader$1, { mods: "small" }));
 			}
 			renderFilterExamples() {
 				const url = this.props.config.for_url;
 				const type = url.query.type || "all";
 				const query = this.props.currentQuery;
 				const examples = this.filterExamples();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$135.createElement("div", null, /*#__PURE__*/ import_react$135.createElement("h4", null, "Examples:"), /*#__PURE__*/ import_react$135.createElement("ul", null, Object.entries(examples).filter(([, example]) => example.isAllowedForType(type)).map(([name, example]) => {
-========
-				return /*#__PURE__*/ import_react$134.createElement("div", null, /*#__PURE__*/ import_react$134.createElement("h4", null, "Examples:"), /*#__PURE__*/ import_react$134.createElement("ul", null, Object.entries(examples).filter(([, example]) => example.isAllowedForType(type)).map(([name, example]) => {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$136.createElement("div", null, /*#__PURE__*/ import_react$136.createElement("h4", null, "Examples:"), /*#__PURE__*/ import_react$136.createElement("ul", null, Object.entries(examples).filter(([, example]) => example.isAllowedForType(type)).map(([name, example]) => {
 					var params = { list: {
 						page: 1,
 						filter: JSON.stringify(example, 0, 2)
 					} };
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$135.createElement("li", { key: name }, /*#__PURE__*/ import_react$135.createElement(Link$5, {
-========
-					return /*#__PURE__*/ import_react$134.createElement("li", { key: name }, /*#__PURE__*/ import_react$134.createElement(Link$5, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					return /*#__PURE__*/ import_react$136.createElement("li", { key: name }, /*#__PURE__*/ import_react$136.createElement(Link$5, {
 						href: set_params_for_url_default(url, query, params),
 						rel: "nofollow"
 					}, name));
@@ -43778,27 +41674,15 @@ Zu diesem hinzufügen\
 			renderSideFilterFallback() {
 				var filter = this.props.config.filter;
 				filter = filter ? filter : {};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$135.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$135.createElement(RestForm, {
+				return /*#__PURE__*/ import_react$136.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$136.createElement(RestForm, {
 					name: "list",
 					method: "get",
 					mods: "prm"
-				}, /*#__PURE__*/ import_react$135.createElement("input", {
+				}, /*#__PURE__*/ import_react$136.createElement("input", {
 					type: "hidden",
 					name: "list[show_filter]",
 					value: "true"
-				}), /*#__PURE__*/ import_react$135.createElement("textarea", {
-========
-				return /*#__PURE__*/ import_react$134.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$134.createElement(RestForm, {
-					name: "list",
-					method: "get",
-					mods: "prm"
-				}, /*#__PURE__*/ import_react$134.createElement("input", {
-					type: "hidden",
-					name: "list[show_filter]",
-					value: "true"
-				}), /*#__PURE__*/ import_react$134.createElement("textarea", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$136.createElement("textarea", {
 					name: "list[filter]",
 					rows: "25",
 					style: {
@@ -43807,17 +41691,10 @@ Zu diesem hinzufügen\
 						width: "100%"
 					},
 					defaultValue: JSON.stringify(filter, 0, 2)
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), /*#__PURE__*/ import_react$135.createElement(Button$3, { type: "submit" }, "Submit")));
+				}), /*#__PURE__*/ import_react$136.createElement(Button$3, { type: "submit" }, "Submit")));
 			}
 			renderNoJs() {
-				return /*#__PURE__*/ import_react$135.createElement("div", null, /*#__PURE__*/ import_react$135.createElement("div", { className: "no-js" }, this.renderSideFilterFallback(), this.renderFilterExamples()), /*#__PURE__*/ import_react$135.createElement("div", { className: "js-only" }, this.renderFilterPreloader()));
-========
-				}), /*#__PURE__*/ import_react$134.createElement(Button$3, { type: "submit" }, "Submit")));
-			}
-			renderNoJs() {
-				return /*#__PURE__*/ import_react$134.createElement("div", null, /*#__PURE__*/ import_react$134.createElement("div", { className: "no-js" }, this.renderSideFilterFallback(), this.renderFilterExamples()), /*#__PURE__*/ import_react$134.createElement("div", { className: "js-only" }, this.renderFilterPreloader()));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$136.createElement("div", null, /*#__PURE__*/ import_react$136.createElement("div", { className: "no-js" }, this.renderSideFilterFallback(), this.renderFilterExamples()), /*#__PURE__*/ import_react$136.createElement("div", { className: "js-only" }, this.renderFilterPreloader()));
 			}
 			searchValue() {
 				if (this.has_filename_filter()) return this.filename_filter_string();
@@ -43825,21 +41702,13 @@ Zu diesem hinzufügen\
 			}
 			renderFilesearch() {
 				if (!this.props.supportsFilesearch) return null;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$135.createElement("div", { style: { marginTop: "2px" } }, /*#__PURE__*/ import_react$135.createElement("input", {
-========
-				return /*#__PURE__*/ import_react$134.createElement("div", { style: { marginTop: "2px" } }, /*#__PURE__*/ import_react$134.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$136.createElement("div", { style: { marginTop: "2px" } }, /*#__PURE__*/ import_react$136.createElement("input", {
 					ref: "searchTypeFulltext",
 					type: "radio",
 					name: "search_type",
 					value: "fulltext",
 					defaultChecked: !this.has_filename_filter()
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), " " + I18nTranslate("search_full_text") + " ", /*#__PURE__*/ import_react$135.createElement("input", {
-========
-				}), " " + I18nTranslate("search_full_text") + " ", /*#__PURE__*/ import_react$134.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), " " + I18nTranslate("search_full_text") + " ", /*#__PURE__*/ import_react$136.createElement("input", {
 					ref: "searchTypeFilename",
 					type: "radio",
 					name: "search_type",
@@ -43849,11 +41718,7 @@ Zu diesem hinzufügen\
 			}
 			renderSideFilter() {
 				if (this.props.onlyFilterSearch) return null;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$135.createElement(SideFilter, {
-========
-				return /*#__PURE__*/ import_react$134.createElement(SideFilter, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$136.createElement(SideFilter, {
 					forUrl: this.props.parentState.config.for_url,
 					jsonPath: this.props.jsonPath,
 					current: this.props.config.filter ? this.props.config.filter : {},
@@ -43874,25 +41739,14 @@ Zu diesem hinzufügen\
 				});
 			}
 			renderJs() {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$135.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$135.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$135.createElement("form", {
+				return /*#__PURE__*/ import_react$136.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$136.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$136.createElement("form", {
 					name: "filter_search_form",
 					onSubmit: (e) => this._onSearch(e)
-				}, /*#__PURE__*/ import_react$135.createElement("input", {
+				}, /*#__PURE__*/ import_react$136.createElement("input", {
 					type: "submit",
 					className: "unstyled",
 					value: I18nTranslate("resources_box_new_search")
-				}), /*#__PURE__*/ import_react$135.createElement("input", {
-========
-				return /*#__PURE__*/ import_react$134.createElement("div", { className: "js-only" }, /*#__PURE__*/ import_react$134.createElement("div", { className: "ui-side-filter-search filter-search" }, /*#__PURE__*/ import_react$134.createElement("form", {
-					name: "filter_search_form",
-					onSubmit: (e) => this._onSearch(e)
-				}, /*#__PURE__*/ import_react$134.createElement("input", {
-					type: "submit",
-					className: "unstyled",
-					value: I18nTranslate("resources_box_new_search")
-				}), /*#__PURE__*/ import_react$134.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$136.createElement("input", {
 					type: "text",
 					className: "ui-filter-search-input block",
 					ref: "filterSearch",
@@ -43906,32 +41760,19 @@ Zu diesem hinzufügen\
 			renderFiltersNote() {
 				const { currentUrl, contentType } = this.props;
 				if (contentType !== "MediaResource") return null;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$135.createElement("div", { className: "mtm" }, I18nTranslate("resources_box_filters_note_pre"), " ", /*#__PURE__*/ import_react$135.createElement(Link$5, { href: urlByType$1(currentUrl, null, "entries") }, I18nTranslate("sitemap_entries")), " ", I18nTranslate("resources_box_filters_note_or"), " ", /*#__PURE__*/ import_react$135.createElement(Link$5, { href: urlByType$1(currentUrl, null, "collections") }, I18nTranslate("sitemap_collections")), " ", I18nTranslate("resources_box_filters_note_post"));
+				return /*#__PURE__*/ import_react$136.createElement("div", { className: "mtm" }, I18nTranslate("resources_box_filters_note_pre"), " ", /*#__PURE__*/ import_react$136.createElement(Link$5, { href: urlByType$1(currentUrl, null, "entries") }, I18nTranslate("sitemap_entries")), " ", I18nTranslate("resources_box_filters_note_or"), " ", /*#__PURE__*/ import_react$136.createElement(Link$5, { href: urlByType$1(currentUrl, null, "collections") }, I18nTranslate("sitemap_collections")), " ", I18nTranslate("resources_box_filters_note_post"));
 			}
 			render() {
-				return /*#__PURE__*/ import_react$135.createElement("div", { className: "filter-panel ui-side-filter" }, this.renderJsSwitch(), this.renderFiltersNote());
-========
-				return /*#__PURE__*/ import_react$134.createElement("div", { className: "mtm" }, I18nTranslate("resources_box_filters_note_pre"), " ", /*#__PURE__*/ import_react$134.createElement(Link$5, { href: urlByType$1(currentUrl, null, "entries") }, I18nTranslate("sitemap_entries")), " ", I18nTranslate("resources_box_filters_note_or"), " ", /*#__PURE__*/ import_react$134.createElement(Link$5, { href: urlByType$1(currentUrl, null, "collections") }, I18nTranslate("sitemap_collections")), " ", I18nTranslate("resources_box_filters_note_post"));
-			}
-			render() {
-				return /*#__PURE__*/ import_react$134.createElement("div", { className: "filter-panel ui-side-filter" }, this.renderJsSwitch(), this.renderFiltersNote());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$136.createElement("div", { className: "filter-panel ui-side-filter" }, this.renderJsSwitch(), this.renderFiltersNote());
 			}
 		};
 	}));
 	//#endregion
 	//#region app/javascript/react/decorators/resourcesbox/SortDropdown.jsx
 	var SortDropdown_exports = /* @__PURE__ */ __exportAll({ default: () => SortDropdown });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$134, SortDropdown;
+	var import_react$135, SortDropdown;
 	var init_SortDropdown = __esmMin((() => {
-		import_react$134 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$133, SortDropdown;
-	var init_SortDropdown = __esmMin((() => {
-		import_react$133 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$135 = /* @__PURE__ */ __toESM(require_react$1());
 		init_Dropdown();
 		SortDropdown = ({ items, selectedKey: initialKey, onItemClick }) => {
 			let selectedKey = initialKey;
@@ -43943,21 +41784,12 @@ Zu diesem hinzufügen\
 			const handleItemClick = (event, itemKey) => {
 				if (onItemClick) onItemClick(event, itemKey);
 			};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$134.createElement(UIDropdown, {
+			return /*#__PURE__*/ import_react$135.createElement(UIDropdown, {
 				mods: "stick-right",
 				toggle: selectedItem.label
-			}, /*#__PURE__*/ import_react$134.createElement(UIDropdown.Menu, { className: "ui-drop-menu" }, items.map((item) => {
+			}, /*#__PURE__*/ import_react$135.createElement(UIDropdown.Menu, { className: "ui-drop-menu" }, items.map((item) => {
 				if (item.key === selectedKey) return null;
-				return /*#__PURE__*/ import_react$134.createElement(UIMenuItem, {
-========
-			return /*#__PURE__*/ import_react$133.createElement(UIDropdown, {
-				mods: "stick-right",
-				toggle: selectedItem.label
-			}, /*#__PURE__*/ import_react$133.createElement(UIDropdown.Menu, { className: "ui-drop-menu" }, items.map((item) => {
-				if (item.key === selectedKey) return null;
-				return /*#__PURE__*/ import_react$133.createElement(UIMenuItem, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$135.createElement(UIMenuItem, {
 					key: item.key,
 					onClick: (event) => handleItemClick(event, item.key),
 					href: item.href
@@ -43968,34 +41800,20 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxTitlebarRender.jsx
 	var BoxTitlebarRender_exports = /* @__PURE__ */ __exportAll({ default: () => BoxTitlebarRender });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$133, import_dedupe$3, BoxTitlebarRender;
+	var import_react$134, import_dedupe$3, BoxTitlebarRender;
 	var init_BoxTitlebarRender = __esmMin((() => {
-		import_react$133 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$132, import_dedupe$3, BoxTitlebarRender;
-	var init_BoxTitlebarRender = __esmMin((() => {
-		import_react$132 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$134 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		import_dedupe$3 = /* @__PURE__ */ __toESM(require_dedupe());
 		init_ButtonGroup();
 		init_SortDropdown();
 		init_BoxLayoutButton();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		BoxTitlebarRender = class extends import_react$133.Component {
-========
-		BoxTitlebarRender = class extends import_react$132.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxTitlebarRender = class extends import_react$134.Component {
 			constructor(props) {
 				super(props);
 			}
 			renderLayout(layout) {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$133.createElement(BoxLayoutButton, {
-========
-				return /*#__PURE__*/ import_react$132.createElement(BoxLayoutButton, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$134.createElement(BoxLayoutButton, {
 					key: layout.mode,
 					onLayoutClick: this.props.onLayoutClick,
 					layout
@@ -44010,41 +41828,23 @@ Zu diesem hinzufügen\
 				style = { minHeight: "1px" };
 				var renderCenterActions = () => {
 					if (isEmpty$1(centerActions)) return null;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$133.createElement(ButtonGroup, { mods: "tertiary small center mls" }, centerActions);
+					return /*#__PURE__*/ import_react$134.createElement(ButtonGroup, { mods: "tertiary small center mls" }, centerActions);
 				};
 				var renderOrdering = () => {
 					if (!enableOrdering) return null;
-					return /*#__PURE__*/ import_react$133.createElement(SortDropdown, {
-========
-					return /*#__PURE__*/ import_react$132.createElement(ButtonGroup, { mods: "tertiary small center mls" }, centerActions);
-				};
-				var renderOrdering = () => {
-					if (!enableOrdering) return null;
-					return /*#__PURE__*/ import_react$132.createElement(SortDropdown, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					return /*#__PURE__*/ import_react$134.createElement(SortDropdown, {
 						items: dropdownItems,
 						selectedKey: selectedSort,
 						onItemClick: onSortItemClick
 					});
 				};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$133.createElement("div", { className: classes }, /*#__PURE__*/ import_react$133.createElement("h2", {
+				return /*#__PURE__*/ import_react$134.createElement("div", { className: classes }, /*#__PURE__*/ import_react$134.createElement("h2", {
 					className: "ui-toolbar-header pls col2of6",
 					style
-				}, heading), /*#__PURE__*/ import_react$133.createElement("div", {
+				}, heading), /*#__PURE__*/ import_react$134.createElement("div", {
 					className: "col2of6",
 					style: { textAlign: "center" }
-				}, renderCenterActions()), /*#__PURE__*/ import_react$133.createElement("div", { className: "ui-toolbar-controls by-right" }, " ", /*#__PURE__*/ import_react$133.createElement(ButtonGroup, { mods: "tertiary small right mls" }, this.renderLayouts()), renderOrdering()));
-========
-				return /*#__PURE__*/ import_react$132.createElement("div", { className: classes }, /*#__PURE__*/ import_react$132.createElement("h2", {
-					className: "ui-toolbar-header pls col2of6",
-					style
-				}, heading), /*#__PURE__*/ import_react$132.createElement("div", {
-					className: "col2of6",
-					style: { textAlign: "center" }
-				}, renderCenterActions()), /*#__PURE__*/ import_react$132.createElement("div", { className: "ui-toolbar-controls by-right" }, " ", /*#__PURE__*/ import_react$132.createElement(ButtonGroup, { mods: "tertiary small right mls" }, this.renderLayouts()), renderOrdering()));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, renderCenterActions()), /*#__PURE__*/ import_react$134.createElement("div", { className: "ui-toolbar-controls by-right" }, " ", /*#__PURE__*/ import_react$134.createElement(ButtonGroup, { mods: "tertiary small right mls" }, this.renderLayouts()), renderOrdering()));
 			}
 		};
 	}));
@@ -44087,27 +41887,16 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/BoxTitlebar.jsx
 	var BoxTitlebar_exports = /* @__PURE__ */ __exportAll({ default: () => BoxTitlebar });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$132, import_dedupe$1, BoxTitlebar;
+	var import_react$133, import_dedupe$1, BoxTitlebar;
 	var init_BoxTitlebar = __esmMin((() => {
 		init_lodash();
-		import_react$132 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$131, import_dedupe$1, BoxTitlebar;
-	var init_BoxTitlebar = __esmMin((() => {
-		init_lodash();
-		import_react$131 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$133 = /* @__PURE__ */ __toESM(require_react$1());
 		init_BoxTitlebarRender();
 		init_i18n_translate();
 		import_dedupe$1 = /* @__PURE__ */ __toESM(require_dedupe());
 		init_BoxSetUrlParams();
 		init_BoxUtil();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		BoxTitlebar = class extends import_react$132.Component {
-========
-		BoxTitlebar = class extends import_react$131.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxTitlebar = class extends import_react$133.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -44178,11 +41967,7 @@ Zu diesem hinzufügen\
 				if (!this.props.collectionData || !this.props.collectionData.editable) return [];
 				var layoutChanged = this.getLayoutChanged();
 				var text = layoutChanged ? I18nTranslate("collection_layout_save") : I18nTranslate("collection_layout_saved");
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return [/*#__PURE__*/ import_react$132.createElement("a", {
-========
-				return [/*#__PURE__*/ import_react$131.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return [/*#__PURE__*/ import_react$133.createElement("a", {
 					key: "collection_layout",
 					disabled: this.getCenterDisabled(),
 					className: (0, import_dedupe$1.default)("small ui-toolbar-vis-button button", { active: !layoutChanged }),
@@ -44190,11 +41975,7 @@ Zu diesem hinzufügen\
 					onClick: layoutChanged ? (e) => {
 						this.props.layoutSave(e);
 					} : null
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$132.createElement("i", { className: "icon-fixed-width icon-eye bright" }), /*#__PURE__*/ import_react$132.createElement("span", { className: "text" }, " " + text))];
-========
-				}, /*#__PURE__*/ import_react$131.createElement("i", { className: "icon-fixed-width icon-eye bright" }), /*#__PURE__*/ import_react$131.createElement("span", { className: "text" }, " " + text))];
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, /*#__PURE__*/ import_react$133.createElement("i", { className: "icon-fixed-width icon-eye bright" }), /*#__PURE__*/ import_react$133.createElement("span", { className: "text" }, " " + text))];
 			}
 			toolbarClasses() {
 				var boxClasses = BoxUtil_default.boxClasses(this.props.mods);
@@ -44205,11 +41986,7 @@ Zu diesem hinzufügen\
 				else return null;
 			}
 			render() {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$132.createElement(BoxTitlebarRender, {
-========
-				return /*#__PURE__*/ import_react$131.createElement(BoxTitlebarRender, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$133.createElement(BoxTitlebarRender, {
 					heading: this.getHeading(),
 					mods: this.toolbarClasses(),
 					layouts: this.props.layouts,
@@ -44413,30 +42190,17 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/lib/autocomplete.jsx
 	var autocomplete_exports = /* @__PURE__ */ __exportAll({ default: () => AutoComplete$3 });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$131, import_prop_types$28, AutoComplete$3;
+	var import_react$132, import_prop_types$29, AutoComplete$3;
 	var init_autocomplete = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$131 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$28 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$130, import_prop_types$29, AutoComplete$3;
-	var init_autocomplete = __esmMin((() => {
-		init_present();
-		init_lodash();
-		import_react$130 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$132 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$29 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_typeahead_input();
 		init_ui();
 		init_search();
 		init_typeahead_utils();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		AutoComplete$3 = class extends import_react$131.Component {
-========
-		AutoComplete$3 = class extends import_react$130.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		AutoComplete$3 = class extends import_react$132.Component {
 			static propTypes = {
 				name: import_prop_types$29.default.string.isRequired,
 				resourceType: import_prop_types$29.default.oneOfType([import_prop_types$29.default.string, import_prop_types$29.default.array]).isRequired,
@@ -44460,11 +42224,7 @@ Zu diesem hinzufügen\
 			};
 			constructor(props) {
 				super(props);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				this._inputRef = /*#__PURE__*/ import_react$131.createRef();
-========
-				this._inputRef = /*#__PURE__*/ import_react$130.createRef();
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				this._inputRef = /*#__PURE__*/ import_react$132.createRef();
 				const { resourceType, searchParams, config } = props;
 				const conf = Object.assign({ minLength: 1 }, config);
 				const resourceTypes = Array.isArray(resourceType) ? resourceType : [resourceType];
@@ -44517,29 +42277,16 @@ Zu diesem hinzufügen\
 				const line = suggestionRenderer ? suggestionRenderer(item, {
 					isHighlighted,
 					inputValue
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}) : /*#__PURE__*/ import_react$131.createElement("span", null, markMatchingFragment(content, inputValue));
-				if (isDisabled) return /*#__PURE__*/ import_react$131.createElement("div", {
+				}) : /*#__PURE__*/ import_react$132.createElement("span", null, markMatchingFragment(content, inputValue));
+				if (isDisabled) return /*#__PURE__*/ import_react$132.createElement("div", {
 					className: "ui-autocomplete-disabled",
 					title: presence(existingValueHint) || t$6("meta_data_input_keywords_existing")
 				}, line);
-				return /*#__PURE__*/ import_react$131.createElement("div", null, line);
+				return /*#__PURE__*/ import_react$132.createElement("div", null, line);
 			};
 			render() {
 				const { name, value, placeholder, className, positionRelative, onAddValue } = this.props;
-				return /*#__PURE__*/ import_react$131.createElement(TypeaheadInput, {
-========
-				}) : /*#__PURE__*/ import_react$130.createElement("span", null, markMatchingFragment(content, inputValue));
-				if (isDisabled) return /*#__PURE__*/ import_react$130.createElement("div", {
-					className: "ui-autocomplete-disabled",
-					title: presence(existingValueHint) || t$6("meta_data_input_keywords_existing")
-				}, line);
-				return /*#__PURE__*/ import_react$130.createElement("div", null, line);
-			};
-			render() {
-				const { name, value, placeholder, className, positionRelative, onAddValue } = this.props;
-				return /*#__PURE__*/ import_react$130.createElement(TypeaheadInput, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$132.createElement(TypeaheadInput, {
 					inputRef: this._inputRef,
 					name,
 					defaultValue: value || "",
@@ -44557,29 +42304,16 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/autocomplete-wrapper.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$130, AutoCompleteWrapper;
+	var import_react$131, AutoCompleteWrapper;
 	var init_autocomplete_wrapper = __esmMin((() => {
-		import_react$130 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$131 = /* @__PURE__ */ __toESM(require_react$1());
 		AutoCompleteWrapper = (props) => {
-			const [AutoComplete, setAutoComplete] = (0, import_react$130.useState)(null);
-			(0, import_react$130.useEffect)(() => {
+			const [AutoComplete, setAutoComplete] = (0, import_react$131.useState)(null);
+			(0, import_react$131.useEffect)(() => {
 				const AC = (init_autocomplete(), __toCommonJS(autocomplete_exports)).default;
 				setAutoComplete(() => AC);
 			}, []);
-			return /*#__PURE__*/ import_react$130.createElement("div", null, AutoComplete ? /*#__PURE__*/ import_react$130.createElement(AutoComplete, props) : null);
-========
-	var import_react$129, AutoCompleteWrapper;
-	var init_autocomplete_wrapper = __esmMin((() => {
-		import_react$129 = /* @__PURE__ */ __toESM(require_react$1());
-		AutoCompleteWrapper = (props) => {
-			const [AutoComplete, setAutoComplete] = (0, import_react$129.useState)(null);
-			(0, import_react$129.useEffect)(() => {
-				const AC = (init_autocomplete(), __toCommonJS(autocomplete_exports)).default;
-				setAutoComplete(() => AC);
-			}, []);
-			return /*#__PURE__*/ import_react$129.createElement("div", null, AutoComplete ? /*#__PURE__*/ import_react$129.createElement(AutoComplete, props) : null);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$131.createElement("div", null, AutoComplete ? /*#__PURE__*/ import_react$131.createElement(AutoComplete, props) : null);
 		};
 	}));
 	//#endregion
@@ -44601,27 +42335,16 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/views/Shared/EditTransferResponsibility.jsx
 	var EditTransferResponsibility_exports = /* @__PURE__ */ __exportAll({ default: () => EditTransferResponsibility });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$129, EditTransferResponsibility;
+	var import_react$130, EditTransferResponsibility;
 	var init_EditTransferResponsibility = __esmMin((() => {
 		init_lodash();
-		import_react$129 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$128, EditTransferResponsibility;
-	var init_EditTransferResponsibility = __esmMin((() => {
-		init_lodash();
-		import_react$128 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$130 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
 		init_rails_form();
 		init_form_put_with_errors();
 		init_autocomplete_wrapper();
 		init_interpolate_split();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		EditTransferResponsibility = class extends import_react$129.Component {
-========
-		EditTransferResponsibility = class extends import_react$128.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		EditTransferResponsibility = class extends import_react$130.Component {
 			constructor(props) {
 				super(props);
 				this.state = {
@@ -44683,182 +42406,98 @@ Zu diesem hinzufügen\
 					}
 				})();
 				const responsibles = batch ? batchResponsibles : [responsible];
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$129.createElement("div", { className: "bright ui-container pal rounded" }, /*#__PURE__*/ import_react$129.createElement(RestForm, {
-========
-				return /*#__PURE__*/ import_react$128.createElement("div", { className: "bright ui-container pal rounded" }, /*#__PURE__*/ import_react$128.createElement(RestForm, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$130.createElement("div", { className: "bright ui-container pal rounded" }, /*#__PURE__*/ import_react$130.createElement(RestForm, {
 					ref: "form",
 					name: "transfer_responsibility",
 					action: actionUrl,
 					onSubmit: this._onImplicitSumbit,
 					method: "put",
 					authToken
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, batch ? map(batchResourceIds, (resource_id) => /*#__PURE__*/ import_react$129.createElement("input", {
-========
-				}, batch ? map(batchResourceIds, (resource_id) => /*#__PURE__*/ import_react$128.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, batch ? map(batchResourceIds, (resource_id) => /*#__PURE__*/ import_react$130.createElement("input", {
 					key: resource_id,
 					type: "hidden",
 					name: "id[]",
 					value: resource_id
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})) : void 0, this.state.errorMessage ? /*#__PURE__*/ import_react$129.createElement("div", {
+				})) : void 0, this.state.errorMessage ? /*#__PURE__*/ import_react$130.createElement("div", {
 					className: "ui-alerts",
 					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$129.createElement("div", { className: "error ui-alert" }, this.state.errorMessage)) : void 0, batch ? /*#__PURE__*/ import_react$129.createElement("h2", { className: "title-l ui-info-box-title mbm" }, interpolateSplit(I18nTranslate("transfer_responsibility_title_batch"), { forNResources: this._translateForNResources(resourceType, batchResourceIds.length) })) : /*#__PURE__*/ import_react$129.createElement("h2", { className: "title-l ui-info-box-title mbm" }, I18nTranslate("transfer_responsibility_title_single")), /*#__PURE__*/ import_react$129.createElement("div", { className: "title-m " }, I18nTranslate("transfer_responsibility_currently_responsible")), /*#__PURE__*/ import_react$129.createElement("div", { className: "mbm" }, (() => {
+				}, /*#__PURE__*/ import_react$130.createElement("div", { className: "error ui-alert" }, this.state.errorMessage)) : void 0, batch ? /*#__PURE__*/ import_react$130.createElement("h2", { className: "title-l ui-info-box-title mbm" }, interpolateSplit(I18nTranslate("transfer_responsibility_title_batch"), { forNResources: this._translateForNResources(resourceType, batchResourceIds.length) })) : /*#__PURE__*/ import_react$130.createElement("h2", { className: "title-l ui-info-box-title mbm" }, I18nTranslate("transfer_responsibility_title_single")), /*#__PURE__*/ import_react$130.createElement("div", { className: "title-m " }, I18nTranslate("transfer_responsibility_currently_responsible")), /*#__PURE__*/ import_react$130.createElement("div", { className: "mbm" }, (() => {
 					const result = [];
 					for (var idx in responsibles) {
 						var r = responsibles[idx];
-						result.push(/*#__PURE__*/ import_react$129.createElement("div", { key: idx }, r.name, responsibles.length > 1 ? ` ${this._translateForNResources(resourceType, r.nofResources)}` : void 0));
+						result.push(/*#__PURE__*/ import_react$130.createElement("div", { key: idx }, r.name, responsibles.length > 1 ? ` ${this._translateForNResources(resourceType, r.nofResources)}` : void 0));
 					}
 					return result;
-				})()), /*#__PURE__*/ import_react$129.createElement("div", { className: "title-m" }, I18nTranslate("transfer_responsibility_to")), /*#__PURE__*/ import_react$129.createElement("div", {
+				})()), /*#__PURE__*/ import_react$130.createElement("div", { className: "title-m" }, I18nTranslate("transfer_responsibility_to")), /*#__PURE__*/ import_react$130.createElement("div", {
 					className: "ui-rights-user",
 					style: this._displayBlockIf(this.state.selectedEntity)
-				}, /*#__PURE__*/ import_react$129.createElement("a", {
+				}, /*#__PURE__*/ import_react$130.createElement("a", {
 					onClick: this.handleEntityClear,
 					className: "button small ui-rights-remove icon-close small",
 					title: I18nTranslate("permissions_table_remove_subject_btn")
-				}), /*#__PURE__*/ import_react$129.createElement("input", {
+				}), /*#__PURE__*/ import_react$130.createElement("input", {
 					type: "hidden",
 					name: "transfer_responsibility[entity]",
 					value: this.state.selectedEntity ? this.state.selectedEntity.uuid : ""
-				}), /*#__PURE__*/ import_react$129.createElement("input", {
+				}), /*#__PURE__*/ import_react$130.createElement("input", {
 					type: "hidden",
 					name: "transfer_responsibility[type]",
 					value: this.state.selectedEntity ? this.state.selectedEntity.type : ""
-				}), /*#__PURE__*/ import_react$129.createElement("span", { className: "text" }, this.state.selectedEntity ? this.state.selectedEntity.name : void 0)), /*#__PURE__*/ import_react$129.createElement("div", { style: this._displayBlockIf(!this.state.selectedEntity) }, /*#__PURE__*/ import_react$129.createElement(AutoCompleteWrapper, {
-========
-				})) : void 0, this.state.errorMessage ? /*#__PURE__*/ import_react$128.createElement("div", {
-					className: "ui-alerts",
-					style: { marginBottom: "10px" }
-				}, /*#__PURE__*/ import_react$128.createElement("div", { className: "error ui-alert" }, this.state.errorMessage)) : void 0, batch ? /*#__PURE__*/ import_react$128.createElement("h2", { className: "title-l ui-info-box-title mbm" }, interpolateSplit(I18nTranslate("transfer_responsibility_title_batch"), { forNResources: this._translateForNResources(resourceType, batchResourceIds.length) })) : /*#__PURE__*/ import_react$128.createElement("h2", { className: "title-l ui-info-box-title mbm" }, I18nTranslate("transfer_responsibility_title_single")), /*#__PURE__*/ import_react$128.createElement("div", { className: "title-m " }, I18nTranslate("transfer_responsibility_currently_responsible")), /*#__PURE__*/ import_react$128.createElement("div", { className: "mbm" }, (() => {
-					const result = [];
-					for (var idx in responsibles) {
-						var r = responsibles[idx];
-						result.push(/*#__PURE__*/ import_react$128.createElement("div", { key: idx }, r.name, responsibles.length > 1 ? ` ${this._translateForNResources(resourceType, r.nofResources)}` : void 0));
-					}
-					return result;
-				})()), /*#__PURE__*/ import_react$128.createElement("div", { className: "title-m" }, I18nTranslate("transfer_responsibility_to")), /*#__PURE__*/ import_react$128.createElement("div", {
-					className: "ui-rights-user",
-					style: this._displayBlockIf(this.state.selectedEntity)
-				}, /*#__PURE__*/ import_react$128.createElement("a", {
-					onClick: this.handleEntityClear,
-					className: "button small ui-rights-remove icon-close small",
-					title: I18nTranslate("permissions_table_remove_subject_btn")
-				}), /*#__PURE__*/ import_react$128.createElement("input", {
-					type: "hidden",
-					name: "transfer_responsibility[entity]",
-					value: this.state.selectedEntity ? this.state.selectedEntity.uuid : ""
-				}), /*#__PURE__*/ import_react$128.createElement("input", {
-					type: "hidden",
-					name: "transfer_responsibility[type]",
-					value: this.state.selectedEntity ? this.state.selectedEntity.type : ""
-				}), /*#__PURE__*/ import_react$128.createElement("span", { className: "text" }, this.state.selectedEntity ? this.state.selectedEntity.name : void 0)), /*#__PURE__*/ import_react$128.createElement("div", { style: this._displayBlockIf(!this.state.selectedEntity) }, /*#__PURE__*/ import_react$128.createElement(AutoCompleteWrapper, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$130.createElement("span", { className: "text" }, this.state.selectedEntity ? this.state.selectedEntity.name : void 0)), /*#__PURE__*/ import_react$130.createElement("div", { style: this._displayBlockIf(!this.state.selectedEntity) }, /*#__PURE__*/ import_react$130.createElement(AutoCompleteWrapper, {
 					className: "block",
 					name: "transfer_responsibility[unused_look_at_the_hidden_user]",
 					resourceType: ["Delegations", "Users"],
 					onSelect: this.handleEntitySelect,
 					searchParams: { search_also_in_person: true },
 					positionRelative: true
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})), /*#__PURE__*/ import_react$129.createElement("div", null, /*#__PURE__*/ import_react$129.createElement("h2", { className: "title-m ui-info-box-title mtm mbs" }, responsibles.length === 1 ? responsibles[0].uuid === currentUser.uuid ? interpolateSplit(I18nTranslate("transfer_responsibility_you_will_receive"), { name: responsibles[0].name }).join("") : interpolateSplit(I18nTranslate("transfer_responsibility_single_will_receive"), { name: responsibles[0].name }).join("") : I18nTranslate("transfer_responsibility_multiple_will_receive")), /*#__PURE__*/ import_react$129.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$129.createElement("tbody", null, /*#__PURE__*/ import_react$129.createElement("tr", null, /*#__PURE__*/ import_react$129.createElement("td", { style: {
+				})), /*#__PURE__*/ import_react$130.createElement("div", null, /*#__PURE__*/ import_react$130.createElement("h2", { className: "title-m ui-info-box-title mtm mbs" }, responsibles.length === 1 ? responsibles[0].uuid === currentUser.uuid ? interpolateSplit(I18nTranslate("transfer_responsibility_you_will_receive"), { name: responsibles[0].name }).join("") : interpolateSplit(I18nTranslate("transfer_responsibility_single_will_receive"), { name: responsibles[0].name }).join("") : I18nTranslate("transfer_responsibility_multiple_will_receive")), /*#__PURE__*/ import_react$130.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$130.createElement("tbody", null, /*#__PURE__*/ import_react$130.createElement("tr", null, /*#__PURE__*/ import_react$130.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, I18nTranslate("permission_name_get_metadata_and_previews")), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$129.createElement("td", { style: {
+				} }, I18nTranslate("permission_name_get_metadata_and_previews")), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$130.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, I18nTranslate("permission_name_get_full_size")) : void 0, /*#__PURE__*/ import_react$129.createElement("td", { style: {
+				} }, I18nTranslate("permission_name_get_full_size")) : void 0, /*#__PURE__*/ import_react$130.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, resourceType === "Collection" ? I18nTranslate("permission_name_edit_metadata_and_relations") : I18nTranslate("permission_name_edit_metadata")), /*#__PURE__*/ import_react$129.createElement("td", { style: {
+				} }, resourceType === "Collection" ? I18nTranslate("permission_name_edit_metadata_and_relations") : I18nTranslate("permission_name_edit_metadata")), /*#__PURE__*/ import_react$130.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, I18nTranslate("permission_name_edit_permissions"))), /*#__PURE__*/ import_react$129.createElement("tr", null, /*#__PURE__*/ import_react$129.createElement("td", { style: {
+				} }, I18nTranslate("permission_name_edit_permissions"))), /*#__PURE__*/ import_react$130.createElement("tr", null, /*#__PURE__*/ import_react$130.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, /*#__PURE__*/ import_react$129.createElement("input", {
-========
-				})), /*#__PURE__*/ import_react$128.createElement("div", null, /*#__PURE__*/ import_react$128.createElement("h2", { className: "title-m ui-info-box-title mtm mbs" }, responsibles.length === 1 ? responsibles[0].uuid === currentUser.uuid ? interpolateSplit(I18nTranslate("transfer_responsibility_you_will_receive"), { name: responsibles[0].name }).join("") : interpolateSplit(I18nTranslate("transfer_responsibility_single_will_receive"), { name: responsibles[0].name }).join("") : I18nTranslate("transfer_responsibility_multiple_will_receive")), /*#__PURE__*/ import_react$128.createElement("table", { className: "ui-rights-group" }, /*#__PURE__*/ import_react$128.createElement("tbody", null, /*#__PURE__*/ import_react$128.createElement("tr", null, /*#__PURE__*/ import_react$128.createElement("td", { style: {
-					textAlign: "center",
-					border: "0px"
-				} }, I18nTranslate("permission_name_get_metadata_and_previews")), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$128.createElement("td", { style: {
-					textAlign: "center",
-					border: "0px"
-				} }, I18nTranslate("permission_name_get_full_size")) : void 0, /*#__PURE__*/ import_react$128.createElement("td", { style: {
-					textAlign: "center",
-					border: "0px"
-				} }, resourceType === "Collection" ? I18nTranslate("permission_name_edit_metadata_and_relations") : I18nTranslate("permission_name_edit_metadata")), /*#__PURE__*/ import_react$128.createElement("td", { style: {
-					textAlign: "center",
-					border: "0px"
-				} }, I18nTranslate("permission_name_edit_permissions"))), /*#__PURE__*/ import_react$128.createElement("tr", null, /*#__PURE__*/ import_react$128.createElement("td", { style: {
-					textAlign: "center",
-					border: "0px"
-				} }, /*#__PURE__*/ import_react$128.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				} }, /*#__PURE__*/ import_react$130.createElement("input", {
 					type: "checkbox",
 					name: "transfer_responsibility[permissions][view]",
 					checked: this.state.permissionLevel >= 1,
 					onChange: (event) => this._onToggleCheckbox(1, event)
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$129.createElement("td", { style: {
+				})), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$130.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, /*#__PURE__*/ import_react$129.createElement("input", {
-========
-				})), resourceType === "MediaEntry" ? /*#__PURE__*/ import_react$128.createElement("td", { style: {
-					textAlign: "center",
-					border: "0px"
-				} }, /*#__PURE__*/ import_react$128.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				} }, /*#__PURE__*/ import_react$130.createElement("input", {
 					type: "checkbox",
 					name: "transfer_responsibility[permissions][download]",
 					checked: this.state.permissionLevel >= 2,
 					onChange: (event) => this._onToggleCheckbox(2, event)
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})) : void 0, /*#__PURE__*/ import_react$129.createElement("td", { style: {
+				})) : void 0, /*#__PURE__*/ import_react$130.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, /*#__PURE__*/ import_react$129.createElement("input", {
-========
-				})) : void 0, /*#__PURE__*/ import_react$128.createElement("td", { style: {
-					textAlign: "center",
-					border: "0px"
-				} }, /*#__PURE__*/ import_react$128.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				} }, /*#__PURE__*/ import_react$130.createElement("input", {
 					type: "checkbox",
 					name: "transfer_responsibility[permissions][edit]",
 					checked: this.state.permissionLevel >= 3,
 					onChange: (event) => this._onToggleCheckbox(3, event)
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})), /*#__PURE__*/ import_react$129.createElement("td", { style: {
+				})), /*#__PURE__*/ import_react$130.createElement("td", { style: {
 					textAlign: "center",
 					border: "0px"
-				} }, /*#__PURE__*/ import_react$129.createElement("input", {
-========
-				})), /*#__PURE__*/ import_react$128.createElement("td", { style: {
-					textAlign: "center",
-					border: "0px"
-				} }, /*#__PURE__*/ import_react$128.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				} }, /*#__PURE__*/ import_react$130.createElement("input", {
 					type: "checkbox",
 					name: "transfer_responsibility[permissions][manage]",
 					checked: this.state.permissionLevel >= 4,
 					onChange: (event) => this._onToggleCheckbox(4, event)
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})))))), /*#__PURE__*/ import_react$129.createElement("div", { className: "ui-actions phl pbl mtl" }, /*#__PURE__*/ import_react$129.createElement("a", {
+				})))))), /*#__PURE__*/ import_react$130.createElement("div", { className: "ui-actions phl pbl mtl" }, /*#__PURE__*/ import_react$130.createElement("a", {
 					className: "link weak",
 					onClick: onClose
-				}, " ", I18nTranslate("transfer_responsibility_cancel"), " "), /*#__PURE__*/ import_react$129.createElement("button", {
-========
-				})))))), /*#__PURE__*/ import_react$128.createElement("div", { className: "ui-actions phl pbl mtl" }, /*#__PURE__*/ import_react$128.createElement("a", {
-					className: "link weak",
-					onClick: onClose
-				}, " ", I18nTranslate("transfer_responsibility_cancel"), " "), /*#__PURE__*/ import_react$128.createElement("button", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, " ", I18nTranslate("transfer_responsibility_cancel"), " "), /*#__PURE__*/ import_react$130.createElement("button", {
 					disabled: !this.state.selectedEntity || this.state.saving,
 					className: "primary-button large",
 					onClick: this._onExplicitSubmit,
@@ -44884,23 +42523,13 @@ Zu diesem hinzufügen\
 		}, {});
 		return Object.values(map).sort((r) => r.name);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$128, BoxTransfer;
+	var import_react$129, BoxTransfer;
 	var init_BoxTransfer = __esmMin((() => {
-		import_react$128 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$129 = /* @__PURE__ */ __toESM(require_react$1());
 		init_lodash();
 		init_Modal();
 		init_EditTransferResponsibility();
-		BoxTransfer = class extends import_react$128.Component {
-========
-	var import_react$127, BoxTransfer;
-	var init_BoxTransfer = __esmMin((() => {
-		import_react$127 = /* @__PURE__ */ __toESM(require_react$1());
-		init_lodash();
-		init_Modal();
-		init_EditTransferResponsibility();
-		BoxTransfer = class extends import_react$127.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		BoxTransfer = class extends import_react$129.Component {
 			constructor(props) {
 				super(props);
 			}
@@ -44909,11 +42538,7 @@ Zu diesem hinzufügen\
 				const resource_ids = map(transferResources, "uuid");
 				const responsibles = extractResponsibles(transferResources);
 				const batch_type = transferResources[0].type;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$128.createElement(Modal, { widthInPixel: 800 }, /*#__PURE__*/ import_react$128.createElement(EditTransferResponsibility, {
-========
-				return /*#__PURE__*/ import_react$127.createElement(Modal, { widthInPixel: 800 }, /*#__PURE__*/ import_react$127.createElement(EditTransferResponsibility, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$129.createElement(Modal, { widthInPixel: 800 }, /*#__PURE__*/ import_react$129.createElement(EditTransferResponsibility, {
 					authToken: this.props.authToken,
 					batch: true,
 					resourceType: batch_type,
@@ -44931,25 +42556,14 @@ Zu diesem hinzufügen\
 	//#endregion
 	//#region app/javascript/react/decorators/ExploreLayout.jsx
 	var ExploreLayout_exports = /* @__PURE__ */ __exportAll({ default: () => ExploreLayout });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$127, ExploreLayout;
+	var import_react$128, ExploreLayout;
 	var init_ExploreLayout = __esmMin((() => {
-		import_react$127 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$128 = /* @__PURE__ */ __toESM(require_react$1());
 		ExploreLayout = ({ sections }) => {
-			return /*#__PURE__*/ import_react$127.createElement("div", null, /*#__PURE__*/ import_react$127.createElement("div", {
+			return /*#__PURE__*/ import_react$128.createElement("div", null, /*#__PURE__*/ import_react$128.createElement("div", {
 				className: "app-body-ui-container pts context-home",
 				style: { width: "1000px" }
-			}, /*#__PURE__*/ import_react$127.createElement("a", {
-========
-	var import_react$126, ExploreLayout;
-	var init_ExploreLayout = __esmMin((() => {
-		import_react$126 = /* @__PURE__ */ __toESM(require_react$1());
-		ExploreLayout = ({ sections }) => {
-			return /*#__PURE__*/ import_react$126.createElement("div", null, /*#__PURE__*/ import_react$126.createElement("div", {
-				className: "app-body-ui-container pts context-home",
-				style: { width: "1000px" }
-			}, /*#__PURE__*/ import_react$126.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$128.createElement("a", {
 				className: "strong",
 				style: {
 					position: "relative",
@@ -44958,11 +42572,7 @@ Zu diesem hinzufügen\
 				href: "/explore"
 			}, "Zurück"), sections.map((section, index) => {
 				const list = [];
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const separator = /*#__PURE__*/ import_react$127.createElement("hr", {
-========
-				const separator = /*#__PURE__*/ import_react$126.createElement("hr", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				const separator = /*#__PURE__*/ import_react$128.createElement("hr", {
 					key: `separator_${index}`,
 					className: "separator"
 				});
@@ -44994,17 +42604,10 @@ Zu diesem hinzufügen\
 			suggestions: [defaultText, ...metaKey.copyright_notice_templates || []].filter(Boolean)
 		};
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$126, import_prop_types$27, import_classnames$19, InputFieldText, InputWithSuggestions;
+	var import_react$127, import_prop_types$28, import_classnames$19, InputFieldText, InputWithSuggestions;
 	var init_input_field_text = __esmMin((() => {
-		import_react$126 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$27 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$125, import_prop_types$28, import_classnames$19, InputFieldText, InputWithSuggestions;
-	var init_input_field_text = __esmMin((() => {
-		import_react$125 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$127 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$28 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		import_classnames$19 = /* @__PURE__ */ __toESM(require_classnames());
 		init_downshift_esm();
 		init_typeahead_utils();
@@ -45012,11 +42615,7 @@ Zu diesem hinzufügen\
 			const { name, type, value, placeholder, className, metaKey, onChange, batch } = props;
 			const { defaultText, suggestions } = getDefaultTextAndSuggestionsFor(metaKey);
 			const defaultValue = batch ? "" : defaultText;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (suggestions.length > 0) return /*#__PURE__*/ import_react$126.createElement(InputWithSuggestions, {
-========
-			if (suggestions.length > 0) return /*#__PURE__*/ import_react$125.createElement(InputWithSuggestions, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			if (suggestions.length > 0) return /*#__PURE__*/ import_react$127.createElement(InputWithSuggestions, {
 				name,
 				value,
 				defaultValue,
@@ -45033,11 +42632,7 @@ Zu diesem hinzufügen\
 					placeholder,
 					className: (0, import_classnames$19.default)(className, "block")
 				};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$126.createElement(Element, _extends$16({
-========
-				return /*#__PURE__*/ import_react$125.createElement(Element, _extends$16({
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$127.createElement(Element, _extends$16({
 					type: type || "text",
 					defaultValue: value || defaultValue,
 					style: {
@@ -45057,38 +42652,23 @@ Zu diesem hinzufügen\
 					if (onChange) onChange({ target: { value: selectedItem } });
 				}
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$126.createElement("div", {
+			return /*#__PURE__*/ import_react$127.createElement("div", {
 				className: "ui-autocomplete-holder ui-autocomplete-position-relative",
 				style: { position: "relative" }
-			}, /*#__PURE__*/ import_react$126.createElement("input", getInputProps({
-========
-			return /*#__PURE__*/ import_react$125.createElement("div", {
-				className: "ui-autocomplete-holder ui-autocomplete-position-relative",
-				style: { position: "relative" }
-			}, /*#__PURE__*/ import_react$125.createElement("input", getInputProps({
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}, /*#__PURE__*/ import_react$127.createElement("input", getInputProps({
 				type: "text",
 				name,
 				placeholder,
 				className: (0, import_classnames$19.default)(className, "block", "ui-typeahead-input"),
 				"aria-label": placeholder || name || "search",
 				"data-autocomplete-for": name
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			})), /*#__PURE__*/ import_react$126.createElement("ul", _extends$16({}, getMenuProps(), {
-========
-			})), /*#__PURE__*/ import_react$125.createElement("ul", _extends$16({}, getMenuProps(), {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			})), /*#__PURE__*/ import_react$127.createElement("ul", _extends$16({}, getMenuProps(), {
 				className: (0, import_classnames$19.default)("ui-autocomplete", "ui-menu", "ui-autocomplete-open-width", {
 					hidden: !isOpen || suggestions.length === 0,
 					"tt-open": isOpen
 				}),
 				style: { display: isOpen && suggestions.length > 0 ? void 0 : "none" }
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			}), isOpen && suggestions.map((item, index) => /*#__PURE__*/ import_react$126.createElement("li", _extends$16({ key: index }, getItemProps({
-========
-			}), isOpen && suggestions.map((item, index) => /*#__PURE__*/ import_react$125.createElement("li", _extends$16({ key: index }, getItemProps({
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			}), isOpen && suggestions.map((item, index) => /*#__PURE__*/ import_react$127.createElement("li", _extends$16({ key: index }, getItemProps({
 				item,
 				index
 			}), { className: (0, import_classnames$19.default)("ui-menu-item", { "ui-autocomplete-cursor": highlightedIndex === index }, "tt-selectable") }), markMatchingFragment(item, inputValue)))));
@@ -45104,34 +42684,20 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/input-text-async.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$125, import_prop_types$26, InputTextAsync;
+	var import_react$126, import_prop_types$27, InputTextAsync;
 	var init_input_text_async = __esmMin((() => {
-		import_react$125 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$26 = /* @__PURE__ */ __toESM(require_prop_types());
-		init_input_field_text();
-		InputTextAsync = ({ name, values: initialValues, metaKey, onChange, subForms, batch }) => {
-			const [values, setValues] = (0, import_react$125.useState)(initialValues);
-========
-	var import_react$124, import_prop_types$27, InputTextAsync;
-	var init_input_text_async = __esmMin((() => {
-		import_react$124 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$126 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$27 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_input_field_text();
 		InputTextAsync = ({ name, values: initialValues, metaKey, onChange, subForms, batch }) => {
-			const [values, setValues] = (0, import_react$124.useState)(initialValues);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			const [values, setValues] = (0, import_react$126.useState)(initialValues);
 			const handleChange = (event) => {
 				const newValues = [event.target.value];
 				setValues(newValues);
 				if (onChange) onChange(newValues);
 			};
 			const value = values.length === 0 ? "" : values[0];
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$125.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$125.createElement("div", { className: "form-item-values" }, /*#__PURE__*/ import_react$125.createElement(InputFieldText, {
-========
-			return /*#__PURE__*/ import_react$124.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$124.createElement("div", { className: "form-item-values" }, /*#__PURE__*/ import_react$124.createElement(InputFieldText, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$126.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$126.createElement("div", { className: "form-item-values" }, /*#__PURE__*/ import_react$126.createElement(InputFieldText, {
 				onChange: handleChange,
 				name,
 				value,
@@ -45169,17 +42735,10 @@ Zu diesem hinzufügen\
 			values: [value]
 		};
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$124, import_prop_types$25, t$4, SUBTYPES, formatDuration, parseDuration, InputTextDate;
+	var import_react$125, import_prop_types$26, t$4, SUBTYPES, formatDuration, parseDuration, InputTextDate;
 	var init_InputTextDate = __esmMin((() => {
-		import_react$124 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$25 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$123, import_prop_types$26, t$4, SUBTYPES, formatDuration, parseDuration, InputTextDate;
-	var init_InputTextDate = __esmMin((() => {
-		import_react$123 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$125 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$26 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_lodash();
 		init_ui();
 		init_DatePicker();
@@ -45191,11 +42750,7 @@ Zu diesem hinzufügen\
 		];
 		formatDuration = (DateValues) => compact(DateValues).join(" - ");
 		parseDuration = (MdValues) => isString(MdValues[0]) && MdValues[0].split(" - ");
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		InputTextDate = class extends import_react$124.Component {
-========
-		InputTextDate = class extends import_react$123.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		InputTextDate = class extends import_react$125.Component {
 			constructor(props) {
 				super(props);
 				const { subType, values } = getInitialState(props.values);
@@ -45233,38 +42788,21 @@ Zu diesem hinzufügen\
 				const { id, name } = props;
 				const { subType, values } = state;
 				const stringifiedValue = this._formatValues(values);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$124.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$124.createElement("input", {
+				return /*#__PURE__*/ import_react$125.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$125.createElement("input", {
 					type: "hidden",
 					name,
 					value: stringifiedValue
-				}), /*#__PURE__*/ import_react$124.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$124.createElement("div", { className: "mrs" }, /*#__PURE__*/ import_react$124.createElement("select", {
-========
-				return /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$123.createElement("input", {
-					type: "hidden",
-					name,
-					value: stringifiedValue
-				}), /*#__PURE__*/ import_react$123.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$123.createElement("div", { className: "mrs" }, /*#__PURE__*/ import_react$123.createElement("select", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$125.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$125.createElement("div", { className: "mrs" }, /*#__PURE__*/ import_react$125.createElement("select", {
 					id: `${id}.select-input-type`,
 					className: "block",
 					onChange: this._onSelectSubtype,
 					value: subType
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, SUBTYPES.map((type) => /*#__PURE__*/ import_react$124.createElement("option", {
+				}, SUBTYPES.map((type) => /*#__PURE__*/ import_react$125.createElement("option", {
 					value: type,
 					key: type
-				}, t$4(`meta_data_input_date_type_${type}`)))))), /*#__PURE__*/ import_react$124.createElement("div", null, (() => {
+				}, t$4(`meta_data_input_date_type_${type}`)))))), /*#__PURE__*/ import_react$125.createElement("div", null, (() => {
 					switch (subType) {
-						case "text": return /*#__PURE__*/ import_react$124.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$124.createElement("input", {
-========
-				}, SUBTYPES.map((type) => /*#__PURE__*/ import_react$123.createElement("option", {
-					value: type,
-					key: type
-				}, t$4(`meta_data_input_date_type_${type}`)))))), /*#__PURE__*/ import_react$123.createElement("div", null, (() => {
-					switch (subType) {
-						case "text": return /*#__PURE__*/ import_react$123.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$123.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						case "text": return /*#__PURE__*/ import_react$125.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$125.createElement("input", {
 							type: "text",
 							className: "block",
 							placeholder: t$4("meta_data_input_date_placeholder_timestamp"),
@@ -45274,11 +42812,7 @@ Zu diesem hinzufügen\
 								this.inputEl = el;
 							}
 						}));
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						case "timestamp": return /*#__PURE__*/ import_react$124.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$124.createElement(DatePicker, {
-========
-						case "timestamp": return /*#__PURE__*/ import_react$123.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$123.createElement(DatePicker, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						case "timestamp": return /*#__PURE__*/ import_react$125.createElement("div", { className: "col2of3" }, /*#__PURE__*/ import_react$125.createElement(DatePicker, {
 							id,
 							className: "block",
 							value: state.values[0],
@@ -45288,11 +42822,7 @@ Zu diesem hinzufügen\
 								this.inputEl = el;
 							}
 						}));
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						case "duration": return /*#__PURE__*/ import_react$124.createElement("div", null, /*#__PURE__*/ import_react$124.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$124.createElement("div", { className: "mrx" }, /*#__PURE__*/ import_react$124.createElement(DatePicker, {
-========
-						case "duration": return /*#__PURE__*/ import_react$123.createElement("div", null, /*#__PURE__*/ import_react$123.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$123.createElement("div", { className: "mrx" }, /*#__PURE__*/ import_react$123.createElement(DatePicker, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						case "duration": return /*#__PURE__*/ import_react$125.createElement("div", null, /*#__PURE__*/ import_react$125.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$125.createElement("div", { className: "mrx" }, /*#__PURE__*/ import_react$125.createElement(DatePicker, {
 							id: `${id}.from`,
 							className: "block",
 							value: state.values[0],
@@ -45301,11 +42831,7 @@ Zu diesem hinzufügen\
 							ref: (el) => {
 								this.inputEl = el;
 							}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						}))), /*#__PURE__*/ import_react$124.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$124.createElement("div", { className: "mlx" }, /*#__PURE__*/ import_react$124.createElement(DatePicker, {
-========
-						}))), /*#__PURE__*/ import_react$123.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$123.createElement("div", { className: "mlx" }, /*#__PURE__*/ import_react$123.createElement(DatePicker, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						}))), /*#__PURE__*/ import_react$125.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$125.createElement("div", { className: "mlx" }, /*#__PURE__*/ import_react$125.createElement(DatePicker, {
 							id: `${id}.to`,
 							className: "block",
 							value: state.values[1],
@@ -46124,19 +43650,11 @@ Zu diesem hinzufügen\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/new-person-widget.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$123, import_prop_types$24, import_Tab$2, import_Nav, import_NavItem, import_ui_components$16, PEOPLE_SUBTYPES, SUPPORTED_PEOPLE_SUBTYPES, NewPersonWidget;
+	var import_react$124, import_prop_types$25, import_Tab$2, import_Nav, import_NavItem, import_ui_components$16, PEOPLE_SUBTYPES, SUPPORTED_PEOPLE_SUBTYPES, NewPersonWidget;
 	var init_new_person_widget = __esmMin((() => {
 		init_lodash();
-		import_react$123 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$24 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$122, import_prop_types$25, import_Tab$2, import_Nav, import_NavItem, import_ui_components$16, PEOPLE_SUBTYPES, SUPPORTED_PEOPLE_SUBTYPES, NewPersonWidget;
-	var init_new_person_widget = __esmMin((() => {
-		init_lodash();
-		import_react$122 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$124 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$25 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_ui();
 		import_Tab$2 = /* @__PURE__ */ __toESM(require_Tab());
 		import_Nav = /* @__PURE__ */ __toESM(require_Nav());
@@ -46145,11 +43663,7 @@ Zu diesem hinzufügen\
 		import_ui_components$16 = /* @__PURE__ */ __toESM(require_ui_components());
 		({PEOPLE_SUBTYPES: PEOPLE_SUBTYPES} = MadekPropTypes);
 		SUPPORTED_PEOPLE_SUBTYPES = ["Person", "PeopleGroup"];
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		NewPersonWidget = class extends import_react$123.Component {
-========
-		NewPersonWidget = class extends import_react$122.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		NewPersonWidget = class extends import_react$124.Component {
 			static propTypes = {
 				id: import_prop_types$25.default.string.isRequired,
 				onAddValue: import_prop_types$25.default.func.isRequired,
@@ -46181,11 +43695,7 @@ Zu diesem hinzufügen\
 				return this.setState({ newPerson: assignIn(this.state.newPerson, set({}, key, event.target.value)) });
 			};
 			_inputField = (key) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$123.createElement("input", {
-========
-				return /*#__PURE__*/ import_react$122.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$124.createElement("input", {
 					type: "text",
 					className: "block",
 					name: key,
@@ -46206,82 +43716,44 @@ Zu diesem hinzufügen\
 				if (!some(allowedTypes, (t) => includes(SUPPORTED_PEOPLE_SUBTYPES, t))) return false;
 				else {
 					const paneClass = "ui-container pam bordered rounded-right rounded-bottom";
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$123.createElement("div", { onKeyPress: this._onKeyPress }, /*#__PURE__*/ import_react$123.createElement("a", {
+					return /*#__PURE__*/ import_react$124.createElement("div", { onKeyPress: this._onKeyPress }, /*#__PURE__*/ import_react$124.createElement("a", {
 						className: "button small form-widget-toggle",
 						onClick: this._toggleOpen
-					}, /*#__PURE__*/ import_react$123.createElement(import_ui_components$16.Icon, {
+					}, /*#__PURE__*/ import_react$124.createElement(import_ui_components$16.Icon, {
 						i: "privacy-private",
 						mods: "small"
-					}), !this.state.isOpen ? ` ${t$6("meta_data_input_new_person_toggle")}` : void 0), this.state.isOpen ? /*#__PURE__*/ import_react$123.createElement(import_Tab$2.default.Container, {
-========
-					return /*#__PURE__*/ import_react$122.createElement("div", { onKeyPress: this._onKeyPress }, /*#__PURE__*/ import_react$122.createElement("a", {
-						className: "button small form-widget-toggle",
-						onClick: this._toggleOpen
-					}, /*#__PURE__*/ import_react$122.createElement(import_ui_components$16.Icon, {
-						i: "privacy-private",
-						mods: "small"
-					}), !this.state.isOpen ? ` ${t$6("meta_data_input_new_person_toggle")}` : void 0), this.state.isOpen ? /*#__PURE__*/ import_react$122.createElement(import_Tab$2.default.Container, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}), !this.state.isOpen ? ` ${t$6("meta_data_input_new_person_toggle")}` : void 0), this.state.isOpen ? /*#__PURE__*/ import_react$124.createElement(import_Tab$2.default.Container, {
 						id,
 						className: "form-widget",
 						defaultActiveKey: "Person",
 						onSelect: this._onTabChange
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					}, /*#__PURE__*/ import_react$123.createElement("div", null, /*#__PURE__*/ import_react$123.createElement(import_Nav.default, { className: "ui-tabs ui-container" }, /*#__PURE__*/ import_react$123.createElement(import_NavItem.default, {
-========
-					}, /*#__PURE__*/ import_react$122.createElement("div", null, /*#__PURE__*/ import_react$122.createElement(import_Nav.default, { className: "ui-tabs ui-container" }, /*#__PURE__*/ import_react$122.createElement(import_NavItem.default, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}, /*#__PURE__*/ import_react$124.createElement("div", null, /*#__PURE__*/ import_react$124.createElement(import_Nav.default, { className: "ui-tabs ui-container" }, /*#__PURE__*/ import_react$124.createElement(import_NavItem.default, {
 						eventKey: "Person",
 						className: "ui-tabs-item mll pls"
 					}, `\
 Person\
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-`), /*#__PURE__*/ import_react$123.createElement(import_NavItem.default, {
-========
-`), /*#__PURE__*/ import_react$122.createElement(import_NavItem.default, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+`), /*#__PURE__*/ import_react$124.createElement(import_NavItem.default, {
 						eventKey: "PeopleGroup",
 						className: "ui-tabs-item"
 					}, `\
 Group\
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-`)), /*#__PURE__*/ import_react$123.createElement(import_Tab$2.default.Content, {
+`)), /*#__PURE__*/ import_react$124.createElement(import_Tab$2.default.Content, {
 						animation: false,
 						className: "ui-tab-content mbs"
 					}, allowedTypes.map((type) => {
-						if (type === "Person") return /*#__PURE__*/ import_react$123.createElement(import_Tab$2.default.Pane, {
+						if (type === "Person") return /*#__PURE__*/ import_react$124.createElement(import_Tab$2.default.Pane, {
 							eventKey: type,
 							className: paneClass,
 							key: type
-						}, /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$123.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_first_name")), /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$123.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_last_name")), /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, this._inputField("last_name"))), /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$123.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_pseudonym")), /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, this._inputField("pseudonym"))), /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$123.createElement("button", {
+						}, /*#__PURE__*/ import_react$124.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$124.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_first_name")), /*#__PURE__*/ import_react$124.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$124.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$124.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_last_name")), /*#__PURE__*/ import_react$124.createElement("div", { className: "form-item" }, this._inputField("last_name"))), /*#__PURE__*/ import_react$124.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$124.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_pseudonym")), /*#__PURE__*/ import_react$124.createElement("div", { className: "form-item" }, this._inputField("pseudonym"))), /*#__PURE__*/ import_react$124.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$124.createElement("button", {
 							className: "add-person button block",
 							onClick: this._onSubmit
 						}, t$6("meta_data_input_new_person_add"))));
-						else if (type === "PeopleGroup") return /*#__PURE__*/ import_react$123.createElement(import_Tab$2.default.Pane, {
+						else if (type === "PeopleGroup") return /*#__PURE__*/ import_react$124.createElement(import_Tab$2.default.Pane, {
 							eventKey: type,
 							className: paneClass,
 							key: type
-						}, /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$123.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_group_name")), /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$123.createElement("button", {
-========
-`)), /*#__PURE__*/ import_react$122.createElement(import_Tab$2.default.Content, {
-						animation: false,
-						className: "ui-tab-content mbs"
-					}, allowedTypes.map((type) => {
-						if (type === "Person") return /*#__PURE__*/ import_react$122.createElement(import_Tab$2.default.Pane, {
-							eventKey: type,
-							className: paneClass,
-							key: type
-						}, /*#__PURE__*/ import_react$122.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$122.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_first_name")), /*#__PURE__*/ import_react$122.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$122.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$122.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_last_name")), /*#__PURE__*/ import_react$122.createElement("div", { className: "form-item" }, this._inputField("last_name"))), /*#__PURE__*/ import_react$122.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$122.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_person_pseudonym")), /*#__PURE__*/ import_react$122.createElement("div", { className: "form-item" }, this._inputField("pseudonym"))), /*#__PURE__*/ import_react$122.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$122.createElement("button", {
-							className: "add-person button block",
-							onClick: this._onSubmit
-						}, t$6("meta_data_input_new_person_add"))));
-						else if (type === "PeopleGroup") return /*#__PURE__*/ import_react$122.createElement(import_Tab$2.default.Pane, {
-							eventKey: type,
-							className: paneClass,
-							key: type
-						}, /*#__PURE__*/ import_react$122.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$122.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_group_name")), /*#__PURE__*/ import_react$122.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$122.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$122.createElement("button", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						}, /*#__PURE__*/ import_react$124.createElement("div", { className: "ui-form-group rowed pbx ptx" }, /*#__PURE__*/ import_react$124.createElement("label", { className: "form-label" }, t$6("meta_data_input_new_group_name")), /*#__PURE__*/ import_react$124.createElement("div", { className: "form-item" }, this._inputField("first_name"))), /*#__PURE__*/ import_react$124.createElement("div", { className: "ui-form-group rowed ptm limited-width-s" }, /*#__PURE__*/ import_react$124.createElement("button", {
 							className: "add-group button block",
 							onClick: this._onSubmit
 						}, t$6("meta_data_input_new_group_add"))));
@@ -46292,30 +43764,17 @@ Group\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/input-resources.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$122, import_prop_types$23, AutoComplete$2, InputResources;
+	var import_react$123, import_prop_types$24, AutoComplete$2, InputResources;
 	var init_input_resources = __esmMin((() => {
 		init_present();
 		init_lodash();
-		import_react$122 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$23 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$121, import_prop_types$24, AutoComplete$2, InputResources;
-	var init_input_resources = __esmMin((() => {
-		init_present();
-		init_lodash();
-		import_react$121 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$123 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$24 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_ui();
 		init_decorate_resource_names();
 		init_new_person_widget();
 		AutoComplete$2 = null;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		InputResources = class extends import_react$122.Component {
-========
-		InputResources = class extends import_react$121.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		InputResources = class extends import_react$123.Component {
 			static propTypes = {
 				name: import_prop_types$24.default.string.isRequired,
 				resourceType: import_prop_types$24.default.string.isRequired,
@@ -46505,40 +43964,22 @@ Group\
 				values = compact(this.state.values || values);
 				const { selectedRole, roles } = this.state;
 				if (!AutoComplete$2) return null;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$122.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$122.createElement("div", { className: "multi-select" }, /*#__PURE__*/ import_react$122.createElement("ul", { className: "multi-select-holder" }, !withRoles && map(values, (item, i) => {
+				return /*#__PURE__*/ import_react$123.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$123.createElement("div", { className: "multi-select" }, /*#__PURE__*/ import_react$123.createElement("ul", { className: "multi-select-holder" }, !withRoles && map(values, (item, i) => {
 					const remover = curry$1(_onItemRemove)(i);
 					const style = item.isNew ? { fontStyle: "italic" } : {};
-					return /*#__PURE__*/ import_react$122.createElement("li", {
+					return /*#__PURE__*/ import_react$123.createElement("li", {
 						className: "multi-select-tag",
 						style,
 						key: item.uuid || (typeof item.getId === "function" ? item.getId() : void 0) || JSON.stringify(item)
-					}, decorate_resource_names_default(item), /*#__PURE__*/ import_react$122.createElement("a", {
+					}, decorate_resource_names_default(item), /*#__PURE__*/ import_react$123.createElement("a", {
 						className: "multi-select-tag-remove",
 						onClick: remover
-					}, /*#__PURE__*/ import_react$122.createElement("i", { className: "icon-close" })));
-========
-				return /*#__PURE__*/ import_react$121.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$121.createElement("div", { className: "multi-select" }, /*#__PURE__*/ import_react$121.createElement("ul", { className: "multi-select-holder" }, !withRoles && map(values, (item, i) => {
-					const remover = curry$1(_onItemRemove)(i);
-					const style = item.isNew ? { fontStyle: "italic" } : {};
-					return /*#__PURE__*/ import_react$121.createElement("li", {
-						className: "multi-select-tag",
-						style,
-						key: item.uuid || (typeof item.getId === "function" ? item.getId() : void 0) || JSON.stringify(item)
-					}, decorate_resource_names_default(item), /*#__PURE__*/ import_react$121.createElement("a", {
-						className: "multi-select-tag-remove",
-						onClick: remover
-					}, /*#__PURE__*/ import_react$121.createElement("i", { className: "icon-close" })));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}, /*#__PURE__*/ import_react$123.createElement("i", { className: "icon-close" })));
 				}), (() => {
 					if (multiple || isEmpty$1(values)) {
 						let addNewValue;
 						if (extensible && resourceType === "Keywords") addNewValue = _onNewKeyword;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						return /*#__PURE__*/ import_react$122.createElement("div", null, /*#__PURE__*/ import_react$122.createElement("li", { className: "multi-select-input-holder mbs" }, /*#__PURE__*/ import_react$122.createElement(AutoComplete$2, {
-========
-						return /*#__PURE__*/ import_react$121.createElement("div", null, /*#__PURE__*/ import_react$121.createElement("li", { className: "multi-select-input-holder mbs" }, /*#__PURE__*/ import_react$121.createElement(AutoComplete$2, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						return /*#__PURE__*/ import_react$123.createElement("div", null, /*#__PURE__*/ import_react$123.createElement("li", { className: "multi-select-input-holder mbs" }, /*#__PURE__*/ import_react$123.createElement(AutoComplete$2, {
 							className: "multi-select-input",
 							name,
 							resourceType,
@@ -46550,47 +43991,28 @@ Group\
 							onAddValue: addNewValue,
 							ref: "ListAdder",
 							suggestionRenderer: autoCompleteSuggestionRenderer
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						}), /*#__PURE__*/ import_react$122.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" })), resourceType === "People" ? /*#__PURE__*/ import_react$122.createElement(NewPersonWidget, {
-========
-						}), /*#__PURE__*/ import_react$121.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" })), resourceType === "People" ? /*#__PURE__*/ import_react$121.createElement(NewPersonWidget, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						}), /*#__PURE__*/ import_react$123.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" })), resourceType === "People" ? /*#__PURE__*/ import_react$123.createElement(NewPersonWidget, {
 							id: `${snakeCase$1(name)}_new_person`,
 							allowedTypes,
 							onAddValue: _onNewPerson
 						}) : void 0, (() => {
 							if (withRoles && present(this.state.editedItem)) {
 								const { _onRoleSelect, _onNewRole } = this;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-								return /*#__PURE__*/ import_react$122.createElement("div", { className: "multi-select mts" }, /*#__PURE__*/ import_react$122.createElement("label", { className: "form-label pvs phn" }, present(this.state.editedRole) ? t$6("meta_data_role_edit_heading") : t$6("meta_data_role_add_heading"), /*#__PURE__*/ import_react$122.createElement("strong", null, " ", decorate_resource_names_default(this.state.editedItem, false))), /*#__PURE__*/ import_react$122.createElement("div", {
-========
-								return /*#__PURE__*/ import_react$121.createElement("div", { className: "multi-select mts" }, /*#__PURE__*/ import_react$121.createElement("label", { className: "form-label pvs phn" }, present(this.state.editedRole) ? t$6("meta_data_role_edit_heading") : t$6("meta_data_role_add_heading"), /*#__PURE__*/ import_react$121.createElement("strong", null, " ", decorate_resource_names_default(this.state.editedItem, false))), /*#__PURE__*/ import_react$121.createElement("div", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+								return /*#__PURE__*/ import_react$123.createElement("div", { className: "multi-select mts" }, /*#__PURE__*/ import_react$123.createElement("label", { className: "form-label pvs phn" }, present(this.state.editedRole) ? t$6("meta_data_role_edit_heading") : t$6("meta_data_role_add_heading"), /*#__PURE__*/ import_react$123.createElement("strong", null, " ", decorate_resource_names_default(this.state.editedItem, false))), /*#__PURE__*/ import_react$123.createElement("div", {
 									className: "mbs",
 									style: {
 										display: "flex",
 										gap: "1.5rem"
 									}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-								}, /*#__PURE__*/ import_react$122.createElement("div", {
+								}, /*#__PURE__*/ import_react$123.createElement("div", {
 									style: { flex: "40% 1 0" },
 									className: "ptx ui-role-select mbs"
-								}, selectedRole ? /*#__PURE__*/ import_react$122.createElement("div", { style: {
-========
-								}, /*#__PURE__*/ import_react$121.createElement("div", {
-									style: { flex: "40% 1 0" },
-									className: "ptx ui-role-select mbs"
-								}, selectedRole ? /*#__PURE__*/ import_react$121.createElement("div", { style: {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+								}, selectedRole ? /*#__PURE__*/ import_react$123.createElement("div", { style: {
 									backgroundImage: "linear-gradient(to top, #eeeeee, #f3f3f3)",
 									border: "1px solid #eeeeee",
 									borderRadius: "5px",
 									padding: "0 5px"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-								} }, selectedRole.label) : void 0, /*#__PURE__*/ import_react$122.createElement("div", { className: "multi-select-input-holder mtn" }, /*#__PURE__*/ import_react$122.createElement(AutoComplete$2, {
-========
-								} }, selectedRole.label) : void 0, /*#__PURE__*/ import_react$121.createElement("div", { className: "multi-select-input-holder mtn" }, /*#__PURE__*/ import_react$121.createElement(AutoComplete$2, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+								} }, selectedRole.label) : void 0, /*#__PURE__*/ import_react$123.createElement("div", { className: "multi-select-input-holder mtn" }, /*#__PURE__*/ import_react$123.createElement(AutoComplete$2, {
 									className: "multi-select-input mbx",
 									name: "role_id",
 									resourceType: "Roles",
@@ -46602,116 +44024,61 @@ Group\
 									},
 									onAddValue: metaKey.is_extensible ? _onNewRole : void 0,
 									ref: "roleSelect"
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-								}), /*#__PURE__*/ import_react$122.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" }))), /*#__PURE__*/ import_react$122.createElement("div", { style: { flex: "60% 0 1" } }, metaKey.is_extensible ? t$6("meta_data_extensible_role_choose_label") : t$6("meta_data_role_choose_label"))), /*#__PURE__*/ import_react$122.createElement("div", { className: "ui-form-group limited-width-s pan" }, /*#__PURE__*/ import_react$122.createElement("button", {
+								}), /*#__PURE__*/ import_react$123.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" }))), /*#__PURE__*/ import_react$123.createElement("div", { style: { flex: "60% 0 1" } }, metaKey.is_extensible ? t$6("meta_data_extensible_role_choose_label") : t$6("meta_data_role_choose_label"))), /*#__PURE__*/ import_react$123.createElement("div", { className: "ui-form-group limited-width-s pan" }, /*#__PURE__*/ import_react$123.createElement("button", {
 									className: "add-person button",
 									onClick: this._onRoleSave,
 									ref: "saveRoleButton"
-								}, t$6("meta_data_input_person_save")), /*#__PURE__*/ import_react$122.createElement("button", {
-========
-								}), /*#__PURE__*/ import_react$121.createElement("a", { className: "multi-select-input-toggle icon-arrow-down" }))), /*#__PURE__*/ import_react$121.createElement("div", { style: { flex: "60% 0 1" } }, metaKey.is_extensible ? t$6("meta_data_extensible_role_choose_label") : t$6("meta_data_role_choose_label"))), /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-form-group limited-width-s pan" }, /*#__PURE__*/ import_react$121.createElement("button", {
-									className: "add-person button",
-									onClick: this._onRoleSave,
-									ref: "saveRoleButton"
-								}, t$6("meta_data_input_person_save")), /*#__PURE__*/ import_react$121.createElement("button", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+								}, t$6("meta_data_input_person_save")), /*#__PURE__*/ import_react$123.createElement("button", {
 									className: "update-person button mls",
 									onClick: this._onRoleCancel
 								}, t$6("meta_data_form_cancel"))));
 							}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						})(), withRoles ? /*#__PURE__*/ import_react$122.createElement("table", { className: "block mts" }, /*#__PURE__*/ import_react$122.createElement("tbody", null, values.map((item, i) => {
+						})(), withRoles ? /*#__PURE__*/ import_react$123.createElement("table", { className: "block mts" }, /*#__PURE__*/ import_react$123.createElement("tbody", null, values.map((item, i) => {
 							let role;
-							return /*#__PURE__*/ import_react$122.createElement("tr", { key: i }, /*#__PURE__*/ import_react$122.createElement("td", { className: "pas" }, /*#__PURE__*/ import_react$122.createElement("strong", { className: "mrs" }, i + 1, "."), decorate_resource_names_default(item), (() => {
+							return /*#__PURE__*/ import_react$123.createElement("tr", { key: i }, /*#__PURE__*/ import_react$123.createElement("td", { className: "pas" }, /*#__PURE__*/ import_react$123.createElement("strong", { className: "mrs" }, i + 1, "."), decorate_resource_names_default(item), (() => {
 								if (present(item.role)) {
 									({role: role} = item);
-									return /*#__PURE__*/ import_react$122.createElement("span", {
+									return /*#__PURE__*/ import_react$123.createElement("span", {
 										className: "mbs",
 										style: { float: "right" },
 										key: role.id
-									}, /*#__PURE__*/ import_react$122.createElement("a", {
+									}, /*#__PURE__*/ import_react$123.createElement("a", {
 										href: "#",
 										onClick: (e) => this._onRoleEdit(role, i, e),
 										className: "mls button small"
-									}, t$6("meta_data_role_edit_btn")), /*#__PURE__*/ import_react$122.createElement("a", {
-========
-						})(), withRoles ? /*#__PURE__*/ import_react$121.createElement("table", { className: "block mts" }, /*#__PURE__*/ import_react$121.createElement("tbody", null, values.map((item, i) => {
-							let role;
-							return /*#__PURE__*/ import_react$121.createElement("tr", { key: i }, /*#__PURE__*/ import_react$121.createElement("td", { className: "pas" }, /*#__PURE__*/ import_react$121.createElement("strong", { className: "mrs" }, i + 1, "."), decorate_resource_names_default(item), (() => {
-								if (present(item.role)) {
-									({role: role} = item);
-									return /*#__PURE__*/ import_react$121.createElement("span", {
-										className: "mbs",
-										style: { float: "right" },
-										key: role.id
-									}, /*#__PURE__*/ import_react$121.createElement("a", {
-										href: "#",
-										onClick: (e) => this._onRoleEdit(role, i, e),
-										className: "mls button small"
-									}, t$6("meta_data_role_edit_btn")), /*#__PURE__*/ import_react$121.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+									}, t$6("meta_data_role_edit_btn")), /*#__PURE__*/ import_react$123.createElement("a", {
 										href: "#",
 										onClick: (e) => this._onRoleRemove(i, e),
 										className: "mlx button small"
 									}, t$6("meta_data_role_remove_btn")));
 								}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-							})()), /*#__PURE__*/ import_react$122.createElement("td", {
+							})()), /*#__PURE__*/ import_react$123.createElement("td", {
 								style: { width: "160px" },
 								className: "pvs by-center"
-							}, present(item.role) ? /*#__PURE__*/ import_react$122.createElement("a", {
+							}, present(item.role) ? /*#__PURE__*/ import_react$123.createElement("a", {
 								href: "#",
 								onClick: (e) => this._onRoleAdd(i, e),
 								className: "button small"
-							}, "+ ", t$6("meta_data_role_add_another_btn")) : void 0, !present(item.role) ? /*#__PURE__*/ import_react$122.createElement("a", {
+							}, "+ ", t$6("meta_data_role_add_another_btn")) : void 0, !present(item.role) ? /*#__PURE__*/ import_react$123.createElement("a", {
 								href: "#",
 								onClick: (e) => this._onRoleAdd(i, e),
 								className: "button small"
-							}, "+ ", t$6("meta_data_role_add_btn")) : void 0), /*#__PURE__*/ import_react$122.createElement("td", {
+							}, "+ ", t$6("meta_data_role_add_btn")) : void 0), /*#__PURE__*/ import_react$123.createElement("td", {
 								style: { width: "32px" },
 								className: "pvs by-center"
-							}, i < values.length - 1 && /*#__PURE__*/ import_react$122.createElement("a", {
+							}, i < values.length - 1 && /*#__PURE__*/ import_react$123.createElement("a", {
 								className: "button small",
 								onClick: (e) => this._handleMoveDown(i, e)
-							}, /*#__PURE__*/ import_react$122.createElement("span", { className: "icon-arrow-down" }))), /*#__PURE__*/ import_react$122.createElement("td", {
+							}, /*#__PURE__*/ import_react$123.createElement("span", { className: "icon-arrow-down" }))), /*#__PURE__*/ import_react$123.createElement("td", {
 								style: { width: "32px" },
 								className: "pvs by-center"
-							}, i > 0 && /*#__PURE__*/ import_react$122.createElement("a", {
+							}, i > 0 && /*#__PURE__*/ import_react$123.createElement("a", {
 								className: "button small",
 								onClick: (e) => this._handleMoveUp(i, e)
-							}, /*#__PURE__*/ import_react$122.createElement("span", { className: "icon-arrow-up" }))), /*#__PURE__*/ import_react$122.createElement("td", {
+							}, /*#__PURE__*/ import_react$123.createElement("span", { className: "icon-arrow-up" }))), /*#__PURE__*/ import_react$123.createElement("td", {
 								style: { width: "30px" },
 								className: "pas by-center"
-							}, /*#__PURE__*/ import_react$122.createElement("a", { onClick: (e) => this._onItemRemove(i, e) }, /*#__PURE__*/ import_react$122.createElement("i", { className: "icon-close" }))));
-========
-							})()), /*#__PURE__*/ import_react$121.createElement("td", {
-								style: { width: "160px" },
-								className: "pvs by-center"
-							}, present(item.role) ? /*#__PURE__*/ import_react$121.createElement("a", {
-								href: "#",
-								onClick: (e) => this._onRoleAdd(i, e),
-								className: "button small"
-							}, "+ ", t$6("meta_data_role_add_another_btn")) : void 0, !present(item.role) ? /*#__PURE__*/ import_react$121.createElement("a", {
-								href: "#",
-								onClick: (e) => this._onRoleAdd(i, e),
-								className: "button small"
-							}, "+ ", t$6("meta_data_role_add_btn")) : void 0), /*#__PURE__*/ import_react$121.createElement("td", {
-								style: { width: "32px" },
-								className: "pvs by-center"
-							}, i < values.length - 1 && /*#__PURE__*/ import_react$121.createElement("a", {
-								className: "button small",
-								onClick: (e) => this._handleMoveDown(i, e)
-							}, /*#__PURE__*/ import_react$121.createElement("span", { className: "icon-arrow-down" }))), /*#__PURE__*/ import_react$121.createElement("td", {
-								style: { width: "32px" },
-								className: "pvs by-center"
-							}, i > 0 && /*#__PURE__*/ import_react$121.createElement("a", {
-								className: "button small",
-								onClick: (e) => this._handleMoveUp(i, e)
-							}, /*#__PURE__*/ import_react$121.createElement("span", { className: "icon-arrow-up" }))), /*#__PURE__*/ import_react$121.createElement("td", {
-								style: { width: "30px" },
-								className: "pas by-center"
-							}, /*#__PURE__*/ import_react$121.createElement("a", { onClick: (e) => this._onItemRemove(i, e) }, /*#__PURE__*/ import_react$121.createElement("i", { className: "icon-close" }))));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+							}, /*#__PURE__*/ import_react$123.createElement("a", { onClick: (e) => this._onItemRemove(i, e) }, /*#__PURE__*/ import_react$123.createElement("i", { className: "icon-close" }))));
 						}))) : void 0);
 					}
 				})())), map(presence(values) || [""], function(item) {
@@ -46728,22 +44095,14 @@ Group\
 						}));
 						else return [[name, item.val]];
 					})();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return [keyValuePairs.length > 1 ? /*#__PURE__*/ import_react$122.createElement("input", {
-========
-					return [keyValuePairs.length > 1 ? /*#__PURE__*/ import_react$121.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					return [keyValuePairs.length > 1 ? /*#__PURE__*/ import_react$123.createElement("input", {
 						type: "hidden",
 						key: "_hashmarker",
 						name: `${name}[_hash]`,
 						defaultValue: "_start"
 					}) : void 0, map(keyValuePairs, function(item) {
 						const [fieldName, value] = Array.from(item);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-						return /*#__PURE__*/ import_react$122.createElement("input", {
-========
-						return /*#__PURE__*/ import_react$121.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+						return /*#__PURE__*/ import_react$123.createElement("input", {
 							type: "hidden",
 							key: value || `${name}_${fieldName}_empty`,
 							name: fieldName,
@@ -46756,25 +44115,14 @@ Group\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/input-keywords.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$121, import_prop_types$22, InputKeywords;
+	var import_react$122, import_prop_types$23, InputKeywords;
 	var init_input_keywords = __esmMin((() => {
 		init_lodash();
-		import_react$121 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$22 = /* @__PURE__ */ __toESM(require_prop_types());
-		init_madek_prop_types();
-		init_input_resources();
-		InputKeywords = class extends import_react$121.Component {
-========
-	var import_react$120, import_prop_types$23, InputKeywords;
-	var init_input_keywords = __esmMin((() => {
-		init_lodash();
-		import_react$120 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$122 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$23 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_madek_prop_types();
 		init_input_resources();
-		InputKeywords = class extends import_react$120.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		InputKeywords = class extends import_react$122.Component {
 			static propTypes = {
 				name: import_prop_types$23.default.string.isRequired,
 				values: import_prop_types$23.default.array.isRequired,
@@ -46804,37 +44152,22 @@ Group\
 						minLength: 0,
 						localData: keywords
 					};
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$121.createElement(InputResources, Object.assign({}, this.props, {
-========
-					return /*#__PURE__*/ import_react$120.createElement(InputResources, Object.assign({}, this.props, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					return /*#__PURE__*/ import_react$122.createElement(InputResources, Object.assign({}, this.props, {
 						resourceType: "Keywords",
 						searchParams: params,
 						extensible: meta_key.is_extensible,
 						autocompleteConfig
 					}));
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				} else return /*#__PURE__*/ import_react$121.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$121.createElement("input", {
-========
-				} else return /*#__PURE__*/ import_react$120.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$120.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				} else return /*#__PURE__*/ import_react$122.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$122.createElement("input", {
 					type: "hidden",
 					name,
 					value: ""
 				}), keywords.map((kw) => {
 					const isInitiallySelected = some(values, { uuid: kw.uuid });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$121.createElement("label", {
+					return /*#__PURE__*/ import_react$122.createElement("label", {
 						className: "col2of6",
 						key: kw.uuid
-					}, /*#__PURE__*/ import_react$121.createElement("input", {
-========
-					return /*#__PURE__*/ import_react$120.createElement("label", {
-						className: "col2of6",
-						key: kw.uuid
-					}, /*#__PURE__*/ import_react$120.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					}, /*#__PURE__*/ import_react$122.createElement("input", {
 						type: multiple ? "checkbox" : "radio",
 						onChange: this.props.onChange ? this._onChange : null,
 						onClick: this.props.onChange && !multiple ? this._onChange : null,
@@ -46857,30 +44190,17 @@ Group\
 			return n;
 		}, _extends$15.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$120, autoCompleteSuggestionRenderer, InputPeople;
+	var import_react$121, autoCompleteSuggestionRenderer, InputPeople;
 	var init_input_people = __esmMin((() => {
-		import_react$120 = /* @__PURE__ */ __toESM(require_react$1());
-========
-	var import_react$119, autoCompleteSuggestionRenderer, InputPeople;
-	var init_input_people = __esmMin((() => {
-		import_react$119 = /* @__PURE__ */ __toESM(require_react$1());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		import_react$121 = /* @__PURE__ */ __toESM(require_react$1());
 		init_input_resources();
 		init_typeahead_utils();
 		autoCompleteSuggestionRenderer = (person, { inputValue }) => {
 			const infos = person.info || [];
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$120.createElement("div", { className: "ui-autocomplete__person-suggestion" }, /*#__PURE__*/ import_react$120.createElement("div", { className: "ui-autocomplete__person-suggestion__col1" }, markMatchingFragment(person.name, inputValue)), /*#__PURE__*/ import_react$120.createElement("div", { className: "ui-autocomplete__person-suggestion__col2" }, infos.map((value, index) => /*#__PURE__*/ import_react$120.createElement(import_react$120.Fragment, { key: index }, /*#__PURE__*/ import_react$120.createElement("span", null, value), index < infos.length - 1 && ", "))));
+			return /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-autocomplete__person-suggestion" }, /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-autocomplete__person-suggestion__col1" }, markMatchingFragment(person.name, inputValue)), /*#__PURE__*/ import_react$121.createElement("div", { className: "ui-autocomplete__person-suggestion__col2" }, infos.map((value, index) => /*#__PURE__*/ import_react$121.createElement(import_react$121.Fragment, { key: index }, /*#__PURE__*/ import_react$121.createElement("span", null, value), index < infos.length - 1 && ", "))));
 		};
 		InputPeople = ({ metaKey, ...rest }) => {
-			return /*#__PURE__*/ import_react$120.createElement(InputResources, _extends$15({}, rest, {
-========
-			return /*#__PURE__*/ import_react$119.createElement("div", { className: "ui-autocomplete__person-suggestion" }, /*#__PURE__*/ import_react$119.createElement("div", { className: "ui-autocomplete__person-suggestion__col1" }, markMatchingFragment(person.name, inputValue)), /*#__PURE__*/ import_react$119.createElement("div", { className: "ui-autocomplete__person-suggestion__col2" }, infos.map((value, index) => /*#__PURE__*/ import_react$119.createElement(import_react$119.Fragment, { key: index }, /*#__PURE__*/ import_react$119.createElement("span", null, value), index < infos.length - 1 && ", "))));
-		};
-		InputPeople = ({ metaKey, ...rest }) => {
-			return /*#__PURE__*/ import_react$119.createElement(InputResources, _extends$15({}, rest, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$121.createElement(InputResources, _extends$15({}, rest, {
 				metaKey,
 				resourceType: "People",
 				searchParams: { meta_key_id: metaKey.uuid },
@@ -46917,25 +44237,14 @@ Group\
 			return String(value);
 		}
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$119, import_prop_types$21, import_classnames$18, InputJsonText;
+	var import_react$120, import_prop_types$22, import_classnames$18, InputJsonText;
 	var init_InputJsonText = __esmMin((() => {
-		import_react$119 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$21 = /* @__PURE__ */ __toESM(require_prop_types());
-		import_classnames$18 = /* @__PURE__ */ __toESM(require_classnames());
-		init_lodash();
-		init_i18n_translate();
-		InputJsonText = class extends import_react$119.Component {
-========
-	var import_react$118, import_prop_types$22, import_classnames$18, InputJsonText;
-	var init_InputJsonText = __esmMin((() => {
-		import_react$118 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$120 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$22 = /* @__PURE__ */ __toESM(require_prop_types());
 		import_classnames$18 = /* @__PURE__ */ __toESM(require_classnames());
 		init_lodash();
 		init_i18n_translate();
-		InputJsonText = class extends import_react$118.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		InputJsonText = class extends import_react$120.Component {
 			constructor(props) {
 				super(props);
 				const value = ensureText(head(props.values));
@@ -46968,11 +44277,7 @@ Group\
 				const { id, name } = props;
 				const { value, jsonError } = state;
 				const stringifiedValue = formatValue(value);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$119.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$119.createElement("textarea", {
-========
-				return /*#__PURE__*/ import_react$118.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$118.createElement("textarea", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$120.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$120.createElement("textarea", {
 					id,
 					name,
 					className: (0, import_classnames$18.default)("block code", { error: !!jsonError }),
@@ -46982,11 +44287,7 @@ Group\
 					},
 					onChange: (e) => this._onInputChange(e.target.value),
 					value: stringifiedValue || ""
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}), !!jsonError && /*#__PURE__*/ import_react$119.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_data_input_json_err_prefix"), jsonError));
-========
-				}), !!jsonError && /*#__PURE__*/ import_react$118.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_data_input_json_err_prefix"), jsonError));
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), !!jsonError && /*#__PURE__*/ import_react$120.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_data_input_json_err_prefix"), jsonError));
 			}
 		};
 		InputJsonText.propTypes = {
@@ -46999,23 +44300,13 @@ Group\
 	}));
 	//#endregion
 	//#region app/javascript/react/lib/forms/InputMediaEntry.jsx
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$118, import_prop_types$20, InputMediaEntry;
+	var import_react$119, import_prop_types$21, InputMediaEntry;
 	var init_InputMediaEntry = __esmMin((() => {
-		import_react$118 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$20 = /* @__PURE__ */ __toESM(require_prop_types());
-		init_lodash();
-		init_i18n_translate();
-		InputMediaEntry = class extends import_react$118.Component {
-========
-	var import_react$117, import_prop_types$21, InputMediaEntry;
-	var init_InputMediaEntry = __esmMin((() => {
-		import_react$117 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$119 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$21 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_lodash();
 		init_i18n_translate();
-		InputMediaEntry = class extends import_react$117.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		InputMediaEntry = class extends import_react$119.Component {
 			constructor(props) {
 				super(props);
 				const uuid = get$1(props.values, "0.0.uuid", "");
@@ -47054,28 +44345,16 @@ Group\
 			}
 			render({ name } = this.props) {
 				const { uuidError, values: { uuid, description } } = this.state;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				return /*#__PURE__*/ import_react$118.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$118.createElement("input", {
+				return /*#__PURE__*/ import_react$119.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$119.createElement("input", {
 					type: "hidden",
 					name,
 					value: this.prepareValue()
-				}), /*#__PURE__*/ import_react$118.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_id"), /*#__PURE__*/ import_react$118.createElement("input", {
-========
-				return /*#__PURE__*/ import_react$117.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$117.createElement("input", {
-					type: "hidden",
-					name,
-					value: this.prepareValue()
-				}), /*#__PURE__*/ import_react$117.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_id"), /*#__PURE__*/ import_react$117.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}), /*#__PURE__*/ import_react$119.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_id"), /*#__PURE__*/ import_react$119.createElement("input", {
 					type: "text",
 					value: uuid || "",
 					className: "block",
 					onChange: this.handleResourceIdChange
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})), uuidError && /*#__PURE__*/ import_react$118.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_datum_media_entry_err_uuid_invalid")), /*#__PURE__*/ import_react$118.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_string"), /*#__PURE__*/ import_react$118.createElement("input", {
-========
-				})), uuidError && /*#__PURE__*/ import_react$117.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_datum_media_entry_err_uuid_invalid")), /*#__PURE__*/ import_react$117.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_string"), /*#__PURE__*/ import_react$117.createElement("input", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				})), uuidError && /*#__PURE__*/ import_react$119.createElement("p", { className: "ui-alert error" }, I18nTranslate("meta_datum_media_entry_err_uuid_invalid")), /*#__PURE__*/ import_react$119.createElement("label", null, I18nTranslate("meta_datum_media_entry_label_string"), /*#__PURE__*/ import_react$119.createElement("input", {
 					type: "text",
 					value: description || "",
 					className: "block",
@@ -47093,17 +44372,10 @@ Group\
 	//#endregion
 	//#region app/javascript/react/decorators/InputMetaDatum.jsx
 	var InputMetaDatum_exports = /* @__PURE__ */ __exportAll({ default: () => InputMetaDatum });
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$117, import_prop_types$19, InputMetaDatum;
+	var import_react$118, import_prop_types$20, InputMetaDatum;
 	var init_InputMetaDatum = __esmMin((() => {
-		import_react$117 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$19 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$116, import_prop_types$20, InputMetaDatum;
-	var init_InputMetaDatum = __esmMin((() => {
-		import_react$116 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$118 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$20 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_input_text_async();
 		init_InputTextDate();
 		init_input_keywords();
@@ -47123,11 +44395,7 @@ Group\
 				}
 			})();
 			const values = model.values.map((value) => value);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			if (resourceType === "Text") return /*#__PURE__*/ import_react$117.createElement(InputTextAsync, {
-========
-			if (resourceType === "Text") return /*#__PURE__*/ import_react$116.createElement(InputTextAsync, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			if (resourceType === "Text") return /*#__PURE__*/ import_react$118.createElement(InputTextAsync, {
 				metaKey,
 				name,
 				values,
@@ -47135,22 +44403,14 @@ Group\
 				subForms,
 				batch
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else if (resourceType === "TextDate") return /*#__PURE__*/ import_react$117.createElement(InputTextDate, {
-========
-			else if (resourceType === "TextDate") return /*#__PURE__*/ import_react$116.createElement(InputTextDate, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			else if (resourceType === "TextDate") return /*#__PURE__*/ import_react$118.createElement(InputTextDate, {
 				onChange,
 				id,
 				name,
 				values,
 				subForms
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else if (resourceType === "JSON") return /*#__PURE__*/ import_react$117.createElement(InputJsonText, {
-========
-			else if (resourceType === "JSON") return /*#__PURE__*/ import_react$116.createElement(InputJsonText, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			else if (resourceType === "JSON") return /*#__PURE__*/ import_react$118.createElement(InputJsonText, {
 				metaKey,
 				id,
 				name,
@@ -47158,11 +44418,7 @@ Group\
 				onChange,
 				subForms
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else if (resourceType === "People") return /*#__PURE__*/ import_react$117.createElement(InputPeople, {
-========
-			else if (resourceType === "People") return /*#__PURE__*/ import_react$116.createElement(InputPeople, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			else if (resourceType === "People") return /*#__PURE__*/ import_react$118.createElement(InputPeople, {
 				metaKey,
 				onChange,
 				name,
@@ -47171,11 +44427,7 @@ Group\
 				subForms,
 				withRoles: metaKey.with_roles
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else if (resourceType === "Keywords") return /*#__PURE__*/ import_react$117.createElement(InputKeywords, {
-========
-			else if (resourceType === "Keywords") return /*#__PURE__*/ import_react$116.createElement(InputKeywords, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			else if (resourceType === "Keywords") return /*#__PURE__*/ import_react$118.createElement(InputKeywords, {
 				meta_key: metaKey,
 				keywords: metaKey.keywords,
 				show_checkboxes: metaKey.show_checkboxes,
@@ -47188,11 +44440,7 @@ Group\
 				contextKey,
 				subForms
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			else if (resourceType === "MediaEntry") return /*#__PURE__*/ import_react$117.createElement(InputMediaEntry, {
-========
-			else if (resourceType === "MediaEntry") return /*#__PURE__*/ import_react$116.createElement(InputMediaEntry, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			else if (resourceType === "MediaEntry") return /*#__PURE__*/ import_react$118.createElement(InputMediaEntry, {
 				meta_key: metaKey,
 				onChange,
 				id,
@@ -47222,19 +44470,11 @@ Group\
 			return n;
 		}, _extends$14.apply(null, arguments);
 	}
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-	var import_react$116, import_prop_types$18, import_classnames$17, import_lib$5, import_url$19, MediaEntryPreview, IframeEmbed;
+	var import_react$117, import_prop_types$19, import_classnames$17, import_lib$5, import_url$19, MediaEntryPreview, IframeEmbed;
 	var init_MediaEntryPreview = __esmMin((() => {
 		init_lodash();
-		import_react$116 = /* @__PURE__ */ __toESM(require_react$1());
-		import_prop_types$18 = /* @__PURE__ */ __toESM(require_prop_types());
-========
-	var import_react$115, import_prop_types$19, import_classnames$17, import_lib$5, import_url$19, MediaEntryPreview, IframeEmbed;
-	var init_MediaEntryPreview = __esmMin((() => {
-		init_lodash();
-		import_react$115 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$117 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$19 = /* @__PURE__ */ __toESM(require_prop_types());
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
 		init_i18n_translate();
 		import_classnames$17 = /* @__PURE__ */ __toESM(require_classnames());
 		import_lib$5 = /* @__PURE__ */ __toESM(require_lib());
@@ -47243,11 +44483,7 @@ Group\
 		init_Picture();
 		init_ResourceIcon();
 		init_MediaPlayer();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		MediaEntryPreview = class extends import_react$116.Component {
-========
-		MediaEntryPreview = class extends import_react$115.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		MediaEntryPreview = class extends import_react$117.Component {
 			static propTypes = {
 				get: import_prop_types$19.default.shape({
 					title: import_prop_types$19.default.string.isRequired,
@@ -47262,17 +44498,10 @@ Group\
 				const classes = (0, import_classnames$17.default)(this.props.mods);
 				const usesIframeEmbed = !isEmbedded && includes(["audio", "video"], media_type);
 				const imageHref = get$1(last(sortBy(previews.images, "width")), "url");
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const picture = image_url || imageHref ? /*#__PURE__*/ import_react$116.createElement(Picture, _extends$14({
+				const picture = image_url || imageHref ? /*#__PURE__*/ import_react$117.createElement(Picture, _extends$14({
 					title,
 					src: image_url || imageHref
-				}, mediaProps)) : /*#__PURE__*/ import_react$116.createElement(ResourceIcon, {
-========
-				const picture = image_url || imageHref ? /*#__PURE__*/ import_react$115.createElement(Picture, _extends$14({
-					title,
-					src: image_url || imageHref
-				}, mediaProps)) : /*#__PURE__*/ import_react$115.createElement(ResourceIcon, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}, mediaProps)) : /*#__PURE__*/ import_react$117.createElement(ResourceIcon, {
 					mediaType: media_type,
 					thumbnail: false,
 					type
@@ -47290,78 +44519,53 @@ Group\
 						get.media_file.conversion_progress,
 						I18nTranslate("media_entry_conversion_progress_post")
 					].join("") : I18nTranslate("media_entry_conversion_status_" + status);
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-					return /*#__PURE__*/ import_react$116.createElement("div", { className: classes }, /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-alert warning" }, warningText), status === "failed" ? /*#__PURE__*/ import_react$116.createElement("div", { className: "p pvh mth" }) : /*#__PURE__*/ import_react$116.createElement("div", { className: "p pvh mth" }, I18nTranslate("media_entry_conversion_hint"), /*#__PURE__*/ import_react$116.createElement("br", null), /*#__PURE__*/ import_react$116.createElement("span", { className: "title-xs" }, I18nTranslate("media_entry_conversion_reload"))));
+					return /*#__PURE__*/ import_react$117.createElement("div", { className: classes }, /*#__PURE__*/ import_react$117.createElement("div", { className: "ui-alert warning" }, warningText), status === "failed" ? /*#__PURE__*/ import_react$117.createElement("div", { className: "p pvh mth" }) : /*#__PURE__*/ import_react$117.createElement("div", { className: "p pvh mth" }, I18nTranslate("media_entry_conversion_hint"), /*#__PURE__*/ import_react$117.createElement("br", null), /*#__PURE__*/ import_react$117.createElement("span", { className: "title-xs" }, I18nTranslate("media_entry_conversion_reload"))));
 				}
-				if (usesIframeEmbed) return /*#__PURE__*/ import_react$116.createElement(IframeEmbed, {
-========
-					return /*#__PURE__*/ import_react$115.createElement("div", { className: classes }, /*#__PURE__*/ import_react$115.createElement("div", { className: "ui-alert warning" }, warningText), status === "failed" ? /*#__PURE__*/ import_react$115.createElement("div", { className: "p pvh mth" }) : /*#__PURE__*/ import_react$115.createElement("div", { className: "p pvh mth" }, I18nTranslate("media_entry_conversion_hint"), /*#__PURE__*/ import_react$115.createElement("br", null), /*#__PURE__*/ import_react$115.createElement("span", { className: "title-xs" }, I18nTranslate("media_entry_conversion_reload"))));
+				if (usesIframeEmbed) {
+					const videos = previews.videos || [];
+					const hasMp4 = videos.some((video) => video.content_type === "video/mp4");
+					const hasHls = videos.some((video) => video.profile === "hls" || video.content_type === "application/vnd.apple.mpegurl");
+					return /*#__PURE__*/ import_react$117.createElement(IframeEmbed, {
+						url: get.url,
+						accessToken: get.used_confidential_access_token,
+						showFormatBar: hasMp4 && hasHls
+					});
 				}
-				if (usesIframeEmbed) return /*#__PURE__*/ import_react$115.createElement(IframeEmbed, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
-					url: get.url,
-					accessToken: get.used_confidential_access_token
-				});
 				const downloadRef = original_file_url ? original_file_url : export_url;
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				const content = this.props.get.media_type == "document" ? /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-has-magnifier" }, downloadRef ? /*#__PURE__*/ import_react$116.createElement("a", { href: downloadRef }, picture) : picture, downloadRef && /*#__PURE__*/ import_react$116.createElement("a", {
+				const content = this.props.get.media_type == "document" ? /*#__PURE__*/ import_react$117.createElement("div", { className: "ui-has-magnifier" }, downloadRef ? /*#__PURE__*/ import_react$117.createElement("a", { href: downloadRef }, picture) : picture, downloadRef && /*#__PURE__*/ import_react$117.createElement("a", {
 					href: downloadRef,
 					className: "ui-magnifier"
-				}, /*#__PURE__*/ import_react$116.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$117.createElement(Icon$4, {
 					i: "magnifier",
 					mods: "bright"
-				}))) : previews.videos ? /*#__PURE__*/ import_react$116.createElement(MediaPlayer, _extends$14({ type: "video" }, mediaPlayerConfig, {
-========
-				const content = this.props.get.media_type == "document" ? /*#__PURE__*/ import_react$115.createElement("div", { className: "ui-has-magnifier" }, downloadRef ? /*#__PURE__*/ import_react$115.createElement("a", { href: downloadRef }, picture) : picture, downloadRef && /*#__PURE__*/ import_react$115.createElement("a", {
-					href: downloadRef,
-					className: "ui-magnifier"
-				}, /*#__PURE__*/ import_react$115.createElement(Icon$4, {
-					i: "magnifier",
-					mods: "bright"
-				}))) : previews.videos ? /*#__PURE__*/ import_react$115.createElement(MediaPlayer, _extends$14({ type: "video" }, mediaPlayerConfig, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}))) : previews.videos ? /*#__PURE__*/ import_react$117.createElement(MediaPlayer, _extends$14({ type: "video" }, mediaPlayerConfig, {
 					sources: previews.videos,
 					options: merge({ fluid: true }, get$1(mediaPlayerConfig, "options")),
 					captionConf: this.props.captionConf,
 					playback: get.playback,
-					isInternal: this.props.isInternal
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})) : previews.audios ? /*#__PURE__*/ import_react$116.createElement(MediaPlayer, _extends$14({ type: "audio" }, mediaPlayerConfig, {
-========
-				})) : previews.audios ? /*#__PURE__*/ import_react$115.createElement(MediaPlayer, _extends$14({ type: "audio" }, mediaPlayerConfig, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+					isInternal: this.props.isInternal,
+					preferredFormat: this.props.preferredFormat
+				})) : previews.audios ? /*#__PURE__*/ import_react$117.createElement(MediaPlayer, _extends$14({ type: "audio" }, mediaPlayerConfig, {
 					getUrl: get.url,
 					sources: previews.audios,
 					options: merge({ fluid: true }, get$1(mediaPlayerConfig, "options")),
 					playback: get.playback,
 					captionConf: this.props.captionConf,
 					isInternal: this.props.isInternal
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				})) : imageHref && (withLink || withZoomLink) ? /*#__PURE__*/ import_react$116.createElement("div", { className: (0, import_classnames$17.default)({ "ui-has-magnifier": withZoomLink }) }, /*#__PURE__*/ import_react$116.createElement("a", { href: imageHref }, picture), !!withZoomLink && /*#__PURE__*/ import_react$116.createElement("a", {
-========
-				})) : imageHref && (withLink || withZoomLink) ? /*#__PURE__*/ import_react$115.createElement("div", { className: (0, import_classnames$17.default)({ "ui-has-magnifier": withZoomLink }) }, /*#__PURE__*/ import_react$115.createElement("a", { href: imageHref }, picture), !!withZoomLink && /*#__PURE__*/ import_react$115.createElement("a", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				})) : imageHref && (withLink || withZoomLink) ? /*#__PURE__*/ import_react$117.createElement("div", { className: (0, import_classnames$17.default)({ "ui-has-magnifier": withZoomLink }) }, /*#__PURE__*/ import_react$117.createElement("a", { href: imageHref }, picture), !!withZoomLink && /*#__PURE__*/ import_react$117.createElement("a", {
 					href: imageHref,
 					target: "_blank",
 					rel: "noreferrer noopener",
 					className: "ui-magnifier",
 					style: { textDecoration: "none" }
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}, /*#__PURE__*/ import_react$116.createElement(Icon$4, {
+				}, /*#__PURE__*/ import_react$117.createElement(Icon$4, {
 					i: "magnifier",
 					mods: "bright"
 				}))) : picture;
-				return /*#__PURE__*/ import_react$116.createElement("div", { className: classes }, content);
-========
-				}, /*#__PURE__*/ import_react$115.createElement(Icon$4, {
-					i: "magnifier",
-					mods: "bright"
-				}))) : picture;
-				return /*#__PURE__*/ import_react$115.createElement("div", { className: classes }, content);
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				return /*#__PURE__*/ import_react$117.createElement("div", { className: classes }, content);
 			}
 		};
-		IframeEmbed = ({ url, accessToken }) => {
+		IframeEmbed = ({ url, accessToken, showFormatBar }) => {
 			const parsedUrl = (0, import_url$19.parse)(url);
 			const params = import_lib$5.default.parse(parsedUrl.query);
 			const iframeSrc = parsedUrl.pathname.replace(/\/*$/, "") + "/embedded?" + import_lib$5.default.stringify({
@@ -47369,19 +44573,12 @@ Group\
 				internalEmbed: "yes",
 				accessToken
 			});
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			return /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-media-overview-preview" }, /*#__PURE__*/ import_react$116.createElement("div", { style: {
+			return /*#__PURE__*/ import_react$117.createElement("div", { className: "ui-media-overview-preview" }, /*#__PURE__*/ import_react$117.createElement("div", { style: {
 				width: "100%",
 				position: "relative",
-				paddingTop: "56.25%"
-			} }, /*#__PURE__*/ import_react$116.createElement("iframe", {
-========
-			return /*#__PURE__*/ import_react$115.createElement("div", { className: "ui-media-overview-preview" }, /*#__PURE__*/ import_react$115.createElement("div", { style: {
-				width: "100%",
-				position: "relative",
-				paddingTop: "56.25%"
-			} }, /*#__PURE__*/ import_react$115.createElement("iframe", {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				paddingTop: showFormatBar ? "calc(56.25% + var(--madek-format-bar-height, 36px))" : "56.25%",
+				"--madek-format-bar-height": "36px"
+			} }, /*#__PURE__*/ import_react$117.createElement("iframe", {
 				src: iframeSrc,
 				style: {
 					height: "100%",
@@ -47427,22 +44624,22 @@ Group\
 		}
 	}
 	function FormActions({ cancelUrl, submitLabel }) {
-		return /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-actions pbl mtl" }, /*#__PURE__*/ import_react$114.createElement("a", {
+		return /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-actions pbl mtl" }, /*#__PURE__*/ import_react$116.createElement("a", {
 			className: "link weak",
 			href: cancelUrl
-		}, ` ${I18nTranslate("meta_data_form_cancel")} `), /*#__PURE__*/ import_react$114.createElement("button", {
+		}, ` ${I18nTranslate("meta_data_form_cancel")} `), /*#__PURE__*/ import_react$116.createElement("button", {
 			className: "primary-button large",
 			type: "submit"
 		}, submitLabel));
 	}
 	function ContentColumn({ children }) {
-		return /*#__PURE__*/ import_react$114.createElement("div", { className: "app-body-content table-cell ui-container table-substance ui-container" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "form-body" }, children));
+		return /*#__PURE__*/ import_react$116.createElement("div", { className: "app-body-content table-cell ui-container table-substance ui-container" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "form-body" }, children));
 	}
 	function MediaPlayerSettings({ mediaPlayer, authToken, cancelUrl, thumbnail }) {
-		const [configText, setConfigText] = (0, import_react$114.useState)(formatConfig(mediaPlayer.media_config));
-		const [jsonError, setJsonError] = (0, import_react$114.useState)(false);
-		const [language, setLanguage] = (0, import_react$114.useState)(currentLocale() === "en" ? "en" : "de");
-		const [subtitleFileName, setSubtitleFileName] = (0, import_react$114.useState)("");
+		const [configText, setConfigText] = (0, import_react$116.useState)(formatConfig(mediaPlayer.media_config));
+		const [jsonError, setJsonError] = (0, import_react$116.useState)(false);
+		const [language, setLanguage] = (0, import_react$116.useState)(currentLocale() === "en" ? "en" : "de");
+		const [subtitleFileName, setSubtitleFileName] = (0, import_react$116.useState)("");
 		const subtitles = mediaPlayer.subtitles || [];
 		const onConfigSubmit = (event) => {
 			const value = configText.trim();
@@ -47455,13 +44652,13 @@ Group\
 				setJsonError(true);
 			}
 		};
-		return /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-container phl ptl" }, thumbnail, /*#__PURE__*/ import_react$114.createElement(ContentColumn, null, /*#__PURE__*/ import_react$114.createElement(RestForm, {
+		return /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-container phl ptl" }, thumbnail, /*#__PURE__*/ import_react$116.createElement(ContentColumn, null, /*#__PURE__*/ import_react$116.createElement(RestForm, {
 			name: "media_player_config",
 			action: mediaPlayer.update_media_config_url,
 			method: "patch",
 			authToken,
 			onSubmit: onConfigSubmit
-		}, /*#__PURE__*/ import_react$114.createElement("h3", { className: "title-l mbs" }, I18nTranslate("media_player_media_config")), /*#__PURE__*/ import_react$114.createElement("fieldset", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$114.createElement("textarea", {
+		}, /*#__PURE__*/ import_react$116.createElement("h3", { className: "title-l mbs" }, I18nTranslate("media_player_media_config")), /*#__PURE__*/ import_react$116.createElement("fieldset", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$116.createElement("textarea", {
 			id: "media_file_media_config",
 			name: "media_file[media_config]",
 			className: "block code",
@@ -47470,54 +44667,54 @@ Group\
 			style: { resize: "block" },
 			value: configText,
 			onChange: (event) => setConfigText(event.target.value)
-		}), /*#__PURE__*/ import_react$114.createElement("p", { className: "hint" }, I18nTranslate("media_player_media_config_hint_pre"), /*#__PURE__*/ import_react$114.createElement("a", {
+		}), /*#__PURE__*/ import_react$116.createElement("p", { className: "hint" }, I18nTranslate("media_player_media_config_hint_pre"), /*#__PURE__*/ import_react$116.createElement("a", {
 			href: "https://videojs.org/",
 			target: "_blank",
 			rel: "noreferrer"
-		}, "Video.js"), I18nTranslate("media_player_media_config_hint_post")), jsonError ? /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "error ui-alert" }, I18nTranslate("media_player_config_invalid"))) : null)), /*#__PURE__*/ import_react$114.createElement(FormActions, {
+		}, "Video.js"), I18nTranslate("media_player_media_config_hint_post")), jsonError ? /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-alerts" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "error ui-alert" }, I18nTranslate("media_player_config_invalid"))) : null)), /*#__PURE__*/ import_react$116.createElement(FormActions, {
 			cancelUrl,
 			submitLabel: I18nTranslate("media_player_save_config")
-		})), /*#__PURE__*/ import_react$114.createElement("hr", { className: "separator light mvl" }), /*#__PURE__*/ import_react$114.createElement(RestForm, {
+		})), /*#__PURE__*/ import_react$116.createElement("hr", { className: "separator light mvl" }), /*#__PURE__*/ import_react$116.createElement(RestForm, {
 			name: "subtitle_upload",
 			action: mediaPlayer.create_subtitle_url,
 			method: "post",
 			authToken,
 			encType: "multipart/form-data"
-		}, /*#__PURE__*/ import_react$114.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$114.createElement("h3", { className: "title-l mbs" }, I18nTranslate("media_player_subtitles")), /*#__PURE__*/ import_react$114.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$114.createElement("label", {
+		}, /*#__PURE__*/ import_react$116.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$116.createElement("h3", { className: "title-l mbs" }, I18nTranslate("media_player_subtitles")), /*#__PURE__*/ import_react$116.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$116.createElement("label", {
 			className: "form-label",
 			htmlFor: "subtitle_language"
-		}, I18nTranslate("media_player_language")), /*#__PURE__*/ import_react$114.createElement("div", { className: "form-item prm" }, /*#__PURE__*/ import_react$114.createElement("select", {
+		}, I18nTranslate("media_player_language")), /*#__PURE__*/ import_react$116.createElement("div", { className: "form-item prm" }, /*#__PURE__*/ import_react$116.createElement("select", {
 			id: "subtitle_language",
 			name: "subtitle[language]",
 			className: "block",
 			value: language,
 			onChange: (event) => setLanguage(event.target.value)
-		}, SUBTITLE_LANGUAGES.map(([code, name]) => /*#__PURE__*/ import_react$114.createElement("option", {
+		}, SUBTITLE_LANGUAGES.map(([code, name]) => /*#__PURE__*/ import_react$116.createElement("option", {
 			key: code,
 			value: code
-		}, `${code} ${name}`))), /*#__PURE__*/ import_react$114.createElement("input", {
+		}, `${code} ${name}`))), /*#__PURE__*/ import_react$116.createElement("input", {
 			type: "hidden",
 			name: "subtitle[label]",
 			value: languageLabel(language)
-		})))), /*#__PURE__*/ import_react$114.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$114.createElement("label", {
+		})))), /*#__PURE__*/ import_react$116.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$116.createElement("label", {
 			className: "form-label",
 			htmlFor: "subtitle_kind"
-		}, I18nTranslate("media_player_kind")), /*#__PURE__*/ import_react$114.createElement("div", { className: "form-item prm" }, /*#__PURE__*/ import_react$114.createElement("select", {
+		}, I18nTranslate("media_player_kind")), /*#__PURE__*/ import_react$116.createElement("div", { className: "form-item prm" }, /*#__PURE__*/ import_react$116.createElement("select", {
 			id: "subtitle_kind",
 			name: "subtitle[kind]",
 			className: "block",
 			defaultValue: "subtitles"
-		}, /*#__PURE__*/ import_react$114.createElement("option", { value: "subtitles" }, I18nTranslate("media_player_kind_subtitles")), /*#__PURE__*/ import_react$114.createElement("option", { value: "chapters" }, I18nTranslate("media_player_kind_chapters")))))), /*#__PURE__*/ import_react$114.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$114.createElement("label", {
+		}, /*#__PURE__*/ import_react$116.createElement("option", { value: "subtitles" }, I18nTranslate("media_player_kind_subtitles")), /*#__PURE__*/ import_react$116.createElement("option", { value: "chapters" }, I18nTranslate("media_player_kind_chapters")))))), /*#__PURE__*/ import_react$116.createElement("div", { className: "col1of3" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$116.createElement("label", {
 			className: "form-label",
 			htmlFor: "subtitle_file"
-		}, I18nTranslate("media_player_file")), /*#__PURE__*/ import_react$114.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$114.createElement("label", {
+		}, I18nTranslate("media_player_file")), /*#__PURE__*/ import_react$116.createElement("div", { className: "form-item" }, /*#__PURE__*/ import_react$116.createElement("label", {
 			className: "button",
 			htmlFor: "subtitle_file",
 			style: {
 				display: "block",
 				width: "stretch"
 			}
-		}, I18nTranslate("media_player_choose_file")), /*#__PURE__*/ import_react$114.createElement("input", {
+		}, I18nTranslate("media_player_choose_file")), /*#__PURE__*/ import_react$116.createElement("input", {
 			id: "subtitle_file",
 			name: "subtitle[file]",
 			type: "file",
@@ -47538,13 +44735,13 @@ Group\
 				const file = event.target.files && event.target.files[0];
 				setSubtitleFileName(file ? file.name : "");
 			}
-		}), /*#__PURE__*/ import_react$114.createElement("div", { className: "mts" }, subtitleFileName || I18nTranslate("media_player_no_file")))))), /*#__PURE__*/ import_react$114.createElement("p", { className: "hint" }, I18nTranslate("media_player_kind_hint")), /*#__PURE__*/ import_react$114.createElement("p", { className: "hint" }, I18nTranslate("media_player_default_hint")))), /*#__PURE__*/ import_react$114.createElement(FormActions, {
+		}), /*#__PURE__*/ import_react$116.createElement("div", { className: "mts" }, subtitleFileName || I18nTranslate("media_player_no_file")))))), /*#__PURE__*/ import_react$116.createElement("p", { className: "hint" }, I18nTranslate("media_player_kind_hint")), /*#__PURE__*/ import_react$116.createElement("p", { className: "hint" }, I18nTranslate("media_player_default_hint")))), /*#__PURE__*/ import_react$116.createElement(FormActions, {
 			cancelUrl,
 			submitLabel: I18nTranslate("media_player_upload")
-		})), /*#__PURE__*/ import_react$114.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$114.createElement("div", { className: "form-label" }, I18nTranslate("media_player_uploaded_subtitles"))), subtitles.length === 0 ? /*#__PURE__*/ import_react$114.createElement("p", null, I18nTranslate("media_player_no_subtitles")) : null, subtitles.map((subtitle) => /*#__PURE__*/ import_react$114.createElement("div", {
+		})), /*#__PURE__*/ import_react$116.createElement("div", { className: "row" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "col1of2" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "ui-form-group rowed compact" }, /*#__PURE__*/ import_react$116.createElement("div", { className: "form-label" }, I18nTranslate("media_player_uploaded_subtitles"))), subtitles.length === 0 ? /*#__PURE__*/ import_react$116.createElement("p", null, I18nTranslate("media_player_no_subtitles")) : null, subtitles.map((subtitle) => /*#__PURE__*/ import_react$116.createElement("div", {
 			className: "row mbs",
 			key: subtitle.id
-		}, /*#__PURE__*/ import_react$114.createElement("div", { className: "col3of4" }, /*#__PURE__*/ import_react$114.createElement("a", { href: subtitle.url }, subtitle.filename), " · ", languageOption(subtitle.language, subtitle.label), " · ", subtitle.kind === "chapters" ? I18nTranslate("media_player_kind_chapters") : I18nTranslate("media_player_kind_subtitles")), /*#__PURE__*/ import_react$114.createElement("div", { className: "col1of4 by-right" }, /*#__PURE__*/ import_react$114.createElement(RestForm, {
+		}, /*#__PURE__*/ import_react$116.createElement("div", { className: "col3of4" }, /*#__PURE__*/ import_react$116.createElement("a", { href: subtitle.url }, subtitle.filename), " · ", languageOption(subtitle.language, subtitle.label), " · ", subtitle.kind === "chapters" ? I18nTranslate("media_player_kind_chapters") : I18nTranslate("media_player_kind_subtitles")), /*#__PURE__*/ import_react$116.createElement("div", { className: "col1of4 by-right" }, /*#__PURE__*/ import_react$116.createElement(RestForm, {
 			name: `delete_subtitle_${subtitle.id}`,
 			action: subtitle.delete_url,
 			method: "delete",
@@ -47552,14 +44749,14 @@ Group\
 			onSubmit: (event) => {
 				if (!window.confirm(I18nTranslate("media_player_delete_confirm"))) event.preventDefault();
 			}
-		}, /*#__PURE__*/ import_react$114.createElement("button", {
+		}, /*#__PURE__*/ import_react$116.createElement("button", {
 			className: "button",
 			type: "submit"
 		}, I18nTranslate("media_player_delete"))))))))));
 	}
-	var import_react$114, import_prop_types$18, SUBTITLE_LANGUAGES, subtitleShape;
+	var import_react$116, import_prop_types$18, SUBTITLE_LANGUAGES, subtitleShape;
 	var init_MediaPlayerSettings = __esmMin((() => {
-		import_react$114 = /* @__PURE__ */ __toESM(require_react$1());
+		import_react$116 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$18 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_i18n_translate();
 		init_current_locale();
@@ -51171,7 +48368,7 @@ Group\
 						byVocabularies: false,
 						mediaPlayer: true
 					};
-					return /*#__PURE__*/ import_react$98.createElement(Tab$2, {
+					return /*#__PURE__*/ import_react$100.createElement(Tab$2, {
 						privacyStatus: "public",
 						key: "mediaPlayer",
 						iconType: null,
@@ -51232,12 +48429,8 @@ Group\
 		import_rails_csrf_token$4 = /* @__PURE__ */ __toESM(require_rails_csrf_token());
 		init_metadata_edit_validation();
 		init_MetadataEditRenderer();
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-		ResourceMetaDataPagePerContext = class extends import_react$99.Component {
-========
 		init_MediaPlayerSettings();
-		ResourceMetaDataPagePerContext = class extends import_react$97.Component {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+		ResourceMetaDataPagePerContext = class extends import_react$99.Component {
 			constructor(props) {
 				super(props);
 				this.formRef = /*#__PURE__*/ import_react$99.createRef();
@@ -51520,16 +48713,12 @@ There are no contexts defined. Please configure them in the admin tool.\
 					counts: this.props.get.counts,
 					resources: get.resources.resources,
 					authToken
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-				}) : void 0, MetadataEditRenderer_default._renderTabs(this.props.get.meta_meta_data, this.props.batch, this.props.get.batch_ids, this.props.get.return_to, this.props.get.url, this._onTabClick, currentTab, get.collection_id, this.props.get.resource_type, get.edit_by_context_urls, get.edit_by_context_fallback_url, get.batch_edit_by_context_urls, get.batch_edit_by_context_fallback_url, get.edit_by_vocabularies_url, get.batch_edit_by_vocabularies_url, get.batch_edit_all_collection_url, this.props.get.show_all_data_tab_in_edit_mode), /*#__PURE__*/ import_react$99.createElement(TabContent, null, /*#__PURE__*/ import_react$99.createElement(RestForm, {
-========
-				}) : void 0, MetadataEditRenderer_default._renderTabs(this.props.get.meta_meta_data, this.props.batch, this.props.get.batch_ids, this.props.get.return_to, this.props.get.url, this._onTabClick, currentTab, get.collection_id, this.props.get.resource_type, get.edit_by_context_urls, get.edit_by_context_fallback_url, get.batch_edit_by_context_urls, get.batch_edit_by_context_fallback_url, get.edit_by_vocabularies_url, get.batch_edit_by_vocabularies_url, get.batch_edit_all_collection_url, this.props.get.show_all_data_tab_in_edit_mode, !this.props.batch && get.media_player), /*#__PURE__*/ import_react$97.createElement(TabContent, null, currentTab.mediaPlayer ? /*#__PURE__*/ import_react$97.createElement(MediaPlayerSettings, {
+				}) : void 0, MetadataEditRenderer_default._renderTabs(this.props.get.meta_meta_data, this.props.batch, this.props.get.batch_ids, this.props.get.return_to, this.props.get.url, this._onTabClick, currentTab, get.collection_id, this.props.get.resource_type, get.edit_by_context_urls, get.edit_by_context_fallback_url, get.batch_edit_by_context_urls, get.batch_edit_by_context_fallback_url, get.edit_by_vocabularies_url, get.batch_edit_by_vocabularies_url, get.batch_edit_all_collection_url, this.props.get.show_all_data_tab_in_edit_mode, !this.props.batch && get.media_player), /*#__PURE__*/ import_react$99.createElement(TabContent, null, currentTab.mediaPlayer ? /*#__PURE__*/ import_react$99.createElement(MediaPlayerSettings, {
 					mediaPlayer: get.media_player,
 					authToken,
 					cancelUrl: get.return_to || get.resource.url,
 					thumbnail: MetadataEditRenderer_default._renderThumbnail(get.resource)
-				}) : /*#__PURE__*/ import_react$97.createElement(RestForm, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+				}) : /*#__PURE__*/ import_react$99.createElement(RestForm, {
 					ref: this.formRef,
 					name: "resource_meta_data",
 					action: this._actionUrl(),
@@ -57083,7 +54272,44 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/Export.jsx
 	var Export_exports = /* @__PURE__ */ __exportAll({ default: () => MediaEntryExport });
-	var import_react$47, import_moment$7, MediaEntryExport, forceDownload;
+	function plainPreviewRows(preview) {
+		return Object.entries(preview).map(([key, image]) => ({
+			key,
+			resolution: resolutionOf(image),
+			kind: image.extension,
+			href: forceDownload(image.url)
+		}));
+	}
+	function videoPreviewRows(videos) {
+		const rows = [];
+		(Array.isArray(videos) ? videos : Object.values(videos)).forEach((image) => {
+			if (image.profile === "hls") {
+				if (image.download_url) rows.push({
+					key: "hls-package",
+					resolution: resolutionOf(image),
+					kind: I18nTranslate("media_entry_export_hls_package"),
+					href: image.download_url
+				});
+				(image.renditions || []).forEach((rendition) => {
+					rows.push({
+						key: `hls-${rendition.height}-${rendition.url}`,
+						resolution: rendition.width && rendition.height ? rendition.width + "x" + rendition.height : String(rendition.height || "-"),
+						kind: I18nTranslate("media_entry_export_hls_rendition"),
+						href: forceDownload(rendition.url)
+					});
+				});
+				return;
+			}
+			rows.push({
+				key: image.url,
+				resolution: resolutionOf(image),
+				kind: image.extension,
+				href: forceDownload(image.url)
+			});
+		});
+		return rows.filter((row) => row.href);
+	}
+	var import_react$47, import_moment$7, MediaEntryExport, forceDownload, resolutionOf;
 	var init_Export = __esmMin((() => {
 		import_react$47 = /* @__PURE__ */ __toESM(require_react$1());
 		init_i18n_translate();
@@ -57238,8 +54464,8 @@ There are no contexts defined. Please configure them in the admin tool.\
 				}, /*#__PURE__*/ import_react$47.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate("media_entry_export_original")), hasOriginal ? sectionOriginalFile : /*#__PURE__*/ import_react$47.createElement("div", null, /*#__PURE__*/ import_react$47.createElement("p", null, I18nTranslate("media_entry_export_has_no_original")))) : void 0, hasOriginal && sectionChecksum, hasPreviews ? Object.entries(get.media_file.previews).map(([type, preview]) => /*#__PURE__*/ import_react$47.createElement("div", {
 					key: type,
 					className: "align-left bg-light mbm pbs"
-				}, /*#__PURE__*/ import_react$47.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate(`media_entry_export_subtitle_${type}`)), /*#__PURE__*/ import_react$47.createElement("table", { className: "block" }, /*#__PURE__*/ import_react$47.createElement("thead", null, /*#__PURE__*/ import_react$47.createElement("tr", null, /*#__PURE__*/ import_react$47.createElement("td", null, "Auflösung"), /*#__PURE__*/ import_react$47.createElement("td", null, "Typ"), /*#__PURE__*/ import_react$47.createElement("td", null))), /*#__PURE__*/ import_react$47.createElement("tbody", null, Object.entries(preview).map(([key, image]) => /*#__PURE__*/ import_react$47.createElement("tr", { key }, image.width && image.height ? /*#__PURE__*/ import_react$47.createElement("td", null, image.width + "x" + image.height) : /*#__PURE__*/ import_react$47.createElement("td", null, "-"), /*#__PURE__*/ import_react$47.createElement("td", null, image.extension), /*#__PURE__*/ import_react$47.createElement("td", null, /*#__PURE__*/ import_react$47.createElement("a", {
-					href: forceDownload(image.url),
+				}, /*#__PURE__*/ import_react$47.createElement("h2", { className: "title-l ui-resource-title mbs" }, I18nTranslate(`media_entry_export_subtitle_${type}`)), /*#__PURE__*/ import_react$47.createElement("table", { className: "block" }, /*#__PURE__*/ import_react$47.createElement("thead", null, /*#__PURE__*/ import_react$47.createElement("tr", null, /*#__PURE__*/ import_react$47.createElement("td", null, "Auflösung"), /*#__PURE__*/ import_react$47.createElement("td", null, "Typ"), /*#__PURE__*/ import_react$47.createElement("td", null))), /*#__PURE__*/ import_react$47.createElement("tbody", null, (type === "videos" ? videoPreviewRows(preview) : plainPreviewRows(preview)).map((row) => /*#__PURE__*/ import_react$47.createElement("tr", { key: row.key }, /*#__PURE__*/ import_react$47.createElement("td", null, row.resolution), /*#__PURE__*/ import_react$47.createElement("td", null, row.kind), /*#__PURE__*/ import_react$47.createElement("td", null, /*#__PURE__*/ import_react$47.createElement("a", {
+					href: row.href,
 					target: "_blank",
 					className: "primary-button",
 					style: { float: "right" },
@@ -57251,6 +54477,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 			}
 		};
 		forceDownload = (url) => set_params_for_url_default(url, { download: "yes" });
+		resolutionOf = (image) => image.width && image.height ? image.width + "x" + image.height : "-";
 	}));
 	//#endregion
 	//#region app/javascript/react/views/MediaEntry/Index.jsx
@@ -57336,40 +54563,19 @@ There are no contexts defined. Please configure them in the admin tool.\
 		import_prop_types$5 = /* @__PURE__ */ __toESM(require_prop_types());
 		init_MediaEntryPreview();
 		MediaEntryEmbedded = ({ get }) => {
-<<<<<<<< HEAD:bundle-react-server-side-e29afbcaa8e3594ef0a583e099853601853a2e30257607e0a17eb2562137075d.js
-			const { caption_conf, media_type, embed_config } = get;
-			const defaultSize = {
-				width: 500,
-				height: media_type === "audio" ? 200 : 500,
-				ratio: "16:9"
-			};
-			const eWidth = embed_config.width || defaultSize.width;
-			const eHeight = embed_config.height || defaultSize.height;
-			const mediaProps = {
-				height: eHeight + "px",
-				width: eWidth + "px",
-				options: {
-					fluid: false,
-					height: eHeight,
-					width: eWidth,
-					ratio: embed_config.ratio || defaultSize.ratio
-				}
-			};
-			return /*#__PURE__*/ import_react$44.createElement(MediaEntryPreview, {
-========
 			const { caption_conf, embed_config } = get;
 			const mediaProps = { options: {
 				fluid: false,
 				fill: true,
 				ratio: embed_config.ratio || "16:9"
 			} };
-			return /*#__PURE__*/ import_react$43.createElement(MediaEntryPreview, {
->>>>>>>> 26f5454 (wip, testjs):bundle-react-server-side-0c261b522aedadd8e01e92c832b3ce66f2d6dd63b59a5ef0f7bff8fb0189aa92.js
+			return /*#__PURE__*/ import_react$44.createElement(MediaEntryPreview, {
 				get,
 				mediaProps,
 				captionConf: caption_conf,
 				isEmbedded: true,
-				isInternal: embed_config.isInternal
+				isInternal: embed_config.isInternal,
+				preferredFormat: embed_config.preferredVideoFormat
 			});
 		};
 		MediaEntryEmbedded.propTypes = { get: import_prop_types$5.default.shape({ media_file: import_prop_types$5.default.object.isRequired }).isRequired };
@@ -57991,7 +55197,10 @@ There are no contexts defined. Please configure them in the admin tool.\
 	//#region app/javascript/react/views/My/Settings.jsx
 	var Settings_exports = /* @__PURE__ */ __exportAll({ default: () => MySettings });
 	function sendUpdate(url, settings, onSuccess) {
-		const data = { show_all_data_tab_in_edit_mode: settings.showAllDataTabInEditMode };
+		const data = {
+			show_all_data_tab_in_edit_mode: settings.showAllDataTabInEditMode,
+			video_playback_format: settings.videoPlaybackFormat
+		};
 		if (settings.notificationsEnabled) {
 			data.emails_locale = settings.emailsLocale;
 			data.notification_case_user_settings = settings.notificationCaseUserSettings.map(({ label, emailFrequency }) => ({
@@ -58029,6 +55238,7 @@ There are no contexts defined. Please configure them in the admin tool.\
 				this.state = {
 					emailsLocale: props.get.emails_locale,
 					showAllDataTabInEditMode: props.get.show_all_data_tab_in_edit_mode,
+					videoPlaybackFormat: props.get.video_playback_format === "hls" ? "hls" : "mp4",
 					notificationsEnabled: props.get.notifications_enabled,
 					notificationCaseUserSettings: props.get.notification_case_user_settings.map(({ label, email_frequency, allowed_email_frequencies }) => ({
 						label,
@@ -58063,7 +55273,19 @@ There are no contexts defined. Please configure them in the admin tool.\
 						checked: freq === emailFrequency,
 						onChange: (e) => this._handleEmailFrequencyChange(label, e.target.value)
 					}), " ", I18nTranslate(`settings_notifications_email_frequency_${freq}`))))));
-				})), /*#__PURE__*/ import_react$37.createElement("div", { className: notificationsEnabled ? "mtl" : void 0 }, /*#__PURE__*/ import_react$37.createElement("h2", { className: "title-l mbs" }, I18nTranslate("settings_advanced_functions_title")), /*#__PURE__*/ import_react$37.createElement("div", { className: "mbx" }, /*#__PURE__*/ import_react$37.createElement("label", null, /*#__PURE__*/ import_react$37.createElement("input", {
+				})), /*#__PURE__*/ import_react$37.createElement("div", { className: notificationsEnabled ? "mtl" : void 0 }, /*#__PURE__*/ import_react$37.createElement("h2", { className: "title-l mbs" }, I18nTranslate("settings_video_playback_title")), /*#__PURE__*/ import_react$37.createElement("div", { className: "mbx" }, /*#__PURE__*/ import_react$37.createElement("label", null, /*#__PURE__*/ import_react$37.createElement("input", {
+					type: "radio",
+					name: "videoPlaybackFormat",
+					value: "mp4",
+					checked: this.state.videoPlaybackFormat !== "hls",
+					onChange: () => this._handleVideoPlaybackFormatChange("mp4")
+				}), " ", I18nTranslate("settings_video_playback_mp4"))), /*#__PURE__*/ import_react$37.createElement("div", { className: "mbx" }, /*#__PURE__*/ import_react$37.createElement("label", null, /*#__PURE__*/ import_react$37.createElement("input", {
+					type: "radio",
+					name: "videoPlaybackFormat",
+					value: "hls",
+					checked: this.state.videoPlaybackFormat === "hls",
+					onChange: () => this._handleVideoPlaybackFormatChange("hls")
+				}), " ", I18nTranslate("settings_video_playback_hls")))), /*#__PURE__*/ import_react$37.createElement("div", { className: "mtl" }, /*#__PURE__*/ import_react$37.createElement("h2", { className: "title-l mbs" }, I18nTranslate("settings_advanced_functions_title")), /*#__PURE__*/ import_react$37.createElement("div", { className: "mbx" }, /*#__PURE__*/ import_react$37.createElement("label", null, /*#__PURE__*/ import_react$37.createElement("input", {
 					type: "checkbox",
 					name: "showAllDataTabInEditMode",
 					checked: this.state.showAllDataTabInEditMode,
@@ -58088,6 +55310,14 @@ There are no contexts defined. Please configure them in the admin tool.\
 				this.setState({
 					...this.state,
 					emailsLocale,
+					dirty: true
+				});
+				window.addEventListener("beforeunload", handleBeforeUnload);
+			}
+			_handleVideoPlaybackFormatChange(videoPlaybackFormat) {
+				this.setState({
+					...this.state,
+					videoPlaybackFormat,
 					dirty: true
 				});
 				window.addEventListener("beforeunload", handleBeforeUnload);
