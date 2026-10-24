@@ -63192,6 +63192,9 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 					if (Hls.isSupported()) {
 						const hls = new Hls();
 						this._hls = hls;
+						hls.on(Hls.Events.ERROR, (_event, data) => {
+							if (data.fatal) console.warn("HLS playback error", data.type, data.details, data.reason || "");
+						});
 						hls.loadSource(source.src);
 						hls.attachMedia(media);
 						media.addEventListener("loadedmetadata", resume, { once: true });
