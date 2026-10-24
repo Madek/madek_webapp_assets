@@ -51235,11 +51235,30 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 		const match = uniqueQualityOptions(sources).find((entry) => entry.label === label);
 		return match ? match.source : null;
 	}
+	function sourcesKey(sources) {
+		return (sources || []).map((source) => source.key || source.src).join("|");
+	}
+	function hlsQualityOptions(levels) {
+		const byHeight = /* @__PURE__ */ new Map();
+		(levels || []).forEach((level, index) => {
+			if (!level.height) return;
+			const current = byHeight.get(level.height);
+			if (!current || level.bitrate > levels[current].bitrate) byHeight.set(level.height, index);
+		});
+		const options = [...byHeight.entries()].sort(([a], [b]) => b - a).map(([height, index]) => ({
+			label: `${height}p`,
+			level: index
+		}));
+		return options.length > 1 ? [{
+			label: HLS_AUTO,
+			level: -1
+		}, ...options] : [];
+	}
 	function orderedAudioSources(sources) {
 		const rank = (type) => type === "audio/mpeg" ? 0 : 1;
 		return sources.filter((source) => source && source.src).slice().sort((a, b) => rank(a.type) - rank(b.type));
 	}
-	var import_react$6, import_prop_types$6, import_classnames$1, defaultProps, propTypes$2, CAST_CHROME_STYLE, AUDIO_CHROME_STYLE, VOLUME_POPOVER_STYLE, AUDIO_VOLUME_ALWAYS_STYLE, TitleOverlay, VideoJS;
+	var import_react$6, import_prop_types$6, import_classnames$1, defaultProps, propTypes$2, HLS_AUTO, CAST_CHROME_STYLE, AUDIO_CHROME_STYLE, VOLUME_POPOVER_STYLE, AUDIO_VOLUME_ALWAYS_STYLE, TitleOverlay, VideoJS;
 	var init_VideoJs = __esmMin((() => {
 		import_react$6 = /* @__PURE__ */ __toESM(require_react());
 		import_prop_types$6 = /* @__PURE__ */ __toESM(require_prop_types());
@@ -51283,6 +51302,7 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 			preload: import_prop_types$6.default.string,
 			className: import_prop_types$6.default.string
 		};
+		HLS_AUTO = "Auto";
 		CAST_CHROME_STYLE = `
   media-cast-button {
     display: none !important;
@@ -51378,6 +51398,8 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 				this._hlsGeneration = 0;
 				this.state = {
 					selectedLabel: pickInitialLabel(props.sources || []),
+					hlsQuality: HLS_AUTO,
+					hlsLevels: [],
 					titleHidden: false
 				};
 				this.qualityMenuAttempts = 0;
@@ -51430,7 +51452,7 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 				this.bindPlayback();
 			}
 			componentDidUpdate(prevProps, prevState) {
-				if (prevProps.sources !== this.props.sources) {
+				if (sourcesKey(prevProps.sources) !== sourcesKey(this.props.sources)) {
 					const nextLabel = pickInitialLabel(this.props.sources || []);
 					if (nextLabel !== this.state.selectedLabel) this.setState({ selectedLabel: nextLabel });
 				}
@@ -51452,7 +51474,7 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 					this.scheduleAudioLayout();
 					this.scheduleVolumePopover();
 				}
-				if (prevProps.sources !== this.props.sources || prevState.selectedLabel !== this.state.selectedLabel || prevProps.mode !== this.props.mode || prevProps.format !== this.props.format) this.scheduleQualityMenuSync();
+				if (sourcesKey(prevProps.sources) !== sourcesKey(this.props.sources) || prevState.selectedLabel !== this.state.selectedLabel || prevState.hlsQuality !== this.state.hlsQuality || prevState.hlsLevels !== this.state.hlsLevels || prevProps.mode !== this.props.mode || prevProps.format !== this.props.format) this.scheduleQualityMenuSync();
 			}
 			componentWillUnmount() {
 				this.destroyHls();
@@ -51483,7 +51505,17 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 			}
 			onQualityMenuChange(event) {
 				const nextLabel = event.detail && event.detail.value;
+				if (this.props.format === "hls") {
+					this.onHlsQualityChange(nextLabel);
+					return;
+				}
 				this.onQualityChange({ target: { value: nextLabel } });
+			}
+			onHlsQualityChange(label) {
+				const option = hlsQualityOptions(this.state.hlsLevels).find((entry) => entry.label === label);
+				if (!option || label === this.state.hlsQuality) return;
+				if (this._hls) this._hls.currentLevel = option.level;
+				this.setState({ hlsQuality: label });
 			}
 			scheduleAudioLayout() {
 				if (this.props.mode !== "audio") return;
@@ -51816,6 +51848,10 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 				const restore = this.pendingRestore;
 				this.pendingRestore = null;
 				const generation = this._hlsGeneration;
+				if (this.state.hlsLevels.length || this.state.hlsQuality !== HLS_AUTO) this.setState({
+					hlsLevels: [],
+					hlsQuality: HLS_AUTO
+				});
 				const resume = () => {
 					if (!restore || generation !== this._hlsGeneration) return;
 					try {
@@ -51835,6 +51871,10 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 						hls.on(Hls.Events.ERROR, (_event, data) => {
 							if (data.fatal) console.warn("HLS playback error", data.type, data.details, data.reason || "");
 						});
+						hls.on(Hls.Events.MANIFEST_PARSED, (_event, data) => {
+							if (generation !== this._hlsGeneration) return;
+							this.setState({ hlsLevels: data.levels || hls.levels || [] });
+						});
 						hls.loadSource(source.src);
 						hls.attachMedia(media);
 						media.addEventListener("loadedmetadata", resume, { once: true });
@@ -51846,28 +51886,23 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 			}
 			syncQualityMenu() {
 				if (this.props.mode !== "video") return true;
-				if (this.props.format === "hls") {
-					const media = this.mediaRef.current;
-					const skin = media && media.closest("video-neutral-skin");
-					const shadow = skin && skin.shadowRoot;
-					if (!shadow) return false;
-					shadow.querySelectorAll("media-menu-radio-group.madek-quality-group").forEach((group) => {
-						group.remove();
-					});
-					return true;
-				}
 				const media = this.mediaRef.current;
 				const skin = media && media.closest("video-neutral-skin");
 				const shadow = skin && skin.shadowRoot;
 				if (!shadow || !customElements.get("media-menu-radio-group")) return false;
 				this.hideCastButton(shadow);
-				const options = uniqueQualityOptions(this.props.sources || []);
+				const hls = this.props.format === "hls";
+				const options = hls ? hlsQualityOptions(this.state.hlsLevels) : uniqueQualityOptions(this.props.sources || []);
 				const nativeGroup = shadow.querySelector("media-quality-radio-group");
-				const page = nativeGroup && nativeGroup.parentElement || shadow.querySelector("media-menu-radio-group.madek-quality-group")?.parentElement;
+				const page = nativeGroup && nativeGroup.parentElement || shadow.querySelector("media-menu-radio-group.madek-quality-group")?.parentElement || (this.qualityMenuPage && this.qualityMenuPage.isConnected ? this.qualityMenuPage : null);
 				if (!page) return false;
-				if (options.length < 2) return true;
-				if (nativeGroup) nativeGroup.remove();
+				this.qualityMenuPage = page;
 				let group = page.querySelector("media-menu-radio-group.madek-quality-group");
+				if (options.length < 2) {
+					if (group) group.remove();
+					return true;
+				}
+				if (nativeGroup) nativeGroup.remove();
 				if (!group) {
 					group = document.createElement("media-menu-radio-group");
 					group.className = "media-menu-radio-group madek-quality-group";
@@ -51893,7 +51928,7 @@ Schedule: ${scheduleItems.map((seg) => segmentToString(seg))} pos: ${this.timeli
 					item.append(text, indicator);
 					return item;
 				}));
-				const selected = this.state.selectedLabel || labels[0];
+				const selected = (hls ? this.state.hlsQuality : this.state.selectedLabel) || labels[0];
 				if (group.value !== selected) group.value = selected;
 				if (typeof group.publishMenuOptionState === "function") group.publishMenuOptionState(false, false, "available");
 				const trigger = page.id && shadow.querySelector(`[commandfor="${page.id}"]`);
