@@ -48859,7 +48859,7 @@ var require = (function() {
 			return n;
 		}, _extends$23.apply(null, arguments);
 	}
-	var import_react$187, import_prop_types$47, propTypes$6, VIDEOJS_OPTIONS, sourceLabel, VideoPlayer;
+	var import_react$187, import_prop_types$47, propTypes$6, VIDEOJS_OPTIONS, sourceLabel, MP4_H264_TYPE, WEBM_VP8_TYPE, preferMp4Sources, bySdFirst, VideoPlayer;
 	var init_VideoPlayer = __esmMin((() => {
 		import_react$187 = /* @__PURE__ */ __toESM(require_react$1());
 		import_prop_types$47 = /* @__PURE__ */ __toESM(require_prop_types());
@@ -48894,6 +48894,21 @@ var require = (function() {
 			"fullscreenToggle"
 		] } };
 		sourceLabel = ({ profile }) => endsWith(profile, "_HD") ? "HD" : "SD";
+		MP4_H264_TYPE = "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"";
+		WEBM_VP8_TYPE = "video/webm; codecs=\"vp8, vorbis\"";
+		preferMp4Sources = () => {
+			if (typeof document === "undefined") return true;
+			const video = document.createElement("video");
+			const mp4 = video.canPlayType(MP4_H264_TYPE);
+			const webm = video.canPlayType(WEBM_VP8_TYPE);
+			if (!mp4 && webm) return false;
+			return true;
+		};
+		bySdFirst = (a, b) => {
+			if (a.label === "SD") return -1;
+			if (b.label === "SD") return 1;
+			return 0;
+		};
 		VideoPlayer = class extends import_react$187.Component {
 			render({ sources, options, ...props } = this.props) {
 				const videoSources = sources.map((source) => ({
@@ -48903,17 +48918,9 @@ var require = (function() {
 					res: source.height,
 					key: `${source.url}${source.content_type}`
 				}));
-				const mp4s = videoSources.filter((source) => source.type === "video/mp4").sort((a, b) => {
-					if (a.label === "SD") return -1;
-					else if (b.label === "SD") return 1;
-					return 0;
-				});
-				const webms = videoSources.filter((source) => source.type === "video/webm").sort((a, b) => {
-					if (a.label === "SD") return -1;
-					else if (b.label === "SD") return 1;
-					return 0;
-				});
-				const sortedSources = mp4s.concat(webms);
+				const mp4s = videoSources.filter((source) => source.type === "video/mp4").sort(bySdFirst);
+				const webms = videoSources.filter((source) => source.type === "video/webm").sort(bySdFirst);
+				const sortedSources = preferMp4Sources() ? mp4s.concat(webms) : webms.concat(mp4s);
 				return /*#__PURE__*/ import_react$187.createElement(VideoJS, _extends$23({}, props, {
 					sources: sortedSources,
 					options: {
