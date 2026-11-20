@@ -83093,14 +83093,13 @@ There are no contexts defined. Please configure them in the admin tool.\
 		init_current_locale();
 		init_utils();
 		init_i18n_translate();
-		DevelopmentInfo = ({ git_hash, git_url }) => {
-			return /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, I18nTranslate("release_local_git_version"), ": ", /*#__PURE__*/ import_react$53.createElement("a", { href: git_url }, git_hash)));
+		DevelopmentInfo = ({ git_hash }) => {
+			return /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, I18nTranslate("release_local_git_version"), ": ", git_hash));
 		};
-		DeploymentInfo = ({ tree_id, commit_id, deploy_time }) => {
+		DeploymentInfo = ({ commit_id, deploy_time }) => {
 			import_moment$8.default.locale(currentLocale());
-			const buildUrl = `https://ci.zhdk.ch/cider-ci/ui/workspace/trees/${tree_id}`;
 			const commitUrl = `https://github.com/Madek/Madek/commits/${commit_id}`;
-			return /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, deploy_time && /*#__PURE__*/ import_react$53.createElement("span", null, "Deployment: ", (0, import_moment$8.default)(deploy_time).format("LLLL"))), /*#__PURE__*/ import_react$53.createElement("div", { className: "mtm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, /*#__PURE__*/ import_react$53.createElement("a", { href: commitUrl }, I18nTranslate("release_source_history")))), /*#__PURE__*/ import_react$53.createElement("div", { className: "mtm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, /*#__PURE__*/ import_react$53.createElement("a", { href: buildUrl }, "Build"))));
+			return /*#__PURE__*/ import_react$53.createElement("div", { className: "ui-container pbm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, deploy_time && /*#__PURE__*/ import_react$53.createElement("span", null, "Deployment: ", (0, import_moment$8.default)(deploy_time).format("LLLL"))), /*#__PURE__*/ import_react$53.createElement("div", { className: "mtm" }, /*#__PURE__*/ import_react$53.createElement("h2", { className: "title-s" }, /*#__PURE__*/ import_react$53.createElement("a", { href: commitUrl }, I18nTranslate("release_source_history")))));
 		};
 		ReleasesInfo = ({ releases }) => {
 			const current = releases[0];
